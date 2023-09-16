@@ -20,7 +20,7 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href="home.php">Homepage</a></li>
+										<li><a href="index.php">Homepage</a></li>
 										<li><a href="patterns.php">All patterns</a></li>
 										<!-- <li><a href="elements.html">Elements</a></li> -->
 										<!-- <li>
