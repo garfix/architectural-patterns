@@ -3,9 +3,11 @@ include 'template/header.php';
 ?>
 
 <section>
-    <header class="main">
-        <h1>Interpreter / Virtual Machine</h1>
+    <header class="content">
+        <h1>Interpreter</h1>
+        <p>Virtual Machine</p>
     </header>
+
     <p>The interpreter processes or executes other programs.</p>
 
     <h2>Examples</h2>

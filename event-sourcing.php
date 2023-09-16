@@ -3,7 +3,7 @@ include 'template/header.php';
 ?>
 
 <section>
-    <header class="main">
+    <header class="content">
         <h1>Event sourcing</h1>
     </header>
     <p>

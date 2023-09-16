@@ -3,8 +3,9 @@ include 'template/header.php';
 ?>
 
 <section>
-    <header class="main">
-        <h1>Broker / Service Oriented Architecture</h1>
+    <header class="content">
+        <h1>Broker</h1>
+        <p>Service Oriented Architecture</p>
     </header>
     <p>You just want the job to be done. You don't care who performs it, but you may have some demands. Tell your broker. He will take care of it.</p>
 

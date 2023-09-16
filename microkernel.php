@@ -3,7 +3,7 @@ include 'template/header.php';
 ?>
 
 <section>
-    <header class="main">
+    <header class="content">
         <h1>Microkernel</h1>
     </header>
     <p>The microkernel can serve as a basis for systems that are by nature prone to dramatic changes, like Operating Systems. Think of changing your house. Not just redecorating the walls, or adding a barn. Think of changing the foundation. If your system needs to handle this kind of brutality, consider using a microkernel.</p>

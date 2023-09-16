@@ -3,7 +3,7 @@ include 'template/header.php';
 ?>
 
 <section>
-    <header class="main">
+    <header class="content">
         <h1>Repository</h1>
     </header>
     <p>The repository contains a single datastructure, the Repository, and a number of modules called Knowledge Sources, that modify this datastructure. These are the only characteristics of a repository architecture. If all these Knowledge Sources start modifying at the same time, all hell breaks loose. Therefore the order in which they have access needs to be regulated.</p>

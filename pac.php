@@ -3,7 +3,7 @@ include 'template/header.php';
 ?>
 
 <section>
-    <header class="main">
+    <header class="content">
         <h1>Presentation-Abstraction-Control</h1>
     </header>
     <p>This architecture is a further development of the <a href="mvc.php">Model-View-Controller</a> architecture.

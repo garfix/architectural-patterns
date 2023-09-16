@@ -3,8 +3,9 @@ include 'template/header.php';
 ?>
 
 <section>
-    <header class="main">
-        <h1>Ports and Adapters / Hexagonal architecture</h1>
+    <header class="content">
+        <h1>Ports and Adapters</h1>
+        <p>Hexagonal architecture</p>
     </header>
     <p>
 			The main aim of this architecture is to decouple the application's core logic from the services it uses. This allows different services to be "plugged in", and it allows the application to be run without these services.

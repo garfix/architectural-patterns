@@ -3,7 +3,7 @@ include 'template/header.php';
 ?>
 
 <section>
-    <header class="main">
+    <header class="content">
         <h1>Hub-and-Spoke</h1>
     </header>
     <p>This architecture connects systems that are otherwise incompatible. It connects "anything to everything", by relaying messages from clients to servers, and "interpreting" messages from the language of X to the language of Y.</p>

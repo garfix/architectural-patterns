@@ -3,7 +3,7 @@ include 'template/header.php';
 ?>
 
 <section>
-    <header class="main">
+    <header class="content">
         <h1>Event-bus</h1>
     </header>
     <p>If your application requires a number of modules that need to communicate with each other in various ways, this architecture is a sure bet. It is endlessly flexible: you can add and remove modules at run-time, communicate directly or broadcast messages. It is completely free. </p>
