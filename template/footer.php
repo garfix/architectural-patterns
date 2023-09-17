@@ -20,8 +20,8 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href="index.php">Homepage</a></li>
-										<li><a href="patterns.php">All patterns</a></li>
+										<li><a href=".">Homepage</a></li>
+										<li><a href="patterns">Pattern overview</a></li>
 										<!-- <li><a href="elements.html">Elements</a></li> -->
 										<!-- <li>
 											<span class="opener">Submenu</span>

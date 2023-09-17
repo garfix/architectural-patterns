@@ -4,7 +4,7 @@ include 'template/header.php';
 
 <section>
     <header class="major">
-        <h2>All patterns</h2>
+        <h2>Pattern overview</h2>
     </header>
     <div class="posts">
         <?php
@@ -12,107 +12,107 @@ include 'template/header.php';
                 [
                     name => "Model-View-Controller",
                     image => "mvc_2.jpg",
-                    link => "mvc.php"
+                    link => "model-view-controller"
                 ],
                 [
                     name => "Presentation-Abstraction-Control",
                     image => "pac_1.jpg",
-                    link => "pac.php"
+                    link => "presentation-abstraction-control"
                 ],
                 [
                     name => "Pipe and Filter",
                     image => "pipe_and_filter_2.jpg",
-                    link => "pipe-and-filter.php"
+                    link => "pipe-and-filter"
                 ],
                 [
                     name => "Layered",
                     image => "layers_1.jpg",
-                    link => "layers.php"
+                    link => "layered"
                 ],
                 [
                     name => "Microkernel",
                     image => "microkernel.jpg",
-                    link => "microkernel.php"
+                    link => "microkernel"
                 ],
                 [
                     name => "N-Tier",
                     image => "tiers_1.jpg",
-                    link => "tiers.php"
+                    link => "tiers"
                 ],
                 [
                     name => "Repository",
                     image => "repository.jpg",
-                    link => "repository.php"
+                    link => "repository"
                 ],
                 [
                     name => "Blackboard",
                     image => "blackboard_1.jpg",
-                    link => "blackboard.php"
+                    link => "blackboard"
                 ],
                 [
                     name => "Finite State Machine",
                     image => "fsm_1.jpg",
-                    link => "fsm.php"
+                    link => "finite-state-machine"
                 ],
                 [
                     name => "Process Control",
                     image => "process_control_1.jpg",
-                    link => "process-control.php"
+                    link => "process-control"
                 ],
                 [
                     name => "Multi-Agent System",
                     image => "mas_1.jpg",
-                    link => "mas.php"
+                    link => "multi-agent-system"
                 ],
                 [
                     name => "Broker",
                     image => "broker.jpg",
-                    link => "broker.php"
+                    link => "broker"
                 ],
                 [
                     name => "Master-Slave",
                     image => "masterslave.jpg",
-                    link => "master-slave.php"
+                    link => "master-slave"
                 ],
                 [
                     name => "Interpreter",
                     image => "vm.jpg",
-                    link => "vm.php"
+                    link => "interpreter"
                 ],
                 [
                     name => "Hub and Spoke",
                     image => "hub_and_spoke.jpg",
-                    link => "hub-and-spoke.php"
+                    link => "hub-and-spoke"
                 ],
                 [
                     name => "Event bus",
                     image => "eventbus.jpg",
-                    link => "event-bus.php"
+                    link => "event-bus"
                 ],
                 [
                     name => "Structural model",
                     image => "structural_model_1.jpg",
-                    link => "structural-model.php"
+                    link => "structural-model"
                 ],
                 [
                     name => "Ports and Adapters",
                     image => "ports-and-adapters.png",
-                    link => "ports-and-adapters.php"
+                    link => "ports-and-adapters"
                 ],
                 [
                     name => "Peer to Peer",
                     image => "peer-to-peer.png",
-                    link => "peer-to-peer.php"
+                    link => "peer-to-peer"
                 ],
                 [
                     name => "Event Sourcing",
                     image => "event-sourcing-1.png",
-                    link => "event-sourcing.php"
+                    link => "event-sourcing"
                 ],
                 [
                     name => "Command-Query Responsibility Separation",
                     image => "cqrs-1.png",
-                    link => "cqrs.php"
+                    link => "cqrs"
                 ]                
             ];
 

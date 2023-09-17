@@ -32,7 +32,7 @@ include 'template/header.php';
                     to the blackboard, activates the appropriate Knowledge Sources, selects one of these and executes it.
             </p>
 
-    <p>The blackboard is a specialisation of the <a href="repository.php">Repository</a> architecture.</p>
+    <p>The blackboard is a specialisation of the <a href="repository">Repository</a> architecture.</p>
 
     <h2>Examples</h2>
     <ul>

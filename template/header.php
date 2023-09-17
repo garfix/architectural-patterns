@@ -24,6 +24,6 @@
 								<header id="header">
 									<a href="index.html" class="logo"><strong>Architectural Patterns</strong> by Patrick van Bergen</a>
 									<ul class="icons">
-										<li><a href="https://github.com/garfix" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+										<li><a href="https://github.com/garfix/architectural-patterns" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
 									</ul>
 								</header>

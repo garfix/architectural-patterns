@@ -49,7 +49,7 @@ include 'template/header.php';
 
     <h2>Common implementation techniques</h2>
     <ul>
-        <li>CQRS is normally used in conjection with <a href='event-sourcing.php'>Event sourcing</a> to store its Commands.
+        <li>CQRS is normally used in conjection with <a href='event-sourcing'>Event sourcing</a> to store its Commands.
         <li>In theory it is possible to use CQRS with just a plain database that only stores the current state as a Command Model, but this is not much different from plain caching.
     </ul>
 
