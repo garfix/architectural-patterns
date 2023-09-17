@@ -4,7 +4,8 @@ include 'template/header.php';
 
 <section>
     <header class="content">
-        <h1>Client-Server / N-Tier Systems</h1>
+        <h1>N-Tier Systems</h1>
+        <p>Client-Server</p>
     </header>
     <p>
         N-Tier architectures are hot. Well, maybe not as hot as a few years ago, but still it is very
