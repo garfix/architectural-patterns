@@ -110,7 +110,7 @@ include 'template/header.php';
                     link => "event-sourcing"
                 ],
                 [
-                    name => "Command-Query Responsibility Separation",
+                    name => "Command-Query Responsibility Segregation",
                     image => "cqrs-1.png",
                     link => "cqrs"
                 ]                

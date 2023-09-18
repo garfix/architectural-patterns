@@ -22,6 +22,7 @@
 									<ul>
 										<li><a href=".">Homepage</a></li>
 										<li><a href="patterns">Pattern overview</a></li>
+										<li><a href="about">About</a></li>
 										<!-- <li><a href="elements.html">Elements</a></li> -->
 										<!-- <li>
 											<span class="opener">Submenu</span>

@@ -5,6 +5,7 @@ include 'template/header.php';
 <section>
     <header class="content">
         <h1>CQRS</h1>
+        <p>Command-Query Responsibility Segregation</p>
     </header>
     <p>
         This architecture is only useful if your application process huge amounts of data. Further, the views that present the data to the user are complex and cannot be generated real-time.
