@@ -10,6 +10,11 @@ include 'template/header.php';
 
     <p>The interpreter processes or executes other programs.</p>
 
+    <h2>How does it work?</h2>
+    <p>One or more Programs or Scripts are loaded into the Interpreter. They may be converted into an internal representation that can be processed more effectively by the Interpreter. Connections between the Program and the Environment are created.</p>
+    <p>The Interpreter reads instructions from the Program and processes them. This affects the Environment. Changes in the Environment are fed back to the Program. This cycle is executed until the Program is finished.</p>
+    <p><center><img src="images/vm.jpg"></center></p>
+
     <h2>Examples</h2>
     <ul>
         <li>Java Virtual Machine
@@ -28,11 +33,6 @@ include 'template/header.php';
             <li>If the Program may not directly access the Environment. The interpreter is a so called sandbox where the Program can play in without being able to do any harm.
         </ul>
     </p>
-
-    <h2>How does it work?</h2>
-    <p>One or more Programs or Scripts are loaded into the Interpreter. They may be converted into an internal representation that can be processed more effectively by the Interpreter. Connections between the Program and the Environment are created.</p>
-    <p>The Interpreter reads instructions from the Program and processes them. This affects the Environment. Changes in the Environment are fed back to the Program. This cycle is executed until the Program is finished.</p>
-    <p><center><img src="images/vm.jpg"></center></p>
 
     <h2>Problems</h2>
     <p>

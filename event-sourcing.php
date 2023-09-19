@@ -13,24 +13,6 @@ include 'template/header.php';
         Event sourcing is used when the events that lead to the current state of the data are just as important as the current state itself is.
     </p>
 
-    <h2>Examples</h2>
-    <ul>
-        <li>Version control systems (source code)
-        <li>Word processor (for undo / redo)
-        <li>Database transaction logs (for master/slave synchronization, a.o.)
-    </ul>
-
-    <h2>Where does it come from?</h2>
-    <p>
-        <li>Altough the concept itself is much older, the current ideas about architecture originate from about 2006 and come from Greg Young.
-    </p>
-
-    <h2>When should you use it?</h2>
-    <p>
-        <li>If logging or auditing is (very) important
-        <li>If you want to be able to backtrack to a previous state, or work with different states in parallel.
-    </p>
-
     <h2>How does it work?</h2>
     <p>
         Every action performed by the system is modelled as an event and written to an event store (event log).
@@ -52,6 +34,24 @@ include 'template/header.php';
     <p><center><img src="images/event-sourcing-2.png"></center></p>
     
     <p>In the second picture a branch has been created starting with event #2. The client that uses the system is working on this branch and has created some events #4, #5, and #6 that exist parallel to the main branch. The state of this client reflects all events up to event #5. At some later state these branches may need to be merged into one again.</p>
+
+    <h2>Examples</h2>
+    <ul>
+        <li>Version control systems (source code)
+        <li>Word processor (for undo / redo)
+        <li>Database transaction logs (for master/slave synchronization, a.o.)
+    </ul>
+
+    <h2>Where does it come from?</h2>
+    <p>
+        <li>Altough the concept itself is much older, the current ideas about architecture originate from about 2006 and come from Greg Young.
+    </p>
+
+    <h2>When should you use it?</h2>
+    <p>
+        <li>If logging or auditing is (very) important
+        <li>If you want to be able to backtrack to a previous state, or work with different states in parallel.
+    </p>
 
     <h2>Problems</h2>
     <p>

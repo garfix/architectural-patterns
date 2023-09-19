@@ -51,6 +51,16 @@ include 'template/header.php';
         a very powerful system, but also introduces synchronisation problems.
     </p>
 
+    <h2>How does it work?</h2>
+    <p>
+        The architecture is so generic it is hard to say anything concrete about it. Communication between
+        the different tiers often takes place via a network. Communication within a tier also is done over a
+        (local) network.
+        Clients don't communicate directly to each other.
+        Clients communicate to the application server directly or to a broker that balances requests between
+        separate server machines. The database layer usually contains only one database.
+    </p>
+    
     <h2>Examples</h2>
     <ul>
         <li>Web-applications. Where the first tier is the application-tier, the second tier is the
@@ -84,16 +94,6 @@ include 'template/header.php';
         You don't usually need to build your own application and database server. Most application developers
         either build the application specific front-end code, or the application specific back-end code.
         This code is then embedded in an existing application server and uses an existing database management server.
-    </p>
-
-    <h2>How does it work?</h2>
-    <p>
-        The architecture is so generic it is hard to say anything concrete about it. Communication between
-        the different tiers often takes place via a network. Communication within a tier also is done over a
-        (local) network.
-        Clients don't communicate directly to each other.
-        Clients communicate to the application server directly or to a broker that balances requests between
-        separate server machines. The database layer usually contains only one database.
     </p>
 
     <h2>Links</h2>

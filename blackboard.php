@@ -34,6 +34,26 @@ include 'template/header.php';
 
     <p>The blackboard is a specialisation of the <a href="repository">Repository</a> architecture.</p>
 
+    <h2>How does it work?</h2>
+    <p>
+                    Running the program having this architecture, entails continually executing the execution cycle (control, cycle).
+                    These are the steps that are continuously executed during the cycle:
+            </p>
+    <p><center><img src="images/blackboard_2.jpg"></center></p>
+            <p>
+        <ol>
+            <li>The preconditions of all Knowledge Sources are checked.
+                        <li>The Knowledge Sources that match are added to
+                    some datastructure in the Scheduler. They are added to the once that are left from the last cycle.
+                    <li>The Scheduler determines which of the Knowledge Sources is chosen for activation.
+                    The chosen Knowledge Source is activated and its actions are executed. This results in changes in the blackboard.
+        </ol>
+                We must add some remarks here: when the Scheduler selects a Knowledge Source, it may have been in the datastructure
+                for many cycles. In the meanwhile the blackboard has changed. So the preconditions need to be checked to be sure
+                they are still valid.
+    </p>
+
+
     <h2>Examples</h2>
     <ul>
         <li>Hearsay-II, a speech recognition program. Speech can be recognized at several levels. For each of these levels
@@ -59,25 +79,6 @@ include 'template/header.php';
         <li>The problem space should be factorable into separate parts.
                     <li>The problem requires different forms of approaching the problem, like bottom-up and top-down reasoning.
     </ul>
-    </p>
-
-    <h2>How does it work?</h2>
-    <p>
-                    Running the program having this architecture, entails continually executing the execution cycle (control, cycle).
-                    These are the steps that are continuously executed during the cycle:
-            </p>
-    <p><center><img src="images/blackboard_2.jpg"></center></p>
-            <p>
-        <ol>
-            <li>The preconditions of all Knowledge Sources are checked.
-                        <li>The Knowledge Sources that match are added to
-                    some datastructure in the Scheduler. They are added to the once that are left from the last cycle.
-                    <li>The Scheduler determines which of the Knowledge Sources is chosen for activation.
-                    The chosen Knowledge Source is activated and its actions are executed. This results in changes in the blackboard.
-        </ol>
-                We must add some remarks here: when the Scheduler selects a Knowledge Source, it may have been in the datastructure
-                for many cycles. In the meanwhile the blackboard has changed. So the preconditions need to be checked to be sure
-                they are still valid.
     </p>
 
     <h2>Problems</h2>

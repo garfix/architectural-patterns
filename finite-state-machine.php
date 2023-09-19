@@ -25,18 +25,6 @@ include 'template/header.php';
     </p>
     <p><center><img src="images/fsm_1.jpg"></center></p>
 
-    <h2>Examples</h2>
-    <ul>
-        <li>A coffee machine is the archetypal state machine.
-        <li>Games.
-    </ul>
-
-    <h2>When should you use it?</h2>
-    <p>
-        Use a Finite State Machine architecture when your system should not perform the same behaviour all the time,
-        and there are a finite number of states the system can be in.
-    </p>
-
     <h2>How does it work?</h2>
     <p>
         The state machine starts in some initial state. Every execution cycle or control cycle the following two
@@ -119,6 +107,18 @@ include 'template/header.php';
     <p>
         Advanced state machines may keep track of how much time was spent in each state, if a state is entered
         for the first time, log changes for debugging, etc.
+    </p>
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>A coffee machine is the archetypal state machine.
+        <li>Games.
+    </ul>
+
+    <h2>When should you use it?</h2>
+    <p>
+        Use a Finite State Machine architecture when your system should not perform the same behaviour all the time,
+        and there are a finite number of states the system can be in.
     </p>
 
     <h2>Common implementation techniques</h2>

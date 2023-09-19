@@ -8,11 +8,22 @@ include 'template/header.php';
         <p>Command-Query Responsibility Segregation</p>
     </header>
     <p>
-        This architecture is only useful if your application process huge amounts of data. Further, the views that present the data to the user are complex and cannot be generated real-time.
+        This architecture is only useful if your application process huge amounts of data. Further, the views that present the data to the user are complex and cannot be generated real-time. Reading and writing information are separated into two separate models.
+    </p>
+
+    <h2>How does it work?</h2>
+    <p>
+        A CQRS system separates a Command Model from a Query Model. Whenever the system executes an action, an Action object is created and this is stored in the command model. A signal is then sent to the Query Model and all models that depend on this command are updated, asynchronously.
     </p>
     <p>
-        In this architecture reading and writing information is separated into two separate models.
+        Data entering the system is written only to the Command Model. When an application needs to show data, it is read from the Query model.
     </p>
+    <p>
+        The Query Models are "throw away" and may be recreated from the Command Model. However, it may take (considerable) time to recreate the Query Models.
+    </p>
+    
+    <p><center><img src="images/cqrs-1.png"></center></p>
+
 
     <h2>Examples</h2>
     <ul>
@@ -29,19 +40,6 @@ include 'template/header.php';
         <li>When your data needs to be available real-time to a user and it cannot be constructed real-time by a conventional database.
         <li>When your system needs multiple views on the same data, in such a way that a single data model is ineffective.
     </p>
-
-    <h2>How does it work?</h2>
-    <p>
-        A CQRS system separates a Command Model from a Query Model. Whenever the system executes an action, an Action object is created and this is stored in the command model. A signal is then sent to the Query Model and all models that depend on this command are updated, asynchronously.
-    </p>
-    <p>
-        Data entering the system is written only to the Command Model. When an application needs to show data, it is read from the Query model.
-    </p>
-    <p>
-        The Query Models are "throw away" and may be recreated from the Command Model. However, it may take (considerable) time to recreate the Query Models.
-    </p>
-    
-    <p><center><img src="images/cqrs-1.png"></center></p>
 
     <h2>Problems</h2>
     <p>

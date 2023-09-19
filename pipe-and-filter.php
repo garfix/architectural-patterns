@@ -30,27 +30,6 @@ include 'template/header.php';
         The <b>sink</b> or consumer is the data target. It can be a another file, a database, or a computer screen.
     </p>
 
-    <h2>Examples</h2>
-    <ul>
-        <li>Unix programs. The output of one program can be linked to the input of another program.
-        <li>Compilers. The consecutive filters perform lexical analysis, parsing, semantic analysis, and code generation.
-    </ul>
-
-    <h2>Where does it come from?</h2>
-    <p>
-        The popularity of the architecture is mainly due to the Unix operating system. It has become popular because
-        Ken Thomson (who created Unix, together with Dennis Ritchie) decided to limit the architecture to a linear
-        pipeline. Using the architecture at all was an idea of Doug McIlroy, their manager at Bell Labs at the time (1972).
-        Both filters (coroutines) and pipes (streams) were not new, but it is not clear to me who designed
-        the architecture of linking the coroutines by streams. As far as I can see, the design was made by Doug McIlroy.
-    </p>
-
-    <h2>When should you use it?</h2>
-    <p>
-        This architecture is great if you have a lot of transformations to perform and you need to be very flexible
-        in using them, yet you want them to be robust.
-    </p>
-
     <h2>How does it work?</h2>
     <p>
         The application links together all inputs and outputs of the filters by pipes, then spawns separate threads
@@ -73,6 +52,27 @@ include 'template/header.php';
         sequence:
     </p>
     <p><center><img src="images/pipe_and_filter_4.jpg"></center></p>
+
+    <h2>Examples</h2>
+    <ul>
+        <li>Unix programs. The output of one program can be linked to the input of another program.
+        <li>Compilers. The consecutive filters perform lexical analysis, parsing, semantic analysis, and code generation.
+    </ul>
+
+    <h2>Where does it come from?</h2>
+    <p>
+        The popularity of the architecture is mainly due to the Unix operating system. It has become popular because
+        Ken Thomson (who created Unix, together with Dennis Ritchie) decided to limit the architecture to a linear
+        pipeline. Using the architecture at all was an idea of Doug McIlroy, their manager at Bell Labs at the time (1972).
+        Both filters (coroutines) and pipes (streams) were not new, but it is not clear to me who designed
+        the architecture of linking the coroutines by streams. As far as I can see, the design was made by Doug McIlroy.
+    </p>
+
+    <h2>When should you use it?</h2>
+    <p>
+        This architecture is great if you have a lot of transformations to perform and you need to be very flexible
+        in using them, yet you want them to be robust.
+    </p>
 
     <h2>Problems</h2>
     <ul>

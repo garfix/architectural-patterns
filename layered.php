@@ -18,26 +18,6 @@ include 'template/header.php';
     </p>
     <p><center><img src="images/layers_1.jpg"></center></p>
 
-    <h2>Examples</h2>
-    <ul>
-        <li>Operating Systems.
-        <li>Communication Protocols.
-    </ul>
-
-    <h2>Where does it come from?</h2>
-    <p>
-        The first use of layers in software architecture is in <a href="http://www.cs.utexas.edu/users/EWD/ewd01xx/EWD196.PDF">The structure of the 'THE'-multiprogramming system</a> by E.W. Dijkstra (1968).
-    </p>
-
-    <h2>When should you use it?</h2>
-    <p>
-        The layered system is ideal when your system has different levels of functionality. The function you want
-        your system to perform is actually performed at the lowest level, or layer. But you do not want to call
-        the functions at the lowest level directly all the time, because they are complex to use, they have
-        several different implementations, etc. At the highest level you just want a few simple functions
-        to do the things you want. Let the lower layers sort the rest out.
-    </p>
-
     <h2>How does it work?</h2>
     <p>
         Each layer offers its own kind of functionality. Lower layers are usually more domain specific, closer to the machine's
@@ -58,6 +38,26 @@ include 'template/header.php';
         The user calls a function on an object in the upper layer. This object calls functions in the layer below.
         These functions in turn approach the layer below and the layer above. Etc. Eventually the function is
         performed and control is returned to the user. All this is usually done sequentially, in the same thread.
+    </p>
+
+    <h2>Examples</h2>
+    <ul>
+        <li>Operating Systems.
+        <li>Communication Protocols.
+    </ul>
+
+    <h2>Where does it come from?</h2>
+    <p>
+        The first use of layers in software architecture is in <a href="http://www.cs.utexas.edu/users/EWD/ewd01xx/EWD196.PDF">The structure of the 'THE'-multiprogramming system</a> by E.W. Dijkstra (1968).
+    </p>
+
+    <h2>When should you use it?</h2>
+    <p>
+        The layered system is ideal when your system has different levels of functionality. The function you want
+        your system to perform is actually performed at the lowest level, or layer. But you do not want to call
+        the functions at the lowest level directly all the time, because they are complex to use, they have
+        several different implementations, etc. At the highest level you just want a few simple functions
+        to do the things you want. Let the lower layers sort the rest out.
     </p>
 
     <h2>Problems</h2>

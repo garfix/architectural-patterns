@@ -13,6 +13,20 @@ include 'template/header.php';
         Multiple nodes will contain the same resources and when one node requests a resource, it may be downloaded (seeded) from multiple nodes at the same time.
     </p>
 
+    <h2>How does it work?</h2>
+    <p>
+        There are two aspects to be considered. The first is: how do the nodes know that the others exist?<br>
+        A new node is added when a person adds the address of this node to the address table of some other node already in the network.<br>
+        The nodes themselves forward the addresses to the nodes with which they are directly linked.
+    </p>
+    <p>
+        The other aspect is resource discovery: how does one node know where to find a resource?<br>
+        The simple solution is to send a request to all peers and wait for the response.<br>
+        The advanced solution is the use of some sort of a data structure that tells each node where to find a resource.
+    </p>
+    
+    <p><center><img src="images/peer-to-peer.png"></center></p>
+
     <h2>Examples</h2>
     <ul>
         <li>USENET
@@ -29,20 +43,6 @@ include 'template/header.php';
         <li>Use it when there is a large set of resources to be maintained and shared by a large group of people.
         <li>Use it for its lack of a single-point-of-failure. Any node may fail temporarily or permanently and the system will not suffer.
     </p>
-
-    <h2>How does it work?</h2>
-    <p>
-        There are two aspects to be considered. The first is: how do the nodes know that the others exist?<br>
-        A new node is added when a person adds the address of this node to the address table of some other node already in the network.<br>
-        The nodes themselves forward the addresses to the nodes with which they are directly linked.
-    </p>
-    <p>
-        The other aspect is resource discovery: how does one node know where to find a resource?<br>
-        The simple solution is to send a request to all peers and wait for the response.<br>
-        The advanced solution is the use of some sort of a data structure that tells each node where to find a resource.
-    </p>
-    
-        <p><center><img src="images/peer-to-peer.png"></center></p>
 
     <h2>Problems</h2>
     <p>

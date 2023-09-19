@@ -16,18 +16,6 @@ include 'template/header.php';
         It's internal structure is not accessible to others.
     </p>
 
-    <h2>Where does it come from?</h2>
-    <p>
-        The term Multi-Agent Systems was popularized by <a href="http://www.csc.liv.ac.uk/~mjw/">Mike Wooldridge</a> in his 1992 PhD thesis.
-        MAS are an exponent of Distributed Artificial Intelligence and Agent techniques.
-    </p>
-
-    <h2>When should you use it?</h2>
-    <p>
-        Use it when your application requires many parts that all need to be active at the same time,
-        do not have a single solution space and do not require a centralized control.
-    </p>
-
     <h2>How does it work?</h2>
     <p>
         Agents can be organized in different ways in a MAS:
@@ -51,6 +39,18 @@ include 'template/header.php';
         Special agent-to-agent communication languages exist, formalising the way they should communicate.
         Along with formalised agent ontologies, they form semi-standardized ways of letting all sorts of
         agents communicate. This seems overkill for small size applications, however.
+    </p>
+
+    <h2>Where does it come from?</h2>
+    <p>
+        The term Multi-Agent Systems was popularized by <a href="http://www.csc.liv.ac.uk/~mjw/">Mike Wooldridge</a> in his 1992 PhD thesis.
+        MAS are an exponent of Distributed Artificial Intelligence and Agent techniques.
+    </p>
+
+    <h2>When should you use it?</h2>
+    <p>
+        Use it when your application requires many parts that all need to be active at the same time,
+        do not have a single solution space and do not require a centralized control.
     </p>
 
     <h2>Problems</h2>

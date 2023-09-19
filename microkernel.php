@@ -9,7 +9,13 @@ include 'template/header.php';
     <p>The microkernel can serve as a basis for systems that are by nature prone to dramatic changes, like Operating Systems. Think of changing your house. Not just redecorating the walls, or adding a barn. Think of changing the foundation. If your system needs to handle this kind of brutality, consider using a microkernel.</p>
     <p>This architecture is a specialization of a <a href="layers.html">layered system</a>.
 
-    <h2>Examples</h2>
+    <h2>How does it work?</h2>
+    <p>The <b>Microkernel</b> contains the absolute minimum functionality of the (Operating) System. It is platform dependent. In an OS, it handles system resources like memory, files, and processes.</p>
+    <p>The dynamic platform dependent code of the kernel is implemented in <b>Internal Servers</b>. These are for example the device drivers that steer the hardware directly. They may be loaded and unloaded without rebuilding or even rebooting the (Operating) System.</p>
+    <p>While the entire system may be accessed through the Microkernel, it is very Spartan. To ease systems programming, the (Operating) System may contain <b>External Servers</b>. Examples are Memory Management, File System Services, I/O Management Services and other System Services.</p>
+    <p>For portability, an extra <b>Adapter</b> is provided. This makes it possible to change an External Server without changing all applications that use it.</p>
+
+   <h2>Examples</h2>
     <ul>
         <li>Minix (see the very interesting <a href="http://www.oreilly.com/catalog/opensources/book/appa.html">discussion</a> on microkernels vs "monolithic systems" between Andrew Tanenbaum (Minix) and Linus Torvalds (Linux).
         <li>Mach
@@ -20,12 +26,6 @@ include 'template/header.php';
 
     <h2>When should you use it?</h2>
     <p>The architecture contains two adapters. The lower adapter, or Microkernel, hides the hardware specific modules for the developer. The upper adapter, called Adapter, hides the system specific modules for the developer. If your systems contains these types of modules and these are likely to be modified in the future, this architecture may be for you.</p>
-
-    <h2>How does it work?</h2>
-    <p>The <b>Microkernel</b> contains the absolute minimum functionality of the (Operating) System. It is platform dependent. In an OS, it handles system resources like memory, files, and processes.</p>
-    <p>The dynamic platform dependent code of the kernel is implemented in <b>Internal Servers</b>. These are for example the device drivers that steer the hardware directly. They may be loaded and unloaded without rebuilding or even rebooting the (Operating) System.</p>
-    <p>While the entire system may be accessed through the Microkernel, it is very Spartan. To ease systems programming, the (Operating) System may contain <b>External Servers</b>. Examples are Memory Management, File System Services, I/O Management Services and other System Services.</p>
-    <p>For portability, an extra <b>Adapter</b> is provided. This makes it possible to change an External Server without changing all applications that use it.</p>
 
     <p><center><img src="images/microkernel.jpg"></center><br><b><font face="comic sans ms" size="-1">Microkernel architecture</font></b></p>
 

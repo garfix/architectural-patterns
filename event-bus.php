@@ -8,18 +8,6 @@ include 'template/header.php';
     </header>
     <p>If your application requires a number of modules that need to communicate with each other in various ways, this architecture is a sure bet. It is endlessly flexible: you can add and remove modules at run-time, communicate directly or broadcast messages. It is completely free. </p>
         
-    <h2>Examples</h2>
-    From <a href="http://www.cs.uu.nl/docs/vakken/swa/20012002/Slides/SA-5-styles.pdf">Gert Florijn's slides on architectural styles and patterns</a>:
-    <ul>
-        <li>Process monitoring
-        <li>Trading Systems
-        <li>Software development environments
-    </ul>
-
-    <h2>When should you use it?</h2>
-    <p>
-    Use it when your application can be factored in functionally separable modules that are capable of communicating through simple messages.</p>
-
     <h2>How does it work?</h2>
     <p>Modules may be added and removed at any time.</p>
     <p>When a module wishes to communicate with another module or other modules, it places a message on the Event Bus. The Event Bus takes care of delivering the message to the recipients.</p>
@@ -32,6 +20,18 @@ include 'template/header.php';
     </ul>
     </p>
     <p>The sending module normally doesn't care when the other modules receive and process the message. If the time of processing is important, the message may be sent <i>immediately</i>. It corresponds to calling the function in receiving modules directly, with the difference that the modules are still decoupled.</p>
+
+    <h2>Examples</h2>
+    From <a href="http://www.cs.uu.nl/docs/vakken/swa/20012002/Slides/SA-5-styles.pdf">Gert Florijn's slides on architectural styles and patterns</a>:
+    <ul>
+        <li>Process monitoring
+        <li>Trading Systems
+        <li>Software development environments
+    </ul>
+
+    <h2>When should you use it?</h2>
+    <p>
+    Use it when your application can be factored in functionally separable modules that are capable of communicating through simple messages.</p>
 
     <h2>Problems</h2>
     <p>

@@ -9,6 +9,12 @@ include 'template/header.php';
     </header>
     <p>You just want the job to be done. You don't care who performs it, but you may have some demands. Tell your broker. He will take care of it.</p>
 
+    <h2>How does it work?</h2>
+    <p>At all times servers can register and deregister themselves with the broker. If a server fails, it will be automatically (after a timeout) unregistered by the broker.</p>
+    <p>The client requests a specific service. It formats its request in a specific format and sends it to its broker. The broker then selects the most suitable server to process the request. When the link between the client and the server is set up, they may start communicating directly, freeing the broker.</p>
+    <p><center><img src="images/broker.jpg"></center><br><b><font face="comic sans ms" size="-1">Picture: Broker Architecture</font></b></p>
+    <p>There may also be multiple brokers in an architecture. These will then need their own communication protocols.</p>
+
     <h2>Examples</h2>
     <ul>
         <li>CORBA (Common Object Request Broker Architecture)
@@ -29,20 +35,8 @@ include 'template/header.php';
     </ul>
     </p>
 
-    <h2>How does it work?</h2>
-    <p>At all times servers can register and deregister themselves with the broker. If a server fails, it will be automatically (after a timeout) unregistered by the broker.</p>
-    <p>The client requests a specific service. It formats its request in a specific format and sends it to its broker. The broker then selects the most suitable server to process the request. When the link between the client and the server is set up, they may start communicating directly, freeing the broker.</p>
-    <p><center><img src="images/broker.jpg"></center><br><b><font face="comic sans ms" size="-1">Picture: Broker Architecture</font></b></p>
-    <p>There may also be multiple brokers in an architecture. These will then need their own communication protocols.</p>
-
     <h2>Problems</h2>
     <p>Once you set up the broker, it is easy to program the service calls. Take care to handle transactions and exceptions well, though.</p>
-
-    <h2>Common implementations</h2>
-    <ul>
-        <li>Web Services
-        <li>CORBA
-    </ul>
 
     <h2>Links</h2>
     <ul>

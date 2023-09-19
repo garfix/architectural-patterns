@@ -30,22 +30,6 @@ include 'template/header.php';
         Variables and the effect of changing the Manipulated Variables on the Controlled Variables.
     </p>
 
-    <h2>Examples</h2>
-    <ul>
-        <li>Cruise Control.
-    </ul>
-
-    <h2>Where does it come from?</h2>
-    <p>
-        Process Control is an engineering disipline. It has a <a href="http://www.theorem.net/theorem/lewis1.html">long history</a>.
-    </p>
-
-    <h2>When should you use it?</h2>
-    <p>
-        Use such an architecture when there is something to be controlled and you have a number of outside
-        factors disturbing it.
-    </p>
-
     <h2>How does it work?</h2>
     <p>
         Process Control architectures have some variations. They can be either Open Loop or Closed Loop.
@@ -67,6 +51,22 @@ include 'template/header.php';
         Controlled Variable are fed back as Input Variables.
     </p>
     <p><center><img src="images/process_control_3.jpg"></center><br><b><font face="comic sans ms" size="-1">Picture: Feedforward Closed Loop</font></b></p>
+
+    <h2>Examples</h2>
+    <ul>
+        <li>Cruise Control.
+    </ul>
+
+    <h2>Where does it come from?</h2>
+    <p>
+        Process Control is an engineering disipline. It has a <a href="http://www.theorem.net/theorem/lewis1.html">long history</a>.
+    </p>
+
+    <h2>When should you use it?</h2>
+    <p>
+        Use such an architecture when there is something to be controlled and you have a number of outside
+        factors disturbing it.
+    </p>
 
     <h2>Links</h2>
     <ul>

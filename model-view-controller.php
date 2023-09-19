@@ -44,24 +44,6 @@ include 'template/header.php';
         view to advance the cursor position.
     </p>
 
-    <h2>Examples</h2>
-    <ul>
-        <li>The word processor. The model is a text. The wordprocessor may process several models at once.
-        Each text typically has a single MVC component attached to it, but a split-window is an example of
-        two components sharing the same text.
-    </ul>
-
-    <h2>Where does it come from?</h2>
-    The MVC architecture was developed as part of the Smalltalk group at the famous Xerox PARC. It is usually credited
-    to the Norwegian <a href="http://heim.ifi.uio.no/~trygver/trygve.html">Trygve Reenskaug</a>, who worked there
-    as a visiting scientist in 1978/1979. MVC is since then an integral part of the Smalltalk programming language.
-
-    <h2>When should you use it?</h2>
-    Most often you don't need to build such an architecture from scratch. The architectures usually come with
-    visual programming environments (like Visual C++, JBuilder, etc. etc.) which create the code for all MVC components for you, together with the
-    event handling mechanisms required. If this is so, it is still useful to know the basics of the architecture
-    you're working with.
-
     <h2>How does it work?</h2>
     <p>
         An MVC component is created in these steps
@@ -92,6 +74,24 @@ include 'template/header.php';
         The view of the registered component receives a notification from the model (3).
         The view updates itself as can be seen by the user (4).
     </p>
+
+    <h2>Examples</h2>
+    <ul>
+        <li>The word processor. The model is a text. The wordprocessor may process several models at once.
+        Each text typically has a single MVC component attached to it, but a split-window is an example of
+        two components sharing the same text.
+    </ul>
+
+    <h2>Where does it come from?</h2>
+    The MVC architecture was developed as part of the Smalltalk group at the famous Xerox PARC. It is usually credited
+    to the Norwegian <a href="http://heim.ifi.uio.no/~trygver/trygve.html">Trygve Reenskaug</a>, who worked there
+    as a visiting scientist in 1978/1979. MVC is since then an integral part of the Smalltalk programming language.
+
+    <h2>When should you use it?</h2>
+    Most often you don't need to build such an architecture from scratch. The architectures usually come with
+    visual programming environments (like Visual C++, JBuilder, etc. etc.) which create the code for all MVC components for you, together with the
+    event handling mechanisms required. If this is so, it is still useful to know the basics of the architecture
+    you're working with.
 
     <h2>Common implementation techniques</h2>
     <ul>

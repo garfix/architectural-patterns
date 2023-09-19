@@ -63,16 +63,6 @@ include 'template/header.php';
     <p>
         A <b>secondary adapter</b> is an implementation of the secondary port (which is an interface). For instance, it can be a small class that converts application storage requests to a given database, and return the results of the database in a format requested by the secondary port. It can also be a mock database object needed to unit tests certain parts of the core logic. The core logic calls the functions of the secondary adapter.
     </p>
-            
-    <h2>Where does it come from?</h2>
-    <p>
-        Alistair Cockburn invented it in <a href='http://c2.com/cgi/wiki?PortsAndAdaptersArchitecture'>2005</a>. It is a response to the desired to create thoroughly testable applications. As Cockburn says: "Allow an application to equally be driven by users, programs, automated test or batch scripts, and to be developed and tested in isolation from its eventual run-time devices and databases."
-    </p>
-
-    <h2>When should you use it?</h2>
-    <p>
-        If 100% unit-test code coverage is important to your application. Also, if you want to be able to switch your storage mechanism, or any other type of third-party code. The architecture is especially useful for long-lasting applications that need to keep up with changing requirements.
-    </p>
 
     <h2>How does it work?</h2>
     <p>
@@ -85,6 +75,16 @@ include 'template/header.php';
             <li>The core logic interacts with the secondary adapters only.</li>
             <li>Output of the core logic is returned to the primary adapters. They feed it back to the user.</li> 
         </ul>
+    </p>
+       
+    <h2>Where does it come from?</h2>
+    <p>
+        Alistair Cockburn invented it in <a href='http://c2.com/cgi/wiki?PortsAndAdaptersArchitecture'>2005</a>. It is a response to the desired to create thoroughly testable applications. As Cockburn says: "Allow an application to equally be driven by users, programs, automated test or batch scripts, and to be developed and tested in isolation from its eventual run-time devices and databases."
+    </p>
+
+    <h2>When should you use it?</h2>
+    <p>
+        If 100% unit-test code coverage is important to your application. Also, if you want to be able to switch your storage mechanism, or any other type of third-party code. The architecture is especially useful for long-lasting applications that need to keep up with changing requirements.
     </p>
 
     <h2>Common implementation techniques</h2>
