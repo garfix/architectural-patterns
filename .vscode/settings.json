@@ -1,3 +1,5 @@
 {
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "files.trimTrailingWhitespace": true,
+
 }

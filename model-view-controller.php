@@ -6,7 +6,7 @@ include 'template/header.php';
     <header class="content">
         <h1>Model-View-Controller</h1>
     </header>
-    
+
     <p>
         This architecture is used in simple GUI applications.
         The architecture is event-driven, which means that all activity starts by some event and is propagated by
@@ -57,7 +57,9 @@ include 'template/header.php';
     <p>
     The control flow within an MVC component.
     </p>
-    <p><img src="images/mvc_2.jpg"></p>
+
+    <figure><img src="images/mvc_2.jpg"><figcaption>Model-View-Controller architecture diagram</figcaption></figure>
+
     <p>
         The controller receives an event, say a keypress from the user (1).
         Depending on its own logic, it processes the event, and updates the model (2a)
@@ -69,7 +71,9 @@ include 'template/header.php';
         but also the views of other components which registered themselves to the model.
         In the next picture the same component as before is shown on top and a registered component is shown below.
     </p>
-    <p><img src="images/mvc_3.jpg"></p>
+
+    <figure><img src="images/mvc_3.jpg"><figcaption>Multiple components</figcaption></figure>
+
     <p>
         The view of the registered component receives a notification from the model (3).
         The view updates itself as can be seen by the user (4).

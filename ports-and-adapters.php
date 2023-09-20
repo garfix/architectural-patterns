@@ -23,13 +23,13 @@ include 'template/header.php';
         Advantages of this architecture:
     <ul>
         <li>The core logic can be tested independent of outside services.</li>
-        <li>It is easy to replace services by other ones that are more fit in view of changing requirements.</li> 
+        <li>It is easy to replace services by other ones that are more fit in view of changing requirements.</li>
     </ul>
     </p>
-    
+
     <div class="features">
         <article>
-            <img src='images/ports-and-adapters.png' />
+            <figure><img src="images/ports-and-adapters.png"><figcaption>Ports and Adapters architecture diagram</figcaption></figure>
         </article>
         <article>
             <table>
@@ -39,26 +39,26 @@ include 'template/header.php';
             <tr><td><b>dark red:</b></td><td>secondary ports</td></tr>
             <tr><td><b>dark blue:</b></td><td>secondary adapters</td></tr>
             </table>
-        </article>      
+        </article>
     </div>
-    
+
     <p>
         The number of ports depends on the application. The shown number of 6 ports nicely matches the name of the architecture. But the point of the architecture's name is not that the number six matters, but that <i>the core logic is at the center</i>. A realistic number of ports is about 2 to 4.
     </p>
-    
+
     <p>
-        A <b>port</b> is an entry point, provided by the core logic. It defines a set of functions. 
+        A <b>port</b> is an entry point, provided by the core logic. It defines a set of functions.
     </p>
     <p>
         <b>Primary ports</b> are the main API of the application. They are <i>called by</i> the primary adapters that form the user side of the application. Examples of primary ports are functions that allow you to change objects, attributes, and relations in the core logic.
     </p>
     <p>
-        <b>Secondary ports</b> are the interfaces for the secondary adapters. They are <i>called by</i> the core logic. An example of a secondary port is an interface to store single objects. This interface simply specifies that an object be created, retrieved, updated, and deleted. It tells you nothing about the way the object is stored.   
+        <b>Secondary ports</b> are the interfaces for the secondary adapters. They are <i>called by</i> the core logic. An example of a secondary port is an interface to store single objects. This interface simply specifies that an object be created, retrieved, updated, and deleted. It tells you nothing about the way the object is stored.
     <p>
         An <b>adapter</b> is a bridge between the application and the service that is needed by the application. It fits a specific port.
     </p>
     <p>
-        A <b>primary adapter</b> is a piece of code between the user and the core logic. One adapter could be a unit test function for the core logic. Another could be a controller-like function that interacts both with the graphical user interface and the core logic. The primary adapter calls the API functions of the core logic. 
+        A <b>primary adapter</b> is a piece of code between the user and the core logic. One adapter could be a unit test function for the core logic. Another could be a controller-like function that interacts both with the graphical user interface and the core logic. The primary adapter calls the API functions of the core logic.
     </p>
     <p>
         A <b>secondary adapter</b> is an implementation of the secondary port (which is an interface). For instance, it can be a small class that converts application storage requests to a given database, and return the results of the database in a format requested by the secondary port. It can also be a mock database object needed to unit tests certain parts of the core logic. The core logic calls the functions of the secondary adapter.
@@ -73,10 +73,10 @@ include 'template/header.php';
             <li>The primary adapters receive a link to the core logic. They start to drive the application.</li>
             <li>User input is processed by one or more primary adapter(s) and passed to the core logic.</li>
             <li>The core logic interacts with the secondary adapters only.</li>
-            <li>Output of the core logic is returned to the primary adapters. They feed it back to the user.</li> 
+            <li>Output of the core logic is returned to the primary adapters. They feed it back to the user.</li>
         </ul>
     </p>
-       
+
     <h2>Where does it come from?</h2>
     <p>
         Alistair Cockburn invented it in <a href='http://c2.com/cgi/wiki?PortsAndAdaptersArchitecture'>2005</a>. It is a response to the desired to create thoroughly testable applications. As Cockburn says: "Allow an application to equally be driven by users, programs, automated test or batch scripts, and to be developed and tested in isolation from its eventual run-time devices and databases."
@@ -88,13 +88,13 @@ include 'template/header.php';
     </p>
 
     <h2>Common implementation techniques</h2>
-    
+
     <p>
     Check <a href="http://alistair.cockburn.us/Hexagonal+architecture">Alistair Cockburn's article</a> and <a href="http://matteo.vaccari.name/blog/archives/154">Matteo Vaccari's blog</a> for some code examples.
     </p>
     <p>
     Some details:<br />
-    
+
     <ul>
         <li><a href='http://en.wikipedia.org/wiki/Dependency_injection'>Dependency injection</a> is used to pass the secondary adapters to the core logic</li>
         <li>Secondary ports are implemented as <a href='http://en.wikipedia.org/wiki/Interface_%28computing%29'>interfaces</a>. Secondary adapters implement these interfaces.</li>
@@ -106,7 +106,7 @@ include 'template/header.php';
     <ul>
         <li><a href="http://alistair.cockburn.us/Hexagonal+architecture">Hexagonal Architecture</a> Alistair Cockburn's original article on this architecture.
         <li><a href="http://matteo.vaccari.name/blog/archives/154">The birthday greetings kata</a> Matteo Vaccari's blog that provides an example Java implementation of the port and adapter.
-        <li><a href="http://www.natpryce.com/articles/000772.html">Visualising Test Terminology</a> Nat Price's information on testing using Ports-And-adapters.            
+        <li><a href="http://www.natpryce.com/articles/000772.html">Visualising Test Terminology</a> Nat Price's information on testing using Ports-And-adapters.
     </ul>
 </section>
 

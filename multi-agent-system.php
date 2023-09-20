@@ -30,10 +30,12 @@ include 'template/header.php';
             direct than between agents of different modules.
         </ul>
     </p>
-    <p><center><img src="images/mas_1.jpg"></center><br><b><font face="comic sans ms" size="-1">Picture: Flat Organisation</font></b></p>
-    <p><center><img src="images/mas_2.jpg"></center><br><b><font face="comic sans ms" size="-1">Picture: Hierarchical Organisation</font></b></p>
-    <p><center><img src="images/mas_3.jpg"></center><br><b><font face="comic sans ms" size="-1">Picture: Subsumption Organisation</font></b></p>
-    <p><center><img src="images/mas_4.jpg"></center><br><b><font face="comic sans ms" size="-1">Picture: Modular Organisation</font></b></p>
+
+    <figure><img src="images/mas_1.jpg"><figcaption>Multi-agent: Flat Organisation</figcaption></figure>
+    <figure><img src="images/mas_2.jpg"><figcaption>Multi-agent: Hierarchical Organisation</figcaption></figure>
+    <figure><img src="images/mas_3.jpg"><figcaption>Multi-agent: Subsumption Organisation</figcaption></figure>
+    <figure><img src="images/mas_4.jpg"><figcaption>Multi-agent: Modular Organisation</figcaption></figure>
+
     <p>
         Agents communicate with each other by sending messages. The messages use Speech Act Theory as their basis.
         Special agent-to-agent communication languages exist, formalising the way they should communicate.

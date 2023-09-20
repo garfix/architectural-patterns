@@ -10,7 +10,9 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>The Master has a number of independent jobs that need to be executed. It sends separate jobs to all its Slaves. The slave processes the job and sends back the results to the Master. The Master integrates the results in its database and feeds the Client more data.</p>
-    <p><center><img src="images/masterslave.jpg"></center><br><b><font face="comic sans ms" size="-1">Picture: Master-Slave Architecture</font></b></p>
+
+    <figure><img src="images/masterslave.jpg"><figcaption>Master-Slave architecture diagram</figcaption></figure>
+
     <p>The architecture may also allow clients to register and unregister at will.</p>
 
     <h2>Examples</h2>

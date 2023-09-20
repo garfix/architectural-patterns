@@ -13,7 +13,8 @@ include 'template/header.php';
     <h2>How does it work?</h2>
     <p>One or more Programs or Scripts are loaded into the Interpreter. They may be converted into an internal representation that can be processed more effectively by the Interpreter. Connections between the Program and the Environment are created.</p>
     <p>The Interpreter reads instructions from the Program and processes them. This affects the Environment. Changes in the Environment are fed back to the Program. This cycle is executed until the Program is finished.</p>
-    <p><center><img src="images/vm.jpg"></center></p>
+
+    <figure><img src="images/vm.jpg"><figcaption>Interpreter architecture diagram</figcaption></figure>
 
     <h2>Examples</h2>
     <ul>

@@ -38,19 +38,23 @@ include 'template/header.php';
     <p>
         <b>Open Loop</b> systems just perform a function on on the Input Variables to determine how to control the process.
     </p>
-    <p><center><img src="images/process_control_1.jpg"></center><br><b><font face="comic sans ms" size="-1">Picture: Open Loop</font></b></p>
+
+    <figure><img src="images/process_control_1.jpg"><figcaption>Proces Control: open loop</figcaption></figure>
+
     <p>
         <b>Feedback Closed Loop</b> systems measure changes in the Controlled Variable directly, and feed them
         back as Input Variables into the Controller.
     </p>
-    <p><center><img src="images/process_control_2.jpg"></center><br><b><font face="comic sans ms" size="-1">Picture: Feedback Closed Loop</font></b></p>
+
+    <figure><img src="images/process_control_2.jpg"><figcaption>Proces Control: closed loop</figcaption></figure>
+
     <p>
         <b>Feedforward Closed Loop</b> systems do not measure changes in the Controlled Variable directly, because
         they the Controlled Variable is not affected immediately, or because the Controlled Variable cannot be
         measured directly. In stead, variables named <b>Intermediate Variables</b> that are indications of the
         Controlled Variable are fed back as Input Variables.
     </p>
-    <p><center><img src="images/process_control_3.jpg"></center><br><b><font face="comic sans ms" size="-1">Picture: Feedforward Closed Loop</font></b></p>
+    <figure><img src="images/process_control_2.jpg"><figcaption>Proces Control: feedforward closed loop</figcaption></figure>
 
     <h2>Examples</h2>
     <ul>

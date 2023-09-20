@@ -26,13 +26,13 @@ include 'template/header.php';
     <p>
         The system may have the ability to tag some event. If so, the system provides lists of tags and the user may be able to revert the system to the state labeled with this tag.
     </p>
-    
-    <p><center><img src="images/event-sourcing-1.png"></center></p>
-    
+
+    <figure><img src="images/event-sourcing-1.png"><figcaption>Event-sourcing architecture diagram</figcaption></figure>
+
     <p>This picture shows the events in the event source. The red flag is the tag that points to the current event. The state of the system reflects all the events up to this point.</p>
 
-    <p><center><img src="images/event-sourcing-2.png"></center></p>
-    
+    <figure><img src="images/event-sourcing-2.png"><figcaption>Even-sourcing branches</figcaption></figure>
+
     <p>In the second picture a branch has been created starting with event #2. The client that uses the system is working on this branch and has created some events #4, #5, and #6 that exist parallel to the main branch. The state of this client reflects all events up to event #5. At some later state these branches may need to be merged into one again.</p>
 
     <h2>Examples</h2>

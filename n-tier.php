@@ -41,7 +41,8 @@ include 'template/header.php';
     <p>
         The third, or <b>database tier</b> contains the database management system that manages all persistent data.
     </p>
-    <p><center><img src="images/tiers_1.jpg"></center></p>
+
+    <figure><img src="images/tiers_1.jpg"><figcaption>N-tiers architecture diagram</figcaption></figure>
 
     <p>
         It is clear that there are multiple clients. That's what client-server computing is all about.
@@ -60,7 +61,7 @@ include 'template/header.php';
         Clients communicate to the application server directly or to a broker that balances requests between
         separate server machines. The database layer usually contains only one database.
     </p>
-    
+
     <h2>Examples</h2>
     <ul>
         <li>Web-applications. Where the first tier is the application-tier, the second tier is the
@@ -87,7 +88,8 @@ include 'template/header.php';
         The application tier is broken down into separate parts. What these parts are differs from system to system.
         The following picture shows it:
     </p>
-    <p><center><img src="images/tiers_2.jpg"></center></p>
+
+    <figure><img src="images/tiers_2.jpg"><figcaption>Multiple tiers</figcaption></figure>
 
     <h2>When should you use it?</h2>
     <p>

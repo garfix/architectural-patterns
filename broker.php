@@ -12,7 +12,9 @@ include 'template/header.php';
     <h2>How does it work?</h2>
     <p>At all times servers can register and deregister themselves with the broker. If a server fails, it will be automatically (after a timeout) unregistered by the broker.</p>
     <p>The client requests a specific service. It formats its request in a specific format and sends it to its broker. The broker then selects the most suitable server to process the request. When the link between the client and the server is set up, they may start communicating directly, freeing the broker.</p>
-    <p><center><img src="images/broker.jpg"></center><br><b><font face="comic sans ms" size="-1">Picture: Broker Architecture</font></b></p>
+
+    <figure><img src="images/broker.jpg"><figcaption>Broker architecture diagram</figcaption></figure>
+
     <p>There may also be multiple brokers in an architecture. These will then need their own communication protocols.</p>
 
     <h2>Examples</h2>

@@ -19,7 +19,8 @@ include 'template/header.php';
     <p><b>Presentation</b> is exactly like the View of MVC. It displays the information from the Abstraction.</p>
 
     PAC components are connected in a hierarchical fashion, thus:<p>
-    <p><center><img src="images/pac_1.jpg"></center></p>
+
+    <figure><img src="images/pac_1.jpg"><figcaption>Presentation-Abstraction-Control architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>The parent Control creates its child PAC elements, either at program startup, or dynamically at run-time.</p>
@@ -27,9 +28,11 @@ include 'template/header.php';
     Then it sends a change event to its parent (3). The parent updates its children (but not the child where the change originated) (5), which all update their Presentation (6a) and/or Abstraction (6b).
     After the children have been updated, the parent is updated (7). This ends when all necessary PAC elements have been updated.
     </p>
-    <p><center><img src="images/pac_2.jpg"></center></p>
+
+    <figure><img src="images/pac_2.jpg"><figcaption>Presentation-Abstraction-Control data flow</figcaption></figure>
+
     <p>Children and parents may send very specific update events to their neighbors. That way, the PAC elements may decide the extent of the effect of the change. Small changes need not be propagated through the entire hierarchy.
-        
+
     <h2>Examples</h2>
     <ul>
         <li>Most modern compound GUI applications are <i>loosely</i> based on this architecture. However, the architecture is in practice usually much more complicated.

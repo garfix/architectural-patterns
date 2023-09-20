@@ -13,7 +13,9 @@ include 'template/header.php';
         The filters are all working <i>at the same time</i>.
         The architecture is often used as a simple sequence, but it may also be used for very complex structures.
     </p>
-    <p><center><img src="images/pipe_and_filter_2.jpg"></center></p>
+
+    <figure><img src="images/pipe_and_filter_2.jpg"><figcaption>Pipe and Filter architecture diagram</figcaption></figure>
+
     <p>
         The <b>filter</b> transforms or <i>filters</i> the data it receives via the pipes with which it is connected.
         A filter can have any number of input pipes and any number of output pipes.
@@ -36,7 +38,9 @@ include 'template/header.php';
         for each filter to run in.<br>
         Here's an idea of the relationships that can be created between the different filter processes, through pipes.
     </p>
-    <p><center><img src="images/pipe_and_filter_3.jpg"></center></p>
+
+    <figure><img src="images/pipe_and_filter_3.jpg"><figcaption>Pipe examples</figcaption></figure>
+
     <p>
         All filters are processes that run (virtually) at the same time. That means, they can run as different
         threads, coroutines, or be located on different machines entirely.
@@ -51,7 +55,8 @@ include 'template/header.php';
         The architecture also allows for a recursive technique, whereby a filter itself consists of a pipe-filter
         sequence:
     </p>
-    <p><center><img src="images/pipe_and_filter_4.jpg"></center></p>
+
+    <figure><img src="images/pipe_and_filter_4.jpg"><figcaption>Recursive pipes</figcaption></figure>
 
     <h2>Examples</h2>
     <ul>

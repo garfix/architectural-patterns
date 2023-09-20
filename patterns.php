@@ -37,7 +37,7 @@ include 'template/header.php';
                 [
                     name => "N-Tier",
                     image => "tiers_1.jpg",
-                    link => "tiers"
+                    link => "n-tier"
                 ],
                 [
                     name => "Repository",
@@ -113,10 +113,10 @@ include 'template/header.php';
                     name => "Command-Query Responsibility Segregation",
                     image => "cqrs-1.png",
                     link => "cqrs"
-                ]                
+                ]
             ];
 
-            usort($patterns, function ($a, $b) { 
+            usort($patterns, function ($a, $b) {
                 return ($a['name'] < $b['name']) ? -1 : 1;
             });
         ?>

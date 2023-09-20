@@ -7,39 +7,43 @@ include 'template/header.php';
         <h1>Blackboard</h1>
     </header>
     <p>
-                    Picture a number of students are all writing on a blackboard at the same time, trying to solve a problem.
-                    You think they will? What if we add a teacher who first asks each student what he wants to write on
-                    the blackboard and decides which student has the best idea. And when the student is finished, the process is repeated.
-                    This is the idea behind the blackboard architecture. The students are called Knowledge Sources. The teacher is
-                    called the Scheduler.
+        Picture a number of students are all writing on a blackboard at the same time, trying to solve a problem.
+        You think they will? What if we add a teacher who first asks each student what he wants to write on
+        the blackboard and decides which student has the best idea. And when the student is finished, the process is repeated.
+        This is the idea behind the blackboard architecture. The students are called Knowledge Sources. The teacher is
+        called the Scheduler.
     </p>
-    <p><center><img src="images/blackboard_1.jpg"></center></p>
-            <p>
-                    The <b>Blackboard</b> is the common datastructure of the Knowledge Sources. The blackboard is able to represent
-                    all states of some problem space.
-                    The blackboard contains several <b>levels</b> of description with respect to the problem space. These levels may have several
-                    relationships with each other, like <i>is-part-of</i>. Levels are parts of the same datastructure. If separate datastructures
-                    are needed, the blackboard is divided into <b>panels</b>. Each panel in turn may contain several levels.
-            </p>
-    <p><center><img src="images/blackboard_3.jpg"></center></p>
-            <p>
-                    The <b>Knowledge Source</b> is a component that adds to the solution of the problem. It may be anything that reads from
-                    some level of the blackboard and suggests some change to parts of the blackboard. Its most common form is the production rule.
-                    Knowledge Sources are completely unconnected to other Knowledge Sources.
-            </p>
-            <p>
-                    The <b>Scheduler</b> determines which Knowledge Source gets the chance to change the blackboard. Every execution cycle, it notices changes
-                    to the blackboard, activates the appropriate Knowledge Sources, selects one of these and executes it.
-            </p>
+
+    <figure><img src="images/blackboard_1.jpg"><figcaption>Blackboard architecture diagram</figcaption></figure>
+
+    <p>
+        The <b>Blackboard</b> is the common datastructure of the Knowledge Sources. The blackboard is able to represent
+        all states of some problem space.
+        The blackboard contains several <b>levels</b> of description with respect to the problem space. These levels may have several
+        relationships with each other, like <i>is-part-of</i>. Levels are parts of the same datastructure. If separate datastructures
+        are needed, the blackboard is divided into <b>panels</b>. Each panel in turn may contain several levels.
+    </p>
+
+    <figure><img src="images/blackboard_3.jpg"><figcaption>Blackboard panels</figcaption></figure>
+    <p>
+        The <b>Knowledge Source</b> is a component that adds to the solution of the problem. It may be anything that reads from
+        some level of the blackboard and suggests some change to parts of the blackboard. Its most common form is the production rule.
+        Knowledge Sources are completely unconnected to other Knowledge Sources.
+    </p>
+    <p>
+        The <b>Scheduler</b> determines which Knowledge Source gets the chance to change the blackboard. Every execution cycle, it notices changes
+        to the blackboard, activates the appropriate Knowledge Sources, selects one of these and executes it.
+    </p>
 
     <p>The blackboard is a specialisation of the <a href="repository">Repository</a> architecture.</p>
 
     <h2>How does it work?</h2>
     <p>
-                    Running the program having this architecture, entails continually executing the execution cycle (control, cycle).
-                    These are the steps that are continuously executed during the cycle:
-            </p>
-    <p><center><img src="images/blackboard_2.jpg"></center></p>
+        Running the program having this architecture, entails continually executing the execution cycle (control, cycle).
+        These are the steps that are continuously executed during the cycle:
+    </p>
+
+    <figure><img src="images/blackboard_2.jpg"><figcaption>Blackboard data flow</figcaption></figure>
             <p>
         <ol>
             <li>The preconditions of all Knowledge Sources are checked.

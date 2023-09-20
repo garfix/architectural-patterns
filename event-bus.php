@@ -7,11 +7,13 @@ include 'template/header.php';
         <h1>Event-bus</h1>
     </header>
     <p>If your application requires a number of modules that need to communicate with each other in various ways, this architecture is a sure bet. It is endlessly flexible: you can add and remove modules at run-time, communicate directly or broadcast messages. It is completely free. </p>
-        
+
     <h2>How does it work?</h2>
     <p>Modules may be added and removed at any time.</p>
     <p>When a module wishes to communicate with another module or other modules, it places a message on the Event Bus. The Event Bus takes care of delivering the message to the recipients.</p>
-    <p><center><img src="images/eventbus.jpg"></center><br><b><font face="comic sans ms" size="-1">Event Bus architecture</font></b></p>
+
+    <figure><img src="images/broeventbusker.jpg"><figcaption>Event-bus architecture diagram</figcaption></figure>
+
     <p>There are several types of communication that may occur on the Event Bus:
     <ul>
         <li>Publish-Subscribe: Modules may subscribe to certain message types. Whenever a module publishes a message to the bus, it will be delivered to all modules that subscribed to its message type.
@@ -49,7 +51,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="http://msdn.microsoft.com/library/en-us/dnpag/html/ArchMessageBus.asp">MSDN, Patterns and Practices: Message Bus<li><a href="http://martinfowler.com/articles/microservices.html">Martin Fowler on Microservices</a>            
+        <li><a href="http://msdn.microsoft.com/library/en-us/dnpag/html/ArchMessageBus.asp">MSDN, Patterns and Practices: Message Bus<li><a href="http://martinfowler.com/articles/microservices.html">Martin Fowler on Microservices</a>
     </ul>
 </section>
 

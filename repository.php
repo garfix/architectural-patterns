@@ -19,7 +19,9 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>All knowledge sources can read/write to the repository. The way all these interactions are synchronized is up to the repository and the way the repository is used.</p>
-    <p><center><img src="images/repository.jpg"></center><br><b><font face="comic sans ms" size="-1">Repository architecture</font></b></p>
+
+    <figure><img src="images/repository.jpg"><figcaption>Repository architecture diagram</figcaption></figure>
+
     <p>Compilers use a repository. The stages of the compiler are performed successively. This way the repository is used orderly.</p>
     <p>Databased are repositories. Since all clients of the database may be active at the same time, the database needs to implement locking mechanisms to ensure the integrity of the repository is kept intact.</p>
 

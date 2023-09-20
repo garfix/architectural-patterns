@@ -16,7 +16,8 @@ include 'template/header.php';
         like they are all in the same layer. That means that they only communicate with classes in layers immediately
         above or below their layer and with themselves.
     </p>
-    <p><center><img src="images/layers_1.jpg"></center></p>
+
+    <figure><img src="images/layers_1.jpg"><figcaption>Layered architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>
@@ -33,7 +34,9 @@ include 'template/header.php';
         Its possible to define multiple layers at the same level. It implies that objects of these
         layers do not communicate with eachother.
     </p>
-    <p><center><img src="images/layers_2.jpg"></center></p>
+
+    <figure><img src="images/layers_2.jpg"><figcaption>Multiple layers at the same level</figcaption></figure>
+
     <p>
         The user calls a function on an object in the upper layer. This object calls functions in the layer below.
         These functions in turn approach the layer below and the layer above. Etc. Eventually the function is

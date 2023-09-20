@@ -23,7 +23,8 @@ include 'template/header.php';
         immediate actions are taken at the time of the transition. A state transition must be defined for
         every allowable transition between any two states.
     </p>
-    <p><center><img src="images/fsm_1.jpg"></center></p>
+
+    <figure><img src="images/fsm_1.jpg"><figcaption>Finite State Machine architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>
@@ -82,7 +83,9 @@ include 'template/header.php';
             followed by the enter code of D.
         </ol>
     </p>
-    <p><center><img src="images/fsm_2.jpg"></center></p>
+
+    <figure><img src="images/fsm_2.jpg"><figcaption>Hierarchical Finite State Machine diagram</figcaption></figure>
+
     <p>
         It is even possible to have more than one Finite State Machine in a single state. These all become
         active whenever the super state becomes active. This creates the problem of what should happen when
@@ -108,7 +111,7 @@ include 'template/header.php';
         Advanced state machines may keep track of how much time was spent in each state, if a state is entered
         for the first time, log changes for debugging, etc.
     </p>
-    
+
     <h2>Examples</h2>
     <ul>
         <li>A coffee machine is the archetypal state machine.

@@ -24,8 +24,8 @@ include 'template/header.php';
         The simple solution is to send a request to all peers and wait for the response.<br>
         The advanced solution is the use of some sort of a data structure that tells each node where to find a resource.
     </p>
-    
-    <p><center><img src="images/peer-to-peer.png"></center></p>
+
+    <figure><img src="images/peer-to-peer.png"><figcaption>Peer to Peer architecture diagram</figcaption></figure>
 
     <h2>Examples</h2>
     <ul>
