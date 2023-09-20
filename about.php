@@ -18,7 +18,7 @@ include 'template/header.php';
             <p>On this site an architectural pattern is an organizational structure that determines the type of system, and defines the main components of a system, and their interactions.</p>
         </dd>
     </dl>
-    <p>        
+    <p>
         This excludes "Object oriented programming", as it does not define any main components.
     </p>
     <p>
@@ -38,7 +38,7 @@ include 'template/header.php';
     </p>
     <p>Twenty years later I thought it would be good to modernize the site, update the contents, and give it a proper domain.
     <p>
-        <center><img src="images/old-site.png" /></center>
+        <figure><img src="images/old-site.png"><figcaption>The header of the old website</figcaption></figure>
     </p>
 </section>
 

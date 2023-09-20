@@ -17,6 +17,13 @@ include 'template/header.php';
     <p>
         This site gives you a quick overview of the most well known architectural patterns. They have been used for a wide variety of applications and serve many different purposes. The list continues to grow as new patterns are still being invented. They are meant as a source of inspiration and may be freely adapted and combined. I hope you enjoy them.
     </p>
+    <p>
+        I will leave you with this thought
+    </p>
+        <blockquote>
+            Beauty is more important in computing than anywhere else in technology because software is so complicated. Beauty is the ultimate defense against complexity.
+        </blockquote>
+    <p>—David Gelernter (in Machine Beauty: Elegance and the Heart of Technology) Found <a target="_blank" href="https://vanderburg.org/etc/quotes/gelernter-beauty/">here</a>.
     <ul class="actions">
         <li><a href="patterns.php" class="button big">To the patterns</a></li>
     </ul>
