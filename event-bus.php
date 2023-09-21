@@ -12,7 +12,7 @@ include 'template/header.php';
     <p>Modules may be added and removed at any time.</p>
     <p>When a module wishes to communicate with another module or other modules, it places a message on the Event Bus. The Event Bus takes care of delivering the message to the recipients.</p>
 
-    <figure><img src="images/broeventbusker.jpg"><figcaption>Event-bus architecture diagram</figcaption></figure>
+    <figure><img src="images/eventbus.jpg"><figcaption>Event-bus architecture diagram</figcaption></figure>
 
     <p>There are several types of communication that may occur on the Event Bus:
     <ul>
