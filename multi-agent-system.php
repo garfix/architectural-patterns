@@ -1,4 +1,5 @@
 <?php
+$title = "Multi-agent System";
 include 'template/header.php';
 ?>
 

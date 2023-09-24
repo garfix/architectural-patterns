@@ -1,4 +1,5 @@
 <?php
+$title = "Blackboard";
 include 'template/header.php';
 ?>
 

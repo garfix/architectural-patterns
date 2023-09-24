@@ -1,4 +1,5 @@
 <?php
+$title = "Finite State Machine";
 include 'template/header.php';
 ?>
 

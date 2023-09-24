@@ -1,4 +1,5 @@
 <?php
+$title = "Event-sourcing";
 include 'template/header.php';
 ?>
 

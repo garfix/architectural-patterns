@@ -1,10 +1,11 @@
 <?php
+$title = "Pipe and Filter";
 include 'template/header.php';
 ?>
 
 <section>
     <header class="content">
-        <h1>Pipe-and-Filter</h1>
+        <h1>Pipe and Filter</h1>
     </header>
     <p>
         A very simple, yet powerful architecture, that is also very robust. It consists of any number of components

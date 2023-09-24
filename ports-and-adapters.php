@@ -1,4 +1,5 @@
 <?php
+$title = "Ports and Adapters";
 include 'template/header.php';
 ?>
 

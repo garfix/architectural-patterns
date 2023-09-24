@@ -1,4 +1,5 @@
 <?php
+$title = "Peer to Peer";
 include 'template/header.php';
 ?>
 

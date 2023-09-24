@@ -1,4 +1,5 @@
 <?php
+$title = "Hub and Spoke";
 include 'template/header.php';
 ?>
 

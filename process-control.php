@@ -1,4 +1,5 @@
 <?php
+$title = "Process Control";
 include 'template/header.php';
 ?>
 

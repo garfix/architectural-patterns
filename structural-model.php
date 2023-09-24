@@ -1,4 +1,5 @@
 <?php
+$title = "Structural Model";
 include 'template/header.php';
 ?>
 

@@ -1,4 +1,5 @@
 <?php
+$title = "Layered";
 include 'template/header.php';
 ?>
 

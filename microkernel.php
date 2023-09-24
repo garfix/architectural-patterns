@@ -1,4 +1,5 @@
 <?php
+$title = "Microkernel";
 include 'template/header.php';
 ?>
 

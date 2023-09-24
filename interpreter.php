@@ -1,4 +1,5 @@
 <?php
+$title = "Interpreter";
 include 'template/header.php';
 ?>
 

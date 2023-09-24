@@ -1,4 +1,5 @@
 <?php
+$title = "Model-View-Controller";
 include 'template/header.php';
 ?>
 

@@ -1,4 +1,5 @@
 <?php
+$title = "Event-bus";
 include 'template/header.php';
 ?>
 

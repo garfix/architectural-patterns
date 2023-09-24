@@ -1,4 +1,5 @@
 <?php
+$title = "Master-Slave";
 include 'template/header.php';
 ?>
 

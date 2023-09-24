@@ -1,4 +1,5 @@
 <?php
+$title = "CQRS";
 include 'template/header.php';
 ?>
 

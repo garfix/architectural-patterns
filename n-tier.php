@@ -1,4 +1,5 @@
 <?php
+$title = "N-tier";
 include 'template/header.php';
 ?>
 
