@@ -28,7 +28,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnpag/html/ArchMessageBroker.asp">MSDN, Patterns and Practices: Message Broker/Hub and Spoke</a>
+        None yet
     </ul>
 </section>
 

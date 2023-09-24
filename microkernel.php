@@ -39,9 +39,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="http://www-courses.cs.uiuc.edu/~cs427/presentations/Nov20/microkernel.ppt">Powerpoint presentation: Microkernel pattern</a>
-        <li><a href="http://www.e-words.co.uk/acrobat/post.pdf">Microkernel - from: A System of Patterns - Pattern-Oriented Software Architecture</a>
-        <li><a href="http://people.cs.uchicago.edu/~mark/51050/lectures/lecture.6/lecture.6.pdf">Lecture 6: Microkernel and Reflection</a>
+        <li><a href="https://en.wikipedia.org/wiki/Microkernel">Wikipedia on Microkernel</a>
     </ul>
 </section>
 

@@ -38,9 +38,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="http://www.sei.cmu.edu/pub/documents/93.reports/pdf/tr14.93.pdf">Structural Modeling: An Application Framework and Development Process for Flight Simulators</a>
-        <li><a href="http://citeseer.ist.psu.edu/cache/papers/cs/2454/http:zSzzSzwww.cgl.uwaterloo.cazSz~rnkazmanzSzHPDC.pdf/distributed-flight-simulation-a.pdf">Distributed Flight Simulation:
-A Challenge for Software Architecture</a>
+        None yet
     </ul>
 </section>
 

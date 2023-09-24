@@ -105,8 +105,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="http://www.ccmrc.ucsb.edu/~stp/PostScript/mvc.pdf">A Description of the Model-View-Controller User Interface Paradigm in the Smalltalk-80 System</a>
-        <li><a href="http://st-www.cs.uiuc.edu/users/smarch/st-docs/mvc.html">Applications Programming in Smalltalk-80: How to use Model-View-Controller (MVC)</a>
+        <li><a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">Wikipedia on Model-View-Controller</a>
     </ul>
 </section>
 

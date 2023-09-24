@@ -42,10 +42,8 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://www.guru99.com/soa-principles.html">SOA (Service Oriented Architecture) Principles</a>
-        <li><a href="http://www.vico.org/pages/PatronsDisseny/Pattern%20Broker/">Pattern: Broker</a>
+        <li><a href="https://en.wikipedia.org/wiki/Service-oriented_architecture">Wikipedia on Service Oriented Architecture</a>
         <li><a href="http://www.openloop.com/softwareEngineering/patterns/architecturePattern/arch_Broker.htm">Architectural Patterns: Broker</a>
-        <li><a href="http://www.cs.indiana.edu/~kksiazek/tuto.html">A brief tutorial on CORBA</a>
     </ul>
 </section>
 

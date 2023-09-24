@@ -75,7 +75,6 @@ include 'template/header.php';
     <h2>Links</h2>
     <ul>
         <li><a href="http://www-2.cs.cmu.edu/afs/cs/project/vit/ftp/pdf/ByndObj.pdf">Beyond Objects: A Software Design Paradigm Based on Process Control</a>
-        <li><a href="http://www.theorem.net/theorem/lewis1.html">A brief history of feedback control</a>
     </ul>
 </section>
 

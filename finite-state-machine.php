@@ -131,8 +131,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="http://ai-depot.com/FiniteStateMachines/">Finite State Machines</a>
-        <li><a href="http://homepage.mac.com/pauljlucas/resume/thesis.pdf">An object-oriented language system for implementing concurrent hierarchical finite state machines</a>
+        None yet
     </ul>
 </section>
 

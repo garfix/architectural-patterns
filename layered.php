@@ -81,6 +81,7 @@ include 'template/header.php';
     <h2>Links</h2>
     <ul>
         <li><a href="http://www.sei.cmu.edu/publications/documents/00.reports/00sr004/00sr004chap02.html">The Layered View</a>
+        <li><a href="https://en.wikipedia.org/wiki/Abstraction_layer">Wikipedia on layers</a>
     </ul>
 </section>
 

@@ -56,12 +56,9 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Presentation%E2%80%93abstraction%E2%80%93control">wikipedia on Presentation-Abstraction-Control</a>
         <li>Coutaz, J. PAC, an Object Oriented Model for Dialog Design. In Rullinger, H. I. and Shackel, R. (eds),
 Human-Computer Interaction - INTERACT 87. Elsevier Science Publishers, 1987, pp 431-436
-        <li><a href="http://www.vico.org/pages/PatronsDisseny/Pattern%20Presentation%20Abstra/">Pattern: Presentation-Abstraction-Control</a>
-        <li><a href="http://trese.cs.utwente.nl/courses/university_courses/patterns/material/oldstuff/presentation_abstraction_control.pdf">Presentation-abstraction-control Pattern</a>
-        <li><a href="http://www1.acm.org/sigs/sigchi/chi97/proceedings/paper/jcc.htm">From Single-User Architectural Design to PAC*: a Generic Software Architecture Model for CSCW</a>
-        <li><a href="http://iihm.imag.fr/demos/IntrosPAC/index.html">IntrosPAC</a> In French, but look at the video.
         </ul>
 </section>
 

@@ -67,8 +67,6 @@ include 'template/header.php';
     <h2>Links</h2>
     <ul>
         <li><a href="http://www.ri.cmu.edu/pub_files/pub1/shehory_onn_1998_1/shehory_onn_1998_1.pdf">Architectural Properties of Multi-Agent Systems</a>
-        <li><a href="http://www.acm.org/crossroads/xrds5-4/multiagent.html">Towards a Standardization of Multi-Agent System Frameworks</a>
-        <li><a href="http://citeseer.nj.nec.com/cache/papers/cs/3935/http:zSzzSzwww.cosy.sbg.ac.atzSz~stokkermzSzwooldridge.pdf/wooldridge92logical.pdf">The logical modelling of computational Multi-Agent Systems</a> PhD Thesis of Mike Wooldridge.
     </ul>
 </section>
 

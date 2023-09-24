@@ -32,7 +32,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="http://www.vico.org/pages/PatronsDisseny/Pattern%20Master%20Slave/">Pattern: Master-Slave</a>
+        None yet
     </ul>
 </section>
 

@@ -56,8 +56,6 @@ include 'template/header.php';
     <ul>
         <li><a href="http://martinfowler.com/bliki/CQRS.html">Martin Fowler on CQRS</a>
         <li><a href="https://msdn.microsoft.com/en-us/library/dn568103.aspx">MSDN on CQRS</a>
-        <li><a href="http://codebetter.com/gregyoung/2010/02/16/cqrs-task-based-uis-event-sourcing-agh/">Greg Young on CQRS</a>
-        <li><a href="https://www.youtube.com/watch?v=JHGkaShoyNs">Greg Young video on Event sourcing and CQRS</a>
         <li><a href="http://www.h-online.com/developer/features/CQRS-an-architecture-precept-based-on-segregation-of-commands-and-queries-1803276.html">CQRS - a new architecture precept based on segregation of commands and queries</a>
     </ul>
 </section>

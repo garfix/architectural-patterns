@@ -68,7 +68,6 @@ include 'template/header.php';
     <h2>Links</h2>
     <ul>
         <li><a href="http://martinfowler.com/eaaDev/EventSourcing.html">Martin Fowler on Event sourcing</a>
-        <li><a href="http://cqrs.nu/Faq/event-sourcing">cqrs.nu on Event sourcing</a>
         <li><a href="https://www.youtube.com/watch?v=JHGkaShoyNs">Greg Young on Event sourcing and CQRS</a>
     </ul>
 </section>

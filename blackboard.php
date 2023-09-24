@@ -104,8 +104,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="http://gicl.mcs.drexel.edu/people/regli/Classes/KBA/Readings/KSL-98-03-BB.pdf">An Introduction to Blackboard-Style Systems Organization</a>
-        <li><a href="http://www.jaydeetechnology.co.uk/expertsystems/BA8.pdf">Blackboard Architectures</a>
+        <li><a href="https://en.wikipedia.org/wiki/Blackboard_(design_pattern)">Wikipedia on Blackboard</a>
     </ul>
 </section>
 

@@ -105,6 +105,7 @@ include 'template/header.php';
     <h2>Links</h2>
     <ul>
         <li><a href="http://alistair.cockburn.us/Hexagonal+architecture">Hexagonal Architecture</a> Alistair Cockburn's original article on this architecture.
+        <li><a href="https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)">Wikipedia on Hexgonal Architecture</a>
         <li><a href="http://matteo.vaccari.name/blog/archives/154">The birthday greetings kata</a> Matteo Vaccari's blog that provides an example Java implementation of the port and adapter.
         <li><a href="http://www.natpryce.com/articles/000772.html">Visualising Test Terminology</a> Nat Price's information on testing using Ports-And-adapters.
     </ul>

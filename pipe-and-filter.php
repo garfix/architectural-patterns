@@ -94,8 +94,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="http://www4.desales.edu/~dlm1/it533/class03/pipe.html">Course on Software Architectures - Pipe-And-Filter</a>
-        <li><a href="http://cm.bell-labs.com/cm/cs/who/dmr/hist.html">The Evolution of the Unix Time-sharing System</a>
+        <li><a href="https://en.wikipedia.org/wiki/Pipeline_(software)">Wikipedia on Pipes and Filters</a>
     </ul>
 </section>
 

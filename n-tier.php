@@ -100,7 +100,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="http://n-tier.com/articles/csovervw.html">Client/Server and the N-Tier Model of Distributed Computing.</a>
+        <li><a href="https://en.wikipedia.org/wiki/Multitier_architecture">Wikipedia on Multitier</a>
         <li><a href="http://sunsite.uakom.sk/sunworldonline/swol-08-1998/swol-08-java.html">Beyond n-tier: what you really get from Java</a>
     </ul>
 </section>
