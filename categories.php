@@ -1,4 +1,5 @@
 <?php
+$title = "Categories";
 include 'template/header.php';
 include 'data.php';
 ?>

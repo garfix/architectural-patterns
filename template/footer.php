@@ -20,7 +20,7 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href=".">Homepage</a></li>
+										<li><a href=".">Home</a></li>
 										<li><a href="patterns">Pattern overview</a></li>
                                         <li><a href="categories">Categories</a></li>
 										<li><a href="about">About</a></li>

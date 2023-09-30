@@ -1,4 +1,5 @@
 <?php
+$title = "Patterns";
 include 'template/header.php';
 include 'data.php';
 ?>
