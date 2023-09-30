@@ -6,12 +6,19 @@ include 'template/header.php';
 <section>
     <header class="content">
         <h1>Repository</h1>
+        <p>Database</p>
     </header>
-    <p>The repository contains a single datastructure, the Repository, and a number of modules called Knowledge Sources, that modify this datastructure. These are the only characteristics of a repository architecture. If all these Knowledge Sources start modifying at the same time, all hell breaks loose. Therefore the order in which they have access needs to be regulated.</p>
+
+    <p>
+        The repository pattern contains a single datastructure, the Repository, and a number of modules called Knowledge Sources, that modify this datastructure.
+    </p>
+    <p>
+        Not to be confused with the <a href="https://martinfowler.com/eaaCatalog/repository.html">software design pattern by the same name</a>.
+    </p>
 
     <h2>Examples</h2>
     <ul>
-        <li>Database.
+        <li>Databases: relational, graph based, object oriented, triple store
         <li>Compiler. Modern compilers use the same datastructure in successive stages of the compilation process.
     </ul>
 
