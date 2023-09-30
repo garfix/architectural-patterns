@@ -1,0 +1,9 @@
+Event Sourcing
+http://martinfowler.com/eaaDev/EventSourcing.html
+
+It's a log of changes, but that's not all.
+
+Fowler:
+* Complete Rebuild: We can discard the application state completely and rebuild it by re-running the events from the event log on an empty application.
+* We can determine the application state at any point in time.
+* Event Replay: If we find a past event was incorrect, we can compute the consequences by reversing it and later events and then replaying the new event and later events.

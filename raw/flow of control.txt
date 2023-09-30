@@ -1,0 +1,5 @@
+Flow of control
+- Event driven
+- Implicit invocation (listeners)
+- Call and return (subroutines)
+

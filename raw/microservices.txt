@@ -1,0 +1,3 @@
+Microservices is een combinatie van event-bus en broker. Mocht het belangrijker worden, dan moeten de twee bestaande architecturen misschien maar eens weg om vervangen te worden door deze.
+
+
