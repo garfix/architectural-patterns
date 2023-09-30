@@ -1,5 +1,5 @@
 <?php
-$title = "Repository";
+$title = "Database";
 include 'template/header.php';
 ?>
 
@@ -9,11 +9,13 @@ include 'template/header.php';
     </header>
 
     <p>
-        The database pattern contains a single datastructure, the <em>database</em>, and a number of <em>clients</em> that modify this datastructure.
+        The database pattern contains a central data repository, the <em>database management system</em> (DBMS), and a number of <em>clients</em> that modify this repository.
     </p>
     <p>
-        A database can provide a domain specific language, <a href="https://en.wikipedia.org/wiki/ACID">ACID</a>, transactions, backup and restore, access  management, and much more.
+        The DBMS can provide a domain specific language, <a href="https://en.wikipedia.org/wiki/ACID">ACID</a>, transactions, backup and restore, access  management, and much more.
     </p>
+
+    <figure><img src="images/database.png"><figcaption>Database architecture diagram</figcaption></figure>
 
     <h2>Examples</h2>
     <ul>
@@ -23,11 +25,6 @@ include 'template/header.php';
 
     <h2>When should you use it?</h2>
     <p>Use it when the data of your application is a goal in itself, or when its too costly to transfer the data all the time.</p>
-
-    <h2>How does it work?</h2>
-    <p>All knowledge sources can read/write to the database. The way all these interactions are synchronized is up to the database.</p>
-
-    <figure><img src="images/database.png"><figcaption>Database architecture diagram</figcaption></figure>
 
     <h2>Problems</h2>
     <ul>
