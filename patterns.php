@@ -1,7 +1,7 @@
 <?php
 $title = "Patterns";
 include 'template/header.php';
-include 'data.php';
+include 'template/data.php';
 ?>
 
 <section>

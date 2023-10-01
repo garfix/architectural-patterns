@@ -1,7 +1,7 @@
 <?php
 $title = "Categories";
 include 'template/header.php';
-include 'data.php';
+include 'template/data.php';
 ?>
 
 <section>

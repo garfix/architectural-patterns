@@ -63,7 +63,7 @@ $patterns = [
     ],
     [
         "name" => "Database",
-        "image" => "database.png",
+        "image" => "database.drawio.png",
         "link" => "database",
         "categories" => [CAT_CENTRAL_DATA]
     ],
@@ -93,7 +93,7 @@ $patterns = [
     ],
     [
         "name" => "Broker",
-        "image" => "broker.jpg",
+        "image" => "broker.drawio.png",
         "link" => "broker",
         "categories" => [CAT_FLEXIBILITY]
     ],

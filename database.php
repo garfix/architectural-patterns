@@ -6,22 +6,17 @@ include 'template/header.php';
 <section>
     <header class="content">
         <h1>Database</h1>
+        <p>Repository</p>
     </header>
 
     <p>
-        The database pattern contains a central data repository, the <em>database management system</em> (DBMS), and a number of <em>clients</em> that modify this repository.
+        The database pattern contains a central data <em>repository</em>, and a number of <em>clients</em> that modify this repository.
     </p>
     <p>
-        The DBMS can provide a domain specific language, <a href="https://en.wikipedia.org/wiki/ACID">ACID</a>, transactions, backup and restore, access  management, and much more.
+    The database pattern is commonly implemented as a <em>database management system</em> (DBMS). The DBMS can provide a domain specific language, <a href="https://en.wikipedia.org/wiki/ACID">ACID</a>, transactions, backup and restore, access  management, and much more.
     </p>
 
-    <figure><img src="images/database.png"><figcaption>Database architecture diagram</figcaption></figure>
-
-    <h2>Examples</h2>
-    <ul>
-        <li>Databases: relational, graph based, object oriented, triple store
-        <li>Compiler. Modern compilers use the same datastructure in successive stages of the compilation process.
-    </ul>
+    <figure><img src="images/database.drawio.png"><figcaption>Database architecture diagram</figcaption></figure>
 
     <h2>When should you use it?</h2>
     <p>Use it when the data of your application is a goal in itself, or when its too costly to transfer the data all the time.</p>

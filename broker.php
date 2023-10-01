@@ -6,40 +6,56 @@ include 'template/header.php';
 <section>
     <header class="content">
         <h1>Broker</h1>
-        <p>Service Oriented Architecture</p>
+        <p>Service Oriented Architecture, Microservices, API</p>
     </header>
-    <p>You just want the job to be done. You don't care who performs it, but you may have some demands. Tell your broker. He will take care of it.</p>
+    <p>
+        The broker pattern connects a client with a service through an intermediary using a uniform communication protocol. The goal is make the services independent (decoupling) and give clients a public API.
+    </p>
+
+    <p>
+        The metaphore is as follows: You go to a broker to buy a house. You don't want to need to know all about the housing business. You just tell the broker your maximum price and some other requirements, and he starts looking.
+    </p>
 
     <h2>How does it work?</h2>
-    <p>At all times servers can register and deregister themselves with the broker. If a server fails, it will be automatically (after a timeout) unregistered by the broker.</p>
-    <p>The client requests a specific service. It formats its request in a specific format and sends it to its broker. The broker then selects the most suitable server to process the request. When the link between the client and the server is set up, they may start communicating directly, freeing the broker.</p>
+    <p>
+        Services are registered with the broker. The client requests a specific service. It formats its request in a specific format and sends it to the broker. The broker then selects the most suitable service to process the request.
+    </p>
 
-    <figure><img src="images/broker.jpg"><figcaption>Broker architecture diagram</figcaption></figure>
+    <figure><img src="images/broker.drawio.png"><figcaption>Broker architecture diagram</figcaption></figure>
 
-    <p>There may also be multiple brokers in an architecture. These will then need their own communication protocols.</p>
+    <p>
+        An architecture with standalone services is called a service oriented architecture (SOA). The broker in a SOA commonly takes the form of an Enterprise Service Bus (ESB). In a microservices architecture the broker is more lightweight and the services more fine-grained.
+    </p>
+    <p>
+        There may also be multiple brokers in an architecture. These will then need their own communication protocols.
+    </p>
+
+    <p>The broker may handle all messages directly, or place them in a queue, to be processed as soon as possible, or at a specified time. This is a <em>message broker</em></p>
 
     <h2>Examples</h2>
     <ul>
-        <li>CORBA (Common Object Request Broker Architecture)
-        <li>Web Services
-        <li>Jini
+        <li>REST based API's
+        <li>Message queues
     </ul>
-
-    <h2>Where does it come from?</h2>
-    <p>You go to a broker to buy a house. You don't want to need to know all about the housing business, costs, quality, suppliers. You just tell the broker your maximum price and some other requirements, and he starts looking.
-    </p>
 
     <h2>When should you use it?</h2>
-    <p>
     <ul>
-        <li>If the relation client-server is not fixed because there are many suitable servers or the availability of the servers changes over time.
-        <li>The choice of server depends on some criterion that is complex enough to be delegated to a separate component.
-        <li>If you want to be independent of the physical location of the server (location transparacy).
+        <li>In a large organization many teams work on different services. They don't want to be dependent on other teams.
+        <li>When you want to provide your services publicly
     </ul>
-    </p>
+
+    <h2>Common implementation techniques</h2>
+    <ul>
+        <li>(Web) API
+        <li>Enterprise Service Bus (ESB)
+        <li>Message queue
+    </ul>
 
     <h2>Problems</h2>
-    <p>Once you set up the broker, it is easy to program the service calls. Take care to handle transactions and exceptions well, though.</p>
+    <ul>
+        <li>Setting up the broker, and agree on a communication protocol can be quite a bit of work, even when using standard software.
+        <li>The overhead of passing the call to a service via a broker has a performance penalty
+    </ul>
 
     <h2>Links</h2>
     <ul>
