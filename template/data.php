@@ -117,7 +117,7 @@ $patterns = [
     ],
     [
         "name" => "Event bus",
-        "image" => "eventbus.jpg",
+        "image" => "event-bus-1.png",
         "link" => "event-bus",
         "categories" => [CAT_MANAGING_SERVICES]
     ],

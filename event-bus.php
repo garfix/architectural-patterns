@@ -5,32 +5,30 @@ include 'template/header.php';
 
 <section>
     <header class="content">
-        <h1>Event-bus</h1>
-        <p>Microservices</p>
+        <h1>Event driven</h1>
+        <p>Publish-Subscribe, Event loop</p>
     </header>
-    <p>If your application requires a number of modules that need to communicate with each other in various ways, this architecture is a sure bet. It is endlessly flexible: you can add and remove modules at run-time, communicate directly or broadcast messages. It is completely free. </p>
+    <p>If your application requires a number of components that need to communicate with each other without a central component. It is endlessly flexible: you can add and remove modules at run-time, communicate directly or broadcast messages. </p>
 
     <h2>How does it work?</h2>
-    <p>Modules may be added and removed at any time.</p>
-    <p>When a module wishes to communicate with another module or other modules, it places a message on the Event Bus. The Event Bus takes care of delivering the message to the recipients.</p>
+    <p>Components may be added and removed at any time. When a components wishes to communicate with another component or other components, it places a message on the Event Bus. The Event Bus takes care of delivering the message to the recipients.</p>
 
-    <figure><img src="images/eventbus.jpg"><figcaption>Event-bus architecture diagram</figcaption></figure>
+    <figure><img src="images/event-bus-1.png"><figcaption>Event-bus architecture diagram</figcaption></figure>
 
-    <p>There are several types of communication that may occur on the Event Bus:
+    <p>There are several types of communication that may occur on the Event Bus:</p>
     <ul>
         <li>Publish-Subscribe: Modules may subscribe to certain message types. Whenever a module publishes a message to the bus, it will be delivered to all modules that subscribed to its message type.
         <li>Broadcast: The message will be delivered to all (other) modules.
         <li>Point-to-point: The message has one and only one recipient.
     </ul>
-    </p>
+    <p>
+        Components may publish messages at will, or there may be a central component that stores incoming messages and processes them sequentially. The latter is called an <em>event loop</em>.
+    <p>
     <p>The sending module normally doesn't care when the other modules receive and process the message. If the time of processing is important, the message may be sent <i>immediately</i>. It corresponds to calling the function in receiving modules directly, with the difference that the modules are still decoupled.</p>
 
     <h2>Examples</h2>
-    From <a href="http://www.cs.uu.nl/docs/vakken/swa/20012002/Slides/SA-5-styles.pdf">Gert Florijn's slides on architectural styles and patterns</a>:
     <ul>
-        <li>Process monitoring
-        <li>Trading Systems
-        <li>Software development environments
+        <li>Ethernet
     </ul>
 
     <h2>When should you use it?</h2>
@@ -53,7 +51,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="http://martinfowler.com/articles/microservices.html">Martin Fowler on Microservices</a>
+        <li><a href="https://medium.com/elixirlabs/event-bus-implementation-s-d2854a9fafd5">Event Bus Implementation(s)</a>
     </ul>
 </section>
 

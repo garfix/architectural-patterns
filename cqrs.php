@@ -9,7 +9,7 @@ include 'template/header.php';
         <p>Command-Query Responsibility Segregation</p>
     </header>
     <p>
-        This architecture is only useful if your application process huge amounts of data. Further, the views that present the data to the user are complex and cannot be generated real-time. Reading and writing information are separated into two separate models.
+        This pattern holds that the reading of a database can be handled by a different model (and its tables) than that is used to write to the database. There can even be multiple read-models for the same data.
     </p>
 
     <h2>How does it work?</h2>

@@ -8,9 +8,10 @@ include 'template/header.php';
         <h1>Broker</h1>
         <p>Service Oriented Architecture, Microservices, API</p>
     </header>
-    <p>
-        The broker pattern connects a client with a service through an intermediary using a uniform communication protocol. The goal is make the services independent (decoupling) and give clients a public API.
-    </p>
+    <dl>
+        <dt>Definition</dt>
+        <dd>The broker pattern connects clients with services via a special-purpose component that provides a uniform communication protocol. The goal is make clients and services independent (decoupling).</dd>
+    </dl>
 
     <p>
         The metaphore is as follows: You go to a broker to buy a house. You don't want to need to know all about the housing business. You just tell the broker your maximum price and some other requirements, and he starts looking.
