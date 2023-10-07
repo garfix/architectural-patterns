@@ -118,6 +118,12 @@ $patterns = [
         "categories" => [CAT_EVENT_BASED]
     ],
     [
+        "name" => "Message queue",
+        "image" => "message-queue.drawio.png",
+        "link" => "message-queue",
+        "categories" => [CAT_EVENT_BASED]
+    ],
+    [
         "name" => "Structural model",
         "image" => "structural_model_1.jpg",
         "link" => "structural-model",

@@ -23,7 +23,6 @@ include 'template/header.php';
     <ul>
         <li>Publish-Subscribe: Modules may subscribe to certain message types. Whenever a module publishes a message to the bus, it will be delivered to all modules that subscribed to its message type.
         <li>Broadcast: The message will be delivered to all (other) modules.
-        <li>Point-to-point: The message has one and only one recipient.
     </ul>
     <p>
         Messages may be handled synchronously (immediately), or placed in a queue to be handled at the first convenient time. In that case an <em>event loop</em> handles the pending messages one by one. The loop remains idle at times when there are no messages to handle.
@@ -32,7 +31,7 @@ include 'template/header.php';
     <h2>Examples</h2>
     <ul>
         <li>Ethernet handles point-to-point messages and broadcasts
-        <li>The JavaScript event loop handles messages in a single thread
+        <li>A graphical user interface (GUI) handles user events (keyboard, mouse) and system events (time) by passing messages to event handlers
     </ul>
 
     <h2>When should you use it?</h2>
