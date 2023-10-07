@@ -7,12 +7,12 @@ include 'template/header.php';
     <header class="content">
         <h1>Event sourcing</h1>
     </header>
-    <p>
-        In most cases you are just interested in the current state of your data. There are applications, however, where previous states are just as important, and you need to be able to navigate from one state to another, by code alone.
-    </p>
-    <p>
-        Event sourcing is used when the events that lead to the current state of the data are just as important as the current state itself is.
-    </p>
+    <dl>
+        <dt>Definition</dt>
+        <dd>In stead of storing the current state of the data, all operations (events) that have occurred on the data are stored.</dd>
+    </dl>
+
+    <figure><img src="images/event-sourcing-1.png"><figcaption>Event-sourcing architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>
@@ -27,8 +27,6 @@ include 'template/header.php';
     <p>
         The system may have the ability to tag some event. If so, the system provides lists of tags and the user may be able to revert the system to the state labeled with this tag.
     </p>
-
-    <figure><img src="images/event-sourcing-1.png"><figcaption>Event-sourcing architecture diagram</figcaption></figure>
 
     <p>This picture shows the events in the event source. The red flag is the tag that points to the current event. The state of the system reflects all the events up to this point.</p>
 
@@ -49,6 +47,9 @@ include 'template/header.php';
     </p>
 
     <h2>When should you use it?</h2>
+    <p>
+        Event sourcing is used when the events that lead to the current state of the data are just as important as the current state itself is.
+    </p>
     <p>
         <li>If logging or auditing is (very) important
         <li>If you want to be able to backtrack to a previous state, or work with different states in parallel.

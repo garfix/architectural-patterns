@@ -1,12 +1,12 @@
 <?php
-$title = "Interpreter";
+$title = "Virtual Machine";
 include 'template/header.php';
 ?>
 
 <section>
     <header class="content">
-        <h1>Interpreter</h1>
-        <p>Virtual Machine</p>
+        <h1>Virtual Machine</h1>
+        <p>Interpreter</p>
     </header>
 
     <p>The interpreter processes or executes other programs.</p>

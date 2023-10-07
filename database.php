@@ -9,9 +9,11 @@ include 'template/header.php';
         <p>Repository</p>
     </header>
 
-    <p>
-        The database pattern contains a central data <em>repository</em>, and a number of <em>clients</em> that modify this repository.
-    </p>
+    <dl>
+        <dt>Definition</dt>
+        <dd>The database pattern contains a central data <em>repository</em>, and a number of <em>clients</em> that modify this repository.</dd>
+    </dl>
+
     <p>
     The database pattern is commonly implemented as a <em>database management system</em> (DBMS). The DBMS can provide a domain specific language, <a href="https://en.wikipedia.org/wiki/ACID">ACID</a>, transactions, backup and restore, access  management, and much more.
     </p>

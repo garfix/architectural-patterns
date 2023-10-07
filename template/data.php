@@ -7,23 +7,23 @@ const CAT_BUSINESS_LOGIC = 'business logic';
 const CAT_HIGH_PERFORMANCE = 'performance';
 const CAT_PROBLEM_SOLVER = 'problem solver';
 const CAT_MANAGING_SERVICES = 'managing services';
-const CAT_COMPLETENESS = 'completeness';
+const CAT_STATE_BASED = 'stated based';
 const CAT_ROBUSTNESS = 'robustness';
 const CAT_FLEXIBILITY = 'flexibility';
 const CAT_EVENT_BASED = 'event based';
 
 $categories = [
     ["code" => CAT_PRESENTATION, "name" => 'Presentation'],
-    ["code" => CAT_SEPARATION_OF_CONCERNS, "name" => 'Separation of concerns'],
-    ["code" => CAT_CENTRAL_DATA, "name" => 'Data store central'],
-    ["code" => CAT_BUSINESS_LOGIC, "name" => 'Business logic central'],
-    ["code" => CAT_HIGH_PERFORMANCE, "name" => 'High performance'],
     ["code" => CAT_PROBLEM_SOLVER, "name" => 'Problem solver'],
+    ["code" => CAT_SEPARATION_OF_CONCERNS, "name" => 'Separation of concerns'],
+    ["code" => CAT_HIGH_PERFORMANCE, "name" => 'High performance'],
     ["code" => CAT_MANAGING_SERVICES, "name" => 'Managing participants'],
-    ["code" => CAT_COMPLETENESS, "name" => 'Completeness'],
+    ["code" => CAT_BUSINESS_LOGIC, "name" => 'Business logic central'],
+    ["code" => CAT_CENTRAL_DATA, "name" => 'Data store central'],
+    ["code" => CAT_STATE_BASED, "name" => 'State based'],
+    ["code" => CAT_EVENT_BASED, "name" => 'Event based'],
     ["code" => CAT_ROBUSTNESS, "name" => 'Robustness'],
     ["code" => CAT_FLEXIBILITY, "name" => 'Flexibility'],
-    ["code" => CAT_EVENT_BASED, "name" => 'Event based'],
 ];
 
 $patterns = [
@@ -79,7 +79,7 @@ $patterns = [
         "name" => "Finite State Machine",
         "image" => "fsm_1.jpg",
         "link" => "finite-state-machine",
-        "categories" => [CAT_COMPLETENESS]
+        "categories" => [CAT_STATE_BASED]
     ],
     [
         "name" => "Process Control",
@@ -106,9 +106,9 @@ $patterns = [
         "categories" => [CAT_MANAGING_SERVICES]
     ],
     [
-        "name" => "Interpreter",
+        "name" => "Virtual Machine",
         "image" => "vm.jpg",
-        "link" => "interpreter",
+        "link" => "virtual-machine",
         "categories" => []
     ],
     [
@@ -133,7 +133,7 @@ $patterns = [
         "name" => "Ports and Adapters",
         "image" => "ports-and-adapters.png",
         "link" => "ports-and-adapters",
-        "categories" => [CAT_SEPARATION_OF_CONCERNS, CAT_BUSINESS_LOGIC]
+        "categories" => [CAT_BUSINESS_LOGIC]
     ],
     [
         "name" => "Peer to Peer",

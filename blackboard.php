@@ -7,6 +7,10 @@ include 'template/header.php';
     <header class="content">
         <h1>Blackboard</h1>
     </header>
+    <dl>
+        <dt>Definition</dt>
+        <dd>Top-down and bottom-up processes codepend on each other to provide data. Therefore, they share a common data repository (blackboard). A scheduler is used to prioritize the claims to the blackboard.</dd>
+    </dl>
     <p>
         The problem domain for this pattern has multiple modules working together, each working on its own part of the solution. The modules work concurrently and the output of one module serves as the input for another module. Each module is dependent on one or more other modules to deliver part of the solution and the modules can't operate sequentially, it's both top-down and bottom-up.
     </P>

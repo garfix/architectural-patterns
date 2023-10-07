@@ -8,9 +8,10 @@ include 'template/header.php';
         <h1>CQRS</h1>
         <p>Command-Query Responsibility Segregation</p>
     </header>
-    <p>
-        This pattern holds that the reading of a database can be handled by a different model (and its tables) than that is used to write to the database. There can even be multiple read-models for the same data.
-    </p>
+    <dl>
+        <dt>Definition</dt>
+        <dd>This pattern holds that the reading of a database can be handled by a different model (and its tables) than that is used to write to the database. There can even be multiple read-models for the same data.</dd>
+    </dl>
 
     <h2>How does it work?</h2>
     <p>

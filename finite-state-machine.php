@@ -8,6 +8,11 @@ include 'template/header.php';
         <h1>Finite State Machine</h1>
     </header>
 
+    <dl>
+        <dt>Definition</dt>
+        <dd>The state of the application is represented explicitly, as well as the transitions between states. The number of states is finite.</dd>
+    </dl>
+
     <p>
         Maybe you want your system to behave differently at specific periods in the application's execution.
         You can define different states the application may be in. You would have to define the conditions
@@ -132,7 +137,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        None yet
+        <li><a href="https://en.m.wikipedia.org/wiki/Finite-state_machine">Wikipedia</a>
     </ul>
 </section>
 
