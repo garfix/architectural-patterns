@@ -34,6 +34,10 @@ include 'template/header.php';
         <dd>
             <p>A controller processes incoming requests (made by the user, or by other software) by interacting with the model and addressing the view.</p>
         </dd>
+        <dt>Message</dt>
+        <dd>
+            <p>A piece of information that is published by a component to all subscribers, based on a specific event.</p>
+        </dd>
     </dl>
     <header class="major">
         <h2>Pattern selection</h2>

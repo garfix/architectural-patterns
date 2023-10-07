@@ -10,6 +10,7 @@ const CAT_MANAGING_SERVICES = 'managing services';
 const CAT_COMPLETENESS = 'completeness';
 const CAT_ROBUSTNESS = 'robustness';
 const CAT_FLEXIBILITY = 'flexibility';
+const CAT_EVENT_BASED = 'event based';
 
 $categories = [
     ["code" => CAT_PRESENTATION, "name" => 'Presentation'],
@@ -22,6 +23,7 @@ $categories = [
     ["code" => CAT_COMPLETENESS, "name" => 'Completeness'],
     ["code" => CAT_ROBUSTNESS, "name" => 'Robustness'],
     ["code" => CAT_FLEXIBILITY, "name" => 'Flexibility'],
+    ["code" => CAT_EVENT_BASED, "name" => 'Event based'],
 ];
 
 $patterns = [
@@ -110,16 +112,10 @@ $patterns = [
         "categories" => []
     ],
     [
-        "name" => "Hub and Spoke",
-        "image" => "hub_and_spoke.jpg",
-        "link" => "hub-and-spoke",
-        "categories" => [CAT_MANAGING_SERVICES]
-    ],
-    [
-        "name" => "Event bus",
+        "name" => "Publish-Subscribe",
         "image" => "event-bus-1.png",
-        "link" => "event-bus",
-        "categories" => [CAT_MANAGING_SERVICES]
+        "link" => "publish-subscribe",
+        "categories" => [CAT_EVENT_BASED]
     ],
     [
         "name" => "Structural model",

@@ -6,24 +6,25 @@ include 'template/header.php';
 <section>
     <header class="content">
         <h1>Broker</h1>
-        <p>Service Oriented Architecture, Microservices, API</p>
+        <p>Service Oriented Architecture, Microservices, API, Hub-and-spoke, Event-bus</p>
     </header>
     <dl>
         <dt>Definition</dt>
-        <dd>The broker pattern connects clients with services via a special-purpose component that provides a uniform communication protocol. The goal is make clients and services independent (decoupling).</dd>
+        <dd>The broker pattern connects clients with services via a special-purpose component that provides a uniform communication protocol. Communication takes the form of request/response. The goal is make development of clients and services independent (decoupling).</dd>
     </dl>
 
     <p>
-        The metaphore is as follows: You go to a broker to buy a house. You don't want to need to know all about the housing business. You just tell the broker your maximum price and some other requirements, and he starts looking.
+        The metaphore is as follows: You go to a broker to buy a house. You don't want to need to know all about the housing business. You just tell the broker your maximum price and some other requirements, and he starts looking for you.
     </p>
 
     <h2>How does it work?</h2>
     <p>
-        Services are registered with the broker. The client requests a specific service. It formats its request in a specific format and sends it to the broker. The broker then selects the most suitable service to process the request.
+        Services are registered with the broker. The client requests a specific service: they format their request in a specific format and send it to the broker. The broker then selects the service to process the request. The broker sends the service's response back to the client.
     </p>
 
     <figure><img src="images/broker.drawio.png"><figcaption>Broker architecture diagram</figcaption></figure>
 
+    <h2>Variants</h2>
     <p>
         An architecture with standalone services is called a service oriented architecture (SOA). The broker in a SOA commonly takes the form of an Enterprise Service Bus (ESB). In a microservices architecture the broker is more lightweight and the services more fine-grained.
     </p>

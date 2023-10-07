@@ -1,20 +1,24 @@
 <?php
-$title = "Event-bus";
+$title = "Publish-Subscribe";
 include 'template/header.php';
 ?>
 
 <section>
     <header class="content">
-        <h1>Event driven</h1>
-        <p>Publish-Subscribe, Event loop</p>
+        <h1>Publish-Subscribe</h1>
+        <p>Event bus, Event loop</p>
     </header>
-    <p>If your application requires a number of components that need to communicate with each other without a central component. It is endlessly flexible: you can add and remove modules at run-time, communicate directly or broadcast messages. </p>
+    <dl>
+        <dt>Definition</dt>
+        <dd>Any component (publisher) can notify all interested other components (subscribers) of the occurrence of an event, by sending a message to the event bus. Components that have registered themselves with the registry will receive the message and act upon it. The publisher is not informed when the message is handled.</dd>
+    </dl>
 
     <h2>How does it work?</h2>
-    <p>Components may be added and removed at any time. When a components wishes to communicate with another component or other components, it places a message on the Event Bus. The Event Bus takes care of delivering the message to the recipients.</p>
+    <p>Components may register themselves with the registry at any time. When a component notifies other components of an event, it places a message on the event bus. The event bus takes care of delivering the message to the registered recipients.</p>
 
     <figure><img src="images/event-bus-1.png"><figcaption>Event-bus architecture diagram</figcaption></figure>
 
+    <h2>Variants</h2>
     <p>There are several types of communication that may occur on the Event Bus:</p>
     <ul>
         <li>Publish-Subscribe: Modules may subscribe to certain message types. Whenever a module publishes a message to the bus, it will be delivered to all modules that subscribed to its message type.
@@ -22,25 +26,25 @@ include 'template/header.php';
         <li>Point-to-point: The message has one and only one recipient.
     </ul>
     <p>
-        Components may publish messages at will, or there may be a central component that stores incoming messages and processes them sequentially. The latter is called an <em>event loop</em>.
+        Messages may be handled synchronously (immediately), or placed in a queue to be handled at the first convenient time. In that case an <em>event loop</em> handles the pending messages one by one. The loop remains idle at times when there are no messages to handle.
     <p>
-    <p>The sending module normally doesn't care when the other modules receive and process the message. If the time of processing is important, the message may be sent <i>immediately</i>. It corresponds to calling the function in receiving modules directly, with the difference that the modules are still decoupled.</p>
 
     <h2>Examples</h2>
     <ul>
-        <li>Ethernet
+        <li>Ethernet handles point-to-point messages and broadcasts
+        <li>The JavaScript event loop handles messages in a single thread
     </ul>
 
     <h2>When should you use it?</h2>
     <p>
-    Use it when your application can be factored in functionally separable modules that are capable of communicating through simple messages.</p>
+        Use it when your application can be factored in functionally separable modules that are capable of communicating through simple messages.
+    </p>
 
     <h2>Problems</h2>
-    <p>
     <ul>
+        <li>There is an element of uncertainty introduced when messages are handled asynchronously. You can't be sure if and when they are handled.
         <li>If the modules share large amounts of data, it may not be a good idea to pump these over the bus all the time. If you choose to share the data between the modules, make sure no synchronization issues occur.
     </ul>
-    </p>
 
     <h2>Common implementation techniques</h2>
     <ul>
@@ -51,6 +55,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
+        <li><a href="https://en.m.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern">Wikipedia on publish/subscribe</a>
         <li><a href="https://medium.com/elixirlabs/event-bus-implementation-s-d2854a9fafd5">Event Bus Implementation(s)</a>
     </ul>
 </section>
