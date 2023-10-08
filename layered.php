@@ -7,6 +7,10 @@ include 'template/header.php';
     <header class="content">
         <h1>Layered</h1>
     </header>
+    <dl>
+        <dt>Definition</dt>
+        <dd>A layered system distinguishes between different levels of functionality. Each level depends on the level below for some of its functionality.</dd>
+    </dl>
     <p>
         Layered Systems use layers to separate different units of functionality.
         Each layer only communicates with the layer above and the layer below. Each layer <i>uses</i> the layer

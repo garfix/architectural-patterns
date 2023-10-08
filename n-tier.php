@@ -6,23 +6,21 @@ include 'template/header.php';
 <section>
     <header class="content">
         <h1>N-Tier Systems</h1>
-        <p>Client-Server</p>
+        <p>Client-Server, Multitier</p>
     </header>
+    <dl>
+        <dt>Definition</dt>
+        <dd>A tiered architecture has separate servers for each of its main functions. Each tier only communicates with the tier before and the tier after it.</dd>
+    </dl>
     <p>
-        N-Tier architectures are hot. Well, maybe not as hot as a few years ago, but still it is very
-        important you know about them. All web applications are N-Tier architectures. You have an
-        application server, a large number of clients, and a database.
+        All web applications are N-Tier architectures. There is an application server, a large number of web-clients, and a database.
         An N-Tier architecture is really a Client-Server architecture combined with the Layered architecture.
-        The reason why I combine Client-Server and N-Tier here is because they are very much related.
     </p>
+
+    <figure><img src="images/tiers_1.jpg"><figcaption>N-tiers architecture diagram</figcaption></figure>
+
     <p>
-        A Tier is a just a Layer, yet Tiers are commonly physically removed from each other.
-        The <a href="http://dictionary.reference.com/search?q=tier">meaning</a> of a <b>tier</b> is:
-        <blockquote>One of a series of rows placed one above another: a stadium with four tiers of seats.</blockquote>
-    </p>
-    <p>
-        A Client-Server system is one in which
-        the server performs some kind of service that is used by many clients. The clients take the lead
+        A Client-Server system is one in which the server performs some kind of service that is used by many clients. The clients take the lead
         in the communication. The basic Client-Server architecture has 2 tiers (Client and Server).
         I will basically explain the 3-tier architecture here, which is an extension to the 2-tier architecture.
     </p>
@@ -43,8 +41,6 @@ include 'template/header.php';
         The third, or <b>database tier</b> contains the database management system that manages all persistent data.
     </p>
 
-    <figure><img src="images/tiers_1.jpg"><figcaption>N-tiers architecture diagram</figcaption></figure>
-
     <p>
         It is clear that there are multiple clients. That's what client-server computing is all about.
         However, in the second and third tier there can also be multiple instances of the same application.
@@ -55,10 +51,7 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>
-        The architecture is so generic it is hard to say anything concrete about it. Communication between
-        the different tiers often takes place via a network. Communication within a tier also is done over a
-        (local) network.
-        Clients don't communicate directly to each other.
+        Communication between the different tiers often takes place via a network.
         Clients communicate to the application server directly or to a broker that balances requests between
         separate server machines. The database layer usually contains only one database.
     </p>
@@ -75,19 +68,6 @@ include 'template/header.php';
         from different terminals (clients). The distance between the clients and the server became bigger and the number
         of clients increased. At the time the application and database tiers were still integrated. It is called
         <i>client-server</i> computing.
-    </p>
-    <p>
-        With the booming of the Internet and e-commerce in the nineteen-nineties, the architecture became important, and
-        much time and money was invested in it.
-        As other good architectures have shown, it is a good idea to separate the application code from the data.
-        This principle was applied to the client-server architecture.
-        Companies created application servers to ease the creation of web applications.
-    </p>
-    <p>
-        An N-tier architecture (with N more than 3) is really 3 tier architectures in which
-        the middle tier is split up into new tiers.
-        The application tier is broken down into separate parts. What these parts are differs from system to system.
-        The following picture shows it:
     </p>
 
     <figure><img src="images/tiers_2.jpg"><figcaption>Multiple tiers</figcaption></figure>
