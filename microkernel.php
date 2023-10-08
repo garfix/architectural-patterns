@@ -6,41 +6,50 @@ include 'template/header.php';
 <section>
     <header class="content">
         <h1>Microkernel</h1>
+        <p>Kernel</p>
     </header>
-    <p>The microkernel can serve as a basis for systems that are by nature prone to dramatic changes, like Operating Systems. Think of changing your house. Not just redecorating the walls, or adding a barn. Think of changing the foundation. If your system needs to handle this kind of brutality, consider using a microkernel.</p>
-    <p>This architecture is a specialization of a <a href="layers.html">layered system</a>.
+    <dl>
+        <dt>Definition</dt>
+        <dd>Wrap core system resources in a small component, that rarely changes.</dd>
+    </dl>
 
-    <figure><img src="images/microkernel.jpg"><figcaption>Microkernel architecture diagram</figcaption></figure>
+    <p>
+        The microkernel is used primarily in operating systems, but the <b>kernel</b> concept of encapsulating system resources is also used by web frameworks.
+    </p>
+
+    <figure><img src="images/microkernel.drawio.png"><figcaption>Microkernel architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
-    <p>The <b>Microkernel</b> contains the absolute minimum functionality of the (Operating) System. It is platform dependent. In an OS, it handles system resources like memory, files, and processes.</p>
-    <p>The dynamic platform dependent code of the kernel is implemented in <b>Internal Servers</b>. These are for example the device drivers that steer the hardware directly. They may be loaded and unloaded without rebuilding or even rebooting the (Operating) System.</p>
-    <p>While the entire system may be accessed through the Microkernel, it is very Spartan. To ease systems programming, the (Operating) System may contain <b>External Servers</b>. Examples are Memory Management, File System Services, I/O Management Services and other System Services.</p>
-    <p>For portability, an extra <b>Adapter</b> is provided. This makes it possible to change an External Server without changing all applications that use it.</p>
+    <p>
+        The <b>Microkernel</b> contains the absolute minimum functionality of the (Operating) System. It is platform dependent. In an OS, it handles system resources like memory, files, and processes.
+    </p>
+    <p>
+        The dynamic platform dependent code of the kernel is implemented in <b>Internal Servers</b>. These are for example the device drivers that steer the hardware directly. They may be loaded and unloaded without rebuilding or even rebooting the (Operating) System.
+    </p>
+    <p>
+        While the entire system may be accessed through the Microkernel, it is very Spartan. To ease systems programming, the (Operating) System may contain <b>External Servers</b>. Examples are Memory Management, File System Services, I/O Management Services and other System Services. For portability, an extra <b>Adapter</b> is provided. This makes it possible to change an External Server without changing all applications that use it.</p>
 
    <h2>Examples</h2>
     <ul>
-        <li>Minix (see the very interesting <a href="http://www.oreilly.com/catalog/opensources/book/appa.html">discussion</a> on microkernels vs "monolithic systems" between Andrew Tanenbaum (Minix) and Linus Torvalds (Linux).
-        <li>Mach
+        <li>Operating systems: Minix, Mach, Symbian OS
+        <li>Web frameworks: for example Symfony (PHP)
     </ul>
-
-    <h2>Where does it come from?</h2>
-    <p>It's a typical Operating System architecture, having come into fruition in the late eighties, early nineties.</p>
 
     <h2>When should you use it?</h2>
-    <p>The architecture contains two adapters. The lower adapter, or Microkernel, hides the hardware specific modules for the developer. The upper adapter, called Adapter, hides the system specific modules for the developer. If your systems contains these types of modules and these are likely to be modified in the future, this architecture may be for you.</p>
+    <p>
+        The microkernel can serve as a basis for a system that has a wide range of different applications, like operating Systems and web frameworks. It's good to provide common functionality in a single place, to reduce duplication and control shared resources.
+    </p>
 
     <h2>Problems</h2>
-    <p>
     <ul>
-        <li>Slower than "monolithic systems".
-        <li>More complex to develop for.
+        <li>The extra layers can cause overhead and loss of flexibility and performance
     </ul>
-    </p>
 
     <h2>Links</h2>
     <ul>
+        <li><a href="https://www.viralpatel.net/microkernel-architecture-pattern-apply-software-systems/">Microkernel Architecture Pattern & Applying it to Software Systems</a>
         <li><a href="https://en.wikipedia.org/wiki/Microkernel">Wikipedia on Microkernel</a>
+        <li>Very interesting <a href="http://www.oreilly.com/catalog/opensources/book/appa.html">discussion</a> on microkernels vs "monolithic systems" between Andrew Tanenbaum (Minix) and Linus Torvalds (Linux).
     </ul>
 </section>
 

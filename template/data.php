@@ -52,10 +52,10 @@ $patterns = [
         "categories" => [CAT_SEPARATION_OF_CONCERNS]
     ],
     [
-        "name" => "Core",
-        "image" => "core.drawio.png",
-        "link" => "core",
-        "categories" => []
+        "name" => "Microkernel",
+        "image" => "microkernel.drawio.png",
+        "link" => "microkernel",
+        "categories" => [CAT_SEPARATION_OF_CONCERNS]
     ],
     [
         "name" => "N-Tier",
