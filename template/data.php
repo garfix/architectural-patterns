@@ -64,9 +64,9 @@ $patterns = [
         "categories" => [CAT_SEPARATION_OF_CONCERNS]
     ],
     [
-        "name" => "Database",
-        "image" => "database.drawio.png",
-        "link" => "database",
+        "name" => "Repository",
+        "image" => "repository.drawio.png",
+        "link" => "repository",
         "categories" => [CAT_CENTRAL_DATA]
     ],
     [
