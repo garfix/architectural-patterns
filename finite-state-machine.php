@@ -10,17 +10,9 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>The state of the application is represented explicitly, as well as the transitions between states. The number of states is finite.</dd>
+        <dd>The application can only be in one of a fixed set of states. Transitions between states are defined explicitly.</dd>
     </dl>
 
-    <p>
-        Maybe you want your system to behave differently at specific periods in the application's execution.
-        You can define different states the application may be in. You would have to define the conditions
-        that change the system from one state into the next. These systems have a predefined number of states
-        and hence are called Finite State Machines.
-        A system may have multiple Finite State Machines. Finite State Machines may be nested. If a state
-        is entered, it may mean you enter an initial state of the inner state machine as well.
-    </p>
     <p>
         The <b>State</b> defines the way the system acts at a certain time.
     </p>
@@ -30,11 +22,14 @@ include 'template/header.php';
         every allowable transition between any two states.
     </p>
 
-    <figure><img src="images/fsm_1.jpg"><figcaption>Finite State Machine architecture diagram</figcaption></figure>
+    <figure><img src="images/fsm_1.jpg"><figcaption>A Finite State Machine example</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>
-        The state machine starts in some initial state. Every execution cycle or control cycle the following two
+        A finite state machine is an application in itself, but it is executed by an execution engine, which is also an application. So we need to explain the working on two levels.
+    </p>
+    <p>
+        Let's start with the fsm itself. The state machine starts in some initial state. Every execution cycle or control cycle the following two
         steps are executed:
         <ol>
             <li>The <b>state-specific code</b> of the current state is executed.
@@ -48,6 +43,12 @@ include 'template/header.php';
             <li><b>Enter code</b>, code that belongs to the state that is entered.
         </ol>
     </p>
+
+    <p>
+        Next, the FSM execution engine. The central component is a processor that's just idle, until it is triggered by some outside event, like a timer. When that happens, it looks at the current state and checks if the trigger causes a transition. If so, the new state becomes active and the new state's code is executed. This code may trigger an immediate state change.
+
+    <figure><img src="images/fsm.drawio.png"><figcaption>Finite State Machine architecture diagram</figcaption></figure>
+
     <p>
         Remarks:
         <ul>
@@ -59,6 +60,7 @@ include 'template/header.php';
             should be created for it.
         </ul>
     </p>
+
     <p>
         In a <b>hierarchical state machine</b> a state B may itself be described by an entire state machine.
         A hierarchical state machine allows for three kinds of state transitions not found in simple

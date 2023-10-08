@@ -12,6 +12,7 @@ const CAT_ROBUSTNESS = 'robustness';
 const CAT_FLEXIBILITY = 'flexibility';
 const CAT_EVENT_BASED = 'event based';
 const CAT_DISTRIBUTED = 'distributed computing'; // different machines, networked
+const CAT_INTERPRETED = 'interpreted';
 
 $categories = [
     ["code" => CAT_PRESENTATION, "name" => 'Presentation'],
@@ -26,6 +27,7 @@ $categories = [
     ["code" => CAT_ROBUSTNESS, "name" => 'Robustness'],
     ["code" => CAT_FLEXIBILITY, "name" => 'Flexibility'],
     ["code" => CAT_DISTRIBUTED, "name" => 'Distributed computing'],
+    ["code" => CAT_INTERPRETED, "name" => 'Interpreted'],
 ];
 
 $patterns = [
@@ -79,9 +81,9 @@ $patterns = [
     ],
     [
         "name" => "Finite State Machine",
-        "image" => "fsm_1.jpg",
+        "image" => "fsm.drawio.png",
         "link" => "finite-state-machine",
-        "categories" => [CAT_STATE_BASED]
+        "categories" => [CAT_STATE_BASED, CAT_INTERPRETED]
     ],
     [
         "name" => "Process Control",
@@ -111,7 +113,7 @@ $patterns = [
         "name" => "Interpreter",
         "image" => "vm.jpg",
         "link" => "interpreter",
-        "categories" => []
+        "categories" => [CAT_INTERPRETED]
     ],
     [
         "name" => "Publish-Subscribe",
