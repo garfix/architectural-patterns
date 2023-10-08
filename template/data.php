@@ -52,9 +52,9 @@ $patterns = [
         "categories" => [CAT_SEPARATION_OF_CONCERNS]
     ],
     [
-        "name" => "Microkernel",
-        "image" => "microkernel.jpg",
-        "link" => "microkernel",
+        "name" => "Core",
+        "image" => "core.drawio.png",
+        "link" => "core",
         "categories" => []
     ],
     [
@@ -106,9 +106,9 @@ $patterns = [
         "categories" => [CAT_MANAGING_SERVICES]
     ],
     [
-        "name" => "Virtual Machine",
+        "name" => "Interpreter",
         "image" => "vm.jpg",
-        "link" => "virtual-machine",
+        "link" => "interpreter",
         "categories" => []
     ],
     [
