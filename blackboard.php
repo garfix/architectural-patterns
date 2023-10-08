@@ -18,7 +18,7 @@ include 'template/header.php';
         The blackboard metaphore is from a classroom situation. The teacher is solving a problem together with her students. She asks them for input. Multiple students raise their hand and one is picked by the teacher. The student approaches the blackboard and writes down some information that helps to advance the solution a bit. Then the next one is called. The students are <em>knowledge sources</em>. The teacher is the <em>scheduler</em>.
     </p>
 
-    <figure><img src="images/blackboard_1.jpg"><figcaption>Blackboard architecture diagram</figcaption></figure>
+    <figure><img src="images/blackboard.drawio.png"><figcaption>Blackboard architecture diagram</figcaption></figure>
 
     <p>
         The <b>Blackboard</b> is the common datastructure of the Knowledge Sources. The blackboard is able to represent
@@ -45,7 +45,6 @@ include 'template/header.php';
         These are the steps that are continuously executed during the cycle:
     </p>
 
-    <figure><img src="images/blackboard_2.jpg"><figcaption>Blackboard data flow</figcaption></figure>
     <ol>
         <li>The preconditions of all Knowledge Sources are checked.
                     <li>The Knowledge Sources that match are added to

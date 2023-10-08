@@ -11,6 +11,7 @@ const CAT_STATE_BASED = 'stated based';
 const CAT_ROBUSTNESS = 'robustness';
 const CAT_FLEXIBILITY = 'flexibility';
 const CAT_EVENT_BASED = 'event based';
+const CAT_DISTRIBUTED = 'distributed computing'; // different machines, networked
 
 $categories = [
     ["code" => CAT_PRESENTATION, "name" => 'Presentation'],
@@ -24,6 +25,7 @@ $categories = [
     ["code" => CAT_EVENT_BASED, "name" => 'Event based'],
     ["code" => CAT_ROBUSTNESS, "name" => 'Robustness'],
     ["code" => CAT_FLEXIBILITY, "name" => 'Flexibility'],
+    ["code" => CAT_DISTRIBUTED, "name" => 'Distributed computing'],
 ];
 
 $patterns = [
@@ -61,7 +63,7 @@ $patterns = [
         "name" => "N-Tier",
         "image" => "tiers_1.jpg",
         "link" => "n-tier",
-        "categories" => [CAT_SEPARATION_OF_CONCERNS]
+        "categories" => [CAT_SEPARATION_OF_CONCERNS, CAT_DISTRIBUTED]
     ],
     [
         "name" => "Repository",
@@ -71,7 +73,7 @@ $patterns = [
     ],
     [
         "name" => "Blackboard",
-        "image" => "blackboard_1.jpg",
+        "image" => "blackboard.drawio.png",
         "link" => "blackboard",
         "categories" => [CAT_CENTRAL_DATA, CAT_PROBLEM_SOLVER]
     ],
@@ -97,13 +99,13 @@ $patterns = [
         "name" => "Broker",
         "image" => "broker.drawio.png",
         "link" => "broker",
-        "categories" => [CAT_FLEXIBILITY]
+        "categories" => [CAT_FLEXIBILITY, CAT_DISTRIBUTED]
     ],
     [
         "name" => "Master-Slave",
         "image" => "masterslave.jpg",
         "link" => "master-slave",
-        "categories" => [CAT_MANAGING_SERVICES]
+        "categories" => [CAT_MANAGING_SERVICES, CAT_DISTRIBUTED]
     ],
     [
         "name" => "Interpreter",
@@ -139,7 +141,7 @@ $patterns = [
         "name" => "Peer to Peer",
         "image" => "peer-to-peer.png",
         "link" => "peer-to-peer",
-        "categories" => [CAT_MANAGING_SERVICES, CAT_ROBUSTNESS]
+        "categories" => [CAT_MANAGING_SERVICES, CAT_ROBUSTNESS, CAT_DISTRIBUTED]
     ],
     [
         "name" => "Event Sourcing",
