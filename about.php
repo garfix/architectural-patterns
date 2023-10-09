@@ -16,11 +16,15 @@ include 'template/header.php';
     <dl>
         <dt>Client</dt>
         <dd>
-            <p>A client is a software application. It's called a client because it needs some functionality, external to the client, to work properly. This functionality is called a service.</p>
+            <p>A client is a software application that needs some functionality from a server, external to the client, to work properly.</p>
         </dd>
         <dt>Service</dt>
         <dd>
-            <p>A software function performed by a dedicated service provider in response to a client request.</p>
+            <p>A software function performed by a server in response to a client request.</p>
+        </dd>
+        <dt>Server</dt>
+        <dd>
+            <p>A software application that provides a service.</p>
         </dd>
         <dt>Model</dt>
         <dd>

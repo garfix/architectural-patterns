@@ -156,6 +156,12 @@ $patterns = [
         "image" => "cqrs-1.png",
         "link" => "cqrs",
         "categories" => [CAT_HIGH_PERFORMANCE]
+    ],
+    [
+        "name" => "Monolith",
+        "image" => "monolith.drawio.png",
+        "link" => "monolith",
+        "categories" => [CAT_DISTRIBUTED]
     ]
 ];
 
