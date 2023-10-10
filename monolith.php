@@ -9,13 +9,14 @@ include 'template/header.php';
     </header>
     <dl>
         <dt>Definition</dt>
-        <dd>A monolith is a non-distributed application: all services it uses are internal to the application.</dd>
+        <dd>A monolith is a non-distributed application: all functionality it uses is internal to the application.</dd>
     </dl>
 
     <figure><img src="images/monolith.drawio.png"><figcaption>Monolith architecture diagram</figcaption></figure>
 
     <h2>Examples</h2>
     <ul>
+        <li>Single-function Unix applications
         <li>Word processor
     </ul>
 

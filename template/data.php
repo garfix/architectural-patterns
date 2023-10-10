@@ -86,6 +86,12 @@ $patterns = [
         "categories" => [CAT_STATE_BASED, CAT_INTERPRETED]
     ],
     [
+        "name" => "Inference engine",
+        "image" => "rule-based.drawio.png",
+        "link" => "inference-engine",
+        "categories" => [CAT_PROBLEM_SOLVER, CAT_INTERPRETED, CAT_BUSINESS_LOGIC]
+    ],
+    [
         "name" => "Process Control",
         "image" => "process_control_1.jpg",
         "link" => "process-control",
@@ -135,6 +141,7 @@ $patterns = [
     ],
     [
         "name" => "Ports and Adapters",
+        "aliases" => "Hexagonal architecture, Onion Architecture, Clean Architecture",
         "image" => "ports-and-adapters.png",
         "link" => "ports-and-adapters",
         "categories" => [CAT_BUSINESS_LOGIC]
@@ -168,3 +175,8 @@ $patterns = [
 usort($patterns, function ($a, $b) {
     return ($a['name'] < $b['name']) ? -1 : 1;
 });
+
+$indexed = [];
+foreach ($patterns as $pattern) {
+    $indexed[$pattern['name']] = $pattern;
+}
