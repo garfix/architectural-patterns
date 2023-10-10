@@ -1,12 +1,11 @@
 <?php
-$title = "Finite State Machine";
+include 'template/data.php';
+$pattern = $indexed['Finite State Machine'];
 include 'template/header.php';
 ?>
 
 <section>
-    <header class="content">
-        <h1>Finite State Machine</h1>
-    </header>
+    <?php showHeader($pattern) ?>
 
     <dl>
         <dt>Definition</dt>

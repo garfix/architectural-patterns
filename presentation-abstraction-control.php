@@ -1,12 +1,12 @@
 <?php
-$title = "Presentation-Abstraction-Control";
+include 'template/data.php';
+$pattern = $indexed['Presentation-Abstraction-Control'];
 include 'template/header.php';
 ?>
 
 <section>
-    <header class="content">
-        <h1>Presentation-Abstraction-Control</h1>
-    </header>
+    <?php showHeader($pattern) ?>
+
     <p>This architecture is a further development of the <a href="mvc">Model-View-Controller</a> architecture.
     The MVC is restricted to simple GUI's with one or more views on the same model. If the model consists of substructures that all require they own special way of interaction, a more complex GUI architecture is in order. The PAC architecture does not have the model as its core component, but a hierarchical structure of PAC components. Each PAC component consists of these items:
     <ol>

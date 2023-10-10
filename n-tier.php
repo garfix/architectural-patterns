@@ -1,13 +1,12 @@
 <?php
-$title = "N-tier";
+include 'template/data.php';
+$pattern = $indexed['N-Tier'];
 include 'template/header.php';
 ?>
 
 <section>
-    <header class="content">
-        <h1>N-Tier Systems</h1>
-        <p>Client-Server, Multitier</p>
-    </header>
+    <?php showHeader($pattern) ?>
+
     <dl>
         <dt>Definition</dt>
         <dd>A tiered architecture has separate servers for each of its main functions. Each tier only communicates with the tier before and the tier after it.</dd>

@@ -1,13 +1,12 @@
 <?php
-$title = "Message queue";
+include 'template/data.php';
+$pattern = $indexed['Message Queue'];
 include 'template/header.php';
 ?>
 
 <section>
-    <header class="content">
-        <h1>Message queue</h1>
-        <p>Event bus, Event loop, Promise</p>
-    </header>
+    <?php showHeader($pattern) ?>
+
     <dl>
         <dt>Definition</dt>
         <dd>This pattern is used to send a message from one component to one or more other components, asynchronously.</dd>

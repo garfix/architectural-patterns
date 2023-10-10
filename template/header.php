@@ -1,4 +1,8 @@
-<!DOCTYPE HTML>
+<?php
+
+include __DIR__ . '/functions.php';
+
+?><!DOCTYPE HTML>
 <!--
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
@@ -6,7 +10,7 @@
 -->
 <html>
 	<head>
-		<title><?= $title ?> - Architectural patterns</title>
+		<title><?= $title ? $title : $pattern['name'] ?> - Architectural patterns</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />

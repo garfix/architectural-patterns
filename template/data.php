@@ -57,18 +57,21 @@ $patterns = [
     ],
     [
         "name" => "Microkernel",
+        "aliases" => "Kernel",
         "image" => "microkernel.drawio.png",
         "link" => "microkernel",
         "categories" => [CAT_SEPARATION_OF_CONCERNS]
     ],
     [
         "name" => "N-Tier",
+        "aliases" => "Client-Server, Multitier",
         "image" => "tiers_1.jpg",
         "link" => "n-tier",
         "categories" => [CAT_SEPARATION_OF_CONCERNS, CAT_DISTRIBUTED]
     ],
     [
         "name" => "Repository",
+        "aliases" => "Database",
         "image" => "repository.drawio.png",
         "link" => "repository",
         "categories" => [CAT_CENTRAL_DATA]
@@ -86,7 +89,7 @@ $patterns = [
         "categories" => [CAT_STATE_BASED, CAT_INTERPRETED]
     ],
     [
-        "name" => "Inference engine",
+        "name" => "Inference Engine",
         "image" => "rule-based.drawio.png",
         "link" => "inference-engine",
         "categories" => [CAT_PROBLEM_SOLVER, CAT_INTERPRETED, CAT_BUSINESS_LOGIC]
@@ -105,6 +108,7 @@ $patterns = [
     ],
     [
         "name" => "Broker",
+        "aliases" => "Service Oriented Architecture, Microservices, API, Hub-and-spoke, Event-bus",
         "image" => "broker.drawio.png",
         "link" => "broker",
         "categories" => [CAT_FLEXIBILITY, CAT_DISTRIBUTED]
@@ -123,18 +127,20 @@ $patterns = [
     ],
     [
         "name" => "Publish-Subscribe",
+        "aliases" => "Event bus, Event loop",
         "image" => "event-bus-1.png",
         "link" => "publish-subscribe",
         "categories" => [CAT_EVENT_BASED]
     ],
     [
-        "name" => "Message queue",
+        "name" => "Message Queue",
+        "aliases" => "Event bus, Event loop",
         "image" => "message-queue.drawio.png",
         "link" => "message-queue",
         "categories" => [CAT_EVENT_BASED]
     ],
     [
-        "name" => "Structural model",
+        "name" => "Structural Model",
         "image" => "structural_model_1.jpg",
         "link" => "structural-model",
         "categories" => []
@@ -159,7 +165,8 @@ $patterns = [
         "categories" => [CAT_CENTRAL_DATA]
     ],
     [
-        "name" => "Command-Query Responsibility Segregation",
+        "name" => "CQRS",
+        "aliases" => "Command-Query Responsibility Segregation",
         "image" => "cqrs-1.png",
         "link" => "cqrs",
         "categories" => [CAT_HIGH_PERFORMANCE]

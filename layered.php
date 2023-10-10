@@ -1,12 +1,12 @@
 <?php
-$title = "Layered";
+include 'template/data.php';
+$pattern = $indexed['Layered'];
 include 'template/header.php';
 ?>
 
 <section>
-    <header class="content">
-        <h1>Layered</h1>
-    </header>
+    <?php showHeader($pattern) ?>
+
     <dl>
         <dt>Definition</dt>
         <dd>A layered system distinguishes between different levels of functionality. Each level depends on the level below for some of its functionality.</dd>

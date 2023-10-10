@@ -1,13 +1,12 @@
 <?php
-$title = "CQRS";
+include 'template/data.php';
+$pattern = $indexed['CQRS'];
 include 'template/header.php';
 ?>
 
 <section>
-    <header class="content">
-        <h1>CQRS</h1>
-        <p>Command-Query Responsibility Segregation</p>
-    </header>
+    <?php showHeader($pattern) ?>
+
     <dl>
         <dt>Definition</dt>
         <dd>This pattern holds that the reading of a database can be handled by a different model (and its tables) than that is used to write to the database. There can even be multiple read-models for the same data.</dd>

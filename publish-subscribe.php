@@ -1,13 +1,12 @@
 <?php
-$title = "Publish-Subscribe";
+include 'template/data.php';
+$pattern = $indexed['Publish-Subscribe'];
 include 'template/header.php';
 ?>
 
 <section>
-    <header class="content">
-        <h1>Publish-Subscribe</h1>
-        <p>Event bus, Event loop</p>
-    </header>
+    <?php showHeader($pattern) ?>
+
     <dl>
         <dt>Definition</dt>
         <dd>Any component (publisher) can notify all interested other components (subscribers) of the occurrence of an event, by sending a message to the event bus. Components that have registered themselves with the registry will receive the message and act upon it. The publisher is not informed when the message is handled.</dd>

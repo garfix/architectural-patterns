@@ -1,12 +1,12 @@
 <?php
-$title = "Multi-agent System";
+include 'template/data.php';
+$pattern = $indexed['Multi-Agent System'];
 include 'template/header.php';
 ?>
 
 <section>
-    <header class="content">
-        <h1>Multi-agent System</h1>
-    </header>
+    <?php showHeader($pattern) ?>
+
     <p>
         A Multi Agent System consists of a group of highly autonomous entities (agents) that all perform a single function well.
         Together they solve a complex problem or control a complex system.

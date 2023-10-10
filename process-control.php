@@ -1,12 +1,12 @@
 <?php
-$title = "Process Control";
+include 'template/data.php';
+$pattern = $indexed['Process Control'];
 include 'template/header.php';
 ?>
 
 <section>
-    <header class="content">
-        <h1>Process Control</h1>
-    </header>
+    <?php showHeader($pattern) ?>
+
     <p>
         You want to keep some variable (say: temperature) constant. At the same time external factors
         are causing it to change (cold from the outside). There is a way (a heater) to influence the

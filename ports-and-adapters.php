@@ -1,13 +1,11 @@
 <?php
-$title = "Ports and Adapters";
+include 'template/data.php';
+$pattern = $indexed['Ports and Adapters'];
 include 'template/header.php';
 ?>
 
 <section>
-    <header class="content">
-        <h1>Ports and Adapters</h1>
-        <p>Hexagonal architecture</p>
-    </header>
+    <?php showHeader($pattern) ?>
     <p>
         The main aim of this architecture is to decouple the application's core logic from the services it uses. This allows different services to be "plugged in", and it allows the application to be run without these services.
     </p>

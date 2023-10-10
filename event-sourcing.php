@@ -1,12 +1,12 @@
 <?php
-$title = "Event-sourcing";
+include 'template/data.php';
+$pattern = $indexed['Event Sourcing'];
 include 'template/header.php';
 ?>
 
 <section>
-    <header class="content">
-        <h1>Event sourcing</h1>
-    </header>
+    <?php showHeader($pattern) ?>
+
     <dl>
         <dt>Definition</dt>
         <dd>In stead of storing the current state of the data, all operations (events) that have occurred on the data are stored.</dd>

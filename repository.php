@@ -1,13 +1,11 @@
 <?php
-$title = "Repository";
+include 'template/data.php';
+$pattern = $indexed['Repository'];
 include 'template/header.php';
 ?>
 
 <section>
-    <header class="content">
-        <h1>Repository</h1>
-        <p>Database</p>
-    </header>
+    <?php showHeader($pattern) ?>
 
     <dl>
         <dt>Definition</dt>

@@ -1,7 +1,7 @@
 <?php
 $title = "Patterns";
-include 'template/header.php';
 include 'template/data.php';
+include 'template/header.php';
 ?>
 
 <section>
@@ -13,6 +13,7 @@ include 'template/data.php';
             <article>
                 <a href="<?= $p['link'] ?>" class="image"><img src="images/<?= $p['image']?>" alt=""></a>
                 <h3><?= $p['name']?></h3>
+                <p><?= $p['aliases']?></p>
                 <ul class="actions">
                     <li><a href="<?= $p['link']?>" class="button">Show</a></li>
                 </ul>

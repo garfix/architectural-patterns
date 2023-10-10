@@ -1,12 +1,12 @@
 <?php
-$title = "Structural Model";
+include 'template/data.php';
+$pattern = $indexed['Structural Model'];
 include 'template/header.php';
 ?>
 
 <section>
-    <header class="content">
-        <h1>Structural model</h1>
-    </header>
+    <?php showHeader($pattern) ?>
+
     <p>This pattern's name is somewhat inexpressive. The group that created this software pattern must have assumed that their model was <i>the</i> way to structure software. A better name, I think, would be something like <i>Synchronizer</i>, since that is its main function.
     </p>
 

@@ -1,12 +1,12 @@
 <?php
-$title = "Peer to Peer";
+include 'template/data.php';
+$pattern = $indexed['Peer to Peer'];
 include 'template/header.php';
 ?>
 
 <section>
-    <header class="content">
-        <h1>Peer to Peer</h1>
-    </header>
+    <?php showHeader($pattern) ?>
+
     <p>
         Peer-to-peer (or P2P) networks, are used to share a large set of resources where each node (peer) contains only a subset of the resources. All nodes are responsible for both the upload and download of the resources.
     </p>

@@ -1,13 +1,12 @@
 <?php
-$title = "Broker";
+include 'template/data.php';
+$pattern = $indexed['Broker'];
 include 'template/header.php';
 ?>
 
 <section>
-    <header class="content">
-        <h1>Broker</h1>
-        <p>Service Oriented Architecture, Microservices, API, Hub-and-spoke, Event-bus</p>
-    </header>
+    <?php showHeader($pattern) ?>
+
     <dl>
         <dt>Definition</dt>
         <dd>The broker pattern connects clients with services via a special-purpose component that provides a uniform communication protocol. Communication takes the form of request/response. The goal is make development of clients and services independent (decoupling).</dd>

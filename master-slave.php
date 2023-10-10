@@ -1,12 +1,12 @@
 <?php
-$title = "Master-Slave";
+include 'template/data.php';
+$pattern = $indexed['Master-Slave'];
 include 'template/header.php';
 ?>
 
 <section>
-    <header class="content">
-        <h1>Master-Slave</h1>
-    </header>
+    <?php showHeader($pattern) ?>
+
     <p>SETI is the most successful example of this architecture. They asked all computer owners in the world to donate their idle computer time to the processing of large amounts of raw data. They created the largest distributed computer system to this day. SETI has a single central computer, called the Master. It sends a package of data to the computers on the Internet, called the Clients. Each Client then processes this data and sends its result back to the Master server. The Master integrates the results in its database and feeds the Client more data. Clients come and go as they please.</p>
 
     <h2>How does it work?</h2>

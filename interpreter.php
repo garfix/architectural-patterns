@@ -1,12 +1,11 @@
 <?php
-$title = "Interpreter";
+include 'template/data.php';
+$pattern = $indexed['Interpreter'];
 include 'template/header.php';
 ?>
 
 <section>
-    <header class="content">
-        <h1>Interpreter</h1>
-    </header>
+    <?php showHeader($pattern) ?>
 
     <p>The interpreter processes or executes other programs.</p>
 

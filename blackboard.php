@@ -1,12 +1,12 @@
 <?php
-$title = "Blackboard";
+include 'template/data.php';
+$pattern = $indexed['Blackboard'];
 include 'template/header.php';
 ?>
 
 <section>
-    <header class="content">
-        <h1>Blackboard</h1>
-    </header>
+    <?php showHeader($pattern) ?>
+
     <dl>
         <dt>Definition</dt>
         <dd>Top-down and bottom-up processes codepend on each other to provide data. Therefore, they share a common data repository (blackboard). A scheduler is used to prioritize the claims to the blackboard.</dd>

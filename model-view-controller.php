@@ -1,12 +1,11 @@
 <?php
-$title = "Model-View-Controller";
+include 'template/data.php';
+$pattern = $indexed['Model-View-Controller'];
 include 'template/header.php';
 ?>
 
 <section>
-    <header class="content">
-        <h1>Model-View-Controller</h1>
-    </header>
+    <?php showHeader($pattern) ?>
 
     <p>
         This architecture is used in simple GUI applications.

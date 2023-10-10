@@ -1,13 +1,12 @@
 <?php
-$title = "Microkernel";
+include 'template/data.php';
+$pattern = $indexed['Microkernel'];
 include 'template/header.php';
 ?>
 
 <section>
-    <header class="content">
-        <h1>Microkernel</h1>
-        <p>Kernel</p>
-    </header>
+    <?php showHeader($pattern) ?>
+
     <dl>
         <dt>Definition</dt>
         <dd>Wrap core system resources in a small component, that rarely changes.</dd>

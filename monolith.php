@@ -1,12 +1,12 @@
 <?php
-$title = "Monolith";
+include 'template/data.php';
+$pattern = $indexed['Monolith'];
 include 'template/header.php';
 ?>
 
 <section>
-    <header class="content">
-        <h1>Monolith</h1>
-    </header>
+    <?php showHeader($pattern) ?>
+
     <dl>
         <dt>Definition</dt>
         <dd>A monolith is a non-distributed application: all functionality it uses is internal to the application.</dd>

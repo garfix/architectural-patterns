@@ -1,12 +1,11 @@
 <?php
-$title = "Inference engine";
+include 'template/data.php';
+$pattern = $indexed['Inference Engine'];
 include 'template/header.php';
 ?>
 
 <section>
-    <header class="content">
-        <h1>Inference engine</h1>
-    </header>
+    <?php showHeader($pattern) ?>
 
     <dl>
         <dt>Definition</dt>
