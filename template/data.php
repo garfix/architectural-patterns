@@ -3,7 +3,7 @@
 const CAT_PRESENTATION = 'presentation';
 const CAT_SEPARATION_OF_CONCERNS = 'separation of concerns';
 const CAT_CENTRAL_DATA = 'central data';
-const CAT_BUSINESS_LOGIC = 'business logic';
+const CAT_DOMAIN_LOGIC = 'business logic';
 const CAT_HIGH_PERFORMANCE = 'performance';
 const CAT_PROBLEM_SOLVER = 'problem solver';
 const CAT_MANAGING_SERVICES = 'managing services';
@@ -20,7 +20,7 @@ $categories = [
     ["code" => CAT_SEPARATION_OF_CONCERNS, "name" => 'Separation of concerns'],
     ["code" => CAT_HIGH_PERFORMANCE, "name" => 'High performance'],
     ["code" => CAT_MANAGING_SERVICES, "name" => 'Managing participants'],
-    ["code" => CAT_BUSINESS_LOGIC, "name" => 'Business logic central'],
+    ["code" => CAT_DOMAIN_LOGIC, "name" => 'Domain logic central'],
     ["code" => CAT_CENTRAL_DATA, "name" => 'Data store central'],
     ["code" => CAT_STATE_BASED, "name" => 'State based'],
     ["code" => CAT_EVENT_BASED, "name" => 'Event based'],
@@ -92,7 +92,7 @@ $patterns = [
         "name" => "Inference Engine",
         "image" => "rule-based.drawio.png",
         "link" => "inference-engine",
-        "categories" => [CAT_PROBLEM_SOLVER, CAT_INTERPRETED, CAT_BUSINESS_LOGIC]
+        "categories" => [CAT_PROBLEM_SOLVER, CAT_INTERPRETED, CAT_DOMAIN_LOGIC]
     ],
     [
         "name" => "Process Control",
@@ -146,11 +146,11 @@ $patterns = [
         "categories" => []
     ],
     [
-        "name" => "Ports and Adapters",
-        "aliases" => "Hexagonal architecture, Onion Architecture, Clean Architecture",
-        "image" => "ports-and-adapters.png",
-        "link" => "ports-and-adapters",
-        "categories" => [CAT_BUSINESS_LOGIC]
+        "name" => "Hexagonal Architecture",
+        "aliases" => "Ports and Adapters, Onion Architecture, Clean Architecture",
+        "image" => "ports-and-adapters.drawio.png",
+        "link" => "hexagonal",
+        "categories" => [CAT_DOMAIN_LOGIC]
     ],
     [
         "name" => "Peer to Peer",

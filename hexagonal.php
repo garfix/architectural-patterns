@@ -1,43 +1,40 @@
 <?php
 include 'template/data.php';
-$pattern = $indexed['Ports and Adapters'];
+$pattern = $indexed['Hexagonal Architecture'];
 include 'template/header.php';
 ?>
 
 <section>
     <?php showHeader($pattern) ?>
+
+    <dl>
+        <dt>Definition</dt>
+        <dd>Ports and Adapters provides domain logic without dependencies on external services. The dependencies are replaceable at runtime.</dd>
+    </dl>
+
     <p>
-        The main aim of this architecture is to decouple the application's core logic from the services it uses. This allows different services to be "plugged in", and it allows the application to be run without these services.
+        The main aim of this architecture is to decouple the application's core logic from the services it uses (database, email, time), and the services that use it (user interface, framework). This allows different services to be "plugged in", and it allows the logic to be run without these services.
     </p>
     <p>
-        The core logic, or business logic, of an application consists of the algorithms that are essential to its purpose. They implement the use cases that are the heart of the application. When you change them, you change the essence of the application.
+        The domain logic, or business logic, of an application consists of the algorithms that are essential to its purpose. They implement the use cases that are the heart of the application.
     </p>
     <p>
-        The services are <i>not</i> essential. They can be replaced without changing the purpose of the application. Examples: database access and other types of storage, user interface components, e-mail and other communication components, hardware devices.
+        The external services are <i>not</i> essential. They can be replaced without changing the purpose of the application. Examples: database access and other types of storage, user interface components, e-mail and other communication components, hardware devices.
     </p>
     <p>
         In a strict sense of this architecture even the application's framework is a set of services. The core logic of an application should not depend on these services in this architecture (so that it becomes "framework agnosic").
     </p>
     <p>
         Advantages of this architecture:
-    <ul>
-        <li>The core logic can be tested independent of outside services.</li>
-        <li>It is easy to replace services by other ones that are more fit in view of changing requirements.</li>
-    </ul>
+        <ul>
+            <li>The core logic can be tested independent of outside services.</li>
+            <li>It is easy to replace services by other ones that are more fit in view of changing requirements.</li>
+        </ul>
     </p>
 
     <div class="features">
         <article>
-            <figure><img src="images/ports-and-adapters.png"><figcaption>Ports and Adapters architecture diagram</figcaption></figure>
-        </article>
-        <article>
-            <table>
-            <tr><td><b>yellow:</b></td><td>core logic</td></tr>
-            <tr><td><b>light red:</b></td><td>primary ports</td></tr>
-            <tr><td><b>light blue:</b></td><td>primary adapters</td></tr>
-            <tr><td><b>dark red:</b></td><td>secondary ports</td></tr>
-            <tr><td><b>dark blue:</b></td><td>secondary adapters</td></tr>
-            </table>
+            <figure><img src="images/ports-and-adapters.drawio.png"><figcaption>Ports and Adapters architecture diagram</figcaption></figure>
         </article>
     </div>
 
@@ -76,6 +73,14 @@ include 'template/header.php';
         </ul>
     </p>
 
+    <h2>Variants</h2>
+    <p>
+        The <b>Onion architecture</b> emphasis the layers in the pattern and doesn't stress the ports and adapters. Inner layers define interfaces. Outer layers implement interfaces.
+    </p>
+    <p>
+        The <b>Clean architecture</b> ...
+    </p>
+
     <h2>Where does it come from?</h2>
     <p>
         Alistair Cockburn invented it in <a href='http://c2.com/cgi/wiki?PortsAndAdaptersArchitecture'>2005</a>. It is a response to the desired to create thoroughly testable applications. As Cockburn says: "Allow an application to equally be driven by users, programs, automated test or batch scripts, and to be developed and tested in isolation from its eventual run-time devices and databases."
@@ -83,30 +88,29 @@ include 'template/header.php';
 
     <h2>When should you use it?</h2>
     <p>
-        If 100% unit-test code coverage is important to your application. Also, if you want to be able to switch your storage mechanism, or any other type of third-party code. The architecture is especially useful for long-lasting applications that need to keep up with changing requirements.
+        A strong argument for this pattern is testability. Code that can be run without external dependencies like time, randomness, database, or sending email is easier to test.
     </p>
+
+    <h2>Problems</h2>
+    <ul>
+        <li>The prime motive for this pattern is correctness of domain logic. If performance is not also taken into consideration when developing the domain logic, the resulting system may be correct, but inheritently slow.
+    </ul>
 
     <h2>Common implementation techniques</h2>
-
-    <p>
-    Check <a href="http://alistair.cockburn.us/Hexagonal+architecture">Alistair Cockburn's article</a> and <a href="http://matteo.vaccari.name/blog/archives/154">Matteo Vaccari's blog</a> for some code examples.
-    </p>
-    <p>
-    Some details:<br />
-
     <ul>
         <li><a href='http://en.wikipedia.org/wiki/Dependency_injection'>Dependency injection</a> is used to pass the secondary adapters to the core logic</li>
         <li>Secondary ports are implemented as <a href='http://en.wikipedia.org/wiki/Interface_%28computing%29'>interfaces</a>. Secondary adapters implement these interfaces.</li>
         <li>You could create a <a href='http://en.wikipedia.org/wiki/Factory_method_pattern'>factory</a> for adapters for a given service.</li>
     </ul>
-    </p>
 
     <h2>Links</h2>
     <ul>
         <li><a href="http://alistair.cockburn.us/Hexagonal+architecture">Hexagonal Architecture</a> Alistair Cockburn's original article on this architecture.
+        <li><a href="https://jeffreypalermo.com/2008/07/the-onion-architecture-part-1/">Onion Architecture</a> Jeffrey Palermo's original article on this architecture
+        <li><a href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html">Clean Architecture</a> Robert C. Martin's original article on this architecture
         <li><a href="https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)">Wikipedia on Hexgonal Architecture</a>
-        <li><a href="http://matteo.vaccari.name/blog/archives/154">The birthday greetings kata</a> Matteo Vaccari's blog that provides an example Java implementation of the port and adapter.
         <li><a href="http://www.natpryce.com/articles/000772.html">Visualising Test Terminology</a> Nat Price's information on testing using Ports-And-adapters.
+        <li><a href="https://blog.ploeh.dk/2013/12/03/layers-onions-ports-adapters-its-all-the-same/">Layers, Onions, Ports, Adapters: it's all the same - Mark Seemann
     </ul>
 </section>
 
