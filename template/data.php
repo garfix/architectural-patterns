@@ -147,7 +147,7 @@ $patterns = [
     ],
     [
         "name" => "Hexagonal Architecture",
-        "aliases" => "Ports and Adapters, Onion Architecture, Clean Architecture",
+        "aliases" => "Ports and Adapters, Onion Architecture, Clean Architecture, Boundary-Control-Entity",
         "image" => "ports-and-adapters.drawio.png",
         "link" => "hexagonal",
         "categories" => [CAT_DOMAIN_LOGIC]
