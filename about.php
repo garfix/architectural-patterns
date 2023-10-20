@@ -8,6 +8,12 @@ include 'template/header.php';
         <h1>About</h1>
     </header>
     <header class="major">
+        <h2>Box-and-arrow diagram</h2>
+    </header>
+    <p>
+        A box represents a process, an arrow the flow of data (either push or pull), a trapezoid (?) data.
+    </p>
+    <header class="major">
         <h2>Definitions</h2>
     </header>
     <p>

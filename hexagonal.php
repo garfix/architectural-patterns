@@ -18,19 +18,8 @@ include 'template/header.php';
     <p>
         The domain logic, or business logic, of an application consists of the algorithms that are essential to its purpose. They implement the use cases that are the heart of the application. The external services are <i>not</i> essential. They can be replaced without changing the purpose of the application. Examples: database access and other types of storage, user interface components, e-mail and other communication components, hardware devices. In a strict sense of this architecture even the application's framework is a set of services. The core logic of an application should not depend on these services in this architecture (so that it becomes "framework agnosic").
     </p>
-    <p>
-        Advantages of this architecture:
-        <ul>
-            <li>The core logic can be tested independent of outside services.</li>
-            <li>It is easy to replace services by other ones that are more fit in view of changing requirements.</li>
-        </ul>
-    </p>
 
-    <div class="features">
-        <article>
-            <figure><img src="images/ports-and-adapters.drawio.png"><figcaption>Ports and Adapters architecture diagram</figcaption></figure>
-        </article>
-    </div>
+    <figure><img src="images/ports-and-adapters.drawio.png"><figcaption>Hexagonal architecture diagram</figcaption></figure>
 
     <p>
         The number of ports depends on the application. The shown number of 6 ports nicely matches the name of the architecture. But the point of the architecture's name is not that the number six matters, but that <i>the core logic is at the center</i>. A realistic number of ports is about 2 to 4.
@@ -92,9 +81,8 @@ include 'template/header.php';
 
     <h2>Common implementation techniques</h2>
     <ul>
-        <li><a href='http://en.wikipedia.org/wiki/Dependency_injection'>Dependency injection</a> is used to pass the secondary adapters to the core logic</li>
-        <li>Secondary ports are implemented as <a href='http://en.wikipedia.org/wiki/Interface_%28computing%29'>interfaces</a>. Secondary adapters implement these interfaces.</li>
-        <li>You could create a <a href='http://en.wikipedia.org/wiki/Factory_method_pattern'>factory</a> for adapters for a given service.</li>
+        <li><a href='http://en.wikipedia.org/wiki/Dependency_injection'>Dependency injection</a> is used to pass the adapters to the domain logic</li>
+        <li>Ports are implemented as <a href='http://en.wikipedia.org/wiki/Interface_%28computing%29'>interfaces</a>. Adapters implement these interfaces.</li>
     </ul>
 
     <h2>Links</h2>

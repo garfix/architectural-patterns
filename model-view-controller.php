@@ -7,83 +7,30 @@ include 'template/header.php';
 <section>
     <?php showHeader($pattern) ?>
 
-    <p>
-        This architecture is used in simple GUI applications.
-        The architecture is event-driven, which means that all activity starts by some event and is propagated by
-        some other events.<br>
-        The architecture usually contains a large number of components (hereafter called MVC components),
-        each of which is built out of these three items:
-        <ol>
-            <li>The Model
-            <li>The View
-            <li>The Controller
-        </ol>
-    </p>
-    <p>
-        The <b>model</b> is the information contents of the component. It can be as simple as an integer or a string,
-        and as complex as an interface to an external database. The MVC component does not need to contain the
-        model itself. It may contain just a link to the model. And this is common if multiple MVC components
-        are connected to a model.<br>
-        In a MVC architecture, where the model is shared by multiple MVC components, the model should keep track of
-        any number of views. These views need be notified of changes that occur in the model.
-    </p>
-    <p>
-        The <b>view</b> is the visual representation of the component, usually on a computer screen. It can be a textbox or a button in a form on the screen,
-        anything that represents the model or part of it. Try to think of the view as <i>only</i> the visual aspect
-        of the component. I.e. just the picture of the textbox that can in itself not be manipulated by a keypress
-        or mouseclick.<br>
-        The view also keeps track of the state of the component itself. Which means that it keeps track of the cursor position in a
-        textbox, the position of a scrollbar, the state of a button, etc. This way it not only knows <i>what</i> to show
-        (the model) but also <i>how</i> to show it.
-    </p>
-    <p>
-        The <b>controller</b> takes care of all the action. It is sent external events like keypresses, mouseclicks,
-        mousemoves, timer updates, etc. It knows how to change the model in response to these events and
-        it it also knows how to change the component's state in the view. If one for example presses a key when
-        a textbox is active, the controller tells the model to add the character to the string and it tells the
-        view to advance the cursor position.
-    </p>
-
-    <h2>How does it work?</h2>
-    <p>
-        An MVC component is created in these steps
-        <ol>
-            <li>The model can exist prior to the creation of the component, if so, it is included in the component merely by reference
-            <li>The view is created, to which a reference to the model is passed
-            <li>The view registers itself with the model as a changelistener
-            <li>The view creates the controller, which is passed the reference to the model, and a reference to the view
-        </ol>
-    </p>
-    <p>
-    The control flow within an MVC component.
-    </p>
-
-    <figure><img src="images/mvc_2.jpg"><figcaption>Model-View-Controller architecture diagram</figcaption></figure>
+    <dl>
+        <dt>Definition</dt>
+        <dd>A UI pattern that separates the visual representation (View), the domain model (Model), and the code needed to connect the two (Controller), allowing the view to read directly from the model.</dd>
+    </dl>
 
     <p>
-        The controller receives an event, say a keypress from the user (1).
-        Depending on its own logic, it processes the event, and updates the model (2a)
-        or only the characteristics of the view (2b). The model notifies
-        the view(s) (3). The view updates itself as can be seen by the user (4).
-    </p>
-    <p>
-        If the model is changed, not only the view of the component is notified,
-        but also the views of other components which registered themselves to the model.
-        In the next picture the same component as before is shown on top and a registered component is shown below.
+        This is the oldest UI pattern. Its original strength was the separation of model, view, and controller. But since there's now also the <a href="model-view-adapter">Model-View-Adapter</a> pattern, its distinguishing feature is the fact that the view reads from the model.  It's still used by simple web applications where the view accesses the database in order to find the information to display.
     </p>
 
-    <figure><img src="images/mvc_3.jpg"><figcaption>Multiple components</figcaption></figure>
+    <figure><img src="images/model-view-controller.drawio.png"><figcaption>Model-View-Controller architecture diagram</figcaption></figure>
 
     <p>
-        The view of the registered component receives a notification from the model (3).
-        The view updates itself as can be seen by the user (4).
+        The <b>model</b> contains the data and the domain logic of the application.
+    </p>
+    <p>
+        The <b>view</b> is the visual representation of the component that allows the user to interact with the application.
+    </p>
+    <p>
+        The <b>controller</b> provides the wiring of the application: reading from the UI, writing to the model, error handling, navigation.
     </p>
 
     <h2>Examples</h2>
     <ul>
-        <li>The word processor. The model is a text. The wordprocessor may process several models at once.
-        Each text typically has a single MVC component attached to it, but a split-window is an example of
-        two components sharing the same text.
+        <li>Plain PHP websites where the view contains a mix of markup and PHP code, but where the domain logic is carefully placed into a separate module.
     </ul>
 
     <h2>Where does it come from?</h2>
@@ -92,10 +39,14 @@ include 'template/header.php';
     as a visiting scientist in 1978/1979. MVC is since then an integral part of the Smalltalk programming language.
 
     <h2>When should you use it?</h2>
-    Most often you don't need to build such an architecture from scratch. The architectures usually come with
-    visual programming environments (like Visual C++, JBuilder, etc. etc.) which create the code for all MVC components for you, together with the
-    event handling mechanisms required. If this is so, it is still useful to know the basics of the architecture
-    you're working with.
+    <p>
+        Separating view code from model code is always a good idea. It allows both of them to be tested in isolation and leads to less code duplication.
+    </p>
+
+    <h2>Problems</h2>
+    <ul>
+        <li>The view is tied to the model. If the same view needs to be used with a different model, it needs to be duplicated.
+    </ul>
 
     <h2>Common implementation techniques</h2>
     <ul>
@@ -106,6 +57,7 @@ include 'template/header.php';
     <h2>Links</h2>
     <ul>
         <li><a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">Wikipedia on Model-View-Controller</a>
+        <li><a href="https://stefanoborini.com/book-modelviewcontroller/">Book: Understanding Model-View-Controller - Stefano Borini</a>
     </ul>
 </section>
 

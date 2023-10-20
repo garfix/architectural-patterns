@@ -2,6 +2,7 @@ patterns
 
 * Knowledge based systems
 * Connectionism
+* Parallellism
 
 styles?
 

@@ -15,32 +15,61 @@ const CAT_DISTRIBUTED = 'distributed computing'; // different machines, networke
 const CAT_INTERPRETED = 'interpreted';
 
 $categories = [
-    ["code" => CAT_PRESENTATION, "name" => 'Presentation'],
-    ["code" => CAT_PROBLEM_SOLVER, "name" => 'Problem solver'],
-    ["code" => CAT_SEPARATION_OF_CONCERNS, "name" => 'Separation of concerns'],
-    ["code" => CAT_HIGH_PERFORMANCE, "name" => 'High performance'],
-    ["code" => CAT_MANAGING_SERVICES, "name" => 'Managing participants'],
-    ["code" => CAT_DOMAIN_LOGIC, "name" => 'Domain logic central'],
-    ["code" => CAT_CENTRAL_DATA, "name" => 'Data store central'],
-    ["code" => CAT_STATE_BASED, "name" => 'State based'],
-    ["code" => CAT_EVENT_BASED, "name" => 'Event based'],
-    ["code" => CAT_ROBUSTNESS, "name" => 'Robustness'],
-    ["code" => CAT_FLEXIBILITY, "name" => 'Flexibility'],
-    ["code" => CAT_DISTRIBUTED, "name" => 'Distributed computing'],
-    ["code" => CAT_INTERPRETED, "name" => 'Interpreted'],
+    ["code" => CAT_PRESENTATION, "name" => 'Presentation',
+        "description" => "Patterns related to the Graphical User Interface"],
+    ["code" => CAT_PROBLEM_SOLVER, "name" => 'Problem solver',
+        "description" => "Description"],
+    ["code" => CAT_SEPARATION_OF_CONCERNS, "name" => 'Separation of concerns',
+        "description" => "Description"],
+    ["code" => CAT_HIGH_PERFORMANCE, "name" => 'High performance',
+        "description" => "Description"],
+    ["code" => CAT_MANAGING_SERVICES, "name" => 'Managing participants',
+        "description" => "Description"],
+    ["code" => CAT_DOMAIN_LOGIC, "name" => 'Domain model central',
+        "description" => "Description"],
+    ["code" => CAT_CENTRAL_DATA, "name" => 'Data central',
+        "description" => "Description"],
+    ["code" => CAT_STATE_BASED, "name" => 'State based',
+        "description" => "Description"],
+    ["code" => CAT_EVENT_BASED, "name" => 'Event based',
+        "description" => "Description"],
+    ["code" => CAT_ROBUSTNESS, "name" => 'Robustness',
+        "description" => "Description"],
+    ["code" => CAT_FLEXIBILITY, "name" => 'Flexibility',
+        "description" => "Description"],
+    ["code" => CAT_DISTRIBUTED, "name" => 'Distributed computing',
+        "description" => "Description"],
+    ["code" => CAT_INTERPRETED, "name" => 'Interpreted',
+        "description" => "Description"],
 ];
 
 $patterns = [
     [
         "name" => "Model-View-Controller",
-        "image" => "mvc_2.jpg",
+        "image" => "model-view-controller.drawio.png",
+        "aliases" => "Model-View-Updater",
         "link" => "model-view-controller",
         "categories" => [CAT_PRESENTATION]
     ],
     [
-        "name" => "Presentation-Abstraction-Control",
-        "image" => "pac_1.jpg",
-        "link" => "presentation-abstraction-control",
+        "name" => "Hierarchical component UI",
+        "aliases" => "Presentation-Abstraction-Control, Hierarchical model-view-controller",
+        "image" => "hierarchical-component-ui.drawio.png",
+        "link" => "hierarchical-component-ui",
+        "categories" => [CAT_PRESENTATION]
+    ],
+    [
+        "name" => "Model-View-Viewmodel",
+        "aliases" => "MVVM, Model-View-Binder",
+        "image" => "model-view-viewmodel.drawio.png",
+        "link" => "model-view-viewmodel",
+        "categories" => [CAT_PRESENTATION]
+    ],
+    [
+        "name" => "Model-View-Adapter",
+        "aliases" => "Model-View-Presenter",
+        "image" => "model-view-adapter.drawio.png",
+        "link" => "model-view-adapter",
         "categories" => [CAT_PRESENTATION]
     ],
     [
