@@ -9,25 +9,28 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A UI pattern that automatically binds the visual representation (View) to the domain model (Model) using a specialized component (ViewModel). The view-model also invokes both view-logic and domain-logic.</dd>
+        <dd>A UI pattern that introduces a datastructure that represents the state of the view, yet is located outside of it: the view-model. The state of the view is automatically synchronized with the view model by a binder. Controller logic is performed by the framework.</dd>
     </dl>
 
     <p>
-        The <b>model</b> contains the data and the domain logic of the application.
+        The <b>model</b> contains the domain logic of the application and connects to external APIs. It also has routines for preparing data for the view.
     </p>
     <p>
         The <b>view</b> is the visual representation of the component that allows the user to interact with the application.
     </p>
 
     <p>
-        The <b>Viewmodel</b> a controller that binds the view state to the model and manages the events of the component.
+        The <b>view-model</b> the state of the view, outside of the view, abstracted from ui component specifics.
+    </p>
+    <p>
+        The <b>binder</b> syncs the state of the view to the view-model.
     </p>
 
     <figure><img src="images/model-view-viewmodel.drawio.png"><figcaption>Model-View-Viewmodel architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>
-        Modern frontend frameworks have a hierarchical component structure where each component is self-contained. The model is not the database on the server, but rather an object in memory. The view is as compact and close to the resulting HTML as possible. The viewmodel automatically takes care of all interactions between model and view. Each component has a lifecycle that consists of hooks that are executed when the component is created, mounted, unmounted, etc. Events are declared in the view and executed by the view-model.
+        Modern frontend frameworks have a hierarchical component structure where each component is self-contained. The view is as compact and close to the resulting output (i.e. HTML) as possible. The view declares any handler functions needed that are activated when events occur. The view-model is a data structure that represents the data of the view. The state of the view is automatically synced to the view-model by the binder that is part of the framework. Each component has a lifecycle that consists of hooks that are executed when the component is created, mounted, unmounted, etc.
     </p>
 
     <h2>Examples</h2>

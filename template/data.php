@@ -52,10 +52,10 @@ $patterns = [
         "categories" => [CAT_PRESENTATION]
     ],
     [
-        "name" => "Hierarchical component UI",
+        "name" => "Hierarchical UI",
         "aliases" => "Presentation-Abstraction-Control, Hierarchical model-view-controller",
         "image" => "hierarchical-component-ui.drawio.png",
-        "link" => "hierarchical-component-ui",
+        "link" => "hierarchical-ui",
         "categories" => [CAT_PRESENTATION]
     ],
     [
