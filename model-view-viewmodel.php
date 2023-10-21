@@ -9,14 +9,14 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A UI pattern that adds an abstract representation of the view outside of the view: the viewmodel. The state of the view is automatically synchronized with the viewmodel by a binder. The binder is provided by a framework. The viewmodel also serves as controller, preparing data for the view and the model.</dd>
+        <dd>A UI pattern that adds an abstract representation of the view outside of the view: the viewmodel. The state of the view is automatically synchronized with the viewmodel by a binder. The binder is provided by a framework. The viewmodel also serves as adapter, preparing data for the view and the model.</dd>
     </dl>
 
     <p>
         The <b>view</b> is the visual representation of the component that allows the user to interact with the application.
     </p>
     <p>
-        The <b>viewmodel</b> has two functions: it keeps the state of the view, outside of the view. Basically it contains the values of the ui components. It also serves as a controller, preparing data for the view and for the model.
+        The <b>viewmodel</b> has two functions: it keeps the state of the view, outside of the view. Basically it contains the values of the ui components. It also serves as an adapter, preparing data for the view and for the model.
     </p>
     <p>
         The <b>binder</b> syncs the state of the view to the viewmodel and vice-versa.
@@ -29,7 +29,7 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>
-        Modern frontend frameworks have a hierarchical component structure where each component is self-contained. The view is as compact and close to the resulting output (i.e. HTML) as possible. The view declares any handler functions needed that are activated when events occur. The viewmodel contains both a data structure and controller logic. The state of the view is automatically synced to the viewmodel data structure by the binder that is part of the framework. The viewmodel also serves as controller and prepares data for the view and the model. Each component has a lifecycle that consists of hooks that are executed when the component is created, mounted, unmounted, etc. Since these are often client-server applications, part of the domain is available in the client, and part of it on the server.
+        Modern frontend frameworks have a hierarchical component structure where each component is self-contained. The view is as compact and close to the resulting output (i.e. HTML) as possible. The view declares any handler functions needed that are activated when events occur. The viewmodel contains both a data structure and adapter logic. The state of the view is automatically synced to the viewmodel data structure by the binder that is part of the framework. The viewmodel also serves as adapter and prepares data for the view and the model. Each component has a lifecycle that consists of hooks that are executed when the component is created, mounted, unmounted, etc. Since these are often client-server applications, part of the domain is available in the client, and part of it on the server.
     </p>
 
     <h2>Examples</h2>
