@@ -2,7 +2,8 @@ patterns
 
 * Knowledge based systems
 * Connectionism
-* Parallellism
+* Parallel computing
+* Shared nothing
 
 styles?
 

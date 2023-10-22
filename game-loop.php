@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>In video games, a control loop periodically updates the game. When the game is not being updated it is idle.</dd>
     </dl>
 
-    <figure><img src="images/game-loop.drawio.png"><figcaption>Game loop diagram</figcaption></figure>
+    <figure><img src="images/game-loop.drawio.png"><figcaption>Game loop architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

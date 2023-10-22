@@ -205,6 +205,12 @@ $patterns = [
         "image" => "monolith.drawio.png",
         "link" => "monolith",
         "categories" => [CAT_DISTRIBUTED]
+    ],
+    [
+        "name" => "Parallel Programming",
+        "image" => "parallel-programming.drawio.png",
+        "link" => "parallel-programming",
+        "categories" => [CAT_HIGH_PERFORMANCE]
     ]
 ];
 
