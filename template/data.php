@@ -169,9 +169,9 @@ $patterns = [
         "categories" => [CAT_EVENT_BASED]
     ],
     [
-        "name" => "Structural Model",
-        "image" => "structural_model_1.jpg",
-        "link" => "structural-model",
+        "name" => "Game Loop",
+        "image" => "game-loop.drawio.png",
+        "link" => "game-loop",
         "categories" => []
     ],
     [
