@@ -210,7 +210,13 @@ $patterns = [
         "name" => "Parallel Programming",
         "image" => "parallel-programming.drawio.png",
         "link" => "parallel-programming",
-        "categories" => [CAT_HIGH_PERFORMANCE]
+        "categories" => [CAT_HIGH_PERFORMANCE, CAT_DISTRIBUTED]
+    ],
+    [
+        "name" => "Load Balancing",
+        "image" => "load-balancing.drawio.png",
+        "link" => "load-balancing",
+        "categories" => [CAT_HIGH_PERFORMANCE, CAT_DISTRIBUTED]
     ]
 ];
 

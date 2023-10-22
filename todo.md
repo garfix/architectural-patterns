@@ -2,8 +2,8 @@ patterns
 
 * Knowledge based systems
 * Connectionism
-* Parallel computing
 * Shared nothing
+* Load balancing
 
 styles?
 
