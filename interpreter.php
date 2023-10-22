@@ -7,13 +7,20 @@ include 'template/header.php';
 <section>
     <?php showHeader($pattern) ?>
 
-    <p>The interpreter processes or executes other programs.</p>
+    <dl>
+        <dt>Definition</dt>
+        <dd>The interpreter serves to execute a program in a domain-specific language. It parses the source code into a format that can be executed, then executes it.</dd>
+    </dl>
+
+    <figure><img src="images/interpreter.drawio.png"><figcaption>Interpreter architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
-    <p>One or more Programs or Scripts are loaded into the Interpreter. They may be converted into an internal representation that can be processed more effectively by the Interpreter. Connections between the Program and the Environment are created.</p>
-    <p>The Interpreter reads instructions from the Program and processes them. This affects the Environment. Changes in the Environment are fed back to the Program. This cycle is executed until the Program is finished.</p>
-
-    <figure><img src="images/vm.jpg"><figcaption>Interpreter architecture diagram</figcaption></figure>
+    <p>
+        One or more Programs or Scripts are loaded into the Interpreter. They may be converted into an internal representation that can be processed more effectively by the Interpreter. Connections between the Program and the Environment are created.
+    </p>
+    <p>
+        The Interpreter reads instructions from the Program and processes them. This affects the environment and the call stack. This cycle is executed until the Program is finished.
+    </p>
 
     <h2>Examples</h2>
     <ul>
@@ -21,9 +28,6 @@ include 'template/header.php';
         <li>Rule-based systems
         <li>Scripting languages, i.e. JavaScript
     </ul>
-
-    <h2>Where does it come from?</h2>
-    <p>A.f.a.i.k. the first interpreter was written for the BASIC programming language in Dartmouth College in 1964.</p>
 
     <h2>When should you use it?</h2>
     <p>
@@ -50,7 +54,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="http://en.wikipedia.org/wiki/Interpreter_%28computing%29">Wikipedia: Interpreter (computing)<a>
+        <li><a href="http://en.wikipedia.org/wiki/Interpreter_%28computing%29">Wikipedia: Interpreter<a>
     </ul>
 </section>
 

@@ -150,7 +150,7 @@ $patterns = [
     ],
     [
         "name" => "Interpreter",
-        "image" => "vm.jpg",
+        "image" => "interpreter.drawio.png",
         "link" => "interpreter",
         "categories" => [CAT_INTERPRETED]
     ],
