@@ -217,6 +217,12 @@ $patterns = [
         "image" => "load-balancing.drawio.png",
         "link" => "load-balancing",
         "categories" => [CAT_HIGH_PERFORMANCE, CAT_DISTRIBUTED]
+    ],
+    [
+        "name" => "Space-Based",
+        "image" => "space-based.drawio.png",
+        "link" => "space-based",
+        "categories" => [CAT_HIGH_PERFORMANCE, CAT_DISTRIBUTED]
     ]
 ];
 

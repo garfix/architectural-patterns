@@ -1,9 +1,7 @@
 patterns
 
-* Knowledge based systems
 * Connectionism
 * Shared nothing
-* Load balancing
 
 styles?
 
