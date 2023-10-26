@@ -183,7 +183,7 @@ $patterns = [
     ],
     [
         "name" => "Peer to Peer",
-        "image" => "peer-to-peer.png",
+        "image" => "peer-to-peer.drawio.png",
         "link" => "peer-to-peer",
         "categories" => [CAT_MANAGING_SERVICES, CAT_ROBUSTNESS, CAT_DISTRIBUTED]
     ],

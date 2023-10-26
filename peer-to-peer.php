@@ -7,12 +7,16 @@ include 'template/header.php';
 <section>
     <?php showHeader($pattern) ?>
 
+    <dl>
+        <dt>Definition</dt>
+        <dd>A pool of servers, distributing content. Each document may be located in one or servers on the network.</dd>
+    </dl>
+
     <p>
-        Peer-to-peer (or P2P) networks, are used to share a large set of resources where each node (peer) contains only a subset of the resources. All nodes are responsible for both the upload and download of the resources.
+        This pattern is mainly used to for media sharing: video, games, books. Each media item is located on one or more servers, and servers can be added  and removed at will.
     </p>
-    <p>
-        Multiple nodes will contain the same resources and when one node requests a resource, it may be downloaded (seeded) from multiple nodes at the same time.
-    </p>
+
+    <figure><img src="images/peer-to-peer.drawio.png"><figcaption>Peer to Peer architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>
@@ -25,8 +29,6 @@ include 'template/header.php';
         The simple solution is to send a request to all peers and wait for the response.<br>
         The advanced solution is the use of some sort of a data structure that tells each node where to find a resource.
     </p>
-
-    <figure><img src="images/peer-to-peer.png"><figcaption>Peer to Peer architecture diagram</figcaption></figure>
 
     <h2>Examples</h2>
     <ul>
@@ -53,7 +55,7 @@ include 'template/header.php';
 
     <h2>Common implementation techniques</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Consistent_hashing">Consistent hashing</a> for resource detection.
+        <li><a href="https://en.wikipedia.org/wiki/Distributed_hash_table">Distributed hashtable</a> for resource detection
     </ul>
 
     <h2>Links</h2>
