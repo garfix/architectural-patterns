@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A pool of processing units that both contain domain logic and code for a section of the application. New units can be added and removed at any time.</dd>
+        <dd>A pool of processing units that both contain domain logic and code for a section of the application. New units can be added and removed as load demands.</dd>
     </dl>
 
     <p>In a n-tier system, the database is the bottleneck. This pattern tries to solve this by scaling not only code linearly but the data as well.</p>
@@ -34,7 +34,7 @@ include 'template/header.php';
         </ul>
     </p>
     <p>
-        A <b>processing unit</b> contains the logic of a section of the application. It holds a copy of the data grid. It contains a replication engine that duplicates its data to the other processing units of the same type, and to the data grid. This data replication is very fast, but not immediate. It's based on a replication frequency.
+        A <b>processing unit</b> contains the logic of a section of the application. It holds a copy of the data grid. It contains a replication engine that duplicates its data to the other processing units of the same type. This data replication is very fast, but not immediate. It's based on a replication frequency. Multiple variants of replication are available, where the data grid may or may not be involved.
     </p>
     <p>
         Every mutation is not only replicated to the other processing units, but send as a message to the database. The database is also used to feed the first processing unit of an area.
