@@ -3,16 +3,16 @@
 const CAT_PRESENTATION = 'presentation';
 const CAT_GROUPING = 'separation of concerns';
 const CAT_CENTRAL_DATA = 'central data';
-const CAT_DOMAIN_LOGIC = 'business logic';
-const CAT_HIGH_PERFORMANCE = 'performance';
+// const CAT_DOMAIN_LOGIC = 'business logic';
+// const CAT_HIGH_PERFORMANCE = 'performance';
 const CAT_PROBLEM_SOLVER = 'problem solver';
-const CAT_MANAGING_SERVICES = 'managing services';
-const CAT_STATE_BASED = 'stated based';
-const CAT_ROBUSTNESS = 'robustness';
-const CAT_FLEXIBILITY = 'flexibility';
-const CAT_EVENT_BASED = 'event based';
+// const CAT_MANAGING_SERVICES = 'managing services';
+// const CAT_STATE_BASED = 'stated based';
+// const CAT_ROBUSTNESS = 'robustness';
+// const CAT_FLEXIBILITY = 'flexibility';
+// const CAT_EVENT_BASED = 'event based';
 const CAT_DISTRIBUTED = 'distributed computing'; // different machines, networked
-const CAT_INTERPRETED = 'interpreted';
+// const CAT_INTERPRETED = 'interpreted';
 const CAT_CONTROL_FLOW = 'control flow';
 
 $categories = [
@@ -130,6 +130,13 @@ $patterns = [
         "aliases" => "Model-View-Presenter",
         "image" => "model-view-adapter.drawio.png",
         "link" => "model-view-adapter",
+        "categories" => [CAT_PRESENTATION]
+    ],
+    [
+        "name" => "Menu Navigation",
+        "aliases" => "Toolbar",
+        "image" => "menu.drawio.png",
+        "link" => "menu-navigation",
         "categories" => [CAT_PRESENTATION]
     ],
     [
