@@ -4,6 +4,9 @@ patterns
 * Shared nothing
 * agent
 * decision maker: goal unknown
+* search
+* planning
+* learning
 
 categories
 

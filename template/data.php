@@ -163,6 +163,12 @@ $patterns = [
         "categories" => [CAT_PROBLEM_SOLVER]
     ],
     [
+        "name" => "Search",
+        "image" => "search.drawio.png",
+        "link" => "search",
+        "categories" => [CAT_PROBLEM_SOLVER]
+    ],
+    [
         "name" => "Layered",
         "image" => "layers_1.jpg",
         "link" => "layered",
