@@ -157,6 +157,12 @@ $patterns = [
         "categories" => [CAT_PROBLEM_SOLVER]
     ],
     [
+        "name" => "Agent",
+        "image" => "agent.drawio.png",
+        "link" => "agent",
+        "categories" => [CAT_PROBLEM_SOLVER]
+    ],
+    [
         "name" => "Layered",
         "image" => "layers_1.jpg",
         "link" => "layered",

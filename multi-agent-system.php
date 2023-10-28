@@ -14,7 +14,7 @@ include 'template/header.php';
     </dl>
 
     <p>
-        An <b>Agent</b> is a component that autonomously interacts with its environment. It is never <i>told</i> what to do,
+        An <a href="agent">Agent</a> is a component that autonomously interacts with its environment. It is never <i>told</i> what to do,
         one can merely request it to do something. It acts without being told. It should have a single, clear purpose.
         It's internal structure is not accessible to others.
     </p>
