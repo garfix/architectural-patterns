@@ -7,6 +7,11 @@ include 'template/header.php';
 <section>
     <?php showHeader($pattern) ?>
 
+    <dl>
+        <dt>Definition</dt>
+        <dd>A pattern aimed at controlling a variable resource.</dd>
+    </dl>
+
     <p>
         You want to keep some variable (say: temperature) constant. At the same time external factors
         are causing it to change (cold from the outside). There is a way (a heater) to influence the
@@ -64,7 +69,7 @@ include 'template/header.php';
 
     <h2>Where does it come from?</h2>
     <p>
-        Process Control is an engineering disipline. It has a <a href="http://www.theorem.net/theorem/lewis1.html">long history</a>.
+        Process Control is an engineering discipline.
     </p>
 
     <h2>When should you use it?</h2>
@@ -75,7 +80,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="http://www-2.cs.cmu.edu/afs/cs/project/vit/ftp/pdf/ByndObj.pdf">Beyond Objects: A Software Design Paradigm Based on Process Control</a>
+        <li><a href="https://en.wikipedia.org/wiki/Industrial_process_control">Wikipedia</a>
     </ul>
 </section>
 
