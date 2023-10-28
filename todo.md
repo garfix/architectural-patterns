@@ -2,22 +2,24 @@ patterns
 
 * Connectionism
 * Shared nothing
+* agent
+* decision maker: goal unknown
 
-styles?
+categories
 
-layered
-object oriented
-event driven
-domain driven
-component based
-service oriented
-distributed
-separation of concern
-interpreter
-concurrency
-data centric
+perspectives
 
-https://medium.com/bytebytego-system-design-alliance/the-architects-blueprint-understanding-software-styles-and-patterns-with-cheatsheet-5c1f5fd55bbd&sca_esv=571751170&strip=1&vwsrc=0
+based on website user needs
 
-fsm
+- server based (only make sense using multiple servers) 8x
+- presentation based 4x
+- problem solving: blackboard,
+- central component
+- control flow patterns
+
+- application structure
+- goal based
+- data flow patterns
+- multi-server / infrastructure: multiple servers / inter-service
+- structural patterns / intra-service
 
