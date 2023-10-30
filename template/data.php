@@ -14,10 +14,11 @@ const CAT_PROBLEM_SOLVER = 'problem solver';
 const CAT_DISTRIBUTED = 'distributed computing'; // different machines, networked
 // const CAT_INTERPRETED = 'interpreted';
 const CAT_CONTROL_FLOW = 'control flow';
+const CAT_SECURITY = 'security';
 
 $categories = [
     ["code" => CAT_GROUPING, "name" => 'Grouping',
-        "description" => "Patterns that partition code in distinct areas"],
+        "description" => "Patterns that partition code in distinct areas and determine what's most basic"],
     ["code" => CAT_PRESENTATION, "name" => 'Presentation',
         "description" => "Patterns related to the Graphical User Interface"],
     ["code" => CAT_PROBLEM_SOLVER, "name" => 'Problem solving',
@@ -28,6 +29,8 @@ $categories = [
         "description" => "Patterns whose main function is to determine what to do next"],
     ["code" => CAT_DISTRIBUTED, "name" => 'Distributed computing',
         "description" => "Multi-server patterns"],
+    ["code" => CAT_SECURITY, "name" => 'Security',
+        "description" => "Patterns that describe who has access to what"],
     // ["code" => CAT_HIGH_PERFORMANCE, "name" => 'High performance',
     //     "description" => "Description"],
     // ["code" => CAT_MANAGING_SERVICES, "name" => 'Managing participants',
@@ -65,7 +68,7 @@ $patterns = [
         "aliases" => "Client-Server, Multitier",
         "image" => "tiers_1.jpg",
         "link" => "n-tier",
-        "categories" => [CAT_GROUPING, CAT_DISTRIBUTED]
+        "categories" => [CAT_DISTRIBUTED]
     ],
     [
         "name" => "Peer to Peer",
@@ -251,6 +254,20 @@ $patterns = [
         "image" => "cqrs-1.png",
         "link" => "cqrs",
         "categories" => [CAT_CENTRAL_DATA]
+    ],
+    [
+        "name" => "Role-based Access Control",
+        "aliases" => "RBAC",
+        "image" => "role-based-access-control.drawio.png",
+        "link" => "role-based-access-control",
+        "categories" => [CAT_SECURITY]
+    ],
+    [
+        "name" => "Access Control List",
+        "aliases" => "ACL",
+        "image" => "access-control-list.drawio.png",
+        "link" => "access-control-list",
+        "categories" => [CAT_SECURITY]
     ],
 ];
 

@@ -16,7 +16,7 @@ include 'template/header.php';
     <p>
         I once found myself as a software developer in a position where I was asked to build a new application, a virtual driving instructor. I had no idea how to approach this problem. I could just start building classes and functions and hope for the best, but I felt I needed to have an idea of the big picture of the application before I endeavoured the project. If I had the structure wrong, the program could be be arduous to complete and it could become unnecessarily slow. Furthermore, I would have no way to communicate to others about the structure of the application. I needed an architecture, before I started building. But I didn't have any examples to base it upon.
     <p>
-        This site gives you a quick overview of the most well known architectural patterns. They have been used for a wide variety of applications and serve many different purposes. The list continues to grow as new patterns are still being invented. They are meant as a source of inspiration and may be freely adapted and combined. I hope you enjoy them.
+        This site is intended to help you in this process. It serves as index to the most well known architectural patterns. They have been used for a wide variety of applications and serve many different purposes. The list continues to grow as new patterns are still being invented. They are meant as a source of inspiration and may be freely adapted and combined. I hope you enjoy them.
     </p>
     <p>
         If you have any ideas or comments to improve this website, don't hesitate to <a href="mailto:patrick.vanbergen@gmail.com">mail me</a>. I will leave you with this thought

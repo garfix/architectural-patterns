@@ -58,14 +58,11 @@ include 'template/header.php';
     <dl>
         <dt>Architectural pattern</dt>
         <dd>
-            <p>An architectural pattern is an organizational structure that determines the type of system, and defines the main components of a system, and their interactions.</p>
+            <p>An architectural pattern is an organizational structure that spans an entire system. It defines the main components of a system and their interactions.</p>
         </dd>
     </dl>
     <p>
-        This excludes "Object oriented programming", as it does not define any main components.
-    </p>
-    <p>
-        The architectural pattern "determines the type of application": any website is an N-tier application. File sharing systems are usually Peer to Peer systems. And SETI is a Master-Slave system.
+        This excludes "Object oriented programming", as it does not define any main components, just building blocks.
     </p>
     <p>
         A "system" may also be, and often is, part of larger system. Note that the definition doesn't mention hardware, or even software, as these structures may be implemented in any way.

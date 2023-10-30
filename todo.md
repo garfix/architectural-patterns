@@ -1,12 +1,7 @@
 patterns
 
 * Connectionism
-* Shared nothing
-* agent
-* decision maker: goal unknown
-* search
-* planning
-* learning
+* Role based access control / authorization
 
 categories
 
