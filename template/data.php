@@ -211,6 +211,13 @@ $patterns = [
         "categories" => [CAT_GROUPING]
     ],
     [
+        "name" => "Plugin",
+        "aliases" => "Add-on, Theme, Skin",
+        "image" => "plugin.drawio.png",
+        "link" => "plugin",
+        "categories" => [CAT_GROUPING]
+    ],
+    [
         "name" => "Finite State Machine",
         "image" => "fsm.drawio.png",
         "link" => "finite-state-machine",

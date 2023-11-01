@@ -3,7 +3,6 @@ patterns
 * Connectionism
 * Serverless
 * Plugins
-* Replication
 * Cache / CDN
 * Monitoring
 * Logging
