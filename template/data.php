@@ -23,7 +23,7 @@ $categories = [
         "description" => "Patterns related to the Graphical User Interface"],
     ["code" => CAT_PROBLEM_SOLVER, "name" => 'Problem solving',
         "description" => "Patterns designed to solve problems"],
-    ["code" => CAT_CENTRAL_DATA, "name" => 'Data central',
+    ["code" => CAT_CENTRAL_DATA, "name" => 'Data centric',
         "description" => "Data centered patterns"],
     ["code" => CAT_CONTROL_FLOW, "name" => 'Control flow',
         "description" => "Patterns whose main function is to determine what to do next"],
@@ -105,6 +105,12 @@ $patterns = [
         "aliases" => "Database",
         "image" => "repository.drawio.png",
         "link" => "repository",
+        "categories" => [CAT_DISTRIBUTED, CAT_CENTRAL_DATA]
+    ],
+    [
+        "name" => "Data Replication",
+        "image" => "replication.drawio.png",
+        "link" => "replication",
         "categories" => [CAT_DISTRIBUTED, CAT_CENTRAL_DATA]
     ],
     [

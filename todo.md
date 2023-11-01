@@ -1,7 +1,13 @@
 patterns
 
 * Connectionism
-* Role based access control / authorization
+* Serverless
+* Plugins
+* Replication
+* Cache / CDN
+* Monitoring
+* Logging
+* Error handling
 
 categories
 
