@@ -1,8 +1,6 @@
 patterns
 
 * Connectionism
-* Serverless
-* Plugins
 * Cache / CDN
 * Monitoring
 * Logging

@@ -95,6 +95,12 @@ $patterns = [
         "categories" => [CAT_DISTRIBUTED]
     ],
     [
+        "name" => "Serverless",
+        "image" => "serverless.drawio.png",
+        "link" => "serverless",
+        "categories" => [CAT_DISTRIBUTED]
+    ],
+    [
         "name" => "Space-Based",
         "image" => "space-based.drawio.png",
         "link" => "space-based",
