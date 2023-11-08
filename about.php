@@ -58,7 +58,7 @@ include 'template/header.php';
     <dl>
         <dt>Architectural pattern</dt>
         <dd>
-            <p>An architectural pattern is an organizational structure that spans an entire system. It defines the main components of a system and their interactions.</p>
+            <p>An architectural pattern is an organizational structure that spans a large part of a system. It defines the main components of a system and their interactions.</p>
         </dd>
     </dl>
     <p>

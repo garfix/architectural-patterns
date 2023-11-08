@@ -275,6 +275,12 @@ $patterns = [
         "categories" => [CAT_CENTRAL_DATA]
     ],
     [
+        "name" => "Caching",
+        "image" => "caching.drawio.png",
+        "link" => "caching",
+        "categories" => [CAT_CENTRAL_DATA]
+    ],
+    [
         "name" => "Role-based Access Control",
         "aliases" => "RBAC",
         "image" => "role-based-access-control.drawio.png",
