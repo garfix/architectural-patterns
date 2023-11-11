@@ -1,7 +1,5 @@
 <?php
 
-include __DIR__ . '/functions.php';
-
 ?><!DOCTYPE HTML>
 <!--
 	Editorial by HTML5 UP

@@ -1,52 +1,48 @@
 <?php
 
+include 'functions.php';
+
+const CAT_ELEMENTS = 'elements';
 const CAT_PRESENTATION = 'presentation';
-const CAT_GROUPING = 'separation of concerns';
-const CAT_CENTRAL_DATA = 'central data';
-// const CAT_DOMAIN_LOGIC = 'business logic';
-// const CAT_HIGH_PERFORMANCE = 'performance';
-const CAT_PROBLEM_SOLVER = 'problem solver';
-// const CAT_MANAGING_SERVICES = 'managing services';
-// const CAT_STATE_BASED = 'stated based';
-// const CAT_ROBUSTNESS = 'robustness';
-// const CAT_FLEXIBILITY = 'flexibility';
-// const CAT_EVENT_BASED = 'event based';
-const CAT_DISTRIBUTED = 'distributed computing'; // different machines, networked
-// const CAT_INTERPRETED = 'interpreted';
-const CAT_CONTROL_FLOW = 'control flow';
+const CAT_GROUPING = 'grouping';
+const CAT_DATA_STRUCTURE = 'data-patterns';
+const CAT_PROBLEM_SOLVING = 'problem-solving';
+const CAT_CROSS_CUTTING = 'cross-cutting-concerns';
+const CAT_DISTRIBUTED = 'distributed-computing';
+const CAT_CONTROL_FLOW = 'control-flows';
 const CAT_SECURITY = 'security';
 
+$pages = [
+    // CAT_ELEMENTS,
+    CAT_GROUPING,
+    CAT_DATA_STRUCTURE,
+    CAT_PRESENTATION,
+    CAT_CONTROL_FLOW,
+    CAT_PROBLEM_SOLVING,
+    CAT_CROSS_CUTTING,
+    CAT_DISTRIBUTED,
+];
+
 $categories = [
+    ["code" => CAT_ELEMENTS, "name" => 'Elements',
+        "description" => "Basic building blocks for an application"],
     ["code" => CAT_GROUPING, "name" => 'Grouping',
-        "description" => "Patterns that partition code in distinct areas and determine what's most basic"],
+        "description" => "Patterns that partition the code base in distinct areas and determine what's most basic"],
     ["code" => CAT_PRESENTATION, "name" => 'Presentation',
         "description" => "Patterns related to the Graphical User Interface"],
-    ["code" => CAT_PROBLEM_SOLVER, "name" => 'Problem solving',
+    ["code" => CAT_PROBLEM_SOLVING, "name" => 'Problem solving',
         "description" => "Patterns designed to solve problems"],
-    ["code" => CAT_CENTRAL_DATA, "name" => 'Data centric',
-        "description" => "Data centered patterns"],
+    ["code" => CAT_DATA_STRUCTURE, "name" => 'Data patterns',
+        "description" => "Patterns that focus on the data"],
     ["code" => CAT_CONTROL_FLOW, "name" => 'Control flow',
-        "description" => "Patterns whose main function is to determine what to do next"],
+        "description" => "Patterns that focus on the way the code is executed"],
     ["code" => CAT_DISTRIBUTED, "name" => 'Distributed computing',
-        "description" => "Multi-server patterns"],
+        "description" => "Patterns that disribute the application over multiple servers"],
+    ["code" => CAT_CROSS_CUTTING, "name" => 'Cross-cutting concerns',
+        "description" => "Patterns that provide a specific function is many distinct areas of the code base",
+        "children" => [CAT_SECURITY]],
     ["code" => CAT_SECURITY, "name" => 'Security',
         "description" => "Patterns that describe who has access to what"],
-    // ["code" => CAT_HIGH_PERFORMANCE, "name" => 'High performance',
-    //     "description" => "Description"],
-    // ["code" => CAT_MANAGING_SERVICES, "name" => 'Managing participants',
-    //     "description" => "Description"],
-    // ["code" => CAT_DOMAIN_LOGIC, "name" => 'Domain model central',
-    //     "description" => "Description"],
-    // ["code" => CAT_STATE_BASED, "name" => 'State based',
-    //     "description" => "Description"],
-    // ["code" => CAT_EVENT_BASED, "name" => 'Event based',
-    //     "description" => "Description"],
-    // ["code" => CAT_ROBUSTNESS, "name" => 'Robustness',
-    //     "description" => "Description"],
-    // ["code" => CAT_FLEXIBILITY, "name" => 'Flexibility',
-    //     "description" => "Description"],
-    // ["code" => CAT_INTERPRETED, "name" => 'Interpreted',
-    //     "description" => "Description"],
 ];
 
 $patterns = [
@@ -111,13 +107,13 @@ $patterns = [
         "aliases" => "Database",
         "image" => "repository.drawio.png",
         "link" => "repository",
-        "categories" => [CAT_DISTRIBUTED, CAT_CENTRAL_DATA]
+        "categories" => [CAT_DISTRIBUTED, CAT_DATA_STRUCTURE]
     ],
     [
         "name" => "Data Replication",
         "image" => "replication.drawio.png",
         "link" => "replication",
-        "categories" => [CAT_DISTRIBUTED, CAT_CENTRAL_DATA]
+        "categories" => [CAT_DISTRIBUTED, CAT_DATA_STRUCTURE]
     ],
     [
         "name" => "Model-View-Controller",
@@ -158,43 +154,43 @@ $patterns = [
         "name" => "Blackboard",
         "image" => "blackboard.drawio.png",
         "link" => "blackboard",
-        "categories" => [CAT_PROBLEM_SOLVER]
+        "categories" => [CAT_PROBLEM_SOLVING]
     ],
     [
         "name" => "Process Control",
         "image" => "process_control_1.jpg",
         "link" => "process-control",
-        "categories" => [CAT_PROBLEM_SOLVER]
+        "categories" => [CAT_PROBLEM_SOLVING]
     ],
     [
         "name" => "Multi-Agent System",
         "image" => "mas_1.jpg",
         "link" => "multi-agent-system",
-        "categories" => [CAT_PROBLEM_SOLVER]
+        "categories" => [CAT_PROBLEM_SOLVING]
     ],
     [
         "name" => "Inference Engine",
         "image" => "rule-based.drawio.png",
         "link" => "inference-engine",
-        "categories" => [CAT_PROBLEM_SOLVER]
+        "categories" => [CAT_PROBLEM_SOLVING]
     ],
     [
         "name" => "Agent",
         "image" => "agent.drawio.png",
         "link" => "agent",
-        "categories" => [CAT_PROBLEM_SOLVER]
+        "categories" => [CAT_PROBLEM_SOLVING]
     ],
     [
         "name" => "Search",
         "image" => "search.drawio.png",
         "link" => "search",
-        "categories" => [CAT_PROBLEM_SOLVER]
+        "categories" => [CAT_PROBLEM_SOLVING]
     ],
     [
         "name" => "Planning",
         "image" => "planning.drawio.png",
         "link" => "planning",
-        "categories" => [CAT_PROBLEM_SOLVER]
+        "categories" => [CAT_PROBLEM_SOLVING]
     ],
     [
         "name" => "Layered",
@@ -265,20 +261,20 @@ $patterns = [
         "name" => "Event Sourcing",
         "image" => "event-sourcing-1.png",
         "link" => "event-sourcing",
-        "categories" => [CAT_CENTRAL_DATA]
+        "categories" => [CAT_DATA_STRUCTURE]
     ],
     [
         "name" => "CQRS",
         "aliases" => "Command-Query Responsibility Segregation",
         "image" => "cqrs-1.png",
         "link" => "cqrs",
-        "categories" => [CAT_CENTRAL_DATA]
+        "categories" => [CAT_DATA_STRUCTURE]
     ],
     [
         "name" => "Caching",
         "image" => "caching.drawio.png",
         "link" => "caching",
-        "categories" => [CAT_CENTRAL_DATA]
+        "categories" => [CAT_CROSS_CUTTING]
     ],
     [
         "name" => "Role-based Access Control",
@@ -294,6 +290,12 @@ $patterns = [
         "link" => "access-control-list",
         "categories" => [CAT_SECURITY]
     ],
+    // [
+    //     "name" => "Logging",
+    //     "image" => "logging.drawio.png",
+    //     "link" => "logging",
+    //     "categories" => [CAT_CROSS_CUTTING]
+    // ],
 ];
 
 usort($patterns, function ($a, $b) {
