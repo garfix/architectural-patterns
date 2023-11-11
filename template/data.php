@@ -296,6 +296,12 @@ $patterns = [
         "link" => "logging",
         "categories" => [CAT_CROSS_CUTTING]
     ],
+    [
+        "name" => "Error handling",
+        "image" => "error-handling.drawio.png",
+        "link" => "error-handling",
+        "categories" => [CAT_CROSS_CUTTING, CAT_PRESENTATION]
+    ]
 ];
 
 usort($patterns, function ($a, $b) {
