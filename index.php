@@ -1,4 +1,5 @@
 <?php
+include 'template/data.php';
 $title = "Home";
 include 'template/header.php';
 ?>
@@ -16,18 +17,21 @@ include 'template/header.php';
     <p>
         I once found myself as a software developer in a position where I was asked to build a new application, a virtual driving instructor. I had no idea how to approach this problem. I could just start building classes and functions and hope for the best, but I felt I needed to have an idea of the big picture of the application before I endeavoured the project. If I had the structure wrong, the program could be be arduous to complete and it could become unnecessarily slow. Furthermore, I would have no way to communicate to others about the structure of the application. I needed an architecture, before I started building. But I didn't have any examples to base it upon.
     <p>
-        This site is intended to help you in this process. It serves as index to the most well known architectural patterns. They have been used for a wide variety of applications and serve many different purposes. The list continues to grow as new patterns are still being invented. They are meant as a source of inspiration and may be freely adapted and combined. I hope you enjoy them.
+        This site is intended to help you in this process. It serves as index to the most well known architectural patterns. They have been used for a wide variety of applications and serve many different purposes. The list continues to grow as new patterns are still being invented. They are meant as a source of inspiration and may be freely adapted and combined.
     </p>
     <p>
-        If you have any ideas or comments to improve this website, don't hesitate to <a href="mailto:patrick.vanbergen@gmail.com">mail me</a>. I will leave you with this thought
+        After I added the patterns that are usually named architectural patterns, it occurred to me that these were just the most salient ones, and that many other patterns might just as well be added. I have added these more obvious patterns like "logging" and "plugin" in order to remind you of them as you design a new application. Furthermore, I categorized the patterns to make them easier to browse.
     </p>
-        <blockquote>
-            Beauty is more important in computing than anywhere else in technology because software is so complicated. Beauty is the ultimate defense against complexity.
-        </blockquote>
+    <p>
+        If you have any ideas or comments to improve this website, don't hesitate to <a href="mailto:patrick.vanbergen@gmail.com">mail me</a>.
+    </p>
+    <p>
+        I will leave you with this thought
+    </p>
+    <blockquote>
+        Beauty is more important in computing than anywhere else in technology because software is so complicated. Beauty is the ultimate defense against complexity.
+    </blockquote>
     <p>—David Gelernter (in Machine Beauty: Elegance and the Heart of Technology) Found <a target="_blank" href="https://vanderburg.org/etc/quotes/gelernter-beauty/">here</a>.
-    <ul class="actions">
-        <li><a href="patterns.php" class="button big">To the patterns</a></li>
-    </ul>
     <p>
         <center><img src="images/dragon.jpg" /></center>
     <p>

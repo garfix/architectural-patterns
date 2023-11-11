@@ -6,18 +6,12 @@ include 'template/header.php';
 
 <section>
     <header class="major">
-        <h2>Pattern overview</h2>
+        <h2>All patterns</h2>
     </header>
+    <p>An overview of all <?= count($patterns) ?> patterns cataloged on this site</p>
     <div class="posts">
         <?php foreach ($patterns as $p): ?>
-            <article>
-                <a href="<?= $p['link'] ?>" class="image"><img src="images/<?= $p['image']?>" alt=""></a>
-                <h3><?= $p['name']?></h3>
-                <p><?= $p['aliases']?></p>
-                <ul class="actions">
-                    <li><a href="<?= $p['link']?>" class="button">Show</a></li>
-                </ul>
-            </article>
+            <?php showBlock($p) ?>
         <?php endforeach ?>
     </div>
 </section>

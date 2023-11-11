@@ -12,3 +12,9 @@ figcaption {
     font-weight: bold;
     color: #c0c0c0;
 }
+
+article img {
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+}

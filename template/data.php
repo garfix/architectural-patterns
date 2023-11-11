@@ -4,8 +4,8 @@ include 'functions.php';
 
 const CAT_ELEMENTS = 'elements';
 const CAT_PRESENTATION = 'presentation';
-const CAT_GROUPING = 'grouping';
-const CAT_DATA_STRUCTURE = 'data-patterns';
+const CAT_AREAS = 'areas';
+const CAT_DATA = 'data-patterns';
 const CAT_PROBLEM_SOLVING = 'problem-solving';
 const CAT_CROSS_CUTTING = 'cross-cutting-concerns';
 const CAT_DISTRIBUTED = 'distributed-computing';
@@ -14,8 +14,8 @@ const CAT_SECURITY = 'security';
 
 $pages = [
     // CAT_ELEMENTS,
-    CAT_GROUPING,
-    CAT_DATA_STRUCTURE,
+    CAT_AREAS,
+    CAT_DATA,
     CAT_PRESENTATION,
     CAT_CONTROL_FLOW,
     CAT_PROBLEM_SOLVING,
@@ -26,14 +26,14 @@ $pages = [
 $categories = [
     ["code" => CAT_ELEMENTS, "name" => 'Elements',
         "description" => "Basic building blocks for an application"],
-    ["code" => CAT_GROUPING, "name" => 'Grouping',
+    ["code" => CAT_AREAS, "name" => 'Code areas',
         "description" => "Patterns that partition the code base in distinct areas and determine what's most basic"],
     ["code" => CAT_PRESENTATION, "name" => 'Presentation',
         "description" => "Patterns related to the Graphical User Interface"],
     ["code" => CAT_PROBLEM_SOLVING, "name" => 'Problem solving',
         "description" => "Patterns designed to solve problems"],
-    ["code" => CAT_DATA_STRUCTURE, "name" => 'Data patterns',
-        "description" => "Patterns that focus on the data"],
+    ["code" => CAT_DATA, "name" => 'Data',
+        "description" => "Patterns that focus on the data of the application"],
     ["code" => CAT_CONTROL_FLOW, "name" => 'Control flow',
         "description" => "Patterns that focus on the way the code is executed"],
     ["code" => CAT_DISTRIBUTED, "name" => 'Distributed computing',
@@ -107,13 +107,13 @@ $patterns = [
         "aliases" => "Database",
         "image" => "repository.drawio.png",
         "link" => "repository",
-        "categories" => [CAT_DISTRIBUTED, CAT_DATA_STRUCTURE]
+        "categories" => [CAT_DISTRIBUTED, CAT_DATA]
     ],
     [
         "name" => "Data Replication",
         "image" => "replication.drawio.png",
         "link" => "replication",
-        "categories" => [CAT_DISTRIBUTED, CAT_DATA_STRUCTURE]
+        "categories" => [CAT_DISTRIBUTED, CAT_DATA]
     ],
     [
         "name" => "Model-View-Controller",
@@ -196,28 +196,28 @@ $patterns = [
         "name" => "Layered",
         "image" => "layers_1.jpg",
         "link" => "layered",
-        "categories" => [CAT_GROUPING]
+        "categories" => [CAT_AREAS]
     ],
     [
         "name" => "Microkernel",
         "aliases" => "Kernel",
         "image" => "microkernel.drawio.png",
         "link" => "microkernel",
-        "categories" => [CAT_GROUPING]
+        "categories" => [CAT_AREAS]
     ],
     [
         "name" => "Hexagonal Architecture",
         "aliases" => "Ports and Adapters, Onion Architecture, Clean Architecture, Boundary-Control-Entity",
         "image" => "ports-and-adapters.drawio.png",
         "link" => "hexagonal",
-        "categories" => [CAT_GROUPING]
+        "categories" => [CAT_AREAS]
     ],
     [
         "name" => "Plugin",
         "aliases" => "Add-on, Theme, Skin",
         "image" => "plugin.drawio.png",
         "link" => "plugin",
-        "categories" => [CAT_GROUPING]
+        "categories" => [CAT_AREAS]
     ],
     [
         "name" => "Finite State Machine",
@@ -261,14 +261,14 @@ $patterns = [
         "name" => "Event Sourcing",
         "image" => "event-sourcing-1.png",
         "link" => "event-sourcing",
-        "categories" => [CAT_DATA_STRUCTURE]
+        "categories" => [CAT_DATA]
     ],
     [
         "name" => "CQRS",
         "aliases" => "Command-Query Responsibility Segregation",
         "image" => "cqrs-1.png",
         "link" => "cqrs",
-        "categories" => [CAT_DATA_STRUCTURE]
+        "categories" => [CAT_DATA]
     ],
     [
         "name" => "Caching",
