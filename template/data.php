@@ -290,12 +290,12 @@ $patterns = [
         "link" => "access-control-list",
         "categories" => [CAT_SECURITY]
     ],
-    // [
-    //     "name" => "Logging",
-    //     "image" => "logging.drawio.png",
-    //     "link" => "logging",
-    //     "categories" => [CAT_CROSS_CUTTING]
-    // ],
+    [
+        "name" => "Logging",
+        "image" => "logging.drawio.png",
+        "link" => "logging",
+        "categories" => [CAT_CROSS_CUTTING]
+    ],
 ];
 
 usort($patterns, function ($a, $b) {

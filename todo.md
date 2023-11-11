@@ -1,9 +1,7 @@
 patterns
 
 * Connectionism
-* Cache / CDN
 * Monitoring
-* Logging
 * Error handling
 
 categories

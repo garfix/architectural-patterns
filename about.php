@@ -12,7 +12,7 @@ include 'template/header.php';
         <h2>Box-and-arrow diagram</h2>
     </header>
     <p>
-        A box represents a process, an arrow the flow of data (either push or pull), a trapezoid (?) data.
+        A box represents a process, an arrow the flow of data (either push or pull), a parallellogram data.
     </p>
     <header class="major">
         <h2>Definitions</h2>
