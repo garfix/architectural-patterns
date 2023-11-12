@@ -18,3 +18,18 @@ article img {
     width: 300px;
     object-fit: contain;
 }
+
+section p, section blockquote, section center {
+    max-width: 50rem;
+}
+
+.home-section {
+    position: relative;
+}
+
+.pattern-image {
+    width: 300px;
+    position: absolute;
+    left: 55rem;
+    top: 20rem;
+}
