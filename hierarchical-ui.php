@@ -13,7 +13,7 @@ include 'template/header.php';
     </dl>
 
     <p>
-        The component hierarchy concept in UI's was first described as part of the Presentation-Abstraction-Control model, hence the pattern is useually called PAC. The name "Hierachical UI" makes it less dependent on the specifics of PAC and allows it to be used in combination with other ui patterns.
+        The component hierarchy concept in UI's was first described as part of the Presentation-Abstraction-Control model, hence the pattern is usually called PAC. The name "Hierachical UI" makes it less dependent on the specifics of PAC and allows it to be used in combination with other ui patterns.
     </p>
 
     Components are connected in a hierarchical fashion, thus:<p>

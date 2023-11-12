@@ -1,5 +1,5 @@
 body {
-    color: #3a3e42;
+    color: #545a5f;
 }
 
 figure {
@@ -39,5 +39,11 @@ section.pattern-overview {
     width: 300px;
     position: absolute;
     left: 55rem;
-    top: 20rem;
+    top: 30rem;
+}
+
+@media screen and (max-width: 1600px) {
+    .pattern-image {
+        display: none;
+    }
 }
