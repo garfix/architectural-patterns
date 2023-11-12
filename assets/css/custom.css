@@ -1,3 +1,7 @@
+body {
+    color: #3a3e42;
+}
+
 figure {
     text-align: center;
     margin: 3rem 0;
@@ -19,8 +23,12 @@ article img {
     object-fit: contain;
 }
 
-section p, section blockquote, section center {
+section {
     max-width: 50rem;
+}
+
+section.pattern-overview {
+    max-width: initial;
 }
 
 .home-section {

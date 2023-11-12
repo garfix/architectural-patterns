@@ -12,7 +12,7 @@ $children = $category['children'] ? $category['children'] : [];
     <p><?= $category['description'] ?></p>
 </section>
 
-<section>
+<section class="pattern-overview">
     <div class="posts">
         <?php foreach ($patterns as $p): ?>
             <?php if (in_array($category['code'], $p['categories'])): ?>

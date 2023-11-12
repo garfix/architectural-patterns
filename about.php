@@ -9,11 +9,32 @@ include 'template/header.php';
         <h1>About</h1>
     </header>
     <header class="major">
-        <h2>Box-and-arrow diagram</h2>
+        <h2>Pattern selection</h2>
     </header>
     <p>
-        A box represents a process, an arrow the flow of data (either push or pull), a parallellogram data.
+        This site aims to collect all known architectural patterns. However, many techniques are sometimes labeled "architectural pattern", so it may be useful to define what is considered one on this site.
     </p>
+    <dl>
+        <dt>Architectural pattern</dt>
+        <dd>
+            <p>An architectural pattern is an organizational structure that spans a large part of a system. It defines the main components of a system and their interactions.</p>
+        </dd>
+    </dl>
+    <p>
+        This excludes "Object oriented programming", as it does not define any main components, just building blocks.
+    </p>
+    <p>
+        A "system" may also be, and often is, part of larger system. Note that the definition doesn't mention hardware, or even software, as these structures may be implemented in any way.
+    </p>
+    <p>
+        Like species in nature, software patterns can have varieties; a sofware pattern can be seen as a group of similar varieties. And like nature, a variety can be as similar to one pattern as it is to another. To which pattern does it belong? I tend to group the variety below both patterns, and you can pick the pattern that best meets your intent.
+    </p>
+    <p>
+        When is a variety sufficiently different from another to warrant a new pattern? To determine this we need a strong definition of the pattern. Hence I start every pattern with a definition. Next, a pattern has a prototypical form and some variants. A good rule-of-thumb to discern between two patterns would be to ask yourself if the software that matches the pattern can be easily changed into the other pattern.
+    </p>
+</section>
+
+<section>
     <header class="major">
         <h2>Definitions</h2>
     </header>
@@ -50,30 +71,6 @@ include 'template/header.php';
             <p>A piece of information that is published by a component to all subscribers, based on a specific event.</p>
         </dd>
     </dl>
-    <header class="major">
-        <h2>Pattern selection</h2>
-    </header>
-    <p>
-        This site aims to collect all known architectural patterns. However, many techniques are sometimes labeled "architectural pattern", so it may be useful to define what is considered one on this site.
-    </p>
-    <dl>
-        <dt>Architectural pattern</dt>
-        <dd>
-            <p>An architectural pattern is an organizational structure that spans a large part of a system. It defines the main components of a system and their interactions.</p>
-        </dd>
-    </dl>
-    <p>
-        This excludes "Object oriented programming", as it does not define any main components, just building blocks.
-    </p>
-    <p>
-        A "system" may also be, and often is, part of larger system. Note that the definition doesn't mention hardware, or even software, as these structures may be implemented in any way.
-    </p>
-    <p>
-        Like species in nature, software patterns can have varieties; a sofware pattern can be seen as a group of similar varieties. And like nature, a variety can be as similar to one pattern as it is to another. To which pattern does it belong? I tend to group the variety below both patterns, and you can pick the pattern that best meets your intent.
-    </p>
-    <p>
-        When is a variety sufficiently different from another to warrant a new pattern? To determine this we need a strong definition of the pattern. Hence I start every pattern with a definition. Next, a pattern has a prototypical form and some variants. A good rule-of-thumb to discern between two patterns would be to ask yourself if the software that matches the pattern can be easily changed into the other pattern.
-    </p>
 </section>
 
 <section>

@@ -4,7 +4,7 @@ include 'template/data.php';
 include 'template/header.php';
 ?>
 
-<section>
+<section class="pattern-overview">
     <header class="major">
         <h2>All patterns</h2>
     </header>
