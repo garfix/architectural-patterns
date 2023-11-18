@@ -39,7 +39,7 @@ $categories = [
     ["code" => CAT_DISTRIBUTED, "name" => 'Distributed computing',
         "description" => "Patterns that disribute the application over multiple servers"],
     ["code" => CAT_CROSS_CUTTING, "name" => 'Cross-cutting concerns',
-        "description" => "Patterns that provide a specific function is many distinct areas of the code base",
+        "description" => "Patterns that provide a specific function in many distinct areas of the code base",
         "children" => [CAT_SECURITY]],
     ["code" => CAT_SECURITY, "name" => 'Security',
         "description" => "Patterns that describe who has access to what"],
@@ -55,14 +55,14 @@ $patterns = [
     ],
     [
         "name" => "Master-Slave",
-        "image" => "masterslave.jpg",
+        "image" => "master-and-slave.drawio.png",
         "link" => "master-slave",
         "categories" => [CAT_DISTRIBUTED]
     ],
     [
         "name" => "N-Tier",
         "aliases" => "Client-Server, Multitier",
-        "image" => "tiers_1.jpg",
+        "image" => "n-tier.drawio.png",
         "link" => "n-tier",
         "categories" => [CAT_DISTRIBUTED]
     ],
@@ -158,13 +158,13 @@ $patterns = [
     ],
     [
         "name" => "Process Control",
-        "image" => "process_control_1.jpg",
+        "image" => "process-control.drawio.png",
         "link" => "process-control",
         "categories" => [CAT_PROBLEM_SOLVING]
     ],
     [
         "name" => "Multi-Agent System",
-        "image" => "mas_1.jpg",
+        "image" => "multi-agent-system.drawio.png",
         "link" => "multi-agent-system",
         "categories" => [CAT_PROBLEM_SOLVING]
     ],
@@ -194,7 +194,7 @@ $patterns = [
     ],
     [
         "name" => "Layered",
-        "image" => "layers_1.jpg",
+        "image" => "layered.drawio.png",
         "link" => "layered",
         "categories" => [CAT_AREAS]
     ],
@@ -227,7 +227,7 @@ $patterns = [
     ],
     [
         "name" => "Pipe and Filter",
-        "image" => "pipe_and_filter_2.jpg",
+        "image" => "pipe-and-filter.drawio.png",
         "link" => "pipe-and-filter",
         "categories" => [CAT_CONTROL_FLOW]
     ],
@@ -259,7 +259,7 @@ $patterns = [
     ],
     [
         "name" => "Event Sourcing",
-        "image" => "event-sourcing-1.png",
+        "image" => "event-sourcing.drawio.png",
         "link" => "event-sourcing",
         "categories" => [CAT_DATA]
     ],

@@ -16,7 +16,7 @@ include 'template/header.php';
         An N-Tier architecture is really a Client-Server architecture combined with the Layered architecture.
     </p>
 
-    <figure><img src="images/tiers_1.jpg"><figcaption>N-tiers architecture diagram</figcaption></figure>
+    <figure><img src="images/n-tier.drawio.png"><figcaption>N-tiers architecture diagram</figcaption></figure>
 
     <p>
         A Client-Server system is one in which the server performs some kind of service that is used by many clients. The clients take the lead

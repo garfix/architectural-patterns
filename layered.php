@@ -22,7 +22,7 @@ include 'template/header.php';
         above or below their layer and with themselves.
     </p>
 
-    <figure><img src="images/layers_1.jpg"><figcaption>Layered architecture diagram</figcaption></figure>
+    <figure><img src="images/layered.drawio.png"><figcaption>Layered architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

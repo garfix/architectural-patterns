@@ -15,7 +15,7 @@ include 'template/header.php';
         The architecture is often used as a simple sequence, but it may also be used for very complex structures.
     </p>
 
-    <figure><img src="images/pipe_and_filter_2.jpg"><figcaption>Pipe and Filter architecture diagram</figcaption></figure>
+    <figure><img src="images/pipe-and-filter.drawio.png"><figcaption>Pipe and Filter architecture diagram</figcaption></figure>
 
     <p>
         The <b>filter</b> transforms or <i>filters</i> the data it receives via the pipes with which it is connected.

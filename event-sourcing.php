@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>In stead of storing the current state of the data, all operations (events) that have occurred on the data are stored.</dd>
     </dl>
 
-    <figure><img src="images/event-sourcing-1.png"><figcaption>Event-sourcing architecture diagram</figcaption></figure>
+    <figure><img src="images/event-sourcing.drawio.png"><figcaption>Event-sourcing architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>
@@ -39,6 +39,7 @@ include 'template/header.php';
         <li>Version control systems (source code)
         <li>Word processor (for undo / redo)
         <li>Database transaction logs (for master/slave synchronization, a.o.)
+        <li>Blockchain
     </ul>
 
     <h2>Where does it come from?</h2>
