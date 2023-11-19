@@ -45,7 +45,7 @@ $categories = [
     ["code" => CAT_ACCESS_CONTROL, "name" => 'Access control',
         "description" => "Patterns that describe who has access to what"],
     ["code" => CAT_TESTING, "name" => 'Testing',
-        "description" => "Patterns that that some aspect of the application. Risk assessment tells you what parts of the application are most important and should take priority when testing."],
+        "description" => "Patterns that test some aspect of the application"],
 ];
 
 $patterns = [
