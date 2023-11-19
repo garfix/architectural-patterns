@@ -8,9 +8,9 @@ include 'template/header.php';
     <header class="major">
         <h2>All patterns</h2>
     </header>
-    <p>An overview of all <?= count($patterns) ?> patterns cataloged on this site</p>
+    <p>An overview of all <?= count($sortedPatterns) ?> patterns cataloged on this site</p>
     <div class="posts">
-        <?php foreach ($patterns as $p): ?>
+        <?php foreach ($sortedPatterns as $p): ?>
             <?php showBlock($p) ?>
         <?php endforeach ?>
     </div>

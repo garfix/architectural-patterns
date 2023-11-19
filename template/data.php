@@ -12,6 +12,8 @@ const CAT_DISTRIBUTED = 'distributed-computing';
 const CAT_CONTROL_FLOW = 'control-flows';
 const CAT_ACCESS_CONTROL = 'access-control';
 const CAT_TESTING = 'testing';
+const CAT_ENVIRONMENT = 'app-environment';
+const CAT_MONITORING = 'monitoring';
 
 $pages = [
     // CAT_ELEMENTS,
@@ -22,6 +24,7 @@ $pages = [
     CAT_PROBLEM_SOLVING,
     CAT_CROSS_CUTTING,
     CAT_DISTRIBUTED,
+    CAT_ENVIRONMENT,
 ];
 
 $categories = [
@@ -41,11 +44,16 @@ $categories = [
         "description" => "Patterns that disribute the application over multiple servers"],
     ["code" => CAT_CROSS_CUTTING, "name" => 'Cross-cutting concerns',
         "description" => "Patterns that provide a specific function in many distinct areas of the code base",
-        "children" => [CAT_ACCESS_CONTROL, CAT_TESTING]],
+        "children" => [CAT_ACCESS_CONTROL]],
     ["code" => CAT_ACCESS_CONTROL, "name" => 'Access control',
         "description" => "Patterns that describe who has access to what"],
+    ["code" => CAT_ENVIRONMENT, "name" => 'App Environment',
+        "description" => "Patterns that are not part of the application in the narrow sense, but are nevertheless part of its broader environment",
+        "children" => [CAT_TESTING, CAT_MONITORING]],
     ["code" => CAT_TESTING, "name" => 'Testing',
-        "description" => "Patterns that test some aspect of the application"],
+        "description" => "Patterns that ensure that some aspect of the application meets a criterium"],
+    ["code" => CAT_MONITORING, "name" => 'Monitoring',
+        "description" => "Following aspects of the activity of the system by an external service"],
 ];
 
 $patterns = [
@@ -126,10 +134,10 @@ $patterns = [
         "categories" => [CAT_PRESENTATION]
     ],
     [
-        "name" => "Hierarchical UI",
-        "aliases" => "Presentation-Abstraction-Control, Hierarchical model-view-controller",
-        "image" => "hierarchical-component-ui.drawio.png",
-        "link" => "hierarchical-ui",
+        "name" => "Model-View-Adapter",
+        "aliases" => "Model-View-Presenter",
+        "image" => "model-view-adapter.drawio.png",
+        "link" => "model-view-adapter",
         "categories" => [CAT_PRESENTATION]
     ],
     [
@@ -140,10 +148,10 @@ $patterns = [
         "categories" => [CAT_PRESENTATION]
     ],
     [
-        "name" => "Model-View-Adapter",
-        "aliases" => "Model-View-Presenter",
-        "image" => "model-view-adapter.drawio.png",
-        "link" => "model-view-adapter",
+        "name" => "Hierarchical UI",
+        "aliases" => "Presentation-Abstraction-Control, Hierarchical model-view-controller",
+        "image" => "hierarchical-component-ui.drawio.png",
+        "link" => "hierarchical-ui",
         "categories" => [CAT_PRESENTATION]
     ],
     [
@@ -223,15 +231,15 @@ $patterns = [
         "categories" => [CAT_AREAS]
     ],
     [
-        "name" => "Finite State Machine",
-        "image" => "fsm.drawio.png",
-        "link" => "finite-state-machine",
-        "categories" => [CAT_CONTROL_FLOW]
-    ],
-    [
         "name" => "Pipe and Filter",
         "image" => "pipe-and-filter.drawio.png",
         "link" => "pipe-and-filter",
+        "categories" => [CAT_CONTROL_FLOW]
+    ],
+    [
+        "name" => "Finite State Machine",
+        "image" => "fsm.drawio.png",
+        "link" => "finite-state-machine",
         "categories" => [CAT_CONTROL_FLOW]
     ],
     [
@@ -337,9 +345,29 @@ $patterns = [
         "link" => "compatibility-tests",
         "categories" => [CAT_TESTING]
     ],
+    [
+        "name" => "Performance Monitoring",
+        "image" => "performance-monitoring.drawio.png",
+        "link" => "performance-monitoring",
+        "categories" => [CAT_MONITORING]
+    ],
+    [
+        "name" => "User-activity Monitoring",
+        "image" => "user-activity-monitoring.drawio.png",
+        "link" => "user-activity-monitoring",
+        "categories" => [CAT_MONITORING]
+    ],
+    [
+        "name" => "Deployment",
+        "image" => "deployment.drawio.png",
+        "link" => "deployment",
+        "categories" => [CAT_ENVIRONMENT]
+    ],
 ];
 
-usort($patterns, function ($a, $b) {
+$sortedPatterns = $patterns;
+
+usort($sortedPatterns, function ($a, $b) {
     return ($a['name'] < $b['name']) ? -1 : 1;
 });
 

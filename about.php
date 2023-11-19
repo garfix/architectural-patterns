@@ -13,7 +13,7 @@ include 'template/header.php';
         <h2>Target audience</h2>
     </header>
     <p>
-        The site intends to help a software developer to build an application. All information is given from the perspective of the software developer. It aims to describe the most important patterns of software itself. Software development also has other aspects (investing, management, user adoption, marketing, etc) but these are not addressed here. Tests that are part of the system are added, but the testing process itself is not.
+        The site intends to help a software developer to build an application. All information is given from the perspective of the software developer. It aims to describe the most important patterns of software itself. Software development also has other aspects (investing, management, testing, user adoption, marketing, etc) but these are not addressed here.
     </p>
 
     <header class="major">
@@ -102,7 +102,10 @@ include 'template/header.php';
         <h2>Disclaimer</h2>
     </header>
     <p>
-        I built this site to help software developers build an application. I have some experience in the field where I can draw upon, but I don't have personal experience with all patterns described here. It may contain errors. Also, the naming of patterns is not standardized, and different sources may name the same pattern differently. Best to treat this website as an index and a source of inspiration and follow the links provided for more in-depth in each subject.
+        I built this site to help software developers build an application. I have some experience in the field where I can draw upon, but I don't have personal experience with all patterns described here. It may contain errors. Also, the naming of patterns is not standardized, and different sources may name the same pattern differently. Finally, a number of remarks on this sidt may come across as my personal opinion, and for the moment I admit this is true. However, I intend to replace these with remarks from thought leaders in the field.
+    </p>
+    <p>
+        Best to treat this website as an index and a source of inspiration and follow the links provided for more in-depth in each subject.
     </p>
 </section>
 
