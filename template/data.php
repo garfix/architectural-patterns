@@ -10,7 +10,8 @@ const CAT_PROBLEM_SOLVING = 'problem-solving';
 const CAT_CROSS_CUTTING = 'cross-cutting-concerns';
 const CAT_DISTRIBUTED = 'distributed-computing';
 const CAT_CONTROL_FLOW = 'control-flows';
-const CAT_SECURITY = 'security';
+const CAT_ACCESS_CONTROL = 'access-control';
+const CAT_TESTING = 'testing';
 
 $pages = [
     // CAT_ELEMENTS,
@@ -40,9 +41,11 @@ $categories = [
         "description" => "Patterns that disribute the application over multiple servers"],
     ["code" => CAT_CROSS_CUTTING, "name" => 'Cross-cutting concerns',
         "description" => "Patterns that provide a specific function in many distinct areas of the code base",
-        "children" => [CAT_SECURITY]],
-    ["code" => CAT_SECURITY, "name" => 'Security',
+        "children" => [CAT_ACCESS_CONTROL, CAT_TESTING]],
+    ["code" => CAT_ACCESS_CONTROL, "name" => 'Access control',
         "description" => "Patterns that describe who has access to what"],
+    ["code" => CAT_TESTING, "name" => 'Testing',
+        "description" => "Patterns that that some aspect of the application. Risk assessment tells you what parts of the application are most important and should take priority when testing."],
 ];
 
 $patterns = [
@@ -207,7 +210,7 @@ $patterns = [
     ],
     [
         "name" => "Hexagonal Architecture",
-        "aliases" => "Ports and Adapters, Onion Architecture, Clean Architecture, Boundary-Control-Entity",
+        "aliases" => "Ports and Adapters, Onion Architecture, Clean Architecture",
         "image" => "ports-and-adapters.drawio.png",
         "link" => "hexagonal",
         "categories" => [CAT_AREAS]
@@ -259,6 +262,7 @@ $patterns = [
     ],
     [
         "name" => "Event Sourcing",
+        "aliases" => "Block chain",
         "image" => "event-sourcing.drawio.png",
         "link" => "event-sourcing",
         "categories" => [CAT_DATA]
@@ -281,14 +285,14 @@ $patterns = [
         "aliases" => "RBAC",
         "image" => "role-based-access-control.drawio.png",
         "link" => "role-based-access-control",
-        "categories" => [CAT_SECURITY]
+        "categories" => [CAT_ACCESS_CONTROL]
     ],
     [
         "name" => "Access Control List",
         "aliases" => "ACL",
         "image" => "access-control-list.drawio.png",
         "link" => "access-control-list",
-        "categories" => [CAT_SECURITY]
+        "categories" => [CAT_ACCESS_CONTROL]
     ],
     [
         "name" => "Logging",
@@ -301,7 +305,38 @@ $patterns = [
         "image" => "error-handling.drawio.png",
         "link" => "error-handling",
         "categories" => [CAT_CROSS_CUTTING, CAT_PRESENTATION]
-    ]
+    ],
+    [
+        "name" => "Functional tests",
+        "image" => "functional-tests.drawio.png",
+        "link" => "functional-tests",
+        "categories" => [CAT_TESTING]
+    ],
+    [
+        "name" => "Frontend tests",
+        "image" => "frontend-tests.drawio.png",
+        "link" => "frontend-tests",
+        "categories" => [CAT_TESTING]
+    ],
+    [
+        "name" => "Security tests",
+        "image" => "security-tests.drawio.png",
+        "link" => "security-tests",
+        "categories" => [CAT_TESTING]
+    ],
+    [
+        "name" => "Performance tests",
+        "image" => "performance-tests.drawio.png",
+        "link" => "performance-tests",
+        "categories" => [CAT_TESTING]
+    ],
+    [
+        "name" => "Compatibility tests",
+        "aliases" => "Cross browser testing",
+        "image" => "compatibility-tests.drawio.png",
+        "link" => "compatibility-tests",
+        "categories" => [CAT_TESTING]
+    ],
 ];
 
 usort($patterns, function ($a, $b) {

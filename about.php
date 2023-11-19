@@ -8,6 +8,14 @@ include 'template/header.php';
     <header class="content">
         <h1>About</h1>
     </header>
+
+    <header class="major">
+        <h2>Target audience</h2>
+    </header>
+    <p>
+        The site intends to help a software developer to build an application. All information is given from the perspective of the software developer. It aims to describe the most important patterns of software itself. Software development also has other aspects (investing, management, user adoption, marketing, etc) but these are not addressed here. Tests that are part of the system are added, but the testing process itself is not.
+    </p>
+
     <header class="major">
         <h2>Pattern selection</h2>
     </header>
@@ -56,15 +64,15 @@ include 'template/header.php';
         </dd>
         <dt>Model</dt>
         <dd>
-            <p>A model is the combination of data and the business logic software that governs the restrictions on this data.</p>
+            <p>A model (domain model, business model) is the combination of data and domain logic software that governs the restrictions on this data.</p>
         </dd>
         <dt>View</dt>
         <dd>
-            <p>A view forms the presentation of data to the user and allows the user to suggest changes to this data.</p>
+            <p>A view forms the presentation of data to the user and allows the user to enter information.</p>
         </dd>
         <dt>Controller</dt>
         <dd>
-            <p>A controller processes incoming requests (made by the user, or by other software) by interacting with the model and addressing the view.</p>
+            <p>A controller processes incoming requests (made by the user, or by other software) by interacting with the model and updating the view.</p>
         </dd>
         <dt>Message</dt>
         <dd>
@@ -80,9 +88,21 @@ include 'template/header.php';
     <p>
         In 2003 I started a sub-site about architectural patterns, named "Garfixia Software Architectures", and hosted it on the domain I used for my Andreas fansite: <b>https://www.dossier-andreas.net/software_architecture/index.html</b> I had no idea people would be interested, but it actually became quite popular. Many people have used the simple diagrams for presentations, and there are even some references in published books.
     </p>
-    <p>Twenty years later I thought it would be good to modernize the site, update the contents, and give it a proper domain.
     <p>
-        <figure><img src="images/old-site.png"><figcaption>The header of the old website</figcaption></figure>
+        Twenty years later I thought it would be good to modernize the site, update the contents, and give it a proper domain.
+    <p>
+    <p>
+        The span of the website expanded from "list all known architectural patterns", via "list all patterns that seem to seem to have the same gist as these known patterns" to "categorize all patterns I see as architectural in scope", and ended up in "all application-wide software techniques and deliverables". The latter is still in line with the original aim: to help the software developer in their quest to create an original application.
+    </p>
+    <figure><img src="images/old-site.png"><figcaption>The header of the old website</figcaption></figure>
+</section>
+
+<section>
+    <header class="major">
+        <h2>Disclaimer</h2>
+    </header>
+    <p>
+        I built this site to help software developers build an application. I have some experience in the field where I can draw upon, but I don't have personal experience with all patterns described here. It may contain errors. Also, the naming of patterns is not standardized, and different sources may name the same pattern differently. Best to treat this website as an index and a source of inspiration and follow the links provided for more in-depth in each subject.
     </p>
 </section>
 
