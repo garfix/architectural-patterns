@@ -216,6 +216,12 @@ $patterns = [
         "categories" => [CAT_AREAS]
     ],
     [
+        "name" => "Component",
+        "image" => "component.drawio.png",
+        "link" => "component",
+        "categories" => [CAT_AREAS]
+    ],
+    [
         "name" => "Microkernel",
         "aliases" => "Kernel",
         "image" => "microkernel.drawio.png",

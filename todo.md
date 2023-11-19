@@ -1,7 +1,6 @@
 patterns
 
 * Translation
-* Modules !!!
 * Components
 * Connectionism
 * documentation
