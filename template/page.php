@@ -24,18 +24,18 @@ $children = $category['children'] ? $category['children'] : [];
 
 
     <?php foreach ($children as $childCode): ?>
-    <?php $child = getCategoryByCode($childCode); ?>
-    <section>
-        <h2><?= $child['name'] ?></h2>
-        <p><?= $child['description'] ?></p>
-        <div class="posts">
-            <?php foreach ($patterns as $p): ?>
-                <?php if (in_array($child['code'], $p['categories'])): ?>
-                    <?php showBlock($p) ?>
-                <?php endif ?>
-            <?php endforeach ?>
-        </div>
-    </section>
+        <?php $child = getCategoryByCode($childCode); ?>
+        <section class="pattern-overview">
+            <h2><?= $child['name'] ?></h2>
+            <p><?= $child['description'] ?></p>
+            <div class="posts">
+                <?php foreach ($patterns as $p): ?>
+                    <?php if (in_array($child['code'], $p['categories'])): ?>
+                        <?php showBlock($p) ?>
+                    <?php endif ?>
+                <?php endforeach ?>
+            </div>
+        </section>
     <?php endforeach ?>
 
 </section>
