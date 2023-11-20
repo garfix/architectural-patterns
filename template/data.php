@@ -375,6 +375,13 @@ $patterns = [
         "link" => "deployment",
         "categories" => [CAT_ENVIRONMENT]
     ],
+    [
+        "name" => "Internationalization",
+        "aliases" => "Translation Localization i18n l10n",
+        "image" => "i18n.drawio.png",
+        "link" => "deployment",
+        "categories" => [CAT_CROSS_CUTTING]
+    ],
 ];
 
 $sortedPatterns = $patterns;

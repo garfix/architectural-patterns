@@ -102,7 +102,7 @@ include 'template/header.php';
         <h2>Disclaimer</h2>
     </header>
     <p>
-        I built this site to help software developers build an application. I have some experience in the field where I can draw upon, but I don't have personal experience with all patterns described here. It may contain errors. Also, the naming of patterns is not standardized, and different sources may name the same pattern differently. Finally, a number of remarks on this sidt may come across as my personal opinion, and for the moment I admit this is true. However, I intend to replace these with remarks from thought leaders in the field.
+        I built this site to help software developers build an application. I have some experience in the field where I can draw upon, but I don't have personal experience with all patterns described here. It may contain errors. Also, the naming of patterns is not standardized, and different sources may name the same pattern differently. Finally, a number of remarks on this site may come across as my personal opinion, and for the moment I admit this is true. However, I intend to replace these with remarks from thought leaders in the field.
     </p>
     <p>
         Best to treat this website as an index and a source of inspiration and follow the links provided for more in-depth in each subject.
