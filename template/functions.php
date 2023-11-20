@@ -17,7 +17,7 @@ function showHeader($pattern) {
 
 <header class="content">
     <h1><?= $pattern['name'] ?></h1>
-    <p><?= $pattern['aliases'] ?></p>
+    <p><?= $pattern['keywords'] ?></p>
 </header>
 
 <?php
@@ -28,7 +28,7 @@ function showBlock($p) {
 <article>
     <a href="<?= $p['link'] ?>" class="image"><img src="images/<?= $p['image']?>" alt=""></a>
     <h3><?= $p['name']?></h3>
-    <p><?= $p['aliases']?></p>
+    <p><?= $p['keywords']?></p>
     <ul class="actions">
         <li><a href="<?= $p['link']?>" class="button">Show</a></li>
     </ul>

@@ -59,7 +59,7 @@ $categories = [
 $patterns = [
     [
         "name" => "Broker",
-        "aliases" => "Service Oriented Architecture, Microservices, API, Hub-and-spoke, Event-bus",
+        "keywords" => "Service Oriented Architecture, Microservices, API, Hub-and-spoke, Event-bus",
         "image" => "broker.drawio.png",
         "link" => "broker",
         "categories" => [CAT_DISTRIBUTED]
@@ -72,7 +72,7 @@ $patterns = [
     ],
     [
         "name" => "N-Tier",
-        "aliases" => "Client-Server, Multitier",
+        "keywords" => "Client-Server, Multitier",
         "image" => "n-tier.drawio.png",
         "link" => "n-tier",
         "categories" => [CAT_DISTRIBUTED]
@@ -115,7 +115,7 @@ $patterns = [
     ],
     [
         "name" => "Repository",
-        "aliases" => "Database",
+        "keywords" => "Database",
         "image" => "repository.drawio.png",
         "link" => "repository",
         "categories" => [CAT_DISTRIBUTED, CAT_DATA]
@@ -129,34 +129,34 @@ $patterns = [
     [
         "name" => "Model-View-Controller",
         "image" => "model-view-controller.drawio.png",
-        "aliases" => "Model-View-Updater",
+        "keywords" => "Model-View-Updater",
         "link" => "model-view-controller",
         "categories" => [CAT_PRESENTATION]
     ],
     [
         "name" => "Model-View-Adapter",
-        "aliases" => "Model-View-Presenter",
+        "keywords" => "Model-View-Presenter",
         "image" => "model-view-adapter.drawio.png",
         "link" => "model-view-adapter",
         "categories" => [CAT_PRESENTATION]
     ],
     [
         "name" => "Model-View-Viewmodel",
-        "aliases" => "MVVM, Model-View-Binder",
+        "keywords" => "MVVM, Model-View-Binder",
         "image" => "model-view-viewmodel.drawio.png",
         "link" => "model-view-viewmodel",
         "categories" => [CAT_PRESENTATION]
     ],
     [
         "name" => "Hierarchical UI",
-        "aliases" => "Presentation-Abstraction-Control, Hierarchical model-view-controller",
+        "keywords" => "Presentation-Abstraction-Control, Hierarchical model-view-controller",
         "image" => "hierarchical-component-ui.drawio.png",
         "link" => "hierarchical-ui",
         "categories" => [CAT_PRESENTATION]
     ],
     [
         "name" => "Menu Navigation",
-        "aliases" => "Toolbar",
+        "keywords" => "Toolbar",
         "image" => "menu.drawio.png",
         "link" => "menu-navigation",
         "categories" => [CAT_PRESENTATION]
@@ -223,21 +223,21 @@ $patterns = [
     ],
     [
         "name" => "Microkernel",
-        "aliases" => "Kernel",
+        "keywords" => "Kernel",
         "image" => "microkernel.drawio.png",
         "link" => "microkernel",
         "categories" => [CAT_AREAS]
     ],
     [
         "name" => "Hexagonal Architecture",
-        "aliases" => "Ports and Adapters, Onion Architecture, Clean Architecture",
+        "keywords" => "Ports and Adapters, Onion Architecture, Clean Architecture",
         "image" => "ports-and-adapters.drawio.png",
         "link" => "hexagonal",
         "categories" => [CAT_AREAS]
     ],
     [
         "name" => "Plugin",
-        "aliases" => "Add-on, Theme, Skin",
+        "keywords" => "Add-on, Theme, Skin",
         "image" => "plugin.drawio.png",
         "link" => "plugin",
         "categories" => [CAT_AREAS]
@@ -262,14 +262,14 @@ $patterns = [
     ],
     [
         "name" => "Publish-Subscribe",
-        "aliases" => "Event bus, Event loop",
+        "keywords" => "Event bus, Event loop",
         "image" => "event-bus-1.png",
         "link" => "publish-subscribe",
         "categories" => [CAT_CONTROL_FLOW]
     ],
     [
         "name" => "Message Queue",
-        "aliases" => "Event bus, Event loop",
+        "keywords" => "Event bus, Event loop",
         "image" => "message-queue.drawio.png",
         "link" => "message-queue",
         "categories" => [CAT_CONTROL_FLOW]
@@ -282,14 +282,14 @@ $patterns = [
     ],
     [
         "name" => "Event Sourcing",
-        "aliases" => "Block chain",
+        "keywords" => "Block chain",
         "image" => "event-sourcing.drawio.png",
         "link" => "event-sourcing",
         "categories" => [CAT_DATA]
     ],
     [
         "name" => "CQRS",
-        "aliases" => "Command-Query Responsibility Segregation",
+        "keywords" => "Command-Query Responsibility Segregation",
         "image" => "cqrs-1.png",
         "link" => "cqrs",
         "categories" => [CAT_DATA]
@@ -302,14 +302,14 @@ $patterns = [
     ],
     [
         "name" => "Role-based Access Control",
-        "aliases" => "RBAC",
+        "keywords" => "RBAC",
         "image" => "role-based-access-control.drawio.png",
         "link" => "role-based-access-control",
         "categories" => [CAT_ACCESS_CONTROL]
     ],
     [
         "name" => "Access Control List",
-        "aliases" => "ACL",
+        "keywords" => "ACL",
         "image" => "access-control-list.drawio.png",
         "link" => "access-control-list",
         "categories" => [CAT_ACCESS_CONTROL]
@@ -352,7 +352,7 @@ $patterns = [
     ],
     [
         "name" => "Compatibility tests",
-        "aliases" => "Cross browser testing",
+        "keywords" => "Cross browser testing",
         "image" => "compatibility-tests.drawio.png",
         "link" => "compatibility-tests",
         "categories" => [CAT_TESTING]
@@ -377,7 +377,7 @@ $patterns = [
     ],
     [
         "name" => "Internationalization",
-        "aliases" => "Translation Localization i18n l10n",
+        "keywords" => "Translation Localization i18n l10n",
         "image" => "i18n.drawio.png",
         "link" => "deployment",
         "categories" => [CAT_CROSS_CUTTING]
