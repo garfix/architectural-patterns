@@ -204,6 +204,13 @@ $patterns = [
         "categories" => [CAT_PROBLEM_SOLVING]
     ],
     [
+        "name" => "Neural Network",
+        "keywords" => "Artifical Neural Network, Neural Net",
+        "image" => "neural-network.drawio.png",
+        "link" => "neural-network",
+        "categories" => [CAT_PROBLEM_SOLVING]
+    ],
+    [
         "name" => "Layered",
         "image" => "layered.drawio.png",
         "link" => "layered",
