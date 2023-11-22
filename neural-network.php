@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A neural network is a layered structure where each layer consists of nodes (artifical neurons). Nodes are linked to other nodes in the same layer, and to nodes of the adjoining layer. Processing takes the form of a series of cycles. In each cycle the values of each node and each link are updated.</dd>
+        <dd>A neural network is a layered structure where each layer consists of nodes (artificial neurons). Nodes are linked to other nodes in the same layer, and to nodes of the adjoining layer. Processing takes the form of a series of cycles. In each cycle the values of each node and each link are updated.</dd>
     </dl>
 
     <p>

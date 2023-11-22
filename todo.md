@@ -8,6 +8,7 @@ patterns
 * decision trees
 * fuzzy logic
 * support vector machines
+* indexing
 
 * parsing
 
