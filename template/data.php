@@ -204,13 +204,6 @@ $patterns = [
         "categories" => [CAT_PROBLEM_SOLVING]
     ],
     [
-        "name" => "Indexing",
-        "keywords" => "Search engine, Information retrieval",
-        "image" => "indexing.drawio.png",
-        "link" => "indexing",
-        "categories" => [CAT_PROBLEM_SOLVING]
-    ],
-    [
         "name" => "Neural Network",
         "keywords" => "Artificial Neural Network, Neural Net",
         "image" => "neural-network.drawio.png",
@@ -306,6 +299,13 @@ $patterns = [
         "keywords" => "Command-Query Responsibility Segregation",
         "image" => "cqrs-1.png",
         "link" => "cqrs",
+        "categories" => [CAT_DATA]
+    ],
+    [
+        "name" => "Indexing",
+        "keywords" => "Search engine, Information retrieval",
+        "image" => "indexing.drawio.png",
+        "link" => "indexing",
         "categories" => [CAT_DATA]
     ],
     [
