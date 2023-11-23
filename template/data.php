@@ -58,6 +58,34 @@ $categories = [
 
 $patterns = [
     [
+        "name" => "Repository",
+        "keywords" => "Database",
+        "image" => "repository.drawio.png",
+        "link" => "repository",
+        "categories" => [CAT_DATA]
+    ],
+    [
+        "name" => "Event Sourcing",
+        "keywords" => "Block chain",
+        "image" => "event-sourcing.drawio.png",
+        "link" => "event-sourcing",
+        "categories" => [CAT_DATA]
+    ],
+    [
+        "name" => "CQRS",
+        "keywords" => "Command-Query Responsibility Segregation",
+        "image" => "cqrs-1.png",
+        "link" => "cqrs",
+        "categories" => [CAT_DATA]
+    ],
+    [
+        "name" => "Index",
+        "keywords" => "Search engine, Information retrieval",
+        "image" => "index.drawio.png",
+        "link" => "indexing",
+        "categories" => [CAT_DATA]
+    ],
+    [
         "name" => "Broker",
         "keywords" => "Service Oriented Architecture, Microservices, API, Hub-and-spoke, Event-bus",
         "image" => "broker.drawio.png",
@@ -112,13 +140,6 @@ $patterns = [
         "image" => "space-based.drawio.png",
         "link" => "space-based",
         "categories" => [CAT_DISTRIBUTED]
-    ],
-    [
-        "name" => "Repository",
-        "keywords" => "Database",
-        "image" => "repository.drawio.png",
-        "link" => "repository",
-        "categories" => [CAT_DISTRIBUTED, CAT_DATA]
     ],
     [
         "name" => "Data Replication",
@@ -286,27 +307,6 @@ $patterns = [
         "image" => "game-loop.drawio.png",
         "link" => "game-loop",
         "categories" => [CAT_CONTROL_FLOW]
-    ],
-    [
-        "name" => "Event Sourcing",
-        "keywords" => "Block chain",
-        "image" => "event-sourcing.drawio.png",
-        "link" => "event-sourcing",
-        "categories" => [CAT_DATA]
-    ],
-    [
-        "name" => "CQRS",
-        "keywords" => "Command-Query Responsibility Segregation",
-        "image" => "cqrs-1.png",
-        "link" => "cqrs",
-        "categories" => [CAT_DATA]
-    ],
-    [
-        "name" => "Indexing",
-        "keywords" => "Search engine, Information retrieval",
-        "image" => "indexing.drawio.png",
-        "link" => "indexing",
-        "categories" => [CAT_DATA]
     ],
     [
         "name" => "Caching",
