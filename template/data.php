@@ -86,6 +86,13 @@ $patterns = [
         "categories" => [CAT_DATA]
     ],
     [
+        "name" => "ETL",
+        "keywords" => "Extract Transform Load",
+        "image" => "etl.drawio.png",
+        "link" => "etl",
+        "categories" => [CAT_DATA]
+    ],
+    [
         "name" => "Broker",
         "keywords" => "Service Oriented Architecture, Microservices, API, Hub-and-spoke, Event-bus",
         "image" => "broker.drawio.png",

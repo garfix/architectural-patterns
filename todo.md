@@ -27,3 +27,5 @@
 * data
   * relational
   * sparse distributed
+  * NoSQL
+

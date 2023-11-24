@@ -26,7 +26,7 @@ include 'template/header.php';
         After I added the patterns that are usually named architectural patterns, it occurred to me that these were just the most salient ones, and that many other patterns might just as well be added. I have added these more obvious patterns like "logging" and "plugin" in order to remind you of them as you design a new application. Furthermore, I categorized the patterns to make them easier to browse.
     </p>
     <p>
-        If you have any ideas or comments to improve this website, don't hesitate to <a href="mailto:patrick.vanbergen@gmail.com">mail me</a>.
+        If you have any ideas or comments to improve this website, don't hesitate to <a href="https://github.com/garfix/architectural-patterns">create an issue or make a pull request</a>.
     </p>
     <p>
         I will leave you with this thought
