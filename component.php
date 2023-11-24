@@ -9,14 +9,17 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>An application with a single function. For complex functionality, combine components.</dd>
+        <dd>A module or application with a single well-defined API.</dd>
     </dl>
 
     <figure><img src="images/component.drawio.png"><figcaption>Component architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>
-        Each application has a single function.
+        A component has a documented an rigid interface that other components can rely on. For complex functionality, component are combined.
+    </p>
+    <p>
+        Components can be used as part of a larger application, but also as complete applications by themselves.
     </p>
 
     <h2>Examples</h2>

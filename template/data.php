@@ -391,7 +391,7 @@ $patterns = [
     ],
     [
         "name" => "Internationalization",
-        "keywords" => "Translation Localization i18n l10n",
+        "keywords" => "Translation, Localization, i18n, l10n",
         "image" => "i18n.drawio.png",
         "link" => "deployment",
         "categories" => [CAT_CROSS_CUTTING]
