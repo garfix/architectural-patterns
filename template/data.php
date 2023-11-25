@@ -86,6 +86,12 @@ $patterns = [
         "categories" => [CAT_DATA]
     ],
     [
+        "name" => "Cache",
+        "image" => "caching.drawio.png",
+        "link" => "cache",
+        "categories" => [CAT_DATA]
+    ],
+    [
         "name" => "ETL",
         "keywords" => "Extract Transform Load",
         "image" => "etl.drawio.png",
@@ -316,12 +322,6 @@ $patterns = [
         "categories" => [CAT_CONTROL_FLOW]
     ],
     [
-        "name" => "Caching",
-        "image" => "caching.drawio.png",
-        "link" => "caching",
-        "categories" => [CAT_CROSS_CUTTING]
-    ],
-    [
         "name" => "Role-based Access Control",
         "keywords" => "RBAC",
         "image" => "role-based-access-control.drawio.png",
@@ -346,6 +346,13 @@ $patterns = [
         "image" => "error-handling.drawio.png",
         "link" => "error-handling",
         "categories" => [CAT_CROSS_CUTTING, CAT_PRESENTATION]
+    ],
+    [
+        "name" => "Feature Flags",
+        "keywords" => "Feature Toggles",
+        "image" => "feature-flags.drawio.png",
+        "link" => "feature-flags",
+        "categories" => [CAT_CROSS_CUTTING]
     ],
     [
         "name" => "Functional tests",

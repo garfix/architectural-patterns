@@ -1,6 +1,6 @@
 <?php
 include 'template/data.php';
-$pattern = $indexed['Caching'];
+$pattern = $indexed['Cache'];
 include 'template/header.php';
 ?>
 
