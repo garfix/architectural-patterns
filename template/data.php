@@ -257,6 +257,12 @@ $patterns = [
         "categories" => [CAT_AREAS]
     ],
     [
+        "name" => "Acyclic Dependency Graph",
+        "image" => "dependency-graph.drawio.png",
+        "link" => "acyclic-dependency-graph",
+        "categories" => [CAT_AREAS]
+    ],
+    [
         "name" => "Component",
         "image" => "component.drawio.png",
         "link" => "component",
