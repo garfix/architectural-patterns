@@ -342,7 +342,7 @@ $patterns = [
         "categories" => [CAT_CROSS_CUTTING]
     ],
     [
-        "name" => "Error handling",
+        "name" => "Error Handling",
         "image" => "error-handling.drawio.png",
         "link" => "error-handling",
         "categories" => [CAT_CROSS_CUTTING, CAT_PRESENTATION]

@@ -20,22 +20,31 @@ include 'template/header.php';
         <h2>Pattern selection</h2>
     </header>
     <p>
-        This site aims to collect all known architectural patterns. However, many techniques are sometimes labeled "architectural pattern", so it may be useful to define what is considered one on this site.
+        This site aims to collect all known architectural patterns. However, many techniques may be considered an "architectural pattern", so it may be useful to define what is considered one on this site.
     </p>
     <dl>
         <dt>Architectural pattern</dt>
         <dd>
-            <p>An architectural pattern is an organizational structure that spans a large part of a system. It defines the main components of a system and their interactions.</p>
+            <p>An architectural pattern is a specific generic structure at the system level. It defines the main parts of the structure, and their interactions.</p>
         </dd>
     </dl>
     <p>
-        This excludes "Object oriented programming", as it does not define any main components, just building blocks.
+        The <b>system level</b> distinguishes the pattern from <b>module level</b>. Architectural patterns apply to the system as a whole, or provide a technique that works in the same way in multiple modules. They don't solve a problem for an individual module.
     </p>
     <p>
-        A "system" may also be, and often is, part of larger system. Note that the definition doesn't mention hardware, or even software, as these structures may be implemented in any way.
+        By calling it <b>specific</b> I exclude things like "natural language processing" because it is too broad, and it spans a large number of techniques.
     </p>
     <p>
-        Like species in nature, software patterns can have varieties; a sofware pattern can be seen as a group of similar varieties. And like nature, a variety can be as similar to one pattern as it is to another. To which pattern does it belong? I tend to group the variety below both patterns, and you can pick the pattern that best meets your intent.
+        By <b>generic</b> I mean that it is not bound to any application type. There are patterns that are unique to word processing, web development, embedded, etc, but this site is about the patterns that can be applied in many areas.
+    </p>
+    <p>
+        Defining a pattern as a <b>structure</b> doesn't really help, but it's just hard to say what makes a pattern.
+    </p>
+    <p>
+        A <b>system</b> can be a complete application, but may also be, and often is, part of larger application. Note that the definition doesn't mention hardware, or even software, as these structures may be implemented in any way.
+    </p>
+    <p>
+        Like species in nature, software patterns can have <b>varieties</b>; a software pattern can be seen as a group of similar varieties. And like nature, a variety can be as similar to one pattern as it is to another. To which pattern does it belong? I tend to group the variety with both patterns, and you can pick the pattern that best meets your intent.
     </p>
     <p>
         When is a variety sufficiently different from another to warrant a new pattern? To determine this we need a strong definition of the pattern. Hence I start every pattern with a definition. Next, a pattern has a prototypical form and some variants. A good rule-of-thumb to discern between two patterns would be to ask yourself if the software that matches the pattern can be easily changed into the other pattern.

@@ -1,6 +1,6 @@
 <?php
 include 'template/data.php';
-$pattern = $indexed['Error handling'];
+$pattern = $indexed['Error Handling'];
 include 'template/header.php';
 ?>
 
