@@ -30,7 +30,7 @@ $pages = [
 $categories = [
     ["code" => CAT_ELEMENTS, "name" => 'Elements',
         "description" => "Basic building blocks for an application"],
-    ["code" => CAT_AREAS, "name" => 'Code areas',
+    ["code" => CAT_AREAS, "name" => 'Application areas',
         "description" => "Patterns that partition the code base in distinct areas and determine what's most basic"],
     ["code" => CAT_PRESENTATION, "name" => 'Presentation',
         "description" => "Patterns related to the Graphical User Interface"],
@@ -45,7 +45,7 @@ $categories = [
     ["code" => CAT_CROSS_CUTTING, "name" => 'Cross-cutting concerns',
         "description" => "Patterns that provide a specific function in many distinct areas of the code base",
         "children" => [CAT_ACCESS_CONTROL]],
-    ["code" => CAT_ACCESS_CONTROL, "name" => 'Access control',
+    ["code" => CAT_ACCESS_CONTROL, "name" => 'Authorization',
         "description" => "Patterns that describe who has access to what"],
     ["code" => CAT_ENVIRONMENT, "name" => 'App Environment',
         "description" => "Patterns that are not part of the application in the narrow sense, but are nevertheless part of its broader environment",
@@ -62,7 +62,7 @@ $patterns = [
         "keywords" => "Database",
         "image" => "repository.drawio.png",
         "link" => "repository",
-        "categories" => [CAT_DATA]
+        "categories" => [CAT_DATA, CAT_DISTRIBUTED]
     ],
     [
         "name" => "Event Sourcing",
@@ -415,6 +415,13 @@ $patterns = [
         "image" => "i18n.drawio.png",
         "link" => "deployment",
         "categories" => [CAT_CROSS_CUTTING]
+    ],
+    [
+        "name" => "Single Sign-on",
+        "keywords" => "SSO",
+        "image" => "single-sign-on.drawio.png",
+        "link" => "single-sign-on",
+        "categories" => [CAT_DISTRIBUTED]
     ],
 ];
 

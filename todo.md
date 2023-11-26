@@ -1,5 +1,9 @@
 
+Where does Authentication fit? New category?
+
 ## problem solving
+
+* ! multi-agent system
 
 * Markov Decision Process
 * case-based reasoning
@@ -28,11 +32,14 @@
 * lifecycle methods
 
 ## dependencies
-* inversion of control
+* dependency injection
 * dependency graph https://en.wikipedia.org/wiki/Dependency_graph
 
 * data
   * relational
   * sparse distributed
   * NoSQL
+  * https://en.wikipedia.org/wiki/Data_warehouse
+  * https://en.wikipedia.org/wiki/Data_validation
+  *
 
