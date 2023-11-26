@@ -26,6 +26,19 @@ Where does Authentication fit? New category?
   * requirements
   * technical docs
 
+## functions
+
+* presentation
+* problem solving
+* authentication
+
+or
+
+## Access
+
+* authorization
+* authentication
+
 ## cross cutting
 
 * routing / navigation

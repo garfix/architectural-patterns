@@ -14,6 +14,8 @@ const CAT_ACCESS_CONTROL = 'access-control';
 const CAT_TESTING = 'testing';
 const CAT_ENVIRONMENT = 'app-environment';
 const CAT_MONITORING = 'monitoring';
+const CAT_AUTHENTICATION = 'authentication';
+const CAT_AUTHORIZATION = 'authorization';
 
 $pages = [
     // CAT_ELEMENTS,
@@ -23,6 +25,7 @@ $pages = [
     CAT_CONTROL_FLOW,
     CAT_PROBLEM_SOLVING,
     CAT_CROSS_CUTTING,
+    CAT_ACCESS_CONTROL,
     CAT_DISTRIBUTED,
     CAT_ENVIRONMENT,
 ];
@@ -43,10 +46,14 @@ $categories = [
     ["code" => CAT_DISTRIBUTED, "name" => 'Distributed computing',
         "description" => "Patterns that disribute the application over multiple servers"],
     ["code" => CAT_CROSS_CUTTING, "name" => 'Cross-cutting concerns',
-        "description" => "Patterns that provide a specific function in many distinct areas of the code base",
-        "children" => [CAT_ACCESS_CONTROL]],
-    ["code" => CAT_ACCESS_CONTROL, "name" => 'Authorization',
-        "description" => "Patterns that describe who has access to what"],
+        "description" => "Patterns that provide a specific function in many distinct areas of the code base"],
+    ["code" => CAT_ACCESS_CONTROL, "name" => 'Access control',
+        "description" => "Patterns that control access to the system",
+        "children" => [CAT_AUTHENTICATION, CAT_AUTHORIZATION]],
+    ["code" => CAT_AUTHENTICATION, "name" => 'Authentication',
+        "description" => "Determine that the user is who they claim to be"],
+    ["code" => CAT_AUTHORIZATION, "name" => 'Authorization',
+        "description" => "Describe who has access to what"],
     ["code" => CAT_ENVIRONMENT, "name" => 'App Environment',
         "description" => "Patterns that are not part of the application in the narrow sense, but are nevertheless part of its broader environment",
         "children" => [CAT_TESTING, CAT_MONITORING]],
@@ -328,20 +335,6 @@ $patterns = [
         "categories" => [CAT_CONTROL_FLOW]
     ],
     [
-        "name" => "Role-based Access Control",
-        "keywords" => "RBAC",
-        "image" => "role-based-access-control.drawio.png",
-        "link" => "role-based-access-control",
-        "categories" => [CAT_ACCESS_CONTROL]
-    ],
-    [
-        "name" => "Access Control List",
-        "keywords" => "ACL",
-        "image" => "access-control-list.drawio.png",
-        "link" => "access-control-list",
-        "categories" => [CAT_ACCESS_CONTROL]
-    ],
-    [
         "name" => "Logging",
         "image" => "logging.drawio.png",
         "link" => "logging",
@@ -421,7 +414,21 @@ $patterns = [
         "keywords" => "SSO",
         "image" => "single-sign-on.drawio.png",
         "link" => "single-sign-on",
-        "categories" => [CAT_DISTRIBUTED]
+        "categories" => [CAT_AUTHENTICATION]
+    ],
+    [
+        "name" => "Role-based Access Control",
+        "keywords" => "RBAC",
+        "image" => "role-based-access-control.drawio.png",
+        "link" => "role-based-access-control",
+        "categories" => [CAT_AUTHORIZATION]
+    ],
+    [
+        "name" => "Access Control List",
+        "keywords" => "ACL",
+        "image" => "access-control-list.drawio.png",
+        "link" => "access-control-list",
+        "categories" => [CAT_AUTHORIZATION]
     ],
 ];
 
