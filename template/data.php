@@ -48,7 +48,7 @@ $categories = [
     ["code" => CAT_CROSS_CUTTING, "name" => 'Cross-cutting concerns',
         "description" => "Patterns that provide a specific function in many distinct areas of the code base"],
     ["code" => CAT_ACCESS_CONTROL, "name" => 'Access control',
-        "description" => "Patterns that control access to the system",
+        "description" => "Control who has access to the system and to what parts of the system",
         "children" => [CAT_AUTHENTICATION, CAT_AUTHORIZATION]],
     ["code" => CAT_AUTHENTICATION, "name" => 'Authentication',
         "description" => "Determine that the user is who they claim to be"],
@@ -410,11 +410,23 @@ $patterns = [
         "categories" => [CAT_CROSS_CUTTING]
     ],
     [
+        "name" => "Authentication",
+        "image" => "authentication.drawio.png",
+        "link" => "authentication",
+        "categories" => [CAT_AUTHENTICATION]
+    ],
+    [
         "name" => "Single Sign-on",
         "keywords" => "SSO",
         "image" => "single-sign-on.drawio.png",
         "link" => "single-sign-on",
-        "categories" => [CAT_AUTHENTICATION]
+        "categories" => [CAT_AUTHENTICATION, CAT_DISTRIBUTED]
+    ],
+    [
+        "name" => "Federated Identity",
+        "image" => "federated-identity.drawio.png",
+        "link" => "federated-identity",
+        "categories" => [CAT_AUTHENTICATION, CAT_DISTRIBUTED]
     ],
     [
         "name" => "Role-based Access Control",
