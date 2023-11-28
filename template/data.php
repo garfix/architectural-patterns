@@ -347,6 +347,12 @@ $patterns = [
         "categories" => [CAT_CROSS_CUTTING, CAT_PRESENTATION]
     ],
     [
+        "name" => "Data Validation",
+        "image" => "data-validation.drawio.png",
+        "link" => "data-validation",
+        "categories" => [CAT_CROSS_CUTTING]
+    ],
+    [
         "name" => "Feature Flags",
         "keywords" => "Feature Toggles",
         "image" => "feature-flags.drawio.png",

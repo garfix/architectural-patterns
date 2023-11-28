@@ -54,5 +54,5 @@ or
   * NoSQL
   * https://en.wikipedia.org/wiki/Data_warehouse
   * https://en.wikipedia.org/wiki/Data_validation
-  *
+  * Data mesh
 
