@@ -26,19 +26,6 @@ Where does Authentication fit? New category?
   * requirements
   * technical docs
 
-## functions
-
-* presentation
-* problem solving
-* authentication
-
-or
-
-## Access
-
-* authorization
-* authentication
-
 ## cross cutting
 
 * routing / navigation
@@ -53,6 +40,5 @@ or
   * sparse distributed
   * NoSQL
   * https://en.wikipedia.org/wiki/Data_warehouse
-  * https://en.wikipedia.org/wiki/Data_validation
   * Data mesh
 

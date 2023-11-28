@@ -8,11 +8,13 @@
 -->
 <html>
 	<head>
-		<title><?= $title ? $title : $pattern['name'] ?> - Architectural Patterns</title>
+		<title><?= $title ? $title : $pattern['name'] ?> | Architectural Patterns</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/custom.css" />
+        <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+        <meta name="updated_at" content="2023-11-28 13:00 PM" />
 	</head>
 	<body class="is-preload">
 
