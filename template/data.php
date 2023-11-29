@@ -335,6 +335,12 @@ $patterns = [
         "categories" => [CAT_CONTROL_FLOW]
     ],
     [
+        "name" => "Lifecycle Hooks",
+        "image" => "lifecycle-hooks.drawio.png",
+        "link" => "lifecycle-hooks",
+        "categories" => [CAT_CONTROL_FLOW]
+    ],
+    [
         "name" => "Logging",
         "image" => "logging.drawio.png",
         "link" => "logging",

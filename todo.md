@@ -1,6 +1,4 @@
 
-Where does Authentication fit? New category?
-
 ## problem solving
 
 * ! multi-agent system
@@ -11,15 +9,6 @@ Where does Authentication fit? New category?
 * genetic algorithms
 * decision trees
 * support vector machines
-
-## associated software
-
-* framework: a rich template that aids in application creation
-* no code
-* code generation
-* library:
-* llm's
-* 4th gen
 
 * documentation
   * user manual
