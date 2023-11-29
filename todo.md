@@ -28,6 +28,5 @@
   * relational
   * sparse distributed
   * NoSQL
-  * https://en.wikipedia.org/wiki/Data_warehouse
-  * Data mesh
+  * https://en.wikipedia.org/wiki/Data_cube
 

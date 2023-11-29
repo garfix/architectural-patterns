@@ -106,6 +106,20 @@ $patterns = [
         "categories" => [CAT_DATA]
     ],
     [
+        "name" => "Data Warehouse",
+        "keywords" => "Business Intelligence",
+        "image" => "data-warehouse.drawio.png",
+        "link" => "data-warehouse",
+        "categories" => [CAT_DATA]
+    ],
+    [
+        "name" => "Data Cube",
+        "keywords" => "Timeseries, Array DBMS",
+        "image" => "data-cube.drawio.png",
+        "link" => "data-cube",
+        "categories" => [CAT_DATA]
+    ],
+    [
         "name" => "Broker",
         "keywords" => "Service Oriented Architecture, Microservices, API, Hub-and-spoke, Event-bus",
         "image" => "broker.drawio.png",
