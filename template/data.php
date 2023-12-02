@@ -217,39 +217,15 @@ $patterns = [
         "categories" => [CAT_PRESENTATION]
     ],
     [
-        "name" => "Blackboard",
-        "image" => "blackboard.drawio.png",
-        "link" => "blackboard",
-        "categories" => [CAT_PROBLEM_SOLVING]
-    ],
-    [
-        "name" => "Process Control",
-        "image" => "process-control.drawio.png",
-        "link" => "process-control",
-        "categories" => [CAT_PROBLEM_SOLVING]
-    ],
-    [
-        "name" => "Multi-Agent System",
-        "image" => "multi-agent-system.drawio.png",
-        "link" => "multi-agent-system",
+        "name" => "Search",
+        "image" => "search.drawio.png",
+        "link" => "search",
         "categories" => [CAT_PROBLEM_SOLVING]
     ],
     [
         "name" => "Inference Engine",
         "image" => "rule-based.drawio.png",
         "link" => "inference-engine",
-        "categories" => [CAT_PROBLEM_SOLVING]
-    ],
-    [
-        "name" => "Agent",
-        "image" => "agent.drawio.png",
-        "link" => "agent",
-        "categories" => [CAT_PROBLEM_SOLVING]
-    ],
-    [
-        "name" => "Search",
-        "image" => "search.drawio.png",
-        "link" => "search",
         "categories" => [CAT_PROBLEM_SOLVING]
     ],
     [
@@ -263,6 +239,30 @@ $patterns = [
         "keywords" => "Artificial Neural Network, Neural Net",
         "image" => "neural-network.drawio.png",
         "link" => "neural-network",
+        "categories" => [CAT_PROBLEM_SOLVING]
+    ],
+    [
+        "name" => "Agent",
+        "image" => "agent.drawio.png",
+        "link" => "agent",
+        "categories" => [CAT_PROBLEM_SOLVING]
+    ],
+    [
+        "name" => "Multi-Agent System",
+        "image" => "multi-agent-system.drawio.png",
+        "link" => "multi-agent-system",
+        "categories" => [CAT_PROBLEM_SOLVING]
+    ],
+    [
+        "name" => "Blackboard",
+        "image" => "blackboard.drawio.png",
+        "link" => "blackboard",
+        "categories" => [CAT_PROBLEM_SOLVING]
+    ],
+    [
+        "name" => "Process Control",
+        "image" => "process-control.drawio.png",
+        "link" => "process-control",
         "categories" => [CAT_PROBLEM_SOLVING]
     ],
     [
@@ -455,17 +455,17 @@ $patterns = [
         "categories" => [CAT_AUTHENTICATION, CAT_DISTRIBUTED]
     ],
     [
-        "name" => "Role-based Access Control",
-        "keywords" => "RBAC",
-        "image" => "role-based-access-control.drawio.png",
-        "link" => "role-based-access-control",
-        "categories" => [CAT_AUTHORIZATION]
-    ],
-    [
         "name" => "Access Control List",
         "keywords" => "ACL",
         "image" => "access-control-list.drawio.png",
         "link" => "access-control-list",
+        "categories" => [CAT_AUTHORIZATION]
+    ],
+    [
+        "name" => "Role-based Access Control",
+        "keywords" => "RBAC",
+        "image" => "role-based-access-control.drawio.png",
+        "link" => "role-based-access-control",
         "categories" => [CAT_AUTHORIZATION]
     ],
 ];
