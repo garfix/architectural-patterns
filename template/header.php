@@ -16,7 +16,7 @@
 	</head>
 	<body class="is-preload">
 
-        <?php if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false): ?>
+        <?php if (strpos($_SERVER['HTTP_HOST'], 'localhost') === false): ?>
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-4E7P326XB4"></script>
