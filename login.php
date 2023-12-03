@@ -1,6 +1,6 @@
 <?php
 include 'template/data.php';
-$pattern = $indexed['Authentication'];
+$pattern = $indexed['Login'];
 include 'template/header.php';
 ?>
 
@@ -16,7 +16,7 @@ include 'template/header.php';
         This can be done by providing a username or email, together with a password or PIN code.
     </p>
 
-    <figure><img src="images/authentication.drawio.png"><figcaption>Authentication</figcaption></figure>
+    <figure><img src="images/login.drawio.png"><figcaption>Login</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

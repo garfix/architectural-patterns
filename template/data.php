@@ -436,9 +436,9 @@ $patterns = [
         "categories" => [CAT_CROSS_CUTTING]
     ],
     [
-        "name" => "Authentication",
-        "image" => "authentication.drawio.png",
-        "link" => "authentication",
+        "name" => "Login",
+        "image" => "login.drawio.png",
+        "link" => "login",
         "categories" => [CAT_AUTHENTICATION]
     ],
     [
