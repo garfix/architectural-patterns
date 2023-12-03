@@ -2,6 +2,10 @@ body {
     color: #545a5f;
 }
 
+#menu > ul > li > ul {
+    color: #6D7274;
+}
+
 figure {
     text-align: center;
     margin: 3rem 0;
@@ -14,7 +18,7 @@ figure img {
 figcaption {
     text-align: left;
     font-weight: bold;
-    color: #c0c0c0;
+    color: #6D7274;
 }
 
 article img {

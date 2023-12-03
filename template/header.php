@@ -1,12 +1,10 @@
-<?php
-
-?><!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <!--
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
 		<title><?= $title ? $title : $pattern['name'] ?> | Architectural Patterns</title>
 		<meta charset="utf-8" />
@@ -18,6 +16,8 @@
 	</head>
 	<body class="is-preload">
 
+        <?php if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false): ?>
+
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-4E7P326XB4"></script>
         <script>
@@ -27,6 +27,8 @@
 
             gtag('config', 'G-4E7P326XB4');
         </script>
+
+        <?php endif ?>
 
 		<!-- Wrapper -->
 			<div id="wrapper">

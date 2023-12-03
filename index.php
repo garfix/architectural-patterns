@@ -37,7 +37,7 @@ include 'template/header.php';
     <p>—David Gelernter (in Machine Beauty: Elegance and the Heart of Technology) Found <a target="_blank" href="https://vanderburg.org/etc/quotes/gelernter-beauty/">here</a>.
     </p>
     <p>
-        November 2023
+        Nijmegen, November 2023
     </p>
     <p>
         <center><img src="images/dragon.jpg" /></center>

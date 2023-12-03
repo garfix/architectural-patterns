@@ -216,6 +216,12 @@ $patterns = [
         "categories" => [CAT_PRESENTATION]
     ],
     [
+        "name" => "Accessibility",
+        "image" => "accessibility.drawio.png",
+        "link" => "accessibility",
+        "categories" => [CAT_PRESENTATION, CAT_CROSS_CUTTING]
+    ],
+    [
         "name" => "Menu Navigation",
         "keywords" => "Toolbar",
         "image" => "menu.drawio.png",

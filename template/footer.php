@@ -15,9 +15,9 @@
                                 <li>
                                     <span class="opener active">Categories</span>
                                     <ul>
-                                        <?php foreach ($pages as $page): ?>
-                                            <li><a href="<?= $page ?>"><?= getCategoryByCode($page)['name'] ?></a></li>
-                                        <?php endforeach ?>
+                                    <?php foreach ($pages as $page): ?>
+                                        <li><a href="<?= $page ?>"><?= getCategoryByCode($page)['name'] ?></a>
+                                    <?php endforeach ?>
                                     </ul>
                                 </li>
                                 <li><a href="patterns">All patterns</a></li>
