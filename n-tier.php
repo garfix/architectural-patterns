@@ -9,79 +9,71 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A tiered architecture has separate servers for each of its main functions. Each tier only communicates with the tier before and the tier after it.</dd>
+        <dd>A tiered architecture cleanly separates its main concerns. Each tier only communicates with the tier before and the tier after it.</dd>
     </dl>
     <p>
-        All web applications are N-Tier architectures. There is an application server, a large number of web-clients, and a database.
-        An N-Tier architecture is really a Client-Server architecture combined with the Layered architecture.
+        Each tier may live on a separate server, or two or more tiers may be combined on the same server. It's the separation of concerns that matters.
     </p>
 
-    <figure><img src="images/n-tier.drawio.png"><figcaption>N-tiers architecture diagram</figcaption></figure>
+    <figure><img src="images/n-tier.drawio.png"><figcaption>N-tier architecture diagram</figcaption></figure>
 
     <p>
-        A Client-Server system is one in which the server performs some kind of service that is used by many clients. The clients take the lead
-        in the communication. The basic Client-Server architecture has 2 tiers (Client and Server).
-        I will basically explain the 3-tier architecture here, which is an extension to the 2-tier architecture.
+        I will explain the 4-tier architecture here. There may be less or more.
     </p>
     <p>
-        The first, or <b>presentation tier</b>, a.k.a. the client or front-end, deals with the interaction with the user.
-        Usually, there can be any number of clients which can all access the server at the same time.
-        Currently the clients are mostly thin clients, which means they do not contain a lot of application code
-        (in contrast to fat clients).
-        Clients process user input, send requests to the server, and show the results of these requests to the user.
-        A common client is made up of a number of dynamic HTML pages that one can access with a web browser.
+        The <b>presentation tier</b> deals with the interaction with the user. It shows the user interface and allows the user to interact with it via controls.
     </p>
     <p>
-        The second, or <b>application tier</b>, a.k.a. the server, or the back-end, or middleware, processes the requests of all clients. It is
-        the actual web application that performs all functionality specific to the web application. However,
-        it does not store the persistent data itself. Whenever it needs data of any importance, it contacts the database server.
+        The <b>controller tier</b> or <b>application tier</b> contains all the code required to run an application, but distinct from the domain model.
     </p>
     <p>
-        The third, or <b>database tier</b> contains the database management system that manages all persistent data.
+        The <b>domain logic tier</b> contains the code that expresses the requirements of the domain, or business. This information is typically extracted from domain experts.
     </p>
-
     <p>
-        It is clear that there are multiple clients. That's what client-server computing is all about.
-        However, in the second and third tier there can also be multiple instances of the same application.
-        If this is the case, it is because of scalability, load-balancing and redundancy. Which means
-        the system is important, so let's add extra equipment that does the same thing. This makes the server
-        a very powerful system, but also introduces synchronisation problems.
+        The <b>data access tier</b> stores and retrieves data from the database. It contains CRUD functions (Create Read Update Delete), as well as complicated queries joining multiple tables.
     </p>
 
     <h2>How does it work?</h2>
     <p>
         Communication between the different tiers often takes place via a network.
-        Clients communicate to the application server directly or to a broker that balances requests between
-        separate server machines. The database layer usually contains only one database.
     </p>
 
     <h2>Examples</h2>
     <ul>
-        <li>Web-applications. Where the first tier is the application-tier, the second tier is the
-        application tier and the third tier is the database tier.
+        <li>Web-applications
     </ul>
-
-    <h2>Where does it come from?</h2>
-    <p>
-        At the advance of multitasking operating systems in the nineteen-sixties, it became possible to access a single computer (the server)
-        from different terminals (clients). The distance between the clients and the server became bigger and the number
-        of clients increased. At the time the application and database tiers were still integrated. It is called
-        <i>client-server</i> computing.
-    </p>
-
-    <figure><img src="images/tiers_2.jpg"><figcaption>Multiple tiers</figcaption></figure>
 
     <h2>When should you use it?</h2>
     <p>
-        You don't usually need to build your own application and database server. Most application developers
-        either build the application specific front-end code, or the application specific back-end code.
-        This code is then embedded in an existing application server and uses an existing database management server.
+        Every large scale application needs to separate these concerns. A specialized team may work on a single tier. Even on small applications this pattern helps to reduce cognitive load (makes it easier to understand).
     </p>
+    <p>
+        Advantages of a separate the presentation tier
+    </p>
+    <ul>
+        <li>It is possible to have a frontend team just work on the visual design, without having to code
+        <li>It is possible to add another view (presentation) in the same application
+        <li>It is possible to replace the presentation
+        <li>It is possible to test the application without access to the presentation
+    </ul>
+    <p>
+        Advantages of a separate domain logic tier
+    </p>
+    <ul>
+        <li>Isolating the domain rules to review them with the domain experts
+        <li>Preventing code-duplication, which makes maintenance easier
+        <li>Unit tests that are don't need a database are faster and easier to create
+    </ul>
+    <p>
+        Advantages of a separate data access tier
+    </p>
+    <ul>
+        <li>A separate data access tier can focus on speed
+    </ul>
 
     <h2>Links</h2>
     <ul>
         <li><a href="https://en.wikipedia.org/wiki/Multitier_architecture">Wikipedia on Multitier</a>
-        <li><a href="http://sunsite.uakom.sk/sunworldonline/swol-08-1998/swol-08-java.html">Beyond n-tier: what you really get from Java</a>
     </ul>
 </section>
 

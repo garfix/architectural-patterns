@@ -55,3 +55,15 @@ a system implements use cases
 * Object composition
 * Domain driven design
 
+## naming
+
+* DDD: names from the domain
+* code conventions
+
+## a pattern is
+
+* not a design method (ie DDD)
+* not a principe (ie OCP)
+* but it may be technique that comes from it
+
+

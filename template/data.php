@@ -120,6 +120,19 @@ $patterns = [
         "categories" => [CAT_DATA]
     ],
     [
+        "name" => "Client-Server",
+        "image" => "client-server.drawio.png",
+        "link" => "client-server",
+        "categories" => [CAT_DISTRIBUTED]
+    ],
+    [
+        "name" => "N-Tier",
+        "keywords" => "Multitier",
+        "image" => "n-tier.drawio.png",
+        "link" => "n-tier",
+        "categories" => [CAT_DISTRIBUTED, CAT_AREAS]
+    ],
+    [
         "name" => "Broker",
         "keywords" => "Service Oriented Architecture, Microservices, API, Hub-and-spoke, Event-bus",
         "image" => "broker.drawio.png",
@@ -130,13 +143,6 @@ $patterns = [
         "name" => "Master-Slave",
         "image" => "master-and-slave.drawio.png",
         "link" => "master-slave",
-        "categories" => [CAT_DISTRIBUTED]
-    ],
-    [
-        "name" => "N-Tier",
-        "keywords" => "Client-Server, Multitier",
-        "image" => "n-tier.drawio.png",
-        "link" => "n-tier",
         "categories" => [CAT_DISTRIBUTED]
     ],
     [
