@@ -12,6 +12,17 @@ function getCategoryByCode($code) {
     return null;
 }
 
+function getPatternByName($name) {
+    global $patterns;
+
+    foreach ($patterns as $pattern) {
+        if ($pattern['name'] == $name) {
+            return $pattern;
+        }
+    }
+
+    return null;
+}
 function showHeader($pattern) {
 ?>
 

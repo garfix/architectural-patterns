@@ -18,11 +18,11 @@ foreach ($patterns as $p) {
     <p><?= $category['description'] ?></p>
 </section>
 
-<?php if (count($mainBlocks) > 0): ?>
+<?php if (count($category['patterns']) > 0): ?>
 <section class="pattern-overview">
     <div class="posts">
-        <?php foreach ($mainBlocks as $block): ?>
-            <?php showBlock($block) ?>
+        <?php foreach ($category['patterns'] as $patternName): ?>
+            <?php showBlock(getPatternByName($patternName)) ?>
         <?php endforeach ?>
     </div>
 </section>
@@ -34,10 +34,8 @@ foreach ($patterns as $p) {
         <h2><?= $child['name'] ?></h2>
         <p><?= $child['description'] ?></p>
         <div class="posts">
-            <?php foreach ($patterns as $p): ?>
-                <?php if (in_array($child['code'], $p['categories'])): ?>
-                    <?php showBlock($p) ?>
-                <?php endif ?>
+            <?php foreach ($child['patterns'] as $p): ?>
+                <?php showBlock(getPatternByName($p)) ?>
             <?php endforeach ?>
         </div>
     </section>

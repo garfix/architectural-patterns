@@ -2,7 +2,6 @@
 
 include 'functions.php';
 
-const CAT_ELEMENTS = 'elements';
 const CAT_PRESENTATION = 'presentation';
 const CAT_AREAS = 'areas';
 const CAT_DATA = 'data-patterns';
@@ -18,7 +17,6 @@ const CAT_AUTHENTICATION = 'authentication';
 const CAT_AUTHORIZATION = 'authorization';
 
 $pages = [
-    // CAT_ELEMENTS,
     CAT_AREAS,
     CAT_DATA,
     CAT_PRESENTATION,
@@ -31,36 +29,47 @@ $pages = [
 ];
 
 $categories = [
-    ["code" => CAT_ELEMENTS, "name" => 'Elements',
-        "description" => "Basic building blocks for an application"],
     ["code" => CAT_AREAS, "name" => 'Application areas',
-        "description" => "Patterns that partition the code base in distinct areas and determine what's most basic"],
+        "description" => "Patterns that partition the code base in distinct areas and determine what's most basic",
+        "patterns" => ["Layered", "N-Tier", "Hexagonal Architecture", "Microkernel", "Modules", "Acyclic Dependency Graph", "Component", "Plugin", "Feature Flags"]],
     ["code" => CAT_PRESENTATION, "name" => 'Presentation',
-        "description" => "Patterns related to the Graphical User Interface"],
+        "description" => "Patterns related to the Graphical User Interface",
+        "patterns" => ["Model-View-Controller", "Model-View-Adapter", "Model-View-Viewmodel", "Hierarchical UI", "Accessibility", "Menu Navigation"]],
     ["code" => CAT_PROBLEM_SOLVING, "name" => 'Problem solving',
-        "description" => "Patterns designed to solve problems"],
+        "description" => "Patterns designed to solve problems",
+        "patterns" => ["Search", "Inference Engine", "Planning", "Neural Network", "Agent", "Multi-Agent System", "Blackboard", "Process Control"]],
     ["code" => CAT_DATA, "name" => 'Data',
-        "description" => "Patterns that focus on the data of the application"],
+        "description" => "Patterns that focus on the data of the application",
+        "patterns" => ["Repository", "Event Sourcing", "CQRS", "Index", "Cache", "ETL", "Data Warehouse", "Data Cube"]],
     ["code" => CAT_CONTROL_FLOW, "name" => 'Control flow',
-        "description" => "Patterns that focus on the way the code is executed"],
+        "description" => "Patterns that focus on the way the code is executed",
+        "patterns" => ["Pipe and Filter", "Parallel Programming", "Finite State Machine", "Interpreter", "Publish-Subscribe", "Message Queue", "Game Loop", "Lifecycle Hooks"]],
     ["code" => CAT_DISTRIBUTED, "name" => 'Distributed computing',
-        "description" => "Patterns that disribute the application over multiple servers"],
+        "description" => "Patterns that disribute the application over multiple servers",
+        "patterns" => ["Client-Server", "N-Tier", "Broker", "Repository", "Master-Slave", "Peer to Peer", "Monolith", "Parallel Programming", "Load Balancing", "Serverless", "Space-Based", "Data Replication"]],
     ["code" => CAT_CROSS_CUTTING, "name" => 'Cross-cutting concerns',
-        "description" => "Patterns that provide a specific function in many distinct areas of the code base"],
+        "description" => "Patterns that provide a specific function in many distinct areas of the code base",
+        "patterns" => ["Logging", "Error Handling", "Data Validation", "Internationalization", "Accessibility"]],
     ["code" => CAT_ACCESS_CONTROL, "name" => 'Access control',
         "description" => "Control who has access to the system and to what parts of the system",
-        "children" => [CAT_AUTHENTICATION, CAT_AUTHORIZATION]],
+        "children" => [CAT_AUTHENTICATION, CAT_AUTHORIZATION],
+        "patterns" => []],
     ["code" => CAT_AUTHENTICATION, "name" => 'Authentication',
-        "description" => "Determine that the user is who they claim to be"],
+        "description" => "Determine that the user is who they claim to be",
+        "patterns" => ["Login", "Single Sign-on", "Federated Identity"]],
     ["code" => CAT_AUTHORIZATION, "name" => 'Authorization',
-        "description" => "Describe who has access to what"],
+        "description" => "Describe who has access to what",
+        "patterns" => ["Access Control List", "Role-based Access Control"]],
     ["code" => CAT_ENVIRONMENT, "name" => 'App Environment',
         "description" => "Patterns that are not part of the application in the narrow sense, but are nevertheless part of its broader environment",
-        "children" => [CAT_TESTING, CAT_MONITORING]],
+        "children" => [CAT_TESTING, CAT_MONITORING],
+        "patterns" => ["Deployment"]],
     ["code" => CAT_TESTING, "name" => 'Testing',
-        "description" => "Patterns that ensure that some aspect of the application meets a criterium"],
+        "description" => "Patterns that ensure that some aspect of the application meets a criterium",
+        "patterns" => ["Functional tests", "Frontend tests", "Security tests", "Performance tests", "Compatibility tests"]],
     ["code" => CAT_MONITORING, "name" => 'Monitoring',
-        "description" => "Following aspects of the activity of the system by an external service"],
+        "description" => "Following aspects of the activity of the system by an external service",
+        "patterns" => ["Performance Monitoring", "User-activity Monitoring"]],
 ];
 
 $patterns = [
@@ -68,417 +77,352 @@ $patterns = [
         "name" => "Repository",
         "keywords" => "Database",
         "image" => "repository.drawio.png",
-        "link" => "repository",
-        "categories" => [CAT_DATA, CAT_DISTRIBUTED]
+        "link" => "repository"
     ],
     [
         "name" => "Event Sourcing",
         "keywords" => "Block chain",
         "image" => "event-sourcing.drawio.png",
-        "link" => "event-sourcing",
-        "categories" => [CAT_DATA]
+        "link" => "event-sourcing"
     ],
     [
         "name" => "CQRS",
         "keywords" => "Command-Query Responsibility Segregation",
         "image" => "cqrs-1.png",
-        "link" => "cqrs",
-        "categories" => [CAT_DATA]
+        "link" => "cqrs"
     ],
     [
         "name" => "Index",
         "keywords" => "Search engine, Information retrieval",
         "image" => "index.drawio.png",
-        "link" => "indexing",
-        "categories" => [CAT_DATA]
+        "link" => "indexing"
     ],
     [
         "name" => "Cache",
         "image" => "caching.drawio.png",
-        "link" => "cache",
-        "categories" => [CAT_DATA]
+        "link" => "cache"
     ],
     [
         "name" => "ETL",
         "keywords" => "Extract Transform Load",
         "image" => "etl.drawio.png",
-        "link" => "etl",
-        "categories" => [CAT_DATA]
+        "link" => "etl"
     ],
     [
         "name" => "Data Warehouse",
         "keywords" => "Business Intelligence",
         "image" => "data-warehouse.drawio.png",
-        "link" => "data-warehouse",
-        "categories" => [CAT_DATA]
+        "link" => "data-warehouse"
     ],
     [
         "name" => "Data Cube",
         "keywords" => "Timeseries, Array DBMS",
         "image" => "data-cube.drawio.png",
-        "link" => "data-cube",
-        "categories" => [CAT_DATA]
+        "link" => "data-cube"
     ],
     [
         "name" => "Client-Server",
         "image" => "client-server.drawio.png",
-        "link" => "client-server",
-        "categories" => [CAT_DISTRIBUTED]
+        "link" => "client-server"
     ],
     [
         "name" => "N-Tier",
         "keywords" => "Multitier",
         "image" => "n-tier.drawio.png",
-        "link" => "n-tier",
-        "categories" => [CAT_DISTRIBUTED, CAT_AREAS]
+        "link" => "n-tier"
     ],
     [
         "name" => "Broker",
         "keywords" => "Service Oriented Architecture, Microservices, API, Hub-and-spoke, Event-bus",
         "image" => "broker.drawio.png",
-        "link" => "broker",
-        "categories" => [CAT_DISTRIBUTED]
+        "link" => "broker"
     ],
     [
         "name" => "Master-Slave",
         "image" => "master-and-slave.drawio.png",
-        "link" => "master-slave",
-        "categories" => [CAT_DISTRIBUTED]
+        "link" => "master-slave"
     ],
     [
         "name" => "Peer to Peer",
         "image" => "peer-to-peer.drawio.png",
-        "link" => "peer-to-peer",
-        "categories" => [CAT_DISTRIBUTED]
+        "link" => "peer-to-peer"
     ],
     [
         "name" => "Monolith",
         "image" => "monolith.drawio.png",
-        "link" => "monolith",
-        "categories" => [CAT_DISTRIBUTED]
+        "link" => "monolith"
     ],
     [
         "name" => "Parallel Programming",
         "image" => "parallel-programming.drawio.png",
-        "link" => "parallel-programming",
-        "categories" => [CAT_DISTRIBUTED, CAT_CONTROL_FLOW]
+        "link" => "parallel-programming"
     ],
     [
         "name" => "Load Balancing",
         "image" => "load-balancing.drawio.png",
-        "link" => "load-balancing",
-        "categories" => [CAT_DISTRIBUTED]
+        "link" => "load-balancing"
     ],
     [
         "name" => "Serverless",
         "image" => "serverless.drawio.png",
-        "link" => "serverless",
-        "categories" => [CAT_DISTRIBUTED]
+        "link" => "serverless"
     ],
     [
         "name" => "Space-Based",
         "image" => "space-based.drawio.png",
-        "link" => "space-based",
-        "categories" => [CAT_DISTRIBUTED]
+        "link" => "space-based"
     ],
     [
         "name" => "Data Replication",
         "image" => "replication.drawio.png",
-        "link" => "replication",
-        "categories" => [CAT_DISTRIBUTED, CAT_DATA]
+        "link" => "replication"
     ],
     [
         "name" => "Model-View-Controller",
         "image" => "model-view-controller.drawio.png",
         "keywords" => "Model-View-Updater",
-        "link" => "model-view-controller",
-        "categories" => [CAT_PRESENTATION]
+        "link" => "model-view-controller"
     ],
     [
         "name" => "Model-View-Adapter",
         "keywords" => "Model-View-Presenter",
         "image" => "model-view-adapter.drawio.png",
-        "link" => "model-view-adapter",
-        "categories" => [CAT_PRESENTATION]
+        "link" => "model-view-adapter"
     ],
     [
         "name" => "Model-View-Viewmodel",
         "keywords" => "MVVM, Model-View-Binder",
         "image" => "model-view-viewmodel.drawio.png",
-        "link" => "model-view-viewmodel",
-        "categories" => [CAT_PRESENTATION]
+        "link" => "model-view-viewmodel"
     ],
     [
         "name" => "Hierarchical UI",
         "keywords" => "Presentation-Abstraction-Control, Hierarchical model-view-controller",
         "image" => "hierarchical-component-ui.drawio.png",
-        "link" => "hierarchical-ui",
-        "categories" => [CAT_PRESENTATION]
+        "link" => "hierarchical-ui"
     ],
     [
         "name" => "Accessibility",
         "image" => "accessibility.drawio.png",
-        "link" => "accessibility",
-        "categories" => [CAT_PRESENTATION, CAT_CROSS_CUTTING]
+        "link" => "accessibility"
     ],
     [
         "name" => "Menu Navigation",
         "keywords" => "Toolbar",
         "image" => "menu.drawio.png",
-        "link" => "menu-navigation",
-        "categories" => [CAT_PRESENTATION]
+        "link" => "menu-navigation"
     ],
     [
         "name" => "Search",
         "image" => "search.drawio.png",
-        "link" => "search",
-        "categories" => [CAT_PROBLEM_SOLVING]
+        "link" => "search"
     ],
     [
         "name" => "Inference Engine",
         "image" => "rule-based.drawio.png",
-        "link" => "inference-engine",
-        "categories" => [CAT_PROBLEM_SOLVING]
+        "link" => "inference-engine"
     ],
     [
         "name" => "Planning",
         "image" => "planning.drawio.png",
-        "link" => "planning",
-        "categories" => [CAT_PROBLEM_SOLVING]
+        "link" => "planning"
     ],
     [
         "name" => "Neural Network",
         "keywords" => "Artificial Neural Network, Neural Net",
         "image" => "neural-network.drawio.png",
-        "link" => "neural-network",
-        "categories" => [CAT_PROBLEM_SOLVING]
+        "link" => "neural-network"
     ],
     [
         "name" => "Agent",
         "image" => "agent.drawio.png",
-        "link" => "agent",
-        "categories" => [CAT_PROBLEM_SOLVING]
+        "link" => "agent"
     ],
     [
         "name" => "Multi-Agent System",
         "image" => "multi-agent-system.drawio.png",
-        "link" => "multi-agent-system",
-        "categories" => [CAT_PROBLEM_SOLVING]
+        "link" => "multi-agent-system"
     ],
     [
         "name" => "Blackboard",
         "image" => "blackboard.drawio.png",
-        "link" => "blackboard",
-        "categories" => [CAT_PROBLEM_SOLVING]
+        "link" => "blackboard"
     ],
     [
         "name" => "Process Control",
         "image" => "process-control.drawio.png",
-        "link" => "process-control",
-        "categories" => [CAT_PROBLEM_SOLVING]
+        "link" => "process-control"
     ],
     [
         "name" => "Layered",
         "image" => "layered.drawio.png",
-        "link" => "layered",
-        "categories" => [CAT_AREAS]
+        "link" => "layered"
     ],
     [
         "name" => "Modules",
         "image" => "modules.drawio.png",
-        "link" => "modules",
-        "categories" => [CAT_AREAS]
+        "link" => "modules"
     ],
     [
         "name" => "Acyclic Dependency Graph",
         "image" => "dependency-graph.drawio.png",
-        "link" => "acyclic-dependency-graph",
-        "categories" => [CAT_AREAS]
+        "link" => "acyclic-dependency-graph"
     ],
     [
         "name" => "Component",
         "image" => "component.drawio.png",
-        "link" => "component",
-        "categories" => [CAT_AREAS]
+        "link" => "component"
     ],
     [
         "name" => "Microkernel",
         "keywords" => "Kernel",
         "image" => "microkernel.drawio.png",
-        "link" => "microkernel",
-        "categories" => [CAT_AREAS]
+        "link" => "microkernel"
     ],
     [
         "name" => "Hexagonal Architecture",
         "keywords" => "Ports and Adapters, Onion Architecture, Clean Architecture",
         "image" => "ports-and-adapters.drawio.png",
-        "link" => "hexagonal",
-        "categories" => [CAT_AREAS]
+        "link" => "hexagonal"
     ],
     [
         "name" => "Plugin",
         "keywords" => "Add-on, Theme, Skin",
         "image" => "plugin.drawio.png",
-        "link" => "plugin",
-        "categories" => [CAT_AREAS]
+        "link" => "plugin"
     ],
     [
         "name" => "Pipe and Filter",
         "image" => "pipe-and-filter.drawio.png",
-        "link" => "pipe-and-filter",
-        "categories" => [CAT_CONTROL_FLOW]
+        "link" => "pipe-and-filter"
     ],
     [
         "name" => "Finite State Machine",
         "image" => "fsm.drawio.png",
-        "link" => "finite-state-machine",
-        "categories" => [CAT_CONTROL_FLOW]
+        "link" => "finite-state-machine"
     ],
     [
         "name" => "Interpreter",
         "image" => "interpreter.drawio.png",
-        "link" => "interpreter",
-        "categories" => [CAT_CONTROL_FLOW]
+        "link" => "interpreter"
     ],
     [
         "name" => "Publish-Subscribe",
         "keywords" => "Event bus, Event loop",
         "image" => "event-bus-1.png",
-        "link" => "publish-subscribe",
-        "categories" => [CAT_CONTROL_FLOW]
+        "link" => "publish-subscribe"
     ],
     [
         "name" => "Message Queue",
         "keywords" => "Event bus, Event loop",
         "image" => "message-queue.drawio.png",
-        "link" => "message-queue",
-        "categories" => [CAT_CONTROL_FLOW]
+        "link" => "message-queue"
     ],
     [
         "name" => "Game Loop",
         "image" => "game-loop.drawio.png",
-        "link" => "game-loop",
-        "categories" => [CAT_CONTROL_FLOW]
+        "link" => "game-loop"
     ],
     [
         "name" => "Lifecycle Hooks",
         "image" => "lifecycle-hooks.drawio.png",
-        "link" => "lifecycle-hooks",
-        "categories" => [CAT_CONTROL_FLOW]
+        "link" => "lifecycle-hooks"
     ],
     [
         "name" => "Logging",
         "image" => "logging.drawio.png",
-        "link" => "logging",
-        "categories" => [CAT_CROSS_CUTTING]
+        "link" => "logging"
     ],
     [
         "name" => "Error Handling",
         "image" => "error-handling.drawio.png",
-        "link" => "error-handling",
-        "categories" => [CAT_CROSS_CUTTING, CAT_PRESENTATION]
+        "link" => "error-handling"
     ],
     [
         "name" => "Data Validation",
         "image" => "data-validation.drawio.png",
-        "link" => "data-validation",
-        "categories" => [CAT_CROSS_CUTTING]
+        "link" => "data-validation"
     ],
     [
         "name" => "Feature Flags",
         "keywords" => "Feature Toggles",
         "image" => "feature-flags.drawio.png",
-        "link" => "feature-flags",
-        "categories" => [CAT_CROSS_CUTTING]
+        "link" => "feature-flags"
     ],
     [
         "name" => "Functional tests",
         "image" => "functional-tests.drawio.png",
-        "link" => "functional-tests",
-        "categories" => [CAT_TESTING]
+        "link" => "functional-tests"
     ],
     [
         "name" => "Frontend tests",
         "image" => "frontend-tests.drawio.png",
-        "link" => "frontend-tests",
-        "categories" => [CAT_TESTING]
+        "link" => "frontend-tests"
     ],
     [
         "name" => "Security tests",
         "image" => "security-tests.drawio.png",
-        "link" => "security-tests",
-        "categories" => [CAT_TESTING]
+        "link" => "security-tests"
     ],
     [
         "name" => "Performance tests",
         "image" => "performance-tests.drawio.png",
-        "link" => "performance-tests",
-        "categories" => [CAT_TESTING]
+        "link" => "performance-tests"
     ],
     [
         "name" => "Compatibility tests",
         "keywords" => "Cross browser testing",
         "image" => "compatibility-tests.drawio.png",
-        "link" => "compatibility-tests",
-        "categories" => [CAT_TESTING]
+        "link" => "compatibility-tests"
     ],
     [
         "name" => "Performance Monitoring",
         "image" => "performance-monitoring.drawio.png",
-        "link" => "performance-monitoring",
-        "categories" => [CAT_MONITORING]
+        "link" => "performance-monitoring"
     ],
     [
         "name" => "User-activity Monitoring",
         "image" => "user-activity-monitoring.drawio.png",
-        "link" => "user-activity-monitoring",
-        "categories" => [CAT_MONITORING]
+        "link" => "user-activity-monitoring"
     ],
     [
         "name" => "Deployment",
         "image" => "deployment.drawio.png",
-        "link" => "deployment",
-        "categories" => [CAT_ENVIRONMENT]
+        "link" => "deployment"
     ],
     [
         "name" => "Internationalization",
         "keywords" => "Translation, Localization, i18n, l10n",
         "image" => "i18n.drawio.png",
-        "link" => "deployment",
-        "categories" => [CAT_CROSS_CUTTING]
+        "link" => "deployment"
     ],
     [
         "name" => "Login",
         "image" => "login.drawio.png",
-        "link" => "login",
-        "categories" => [CAT_AUTHENTICATION]
+        "link" => "login"
     ],
     [
         "name" => "Single Sign-on",
         "keywords" => "SSO",
         "image" => "single-sign-on.drawio.png",
-        "link" => "single-sign-on",
-        "categories" => [CAT_AUTHENTICATION, CAT_DISTRIBUTED]
+        "link" => "single-sign-on"
     ],
     [
         "name" => "Federated Identity",
         "image" => "federated-identity.drawio.png",
-        "link" => "federated-identity",
-        "categories" => [CAT_AUTHENTICATION, CAT_DISTRIBUTED]
+        "link" => "federated-identity"
     ],
     [
         "name" => "Access Control List",
         "keywords" => "ACL",
         "image" => "access-control-list.drawio.png",
-        "link" => "access-control-list",
-        "categories" => [CAT_AUTHORIZATION]
+        "link" => "access-control-list"
     ],
     [
         "name" => "Role-based Access Control",
         "keywords" => "RBAC",
         "image" => "role-based-access-control.drawio.png",
-        "link" => "role-based-access-control",
-        "categories" => [CAT_AUTHORIZATION]
+        "link" => "role-based-access-control"
     ],
 ];
 
