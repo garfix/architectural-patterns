@@ -30,6 +30,8 @@ plain OO development?
 
 ## presentation
 
+* graphical design
+
 * menu
 * search
 * path, backtrack (?)

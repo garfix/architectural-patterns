@@ -13,6 +13,8 @@ include 'template/header.php';
         Together they solve a complex problem or control a complex system.</dd>
     </dl>
 
+    <figure><img src="images/multi-agent-system.drawio.png"><figcaption>Multi-agent system</figcaption></figure>
+
     <p>
         An <a href="agent">Agent</a> is a component that autonomously interacts with its environment. It is never <i>told</i> what to do,
         one can merely request it to do something. It acts without being told. It should have a single, clear purpose.
