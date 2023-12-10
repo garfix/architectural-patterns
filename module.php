@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A grouping of functions and data that belong together conceptually.</dd>
+        <dd>A grouping of classes or functions, and the data associated with them, conceptually.</dd>
     </dl>
 
     <figure><img src="images/module.drawio.png"><figcaption>Module architecture diagram</figcaption></figure>
@@ -28,7 +28,7 @@ include 'template/header.php';
     <ul>
         <li>Relation management module
         <li>Order management module
-        <li>Cocument management module
+        <li>Document management module
     </ul>
 
     <h2>Common implementation techniques</h2>

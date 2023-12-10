@@ -38,10 +38,10 @@ $categories = [
         "patterns" => ["Layered", "N-Tier", "Hexagonal Architecture", "Microkernel", "Component"]],
     ["code" => CAT_MODULES, "name" => 'Module level',
         "description" => "Patterns within and between modules and components.",
-        "patterns" => ["Module", "Acyclic Dependency Graph", "Feature Flags", "Plugin"]],
+        "patterns" => ["Module", "Acyclic Dependency Graph", "Feature Flags", "Plugin", "Dependency Inversion Principle"]],
     ["code" => CAT_CLASS, "name" => 'Class level',
         "description" => "Patterns for classes and interfaces",
-        "patterns" => ["Liskov Substitution Principle", "Open-Closed Principle"]],
+        "patterns" => ["Single Responsibility Principle", "Open-Closed Principle", "Liskov Substitution Principle", "Interface Segregation Principle"]],
     ["code" => CAT_PRESENTATION, "name" => 'Presentation',
         "description" => "Patterns related to the Graphical User Interface",
         "patterns" => ["Model-View-Controller", "Model-View-Adapter", "Model-View-Viewmodel", "Hierarchical UI", "Accessibility", "Menu Navigation"]],
@@ -444,6 +444,21 @@ $patterns = [
         "name" => "Open-Closed Principle",
         "image" => "open-closed.drawio.png",
         "link" => "open-closed-principle"
+    ],
+    [
+        "name" => "Interface Segregation Principle",
+        "image" => "interface-segregation.drawio.png",
+        "link" => "interface-segregation-principle"
+    ],
+    [
+        "name" => "Dependency Inversion Principle",
+        "image" => "dependency-inversion.drawio.png",
+        "link" => "dependency-inversion-principle"
+    ],
+    [
+        "name" => "Single Responsibility Principle",
+        "image" => "single-responsibility.drawio.png",
+        "link" => "single-responsibility-principle"
     ]
 ];
 
