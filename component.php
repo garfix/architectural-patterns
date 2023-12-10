@@ -9,14 +9,14 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A module or application with a single well-defined API.</dd>
+        <dd>The smallest unit of deployment, with a well-defined API.</dd>
     </dl>
 
     <figure><img src="images/component.drawio.png"><figcaption>Component architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>
-        A component has a documented an rigid interface that other components can rely on. For complex functionality, component are combined.
+        A component is deployed as a separate entity. It has a documented an rigid interface that other components can rely on. For complex functionality, component are combined.
     </p>
     <p>
         Components can be used as part of a larger application, but also as complete applications by themselves.
@@ -24,8 +24,9 @@ include 'template/header.php';
 
     <h2>Examples</h2>
     <ul>
+        <li>DLL
         <li>Component Object Model (COM)
-        <li>Enterprise JavaBeans
+        <li>jar files
         <li>Unix commands
     </ul>
 

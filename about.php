@@ -25,12 +25,9 @@ include 'template/header.php';
     <dl>
         <dt>Architectural pattern</dt>
         <dd>
-            <p>An architectural pattern is a specific generic structure at the system level. It defines the main parts of the structure, and their interactions.</p>
+            <p>An architectural pattern is a specific generic system-wide organization or behaviour. It defines the main parts of the structure, and their interactions.</p>
         </dd>
     </dl>
-    <p>
-        The <b>system level</b> distinguishes the pattern from <b>module level</b>. Architectural patterns apply to the system as a whole, or provide a technique that works in the same way in multiple modules. They don't solve a problem for an individual module.
-    </p>
     <p>
         By calling it <b>specific</b> I exclude things like "natural language processing" because it is too broad, and it spans a large number of techniques.
     </p>
@@ -38,7 +35,10 @@ include 'template/header.php';
         By <b>generic</b> I mean that it is not bound to any application type. There are patterns that are unique to word processing, web development, embedded, etc, but this site is about the patterns that can be applied in many areas.
     </p>
     <p>
-        Defining a pattern as a <b>structure</b> doesn't really help, but it's just hard to say what makes a pattern.
+        <b>System-wide</b> means that the pattern has an effect throughout the system, and not just within a single module.
+    </p>
+    <p>
+        The meaning of the word "pattern" used here comes closest to this one of the Cambridge Dictionary: "a particular way in which something is done or organized, or in which something happens" (<a href="https://dictionary.cambridge.org/dictionary/english/pattern">source</a>)
     </p>
     <p>
         A <b>system</b> can be a complete application, but may also be, and often is, part of larger application. Note that the definition doesn't mention hardware, or even software, as these structures may be implemented in any way.

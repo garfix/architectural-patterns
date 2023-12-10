@@ -65,7 +65,31 @@ a system implements use cases
 ## a pattern is
 
 * not a design method (ie DDD)
-* not a principe (ie OCP)
+* not a principle (ie OCP)
+* not a paradigm
 * but it may be technique that comes from it
 
+## programming
 
+* mutable (functional) locks -> Immutability
+* dependency inversion (polymorphism)
+
+## interfaces
+
+* liskov substitution principle
+* dependency inversion (polymorphism)
+* interface segregation principle
+
+## application level?
+
+* open / closed principle
+
+## module
+
+* module: cohesive combination of functions and data
+* SRP
+
+## deployment
+
+* component
+*

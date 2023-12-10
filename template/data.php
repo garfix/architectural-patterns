@@ -3,7 +3,7 @@
 include 'functions.php';
 
 const CAT_PRESENTATION = 'presentation';
-const CAT_AREAS = 'areas';
+const CAT_AREAS = 'global';
 const CAT_DATA = 'data-patterns';
 const CAT_PROBLEM_SOLVING = 'problem-solving';
 const CAT_CROSS_CUTTING = 'cross-cutting-concerns';
@@ -15,9 +15,13 @@ const CAT_ENVIRONMENT = 'app-environment';
 const CAT_MONITORING = 'monitoring';
 const CAT_AUTHENTICATION = 'authentication';
 const CAT_AUTHORIZATION = 'authorization';
+const CAT_CLASS = 'class';
+const CAT_MODULES = 'modules';
 
 $pages = [
     CAT_AREAS,
+    CAT_MODULES,
+    CAT_CLASS,
     CAT_DATA,
     CAT_PRESENTATION,
     CAT_CONTROL_FLOW,
@@ -29,9 +33,15 @@ $pages = [
 ];
 
 $categories = [
-    ["code" => CAT_AREAS, "name" => 'Application areas',
+    ["code" => CAT_AREAS, "name" => 'Global level',
         "description" => "Patterns that partition the code base in distinct areas and determine what's most basic",
-        "patterns" => ["Layered", "N-Tier", "Hexagonal Architecture", "Microkernel", "Modules", "Acyclic Dependency Graph", "Component", "Plugin", "Feature Flags"]],
+        "patterns" => ["Layered", "N-Tier", "Hexagonal Architecture", "Microkernel", "Component"]],
+    ["code" => CAT_MODULES, "name" => 'Module level',
+        "description" => "Patterns within and between modules and components.",
+        "patterns" => ["Module", "Acyclic Dependency Graph", "Feature Flags", "Plugin"]],
+    ["code" => CAT_CLASS, "name" => 'Class level',
+        "description" => "Patterns for classes and interfaces",
+        "patterns" => ["Liskov Substitution Principle", "Open-Closed Principle"]],
     ["code" => CAT_PRESENTATION, "name" => 'Presentation',
         "description" => "Patterns related to the Graphical User Interface",
         "patterns" => ["Model-View-Controller", "Model-View-Adapter", "Model-View-Viewmodel", "Hierarchical UI", "Accessibility", "Menu Navigation"]],
@@ -259,12 +269,13 @@ $patterns = [
         "link" => "layered"
     ],
     [
-        "name" => "Modules",
-        "image" => "modules.drawio.png",
-        "link" => "modules"
+        "name" => "Module",
+        "image" => "module.drawio.png",
+        "link" => "module"
     ],
     [
         "name" => "Acyclic Dependency Graph",
+        "keywords" => "Dependency hierarchy",
         "image" => "dependency-graph.drawio.png",
         "link" => "acyclic-dependency-graph"
     ],
@@ -424,6 +435,16 @@ $patterns = [
         "image" => "role-based-access-control.drawio.png",
         "link" => "role-based-access-control"
     ],
+    [
+        "name" => "Liskov Substitution Principle",
+        "image" => "lsp.drawio.png",
+        "link" => "liskov-substitution-principle"
+    ],
+    [
+        "name" => "Open-Closed Principle",
+        "image" => "open-closed.drawio.png",
+        "link" => "open-closed-principle"
+    ]
 ];
 
 $sortedPatterns = $patterns;
