@@ -23,28 +23,28 @@ $pages = [
     CAT_MODULES,
     CAT_CLASS,
     CAT_DATA,
-    CAT_PRESENTATION,
     CAT_CONTROL_FLOW,
     CAT_PROBLEM_SOLVING,
     CAT_CROSS_CUTTING,
+    CAT_PRESENTATION,
     CAT_ACCESS_CONTROL,
     CAT_DISTRIBUTED,
     CAT_ENVIRONMENT,
 ];
 
 $categories = [
-    ["code" => CAT_AREAS, "name" => 'Global level',
+    ["code" => CAT_AREAS, "name" => 'Global',
         "description" => "Patterns that partition the code base in distinct areas and determine what's most basic",
-        "patterns" => ["Layered", "N-Tier", "Hexagonal Architecture", "Microkernel", "Component"]],
-    ["code" => CAT_MODULES, "name" => 'Module level',
+        "patterns" => ["Smart-UI", "Document-View", "Traditional Model-View-Controller", "Model-View-Adapter", "Model-View-Viewmodel", "Component", "Hierarchical MVC", "Hexagonal Architecture", "Abstraction Layers", "Microkernel"]],
+    ["code" => CAT_MODULES, "name" => 'Modules',
         "description" => "Patterns within and between modules and components.",
         "patterns" => ["Module", "Acyclic Dependency Graph", "Feature Flags", "Plugin", "Dependency Inversion Principle"]],
-    ["code" => CAT_CLASS, "name" => 'Class level',
+    ["code" => CAT_CLASS, "name" => 'Classes',
         "description" => "Patterns for classes and interfaces",
         "patterns" => ["Single Responsibility Principle", "Open-Closed Principle", "Liskov Substitution Principle", "Interface Segregation Principle"]],
     ["code" => CAT_PRESENTATION, "name" => 'Presentation',
         "description" => "Patterns related to the Graphical User Interface",
-        "patterns" => ["Model-View-Controller", "Model-View-Adapter", "Model-View-Viewmodel", "Hierarchical UI", "Accessibility", "Menu Navigation"]],
+        "patterns" => ["Menu Navigation", "Accessibility"]],
     ["code" => CAT_PROBLEM_SOLVING, "name" => 'Problem solving',
         "description" => "Patterns designed to solve problems",
         "patterns" => ["Search", "Inference Engine", "Planning", "Neural Network", "Agent", "Multi-Agent System", "Blackboard", "Process Control"]],
@@ -188,7 +188,7 @@ $patterns = [
         "link" => "replication"
     ],
     [
-        "name" => "Model-View-Controller",
+        "name" => "Traditional Model-View-Controller",
         "image" => "model-view-controller.drawio.png",
         "keywords" => "Model-View-Updater",
         "link" => "model-view-controller"
@@ -206,7 +206,7 @@ $patterns = [
         "link" => "model-view-viewmodel"
     ],
     [
-        "name" => "Hierarchical UI",
+        "name" => "Hierarchical MVC",
         "keywords" => "Presentation-Abstraction-Control, Hierarchical model-view-controller",
         "image" => "hierarchical-component-ui.drawio.png",
         "link" => "hierarchical-ui"
@@ -264,9 +264,9 @@ $patterns = [
         "link" => "process-control"
     ],
     [
-        "name" => "Layered",
+        "name" => "Abstraction Layers",
         "image" => "layered.drawio.png",
-        "link" => "layered"
+        "link" => "abstraction-layers"
     ],
     [
         "name" => "Module",
@@ -459,6 +459,16 @@ $patterns = [
         "name" => "Single Responsibility Principle",
         "image" => "single-responsibility.drawio.png",
         "link" => "single-responsibility-principle"
+    ],
+    [
+        "name" => "Smart-UI",
+        "image" => "smart-ui.drawio.png",
+        "link" => "smart-ui"
+    ],
+    [
+        "name" => "Document-View",
+        "image" => "document-view.drawio.png",
+        "link" => "document-view"
     ]
 ];
 

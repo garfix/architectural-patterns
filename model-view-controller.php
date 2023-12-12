@@ -1,6 +1,6 @@
 <?php
 include 'template/data.php';
-$pattern = $indexed['Model-View-Controller'];
+$pattern = $indexed['Traditional Model-View-Controller'];
 include 'template/header.php';
 ?>
 
