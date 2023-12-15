@@ -100,3 +100,7 @@ a system implements use cases
 ## ?
 
 * middleware
+
+* boundary
+* use-case
+

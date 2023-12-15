@@ -35,13 +35,13 @@ $pages = [
 $categories = [
     ["code" => CAT_AREAS, "name" => 'Global',
         "description" => "Patterns that partition the code base in distinct areas and determine what's most basic",
-        "patterns" => ["Smart-UI", "Document-View", "Traditional Model-View-Controller", "Model-View-Adapter", "Model-View-Viewmodel", "Hierarchical MVC", "Hexagonal Architecture", "Abstraction Layers", "Microkernel"]],
+        "patterns" => ["Smart-UI", "Document-View", "Traditional Model-View-Controller", "Model-View-Adapter", "Model-View-Viewmodel", "Hierarchical MVC", "Hexagonal Architecture", "Microkernel", "Software Framework"]],
     ["code" => CAT_MODULES, "name" => 'Modules / Components',
         "description" => "Patterns within and between modules and components. There are differences between modules and components but the patterns described here are applicable to both. I will use the name 'module' to represent them.",
-        "patterns" => ["Module", "Component", "Acyclic Dependency Graph", "Feature Flags", "Plugin", "Dependency Inversion Principle"]],
-    ["code" => CAT_CLASS, "name" => 'Classes',
+        "patterns" => ["Module", "Component", "Acyclic Dependency Graph", "Abstraction Layers", "Feature Flags", "Plugin", "Dependency Inversion Principle"]],
+    ["code" => CAT_CLASS, "name" => 'Classes / Interfaces',
         "description" => "Patterns for classes and interfaces",
-        "patterns" => ["Single Responsibility Principle", "Open-Closed Principle", "Liskov Substitution Principle", "Interface Segregation Principle"]],
+        "patterns" => ["Single Responsibility Principle", "Open-Closed Principle", "Liskov Substitution Principle", "Interface Segregation Principle", "Entity"]],
     ["code" => CAT_PRESENTATION, "name" => 'Presentation',
         "description" => "Patterns related to the Graphical User Interface",
         "patterns" => ["Menu Navigation", "Accessibility"]],
@@ -469,6 +469,16 @@ $patterns = [
         "name" => "Document-View",
         "image" => "document-view.drawio.png",
         "link" => "document-view"
+    ],
+    [
+        "name" => "Entity",
+        "image" => "entity.drawio.png",
+        "link" => "entity"
+    ],
+    [
+        "name" => "Software Framework",
+        "image" => "framework.drawio.png",
+        "link" => "software-framework"
     ]
 ];
 

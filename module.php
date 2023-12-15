@@ -24,16 +24,9 @@ include 'template/header.php';
         This is a common way to split a large code base into manageable parts.
     </p>
 
-    <h2>Examples</h2>
-    <ul>
-        <li>Relation management module
-        <li>Order management module
-        <li>Document management module
-    </ul>
-
     <h2>Common implementation techniques</h2>
     <ul>
-        <li>Each module has its own directory
+        <li>Each module has its own file or directory
     </ul>
 
     <h2>Links</h2>
