@@ -92,4 +92,11 @@ a system implements use cases
 ## deployment
 
 * component
-*
+
+## presentation
+
+* templating engine
+
+## ?
+
+* middleware
