@@ -34,12 +34,12 @@ $pages = [
 ];
 
 $categories = [
-    ["code" => CAT_AREAS, "name" => 'Global',
+    ["code" => CAT_AREAS, "name" => 'Layers',
         "description" => "Patterns that partition the code base in distinct areas and determine what's most basic",
-        "patterns" => ["Smart-UI", "Document-View", "Traditional Model-View-Controller", "Model-View-Adapter", "Model-View-Viewmodel", "Hierarchical MVC", "Hexagonal Architecture", "Microkernel", "Software Framework"]],
+        "patterns" => ["Smart-UI", "Document-View", "Layers", "Bounded Context", "Traditional Model-View-Controller", "Model-View-Adapter", "Model-View-Viewmodel", "Hierarchical MVC", "Hexagonal Architecture", "Microkernel", "Software Framework"]],
     ["code" => CAT_MODULES, "name" => 'Modules / Components',
         "description" => "Patterns within and between modules and components. There are differences between modules and components but the patterns described here are applicable to both. I will use the name 'module' to represent them.",
-        "patterns" => ["Module", "Component", "Acyclic Dependency Graph", "Abstraction Layers", "Feature Flags", "Plugin", "Dependency Inversion Principle"]],
+        "patterns" => ["Module", "Component", "Acyclic Dependency Graph", "Feature Flags", "Plugin", "Dependency Inversion Principle"]],
     ["code" => CAT_CLASS, "name" => 'Classes / Interfaces',
         "description" => "Patterns for classes and interfaces",
         "children" => [CAT_CLASS_PRINCIPLES],
@@ -269,9 +269,9 @@ $patterns = [
         "link" => "process-control"
     ],
     [
-        "name" => "Abstraction Layers",
+        "name" => "Layers",
         "image" => "layered.drawio.png",
-        "link" => "abstraction-layers"
+        "link" => "layers"
     ],
     [
         "name" => "Module",
@@ -489,6 +489,12 @@ $patterns = [
         "name" => "Software Framework",
         "image" => "framework.drawio.png",
         "link" => "software-framework"
+    ],
+    [
+        "name" => "Bounded Context",
+        "keywords" => "Architectural boundaries",
+        "image" => "boundaries.drawio.png",
+        "link" => "bounded-context"
     ]
 ];
 
