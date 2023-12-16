@@ -16,6 +16,7 @@ const CAT_MONITORING = 'monitoring';
 const CAT_AUTHENTICATION = 'authentication';
 const CAT_AUTHORIZATION = 'authorization';
 const CAT_CLASS = 'class';
+const CAT_CLASS_PRINCIPLES = 'class-principles';
 const CAT_MODULES = 'modules';
 
 $pages = [
@@ -41,7 +42,11 @@ $categories = [
         "patterns" => ["Module", "Component", "Acyclic Dependency Graph", "Abstraction Layers", "Feature Flags", "Plugin", "Dependency Inversion Principle"]],
     ["code" => CAT_CLASS, "name" => 'Classes / Interfaces',
         "description" => "Patterns for classes and interfaces",
-        "patterns" => ["Single Responsibility Principle", "Open-Closed Principle", "Liskov Substitution Principle", "Interface Segregation Principle", "Entity"]],
+        "children" => [CAT_CLASS_PRINCIPLES],
+        "patterns" => ["Entity", "Use case"]],
+    ["code" => CAT_CLASS_PRINCIPLES, "name" => 'Principles',
+        "description" => "Principles for classes and interfaces",
+        "patterns" => ["Single Responsibility Principle", "Open-Closed Principle", "Liskov Substitution Principle", "Interface Segregation Principle"]],
     ["code" => CAT_PRESENTATION, "name" => 'Presentation',
         "description" => "Patterns related to the Graphical User Interface",
         "patterns" => ["Menu Navigation", "Accessibility"]],
@@ -474,6 +479,11 @@ $patterns = [
         "name" => "Entity",
         "image" => "entity.drawio.png",
         "link" => "entity"
+    ],
+    [
+        "name" => "Use case",
+        "image" => "use-case.drawio.png",
+        "link" => "use-case"
     ],
     [
         "name" => "Software Framework",
