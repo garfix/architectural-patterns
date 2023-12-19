@@ -61,7 +61,7 @@ include 'template/header.php';
         The <b>Onion architecture</b> emphasis the layers in the pattern and doesn't stress the ports and adapters. Inner layers define interfaces. Outer layers implement interfaces.
     </p>
     <p>
-        The <b>Clean architecture</b> is similar to the onion architecture and integrates the <a href="https://en.wikipedia.org/wiki/Entity-control-boundary">Entity-Control-Boundary</a> pattern
+        The <b>Clean architecture</b> is similar to the onion architecture and integrates the <a href="entity-control-boundary">Entity-Control-Boundary</a> pattern
     </p>
 
     <h2>Where does it come from?</h2>
