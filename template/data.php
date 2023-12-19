@@ -36,7 +36,7 @@ $pages = [
 $categories = [
     ["code" => CAT_AREAS, "name" => 'Layers',
         "description" => "Patterns that partition the code base in distinct areas and determine what's most basic",
-        "patterns" => ["Smart-UI", "Document-View", "Layers", "Bounded Context", "Traditional Model-View-Controller", "Model-View-Adapter", "Model-View-Viewmodel", "Hierarchical MVC", "Hexagonal Architecture", "Microkernel", "Software Framework"]],
+        "patterns" => ["Smart-UI", "Document-View", "Layers", "Traditional Model-View-Controller", "Model-View-Adapter", "Model-View-Viewmodel", "Hexagonal Architecture", "Microkernel", "Software Framework", "Bounded Context"]],
     ["code" => CAT_MODULES, "name" => 'Modules / Components',
         "description" => "Patterns within and between modules and components. There are differences between modules and components but the patterns described here are applicable to both. I will use the name 'module' to represent them.",
         "patterns" => ["Module", "Component", "Acyclic Dependency Graph", "Feature Flags", "Plugin", "Dependency Inversion Principle"]],
@@ -49,7 +49,7 @@ $categories = [
         "patterns" => ["Single Responsibility Principle", "Open-Closed Principle", "Liskov Substitution Principle", "Interface Segregation Principle"]],
     ["code" => CAT_PRESENTATION, "name" => 'Presentation',
         "description" => "Patterns related to the Graphical User Interface",
-        "patterns" => ["Menu Navigation", "Accessibility"]],
+        "patterns" => ["Hierarchical MVC", "Menu Navigation", "Accessibility"]],
     ["code" => CAT_PROBLEM_SOLVING, "name" => 'Problem solving',
         "description" => "Patterns designed to solve problems",
         "patterns" => ["Search", "Inference Engine", "Planning", "Neural Network", "Agent", "Multi-Agent System", "Blackboard", "Process Control"]],
