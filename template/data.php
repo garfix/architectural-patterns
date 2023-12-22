@@ -39,14 +39,14 @@ $categories = [
         "patterns" => ["Smart-UI", "Document-View", "Layers", "Traditional Model-View-Controller", "Model-View-Adapter", "Model-View-Viewmodel", "Entity-Control-Boundary", "Hexagonal Architecture", "Microkernel", "Software Framework", "Bounded Context"]],
     ["code" => CAT_MODULES, "name" => 'Modules / Components',
         "description" => "Patterns within and between modules and components. There are differences between modules and components but the patterns described here are applicable to both. I will use the name 'module' to represent them.",
-        "patterns" => ["Module", "Component", "Acyclic Dependency Graph", "Feature Flags", "Plugin", "Dependency Inversion Principle"]],
+        "patterns" => ["Module", "Component", "Acyclic Dependency Graph", "Feature Flags", "Plugin"]],
     ["code" => CAT_CLASS, "name" => 'Classes / Interfaces',
         "description" => "Patterns for classes and interfaces",
         "children" => [CAT_CLASS_PRINCIPLES],
-        "patterns" => ["Entity", "Use case"]],
+        "patterns" => ["Entity", "Value Object"]],
     ["code" => CAT_CLASS_PRINCIPLES, "name" => 'Principles',
         "description" => "Principles for classes and interfaces",
-        "patterns" => ["Single Responsibility Principle", "Open-Closed Principle", "Liskov Substitution Principle", "Interface Segregation Principle"]],
+        "patterns" => ["Single Responsibility Principle", "Open-Closed Principle", "Liskov Substitution Principle", "Interface Segregation Principle", "Dependency Inversion Principle"]],
     ["code" => CAT_PRESENTATION, "name" => 'Presentation',
         "description" => "Patterns related to the Graphical User Interface",
         "patterns" => ["Hierarchical MVC", "Menu Navigation", "Accessibility"]],
@@ -481,11 +481,6 @@ $patterns = [
         "link" => "entity"
     ],
     [
-        "name" => "Use case",
-        "image" => "use-case.drawio.png",
-        "link" => "use-case"
-    ],
-    [
         "name" => "Software Framework",
         "image" => "framework.drawio.png",
         "link" => "software-framework"
@@ -501,6 +496,11 @@ $patterns = [
         "keywords" => " Entity-Boundary-Control, Boundary-Control-Entity",
         "image" => "entity-control-boundary.drawio.png",
         "link" => "entity-control-boundary"
+    ],
+    [
+        "name" => "Value Object",
+        "image" => "value-object.drawio.png",
+        "link" => "value-object"
     ]
 ];
 

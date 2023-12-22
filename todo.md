@@ -1,7 +1,13 @@
+## first
+
+* domain logic
+* service layer
+* data access layer
+* presenter
 
 ## problem solving
 
-plain OO development?
+* domain logic
 
 * Markov Decision Process
 * case-based reasoning
@@ -39,10 +45,6 @@ plain OO development?
 
 https://wiki.c2.com/?SoftwareDesignPatternsIndex
 https://www.amazon.com/Object-Oriented-Software-Engineering-Approach/dp/0201544350
-use case driven
-
-ivar jacobson
-    a use case must be an object
 
 a system implements use cases
 
