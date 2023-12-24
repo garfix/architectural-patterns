@@ -22,9 +22,9 @@ const CAT_MODULES = 'modules';
 
 $pages = [
     CAT_LOGIC,
-    CAT_AREAS,
-    CAT_MODULES,
     CAT_CLASS,
+    CAT_MODULES,
+    CAT_AREAS,
     CAT_DATA,
     CAT_CONTROL_FLOW,
     CAT_PROBLEM_SOLVING,
