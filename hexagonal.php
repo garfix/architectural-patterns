@@ -63,6 +63,9 @@ include 'template/header.php';
     <p>
         The <b>Clean architecture</b> is similar to the onion architecture and integrates the <a href="entity-control-boundary">Entity-Control-Boundary</a> pattern
     </p>
+    <p>
+        <b>Functional Core / Imperative Shell</b> is also similar and consists of a core that is purely functional: it is immutable and has no side-effects.
+    </p>
 
     <h2>Where does it come from?</h2>
     <p>
@@ -95,6 +98,7 @@ include 'template/header.php';
         <li><a href="https://blog.ploeh.dk/2013/12/03/layers-onions-ports-adapters-its-all-the-same/">Layers, Onions, Ports, Adapters: it's all the same - Mark Seemann
         <li><a href="https://en.wikipedia.org/wiki/Entity-control-boundary">Entity-Control-Boundary on Wikipedia</a>
         <li><a href="https://vaclavkosar.com/software/Boundary-Control-Entity-Architecture-The-Pattern-to-Structure-Your-Classes">Boundary Control Entity Architecture Pattern
+        <li><a href="https://kennethlange.com/functional-core-imperative-shell/">The Functional Core, Imperative Shell Pattern
     </ul>
 </section>
 

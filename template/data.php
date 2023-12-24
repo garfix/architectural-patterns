@@ -2,6 +2,7 @@
 
 include 'functions.php';
 
+const CAT_LOGIC = 'logic';
 const CAT_PRESENTATION = 'presentation';
 const CAT_AREAS = 'global';
 const CAT_DATA = 'data-patterns';
@@ -20,6 +21,7 @@ const CAT_CLASS_PRINCIPLES = 'class-principles';
 const CAT_MODULES = 'modules';
 
 $pages = [
+    CAT_LOGIC,
     CAT_AREAS,
     CAT_MODULES,
     CAT_CLASS,
@@ -34,6 +36,9 @@ $pages = [
 ];
 
 $categories = [
+    ["code" => CAT_LOGIC, "name" => 'Types of code',
+        "description" => "The different types of code that are architecturally relevant.",
+        "patterns" => ["Domain Logic", "Application Logic", "Controller Logic", "User Interface", "Presentation Logic", "Data Access Logic", "Service Access Logic", "Tests"]],
     ["code" => CAT_AREAS, "name" => 'Layers',
         "description" => "Patterns that partition the code base in distinct areas and determine what's most basic",
         "patterns" => ["Smart-UI", "Document-View", "Layers", "Traditional Model-View-Controller", "Model-View-Adapter", "Model-View-Viewmodel", "Entity-Control-Boundary", "Hexagonal Architecture", "Microkernel", "Software Framework", "Bounded Context"]],
@@ -61,7 +66,7 @@ $categories = [
         "patterns" => ["Pipe and Filter", "Parallel Programming", "Finite State Machine", "Interpreter", "Publish-Subscribe", "Message Queue", "Game Loop", "Lifecycle Hooks"]],
     ["code" => CAT_DISTRIBUTED, "name" => 'Distributed computing',
         "description" => "Patterns that disribute the application over multiple servers",
-        "patterns" => ["Client-Server", "N-Tier", "Broker", "Repository", "Master-Slave", "Peer to Peer", "Monolith", "Parallel Programming", "Load Balancing", "Serverless", "Space-Based", "Data Replication"]],
+        "patterns" => ["Monolith", "Client-Server", "N-Tier", "Broker", "Repository", "Master-Slave", "Peer to Peer", "Parallel Programming", "Load Balancing", "Serverless", "Space-Based", "Data Replication"]],
     ["code" => CAT_CROSS_CUTTING, "name" => 'Cross-cutting concerns',
         "description" => "Patterns that provide a specific function in many distinct areas of the code base",
         "patterns" => ["Logging", "Error Handling", "Data Validation", "Internationalization", "Accessibility"]],
@@ -164,6 +169,7 @@ $patterns = [
     ],
     [
         "name" => "Monolith",
+        "keywords" => "Single tier",
         "image" => "monolith.drawio.png",
         "link" => "monolith"
     ],
@@ -297,7 +303,7 @@ $patterns = [
     ],
     [
         "name" => "Hexagonal Architecture",
-        "keywords" => "Ports and Adapters, Onion Architecture, Clean Architecture",
+        "keywords" => "Ports and Adapters, Onion Architecture, Clean Architecture, Functional Core / Imperative Shell",
         "image" => "ports-and-adapters.drawio.png",
         "link" => "hexagonal"
     ],
@@ -501,6 +507,48 @@ $patterns = [
         "name" => "Value Object",
         "image" => "value-object.drawio.png",
         "link" => "value-object"
+    ],
+    [
+        "name" => "Domain Logic",
+        "keywords" => " Business Logic",
+        "image" => "domain-logic.drawio.png",
+        "link" => "domain-logic"
+    ],
+    [
+        "name" => "Controller Logic",
+        "image" => "controller-logic.drawio.png",
+        "link" => "controller-logic"
+    ],
+    [
+        "name" => "Application Logic",
+        "image" => "application-logic.drawio.png",
+        "link" => "application-logic"
+    ],
+    [
+        "name" => "Presentation Logic",
+        "keywords" => "View Logic",
+        "image" => "presentation-logic.drawio.png",
+        "link" => "presentation-logic"
+    ],
+    [
+        "name" => "User Interface",
+        "image" => "user-interface.drawio.png",
+        "link" => "user-interface"
+    ],
+    [
+        "name" => "Data Access Logic",
+        "image" => "data-access-logic.drawio.png",
+        "link" => "data-access-logic"
+    ],
+    [
+        "name" => "Service Access Logic",
+        "image" => "service-access-logic.drawio.png",
+        "link" => "service-access-logic"
+    ],
+    [
+        "name" => "Tests",
+        "image" => "tests.drawio.png",
+        "link" => "tests"
     ]
 ];
 

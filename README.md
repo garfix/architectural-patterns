@@ -7,5 +7,12 @@ Icons used:
 * https://www.svgrepo.com/svg/501005/sitemap
 * https://www.svgrepo.com/svg/341021/sight
 * https://www.svgrepo.com/svg/521818/robot
+* https://www.svgrepo.com/svg/486635/disk
+* https://www.svgrepo.com/svg/448598/service
+* https://www.svgrepo.com/svg/281925/test
+* https://www.svgrepo.com/svg/384117/application
+* https://www.svgrepo.com/svg/280722/cogwheels-gear
+* https://www.svgrepo.com/svg/425521/application-bookmark-browser
+*
 
 The *.drawio.png diagrams can be edited with https://app.diagrams.net/

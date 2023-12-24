@@ -59,6 +59,10 @@ include 'template/header.php';
         Here are some concepts that occur in multiple patterns.
     </p>
     <dl>
+        <dt>Dependency</dt>
+        <dd>
+            <b>Volatile dependencies</b> are services that don't behave the same in all circumstances. Examples: database, file system, sending email, random number generator, current time. A file may not exist, disk may be full, email may not be sent, etc. The opposite of volatile is <b>stable</b>. A stable depenency is dependable: it behaves the same in all circumstances.
+        </dd>
         <dt>Client</dt>
         <dd>
             <p>A client is a software application that needs some functionality from a server, external to the client, to work properly.</p>
@@ -75,9 +79,17 @@ include 'template/header.php';
         <dd>
             <p>A model (domain model, business model) is the combination of data and domain logic software that governs the restrictions on this data.</p>
         </dd>
+        <dt>Application logic</dt>
+        <dd>
+            <p>Domain logic that is application-specific</p>
+        </dd>
         <dt>View</dt>
         <dd>
             <p>A view forms the presentation of data to the user and allows the user to enter information.</p>
+        </dd>
+        <dt>Presenter</dt>
+        <dd>
+            <p>The logic that prepares data to be shown in the (passive) view.</p>
         </dd>
         <dt>Controller</dt>
         <dd>

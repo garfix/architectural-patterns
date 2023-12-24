@@ -5,6 +5,41 @@
 * data access layer
 * presenter
 
+## code / logic
+
+layer, object, logic
+
+logic
+
+* data access logic https://en.wikipedia.org/wiki/Data_access_layer ORM
+  * persistence
+  * data access object
+* domain logic / business logic : clean code
+  * "Business logic is the portion of an enterprise system which determines how data is transformed or calculated, and how it is routed to people or software (workflow)."
+  * https://en.wikipedia.org/wiki/Business_logic
+  * business objects
+  * use cases
+  * workflows
+* application logic / GRASP controller layer
+* service logic : access to external services
+  * infrastructure
+* presentation logic
+  * https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter
+* ui / view: html/css
+* utilities
+* test code
+
+layer (liever niet want 1 deel kan meerder layers zijn)
+
+data access layer
+domain logic layer
+
+object (is OOP specifiek)
+
+data access object
+
+
+
 ## problem solving
 
 * domain logic
