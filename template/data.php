@@ -521,6 +521,7 @@ $patterns = [
     ],
     [
         "name" => "Application Logic",
+        "keywords" => "Use cases",
         "image" => "application-logic.drawio.png",
         "link" => "application-logic"
     ],

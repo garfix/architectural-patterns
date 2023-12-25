@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Domain logic implements the entities and critical business rules of the application. It doesn't have any volatile dependencies.</dd>
+        <dd>Domain logic implements the entities and critical business rules of an organization. It doesn't have any volatile dependencies.</dd>
     </dl>
 
     <figure><img src="images/domain-logic.drawio.png"><figcaption>Domain Logic</figcaption></figure>
