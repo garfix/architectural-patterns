@@ -37,7 +37,7 @@ $pages = [
 
 $categories = [
     ["code" => CAT_LOGIC, "name" => 'Types of code',
-        "description" => "The different types of code that are architecturally relevant.",
+        "description" => "The different types of code that are architecturally relevant. The idea is that every line of code falls in one of these categories. In a simple project all kinds are used in the same functions, files, and modules. A medium sized project could profit from separating some of these types in separate classes or layers. A large project can seriously benefit from separating all of them.",
         "patterns" => ["Business Logic", "Application Logic", "Controller Logic", "User Interface", "Presentation Logic", "Data Access Logic", "Service Access Logic", "Tests"]],
     ["code" => CAT_AREAS, "name" => 'Layers',
         "description" => "Patterns that partition the code base in distinct areas and determine what's most basic",

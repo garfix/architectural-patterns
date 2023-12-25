@@ -31,9 +31,17 @@ include 'template/header.php';
 
     <h2>Examples</h2>
     <ul>
-        <li>Use cases
-        <li>Error handling
-        <li>Security and authorization
+        <li>User Authentication Logic
+        <li>Input Validation Logic
+        <li>Request Handling Logic
+        <li>Response Generation Logic
+        <li>Business Rule Execution Logic
+        <li>Session Management Logic
+        <li>Error Handling Logic
+        <li>Caching Logic
+        <li>Middleware Execution Logic
+        <li>Data Transformation Logic
+        <li>Concurrency Control Logic
     </ul>
 
     <h2>Links</h2>
