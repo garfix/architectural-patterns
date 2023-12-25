@@ -16,7 +16,10 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>
-        This code expresses the <a href="entity">entities</a> and business rules of the organization. A business rule would be part of the organization whether it is implemented in the application or not. It would be the same in any application. Example: "Charge N% for a loan"
+        This code expresses the <a href="entity">entities</a> and business rules of the organization. A business rule would be part of the organization whether it is implemented in the application or not. It would be the same in any application.
+    </p>
+    <p>
+        Example: "Charge N% for a loan"
     </p>
     <p>
         The business rules can be part of the entity classes.

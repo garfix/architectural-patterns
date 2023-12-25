@@ -1,48 +1,8 @@
-## first
-
-* domain logic
-* service layer
-* data access layer
-* presenter
-
-## code / logic
-
-layer, object, logic
-
-logic
-
-* data access logic https://en.wikipedia.org/wiki/Data_access_layer ORM
-  * persistence
-  * data access object
-* domain logic / business logic : clean code
-  * "Business logic is the portion of an enterprise system which determines how data is transformed or calculated, and how it is routed to people or software (workflow)."
-  * https://en.wikipedia.org/wiki/Business_logic
-  * business objects
-  * use cases
-  * workflows
-* application logic / GRASP controller layer
-* service logic : access to external services
-  * infrastructure
-* presentation logic
-  * https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter
-* ui / view: html/css
-* utilities
-* test code
-
-layer (liever niet want 1 deel kan meerder layers zijn)
-
-data access layer
-domain logic layer
-
-object (is OOP specifiek)
-
-data access object
-
-
+Just some ideas
 
 ## problem solving
 
-* domain logic
+* just code: domain logic / business logic / ui etc
 
 * Markov Decision Process
 * case-based reasoning
@@ -51,16 +11,18 @@ data access object
 * decision trees
 * support vector machines
 
-* documentation
+## documentation
+
   * user manual
   * requirements
   * technical docs
 
 ## cross cutting
 
-* routing / navigation
+* routing / navigation: name a specific nav. scheme
 
 ## dependencies
+
 * dependency injection
 * dependency graph https://en.wikipedia.org/wiki/Dependency_graph
 
@@ -81,14 +43,12 @@ data access object
 https://wiki.c2.com/?SoftwareDesignPatternsIndex
 https://www.amazon.com/Object-Oriented-Software-Engineering-Approach/dp/0201544350
 
-a system implements use cases
-
 ## data
+
 * Object-Relational Mapping
-* Liskov substitution principle
-* Open Closed Principle
 
 ## the layer between programming paradigm and architecture
+
 * Component based design
 * Design by contract
 * Object composition
@@ -104,22 +64,12 @@ a system implements use cases
 * not a design method (ie DDD)
 * not a principle (ie OCP)
 * not a paradigm
-* but it may be technique that comes from it
+* an engineering technique
 
 ## programming
 
 * mutable (functional) locks -> Immutability
 * dependency inversion (polymorphism)
-
-## interfaces
-
-* liskov substitution principle
-* dependency inversion (polymorphism)
-* interface segregation principle
-
-## application level?
-
-* open / closed principle
 
 ## module
 
@@ -134,12 +84,7 @@ a system implements use cases
 
 * templating engine
 
-## ?
+## and ...
 
 * middleware
-
-* boundary
-* use-case
 * software versions
-
-
