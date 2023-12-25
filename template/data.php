@@ -38,7 +38,7 @@ $pages = [
 $categories = [
     ["code" => CAT_LOGIC, "name" => 'Types of code',
         "description" => "The different types of code that are architecturally relevant.",
-        "patterns" => ["Domain Logic", "Application Logic", "Controller Logic", "User Interface", "Presentation Logic", "Data Access Logic", "Service Access Logic", "Tests"]],
+        "patterns" => ["Business Logic", "Application Logic", "Controller Logic", "User Interface", "Presentation Logic", "Data Access Logic", "Service Access Logic", "Tests"]],
     ["code" => CAT_AREAS, "name" => 'Layers',
         "description" => "Patterns that partition the code base in distinct areas and determine what's most basic",
         "patterns" => ["Smart-UI", "Document-View", "Layers", "Traditional Model-View-Controller", "Model-View-Adapter", "Model-View-Viewmodel", "Entity-Control-Boundary", "Hexagonal Architecture", "Microkernel", "Software Framework", "Bounded Context"]],
@@ -509,10 +509,10 @@ $patterns = [
         "link" => "value-object"
     ],
     [
-        "name" => "Domain Logic",
-        "keywords" => " Business Logic",
-        "image" => "domain-logic.drawio.png",
-        "link" => "domain-logic"
+        "name" => "Business Logic",
+        "keywords" => "Domain Logic",
+        "image" => "business-logic.drawio.png",
+        "link" => "business-logic"
     ],
     [
         "name" => "Controller Logic",

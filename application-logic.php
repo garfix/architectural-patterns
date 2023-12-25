@@ -9,20 +9,17 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Application logic implements the use cases and workflows of the application. It doesn't have any volatile dependencies.</dd>
+        <dd>Application logic implements the use cases of the application. It doesn't have any volatile dependencies.</dd>
     </dl>
 
     <figure><img src="images/application-logic.drawio.png"><figcaption>Application Logic</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>
-        This code expresses the uses cases / workflows of the application in its purest form.
+        Application logic implements a <a href="https://en.wikipedia.org/wiki/Use_case">use case</a>: a series of steps that a user goes through to fulfill an objective. If a use case is regarded as a state machine, then application logic makes the application transition from one state to the next, repeatedly. In this process data is accumulated and transformed It is also passed to/from the ui, the database and to other services, but the actual execution of these parts of the application is outside of the realm of application logic.
     </p>
     <p>
         Domain logic is separated from the rest of the application (the <b>boundary</b> in ECB terms) to make it testable, understandable, and to discourage code duplication.
-    </p>
-    <p>
-        Application logic implements a <b>use case</b>: a series of steps that a user goes through to fulfill an objective.
     </p>
     <p>Application logic only depends on domain logic. All other dependencies are abstracted away by interfaces.</p>
     <p>
@@ -35,7 +32,6 @@ include 'template/header.php';
     <h2>Examples</h2>
     <ul>
         <li>Use cases
-        <li>Workflow
         <li>Error handling
         <li>Security and authorization
     </ul>

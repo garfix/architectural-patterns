@@ -1,6 +1,6 @@
 <?php
 include 'template/data.php';
-$pattern = $indexed['Domain Logic'];
+$pattern = $indexed['Business Logic'];
 include 'template/header.php';
 ?>
 
@@ -9,10 +9,10 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Domain logic implements the entities and critical business rules of an organization. It doesn't have any volatile dependencies.</dd>
+        <dd>Business logic implements the entities and critical business rules of an organization. It doesn't have any volatile dependencies.</dd>
     </dl>
 
-    <figure><img src="images/domain-logic.drawio.png"><figcaption>Domain Logic</figcaption></figure>
+    <figure><img src="images/business-logic.drawio.png"><figcaption>Business Logic</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>
@@ -22,7 +22,10 @@ include 'template/header.php';
         The business rules can be part of the entity classes.
     </p>
     <p>
-        Domain Logic has no dependencies on other types of code, not even application logic.
+        Business logic has no dependencies on other types of code, not even application logic.
+    </p>
+    <p>
+        Business logic can be modeled with a <a href="https://en.wikipedia.org/wiki/Domain_model">domain model</a>
     </p>
 
     <h2>Examples</h2>
