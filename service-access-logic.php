@@ -14,6 +14,8 @@ include 'template/header.php';
 
     <figure><img src="images/service-access-logic.drawio.png"><figcaption>Service Access Logic</figcaption></figure>
 
+    <p>Service access logic is part of the Controller in MVC, and Boundary in ECB</p>
+
     <h2>How does it work?</h2>
     <p>
         This code writes to files, reads input, sends emails, reads the current time, and asks for a random number. Accessing databases could also be part of it, but is usually considered as separate.

@@ -14,6 +14,8 @@ include 'template/header.php';
 
     <figure><img src="images/data-access-logic.drawio.png"><figcaption>Data Access Logic</figcaption></figure>
 
+    <p>Data access logic is part of the Model in MVC, and Boundary in ECB</p>
+
     <h2>How does it work?</h2>
     <p>
         Maps object data to relational data.

@@ -14,6 +14,8 @@ include 'template/header.php';
 
     <figure><img src="images/user-interface.drawio.png"><figcaption>User Interface</figcaption></figure>
 
+    <p>Application logic is part of the View in MVC, and Boundary in ECB</p>
+
     <h2>How does it work?</h2>
     <p>
         User interface elements can be created using procedural code or declared via a template.

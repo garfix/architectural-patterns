@@ -14,6 +14,8 @@ include 'template/header.php';
 
     <figure><img src="images/business-logic.drawio.png"><figcaption>Business Logic</figcaption></figure>
 
+    <p>Business logic is part of the Model in MVC, and Entity in ECB</p>
+
     <h2>How does it work?</h2>
     <p>
         This code expresses the <a href="entity">entities</a> and business rules of the organization. A business rule would be part of the organization whether it is implemented in the application or not. It would be the same in any application. The business rules can be part of the entity classes.

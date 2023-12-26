@@ -14,6 +14,8 @@ include 'template/header.php';
 
     <figure><img src="images/presentation-logic.drawio.png"><figcaption>Presentation Logic</figcaption></figure>
 
+    <p>Presentation logic is part of the View in MVC, and Boundary in ECB</p>
+
     <h2>How does it work?</h2>
     <p>
         The user interface mostly shows data that is stored in the database. Presentation logic retrieves the data from the database and transforms it in a way that is informative to the user.

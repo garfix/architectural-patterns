@@ -14,6 +14,8 @@ include 'template/header.php';
 
     <figure><img src="images/application-logic.drawio.png"><figcaption>Application Logic</figcaption></figure>
 
+    <p>Application logic is part of the Controller in MVC, and Control in ECB</p>
+
     <h2>How does it work?</h2>
     <p>
         Application logic implements a <a href="https://en.wikipedia.org/wiki/Use_case">use case</a>: a series of steps that a user goes through to fulfill an objective. If a use case is regarded as a state machine, then application logic makes the application transition from one state to the next, repeatedly. In this process data is accumulated and transformed It is also passed to/from the ui, the database and to other services, but the actual execution of these parts of the application is outside of the realm of application logic.
