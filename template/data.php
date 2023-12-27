@@ -64,7 +64,7 @@ $categories = [
         "patterns" => ["Search", "Inference Engine", "Planning", "Neural Network", "Agent", "Multi-Agent System", "Blackboard", "Process Control"]],
     ["code" => CAT_DATA, "name" => 'Data',
         "description" => "Patterns that focus on the data of the application",
-        "patterns" => ["Repository", "Event Sourcing", "CQRS", "Index", "Cache", "ETL", "Data Warehouse", "Data Cube"]],
+        "patterns" => ["Repository", "Event Sourcing", "CQRS", "Index", "Cache", "ETL", "Data Warehouse", "Data Cube", "Entity-Component-System"]],
     ["code" => CAT_CONTROL_FLOW, "name" => 'Control flow',
         "description" => "Patterns that focus on the way the code is executed",
         "patterns" => ["Pipe and Filter", "Parallel Programming", "Finite State Machine", "Interpreter", "Publish-Subscribe", "Message Queue", "Game Loop", "Lifecycle Hooks"]],
@@ -554,6 +554,11 @@ $patterns = [
         "name" => "Tests",
         "image" => "tests.drawio.png",
         "link" => "tests"
+    ],
+    [
+        "name" => "Entity-Component-System",
+        "image" => "entity-component-system.drawio.png",
+        "link" => "entity-component-system",
     ]
 ];
 
