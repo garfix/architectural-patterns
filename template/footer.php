@@ -13,12 +13,14 @@
                             <ul>
                                 <li><a href=".">Home</a></li>
                                 <li>
-                                    <span class="opener active">Categories</span>
-                                    <ul>
-                                    <?php foreach ($pages as $page): ?>
-                                        <li><a href="<?= $page ?>"><?= getCategoryByCode($page)['name'] ?></a>
+                                    <?php foreach ($pages as $title => $page): ?>
+                                        <span class="opener active"><?= $title ?></span>
+                                        <ul>
+                                            <?php foreach ($page as $subPage): ?>
+                                                <li><a href="<?= $subPage ?>"><?= getCategoryByCode($subPage)['name'] ?></a>
+                                            <?php endforeach ?>
+                                        </ul>
                                     <?php endforeach ?>
-                                    </ul>
                                 </li>
                                 <li><a href="patterns">All patterns</a></li>
                                 <li><a href="about">About</a></li>

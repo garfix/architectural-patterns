@@ -21,18 +21,22 @@ const CAT_CLASS_PRINCIPLES = 'class-principles';
 const CAT_MODULES = 'modules';
 
 $pages = [
-    CAT_LOGIC,
-    CAT_CLASS,
-    CAT_MODULES,
-    CAT_AREAS,
-    CAT_DATA,
-    CAT_CONTROL_FLOW,
-    CAT_PROBLEM_SOLVING,
-    CAT_CROSS_CUTTING,
-    CAT_PRESENTATION,
-    CAT_ACCESS_CONTROL,
-    CAT_DISTRIBUTED,
-    CAT_ENVIRONMENT,
+    "Generic" => [
+        CAT_LOGIC,
+        CAT_CLASS,
+        CAT_MODULES,
+        CAT_AREAS,
+    ],
+    "Topics" => [
+        CAT_DATA,
+        CAT_CONTROL_FLOW,
+        CAT_PROBLEM_SOLVING,
+        CAT_CROSS_CUTTING,
+        CAT_PRESENTATION,
+        CAT_ACCESS_CONTROL,
+        CAT_DISTRIBUTED,
+        CAT_ENVIRONMENT,
+    ]
 ];
 
 $categories = [
