@@ -9,14 +9,14 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Ports and Adapters provides domain logic without dependencies on external services. The dependencies are replaceable at runtime.</dd>
+        <dd>Ports and Adapters provides application logic without dependencies on external services. The dependencies are replaceable at runtime.</dd>
     </dl>
 
     <p>
         The main aim of this architecture is to decouple the application's core logic from the services it uses (database, email, time), and the services that use it (user interface, framework). This allows different services to be "plugged in", and it allows the logic to be run without these services.
     </p>
     <p>
-        The domain logic, or business logic, of an application consists of the algorithms that are essential to its purpose. They implement the use cases that are the heart of the application. The external services are <i>not</i> essential. They can be replaced without changing the purpose of the application. Examples: database access and other types of storage, user interface components, e-mail and other communication components, hardware devices. In a strict sense of this architecture even the application's framework is a set of services. The core logic of an application should not depend on these services in this architecture (so that it becomes "framework agnosic").
+        The application logic, of an application consists of the algorithms that are essential to its purpose. They implement the use cases that are the heart of the application. The external services are <i>not</i> essential. They can be replaced without changing the purpose of the application. Examples: database access and other types of storage, user interface components, e-mail and other communication components, hardware devices. In a strict sense of this architecture even the application's framework is a set of services. The core logic of an application should not depend on these services in this architecture (so that it becomes "framework agnosic").
     </p>
 
     <figure><img src="images/ports-and-adapters.drawio.png"><figcaption>Hexagonal architecture diagram</figcaption></figure>
@@ -79,12 +79,12 @@ include 'template/header.php';
 
     <h2>Problems</h2>
     <ul>
-        <li>The prime motive for this pattern is correctness of domain logic. If performance is not also taken into consideration when developing the domain logic, the resulting system may be correct, but inheritently slow.
+        <li>It takes a significant mental effort to keep the application logic free of dependencies. Writing unit tests for the code forces you to deal with them, and implementing a Dependency Injection Container or a Service Locator.
     </ul>
 
     <h2>Common implementation techniques</h2>
     <ul>
-        <li><a href='http://en.wikipedia.org/wiki/Dependency_injection'>Dependency injection</a> is used to pass the adapters to the domain logic</li>
+        <li><a href='http://en.wikipedia.org/wiki/Dependency_injection'>Dependency injection</a> is used to pass the adapters to the application logic</li>
         <li>Ports are implemented as <a href='http://en.wikipedia.org/wiki/Interface_%28computing%29'>interfaces</a>. Adapters implement these interfaces.</li>
     </ul>
 
