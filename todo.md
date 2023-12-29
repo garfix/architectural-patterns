@@ -46,6 +46,7 @@ https://www.amazon.com/Object-Oriented-Software-Engineering-Approach/dp/02015443
 ## data
 
 * Object-Relational Mapping
+* https://en.wikipedia.org/wiki/Data_mapper_pattern
 
 ## the layer between programming paradigm and architecture
 
