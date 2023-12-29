@@ -47,7 +47,8 @@ https://www.amazon.com/Object-Oriented-Software-Engineering-Approach/dp/02015443
 
 * Object-Relational Mapping
 * https://en.wikipedia.org/wiki/Data_mapper_pattern
-
+* https://en.wikipedia.org/wiki/Active_record_pattern
+*
 ## the layer between programming paradigm and architecture
 
 * Component based design
@@ -89,3 +90,12 @@ https://www.amazon.com/Object-Oriented-Software-Engineering-Approach/dp/02015443
 
 * middleware
 * software versions
+* https://en.wikipedia.org/wiki/Process_driven_messaging_service
+* https://en.wikipedia.org/wiki/System_prevalence
+* https://en.wikipedia.org/wiki/Naked_objects
+* https://en.wikipedia.org/wiki/Service_layer_pattern
+* https://en.wikipedia.org/wiki/Action%E2%80%93domain%E2%80%93responder
+* https://en.wikipedia.org/wiki/Interface-based_programming
+* https://en.wikipedia.org/w/index.php?title=Debugging_pattern&oldformat=true
+* https://en.wikipedia.org/wiki/Service_delivery_platform
+*

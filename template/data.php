@@ -4,7 +4,9 @@ include 'functions.php';
 
 const CAT_LOGIC = 'logic';
 const CAT_PRESENTATION = 'presentation';
-const CAT_AREAS = 'global';
+const CAT_SYSTEMS = 'systems';
+const CAT_SYSTEMS_COMPOSITION = 'system-composition';
+const CAT_SYSTEMS_PARADIGMS = 'system paradigms';
 const CAT_DATA = 'data-patterns';
 const CAT_PROBLEM_SOLVING = 'problem-solving';
 const CAT_CROSS_CUTTING = 'cross-cutting-concerns';
@@ -25,7 +27,7 @@ $pages = [
         CAT_LOGIC,
         CAT_CLASS,
         CAT_MODULES,
-        CAT_AREAS,
+        CAT_SYSTEMS,
     ],
     "Topics" => [
         CAT_DATA,
@@ -43,9 +45,16 @@ $categories = [
     ["code" => CAT_LOGIC, "name" => 'Types of code',
         "description" => "The different types of code that are architecturally relevant. The idea is that every line of code falls in one of these categories. In a simple project all kinds are used in the same functions, files, and modules. A medium sized project could profit from separating some of these types in separate classes or layers. A large project can seriously benefit from separating all of them.",
         "patterns" => ["Business Logic", "Application Logic", "User Interface", "Presentation Logic", "Data Access Logic", "Service Access Logic", "Tests"]],
-    ["code" => CAT_AREAS, "name" => 'Layered systems',
-        "description" => "Patterns that partition the code base in distinct areas and determine what's most basic",
-        "patterns" => ["Layers", "Smart-UI", "Document-View", "Traditional Model-View-Controller", "Model-View-Adapter", "Model-View-Viewmodel", "Entity-Control-Boundary", "Data-Context-Interaction", "Hexagonal Architecture", "Microkernel", "Software Framework", "Bounded Context"]],
+    ["code" => CAT_SYSTEMS, "name" => 'Systems',
+        "description" => "Patterns that form the most basic structure of the system",
+        "children" => [CAT_SYSTEMS_COMPOSITION, CAT_SYSTEMS_PARADIGMS],
+        "patterns" => ["Layers", "Bounded Context"]],
+    ["code" => CAT_SYSTEMS_COMPOSITION, "name" => 'Composition',
+        "description" => "Straightforward systems",
+        "patterns" => ["Smart-UI", "Document-View", "Microkernel", "Software Framework"]],
+    ["code" => CAT_SYSTEMS_PARADIGMS, "name" => 'Paradigms',
+        "description" => "Perspectives on how a system should be structured, based on what's perceived most important: ease-of-development, testability, or understandability",
+        "patterns" => ["Traditional Model-View-Controller", "Model-View-Adapter", "Model-View-Viewmodel", "Hierarchical MVC", "Entity-Control-Boundary", "Hexagonal Architecture", "Data-Context-Interaction"]],
     ["code" => CAT_MODULES, "name" => 'Modules / Components',
         "description" => "Patterns within and between modules and components. There are differences between modules and components but the patterns described here are applicable to both. I will use the name 'module' to represent them.",
         "patterns" => ["Module", "Component", "Acyclic Dependency Graph", "Feature Flags", "Plugin"]],
@@ -58,7 +67,7 @@ $categories = [
         "patterns" => ["Single Responsibility Principle", "Open-Closed Principle", "Liskov Substitution Principle", "Interface Segregation Principle", "Dependency Inversion Principle"]],
     ["code" => CAT_PRESENTATION, "name" => 'Presentation',
         "description" => "Patterns related to the Graphical User Interface",
-        "patterns" => ["Hierarchical MVC", "Menu Navigation", "Accessibility"]],
+        "patterns" => ["Menu Navigation", "Accessibility"]],
     ["code" => CAT_PROBLEM_SOLVING, "name" => 'Problem solving',
         "description" => "Patterns designed to solve problems",
         "patterns" => ["Search", "Inference Engine", "Planning", "Neural Network", "Agent", "Multi-Agent System", "Blackboard", "Process Control"]],
