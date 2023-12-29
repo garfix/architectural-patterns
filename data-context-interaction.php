@@ -22,7 +22,7 @@ include 'template/header.php';
         Data-Context-Interaction (DCI) tries to solve this by making use cases explicit. An ongoing attempt is implementing this idea in a new programming language called <a href="https://github.com/jcoplien/trygve/blob/master/doc/trygve.md">trygve</a>, but it can be implemented in most other languages as well. The use case is then implemented as a <b>context</b>.
     </p>
     <p>
-        The context defines <b>roles</b> to perform the functions of the use case. Each role is simply a collection of methods. The methods are injected in an empty object. This stateless object is the role. Note that the role consists only of those methods that are necessary for this specific use case, whereas in current OOP practices, a class contains methods for multiple use cases. Multiple roles can be assigned to a single object.
+        The context defines <b>roles</b> to perform the functions of the use case. Each role is simply a collection of methods. The methods (or <b>scripts</b>) are injected in an empty object. This stateless object is the role. Note that the role consists only of those methods that are necessary for this specific use case, whereas in current OOP practices, a class contains methods for multiple use cases. Multiple roles can be assigned to a single object.
     </p>
     <p>
         When all roles have been instantiated, the use case can be executed. This process is called <b>interaction</b>
