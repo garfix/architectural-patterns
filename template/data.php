@@ -67,7 +67,7 @@ $categories = [
         "patterns" => ["Single Responsibility Principle", "Open-Closed Principle", "Liskov Substitution Principle", "Interface Segregation Principle", "Dependency Inversion Principle"]],
     ["code" => CAT_PRESENTATION, "name" => 'Presentation',
         "description" => "Patterns related to the Graphical User Interface",
-        "patterns" => ["Menu Navigation", "Accessibility"]],
+        "patterns" => ["Menu Navigation", "Template Engine", "Accessibility"]],
     ["code" => CAT_PROBLEM_SOLVING, "name" => 'Problem solving',
         "description" => "Patterns designed to solve user problems",
         "patterns" => ["Search", "Inference Engine", "Planning", "Neural Network", "Agent", "Multi-Agent System", "Blackboard", "Process Control"]],
@@ -578,6 +578,12 @@ $patterns = [
         "name" => "User Manual",
         "image" => "user-manual.drawio.png",
         "link" => "user-manual",
+    ],
+    [
+        "name" => "Template Engine",
+        "keywords" => "Template Processor",
+        "image" => "template-engine.drawio.png",
+        "link" => "template-engine",
     ]
 ];
 
