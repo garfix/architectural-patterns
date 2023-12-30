@@ -70,7 +70,7 @@ $categories = [
         "patterns" => ["Menu Navigation", "Template Engine", "Accessibility"]],
     ["code" => CAT_PROBLEM_SOLVING, "name" => 'Problem solving',
         "description" => "Patterns designed to solve user problems",
-        "patterns" => ["Search", "Inference Engine", "Planning", "Neural Network", "Agent", "Multi-Agent System", "Blackboard", "Process Control"]],
+        "patterns" => ["Search", "Inference Engine", "Planning", "Decision Tree Learning", "Neural Network", "Agent", "Multi-Agent System", "Blackboard", "Process Control"]],
     ["code" => CAT_DATA, "name" => 'Data',
         "description" => "Patterns that focus on the data of the application",
         "patterns" => ["Repository", "Event Sourcing", "CQRS", "Index", "Cache", "ETL", "Data Warehouse", "Data Cube", "Entity-Component-System"]],
@@ -78,7 +78,7 @@ $categories = [
         "description" => "Patterns that focus on the way the code is executed",
         "patterns" => ["Pipe and Filter", "Parallel Programming", "Finite State Machine", "Interpreter", "Publish-Subscribe", "Message Queue", "Game Loop", "Lifecycle Hooks"]],
     ["code" => CAT_DISTRIBUTED, "name" => 'Distributed computing',
-        "description" => "Patterns that disribute the application over multiple servers",
+        "description" => "Patterns that distribute the application over multiple servers",
         "patterns" => ["Monolith", "Client-Server", "N-Tier", "Broker", "Repository", "Master-Slave", "Peer to Peer", "Parallel Programming", "Load Balancing", "Serverless", "Space-Based", "Data Replication"]],
     ["code" => CAT_CROSS_CUTTING, "name" => 'Cross-cutting concerns',
         "description" => "Patterns that provide a specific function in many distinct areas of the code base",
@@ -584,6 +584,11 @@ $patterns = [
         "keywords" => "Template Processor",
         "image" => "template-engine.drawio.png",
         "link" => "template-engine",
+    ],
+    [
+        "name" => "Decision Tree Learning",
+        "image" => "decision-tree-learning.drawio.png",
+        "link" => "decision-tree-learning",
     ]
 ];
 

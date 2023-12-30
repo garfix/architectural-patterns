@@ -45,6 +45,7 @@ https://www.amazon.com/Object-Oriented-Software-Engineering-Approach/dp/02015443
 
 ## data
 
+* composite object
 * Object-Relational Mapping
 * https://en.wikipedia.org/wiki/Data_mapper_pattern
 * https://en.wikipedia.org/wiki/Active_record_pattern
@@ -56,17 +57,10 @@ https://www.amazon.com/Object-Oriented-Software-Engineering-Approach/dp/02015443
 * Object composition
 * Domain driven design
 
-## naming
+## conventions
 
 * DDD: names from the domain
 * code conventions
-
-## a pattern is
-
-* not a design method (ie DDD)
-* not a principle (ie OCP)
-* not a paradigm
-* an engineering technique
 
 ## programming
 
@@ -77,14 +71,6 @@ https://www.amazon.com/Object-Oriented-Software-Engineering-Approach/dp/02015443
 
 * module: cohesive combination of functions and data
 * SRP
-
-## deployment
-
-* component
-
-## presentation
-
-* templating engine
 
 ## and ...
 

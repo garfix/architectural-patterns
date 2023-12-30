@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Entities are not stored in a hierarchy, but as tabular data</dd>
+        <dd>Entities are not defined as a hierarchy, but as tabular data</dd>
     </dl>
 
     <figure><img src="images/entity-component-system.drawio.png"><figcaption>Entity-Component-System architecture diagram</figcaption></figure>
