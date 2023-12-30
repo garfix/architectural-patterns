@@ -13,6 +13,7 @@ Icons used:
 * https://www.svgrepo.com/svg/384117/application
 * https://www.svgrepo.com/svg/280722/cogwheels-gear
 * https://www.svgrepo.com/svg/425521/application-bookmark-browser
+* https://www.svgrepo.com/svg/522469/book
 *
 
 The *.drawio.png diagrams can be edited with https://app.diagrams.net/

@@ -69,7 +69,7 @@ $categories = [
         "description" => "Patterns related to the Graphical User Interface",
         "patterns" => ["Menu Navigation", "Accessibility"]],
     ["code" => CAT_PROBLEM_SOLVING, "name" => 'Problem solving',
-        "description" => "Patterns designed to solve problems",
+        "description" => "Patterns designed to solve user problems",
         "patterns" => ["Search", "Inference Engine", "Planning", "Neural Network", "Agent", "Multi-Agent System", "Blackboard", "Process Control"]],
     ["code" => CAT_DATA, "name" => 'Data',
         "description" => "Patterns that focus on the data of the application",
@@ -96,7 +96,7 @@ $categories = [
     ["code" => CAT_ENVIRONMENT, "name" => 'App Environment',
         "description" => "Patterns that are not part of the application in the narrow sense, but are nevertheless part of its broader environment",
         "children" => [CAT_TESTING, CAT_MONITORING],
-        "patterns" => ["Deployment"]],
+        "patterns" => ["Deployment", "User Manual"]],
     ["code" => CAT_TESTING, "name" => 'Testing',
         "description" => "Patterns that ensure that some aspect of the application meets a criterium",
         "patterns" => ["Functional tests", "Frontend tests", "Security tests", "Performance tests", "Compatibility tests"]],
@@ -573,6 +573,11 @@ $patterns = [
         "name" => "Data-Context-Interaction",
         "image" => "data-context-interaction.drawio.png",
         "link" => "data-context-interaction",
+    ],
+    [
+        "name" => "User Manual",
+        "image" => "user-manual.drawio.png",
+        "link" => "user-manual",
     ]
 ];
 
