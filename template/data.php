@@ -6,7 +6,7 @@ const CAT_LOGIC = 'logic';
 const CAT_PRESENTATION = 'presentation';
 const CAT_SYSTEMS = 'systems';
 const CAT_SYSTEMS_COMPOSITION = 'system-composition';
-const CAT_SYSTEMS_PARADIGMS = 'system paradigms';
+const CAT_PARADIGMS = 'paradigms';
 const CAT_DATA = 'data-patterns';
 const CAT_PROBLEM_SOLVING = 'problem-solving';
 const CAT_CROSS_CUTTING = 'cross-cutting-concerns';
@@ -28,6 +28,7 @@ $pages = [
         CAT_CLASS,
         CAT_MODULES,
         CAT_SYSTEMS,
+        CAT_PARADIGMS,
     ],
     "Topics" => [
         CAT_DATA,
@@ -47,12 +48,12 @@ $categories = [
         "patterns" => ["Business Logic", "Application Logic", "User Interface", "Presentation Logic", "Data Access Logic", "Service Access Logic", "Tests"]],
     ["code" => CAT_SYSTEMS, "name" => 'Systems',
         "description" => "Patterns that form the most basic structure of the system",
-        "children" => [CAT_SYSTEMS_COMPOSITION, CAT_SYSTEMS_PARADIGMS],
+        "children" => [CAT_SYSTEMS_COMPOSITION],
         "patterns" => ["Layers", "Bounded Context"]],
     ["code" => CAT_SYSTEMS_COMPOSITION, "name" => 'Composition',
         "description" => "Straightforward systems",
         "patterns" => ["Smart-UI", "Document-View", "Microkernel", "Software Framework"]],
-    ["code" => CAT_SYSTEMS_PARADIGMS, "name" => 'Paradigms',
+    ["code" => CAT_PARADIGMS, "name" => 'Paradigms',
         "description" => "Perspectives on how a system should be structured, based on what's perceived most important: ease-of-development, testability, or understandability",
         "patterns" => ["Traditional Model-View-Controller", "Model-View-Adapter", "Model-View-Viewmodel", "Hierarchical MVC", "Entity-Control-Boundary", "Hexagonal Architecture", "Data-Context-Interaction"]],
     ["code" => CAT_MODULES, "name" => 'Modules / Components',
@@ -589,6 +590,11 @@ $patterns = [
         "name" => "Decision Tree Learning",
         "image" => "decision-tree-learning.drawio.png",
         "link" => "decision-tree-learning",
+    ],
+    [
+        "name" => "Aggregate Root",
+        "image" => "aggregate-root.drawio.png",
+        "link" => "aggregate-root",
     ]
 ];
 
