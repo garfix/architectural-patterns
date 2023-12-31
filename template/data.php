@@ -62,7 +62,7 @@ $categories = [
     ["code" => CAT_CLASS, "name" => 'Classes / Interfaces',
         "description" => "Patterns for classes and interfaces",
         "children" => [CAT_CLASS_PRINCIPLES],
-        "patterns" => ["Entity", "Value Object"]],
+        "patterns" => ["Entity", "Value Object", "Object Aggregate"]],
     ["code" => CAT_CLASS_PRINCIPLES, "name" => 'Principles',
         "description" => "Principles for classes and interfaces",
         "patterns" => ["Single Responsibility Principle", "Open-Closed Principle", "Liskov Substitution Principle", "Interface Segregation Principle", "Dependency Inversion Principle"]],
@@ -592,9 +592,9 @@ $patterns = [
         "link" => "decision-tree-learning",
     ],
     [
-        "name" => "Aggregate Root",
-        "image" => "aggregate-root.drawio.png",
-        "link" => "aggregate-root",
+        "name" => "Object Aggregate",
+        "image" => "object-aggregate.drawio.png",
+        "link" => "object-aggregate",
     ]
 ];
 

@@ -2,18 +2,15 @@ Just some ideas
 
 ## problem solving
 
-* just code: domain logic / business logic / ui etc
-
+* just code: domain logic / business logic / ui etc (how do you call it?)
 * Markov Decision Process
 * case-based reasoning
 * data mining
 * genetic algorithms
-* decision trees
 * support vector machines
 
 ## documentation
 
-  * user manual
   * requirements
   * technical docs
 
@@ -34,14 +31,11 @@ Just some ideas
 ## presentation
 
 * graphical design
-
+* ux / ui
 * menu
 * search
 * path, backtrack (?)
 * categories
-
-https://wiki.c2.com/?SoftwareDesignPatternsIndex
-https://www.amazon.com/Object-Oriented-Software-Engineering-Approach/dp/0201544350
 
 ## data
 
