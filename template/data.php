@@ -62,7 +62,7 @@ $categories = [
     ["code" => CAT_CLASS, "name" => 'Classes / Interfaces',
         "description" => "Patterns for classes and interfaces",
         "children" => [CAT_CLASS_PRINCIPLES],
-        "patterns" => ["Entity", "Value Object", "Object Aggregate"]],
+        "patterns" => ["Entity", "Value Object", "Object Aggregate", "Data Transfer Object"]],
     ["code" => CAT_CLASS_PRINCIPLES, "name" => 'Principles',
         "description" => "Principles for classes and interfaces",
         "patterns" => ["Single Responsibility Principle", "Open-Closed Principle", "Liskov Substitution Principle", "Interface Segregation Principle", "Dependency Inversion Principle"]],
@@ -595,6 +595,11 @@ $patterns = [
         "name" => "Object Aggregate",
         "image" => "object-aggregate.drawio.png",
         "link" => "object-aggregate",
+    ],
+    [
+        "name" => "Data Transfer Object",
+        "image" => "data-transfer-object.drawio.png",
+        "link" => "data-transfer-object",
     ]
 ];
 

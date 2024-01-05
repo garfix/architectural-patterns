@@ -9,6 +9,11 @@ Just some ideas
 * genetic algorithms
 * support vector machines
 
+## change
+
+* version control
+* versions - major minor fix
+
 ## documentation
 
   * requirements
