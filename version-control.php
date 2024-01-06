@@ -18,6 +18,9 @@ include 'template/header.php';
     <p>
         Specialized software (version control systems) allows you to create a new revision easily. It will also guide you through previous versions, show differences, and revert to a previous version.
     </p>
+    <b>
+        Version control systems also allow you to work on an alternative version of the software: a branch. In this branch you can develop new features that are not yet complete. When the branch is complete, it can be <i>merged</i> into the main branch.
+    </b>
 
     <h2>Examples</h2>
     <ul>
