@@ -29,7 +29,7 @@ include 'template/header.php';
         </dd>
     </dl>
     <p>
-        By calling it <b>specific</b> I exclude things like "natural language processing" because it is too broad, and it spans a large number of techniques.
+        By calling it <b>specific</b> I exclude things like "natural language processing" or "domain driven design" because it is too broad, and it spans a large number of techniques. I just want to describe patterns that have a direct effect on the code. They're patterns of the system, not of its design or mindset.
     </p>
     <p>
         By <b>generic</b> I mean that it is not bound to any application type. There are patterns that are unique to word processing, web development, embedded, etc, but this site is about the patterns that can be applied in many areas.

@@ -15,6 +15,7 @@ Icons used:
 * https://www.svgrepo.com/svg/425521/application-bookmark-browser
 * https://www.svgrepo.com/svg/522469/book
 * https://www.svgrepo.com/svg/408689/page-document-my-page-empty-page
-*
+* https://www.svgrepo.com/svg/523291/checklist-minimalistic
+* https://www.svgrepo.com/svg/372699/talk-bubbles
 
 The *.drawio.png diagrams can be edited with https://app.diagrams.net/

@@ -8,16 +8,6 @@ Just some ideas
 * genetic algorithms
 * support vector machines
 
-## change
-
-* version control
-* versions - major minor fix
-
-## documentation
-
-  * requirements
-  * technical docs
-
 ## cross cutting
 
 * routing / navigation: name a specific nav. scheme
@@ -43,22 +33,9 @@ Just some ideas
 
 ## data
 
-* composite object
 * Object-Relational Mapping
 * https://en.wikipedia.org/wiki/Data_mapper_pattern
 * https://en.wikipedia.org/wiki/Active_record_pattern
-*
-## the layer between programming paradigm and architecture
-
-* Component based design
-* Design by contract
-* Object composition
-* Domain driven design
-
-## conventions
-
-* DDD: names from the domain
-* code conventions
 
 ## programming
 
@@ -71,9 +48,7 @@ Just some ideas
 * SRP
 
 ## and ...
-
-* middleware
-* software versions
+* software metrics / code complexity
 * https://en.wikipedia.org/wiki/Process_driven_messaging_service
 * https://en.wikipedia.org/wiki/System_prevalence
 * https://en.wikipedia.org/wiki/Naked_objects

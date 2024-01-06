@@ -22,9 +22,11 @@ const CAT_CLASS = 'class';
 const CAT_CLASS_PRINCIPLES = 'class-principles';
 const CAT_MODULES = 'modules';
 const CAT_CHANGE = 'change';
+const CAT_CONVENTIONS = 'conventions';
 
 $pages = [
     "Generic" => [
+        CAT_CONVENTIONS,
         CAT_LOGIC,
         CAT_CLASS,
         CAT_MODULES,
@@ -93,6 +95,9 @@ $categories = [
     ["code" => CAT_CHANGE, "name" => 'Change',
         "description" => "Management of code changes",
         "patterns" => ["Version Control", "Software Versioning"]],
+    ["code" => CAT_CONVENTIONS, "name" => 'Conventions',
+        "description" => "Agreements between the participants of the software project",
+        "patterns" => ["Coding Conventions", "Ubiquitous Language"]],
     ["code" => CAT_AUTHENTICATION, "name" => 'Authentication',
         "description" => "Determine that the user is who they claim to be",
         "patterns" => ["Login", "Single Sign-on", "Federated Identity"]],
@@ -616,6 +621,16 @@ $patterns = [
         "name" => "Software Versioning",
         "image" => "software-versioning.drawio.png",
         "link" => "software-versioning",
+    ],
+    [
+        "name" => "Coding Conventions",
+        "image" => "coding-conventions.drawio.png",
+        "link" => "coding-conventions",
+    ],
+    [
+        "name" => "Ubiquitous Language",
+        "image" => "ubiquitous-language.drawio.png",
+        "link" => "ubiquitous-language",
     ]
 ];
 
