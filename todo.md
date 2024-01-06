@@ -5,7 +5,6 @@ Just some ideas
 * just code: domain logic / business logic / ui etc (how do you call it?)
 * Markov Decision Process
 * case-based reasoning
-* data mining
 * genetic algorithms
 * support vector machines
 

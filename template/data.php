@@ -21,6 +21,7 @@ const CAT_AUTHORIZATION = 'authorization';
 const CAT_CLASS = 'class';
 const CAT_CLASS_PRINCIPLES = 'class-principles';
 const CAT_MODULES = 'modules';
+const CAT_CHANGE = 'change';
 
 $pages = [
     "Generic" => [
@@ -37,6 +38,7 @@ $pages = [
         CAT_CROSS_CUTTING,
         CAT_PRESENTATION,
         CAT_ACCESS_CONTROL,
+        CAT_CHANGE,
         CAT_DISTRIBUTED,
         CAT_ENVIRONMENT,
     ]
@@ -88,6 +90,9 @@ $categories = [
         "description" => "Control who has access to the system and to what parts of the system",
         "children" => [CAT_AUTHENTICATION, CAT_AUTHORIZATION],
         "patterns" => []],
+    ["code" => CAT_CHANGE, "name" => 'Change',
+        "description" => "Management of code changes",
+        "patterns" => ["Version Control", "Software Versioning"]],
     ["code" => CAT_AUTHENTICATION, "name" => 'Authentication',
         "description" => "Determine that the user is who they claim to be",
         "patterns" => ["Login", "Single Sign-on", "Federated Identity"]],
@@ -600,6 +605,17 @@ $patterns = [
         "name" => "Data Transfer Object",
         "image" => "data-transfer-object.drawio.png",
         "link" => "data-transfer-object",
+    ],
+    [
+        "name" => "Version Control",
+        "keywords" => "Revision Control, Source Control",
+        "image" => "version-control.drawio.png",
+        "link" => "version-control",
+    ],
+    [
+        "name" => "Software Versioning",
+        "image" => "software-versioning.drawio.png",
+        "link" => "software-versioning",
     ]
 ];
 
