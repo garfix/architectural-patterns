@@ -11,12 +11,8 @@ Just some ideas
 
 * routing / navigation: name a specific nav. scheme
 
-## dependencies
+## data
 
-* dependency injection
-* dependency graph https://en.wikipedia.org/wiki/Dependency_graph
-
-* data
   * relational
   * sparse distributed
   * NoSQL
@@ -29,6 +25,11 @@ Just some ideas
 * search
 * path, backtrack (?)
 * categories
+
+* contrasting colors
+* primary / secondary color
+
+https://uxdesign.cc/how-to-pick-colors-for-your-app-without-a-struggle-bc46c5e19574
 
 ## data
 

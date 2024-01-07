@@ -72,7 +72,7 @@ $categories = [
         "patterns" => ["Single Responsibility Principle", "Open-Closed Principle", "Liskov Substitution Principle", "Interface Segregation Principle", "Dependency Inversion Principle"]],
     ["code" => CAT_PRESENTATION, "name" => 'Presentation',
         "description" => "Patterns related to the Graphical User Interface",
-        "patterns" => ["Menu Navigation", "Template Engine", "Accessibility"]],
+        "patterns" => ["Navigation Graph", "Menu Navigation", "Template Engine", "Color", "Accessibility"]],
     ["code" => CAT_PROBLEM_SOLVING, "name" => 'Problem solving',
         "description" => "Patterns designed to solve user problems",
         "patterns" => ["Algorithm", "Heuristic", "Search", "Inference Engine", "Planning", "Decision Tree Learning", "Neural Network", "Agent", "Multi-Agent System", "Blackboard", "Process Control"]],
@@ -641,6 +641,17 @@ $patterns = [
         "name" => "Heuristic",
         "image" => "heuristic.drawio.png",
         "link" => "heuristic",
+    ],
+    [
+        "name" => "Color",
+        "image" => "color.drawio.png",
+        "link" => "color",
+    ],
+    [
+        "name" => "Navigation Graph",
+        "keywords" => "UI Flow, User Flow, UI Storyboard, Navigation Flow",
+        "image" => "navigation-graph.drawio.png",
+        "link" => "navigation-graph",
     ]
 ];
 

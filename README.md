@@ -19,5 +19,7 @@ Icons used:
 * https://www.svgrepo.com/svg/372699/talk-bubbles
 * https://www.svgrepo.com/svg/478428/light-bulb-13
 * https://www.svgrepo.com/svg/509922/fast-forward
+* https://www.svgrepo.com/svg/439109/color-wheel
+*
 
 The *.drawio.png diagrams can be edited with https://app.diagrams.net/
