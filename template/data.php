@@ -75,7 +75,7 @@ $categories = [
         "patterns" => ["Menu Navigation", "Template Engine", "Accessibility"]],
     ["code" => CAT_PROBLEM_SOLVING, "name" => 'Problem solving',
         "description" => "Patterns designed to solve user problems",
-        "patterns" => ["Search", "Inference Engine", "Planning", "Decision Tree Learning", "Neural Network", "Agent", "Multi-Agent System", "Blackboard", "Process Control"]],
+        "patterns" => ["Algorithm", "Heuristic", "Search", "Inference Engine", "Planning", "Decision Tree Learning", "Neural Network", "Agent", "Multi-Agent System", "Blackboard", "Process Control"]],
     ["code" => CAT_DATA, "name" => 'Data',
         "description" => "Patterns that focus on the data of the application",
         "patterns" => ["Repository", "Event Sourcing", "CQRS", "Index", "Cache", "ETL", "Data Warehouse", "Data Cube", "Entity-Component-System"]],
@@ -631,6 +631,16 @@ $patterns = [
         "name" => "Ubiquitous Language",
         "image" => "ubiquitous-language.drawio.png",
         "link" => "ubiquitous-language",
+    ],
+    [
+        "name" => "Algorithm",
+        "image" => "algorithm.drawio.png",
+        "link" => "algorithm",
+    ],
+    [
+        "name" => "Heuristic",
+        "image" => "heuristic.drawio.png",
+        "link" => "heuristic",
     ]
 ];
 

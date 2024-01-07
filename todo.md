@@ -2,7 +2,6 @@ Just some ideas
 
 ## problem solving
 
-* just code: domain logic / business logic / ui etc (how do you call it?)
 * Markov Decision Process
 * case-based reasoning
 * genetic algorithms
