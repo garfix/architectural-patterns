@@ -21,6 +21,7 @@ const CAT_AUTHORIZATION = 'authorization';
 const CAT_CLASS = 'class';
 const CAT_CLASS_PRINCIPLES = 'class-principles';
 const CAT_MODULES = 'modules';
+const CAT_MODULE_PRINCIPLES = 'module-principles';
 const CAT_CHANGE = 'change';
 const CAT_CONVENTIONS = 'conventions';
 
@@ -62,7 +63,11 @@ $categories = [
         "patterns" => ["Traditional Model-View-Controller", "Model-View-Adapter", "Model-View-Viewmodel", "Hierarchical MVC", "Entity-Control-Boundary", "Hexagonal Architecture", "Data-Context-Interaction"]],
     ["code" => CAT_MODULES, "name" => 'Modules / Components',
         "description" => "Patterns within and between modules and components. There are differences between modules and components but the patterns described here are applicable to both. I will use the name 'module' to represent them.",
-        "patterns" => ["Module", "Component", "Acyclic Dependency Graph", "Feature Flags", "Plugin", "Stable Dependencies Principle"]],
+        "children" => [CAT_MODULE_PRINCIPLES],
+        "patterns" => ["Module", "Component", "Feature Flags", "Plugin"]],
+    ["code" => CAT_MODULE_PRINCIPLES, "name" => 'Principles for modules',
+        "description" => "Principles for modules",
+        "patterns" => ["Acyclic Dependencies Principle", "Stable Dependencies Principle"]],
     ["code" => CAT_CLASS, "name" => 'Classes / Interfaces',
         "description" => "Patterns for classes and interfaces",
         "children" => [CAT_CLASS_PRINCIPLES],
@@ -309,10 +314,10 @@ $patterns = [
         "link" => "module"
     ],
     [
-        "name" => "Acyclic Dependency Graph",
+        "name" => "Acyclic Dependencies Principle",
         "keywords" => "Dependency hierarchy",
         "image" => "dependency-graph.drawio.png",
-        "link" => "acyclic-dependency-graph"
+        "link" => "acyclic-dependencies-principle"
     ],
     [
         "name" => "Component",

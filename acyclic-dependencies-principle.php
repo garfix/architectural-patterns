@@ -1,6 +1,6 @@
 <?php
 include 'template/data.php';
-$pattern = $indexed['Acyclic Dependency Graph'];
+$pattern = $indexed['Acyclic Dependencies Principle'];
 include 'template/header.php';
 ?>
 
@@ -9,10 +9,10 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A directed acyclic graph of module dependencies</dd>
+        <dd>Allow no cycles in the module dependency graph</dd>
     </dl>
 
-    <figure><img src="images/dependency-graph.drawio.png"><figcaption>Acyclic Dependency Graph</figcaption></figure>
+    <figure><img src="images/dependency-graph.drawio.png"><figcaption>Acyclic Dependencies Principle</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>
