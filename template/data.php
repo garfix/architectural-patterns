@@ -62,7 +62,7 @@ $categories = [
         "patterns" => ["Traditional Model-View-Controller", "Model-View-Adapter", "Model-View-Viewmodel", "Hierarchical MVC", "Entity-Control-Boundary", "Hexagonal Architecture", "Data-Context-Interaction"]],
     ["code" => CAT_MODULES, "name" => 'Modules / Components',
         "description" => "Patterns within and between modules and components. There are differences between modules and components but the patterns described here are applicable to both. I will use the name 'module' to represent them.",
-        "patterns" => ["Module", "Component", "Acyclic Dependency Graph", "Feature Flags", "Plugin"]],
+        "patterns" => ["Module", "Component", "Acyclic Dependency Graph", "Feature Flags", "Plugin", "Stable Dependencies Principle"]],
     ["code" => CAT_CLASS, "name" => 'Classes / Interfaces',
         "description" => "Patterns for classes and interfaces",
         "children" => [CAT_CLASS_PRINCIPLES],
@@ -652,6 +652,11 @@ $patterns = [
         "keywords" => "UI Flow, User Flow, UI Storyboard, Navigation Flow",
         "image" => "navigation-graph.drawio.png",
         "link" => "navigation-graph",
+    ],
+    [
+        "name" => "Stable Dependencies Principle",
+        "image" => "stable-dependencies-principle.drawio.png",
+        "link" => "stable-dependencies-principle",
     ]
 ];
 

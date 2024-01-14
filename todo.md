@@ -26,9 +26,6 @@ Just some ideas
 * path, backtrack (?)
 * categories
 
-* contrasting colors
-* primary / secondary color
-
 https://uxdesign.cc/how-to-pick-colors-for-your-app-without-a-struggle-bc46c5e19574
 
 ## data
