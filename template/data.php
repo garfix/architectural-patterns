@@ -67,7 +67,7 @@ $categories = [
         "patterns" => ["Module", "Component", "Feature Flags", "Plugin"]],
     ["code" => CAT_MODULE_PRINCIPLES, "name" => 'Principles for modules',
         "description" => "Principles for modules",
-        "patterns" => ["Acyclic Dependencies Principle", "Stable Dependencies Principle"]],
+        "patterns" => ["Acyclic Dependencies Principle", "Stable Dependencies Principle", "Stable Abstractions Principle"]],
     ["code" => CAT_CLASS, "name" => 'Classes / Interfaces',
         "description" => "Patterns for classes and interfaces",
         "children" => [CAT_CLASS_PRINCIPLES],
@@ -318,6 +318,11 @@ $patterns = [
         "keywords" => "Dependency hierarchy",
         "image" => "dependency-graph.drawio.png",
         "link" => "acyclic-dependencies-principle"
+    ],
+    [
+        "name" => "Stable Abstractions Principle",
+        "image" => "stable-abstractions-principle.drawio.png",
+        "link" => "stable-abstractions-principle"
     ],
     [
         "name" => "Component",
