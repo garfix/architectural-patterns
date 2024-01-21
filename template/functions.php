@@ -37,7 +37,7 @@ function showHeader($pattern) {
 function showBlock($p) {
 ?>
 <article>
-    <a href="<?= $p['link'] ?>" class="image"><img src="images/<?= $p['image']?>" alt=""></a>
+    <a href="<?= $p['link'] ?>" class="image"><img src="images/<?= $p['image'] ?>"></a>
     <h3><?= $p['name']?></h3>
     <p><?= $p['keywords']?></p>
     <ul class="actions">
