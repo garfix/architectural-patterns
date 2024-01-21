@@ -67,7 +67,7 @@ $categories = [
         "patterns" => ["Module", "Component", "Feature Flags", "Plugin"]],
     ["code" => CAT_MODULE_PRINCIPLES, "name" => 'Principles for modules',
         "description" => "",
-        "patterns" => ["Acyclic Dependencies Principle", "Stable Dependencies Principle", "Stable Abstractions Principle"]],
+        "patterns" => ["Reuse/Release Equivalence Principle", "Common Closure Principle", "Common Reuse Principle", "Acyclic Dependencies Principle", "Stable Dependencies Principle", "Stable Abstractions Principle"]],
     ["code" => CAT_CLASS, "name" => 'Classes / Interfaces',
         "description" => "Patterns for classes and interfaces",
         "children" => [CAT_CLASS_PRINCIPLES],
@@ -667,6 +667,21 @@ $patterns = [
         "name" => "Stable Dependencies Principle",
         "image" => "stable-dependencies-principle.drawio.png",
         "link" => "stable-dependencies-principle",
+    ],
+    [
+        "name" => "Reuse/Release Equivalence Principle",
+        "image" => "reuse-release-equivalence-principle.drawio.png",
+        "link" => "reuse-release-equivalence-principle",
+    ],
+    [
+        "name" => "Common Closure Principle",
+        "image" => "common-closure-principle.drawio.png",
+        "link" => "common-closure-principle",
+    ],
+    [
+        "name" => "Common Reuse Principle",
+        "image" => "common-reuse-principle.drawio.png",
+        "link" => "common-reuse-principle",
     ]
 ];
 
