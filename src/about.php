@@ -10,6 +10,16 @@ include 'template/header.php';
     </header>
 
     <header class="major">
+        <h2>Change history</h2>
+    </header>
+    <p>
+        <b>2024-02-24</b> Added a section "Single purpose logic and software library" in <a href="application-logic">Application logic</a>, because I'm more and more convinced that this belongs to the essence of a maintainable application.
+    </p>
+    <p>
+        <b>2023-09-16</b> Started the website. Collecting all kinds of patterns.
+    </p>
+
+    <header class="major">
         <h2>Target audience</h2>
     </header>
     <p>

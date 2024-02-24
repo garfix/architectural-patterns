@@ -26,6 +26,12 @@ Just some ideas
 * path, backtrack (?)
 * categories
 * gestalt https://medium.muz.li/gestalt-principles-in-ui-design-6b75a41e9965
+  * Proximity principle
+  * Common Region principle
+  * Similarity principle
+  * Closure principle
+  * Symmetry principle
+  * Continuity principle
 
 https://uxdesign.cc/how-to-pick-colors-for-your-app-without-a-struggle-bc46c5e19574
 

@@ -31,6 +31,20 @@ include 'template/header.php';
         Code that doesn't interact with any volatile dependency doesn't have any effects (except for taking up time). And domain logic can interact with many of these dependencies. But from the point of view of the domain logic, it just talks to a stable <i>interface</i>, and it doesn't know that this interface is <i>implemented</i> by a volatile service.
     </p>
 
+    <h2>Single purpose logic  and software library</h2>
+    <p>
+        Within application logic, we can distinguish between single-purpose logic and reusable logic.
+    </p>
+    <p>
+        Single purpose logic belongs to a single controller, component or view. It is formed by request handlers, event handlers, and initialization code, and can quickly become unwieldly.
+    </p>
+    <p>
+        Reusable logic is formed by a <b>software library</b> that provides functionality with a well-defined interface. A library function can be called multiple times. The software library code is usually located in a special directory called "service" or "lib" and contains a separate file for each library topic.
+    </p>
+    <p>
+        Apart from software reuse, an important benefit of the software library is that it keeps the single-purpose logic simple. By extracting parts of this code into well-defined functions and transferring these to the software library, the handler is kept simple. This can be done even when the handler is the only one using the function, that means: the library functions <i>can be reused</i>, but they don't <i>have to be</i> reused.
+    </p>
+
     <h2>Examples</h2>
     <ul>
         <li>User Authentication Logic
