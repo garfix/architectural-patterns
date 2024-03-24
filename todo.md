@@ -1,5 +1,7 @@
 Just some ideas
 
+in-application Commands
+
 ## problem solving
 
 * Markov Decision Process
@@ -19,9 +21,39 @@ Just some ideas
 
 ## presentation
 
+user interface (UI) refers to the interactivity, look, and feel of a product screen or web page, while user experience (UX) covers a user's overall experience with the product or website
+
+
+### Graphic design
+
+* How to use fonts, colors, etc
+* visual hierarchy
+* consistency
+* accessibility
+
+### UI/UX
+
+* clarity / simplicity /intuitive / familiarity / easy to understand (given their pre-experience)
+  * learnability
+* feedforward / feedback
+  * Design dialog to yield closure
+  * error prevention
+* context
+* user control
+  * error fixing / Allow users ways to reverse their actions easily
+  * Allow users to navigate easily via shortcuts
+  * flexibility
+  * user centricity
+  * efficiency
+* usability (NO: too vague)
+
+https://www.uxdesigninstitute.com/blog/ux-design-principles/
+https://www.google.com/search?q=user+interface+design+principles
+https://maze.co/collections/ux-ui-design/ui-design-principles/
+
+### More
+
 * graphical design
-* ux / ui
-* menu
 * search
 * path, backtrack (?)
 * categories

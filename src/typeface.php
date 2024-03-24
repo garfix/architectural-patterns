@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A typeface is a style set of letters, numbers, and characters in a similar design</dd>
+        <dd>A typeface is a styled set of letters, numbers, and characters</dd>
     </dl>
     <p>A typeface is used to display text. It's usually called "font", but a font is actually the file that contains the typeface.</p>
 
@@ -17,7 +17,13 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>
-        A typeface needs to be <b>well readable</b> when used for large amounts of texts. Badly readable typefaces can only used for single words, for their decorative effect. Serif fonts have small features at the ends of the strokes. Sans-serif fonts don't have them. There should be a minimal contrast between text color and background color to be readable. Text is normally aligned left, but it may be centered for headlines and captions. Text can be right aligned to match the right aligned monetary values in a column.
+        A typeface needs to be <b>well readable</b> when used for large amounts of texts. Badly readable typefaces can only used for single words, for their decorative effect. Serif fonts have small features at the ends of the strokes. Sans-serif fonts don't have them.
+    </p>
+    <p>
+        There should be a minimal contrast between text color and background color to be readable.
+    </p>
+    <p>
+        Text is normally aligned left, but it may be centered for headlines and captions. Some scripts are naturally written from right to left. Text can be right aligned when it better suits the monetary values in a column.
     </p>
     <h2>Paragraphs</h2>
     <p>
