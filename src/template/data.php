@@ -92,7 +92,7 @@ $categories = [
 
     ["code" => CAT_PROBLEM_SOLVING, "name" => 'Problem solving',
         "description" => "Patterns designed to solve user problems",
-        "patterns" => ["Algorithm", "Heuristic", "Search", "Inference Engine", "Planning", "Decision Tree Learning", "Neural Network", "Agent", "Multi-Agent System", "Blackboard", "Process Control"]],
+        "patterns" => ["Algorithm", "Heuristic", "Search", "Inference Engine", "Planning", "Decision Tree Learning", "Neural Network", "Agent", "Multi-Agent System", "Blackboard", "Process Control", "Explainability"]],
     ["code" => CAT_DATA, "name" => 'Data',
         "description" => "Patterns that focus on the data of the application",
         "patterns" => ["Repository", "Event Sourcing", "CQRS", "Index", "Cache", "ETL", "Data Warehouse", "Data Cube", "Entity-Component-System"]],
@@ -717,6 +717,12 @@ $patterns = [
         "name" => "User control",
         "image" => "user-control.drawio.png",
         "link" => "user-control",
+    ],
+    [
+        "name" => "Explainability",
+        "keywords" => "Algorithmic transparency",
+        "image" => "explainability.drawio.png",
+        "link" => "explainability",
     ],
 
 ];

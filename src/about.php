@@ -14,6 +14,8 @@ include 'template/header.php';
     </header>
     <p>
         <b>2024-03-31</b> Added User Interface and User Experience to  <a href="presentation">Presentation</a>. I realize these are large fields in themselves, and it doesn't do justice to them to summarize these in some bullet points, but I just wanted to make a start.
+        <br>
+        I also added an entry on <a href="explainability">Explainability</a>, a personal favorite of mine in my last projects.
     </p>
     <p>
         <b>2024-02-24</b> Added a section "Single purpose logic and software library" in <a href="application-logic">Application logic</a>, because I'm more and more convinced that this belongs to the essence of a maintainable application.
