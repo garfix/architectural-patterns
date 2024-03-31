@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd></dd>
+        <dd>Rules governing the composition of ui elements on a page</dd>
     </dl>
 
     <figure><img src="images/page-layout.drawio.png"><figcaption>Page layout</figcaption></figure>
