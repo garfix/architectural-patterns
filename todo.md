@@ -19,6 +19,13 @@ in-application Commands
   * sparse distributed
   * NoSQL
 
+Time zones
+
+## Eplainability
+
+Be able how a result was achieved
+Explain why something didn't happen
+
 ## presentation
 
 user interface (UI) refers to the interactivity, look, and feel of a product screen or web page, while user experience (UX) covers a user's overall experience with the product or website

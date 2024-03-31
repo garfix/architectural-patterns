@@ -34,6 +34,13 @@ include 'template/header.php';
         <li><b>Missing document language: </b> Set the language of the document: &lt;html lang="en"&gt; (see <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">this document</a> for language codes)
     </ul>
 
+    <p>
+        General examples
+    </p>
+    <ul>
+        <li>Make the design keyboard-friendly by ensuring it can be navigated through using the tab key.
+    </ul>
+
     <h2>When should you use it?</h2>
     <ul>
         <li>Always, unless you're sure that all of your users have excellent eyesight

@@ -13,6 +13,9 @@ include 'template/header.php';
         <h2>Change history</h2>
     </header>
     <p>
+        <b>2024-03-31</b> Added User Interface and User Experience to  <a href="presentation">Presentation</a>. I realize these are large fields in themselves, and it doesn't do justice to them to summarize these in some bullet points, but I just wanted to make a start.
+    </p>
+    <p>
         <b>2024-02-24</b> Added a section "Single purpose logic and software library" in <a href="application-logic">Application logic</a>, because I'm more and more convinced that this belongs to the essence of a maintainable application.
     </p>
     <p>
@@ -116,6 +119,9 @@ include 'template/header.php';
     <header class="major">
         <h2>Origin</h2>
     </header>
+    <p>
+        I once found myself as a software developer in a position where I was asked to build a new application, a virtual driving instructor. I had no
+        idea how to approach this problem. I could just start building classes and functions and hope for the best, but I felt I needed to have an idea of the big picture of the application before I endeavoured the project. If I had the structure wrong, the program could be be arduous to complete and it could become unnecessarily slow. Furthermore, I would have no way to communicate to others about the structure of the application. I needed an architecture, before I started building. But I didn't have any examples to base it upon.
     <p>
         In 2003 I started a sub-site about architectural patterns, named "Garfixia Software Architectures", and hosted it on the domain I used for my Andreas fansite: <b>https://www.dossier-andreas.net/software_architecture/index.html</b> I had no idea people would be interested, but it actually became quite popular. Many people have used the simple diagrams for presentations, and there are even some references in published books.
     </p>

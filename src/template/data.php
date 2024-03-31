@@ -24,6 +24,8 @@ const CAT_MODULES = 'modules';
 const CAT_MODULE_PRINCIPLES = 'module-principles';
 const CAT_CHANGE = 'change';
 const CAT_CONVENTIONS = 'conventions';
+const CAT_UI = 'ui';
+const CAT_UX = 'ux';
 
 $pages = [
     "Generic" => [
@@ -77,7 +79,17 @@ $categories = [
         "patterns" => ["Single Responsibility Principle", "Open-Closed Principle", "Liskov Substitution Principle", "Interface Segregation Principle", "Dependency Inversion Principle"]],
     ["code" => CAT_PRESENTATION, "name" => 'Presentation',
         "description" => "Patterns related to the Graphical User Interface",
-        "patterns" => ["Navigation Graph", "Menu Navigation", "Template Engine", "Color", "Accessibility"]],
+        "children" => [CAT_UI, CAT_UX],
+        "patterns" => ["Navigation Graph", "Menu Navigation", "Template Engine"]],
+
+    ["code" => CAT_UI, "name" => 'User Interface',
+        "description" => "Patterns related to User Interface (UI) design",
+        "patterns" => ["Color", "Typeface", "Page layout", "Accessibility"]],
+
+    ["code" => CAT_UX, "name" => 'User Experience',
+        "description" => "Patterns related to User Experience (UX) design",
+        "patterns" => ["Clarity", "User control"]],
+
     ["code" => CAT_PROBLEM_SOLVING, "name" => 'Problem solving',
         "description" => "Patterns designed to solve user problems",
         "patterns" => ["Algorithm", "Heuristic", "Search", "Inference Engine", "Planning", "Decision Tree Learning", "Neural Network", "Agent", "Multi-Agent System", "Blackboard", "Process Control"]],
@@ -92,7 +104,7 @@ $categories = [
         "patterns" => ["Monolith", "Client-Server", "N-Tier", "Broker", "Repository", "Master-Slave", "Peer to Peer", "Parallel Programming", "Load Balancing", "Serverless", "Space-Based", "Data Replication"]],
     ["code" => CAT_CROSS_CUTTING, "name" => 'Cross-cutting concerns',
         "description" => "Patterns that provide a specific function in many distinct areas of the code base",
-        "patterns" => ["Logging", "Error Handling", "Data Validation", "Internationalization", "Accessibility"]],
+        "patterns" => ["Logging", "Error Handling", "Data Validation", "Internationalization"]],
     ["code" => CAT_ACCESS_CONTROL, "name" => 'Access control',
         "description" => "Control who has access to the system and to what parts of the system",
         "children" => [CAT_AUTHENTICATION, CAT_AUTHORIZATION],
@@ -682,7 +694,31 @@ $patterns = [
         "name" => "Common Reuse Principle",
         "image" => "common-reuse-principle.drawio.png",
         "link" => "common-reuse-principle",
-    ]
+    ],
+
+    [
+        "name" => "Typeface",
+        "keywords" => "Font",
+        "image" => "typeface.drawio.png",
+        "link" => "typeface",
+    ],
+    [
+        "name" => "Page layout",
+        "image" => "page-layout.drawio.png",
+        "link" => "page-layout",
+    ],
+
+    [
+        "name" => "Clarity",
+        "image" => "clarity.drawio.png",
+        "link" => "clarity",
+    ],
+    [
+        "name" => "User control",
+        "image" => "user-control.drawio.png",
+        "link" => "user-control",
+    ],
+
 ];
 
 $sortedPatterns = $patterns;

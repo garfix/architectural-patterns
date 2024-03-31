@@ -20,6 +20,9 @@ Icons used:
 * https://www.svgrepo.com/svg/478428/light-bulb-13
 * https://www.svgrepo.com/svg/509922/fast-forward
 * https://www.svgrepo.com/svg/439109/color-wheel
-*
+* https://www.svgrepo.com/svg/428292/head-idea
+* https://www.svgrepo.com/svg/403919/open-hands
+* https://www.svgrepo.com/svg/394164/font
+* https://www.svgrepo.com/svg/156470/layout
 
 The *.drawio.png diagrams can be edited with https://app.diagrams.net/

@@ -28,6 +28,7 @@ include 'template/header.php';
         <li>Context: The application should be adapted to the device it runs on in a way that best serves the user
         <li>Undo / redo: whenever possible, allow a user to reverse an action (mistake) they made. Provide a "Cancel" button and an "Exit" button on a dialog
         <li>Feed-forward / feedback: it should be clear what consequence each action will have (feed-forward) and it should be clear what the effect of each action has been (feedback)
+        <li>Introduce shortcuts for power users that work intensively with your application
     </ul>
 
     <h2>Links</h2>
