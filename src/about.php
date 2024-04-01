@@ -13,6 +13,9 @@ include 'template/header.php';
         <h2>Change history</h2>
     </header>
     <p>
+        <b>2024-04-01</b> Added <a href="snapshot-sequence">Snapshot Sequence</a>.
+    </p>
+    <p>
         <b>2024-03-31</b> Added User Interface and User Experience to  <a href="presentation">Presentation</a>. I realize these are large fields in themselves, and it doesn't do justice to them to summarize these in some bullet points, but I just wanted to make a start.
         <br>
         I also added an entry on <a href="explainability">Explainability</a>, a personal favorite of mine in my last projects.
