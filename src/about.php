@@ -13,6 +13,9 @@ include 'template/header.php';
         <h2>Change history</h2>
     </header>
     <p>
+        <b>2024-04-07</b> Added <a href="utc">UTC</a>, <a href="iso-8601">Standardized Date Format</a> and <a href="unicode">UNICODE</a> as a section "data formats" in <a href="data-patterns">Data</a>.
+    </p>
+    <p>
         <b>2024-04-01</b> Added <a href="snapshot-sequence">Snapshot Sequence</a>.
     </p>
     <p>

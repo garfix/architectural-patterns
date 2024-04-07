@@ -8,6 +8,7 @@ const CAT_SYSTEMS = 'systems';
 const CAT_SYSTEMS_COMPOSITION = 'system-composition';
 const CAT_PARADIGMS = 'paradigms';
 const CAT_DATA = 'data-patterns';
+const CAT_DATA_FORMAT = 'data-format';
 const CAT_PROBLEM_SOLVING = 'problem-solving';
 const CAT_CROSS_CUTTING = 'cross-cutting-concerns';
 const CAT_DISTRIBUTED = 'distributed-computing';
@@ -95,7 +96,11 @@ $categories = [
         "patterns" => ["Algorithm", "Heuristic", "Search", "Inference Engine", "Planning", "Decision Tree Learning", "Neural Network", "Agent", "Multi-Agent System", "Blackboard", "Process Control", "Explainability"]],
     ["code" => CAT_DATA, "name" => 'Data',
         "description" => "Patterns that focus on the data of the application",
+        "children" => [CAT_DATA_FORMAT],
         "patterns" => ["Repository", "Event Sourcing", "Snapshot Sequence", "CQRS", "Index", "Cache", "ETL", "Data Warehouse", "Data Cube", "Entity-Component-System"]],
+    ["code" => CAT_DATA_FORMAT, "name" => "Data formats",
+        "description" => "Standard formats of data types",
+        "patterns" => ["UNICODE", "Standardized Date Format", "Coordinated Universal Time"]],
     ["code" => CAT_CONTROL_FLOW, "name" => 'Control flow',
         "description" => "Patterns that focus on the way the code is executed",
         "patterns" => ["Pipe and Filter", "Parallel Programming", "Finite State Machine", "Interpreter", "Publish-Subscribe", "Message Queue", "Game Loop", "Lifecycle Hooks"]],
@@ -729,6 +734,26 @@ $patterns = [
         "image" => "snapshot.drawio.png",
         "link" => "snapshot-sequence",
     ],
+    [
+        "name" => "Coordinated Universal Time",
+        "keywords" => "UTC",
+        "image" => "utc.drawio.png",
+        "link" => "utc",
+    ],
+    [
+        "name" => "UNICODE",
+        "keywords" => "UTF-8",
+        "image" => "unicode.drawio.png",
+        "link" => "unicode",
+    ],
+    [
+        "name" => "Standardized Date Format",
+        "keywords" => "ISO 8601",
+        "image" => "iso-8601.drawio.png",
+        "link" => "iso-8601",
+    ],
+
+
 
 ];
 

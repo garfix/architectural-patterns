@@ -19,20 +19,13 @@ in-application Commands
   * sparse distributed
   * NoSQL
 
-Time zones
-
-### More
+## More
 
 * search
 * path, backtrack (?)
 * categories
-* gestalt https://medium.muz.li/gestalt-principles-in-ui-design-6b75a41e9965
-  * Proximity principle
-  * Common Region principle
-  * Similarity principle
-  * Closure principle
-  * Symmetry principle
-  * Continuity principle
+
+## UI
 
 https://uxdesign.cc/how-to-pick-colors-for-your-app-without-a-struggle-bc46c5e19574
 
@@ -50,7 +43,6 @@ https://uxdesign.cc/how-to-pick-colors-for-your-app-without-a-struggle-bc46c5e19
 ## module
 
 * module: cohesive combination of functions and data
-* SRP
 
 ## and ...
 * software metrics / code complexity

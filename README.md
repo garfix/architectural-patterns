@@ -26,5 +26,8 @@ Icons used:
 * https://www.svgrepo.com/svg/156470/layout
 * https://www.svgrepo.com/svg/339703/ai-explainability
 * https://www.svgrepo.com/svg/412441/photograph
+* https://www.svgrepo.com/svg/522682/time
+* https://www.svgrepo.com/svg/306906/unicode
+* https://www.svgrepo.com/svg/533388/calendar-day
 
 The *.drawio.png diagrams can be edited with https://app.diagrams.net/
