@@ -21,6 +21,9 @@ include 'template/header.php';
     <p>
         The term "snapshot" is well-known, but the data structure of linked snapshots doesn't have a name as far as I can tell, so I just named it "Snapshot sequence" myself.
     </p>
+    <p>
+        It can be sufficient to only keep the previous complete state, or a few previous states.
+    </p>
 
     <h2>Examples</h2>
     <ul>

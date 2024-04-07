@@ -28,7 +28,7 @@ include 'template/header.php';
     <h2>Examples</h2>
     <ul>
         <li>Money (amount and currency)
-        <li>Date (fixed format; i.e. mmmm-yy-dd)
+        <li>Date (fixed format; i.e. yyyy-mm-dd)
         <li>DateTime (date and time)
         <li>Address
     </ul>
