@@ -29,7 +29,7 @@ const CAT_UI = 'ui';
 const CAT_UX = 'ux';
 
 $pages = [
-    "Generic" => [
+    "General" => [
         CAT_CONVENTIONS,
         CAT_LOGIC,
         CAT_CLASS,
@@ -79,9 +79,9 @@ $categories = [
         "description" => "Principles for classes and interfaces",
         "patterns" => ["Single Responsibility Principle", "Open-Closed Principle", "Liskov Substitution Principle", "Interface Segregation Principle", "Dependency Inversion Principle"]],
     ["code" => CAT_PRESENTATION, "name" => 'Presentation',
-        "description" => "Patterns related to the Graphical User Interface",
+        "description" => "Patterns related to the User Interface",
         "children" => [CAT_UI, CAT_UX],
-        "patterns" => ["Navigation Graph", "Menu Navigation", "Template Engine"]],
+        "patterns" => ["Command Line Interface", "Navigation Graph", "Menu Navigation", "Template Engine"]],
 
     ["code" => CAT_UI, "name" => 'User Interface',
         "description" => "Patterns related to User Interface (UI) design",
@@ -751,6 +751,12 @@ $patterns = [
         "keywords" => "ISO 8601",
         "image" => "iso-8601.drawio.png",
         "link" => "iso-8601",
+    ],
+    [
+        "name" => "Command Line Interface",
+        "keywords" => "CLI",
+        "image" => "cli.drawio.png",
+        "link" => "cli",
     ],
 
 
