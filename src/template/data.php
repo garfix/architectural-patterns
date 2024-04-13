@@ -85,7 +85,7 @@ $categories = [
 
     ["code" => CAT_UI, "name" => 'User Interface',
         "description" => "Patterns related to User Interface (UI) design",
-        "patterns" => ["Color", "Typeface", "Page layout", "Accessibility"]],
+        "patterns" => ["Color", "Typeface", "Icon Set", "Page layout", "Accessibility"]],
 
     ["code" => CAT_UX, "name" => 'User Experience',
         "description" => "Patterns related to User Experience (UX) design",
@@ -700,12 +700,16 @@ $patterns = [
         "image" => "common-reuse-principle.drawio.png",
         "link" => "common-reuse-principle",
     ],
-
     [
         "name" => "Typeface",
         "keywords" => "Font",
         "image" => "typeface.drawio.png",
         "link" => "typeface",
+    ],
+    [
+        "name" => "Icon Set",
+        "image" => "icon-set.drawio.png",
+        "link" => "icon-set",
     ],
     [
         "name" => "Page layout",

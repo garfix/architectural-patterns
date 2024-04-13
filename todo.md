@@ -1,7 +1,5 @@
 Just some ideas
 
-in-application Commands
-
 ## problem solving
 
 * Markov Decision Process
