@@ -4,7 +4,7 @@ include 'functions.php';
 
 const CAT_LOGIC = 'logic';
 const CAT_PRESENTATION = 'presentation';
-const CAT_GRAPHICS = 'graphics';
+const CAT_ANIMATION = 'animation';
 const CAT_SYSTEMS = 'systems';
 const CAT_SYSTEMS_COMPOSITION = 'system-composition';
 const CAT_PARADIGMS = 'paradigms';
@@ -81,7 +81,7 @@ $categories = [
         "patterns" => ["Single Responsibility Principle", "Open-Closed Principle", "Liskov Substitution Principle", "Interface Segregation Principle", "Dependency Inversion Principle"]],
     ["code" => CAT_PRESENTATION, "name" => 'Presentation',
         "description" => "Patterns related to the User Interface",
-        "children" => [CAT_UI, CAT_UX, CAT_GRAPHICS],
+        "children" => [CAT_UI, CAT_UX, CAT_ANIMATION],
         "patterns" => ["Command Line Interface", "Navigation Graph", "Menu Navigation", "Template Engine"]],
     ["code" => CAT_UI, "name" => 'User Interface',
         "description" => "Patterns related to User Interface (UI) design",
@@ -89,9 +89,9 @@ $categories = [
     ["code" => CAT_UX, "name" => 'User Experience',
         "description" => "Patterns related to User Experience (UX) design",
         "patterns" => ["Clarity", "User control"]],
-    ["code" => CAT_GRAPHICS, "name" => 'Computer graphics',
+    ["code" => CAT_ANIMATION, "name" => 'Animation',
         "description" => "Patterns related to animated computer graphics",
-        "patterns" => ["Graphics Pipeline"]],
+        "patterns" => ["Graphics Pipeline", "Double Buffering"]],
     ["code" => CAT_PROBLEM_SOLVING, "name" => 'Problem solving',
         "description" => "Patterns designed to solve user problems",
         "patterns" => ["Algorithm", "Heuristic", "Search", "Inference Engine", "Planning", "Decision Tree Learning", "Neural Network", "Agent", "Multi-Agent System", "Blackboard", "Process Control", "Explainability"]],
@@ -762,6 +762,12 @@ $patterns = [
         "name" => "Graphics Pipeline",
         "image" => "graphics-pipeline.drawio.png",
         "link" => "graphics-pipeline",
+    ],
+    [
+        "name" => "Double Buffering",
+        "keywords" => "VSYNC",
+        "image" => "double-buffering.drawio.png",
+        "link" => "double-buffering",
     ]
 
 ];
