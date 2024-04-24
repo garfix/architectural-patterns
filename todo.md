@@ -25,11 +25,13 @@ Just some ideas
 
 ## UI
 
+* responsive design
+
 https://uxdesign.cc/how-to-pick-colors-for-your-app-without-a-struggle-bc46c5e19574
 
 ## graphics
 
-double buffering
+done
 
 ## data
 
