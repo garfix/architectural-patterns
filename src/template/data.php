@@ -98,7 +98,7 @@ $categories = [
     ["code" => CAT_DATA, "name" => 'Data',
         "description" => "Patterns that focus on the data of the application",
         "children" => [CAT_DATA_FORMAT],
-        "patterns" => ["Repository", "Event Sourcing", "Snapshot Sequence", "CQRS", "Index", "Cache", "ETL", "Data Warehouse", "Data Cube", "Entity-Component-System"]],
+        "patterns" => ["Repository", "Event Sourcing", "Snapshot Sequence", "CQRS", "Index", "Cache", "ETL", "Data Warehouse", "Data Cube", "Entity-Component-System", "Data Synchronization"]],
     ["code" => CAT_DATA_FORMAT, "name" => "Data formats",
         "description" => "Standard formats of data types",
         "patterns" => ["UNICODE", "Standardized Date Format", "Coordinated Universal Time"]],
@@ -768,7 +768,13 @@ $patterns = [
         "keywords" => "VSYNC",
         "image" => "double-buffering.drawio.png",
         "link" => "double-buffering",
-    ]
+    ],
+    [
+        "name" => "Data Synchronization",
+        "keywords" => "Sync",
+        "image" => "data-synchronization.drawio.png",
+        "link" => "data-synchronization"
+    ],
 
 ];
 

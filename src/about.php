@@ -13,6 +13,9 @@ include 'template/header.php';
         <h2>Change history</h2>
     </header>
     <p>
+        <b>2024-09-28</b> Added <a href="data-synchronization">Data synchronization</a> to <a href="data-patterns">Data</a>.
+    </p>
+    <p>
         <b>2024-04-21</b> Added <a href="graphics-pipeline">Graphics Pipeline</a> and <a href="double-buffering">Double Buffering</a> to <a href="presentation">Presentation</a>.
     </p>
     <p>
