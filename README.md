@@ -30,5 +30,6 @@ Icons used:
 * https://www.svgrepo.com/svg/306906/unicode
 * https://www.svgrepo.com/svg/533388/calendar-day
 * https://www.svgrepo.com/svg/354871/cli
+* https://www.svgrepo.com/svg/532323/lock-alt
 
 The *.drawio.png diagrams can be edited with https://app.diagrams.net/

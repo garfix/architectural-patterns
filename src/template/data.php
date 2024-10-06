@@ -10,6 +10,7 @@ const CAT_SYSTEMS_COMPOSITION = 'system-composition';
 const CAT_PARADIGMS = 'paradigms';
 const CAT_DATA = 'data-patterns';
 const CAT_DATA_FORMAT = 'data-format';
+const CAT_DATA_LOCKING = 'data-locking';
 const CAT_PROBLEM_SOLVING = 'problem-solving';
 const CAT_CROSS_CUTTING = 'cross-cutting-concerns';
 const CAT_DISTRIBUTED = 'distributed-computing';
@@ -75,7 +76,7 @@ $categories = [
     ["code" => CAT_CLASS, "name" => 'Classes / Interfaces',
         "description" => "Patterns for classes and interfaces",
         "children" => [CAT_CLASS_PRINCIPLES],
-        "patterns" => ["Entity", "Value Object", "Object Aggregate", "Data Transfer Object"]],
+        "patterns" => ["Entity", "Value Object", "Object Aggregate", "Data Transfer Object", "Query Object"]],
     ["code" => CAT_CLASS_PRINCIPLES, "name" => 'Principles',
         "description" => "Principles for classes and interfaces",
         "patterns" => ["Single Responsibility Principle", "Open-Closed Principle", "Liskov Substitution Principle", "Interface Segregation Principle", "Dependency Inversion Principle"]],
@@ -97,11 +98,14 @@ $categories = [
         "patterns" => ["Algorithm", "Heuristic", "Search", "Inference Engine", "Planning", "Decision Tree Learning", "Neural Network", "Agent", "Multi-Agent System", "Blackboard", "Process Control", "Explainability"]],
     ["code" => CAT_DATA, "name" => 'Data',
         "description" => "Patterns that focus on the data of the application",
-        "children" => [CAT_DATA_FORMAT],
+        "children" => [CAT_DATA_FORMAT, CAT_DATA_LOCKING],
         "patterns" => ["Repository", "Event Sourcing", "Snapshot Sequence", "CQRS", "Index", "Cache", "ETL", "Data Warehouse", "Data Cube", "Entity-Component-System", "Data Synchronization"]],
     ["code" => CAT_DATA_FORMAT, "name" => "Data formats",
         "description" => "Standard formats of data types",
         "patterns" => ["UNICODE", "Standardized Date Format", "Coordinated Universal Time"]],
+    ["code" => CAT_DATA_LOCKING, "name" => "Locking",
+        "description" => "Handling concurrent access to data",
+        "patterns" => ["Optimistic Locking", "Pessimistic Locking"]],
     ["code" => CAT_CONTROL_FLOW, "name" => 'Control flow',
         "description" => "Patterns that focus on the way the code is executed",
         "patterns" => ["Pipe and Filter", "Parallel Programming", "Finite State Machine", "Interpreter", "Publish-Subscribe", "Message Queue", "Game Loop", "Lifecycle Hooks"]],
@@ -775,6 +779,21 @@ $patterns = [
         "image" => "data-synchronization.drawio.png",
         "link" => "data-synchronization"
     ],
+    [
+        "name" => "Query Object",
+        "image" => "query-object.drawio.png",
+        "link" => "query-object"
+    ],
+    [
+        "name" => "Optimistic Locking",
+        "image" => "optimistic-locking.drawio.png",
+        "link" => "optimistic-locking"
+    ],
+    [
+        "name" => "Pessimistic Locking",
+        "image" => "pessimistic-locking.drawio.png",
+        "link" => "pessimistic-locking"
+    ]
 
 ];
 
