@@ -13,6 +13,9 @@ include 'template/header.php';
         <h2>Change history</h2>
     </header>
     <p>
+        <b>2024-11-30</b> Added <a href="transaction">Transaction</a> to <a href="data-patterns">Data</a>
+    </p>
+    <p>
         <b>2024-10-06</b> Added <a href="query-object">Query Object</a> to <a href="class">Classes / Interfaces</a>. Added <a href="optimistic-locking">Optimisitic Locking</a> and <a href="pessimistic-locking">Pessimistic Locking</a> to <a href="data">Data</a>
     </p>
     <p>

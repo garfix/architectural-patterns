@@ -99,7 +99,7 @@ $categories = [
     ["code" => CAT_DATA, "name" => 'Data',
         "description" => "Patterns that focus on the data of the application",
         "children" => [CAT_DATA_FORMAT, CAT_DATA_LOCKING],
-        "patterns" => ["Repository", "Event Sourcing", "Snapshot Sequence", "CQRS", "Index", "Cache", "ETL", "Data Warehouse", "Data Cube", "Entity-Component-System", "Data Synchronization"]],
+        "patterns" => ["Repository", "Event Sourcing", "Snapshot Sequence", "CQRS", "Index", "Cache", "Transaction", "ETL", "Data Warehouse", "Data Cube", "Entity-Component-System", "Data Synchronization"]],
     ["code" => CAT_DATA_FORMAT, "name" => "Data formats",
         "description" => "Standard formats of data types",
         "patterns" => ["UNICODE", "Standardized Date Format", "Coordinated Universal Time"]],
@@ -793,6 +793,12 @@ $patterns = [
         "name" => "Pessimistic Locking",
         "image" => "pessimistic-locking.drawio.png",
         "link" => "pessimistic-locking"
+    ],
+    [
+        "name" => "Transaction",
+        "keywords" => "Unit of work",
+        "image" => "transaction.drawio.png",
+        "link" => "transaction"
     ]
 
 ];

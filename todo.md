@@ -59,3 +59,6 @@ done
 * https://en.wikipedia.org/w/index.php?title=Debugging_pattern&oldformat=true
 * https://en.wikipedia.org/wiki/Service_delivery_platform
 *
+## principles
+
+From keras: Keras adopts the principle of progressive disclosure of complexity: simple workflows should be quick and easy, while arbitrarily advanced workflows should be possible via a clear path that builds upon what you've already learned.

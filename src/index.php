@@ -14,7 +14,7 @@ include 'template/header.php';
         In playing games, management, and warfare we can distinguish three levels of analysis: operational, tactical, and strategic. In software development we could associate these with <a href="https://en.wikipedia.org/wiki/Structured_programming">structured programming</a>, <a href="https://en.wikipedia.org/wiki/Software_design_pattern">design patterns</a>, and ... <a href="https://en.wikipedia.org/wiki/Architectural_pattern">architectural patterns</a>.
     </p>
     <p>
-        This site intends to help you in the process of designing an application. It's just an overview of many of the techniques and principles that are in use in software architecture. It may make you say "Ah yes, I should think about that as well".
+        This site contains a number of system-level patterns: techniques and principles that are often used in software architectures. Use it at the start of a project for inspiration or as a checklist of things still to do.
     </p>
     <p>
         If you have any ideas to improve this website, don't hesitate to <a href="https://github.com/garfix/architectural-patterns">create an issue or make a pull request</a>.
