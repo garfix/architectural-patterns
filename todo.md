@@ -20,7 +20,7 @@ Just some ideas
 ## More
 
 * search
-* path, backtrack (?)
+* backtrack (?)
 * categories
 
 ## UI
