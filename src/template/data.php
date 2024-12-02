@@ -134,7 +134,7 @@ $categories = [
     ["code" => CAT_ENVIRONMENT, "name" => 'App Environment',
         "description" => "Patterns that are not part of the application in the narrow sense, but are nevertheless part of its broader environment",
         "children" => [CAT_TESTING, CAT_MONITORING],
-        "patterns" => ["Deployment", "User Manual"]],
+        "patterns" => ["Deployment", "User Manual", "Software license"]],
     ["code" => CAT_TESTING, "name" => 'Testing',
         "description" => "Patterns that ensure that some aspect of the application meets a criterium",
         "patterns" => ["Functional tests", "Frontend tests", "Security tests", "Performance tests", "Compatibility tests"]],
@@ -804,6 +804,11 @@ $patterns = [
         "name" => "Undo",
         "image" => "undo.drawio.png",
         "link" => "undo"
+    ],
+    [
+        "name" => "Software license",
+        "image" => "license.drawio.png",
+        "link" => "license"
     ]
 
 ];

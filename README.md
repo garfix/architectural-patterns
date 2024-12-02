@@ -32,5 +32,6 @@ Icons used:
 * https://www.svgrepo.com/svg/354871/cli
 * https://www.svgrepo.com/svg/532323/lock-alt
 * https://www.svgrepo.com/svg/529040/key
+* https://www.svgrepo.com/svg/149217/license
 
 The *.drawio.png diagrams can be edited with https://app.diagrams.net/
