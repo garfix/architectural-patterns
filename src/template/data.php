@@ -26,24 +26,22 @@ const CAT_CLASS_PRINCIPLES = 'class-principles';
 const CAT_MODULES = 'modules';
 const CAT_MODULE_PRINCIPLES = 'module-principles';
 const CAT_CHANGE = 'change';
-const CAT_CONVENTIONS = 'conventions';
 const CAT_UI = 'ui';
 const CAT_UX = 'ux';
 
 $pages = [
-    "General" => [
-        CAT_CONVENTIONS,
-        CAT_LOGIC,
+    "Code structure" => [
         CAT_CLASS,
         CAT_MODULES,
         CAT_SYSTEMS,
         CAT_PARADIGMS,
     ],
-    "Topics" => [
+    "Code purpose" => [
+        CAT_LOGIC,
         CAT_DATA,
         CAT_CONTROL_FLOW,
-        CAT_PROBLEM_SOLVING,
         CAT_CROSS_CUTTING,
+        CAT_PROBLEM_SOLVING,
         CAT_PRESENTATION,
         CAT_ACCESS_CONTROL,
         CAT_CHANGE,
@@ -114,7 +112,7 @@ $categories = [
         "patterns" => ["Monolith", "Client-Server", "N-Tier", "Broker", "Repository", "Master-Slave", "Peer to Peer", "Parallel Programming", "Load Balancing", "Serverless", "Space-Based", "Data Replication"]],
     ["code" => CAT_CROSS_CUTTING, "name" => 'Cross-cutting concerns',
         "description" => "Patterns that provide a specific function in many distinct areas of the code base",
-        "patterns" => ["Logging", "Error Handling", "Data Validation", "Internationalization"]],
+        "patterns" => ["Logging", "Error Handling", "Data Validation", "Internationalization", "Coding Conventions", "Ubiquitous Language"]],
     ["code" => CAT_ACCESS_CONTROL, "name" => 'Access control',
         "description" => "Control who has access to the system and to what parts of the system",
         "children" => [CAT_AUTHENTICATION, CAT_AUTHORIZATION],
@@ -122,9 +120,6 @@ $categories = [
     ["code" => CAT_CHANGE, "name" => 'Change',
         "description" => "Management of code changes",
         "patterns" => ["Version Control", "Software Versioning"]],
-    ["code" => CAT_CONVENTIONS, "name" => 'Conventions',
-        "description" => "Agreements between the participants of the software project",
-        "patterns" => ["Coding Conventions", "Ubiquitous Language"]],
     ["code" => CAT_AUTHENTICATION, "name" => 'Authentication',
         "description" => "Determine that the user is who they claim to be",
         "patterns" => ["Login", "Single Sign-on", "Federated Identity"]],
