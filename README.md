@@ -1,37 +1,9 @@
 The contents of the website [architectural-patterns.net](https://architectural-patterns.net)
 
-Template: https://html5up.net/editorial
 
-Icons used:
+## Tools used
 
-* https://www.svgrepo.com/svg/501005/sitemap
-* https://www.svgrepo.com/svg/341021/sight
-* https://www.svgrepo.com/svg/521818/robot
-* https://www.svgrepo.com/svg/486635/disk
-* https://www.svgrepo.com/svg/448598/service
-* https://www.svgrepo.com/svg/281925/test
-* https://www.svgrepo.com/svg/384117/application
-* https://www.svgrepo.com/svg/280722/cogwheels-gear
-* https://www.svgrepo.com/svg/425521/application-bookmark-browser
-* https://www.svgrepo.com/svg/522469/book
-* https://www.svgrepo.com/svg/408689/page-document-my-page-empty-page
-* https://www.svgrepo.com/svg/523291/checklist-minimalistic
-* https://www.svgrepo.com/svg/372699/talk-bubbles
-* https://www.svgrepo.com/svg/478428/light-bulb-13
-* https://www.svgrepo.com/svg/509922/fast-forward
-* https://www.svgrepo.com/svg/439109/color-wheel
-* https://www.svgrepo.com/svg/428292/head-idea
-* https://www.svgrepo.com/svg/403919/open-hands
-* https://www.svgrepo.com/svg/394164/font
-* https://www.svgrepo.com/svg/156470/layout
-* https://www.svgrepo.com/svg/339703/ai-explainability
-* https://www.svgrepo.com/svg/412441/photograph
-* https://www.svgrepo.com/svg/522682/time
-* https://www.svgrepo.com/svg/306906/unicode
-* https://www.svgrepo.com/svg/533388/calendar-day
-* https://www.svgrepo.com/svg/354871/cli
-* https://www.svgrepo.com/svg/532323/lock-alt
-* https://www.svgrepo.com/svg/529040/key
-* https://www.svgrepo.com/svg/149217/license
+* Template: https://html5up.net/editorial
+* Icons: https://www.svgrepo.com/
 
 The *.drawio.png diagrams can be edited with https://app.diagrams.net/

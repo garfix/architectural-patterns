@@ -1,9 +1,14 @@
 Just some ideas
 
+orm
+containerization
+programming paradigm: imperative / logic / declarative
+data retrieval: sql graphql
+code conventions: linting (alias)
+
 ## problem solving
 
 * Markov Decision Process
-* case-based reasoning
 * genetic algorithms
 * support vector machines
 

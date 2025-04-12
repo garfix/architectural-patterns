@@ -39,8 +39,8 @@ $pages = [
     "Code purpose" => [
         CAT_LOGIC,
         CAT_DATA,
-        CAT_CONTROL_FLOW,
         CAT_CROSS_CUTTING,
+        CAT_CONTROL_FLOW,
         CAT_PROBLEM_SOLVING,
         CAT_PRESENTATION,
         CAT_ACCESS_CONTROL,
@@ -93,7 +93,7 @@ $categories = [
         "patterns" => ["Graphics Pipeline", "Double Buffering"]],
     ["code" => CAT_PROBLEM_SOLVING, "name" => 'Problem solving',
         "description" => "Patterns designed to solve user problems",
-        "patterns" => ["Algorithm", "Heuristic", "Search", "Inference Engine", "Planning", "Decision Tree Learning", "Neural Network", "Agent", "Multi-Agent System", "Blackboard", "Process Control", "Explainability"]],
+        "patterns" => ["Algorithm", "Heuristic", "Search", "Inference Engine", "Planning", "Decision Tree Learning", "Neural Network", "Generative AI", "Agent", "Multi-Agent System", "Blackboard", "Process Control", "Explainability"]],
     ["code" => CAT_DATA, "name" => 'Data',
         "description" => "Patterns that focus on the data of the application",
         "children" => [CAT_DATA_FORMAT, CAT_DATA_LOCKING],
@@ -804,6 +804,12 @@ $patterns = [
         "name" => "Software license",
         "image" => "license.drawio.png",
         "link" => "license"
+    ],
+    [
+        "name" => "Generative AI",
+        "keywords" => "LLM",
+        "image" => "gen-ai.drawio.png",
+        "link" => "gen-ai"
     ]
 
 ];
