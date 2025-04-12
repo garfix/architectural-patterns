@@ -1,10 +1,8 @@
 Just some ideas
 
-orm
 containerization
 programming paradigm: imperative / logic / declarative
 data retrieval: sql graphql
-code conventions: linting (alias)
 
 ## problem solving
 

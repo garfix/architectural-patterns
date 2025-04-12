@@ -97,7 +97,7 @@ $categories = [
     ["code" => CAT_DATA, "name" => 'Data',
         "description" => "Patterns that focus on the data of the application",
         "children" => [CAT_DATA_FORMAT, CAT_DATA_LOCKING],
-        "patterns" => ["Repository", "Event Sourcing", "Snapshot Sequence", "CQRS", "Index", "Cache", "Transaction", "Undo", "ETL", "Data Warehouse", "Data Cube", "Entity-Component-System", "Data Synchronization"]],
+        "patterns" => ["Repository", "Event Sourcing", "Snapshot Sequence", "CQRS", "Index", "Cache", "Transaction", "Undo", "ETL", "Data Warehouse", "Data Cube", "Entity-Component-System", "Data Synchronization", "ORM"]],
     ["code" => CAT_DATA_FORMAT, "name" => "Data formats",
         "description" => "Standard formats of data types",
         "patterns" => ["UNICODE", "Standardized Date Format", "Coordinated Universal Time"]],
@@ -646,6 +646,7 @@ $patterns = [
     ],
     [
         "name" => "Coding Conventions",
+        "keywords" => "Linting",
         "image" => "coding-conventions.drawio.png",
         "link" => "coding-conventions",
     ],
@@ -810,6 +811,12 @@ $patterns = [
         "keywords" => "LLM",
         "image" => "gen-ai.drawio.png",
         "link" => "gen-ai"
+    ],
+    [
+        "name" => "ORM",
+        "keywords" => "Object-Relational Mapping",
+        "image" => "orm.drawio.png",
+        "link" => "orm"
     ]
 
 ];

@@ -19,7 +19,7 @@ include 'template/header.php';
         Coding conventions for all major languages are available. It's best to stick to these, as it helps new developers on the project, with previous experience in the language to fit right in.
     </p>
     <p>
-        Tools exist that can format code according to convention automatically.
+        Tools exist that can format code according to convention automatically. They're called <b>linters</b>
     </p>
 
     <h2>Examples</h2>
