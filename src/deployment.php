@@ -19,10 +19,9 @@ include 'template/header.php';
        When a change to the application has been made, the old application on the server needs to be replaced by the new application. This may involve copying the code, building assets, bringing the application down and up again.
     </p>
 
-    <h2>When should you use it?</h2>
-    <p>
+    <p><b>Continuous delivery</b>: Producing software in short cycles with high speed and frequency so that reliable software can be released at any time, with a simple and repeatable deployment process when deciding to deploy.</p>
+    <p><b>Continuous integration</b>: Frequent merging of several small changes into a main branch.</p>
 
-    </p>
 
     <h2>Problems</h2>
     <ul>
@@ -33,6 +32,7 @@ include 'template/header.php';
     <h2>Links</h2>
     <ul>
         <li><a href="https://en.wikipedia.org/wiki/Software_deployment">Wikipedia on deployment<a>
+        <li><a href="https://en.wikipedia.org/wiki/CI/CD">Wikipedia on CI/CD</a>
     </ul>
     </section>
 
