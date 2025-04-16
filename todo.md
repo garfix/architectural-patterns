@@ -1,9 +1,5 @@
 Just some ideas
 
-containerization
-programming paradigm: imperative / logic / declarative
-data retrieval: sql graphql
-
 ## problem solving
 
 * Markov Decision Process
@@ -19,6 +15,7 @@ data retrieval: sql graphql
   * relational
   * sparse distributed
   * NoSQL
+  * data retrieval: sql graphql
 
 ## More
 
@@ -32,24 +29,10 @@ data retrieval: sql graphql
 
 https://uxdesign.cc/how-to-pick-colors-for-your-app-without-a-struggle-bc46c5e19574
 
-## graphics
-
-done
-
-## data
-
-* Object-Relational Mapping
-* https://en.wikipedia.org/wiki/Data_mapper_pattern
-* https://en.wikipedia.org/wiki/Active_record_pattern
-
 ## programming
 
 * mutable (functional) locks -> Immutability
-* dependency inversion (polymorphism)
 
-## module
-
-* module: cohesive combination of functions and data
 
 ## and ...
 * software metrics / code complexity

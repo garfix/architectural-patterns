@@ -21,7 +21,8 @@ include 'template/header.php';
 
     <h2>Examples</h2>
     <ul>
-        <li>LLM (ChatGPT, Claude)
+        <li>LLM, Large Language Model (ChatGPT, Claude)
+        <li>Image (Dall-E)
         <li>Video (SORA)
         <li>OpenAI LangChain / LangGraph
     </ul>
@@ -31,11 +32,13 @@ include 'template/header.php';
     Gen AI is useful in application development, but we're mainly focusing here on the use of Gen AI as part of the application itself. Such an application can
     </p>
     <ul>
-        <li>Act like a chatbot
-        <li>Do text summarization
-        <li>Do text/document retrieval based on a description rather than just text matching
-        <li>Help a developer to write code and design an application
-        <li>Be made to do limited database queries
+        <li>Act as a customer support chatbot, virtual agent, or shopping assistent
+        <li>Do text summarization and content creation for marketing, health care, and news media
+        <li>Text translation
+        <li>Fraud detection and compliance
+        <li>Do text/document retrieval based on a description rather than just text matching (also for private client documents, using RAG (Retrieval Augmented Generation))
+        <li>Help a developer write better code and design an application
+        <li>Perform simple database queries
         <li>Act like a software agent, using text prompts in stead of function calls
         <li>Multiple Gen AI agents can work together as a multi agent system to perform business tasks
     </ul>
@@ -44,7 +47,7 @@ include 'template/header.php';
     <ul>
         <li>A Gen AI agent isn't deterministic: it acts differently next time (although it can be fixed)
         <li>Programming a computer using natural language less precise than using a programming language
-        <li>Telling a Gen AI agent what to do is slower than doing it directly
+        <li>Telling a Gen AI agent what to do is slower than doing it directly, and much more expensive
     </ul>
 
     <h2>Links</h2>

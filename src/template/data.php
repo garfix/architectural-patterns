@@ -7,7 +7,8 @@ const CAT_PRESENTATION = 'presentation';
 const CAT_ANIMATION = 'animation';
 const CAT_SYSTEMS = 'systems';
 const CAT_SYSTEMS_COMPOSITION = 'system-composition';
-const CAT_PARADIGMS = 'paradigms';
+const CAT_LANGUAGE_FEATURES = 'language-features';
+const CAT_ARCHITECTURAL_PARADIGMS = 'architectural-paradigms';
 const CAT_DATA = 'data-patterns';
 const CAT_DATA_FORMAT = 'data-format';
 const CAT_DATA_LOCKING = 'data-locking';
@@ -31,10 +32,11 @@ const CAT_UX = 'ux';
 
 $pages = [
     "Code structure" => [
+        CAT_LANGUAGE_FEATURES,
         CAT_CLASS,
         CAT_MODULES,
         CAT_SYSTEMS,
-        CAT_PARADIGMS,
+        CAT_ARCHITECTURAL_PARADIGMS,
     ],
     "Code purpose" => [
         CAT_LOGIC,
@@ -61,7 +63,10 @@ $categories = [
     ["code" => CAT_SYSTEMS_COMPOSITION, "name" => 'Composition',
         "description" => "Straightforward systems",
         "patterns" => ["Smart-UI", "Document-View", "Microkernel", "Software Framework"]],
-    ["code" => CAT_PARADIGMS, "name" => 'Paradigms',
+    ["code" => CAT_LANGUAGE_FEATURES, "name" => 'Language Features',
+        "description" => "Discriminative programming language features. Most features like variables, loops and if/then statements are available in (almost) all languages. But others are specific to just one or two languages. If such feature is essential to your application, you may need to choose a language that supports it. And some features you may actually want to avoid.",
+        "patterns" => ["Type system features", "Syntax features", "Data & Memory features", "Function features", "Object Oriented features", "Functional programming features", "Reactive programming features", "Error handling features", "Concurrency features", "Miscellaneous features"]],
+    ["code" => CAT_ARCHITECTURAL_PARADIGMS, "name" => 'Architectural Paradigms',
         "description" => "Perspectives on how a system should be structured, based on what's perceived most important: ease-of-development, testability, or understandability",
         "patterns" => ["Traditional Model-View-Controller", "Model-View-Adapter", "Model-View-Viewmodel", "Hierarchical MVC", "Entity-Control-Boundary", "Hexagonal Architecture", "Data-Context-Interaction"]],
     ["code" => CAT_MODULES, "name" => 'Modules',
@@ -824,7 +829,59 @@ $patterns = [
         "keywords" => "Docker, Kubernetes",
         "image" => "containerization.drawio.png",
         "link" => "containerization"
+    ],
+    [
+        "name" => "Type system features",
+        "image" => "type-system-features.drawio.png",
+        "link" => "type-system-features"
+    ],
+    [
+        "name" => "Syntax features",
+        "image" => "syntax-features.drawio.png",
+        "link" => "syntax-features"
+    ],
+    [
+        "name" => "Data & Memory features",
+        "image" => "data-memory-features.drawio.png",
+        "link" => "data-memory-features"
+    ],
+    [
+        "name" => "Function features",
+        "image" => "function-features.drawio.png",
+        "link" => "function-features"
+    ],
+    [
+        "name" => "Object Oriented features",
+        "image" => "object-oriented-features.drawio.png",
+        "link" => "object-oriented-features"
+    ],
+    [
+        "name" => "Functional programming features",
+        "image" => "functional-programming-features.drawio.png",
+        "link" => "functional-programming-features"
+    ],
+    [
+        "name" => "Reactive programming features",
+        "image" => "reactive-programming-features.drawio.png",
+        "link" => "reactive-programming-features"
+    ],
+    [
+        "name" => "Error handling features",
+        "image" => "error-handling-features.drawio.png",
+        "link" => "error-handling-features"
+    ],
+    [
+        "name" => "Concurrency features",
+        "keywords" => "Parallellism",
+        "image" => "concurrency-features.drawio.png",
+        "link" => "concurrency-features"
+    ],
+    [
+        "name" => "Miscellaneous features",
+        "image" => "miscellaneous-features.drawio.png",
+        "link" => "miscellaneous-features"
     ]
+
 
 ];
 

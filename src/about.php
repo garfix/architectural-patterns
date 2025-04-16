@@ -13,7 +13,7 @@ include 'template/header.php';
         <h2>Change history</h2>
     </header>
     <p>
-        <b>2025-04-12</b> Renamed "General" to "Code structure", and "Topics" to "Code purpose". Moved "Code conventions" to "Cross-cutting concerns". Moved "Types of code" to "Code structure". Added <a href="gen-ai">Gen AI</a> and <a href="orm">ORM</a>.
+        <b>2025-04-12</b> Renamed "General" to "Code structure", and "Topics" to "Code purpose". Moved "Code conventions" to "Cross-cutting concerns". Moved "Types of code" to "Code structure". Added <a href="gen-ai">Gen AI</a>, <a href="containerization">Containerization</a>, <a href="orm">ORM</a> and <a href="language-features">Language features</a>.
     </p>
     <p>
         <b>2024-12-02</b> Added <a href="license">License</a> to <a href="app-environment">App environment</a>
