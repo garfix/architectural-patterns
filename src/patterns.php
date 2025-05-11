@@ -6,7 +6,7 @@ include 'template/header.php';
 
 <section class="pattern-overview">
     <header class="major">
-        <h2>All patterns</h2>
+        <h2>Pattern grid</h2>
     </header>
     <p>An overview of all <?= count($sortedPatterns) ?> patterns cataloged on this site</p>
     <div class="posts">

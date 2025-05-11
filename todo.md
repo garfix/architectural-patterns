@@ -12,6 +12,7 @@ Just some ideas
 
 ## data
 
+  * graph database
   * relational
   * sparse distributed
   * NoSQL

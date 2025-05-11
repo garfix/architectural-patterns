@@ -54,7 +54,7 @@ $pages = [
 
 $categories = [
     ["code" => CAT_LOGIC, "name" => 'Types of code',
-        "description" => "The different types of code that are architecturally relevant. The idea is that every line of code falls in one of these categories. In a simple project all kinds are used in the same functions, files, and modules. A medium sized project could profit from separating some of these types in separate classes or layers. A large project can seriously benefit from separating all of them.",
+        "description" => "The types of code that are architecturally relevant. The idea is that every line of code falls in one of these categories. In a simple project all kinds are used in the same functions, files, and modules. A medium sized project could profit from separating some of these types in separate classes or layers. A large project can seriously benefit from separating all of them.",
         "patterns" => ["Business Logic", "Application Logic", "User Interface", "Presentation Logic", "Data Access Logic", "Tests"]],
     ["code" => CAT_SYSTEMS, "name" => 'Systems',
         "description" => "Patterns that form the most basic structure of the system",
@@ -65,7 +65,7 @@ $categories = [
         "patterns" => ["Smart-UI", "Document-View", "Microkernel", "Software Framework"]],
     ["code" => CAT_LANGUAGE_FEATURES, "name" => 'Language Features',
         "description" => "Discriminative programming language features. Most features like variables, loops and if/then statements are available in (almost) all languages. But others are specific to just one or two languages. If such feature is essential to your application, you may need to choose a language that supports it. And some features you may actually want to avoid.",
-        "patterns" => ["Type system features", "Syntax features", "Data & Memory features", "Function features", "Object Oriented features", "Functional programming features", "Reactive programming features", "Error handling features", "Concurrency features", "Miscellaneous features"]],
+        "patterns" => ["Type system features", "Syntax features", "Data & Memory features", "Function features", "Object Oriented Programming features", "Functional programming features", "Reactive programming features", "Error handling features", "Concurrency features", "Miscellaneous features"]],
     ["code" => CAT_ARCHITECTURAL_PARADIGMS, "name" => 'Architectural Paradigms',
         "description" => "Perspectives on how a system should be structured, based on what's perceived most important: ease-of-development, testability, or understandability",
         "patterns" => ["Traditional Model-View-Controller", "Model-View-Adapter", "Model-View-Viewmodel", "Hierarchical MVC", "Entity-Control-Boundary", "Hexagonal Architecture", "Data-Context-Interaction"]],
@@ -851,9 +851,9 @@ $patterns = [
         "link" => "function-features"
     ],
     [
-        "name" => "Object Oriented features",
+        "name" => "Object Oriented Programming features",
         "image" => "object-oriented-features.drawio.png",
-        "link" => "object-oriented-features"
+        "link" => "object-oriented-programming-features"
     ],
     [
         "name" => "Functional programming features",
@@ -863,7 +863,7 @@ $patterns = [
     [
         "name" => "Reactive programming features",
         "image" => "reactive-programming-features.drawio.png",
-        "link" => "reactive-programming-features"
+        "link" => "reactive-programming-programming-features"
     ],
     [
         "name" => "Error handling features",

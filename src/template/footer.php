@@ -22,7 +22,8 @@
                                         </ul>
                                     <?php endforeach ?>
                                 </li>
-                                <li><a href="patterns">All patterns</a></li>
+                                <li><a href="pattern-tree">Pattern tree</a></li>
+                                <li><a href="patterns">Pattern grid</a></li>
                                 <li><a href="about">About</a></li>
                             </ul>
                         </nav>

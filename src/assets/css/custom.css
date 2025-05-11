@@ -46,6 +46,22 @@ section.pattern-overview {
     top: 30rem;
 }
 
+li.c0::marker {
+    content: "🙟 ";
+}
+
+li.c1::marker {
+    content: "🜂 ";
+}
+
+.pattern-tree h3 {
+    color: red;
+}
+
+.pattern-tree h5 {
+    color: gray;
+}
+
 @media screen and (max-width: 1600px) {
     .pattern-image {
         display: none;
