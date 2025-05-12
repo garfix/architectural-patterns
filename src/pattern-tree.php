@@ -8,6 +8,13 @@ function showPattern($patternName) {
 ?>
 <a href="<?= $pattern['link'] ?>"><?= $pattern['name'] ?></a>
 <?php
+    if ($pattern['keywords']) {
+?>
+&nbsp;( <?= $pattern['keywords'] ?> )
+<?php
+    }
+?>
+<?php
 }
 
 function showCategory($catCode, $level) {
@@ -44,7 +51,7 @@ function showPage($page, $catCodes) {
 
 <section class="pattern-overview">
     <header class="major">
-        <h2>Pattern tree</h2>
+        <h2>A hierarchy of patterns</h2>
     </header>
     <p>An overview of all <?= count($sortedPatterns) ?> patterns cataloged on this site</p>
     <div class="pattern-tree">
