@@ -1,5 +1,7 @@
 Just some ideas
 
+add graphql and sql to data interaction
+
 ## problem solving
 
 * Markov Decision Process

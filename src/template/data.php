@@ -11,6 +11,8 @@ const CAT_LANGUAGE_FEATURES = 'language-features';
 const CAT_ARCHITECTURAL_PARADIGMS = 'architectural-paradigms';
 const CAT_DATA = 'data-patterns';
 const CAT_DATA_FORMAT = 'data-format';
+const CAT_DATA_INTERACTION = 'data-interaction';
+const CAT_DATA_STORE = 'data-store';
 const CAT_DATA_LOCKING = 'data-locking';
 const CAT_PROBLEM_SOLVING = 'problem-solving';
 const CAT_CROSS_CUTTING = 'cross-cutting-concerns';
@@ -100,11 +102,17 @@ $categories = [
         "patterns" => ["Algorithm", "Heuristic", "Search", "Inference Engine", "Planning", "Decision Tree Learning", "Neural Network", "Generative AI", "Agent", "Multi-Agent System", "Blackboard", "Process Control", "Explainability"]],
     ["code" => CAT_DATA, "name" => 'Data',
         "description" => "Patterns that focus on the data of the application",
-        "children" => [CAT_DATA_FORMAT, CAT_DATA_LOCKING],
-        "patterns" => ["Repository", "Event Sourcing", "Snapshot Sequence", "CQRS", "Index", "Cache", "Transaction", "Undo", "ETL", "Data Warehouse", "Data Cube", "Entity-Component-System", "Data Synchronization", "ORM"]],
+        "children" => [CAT_DATA_STORE, CAT_DATA_INTERACTION, CAT_DATA_FORMAT, CAT_DATA_LOCKING],
+        "patterns" => ["Event Sourcing", "Snapshot Sequence", "CQRS", "Index", "Cache", "Transaction", "Undo", "ETL", "Entity-Component-System", "Data Synchronization"]],
     ["code" => CAT_DATA_FORMAT, "name" => "Data formats",
         "description" => "Standard formats of data types",
         "patterns" => ["UNICODE", "Standardized Date Format", "Coordinated Universal Time"]],
+    ["code" => CAT_DATA_STORE, "name" => "Data storage",
+        "description" => "How data is stored",
+        "patterns" => ["Repository", "Data Warehouse", "Data Cube"]],
+    ["code" => CAT_DATA_INTERACTION, "name" => "Data interaction",
+        "description" => "Ways of reading and writing data",
+        "patterns" => ["ORM"]],
     ["code" => CAT_DATA_LOCKING, "name" => "Locking",
         "description" => "Handling concurrent access to data",
         "patterns" => ["Optimistic Locking", "Pessimistic Locking"]],
@@ -851,7 +859,7 @@ $patterns = [
     ],
     [
         "name" => "Object Oriented Programming features",
-        "image" => "object-oriented-features.drawio.png",
+        "image" => "object-oriented-programming-features.drawio.png",
         "link" => "object-oriented-programming-features"
     ],
     [
