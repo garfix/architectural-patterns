@@ -27,11 +27,15 @@ include 'template/header.php';
     </p>
     <h2>Paragraphs</h2>
     <p>
-        Use either serif or sans-serif fonts for paragraphs of text. Common typefaces are Helvetica, Arial, Georgia, Times New Roman and Calibri. A font size of 16px is considered the minimum for readability. 18px is a common size. A line length of 60 to 80 characters is recommended for readability.
+        Use either serif or sans-serif fonts for paragraphs of text. Common typefaces are Helvetica, Arial, Georgia, Times New Roman and Calibri. A font size of 16px is considered a good minimum for readability. A line length of 60 to 80 characters is recommended for readability. A line height of 150% is good for readability in a paragraph.
+    </p>
+    <h2>User preference</h2>
+    <p>
+        Users that have difficulty reading small fonts like to set their own preferred font size in your application or browser to <b>larger</b> or <b>extra large</b>. In your application you should work with this selected font size rather than some fixed font size. <b>1rem</b> would result in 16px in a standard browser, but 20px for a browser set to larger. To make a section smaller than the default website font (i.e. 14px instead of 16px), use <b>0.875rem</b> for that section. This makes the font 14px for typical reading users, but larger for users that changed their browser default.
     </p>
     <h2>Headers</h2>
     <p>
-        Use a paragraph font or a slab serif font (A slab serif font is a serif font where the serif is squared off). The size is at least a few pixels higher than the paragraph font.
+        Use a paragraph font or a slab serif font (A slab serif font is a serif font where the serif is squared off). The size is at least a few pixels higher than the paragraph font. Headers may use a line height less than 150%.
     </p>
     <h2>Components</h2>
     <p>
