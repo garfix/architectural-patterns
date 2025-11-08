@@ -39,7 +39,7 @@ function showBlock($p) {
 <article>
     <a href="<?= $p['link'] ?>" class="image"><img src="images/<?= $p['image'] ?>"></a>
     <h3><?= $p['name']?></h3>
-    <p><?= $p['keywords']?></p>
+    <p><?= isset($p['keywords']) ? $p['keywords'] : "" ?></p>
     <ul class="actions">
         <li><a href="<?= $p['link']?>" class="button">Show</a></li>
     </ul>
