@@ -8,7 +8,7 @@ function showPattern($patternName) {
 ?>
 <a href="<?= $pattern['link'] ?>"><?= $pattern['name'] ?></a>
 <?php
-    if ($pattern['keywords']) {
+    if (isset($pattern['keywords'])) {
 ?>
 &nbsp;( <?= $pattern['keywords'] ?> )
 <?php
