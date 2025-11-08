@@ -19,7 +19,7 @@ function showPattern($patternName) {
 
 function showCategory($catCode, $level) {
     $category = getCategoryByCode($catCode);
-    $h = "h" + ($level + 3)
+    $h = "h" . ($level + 3)
 ?>
     <h<?= $h ?>><?= $category['name'] ?></h<?= $h ?>>
     <p><?= $category['description'] ?></p>
