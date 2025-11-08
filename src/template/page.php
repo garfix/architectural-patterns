@@ -2,7 +2,7 @@
 $category = getCategoryByCode($page);
 $title = $category['name'];
 include 'template/header.php';
-$children = $category['children'] ? $category['children'] : [];
+$children = !empty($category['children']) ? $category['children'] : [];
 $mainBlocks = [];
 foreach ($patterns as $p) {
     if (isset($p['categories']) && in_array($category['code'], $p['categories'])) {
