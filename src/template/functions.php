@@ -28,7 +28,7 @@ function showHeader($pattern) {
 
 <header class="content">
     <h1><?= $pattern['name'] ?></h1>
-    <p><?= $pattern['keywords'] ?></p>
+    <p><?= isset($p['keywords']) ? $p['keywords'] : "" ?></p>
 </header>
 
 <?php
