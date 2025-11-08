@@ -29,9 +29,11 @@ function showCategory($catCode, $level) {
         <?php endforeach ?>
     </ul>
     <ul>
+        <?php if (isset($category['children'])): ?>
         <?php foreach ($category['children'] as $childCatCode): ?>
         <li class="c<?= $level ?>"><?php showCategory($childCatCode, $level + 1)?></li>
         <?php endforeach ?>
+        <?php endif ?>
     </ul>
 <?php
 }
