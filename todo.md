@@ -1,12 +1,16 @@
 Just some ideas
 
-add graphql and sql to data interaction
-
 ## problem solving
 
 * Markov Decision Process
 * genetic algorithms
-* support vector machines
+
+support vector machines
+- linear/nonlinear classification, regression, novelty detection
+- small to medium sized nonlinear datasets (100s - 1000s instances) for classification
+
+decision trees
+- classification, regression
 
 ## cross cutting
 
@@ -18,7 +22,10 @@ add graphql and sql to data interaction
   * relational
   * sparse distributed
   * NoSQL
-  * data retrieval: sql graphql
+
+data interaction
+
+  * sql, graphql
 
 ## More
 
@@ -27,6 +34,9 @@ add graphql and sql to data interaction
 * categories
 
 ## UI
+
+design system
+https://en.wikipedia.org/wiki/Design_system
 
 * responsive design
 

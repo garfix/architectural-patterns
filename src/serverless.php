@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>The number of active servers depends on the load, and the number may actually be zero.</dd>
     </dl>
 
-    <figure><img src="images/load-balancing.drawio.png"><figcaption>Load balancing architecture diagram</figcaption></figure>
+    <figure><img src="images/serverless.drawio.png"><figcaption>Serverless architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>
