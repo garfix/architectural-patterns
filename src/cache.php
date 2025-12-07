@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Store the result of a heavy request in order to serve it immediately in the following requests.</dd>
     </dl>
 
-    <figure><img src="images/caching.drawio.png"><figcaption>Caching architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/caching.drawio.png"><figcaption>Caching architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Rules governing the composition of ui elements on a page</dd>
     </dl>
 
-    <figure><img src="images/page-layout.drawio.png"><figcaption>Page layout</figcaption></figure>
+    <figure><img alt="" src="images/page-layout.drawio.png"><figcaption>Page layout</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

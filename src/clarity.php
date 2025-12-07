@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>The user interface should be easy to understand</dd>
     </dl>
 
-    <figure><img src="images/clarity.drawio.png"><figcaption>Clarity</figcaption></figure>
+    <figure><img alt="" src="images/clarity.drawio.png"><figcaption>Clarity</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

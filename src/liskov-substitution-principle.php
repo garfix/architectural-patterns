@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Any subtype S of T must be designed in a way that it can be used predictably in any function that expects T.</dd>
     </dl>
 
-    <figure><img src="images/lsp.drawio.png"><figcaption>Liskov Substitution Principle</figcaption></figure>
+    <figure><img alt="" src="images/lsp.drawio.png"><figcaption>Liskov Substitution Principle</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

@@ -16,7 +16,7 @@ include 'template/header.php';
         This is the oldest UI pattern. Its original strength was the separation of model, view, and controller. But since there's now also the <a href="model-view-adapter">Model-View-Adapter</a> pattern, its distinguishing feature is the fact that the view reads from the model.  It's still used by simple web applications where the view accesses the database in order to find the information to display.
     </p>
 
-    <figure><img src="images/model-view-controller.drawio.png"><figcaption>Model-View-Controller architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/model-view-controller.drawio.png"><figcaption>Model-View-Controller architecture diagram</figcaption></figure>
 
     <p>
         The <b>model</b> contains the data and the domain logic of the application.

@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Language structures implementing the functional programming paradigm</dd>
     </dl>
 
-    <figure><img src="images/functional-programming-features.drawio.png"></figure>
+    <figure><img alt="" src="images/functional-programming-features.drawio.png"></figure>
 
     <h2>Features</h2>
     <p><strong>Immutability</strong> (<code>Haskell</code>, <code>Scala</code>, <code>Elixir</code>, <code>Clojure</code>, <code>Rust</code>) Once created, values cannot be changed, reducing side effects.</p>

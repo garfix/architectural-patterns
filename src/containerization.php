@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Make each application of the solution run in its own isolated space, and declare its build structure.</dd>
     </dl>
 
-    <figure><img src="images/containerization.drawio.png"><figcaption>Containerization</figcaption></figure>
+    <figure><img alt="" src="images/containerization.drawio.png"><figcaption>Containerization</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

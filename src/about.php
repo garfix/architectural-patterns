@@ -163,7 +163,7 @@ include 'template/header.php';
     <p>
         The span of the website expanded from "list all known architectural patterns", via "list all patterns that seem to have the same gist as these known patterns" to "categorize all patterns I see as architectural in scope", and ended up in "all application-wide software techniques and deliverables". The latter is still in line with the original aim: to help the software developer in their quest to create an original application.
     </p>
-    <figure><img src="images/old-site.png"><figcaption>The header of the old website</figcaption></figure>
+    <figure><img alt="" src="images/old-site.png"><figcaption>The header of the old website</figcaption></figure>
 </section>
 
 <section>

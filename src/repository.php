@@ -20,7 +20,7 @@ include 'template/header.php';
     The repository pattern is commonly implemented as a <em>database management system</em> (DBMS). The DBMS can provide a domain specific language, <a href="https://en.wikipedia.org/wiki/ACID">ACID</a>, transactions, backup and restore, access  management, and much more.
     </p>
 
-    <figure><img src="images/database.drawio.png"><figcaption>Repository architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/database.drawio.png"><figcaption>Repository architecture diagram</figcaption></figure>
 
     <h2>When should you use it?</h2>
     <p>Use it when the data of your application is a goal in itself, or when its too costly to transfer the data all the time.</p>

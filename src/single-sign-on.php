@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>A central identity server that provides authentication to all servers in a domain.</dd>
     </dl>
 
-    <figure><img src="images/single-sign-on.drawio.png"><figcaption>Single Sign-on architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/single-sign-on.drawio.png"><figcaption>Single Sign-on architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

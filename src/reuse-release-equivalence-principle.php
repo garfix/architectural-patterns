@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Functionality should be grouped together in a way that makes most sense in a release</dd>
     </dl>
 
-    <figure><img src="images/reuse-release-equivalence-principle.drawio.png"><figcaption>Reuse/Release Equivalence Principle</figcaption></figure>
+    <figure><img alt="" src="images/reuse-release-equivalence-principle.drawio.png"><figcaption>Reuse/Release Equivalence Principle</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

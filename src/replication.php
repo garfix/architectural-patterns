@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Having a pool of identical data base servers, each holding a copy of the data, and synchronizing the data between replicas.</dd>
     </dl>
 
-    <figure><img src="images/replication.drawio.png"><figcaption>Data Replication architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/replication.drawio.png"><figcaption>Data Replication architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

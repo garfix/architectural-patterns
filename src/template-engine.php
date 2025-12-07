@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Software designed to generate a concrete user interface from an abstract template. The template contains the components of the ui and has placeholders for the data</dd>
     </dl>
 
-    <figure><img src="images/template-engine.drawio.png"><figcaption>Template Engine</figcaption></figure>
+    <figure><img alt="" src="images/template-engine.drawio.png"><figcaption>Template Engine</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

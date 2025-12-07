@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Prepares data going in and coming out of the database</dd>
     </dl>
 
-    <figure><img src="images/data-access-logic.drawio.png"><figcaption>Data Access Logic</figcaption></figure>
+    <figure><img alt="" src="images/data-access-logic.drawio.png"><figcaption>Data Access Logic</figcaption></figure>
 
     <p>Data access logic is part of the Model in MVC, and Boundary in ECB</p>
 

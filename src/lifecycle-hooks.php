@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>The framework allows the application to hook into the state transitions of a component with custom functions</dd>
     </dl>
 
-    <figure><img src="images/lifecycle-hooks.drawio.png"><figcaption>Lifecycle Hooks</figcaption></figure>
+    <figure><img alt="" src="images/lifecycle-hooks.drawio.png"><figcaption>Lifecycle Hooks</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

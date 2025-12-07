@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Language structures related to functions</dd>
     </dl>
 
-    <figure><img src="images/function-features.drawio.png"></figure>
+    <figure><img alt="" src="images/function-features.drawio.png"></figure>
 
     <h2>Features</h2>
     <p><strong>First-Class Functions</strong> (<code>JavaScript</code>, <code>Python</code>, <code>Haskell</code>, <code>Scala</code>, <code>Swift</code>) Functions are treated like values that can be passed, returned, or assigned.</p>

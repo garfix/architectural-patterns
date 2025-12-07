@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>A module should be as abstract as it is stable</dd>
     </dl>
 
-    <figure><img src="images/stable-abstractions-principle.drawio.png"><figcaption>Stable Abstractions Principle</figcaption></figure>
+    <figure><img alt="" src="images/stable-abstractions-principle.drawio.png"><figcaption>Stable Abstractions Principle</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

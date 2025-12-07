@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Business logic implements the entities and critical business rules of an organization.</dd>
     </dl>
 
-    <figure><img src="images/business-logic.drawio.png"><figcaption>Business Logic</figcaption></figure>
+    <figure><img alt="" src="images/business-logic.drawio.png"><figcaption>Business Logic</figcaption></figure>
 
     <p>Business logic is part of the Model in MVC, and Entity in ECB</p>
 

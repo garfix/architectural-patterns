@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>An application that finds and executes rules to solve a problem.</dd>
     </dl>
 
-    <figure><img src="images/rule-based.drawio.png"><figcaption>Inference engine architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/rule-based.drawio.png"><figcaption>Inference engine architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

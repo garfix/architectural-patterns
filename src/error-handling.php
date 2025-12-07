@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>When an error occurs, this is communicated to the user.</dd>
     </dl>
 
-    <figure><img src="images/error-handling.drawio.png"><figcaption>Error handling architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/error-handling.drawio.png"><figcaption>Error handling architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

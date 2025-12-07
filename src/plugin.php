@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>The application can be extended by code modules by third parties.</dd>
     </dl>
 
-    <figure><img src="images/plugin.drawio.png"><figcaption>Plugin architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/plugin.drawio.png"><figcaption>Plugin architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

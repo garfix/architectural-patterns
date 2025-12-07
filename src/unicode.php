@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>A standardized representation of text</dd>
     </dl>
 
-    <figure><img src="images/unicode.drawio.png"><figcaption>Unicode</figcaption></figure>
+    <figure><img alt="" src="images/unicode.drawio.png"><figcaption>Unicode</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>An aggregate that represents a database query and allows it to be composed programmatically</dd>
     </dl>
 
-    <figure><img src="images/query-object.drawio.png"><figcaption>Query Object</figcaption></figure>
+    <figure><img alt="" src="images/query-object.drawio.png"><figcaption>Query Object</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

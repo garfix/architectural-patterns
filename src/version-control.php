@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Storing all revisions of a piece of software, along with the connections between each revision and its predecessor</dd>
     </dl>
 
-    <figure><img src="images/version-control.drawio.png"><figcaption>Version Control</figcaption></figure>
+    <figure><img alt="" src="images/version-control.drawio.png"><figcaption>Version Control</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

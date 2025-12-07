@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Leave a trail of information, warnings, and errors as they occur in an external document that can be inspected later.</dd>
     </dl>
 
-    <figure><img src="images/logging.drawio.png"><figcaption>Logging architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/logging.drawio.png"><figcaption>Logging architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

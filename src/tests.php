@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Code that tests the other types of code</dd>
     </dl>
 
-    <figure><img src="images/tests.drawio.png"><figcaption>Tests</figcaption></figure>
+    <figure><img alt="" src="images/tests.drawio.png"><figcaption>Tests</figcaption></figure>
 
     <h2>Examples</h2>
     <ul>

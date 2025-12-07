@@ -5,7 +5,7 @@ include 'template/header.php';
 ?>
 
 <section class="home-section">
-    <img src="images/pattern-image.drawio.png" class="pattern-image" />
+    <img alt="" src="images/pattern-image.drawio.png" class="pattern-image" />
 
     <header class="content">
         <h1>About architectural patterns</h1>
@@ -32,7 +32,7 @@ include 'template/header.php';
         Nijmegen, November 2023
     </p>
     <p>
-        <center><img src="images/dragon.jpg" /></center>
+        <center><img alt="" src="images/dragon.jpg" /></center>
     </p>
 
 </section>

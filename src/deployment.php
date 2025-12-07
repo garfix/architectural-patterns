@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Preparing and moving the application from the repository to the application server</dd>
     </dl>
 
-    <figure><img src="images/deployment.drawio.png"><figcaption>Deployment</figcaption></figure>
+    <figure><img alt="" src="images/deployment.drawio.png"><figcaption>Deployment</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

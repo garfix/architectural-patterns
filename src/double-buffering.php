@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Use an offline graphics buffer to compose the next animation frame</dd>
     </dl>
 
-    <figure><img src="images/double-buffering.drawio.png"><figcaption>Double buffering</figcaption></figure>
+    <figure><img alt="" src="images/double-buffering.drawio.png"><figcaption>Double buffering</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

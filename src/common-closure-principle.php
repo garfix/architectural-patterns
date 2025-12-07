@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Gather functionality in a module that changes for the same reasons and at the same time.</dd>
     </dl>
 
-    <figure><img src="images/common-closure-principle.drawio.png"><figcaption>Common Closure Principle</figcaption></figure>
+    <figure><img alt="" src="images/common-closure-principle.drawio.png"><figcaption>Common Closure Principle</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

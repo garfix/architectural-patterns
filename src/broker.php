@@ -21,7 +21,7 @@ include 'template/header.php';
         Services are registered with the broker. The client requests a specific service: they format their request in a specific format and send it to the broker. The broker then selects the service to process the request. The broker sends the service's response back to the client.
     </p>
 
-    <figure><img src="images/broker.drawio.png"><figcaption>Broker architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/broker.drawio.png"><figcaption>Broker architecture diagram</figcaption></figure>
 
     <h2>Variants</h2>
     <p>

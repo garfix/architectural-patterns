@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>An ordered list of all complete system states</dd>
     </dl>
 
-    <figure><img src="images/snapshot.drawio.png"><figcaption>Snapshot Sequence</figcaption></figure>
+    <figure><img alt="" src="images/snapshot.drawio.png"><figcaption>Snapshot Sequence</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

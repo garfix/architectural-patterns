@@ -21,7 +21,7 @@ include 'template/header.php';
         every allowable transition between any two states.
     </p>
 
-    <figure><img src="images/fsm_1.jpg"><figcaption>A Finite State Machine example</figcaption></figure>
+    <figure><img alt="" src="images/fsm_1.jpg"><figcaption>A Finite State Machine example</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>
@@ -46,7 +46,7 @@ include 'template/header.php';
     <p>
         Next, the FSM execution engine. The central component is a processor that's just idle, until it is triggered by some outside event, like a timer. When that happens, it looks at the current state and checks if the trigger causes a transition. If so, the new state becomes active and the new state's code is executed. This code may trigger an immediate state change.
 
-    <figure><img src="images/fsm.drawio.png"><figcaption>Finite State Machine architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/fsm.drawio.png"><figcaption>Finite State Machine architecture diagram</figcaption></figure>
 
     <p>
         Remarks:
@@ -91,7 +91,7 @@ include 'template/header.php';
         </ol>
     </p>
 
-    <figure><img src="images/fsm_2.jpg"><figcaption>Hierarchical Finite State Machine diagram</figcaption></figure>
+    <figure><img alt="" src="images/fsm_2.jpg"><figcaption>Hierarchical Finite State Machine diagram</figcaption></figure>
 
     <p>
         It is even possible to have more than one Finite State Machine in a single state. These all become

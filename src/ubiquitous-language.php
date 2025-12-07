@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>The language used by experts and users is reflected in the names of classes and methods.</dd>
     </dl>
 
-    <figure><img src="images/ubiquitous-language.drawio.png"><figcaption>Ubiquitous Language</figcaption></figure>
+    <figure><img alt="" src="images/ubiquitous-language.drawio.png"><figcaption>Ubiquitous Language</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

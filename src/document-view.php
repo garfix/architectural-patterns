@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>A single class provides both model and controller logic, and model logic is separated</dd>
     </dl>
 
-    <figure><img src="images/document-view.drawio.png"><figcaption>Caching architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/document-view.drawio.png"><figcaption>Caching architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Code that tests that the user interface of the application.</dd>
     </dl>
 
-    <figure><img src="images/frontend-tests.drawio.png"><figcaption>Functional tests</figcaption></figure>
+    <figure><img alt="" src="images/frontend-tests.drawio.png"><figcaption>Functional tests</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

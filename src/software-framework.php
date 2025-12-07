@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>A platform for developing applications. It has a kernel with reusable tools and an extendible set of modules (applications).</dd>
     </dl>
 
-    <figure><img src="images/framework.drawio.png"><figcaption>Software Framework</figcaption></figure>
+    <figure><img alt="" src="images/framework.drawio.png"><figcaption>Software Framework</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

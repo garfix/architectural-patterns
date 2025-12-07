@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>The faculty of explaining to the user how a result was reached, or could not be reached</dd>
     </dl>
 
-    <figure><img src="images/explainability.drawio.png"><figcaption>Explainability</figcaption></figure>
+    <figure><img alt="" src="images/explainability.drawio.png"><figcaption>Explainability</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

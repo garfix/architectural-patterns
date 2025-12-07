@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Color influences mood and communicates function.</dd>
     </dl>
 
-    <figure><img src="images/color.drawio.png"><figcaption>Color</figcaption></figure>
+    <figure><img alt="" src="images/color.drawio.png"><figcaption>Color</figcaption></figure>
 
     <h2>Main, secondary and accent color</h2>
     <p>

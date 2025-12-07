@@ -16,7 +16,7 @@ include 'template/header.php';
         This pattern is mainly used to for media sharing: video, games, books. Each media item is located on one or more servers, and servers can be added  and removed at will.
     </p>
 
-    <figure><img src="images/peer-to-peer.drawio.png"><figcaption>Peer to Peer architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/peer-to-peer.drawio.png"><figcaption>Peer to Peer architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

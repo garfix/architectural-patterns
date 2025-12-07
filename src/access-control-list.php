@@ -18,7 +18,7 @@ include 'template/header.php';
         "User" may also be user group, and this a collection of users.
     </p>
 
-    <figure><img src="images/access-control-list.drawio.png"><figcaption>Access Control List architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/access-control-list.drawio.png"><figcaption>Access Control List architecture diagram</figcaption></figure>
 
     <h2>Examples</h2>
     <ul>

@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Provide an explicit representation of the use case to make the purpose of code more understandable.</dd>
     </dl>
 
-    <figure><img src="images/data-context-interaction.drawio.png"><figcaption>Data-Context-Interaction architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/data-context-interaction.drawio.png"><figcaption>Data-Context-Interaction architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

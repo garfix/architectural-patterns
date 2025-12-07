@@ -16,13 +16,13 @@ include 'template/header.php';
         The goal of planning is a sequence of actions to perform in order to reach a goal. The actions are the leafs of a tree of goals and subgoals. These trees are built by the planning algorithm.
     </p>
 
-    <figure><img src="images/planning.drawio.png"><figcaption>Search architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/planning.drawio.png"><figcaption>Search architecture diagram</figcaption></figure>
 
     <p>
         Goal space is a specialization of <a href="search">search</a> space. The solution is a series of actions that fulfills the goal. Start with the goal. Find all rules that name the subgoals required to reach the goal. For each of these rules, make a copy of the goal and turn it into the root of a tree. The subgoals become the leafs of this tree. The trees are partial plans. Add them to the store of partial plans. Continue to take a partial plan, expand it by finding matching rules. When a plan does not need to be expanded anymore, it is finished and serves as a solution. When no rule can be found, the plan is discarded.
     </p>
 
-    <figure><img src="images/partial-plan.drawio.png"><figcaption>Partial plan</figcaption></figure>
+    <figure><img alt="" src="images/partial-plan.drawio.png"><figcaption>Partial plan</figcaption></figure>
 
     <h2>Examples</h2>
     <ul>

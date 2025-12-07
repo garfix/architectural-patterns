@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Code that tests the correctness of individual functions, modules, and the full system.</dd>
     </dl>
 
-    <figure><img src="images/functional-tests.drawio.png"><figcaption>Functional tests</figcaption></figure>
+    <figure><img alt="" src="images/functional-tests.drawio.png"><figcaption>Functional tests</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

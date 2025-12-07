@@ -16,13 +16,13 @@ include 'template/header.php';
         The neural network metaphore is based on the human nervous system that consists of neurons (nerve cells).
     </p>
 
-    <figure><img src="images/neural-network.drawio.png"><figcaption>Neural network architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/neural-network.drawio.png"><figcaption>Neural network architecture diagram</figcaption></figure>
 
     <p>
         Nodes are typically organized into multiple layers. Neurons of one layer connect only to neurons of the immediately preceding and immediately following layers. The layer that receives external data is the input layer. The layer that produces the ultimate result is the output layer. In between them are zero or more hidden layers. Between two layers, multiple connection patterns are possible. They can be 'fully connected', with every neuron in one layer connecting to every neuron in the next layer. They can be pooling, where a group of neurons in one layer connects to a single neuron in the next layer, thereby reducing the number of neurons in that layer.
     </p>
 
-    <figure><img src="images/neural-net.png"><figcaption>Example neural network - <a href="https://commons.wikimedia.org/wiki/File:Example_of_a_deep_neural_network.png">BrunelloN</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</figcaption></figure>
+    <figure><img alt="" src="images/neural-net.png"><figcaption>Example neural network - <a href="https://commons.wikimedia.org/wiki/File:Example_of_a_deep_neural_network.png">BrunelloN</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</figcaption></figure>
 
     <h2>Examples</h2>
     <ul>

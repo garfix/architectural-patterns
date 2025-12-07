@@ -15,7 +15,7 @@ include 'template/header.php';
         Without a license a software product is bound by copyright law. Only the maker of the software gets to decide who can copy it. The license is added by the maker to make their wishes with respect to copying, modification, and selling explict. Many standard licenses are available.
     </p>
 
-    <figure><img src="images/license.drawio.png"><figcaption>Search architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/license.drawio.png"><figcaption>Search architecture diagram</figcaption></figure>
 
     <h2>Examples</h2>
     <ul>

@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Defines how an in-memory object is stored in a database row and retrieved from that row</dd>
     </dl>
 
-    <figure><img src="images/orm.drawio.png"><figcaption>Object-Relational Mapping</figcaption></figure>
+    <figure><img alt="" src="images/orm.drawio.png"><figcaption>Object-Relational Mapping</figcaption></figure>
 
     <h2>When should you use it?</h2>
     <p>When business logic data is represented in objects which need to be stored in the database</p>

@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>An external service that checks the performance of the application.</dd>
     </dl>
 
-    <figure><img src="images/performance-monitoring.drawio.png"><figcaption>Performance Monitoring</figcaption></figure>
+    <figure><img alt="" src="images/performance-monitoring.drawio.png"><figcaption>Performance Monitoring</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

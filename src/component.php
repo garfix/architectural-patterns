@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>The smallest unit of deployment, with a well-defined API.</dd>
     </dl>
 
-    <figure><img src="images/component.drawio.png"><figcaption>Component architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/component.drawio.png"><figcaption>Component architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

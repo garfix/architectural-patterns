@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Make sure the incoming data has the correct type or format</dd>
     </dl>
 
-    <figure><img src="images/data-validation.drawio.png"><figcaption>Data validation</figcaption></figure>
+    <figure><img alt="" src="images/data-validation.drawio.png"><figcaption>Data validation</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

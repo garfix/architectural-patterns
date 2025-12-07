@@ -16,7 +16,7 @@ include 'template/header.php';
         This pattern collects documents, parses them and feeds the structured content into a data structure that is optimized for retrieval.
     </p>
 
-    <figure><img src="images/index.drawio.png"><figcaption>Indexing architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/index.drawio.png"><figcaption>Indexing architecture diagram</figcaption></figure>
 
     <p>
         The purpose of storing an index is to optimize speed and performance in finding relevant documents for a search query. Without an index, the search engine would scan every document in the corpus, which would require considerable time and computing power.

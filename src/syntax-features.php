@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Basic features to get things done</dd>
     </dl>
 
-    <figure><img src="images/syntax-features.drawio.png"></figure>
+    <figure><img alt="" src="images/syntax-features.drawio.png"></figure>
 
     <h2>Features</h2>
     <p><strong>Conditionals (<code>if</code>, <code>else</code>, <code>switch</code>)</strong> (<code>All major languages</code>) Basic decision-making structures to control flow based on conditions.</p>

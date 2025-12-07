@@ -18,7 +18,7 @@ include 'template/header.php';
         The blackboard metaphore is from a classroom situation. The teacher is solving a problem together with her students. She asks them for input. Multiple students raise their hand and one is picked by the teacher. The student approaches the blackboard and writes down some information that helps to advance the solution a bit. Then the next one is called. The students are <em>knowledge sources</em>. The teacher is the <em>scheduler</em>.
     </p>
 
-    <figure><img src="images/blackboard.drawio.png"><figcaption>Blackboard architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/blackboard.drawio.png"><figcaption>Blackboard architecture diagram</figcaption></figure>
 
     <p>
         The <b>Blackboard</b> is the common datastructure of the Knowledge Sources. The blackboard is able to represent
@@ -28,7 +28,7 @@ include 'template/header.php';
         are needed, the blackboard is divided into <b>panels</b>. Each panel in turn may contain several levels.
     </p>
 
-    <figure><img src="images/blackboard_3.jpg"><figcaption>Blackboard panels</figcaption></figure>
+    <figure><img alt="" src="images/blackboard_3.jpg"><figcaption>Blackboard panels</figcaption></figure>
     <p>
         The <b>Knowledge Source</b> is a component that adds to the solution of the problem. It may be anything that reads from
         some level of the blackboard and suggests some change to parts of the blackboard. Its most common form is the production rule.

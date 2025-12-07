@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Application logic implements the use cases of the application. It doesn't have any volatile dependencies.</dd>
     </dl>
 
-    <figure><img src="images/application-logic.drawio.png"><figcaption>Application Logic</figcaption></figure>
+    <figure><img alt="" src="images/application-logic.drawio.png"><figcaption>Application Logic</figcaption></figure>
 
     <p>Application logic is part of the Controller in MVC, and Control in ECB</p>
 

@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Allow concurrent processes to prepare a change to the same data, but check for consistency before the commit.</dd>
     </dl>
 
-    <figure><img src="images/optimistic-locking.drawio.png"><figcaption>Optimistic Locking</figcaption></figure>
+    <figure><img alt="" src="images/optimistic-locking.drawio.png"><figcaption>Optimistic Locking</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

@@ -16,7 +16,7 @@ include 'template/header.php';
         The microkernel is used primarily in operating systems, but the <b>kernel</b> concept of encapsulating system resources is also used by web frameworks.
     </p>
 
-    <figure><img src="images/microkernel.drawio.png"><figcaption>Microkernel architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/microkernel.drawio.png"><figcaption>Microkernel architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

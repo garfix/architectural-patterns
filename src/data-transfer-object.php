@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>An object that carries data between processes</dd>
     </dl>
 
-    <figure><img src="images/data-transfer-object.drawio.png"><figcaption>Data Transfer Object</figcaption></figure>
+    <figure><img alt="" src="images/data-transfer-object.drawio.png"><figcaption>Data Transfer Object</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

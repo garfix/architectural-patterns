@@ -18,7 +18,7 @@ include 'template/header.php';
         The pattern gets its name from the concept of <a href="https://en.wikipedia.org/wiki/Tuple_space">tuple space</a>, the technique of using multiple processes communicating through shared memory.
     </p>
 
-    <figure><img src="images/space-based.drawio.png"><figcaption>Space based architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/space-based.drawio.png"><figcaption>Space based architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

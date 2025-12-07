@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>A standardized representation of time</dd>
     </dl>
 
-    <figure><img src="images/utc.drawio.png"><figcaption>UTC</figcaption></figure>
+    <figure><img alt="" src="images/utc.drawio.png"><figcaption>UTC</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Collect and prepare data to be shown in the user interface.</dd>
     </dl>
 
-    <figure><img src="images/presentation-logic.drawio.png"><figcaption>Presentation Logic</figcaption></figure>
+    <figure><img alt="" src="images/presentation-logic.drawio.png"><figcaption>Presentation Logic</figcaption></figure>
 
     <p>Presentation logic is part of the View in MVC, and Boundary in ECB</p>
 

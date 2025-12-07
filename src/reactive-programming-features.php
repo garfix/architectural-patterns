@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Features implementing the reactive programming paradigm that propagates changes in values to depending structures</dd>
     </dl>
 
-    <figure><img src="images/reactive-programming-features.drawio.png"></figure>
+    <figure><img alt="" src="images/reactive-programming-features.drawio.png"></figure>
 
     <h2>Features</h2>
     <p><strong>Observables</strong> (<code>JavaScript</code>, <code>Dart</code>, <code>Kotlin</code>, <code>RxJava</code>) Objects representing a stream of asynchronous data.</p>

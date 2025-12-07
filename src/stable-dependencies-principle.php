@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>A module should only depend upon modules that are more stable than it is.</dd>
     </dl>
 
-    <figure><img src="images/stable-dependencies-principle.drawio.png"><figcaption>Stable Dependencies Principle</figcaption></figure>
+    <figure><img alt="" src="images/stable-dependencies-principle.drawio.png"><figcaption>Stable Dependencies Principle</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

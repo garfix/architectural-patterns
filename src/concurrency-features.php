@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Language support for doing many during the same period of time (concurrency) and at exeactly the same time (parallelism)</dd>
     </dl>
 
-    <figure><img src="images/concurrency-features.drawio.png"></figure>
+    <figure><img alt="" src="images/concurrency-features.drawio.png"></figure>
 
     <h2>Features</h2>
     <p><strong>Threads</strong> (<code>Java</code>, <code>C++</code>, <code>Python</code>, <code>C#</code>) Lightweight processes used for parallel execution.</p>

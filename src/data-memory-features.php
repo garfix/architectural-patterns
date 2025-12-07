@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Language structures regarding data structures and memory management</dd>
     </dl>
 
-    <figure><img src="images/data-memory-features.drawio.png"></figure>
+    <figure><img alt="" src="images/data-memory-features.drawio.png"></figure>
 
     <h2>Features</h2>
     <p><strong>Primitive Types</strong> (<code>All languages</code>) Basic data types like integers, floats, booleans, and characters.</p>

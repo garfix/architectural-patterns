@@ -19,7 +19,7 @@ include 'template/header.php';
         Selection is a term from <a href="https://en.wikipedia.org/wiki/Structured_programming">structured programming</a> that involves if/then statements, switch/case statements and such.
     </p>
 
-    <figure><img src="images/open-closed.drawio.png"><figcaption>Open Closed Principle</figcaption></figure>
+    <figure><img alt="" src="images/open-closed.drawio.png"><figcaption>Open Closed Principle</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

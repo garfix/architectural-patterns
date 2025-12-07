@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>A standardized representation of calendar dates</dd>
     </dl>
 
-    <figure><img src="images/iso-8601.drawio.png"><figcaption>ISO 8601</figcaption></figure>
+    <figure><img alt="" src="images/iso-8601.drawio.png"><figcaption>ISO 8601</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

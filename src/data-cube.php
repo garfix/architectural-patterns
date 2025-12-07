@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>A data cube is an index of big n-dimensional data.</dd>
     </dl>
 
-    <figure><img src="images/data-cube.drawio.png"><figcaption>Data Cube</figcaption></figure>
+    <figure><img alt="" src="images/data-cube.drawio.png"><figcaption>Data Cube</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

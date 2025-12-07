@@ -15,7 +15,7 @@ include 'template/header.php';
         Once a software agent is started up, it keeps executing autonomously to perform its task.
     </p>
 
-    <figure><img src="images/agent.drawio.png"><figcaption>Agent architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/agent.drawio.png"><figcaption>Agent architecture diagram</figcaption></figure>
 
     <p>
         Agents come in all forms, from simple to complex. These are the main levels of complexity:

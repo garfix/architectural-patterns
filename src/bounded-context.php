@@ -12,14 +12,14 @@ include 'template/header.php';
         <dd>Keep the naming of one area of the system separate from that of the other areas.</dd>
     </dl>
 
-    <figure><img src="images/boundaries.drawio.png"><figcaption>Bounded Context</figcaption></figure>
+    <figure><img alt="" src="images/boundaries.drawio.png"><figcaption>Bounded Context</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>
         A system may consist of multiple areas (bounded contexts) that each have their own naming conventions (ubiquitous language). If this is the case then the names of one context should not be used in the other context. In stead a name should be mapped to another map when the data crosses the context boundary.
     </p>
 
-    <figure><img src="images/bounded-context-fowler.png"><figcaption>Bounded Context example</figcaption></figure>
+    <figure><img alt="" src="images/bounded-context-fowler.png"><figcaption>Bounded Context example</figcaption></figure>
 
     <h2>When should you use it?</h2>
     <ul>

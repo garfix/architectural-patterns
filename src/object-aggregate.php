@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>An aggregate is a cluster of objects that can be treated as a single unit. One of these objects is the root</dd>
     </dl>
 
-    <figure><img src="images/object-aggregate.drawio.png"><figcaption>Object Aggregate</figcaption></figure>
+    <figure><img alt="" src="images/object-aggregate.drawio.png"><figcaption>Object Aggregate</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

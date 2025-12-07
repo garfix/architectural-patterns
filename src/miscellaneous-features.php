@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Language features that don't fit well into any of the other categories</dd>
     </dl>
 
-    <figure><img src="images/miscellaneous-features.drawio.png"></figure>
+    <figure><img alt="" src="images/miscellaneous-features.drawio.png"></figure>
 
     <h2>Features</h2>
     <p><strong>REPL</strong> (<code>Python</code>, <code>Ruby</code>, <code>Scala</code>, <code>Clojure</code>, <code>Elixir</code>) Interactive shell to run expressions and get immediate feedback.</p>

@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Controller logic handles the interaction with the application's environment</dd>
     </dl>
 
-    <figure><img src="images/controller-logic.drawio.png"><figcaption>Controller Logic</figcaption></figure>
+    <figure><img alt="" src="images/controller-logic.drawio.png"><figcaption>Controller Logic</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

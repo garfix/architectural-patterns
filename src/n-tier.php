@@ -15,7 +15,7 @@ include 'template/header.php';
         Each tier may live on a separate server, or two or more tiers may be combined on the same server. It's the separation of concerns that matters.
     </p>
 
-    <figure><img src="images/n-tier.drawio.png"><figcaption>N-tier architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/n-tier.drawio.png"><figcaption>N-tier architecture diagram</figcaption></figure>
 
     <p>
         I will explain the 4-tier architecture here. There may be less or more.

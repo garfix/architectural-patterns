@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>The User Interface is a specification of user interface elements without the data that goes in or out of them</dd>
     </dl>
 
-    <figure><img src="images/user-interface.drawio.png"><figcaption>User Interface</figcaption></figure>
+    <figure><img alt="" src="images/user-interface.drawio.png"><figcaption>User Interface</figcaption></figure>
 
     <p>Application logic is part of the View in MVC, and Boundary in ECB</p>
 

@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Pure domain logic, in the form of application independent entities and application specific control objects are separated from dependencies (boundaries) with the outside world.</dd>
     </dl>
 
-    <figure><img src="images/entity-control-boundary.drawio.png"><figcaption>Entity-Control-Boundary architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/entity-control-boundary.drawio.png"><figcaption>Entity-Control-Boundary architecture diagram</figcaption></figure>
 
     <p>Note: the <i>control</i> in this pattern is different from the <i>controller</i> in MVC.
 

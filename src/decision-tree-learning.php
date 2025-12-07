@@ -12,14 +12,14 @@ include 'template/header.php';
         <dd>A simple machine learning technique to create a decision tree</dd>
     </dl>
 
-    <figure><img src="images/decision-tree-learning.drawio.png"><figcaption>Decision Tree Learning</figcaption></figure>
+    <figure><img alt="" src="images/decision-tree-learning.drawio.png"><figcaption>Decision Tree Learning</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>
         Decision trees are among the most popular machine learning algorithms given their intelligibility and simplicity. In decision analysis, a decision tree can be used to visually and explicitly represent decisions and decision making.
     </p>
 
-    <figure><img src="images/Decision_Tree.jpg"><figcaption>Example Decision Tree (<a href="https://commons.wikimedia.org/wiki/File:Decision_Tree.jpg">source</a>)</figcaption></figure>
+    <figure><img alt="" src="images/Decision_Tree.jpg"><figcaption>Example Decision Tree (<a href="https://commons.wikimedia.org/wiki/File:Decision_Tree.jpg">source</a>)</figcaption></figure>
 
     <h2>When should you use it?</h2>
     <ul>

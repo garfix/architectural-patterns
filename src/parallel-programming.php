@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Split up a task into many similar parts and execute these all at the same time. When done, integrate the results.</dd>
     </dl>
 
-    <figure><img src="images/parallel-programming.drawio.png"><figcaption>Parallel programming architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/parallel-programming.drawio.png"><figcaption>Parallel programming architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

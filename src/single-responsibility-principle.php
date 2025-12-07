@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>A class should have only one reason to change, meaning that a class should only have one responsibility or job.</dd>
     </dl>
 
-    <figure><img src="images/single-responsibility.drawio.png"><figcaption>Single Responsibility Principle</figcaption></figure>
+    <figure><img alt="" src="images/single-responsibility.drawio.png"><figcaption>Single Responsibility Principle</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

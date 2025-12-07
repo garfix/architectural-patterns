@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>An agreement between the developers of a project to use the same style of writing code.</dd>
     </dl>
 
-    <figure><img src="images/coding-conventions.drawio.png"><figcaption>Coding Conventions</figcaption></figure>
+    <figure><img alt="" src="images/coding-conventions.drawio.png"><figcaption>Coding Conventions</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

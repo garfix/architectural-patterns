@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Don't force users of a module to depend on things they don't need.</dd>
     </dl>
 
-    <figure><img src="images/common-reuse-principle.drawio.png"><figcaption>Common Reuse Principle</figcaption></figure>
+    <figure><img alt="" src="images/common-reuse-principle.drawio.png"><figcaption>Common Reuse Principle</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

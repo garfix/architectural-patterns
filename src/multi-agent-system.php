@@ -13,7 +13,7 @@ include 'template/header.php';
         Together they solve a complex problem or control a complex system.</dd>
     </dl>
 
-    <figure><img src="images/multi-agent-system.drawio.png"><figcaption>Multi-agent system</figcaption></figure>
+    <figure><img alt="" src="images/multi-agent-system.drawio.png"><figcaption>Multi-agent system</figcaption></figure>
 
     <p>
         An <a href="agent">Agent</a> is a component that autonomously interacts with its environment. It is never <i>told</i> what to do,
@@ -36,10 +36,10 @@ include 'template/header.php';
         </ul>
     </p>
 
-    <figure><img src="images/mas_1.jpg"><figcaption>Multi-agent: Flat Organisation</figcaption></figure>
-    <figure><img src="images/mas_2.jpg"><figcaption>Multi-agent: Hierarchical Organisation</figcaption></figure>
-    <figure><img src="images/mas_3.jpg"><figcaption>Multi-agent: Subsumption Organisation</figcaption></figure>
-    <figure><img src="images/mas_4.jpg"><figcaption>Multi-agent: Modular Organisation</figcaption></figure>
+    <figure><img alt="" src="images/mas_1.jpg"><figcaption>Multi-agent: Flat Organisation</figcaption></figure>
+    <figure><img alt="" src="images/mas_2.jpg"><figcaption>Multi-agent: Hierarchical Organisation</figcaption></figure>
+    <figure><img alt="" src="images/mas_3.jpg"><figcaption>Multi-agent: Subsumption Organisation</figcaption></figure>
+    <figure><img alt="" src="images/mas_4.jpg"><figcaption>Multi-agent: Modular Organisation</figcaption></figure>
 
     <p>
         Agents communicate with each other by sending messages. The messages use Speech Act Theory as their basis.

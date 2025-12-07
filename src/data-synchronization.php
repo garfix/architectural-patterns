@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>An automated process that ensures that the data in store A is made equal to that in store B.</dd>
     </dl>
 
-    <figure><img src="images/data-synchronization.drawio.png"><figcaption>Data Synchronization</figcaption></figure>
+    <figure><img alt="" src="images/data-synchronization.drawio.png"><figcaption>Data Synchronization</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

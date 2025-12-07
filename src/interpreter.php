@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>The interpreter serves to execute a program in a domain-specific language. It parses the source code into a format that can be executed, then executes it.</dd>
     </dl>
 
-    <figure><img src="images/interpreter.drawio.png"><figcaption>Interpreter architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/interpreter.drawio.png"><figcaption>Interpreter architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

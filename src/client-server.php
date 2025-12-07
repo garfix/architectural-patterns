@@ -18,7 +18,7 @@ include 'template/header.php';
         There is one server and there are multiple clients.
     </p>
 
-    <figure><img src="images/client-server.drawio.png"><figcaption>Client-Server architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/client-server.drawio.png"><figcaption>Client-Server architecture diagram</figcaption></figure>
 
     <p>
         A Client-Server system is one in which the server performs some kind of service that is used by many clients. The clients take the lead

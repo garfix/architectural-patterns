@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Use a model that is trained on a large amount of human information to produce similar but new information, guided by text prompts.</dd>
     </dl>
 
-    <figure><img src="images/gen-ai.drawio.png"><figcaption>Generative AI</figcaption></figure>
+    <figure><img alt="" src="images/gen-ai.drawio.png"><figcaption>Generative AI</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

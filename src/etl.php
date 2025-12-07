@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>The process of combining heterogenous data sources into a homogenized data target.</dd>
     </dl>
 
-    <figure><img src="images/etl.drawio.png"><figcaption>ETL architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/etl.drawio.png"><figcaption>ETL architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

@@ -18,7 +18,7 @@ include 'template/header.php';
         Assigning roles to users, and assigning permissions to roles, are permissions on their own.
     </p>
 
-    <figure><img src="images/role-based-access-control.drawio.png"><figcaption>Role-based Access Control architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/role-based-access-control.drawio.png"><figcaption>Role-based Access Control architecture diagram</figcaption></figure>
 
     <h2>Examples</h2>
     <ul>

@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>A grouping of cohesive classes or functions, with an interface that hides the implementation.</dd>
     </dl>
 
-    <figure><img src="images/module.drawio.png"><figcaption>Module architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/module.drawio.png"><figcaption>Module architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

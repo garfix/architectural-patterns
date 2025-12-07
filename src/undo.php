@@ -21,7 +21,7 @@ include 'template/header.php';
         Actions may be extended. Rather than treating each typed letter as a single action, update the "edit" each time a new letter is typed. This way the edit can be undone in a single step.
     </p>
 
-    <figure><img src="images/undo.drawio.png"><figcaption>Undo</figcaption></figure>
+    <figure><img alt="" src="images/undo.drawio.png"><figcaption>Undo</figcaption></figure>
 
     <h2>Examples</h2>
     <ul>

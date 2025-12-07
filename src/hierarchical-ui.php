@@ -18,14 +18,14 @@ include 'template/header.php';
 
     Components are connected in a hierarchical fashion, thus:<p>
 
-    <figure><img src="images/hierarchical-component-ui.drawio.png"><figcaption>Hierarchical ui architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/hierarchical-component-ui.drawio.png"><figcaption>Hierarchical ui architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>
         A component can send events to its parent and call methods on its child components.
     </p>
 
-    <figure><img src="images/pac-article.png"><figcaption>Image from the original article by Jo&euml;lle Coutaz</figcaption></figure>
+    <figure><img alt="" src="images/pac-article.png"><figcaption>Image from the original article by Jo&euml;lle Coutaz</figcaption></figure>
 
     <h2>Examples</h2>
     <ul>

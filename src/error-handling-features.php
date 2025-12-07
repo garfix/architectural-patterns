@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Language structures dealing with errors</dd>
     </dl>
 
-    <figure><img src="images/error-handling-features.drawio.png"></figure>
+    <figure><img alt="" src="images/error-handling-features.drawio.png"></figure>
 
     <h2>Features</h2>
     <p><strong>Try/Catch/Finally</strong> (<code>Java</code>, <code>Python</code>, <code>C#</code>, <code>JavaScript</code>) Structured blocks to handle exceptions and cleanup.</p>

@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Software versioning is the process of assigning either unique version names or numbers to unique states of software.</dd>
     </dl>
 
-    <figure><img src="images/software-versioning.drawio.png"><figcaption>Software Versioning</figcaption></figure>
+    <figure><img alt="" src="images/software-versioning.drawio.png"><figcaption>Software Versioning</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

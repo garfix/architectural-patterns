@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>The directed graph that represents the pages of an application and their and transitions. It describes the path the user takes through the application.</dd>
     </dl>
 
-    <figure><img src="images/navigation-graph.drawio.png"><figcaption>Navigation Graph</figcaption></figure>
+    <figure><img alt="" src="images/navigation-graph.drawio.png"><figcaption>Navigation Graph</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

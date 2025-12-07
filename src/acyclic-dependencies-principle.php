@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Allow no cycles in the module dependency graph</dd>
     </dl>
 
-    <figure><img src="images/dependency-graph.drawio.png"><figcaption>Acyclic Dependencies Principle</figcaption></figure>
+    <figure><img alt="" src="images/dependency-graph.drawio.png"><figcaption>Acyclic Dependencies Principle</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>
@@ -47,7 +47,7 @@ include 'template/header.php';
         <li>Circular references in general are simply confusing and drastically increase the cognitive load when attempting to understand how a program functions.
     </ul>
 
-    <figure><img src="images/circular-dependency.png"><figcaption>Circular dependency having a big impact (MyDialog > MyApplication). From <a href="https://web.archive.org/web/20151130032005/http://www.objectmentor.com/resources/articles/granularity.pdf">Granularity</a></figcaption></figure>
+    <figure><img alt="" src="images/circular-dependency.png"><figcaption>Circular dependency having a big impact (MyDialog > MyApplication). From <a href="https://web.archive.org/web/20151130032005/http://www.objectmentor.com/resources/articles/granularity.pdf">Granularity</a></figcaption></figure>
 
     <h2>Examples</h2>
     <ul>

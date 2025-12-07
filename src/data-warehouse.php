@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd> Data warehouses are central repositories of integrated data from one or more disparate sources. They store current and historical data in one single place that are used for creating analytical reports for workers throughout the enterprise.</dd>
     </dl>
 
-    <figure><img src="images/data-warehouse.drawio.png"><figcaption>Data Warehouse architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/data-warehouse.drawio.png"><figcaption>Data Warehouse architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

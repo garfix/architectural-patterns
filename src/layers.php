@@ -22,7 +22,7 @@ include 'template/header.php';
         above or below their layer and with themselves.
     </p>
 
-    <figure><img src="images/layered.drawio.png"><figcaption>Layered architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/layered.drawio.png"><figcaption>Layered architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>
@@ -40,7 +40,7 @@ include 'template/header.php';
         layers do not communicate with eachother.
     </p>
 
-    <figure><img src="images/layers_2.jpg"><figcaption>Multiple layers at the same level</figcaption></figure>
+    <figure><img alt="" src="images/layers_2.jpg"><figcaption>Multiple layers at the same level</figcaption></figure>
 
     <p>
         The user calls a function on an object in the upper layer. This object calls functions in the layer below.

@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Tests to check if the system doesn't allow unauthorized access</dd>
     </dl>
 
-    <figure><img src="images/security-tests.drawio.png"><figcaption>security tests</figcaption></figure>
+    <figure><img alt="" src="images/security-tests.drawio.png"><figcaption>security tests</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

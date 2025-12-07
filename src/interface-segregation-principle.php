@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Make interfaces as specific as needed by the task.</dd>
     </dl>
 
-    <figure><img src="images/interface-segregation.drawio.png"><figcaption>Interface Segregation Principle</figcaption></figure>
+    <figure><img alt="" src="images/interface-segregation.drawio.png"><figcaption>Interface Segregation Principle</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

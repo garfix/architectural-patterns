@@ -13,7 +13,7 @@ include 'template/header.php';
     </dl>
     <p>A typeface is used to display text. It's usually called "font", but a font is actually the file that contains the typeface.</p>
 
-    <figure><img src="images/typeface.drawio.png"><figcaption>Typeface</figcaption></figure>
+    <figure><img alt="" src="images/typeface.drawio.png"><figcaption>Typeface</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

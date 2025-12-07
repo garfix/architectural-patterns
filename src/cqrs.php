@@ -23,7 +23,7 @@ include 'template/header.php';
         The Query Models are "throw away" and may be recreated from the Command Model. However, it may take (considerable) time to recreate the Query Models.
     </p>
 
-    <figure><img src="images/cqrs-1.png"><figcaption>CQRS architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/cqrs-1.png"><figcaption>CQRS architecture diagram</figcaption></figure>
 
 
     <h2>Examples</h2>

@@ -15,7 +15,7 @@ include 'template/header.php';
     <h2>How does it work?</h2>
     <p>The sending component places a message on the message queue. The distributor reads the oldest message from the queue an passes it to the recipient component.</p>
 
-    <figure><img src="images/message-queue.drawio.png"><figcaption>Message queue architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/message-queue.drawio.png"><figcaption>Message queue architecture diagram</figcaption></figure>
 
     <h2>Variants</h2>
     <p>

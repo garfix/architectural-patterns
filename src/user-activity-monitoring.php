@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Code that logs activity of users in the system</dd>
     </dl>
 
-    <figure><img src="images/user-activity-monitoring.drawio.png"><figcaption>User-activity monitoring</figcaption></figure>
+    <figure><img alt="" src="images/user-activity-monitoring.drawio.png"><figcaption>User-activity monitoring</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

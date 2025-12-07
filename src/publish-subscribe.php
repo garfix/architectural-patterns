@@ -15,7 +15,7 @@ include 'template/header.php';
     <h2>How does it work?</h2>
     <p>Components may register themselves with the registry at any time. When a component notifies other components of an event, it places a message on the event bus. The event bus takes care of delivering the message to the registered recipients.</p>
 
-    <figure><img src="images/event-bus-1.png"><figcaption>Event-bus architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/event-bus-1.png"><figcaption>Event-bus architecture diagram</figcaption></figure>
 
     <h2>Variants</h2>
     <p>There are several types of communication that may occur on the Event Bus:</p>

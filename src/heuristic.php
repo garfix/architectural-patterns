@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>A technique designed for problem solving more quickly when classic methods are too slow for finding an exact or approximate solution.</dd>
     </dl>
 
-    <figure><img src="images/heuristic.drawio.png"><figcaption>Heuristic</figcaption></figure>
+    <figure><img alt="" src="images/heuristic.drawio.png"><figcaption>Heuristic</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

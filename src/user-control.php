@@ -16,7 +16,7 @@ include 'template/header.php';
         The user needs to be in control of their data. This means that they should be able to perform any action they need and receive feedback on their actions.
     </p>
 
-    <figure><img src="images/user-control.drawio.png"><figcaption>User control</figcaption></figure>
+    <figure><img alt="" src="images/user-control.drawio.png"><figcaption>User control</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

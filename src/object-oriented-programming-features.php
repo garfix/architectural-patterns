@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Language structures implementing the object oriented programming (OOP) paradigm</dd>
     </dl>
 
-    <figure><img src="images/object-oriented-programming-features.drawio.png"></figure>
+    <figure><img alt="" src="images/object-oriented-programming-features.drawio.png"></figure>
 
     <h2>Features</h2>
     <p><strong>Encapsulation</strong> (<code>Java</code>, <code>C++</code>, <code>Python</code>, <code>Ruby</code>, <code>C#</code>) Grouping data and related functions together and hiding implementation details.</p>

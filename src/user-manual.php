@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>A document or website that explains the function of the application to the end user</dd>
     </dl>
 
-    <figure><img src="images/user-manual.drawio.png"><figcaption>User Manual</figcaption></figure>
+    <figure><img alt="" src="images/user-manual.drawio.png"><figcaption>User Manual</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

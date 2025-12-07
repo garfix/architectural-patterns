@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>A configuration of on/off flags that control which features are active</dd>
     </dl>
 
-    <figure><img src="images/feature-flags.drawio.png"><figcaption>Feature Flags</figcaption></figure>
+    <figure><img alt="" src="images/feature-flags.drawio.png"><figcaption>Feature Flags</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

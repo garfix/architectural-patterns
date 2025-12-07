@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>A a finite sequence of rigorous instructions, typically used to solve a class of specific problems or to perform a computation.</dd>
     </dl>
 
-    <figure><img src="images/algorithm.drawio.png"><figcaption>Algorithm</figcaption></figure>
+    <figure><img alt="" src="images/algorithm.drawio.png"><figcaption>Algorithm</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

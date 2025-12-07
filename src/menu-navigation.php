@@ -22,7 +22,7 @@ include 'template/header.php';
         The pattern is so ubiquitous that it takes some effort to imagine what an application without a menu bar would look like.
     </p>
 
-    <figure><img src="images/menu.drawio.png"><figcaption>A menu bar</figcaption></figure>
+    <figure><img alt="" src="images/menu.drawio.png"><figcaption>A menu bar</figcaption></figure>
 
     <h2>Examples</h2>
     <ul>

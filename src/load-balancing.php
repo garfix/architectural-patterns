@@ -12,7 +12,7 @@ include 'template/header.php';
         <dd>Having a pool of identical servers, pick on of them to do the task.</dd>
     </dl>
 
-    <figure><img src="images/load-balancing.drawio.png"><figcaption>Load balancing architecture diagram</figcaption></figure>
+    <figure><img alt="" src="images/load-balancing.drawio.png"><figcaption>Load balancing architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>
