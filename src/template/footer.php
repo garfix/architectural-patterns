@@ -17,7 +17,7 @@
                                         <span class="opener active"><?= $title ?></span>
                                         <ul>
                                             <?php foreach ($page as $subPage): ?>
-                                                <li><a href="<?= $subPage ?>"><?= getCategoryByCode($subPage)['name'] ?></a>
+                                                <li><a href="<?= $subPage ?>"><?= getCategoryByCode($subPage)['name'] ?></a></li>
                                             <?php endforeach ?>
                                         </ul>
                                     <?php endforeach ?>
