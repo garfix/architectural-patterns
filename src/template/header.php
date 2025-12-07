@@ -8,7 +8,7 @@
 	<head>
 		<title><?= !empty($title) ? $title : $pattern['name'] ?> | Architectural Patterns</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/custom.css" />
         <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
