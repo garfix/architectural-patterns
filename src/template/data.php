@@ -870,7 +870,7 @@ $patterns = [
     [
         "name" => "Reactive programming features",
         "image" => "reactive-programming-features.drawio.png",
-        "link" => "reactive-programming-programming-features"
+        "link" => "reactive-programming-features"
     ],
     [
         "name" => "Error handling features",
