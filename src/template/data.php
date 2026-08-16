@@ -1008,12 +1008,12 @@ $patterns = [
     ],
     [
         "name" => "Markov Chain",
-        "image" => "markov-chain.svg",
+        "image" => "markov-chain.drawio.png",
         "link" => "markov-chain",
     ],
     [
         "name" => "Hidden Markov Model",
-        "image" => "hidden-markov-model.svg",
+        "image" => "hidden-markov-model.png",
         "link" => "hidden-markov-model",
     ],
     [
