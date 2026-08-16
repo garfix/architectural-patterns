@@ -3,7 +3,7 @@
 Date: 2026-08-16
 
 Overview:
-- Imported a comprehensive technique taxonomy from `raw/claude-input.md` and integrated it into `src/template/data.php`.
+- Imported a comprehensive technique taxonomy from `claude-input.md` and integrated it into `src/template/data.php`.
 - Added new category constants: `CAT_PROBABILISTIC`, `CAT_SEARCH_OPTIMIZATION`, `CAT_EVOLUTIONARY`, `CAT_SUPERVISED_LEARNING`, `CAT_DEEP_LEARNING`, `CAT_UNSUPERVISED_LEARNING`, `CAT_REINFORCEMENT_LEARNING`, `CAT_SYMBOLIC_REASONING`, `CAT_GRAPHICAL_MODELS`.
 - Linked those as `children` under `CAT_PROBLEM_SOLVING`.
 

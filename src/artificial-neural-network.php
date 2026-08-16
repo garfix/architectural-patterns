@@ -13,7 +13,10 @@ include 'template/header.php';
     </dl>
 
     <h2 id="links">Links</h2>
-    <ol>
+        <h2>How does it work?</h2>
+        <p>Put simple processing units in layers and connect them. Show many example inputs and desired outputs, and automatically adjust the connections so the network produces the right outputs for the examples.</p>
+
+        <ol>
         <li><a href="https://en.wikipedia.org/wiki/Neural_network_(machine_learning)">Wikipedia: Artificial neural network</a></li>
     </ol>
 

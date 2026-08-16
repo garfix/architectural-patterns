@@ -4,10 +4,10 @@
     .box { fill:#fff; stroke:#222; stroke-width:2; rx:8; ry:8 }
     .label { font-family: 'Comic Sans MS', cursive; font-weight:700; font-size:12px }
     .muted { font-family: 'Comic Sans MS', cursive; font-size:11px; fill:#333 }
-    .arrow { stroke:#1f618d; stroke-width:2.5; fill:none; marker-end:url(#a) }
+    .arrow { stroke:#000; stroke-width:2.5; fill:none; marker-end:url(#arrowSmall) }
   </style>
   <defs>
-    <marker id="a" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto"><polygon points="0 0,8 4,0 8" fill="#1f618d"/></marker>
+    <marker id="arrowSmall" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><polygon points="0 0,6 3,0 6" fill="#000"/></marker>
   </defs>
   <rect width="282" height="282" fill="#fff"/>
 
@@ -43,5 +43,5 @@
   <path class="arrow" d="M60 66 L75 100" />
   <path class="arrow" d="M140 66 L170 100" />
 
-  <text x="141" y="200" class="muted" text-anchor="middle">Hidden states produce observations; transitions between hidden states</text>
+  <!-- no explanatory text; only named elements -->
 </svg>

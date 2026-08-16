@@ -14,6 +14,8 @@ Rules:
 
 - Numeric probability labels (e.g., `0.6`) are allowed and should be placed unobtrusively near arrow midpoints to indicate transition weights. Keep them short (one number) and avoid explanatory text in the SVG.
  - When creating an image for a technique, automatically add a `<figure>` block referencing the image to the technique's PHP page (e.g., `src/<slug>.php`).
+ - When creating an image for a technique, automatically add a `<figure>` block referencing the image to the technique's PHP page (e.g., `src/<slug>.php`).
+ - Avoid explanatory sentences in SVGs; use very short labels (`S0`, `MLE`, `Fit`) and optional numeric probabilities near arrows.
 
 Examples:
 - Good: `S0 -> S1 -> S2` with small black arrowheads, labels only on boxes.

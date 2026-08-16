@@ -18,5 +18,5 @@
   <!-- fitted line -->
   <line class="line" x1="30" y1="220" x2="250" y2="60" />
 
-  <text x="141" y="250" class="muted" text-anchor="middle">Fit a model to predict outcome from inputs</text>
+  <text x="141" y="250" class="muted" text-anchor="middle">Fit</text>
 </svg>

@@ -12,6 +12,10 @@ include 'template/header.php';
         <dd>Moves a swarm of candidate solutions through the search space, influenced by personal and neighbors' best finds.</dd>
     </dl>
 
+
+    <h2>How does it work?</h2>
+    <p>Have many candidate points move around, where each point is pulled toward its own best position and the group's best. The group gradually converges on good solutions.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Particle_swarm_optimization">Wikipedia: Particle swarm optimization</a></li>

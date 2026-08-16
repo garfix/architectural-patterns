@@ -1,40 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="350" height="350" viewBox="0 0 282 282">
-  <style>
-    .box { fill:#fff; stroke:#222; stroke-width:2; rx:8; ry:8 }
-    .label { font-family: 'Comic Sans MS', 'Comic Sans', cursive; font-weight:700; font-size:13px; }
-    .muted { font-family: 'Comic Sans MS', cursive; font-size:11px; fill:#333 }
-    .arrow { stroke:#000; stroke-width:2; fill:none; marker-end:url(#arrowSmall) }
-  </style>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" aria-labelledby="title desc">
+  <title id="title">Markov chain diagram</title>
+  <desc id="desc">Two-state Markov chain with curved transitions and self-loops.</desc>
   <defs>
-    <marker id="arrowSmall" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto">
-      <polygon points="0 0,6 3,0 6" fill="#000" />
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ff6a00" />
     </marker>
+    <style>
+      .arrow { fill: none; stroke: #ff6a00; stroke-width: 12; stroke-linecap: round; stroke-linejoin: round; }
+      .node-e { fill: #4a4a4a; stroke: #333; stroke-width: 8; }
+      .node-a { fill: #ffffff; stroke: #0b7bd6; stroke-width: 10; }
+      .label { font-family: Georgia, 'Times New Roman', serif; font-size: 64px; font-weight: 700; }
+    </style>
   </defs>
-  <rect x="0" y="0" width="282" height="282" fill="#fff"/>
 
-  <!-- three-state chain in a row -->
-  <g transform="translate(28,90)">
-    <rect class="box" width="56" height="36" rx="6" ry="6" />
-    <text x="28" y="22" text-anchor="middle" class="label">S0</text>
-  </g>
-  <g transform="translate(113,90)">
-    <rect class="box" width="56" height="36" rx="6" ry="6" />
-    <text x="28" y="22" text-anchor="middle" class="label">S1</text>
-  </g>
-  <g transform="translate(198,90)">
-    <rect class="box" width="56" height="36" rx="6" ry="6" />
-    <text x="28" y="22" text-anchor="middle" class="label">S2</text>
+  <!-- positions -->
+  <!-- Node E (upper-left) -->
+  <g id="E" transform="translate(200,170)">
+    <circle class="node-e" cx="0" cy="0" r="56" />
+    <text class="label" x="0" y="20" fill="#d6d6d6" text-anchor="middle">E</text>
   </g>
 
-  <!-- transitions with small black arrowheads and probability labels -->
-  <path class="arrow" d="M84 108 L113 108" />
-  <text x="98" y="100" class="muted" text-anchor="middle">0.6</text>
+  <!-- Node A (lower-right) -->
+  <g id="A" transform="translate(380,360)">
+    <circle class="node-a" cx="0" cy="0" r="56" />
+    <text class="label" x="0" y="20" fill="#0b7bd6" text-anchor="middle">A</text>
+  </g>
 
-  <path class="arrow" d="M169 108 L198 108" />
-  <text x="183" y="100" class="muted" text-anchor="middle">0.3</text>
+  <!-- Self-loop on E (above and to left) -->
+  <path class="arrow" d="M160,120 C120,60 280,60 240,120" marker-end="url(#arrow)"/>
 
-  <!-- a small self-loop on S1 -->
-  <path class="arrow" d="M132 90 C140 72 160 72 168 90" />
-  <text x="150" y="72" class="muted" text-anchor="middle">0.1</text>
+  <!-- Self-loop on A (below and to right) -->
+  <path class="arrow" d="M420,300 C480,260 540,340 480,380" marker-end="url(#arrow)"/>
+
+  <!-- Curved arrow from E to A -->
+  <path class="arrow" d="M235,185 C290,200 340,260 350,320" marker-end="url(#arrow)"/>
+
+  <!-- Curved arrow from A to E -->
+  <path class="arrow" d="M335,325 C300,280 260,230 230,210" marker-end="url(#arrow)"/>
+
+  <!-- Additional decorative curved arrow back to A (lower loop) -->
+  <path class="arrow" d="M205,210 C220,280 300,330 345,345" marker-end="url(#arrow)" opacity="0.95"/>
+
 </svg>
+

@@ -39,4 +39,4 @@ Mapping of Claude technique grouping to repository files (search results)
 
 Notes:
 - The search looked for mentions and filenames related to the listed techniques under `src/`. Several techniques (Bayesian, Markov, Monte Carlo, etc.) do not have explicit pages; they may be discussed in broader articles or absent.
-- Next step: I can (a) map techniques to existing pages more thoroughly (scan content and index pages), (b) add new pages for missing techniques under `raw/` or `src/`, or (c) generate a concise summary to insert into `todo.md`.
+- Next step: I can (a) map techniques to existing pages more thoroughly (scan content and index pages), (b) add new pages for missing techniques under `src/`, or (c) generate a concise summary to insert into `todo.md`.

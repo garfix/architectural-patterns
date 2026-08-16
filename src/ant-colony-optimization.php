@@ -12,6 +12,10 @@ include 'template/header.php';
         <dd>Simulates ants laying and following pheromone trails to find efficient paths, useful for routing problems.</dd>
     </dl>
 
+
+    <h2>How does it work?</h2>
+    <p>Simulate many simple agents that try solutions and leave a marker when they find a good one. Over time the markers guide more agents to the better solutions.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms">Wikipedia: Ant colony optimization</a></li>

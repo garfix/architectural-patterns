@@ -6,14 +6,14 @@
     .muted { fill:#333; font-size:11px; font-family: 'Comic Sans MS', 'Comic Sans', cursive; }
     .label { font-weight:700; font-size:13px; font-family: 'Comic Sans MS', 'Comic Sans', cursive; }
     .formula { font-family: 'Comic Sans MS', 'Comic Sans', cursive; font-size:12px; fill:#111 }
-    .arrow { stroke:#1f618d; stroke-width:3; fill:none; marker-end:url(#arrowhead);}
+    .arrow { stroke:#000; stroke-width:3; fill:none; marker-end:url(#arrowSmall);}
     .small { font-size:10px; font-family: 'Comic Sans MS', 'Comic Sans', cursive; fill:#444 }
     .ghost { fill:none; stroke:#ccc; stroke-width:1 }
   </style>
 
   <defs>
-    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto">
-      <polygon points="0 0, 8 4, 0 8" fill="#1f618d" />
+    <marker id="arrowSmall" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto">
+      <polygon points="0 0, 6 3, 0 6" fill="#000" />
     </marker>
   </defs>
 

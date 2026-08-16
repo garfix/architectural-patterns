@@ -7,6 +7,8 @@ include 'template/header.php';
 <section>
     <?php showHeader($pattern) ?>
 
+    <h2>How does it work?</h2>
+    <p>Start with a guess for the values you want to tune, measure how wrong the guess is, and change the values a little to make the error smaller. Repeat until it gets good enough.</p>
     <dl>
         <dt>Definition</dt>
         <dd>Iteratively adjusts parameters in the direction that most reduces error, used to train most modern models.</dd>

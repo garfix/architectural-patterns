@@ -14,6 +14,9 @@ include 'template/header.php';
 
     <h2 id="links">Links</h2>
     <ol>
+    <h2>How does it work?</h2>
+    <p>There are states you cannot see directly, but you observe outputs that depend on those states. By looking at the observed outputs, you try to guess the hidden states and how likely each one is.</p>
+
         <li><a href="https://en.wikipedia.org/wiki/Hidden_Markov_model">Wikipedia: Hidden Markov model</a></li>
     </ol>
 

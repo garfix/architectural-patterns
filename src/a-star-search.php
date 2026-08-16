@@ -19,5 +19,9 @@ include 'template/header.php';
 
 </section>
 
+
+        <h2>How does it work?</h2>
+        <p>A* finds a shortest path by always exploring the most promising path first, where 'promising' is a mix of how far you've come and a guess of how far remains. Pick a good guess to make the search fast.</p>
+
 <?php
 include 'template/footer.php';

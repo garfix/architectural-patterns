@@ -14,6 +14,9 @@ include 'template/header.php';
 
     <h2 id="links">Links</h2>
     <ol>
+    <h2>How does it work?</h2>
+    <p>Scan small patches of an image to find simple patterns, then combine those simple patterns in deeper layers to recognise more complex shapes. This makes it good for images.</p>
+
         <li><a href="https://en.wikipedia.org/wiki/Convolutional_neural_network">Wikipedia: Convolutional neural network</a></li>
     </ol>
 

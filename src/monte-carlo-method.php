@@ -9,8 +9,11 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Uses repeated random sampling to estimate answers to problems that are too complex to solve exactly.</dd>
-    </dl>
+
+    <h2>How does it work?</h2>
+    <p>Use random samples to estimate an answer. Run many trials, measure the result in each trial, and average them. More trials usually give a better estimate.</p>
+
+    <h2 id="links">Links</h2>
 
     <h2 id="links">Links</h2>
     <ol>
