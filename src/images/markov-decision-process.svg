@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="350" viewBox="0 0 282 282">
+  <style>
+    .box { fill:#fff; stroke:#222; stroke-width:2; rx:8; ry:8 }
+    .label { font-family:'Comic Sans MS', cursive; font-weight:700; font-size:12 }
+    .muted { font-family:'Comic Sans MS', cursive; font-size:11; fill:#333 }
+    .arrow { stroke:#1f618d; stroke-width:2.8; fill:none; marker-end:url(#a) }
+  </style>
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto"><polygon points="0 0,8 4,0 8" fill="#1f618d"/></marker>
+  </defs>
+  <rect width="282" height="282" fill="#fff"/>
+
+  <g transform="translate(40,40)">
+    <rect class="box" width="70" height="44" />
+    <text x="35" y="28" text-anchor="middle" class="label">State S</text>
+  </g>
+  <g transform="translate(160,40)">
+    <rect class="box" width="70" height="44" />
+    <text x="35" y="28" text-anchor="middle" class="label">State S'</text>
+  </g>
+
+  <path class="arrow" d="M110 62 L160 62" />
+  <text x="127" y="54" class="muted" text-anchor="middle">Action a</text>
+
+  <g transform="translate(40,120)">
+    <rect class="box" width="190" height="44" />
+    <text x="95" y="28" text-anchor="middle" class="muted">Reward &amp; Transition model</text>
+  </g>
+
+  <text x="141" y="220" class="muted" text-anchor="middle">Choose actions to maximize expected reward</text>
+</svg>

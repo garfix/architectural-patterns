@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="350" viewBox="0 0 282 282">
+  <style>
+    .curve { stroke:#1f618d; stroke-width:2; fill:none }
+    .dot { fill:#1f618d }
+    .label { font-family:'Comic Sans MS', cursive; font-weight:700; font-size:12 }
+    .muted { font-family:'Comic Sans MS', cursive; font-size:11px; fill:#333 }
+  </style>
+  <rect width="282" height="282" fill="#fff"/>
+
+  <path class="curve" d="M30 200 C80 80 200 80 250 200" />
+  <circle class="dot" cx="140" cy="110" r="4" />
+  <line x1="140" y1="110" x2="140" y2="230" stroke="#bbb" stroke-dasharray="3 2"/>
+  <text x="140" y="245" text-anchor="middle" class="muted">Maximum of likelihood (estimate)</text>
+</svg>

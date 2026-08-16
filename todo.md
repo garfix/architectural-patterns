@@ -1,9 +1,22 @@
-Just some ideas
 
 ## problem solving
 
+Aparte sectie Neural Networks
+
+ieder probleem een item, of iedere techniek een item? een techniek. zoek naar de klasse die daadwerkelijk gebruikt wordt
+
 * Markov Decision Process
 * genetic algorithms
+
+techniek
+
+-
+- Support Vector Machine
+
+
+
+linear regression model - for regression
+
 
 support vector machines
 - linear/nonlinear classification, regression, novelty detection
@@ -15,6 +28,10 @@ decision trees
 ## cross cutting
 
 * routing / navigation: name a specific nav. scheme
+
+https://metapatterns.io/introduction/about-this-book/
+https://ui-patterns.com/patterns
+https://gameprogrammingpatterns.com/contents.html
 
 ## data
 
@@ -35,6 +52,7 @@ data interaction
 
 ## UI
 
+windowing interface
 design system
 https://en.wikipedia.org/wiki/Design_system
 

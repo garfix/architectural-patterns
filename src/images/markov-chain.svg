@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="350" viewBox="0 0 282 282">
+  <style>
+    .box { fill:#fff; stroke:#222; stroke-width:2; rx:8; ry:8 }
+    .label { font-family: 'Comic Sans MS', 'Comic Sans', cursive; font-weight:700; font-size:13px; }
+    .muted { font-family: 'Comic Sans MS', cursive; font-size:11px; fill:#333 }
+    .arrow { stroke:#000; stroke-width:2; fill:none; marker-end:url(#arrowSmall) }
+  </style>
+  <defs>
+    <marker id="arrowSmall" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto">
+      <polygon points="0 0,6 3,0 6" fill="#000" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="282" height="282" fill="#fff"/>
+
+  <!-- three-state chain in a row -->
+  <g transform="translate(28,90)">
+    <rect class="box" width="56" height="36" rx="6" ry="6" />
+    <text x="28" y="22" text-anchor="middle" class="label">S0</text>
+  </g>
+  <g transform="translate(113,90)">
+    <rect class="box" width="56" height="36" rx="6" ry="6" />
+    <text x="28" y="22" text-anchor="middle" class="label">S1</text>
+  </g>
+  <g transform="translate(198,90)">
+    <rect class="box" width="56" height="36" rx="6" ry="6" />
+    <text x="28" y="22" text-anchor="middle" class="label">S2</text>
+  </g>
+
+  <!-- transitions with small black arrowheads and probability labels -->
+  <path class="arrow" d="M84 108 L113 108" />
+  <text x="98" y="100" class="muted" text-anchor="middle">0.6</text>
+
+  <path class="arrow" d="M169 108 L198 108" />
+  <text x="183" y="100" class="muted" text-anchor="middle">0.3</text>
+
+  <!-- a small self-loop on S1 -->
+  <path class="arrow" d="M132 90 C140 72 160 72 168 90" />
+  <text x="150" y="72" class="muted" text-anchor="middle">0.1</text>
+</svg>

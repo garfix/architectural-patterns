@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="350" viewBox="0 0 282 282">
+  <style>
+    .box { fill:#fff; stroke:#222; stroke-width:2; rx:8; ry:8 }
+    .label { font-family: 'Comic Sans MS', cursive; font-weight:700; font-size:12px }
+    .muted { font-family: 'Comic Sans MS', cursive; font-size:11px; fill:#333 }
+    .arrow { stroke:#1f618d; stroke-width:2.5; fill:none; marker-end:url(#a) }
+  </style>
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto"><polygon points="0 0,8 4,0 8" fill="#1f618d"/></marker>
+  </defs>
+  <rect width="282" height="282" fill="#fff"/>
+
+  <!-- Hidden states -->
+  <g transform="translate(30,30)">
+    <rect class="box" width="60" height="36" />
+    <text x="30" y="22" text-anchor="middle" class="label">H0</text>
+  </g>
+  <g transform="translate(110,30)">
+    <rect class="box" width="60" height="36" />
+    <text x="30" y="22" text-anchor="middle" class="label">H1</text>
+  </g>
+  <g transform="translate(190,30)">
+    <rect class="box" width="60" height="36" />
+    <text x="30" y="22" text-anchor="middle" class="label">H2</text>
+  </g>
+
+  <!-- Observations -->
+  <g transform="translate(65,100)">
+    <rect class="box" width="50" height="32" />
+    <text x="25" y="20" text-anchor="middle" class="label">O0</text>
+  </g>
+  <g transform="translate(155,100)">
+    <rect class="box" width="50" height="32" />
+    <text x="25" y="20" text-anchor="middle" class="label">O1</text>
+  </g>
+
+  <!-- arrows -->
+  <path class="arrow" d="M90 66 L130 90" />
+  <path class="arrow" d="M170 66 L150 90" />
+  <path class="arrow" d="M150 66 L110 90" />
+
+  <path class="arrow" d="M60 66 L75 100" />
+  <path class="arrow" d="M140 66 L170 100" />
+
+  <text x="141" y="200" class="muted" text-anchor="middle">Hidden states produce observations; transitions between hidden states</text>
+</svg>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="350" viewBox="0 0 282 282">
+  <style>
+    .bg { fill: #ffffff; }
+    .box { fill: #ffffff; stroke: #222; stroke-width:2; rx:10; ry:10 }
+    .muted { fill:#333; font-size:11px; font-family: 'Comic Sans MS', 'Comic Sans', cursive; }
+    .label { font-weight:700; font-size:13px; font-family: 'Comic Sans MS', 'Comic Sans', cursive; }
+    .formula { font-family: 'Comic Sans MS', 'Comic Sans', cursive; font-size:12px; fill:#111 }
+    .arrow { stroke:#1f618d; stroke-width:3; fill:none; marker-end:url(#arrowhead);}
+    .small { font-size:10px; font-family: 'Comic Sans MS', 'Comic Sans', cursive; fill:#444 }
+    .ghost { fill:none; stroke:#ccc; stroke-width:1 }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto">
+      <polygon points="0 0, 8 4, 0 8" fill="#1f618d" />
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="282" height="282"/>
+
+  <!-- Left: Prior -->
+  <g transform="translate(20,36)">
+    <rect class="box" width="90" height="60" />
+    <text x="45" y="28" text-anchor="middle" class="label">Prior</text>
+    <text x="45" y="46" text-anchor="middle" class="muted">P(H)</text>
+  </g>
+
+  <!-- Right: Likelihood / Evidence -->
+  <g transform="translate(172,36)">
+    <rect class="box" width="90" height="60" />
+    <text x="45" y="28" text-anchor="middle" class="label">Likelihood</text>
+    <text x="45" y="46" text-anchor="middle" class="muted">P(E|H)</text>
+  </g>
+
+  <!-- Center-bottom: Posterior -->
+  <g transform="translate(96,120)">
+    <rect class="box" width="90" height="60" />
+    <text x="45" y="28" text-anchor="middle" class="label">Posterior</text>
+    <text x="45" y="46" text-anchor="middle" class="muted">P(H|E)</text>
+  </g>
+
+  <!-- Converging arrows -->
+  <path class="arrow" d="M110 96 L140 120" />
+  <path class="arrow" d="M172 96 L146 120" />
+
+  <!-- Light hints: prior update -->
+  <g transform="translate(10,200)">
+    <rect x="0" y="0" width="262" height="64" fill="#fff" stroke="#eee" rx="8" ry="8" />
+    <text x="131" y="22" text-anchor="middle" class="small">Bayes update (concise)</text>
+    <text x="131" y="42" text-anchor="middle" class="formula">P(H|E) = P(E|H)·P(H) / P(E)</text>
+  </g>
+
+</svg>

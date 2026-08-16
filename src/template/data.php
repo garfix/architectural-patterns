@@ -14,6 +14,15 @@ const CAT_DATA_FORMAT = 'data-format';
 const CAT_DATA_INTERACTION = 'data-interaction';
 const CAT_DATA_STORE = 'data-store';
 const CAT_DATA_LOCKING = 'data-locking';
+const CAT_PROBABILISTIC = 'probabilistic-reasoning';
+const CAT_SEARCH_OPTIMIZATION = 'search-optimization';
+const CAT_EVOLUTIONARY = 'evolutionary-computation';
+const CAT_SUPERVISED_LEARNING = 'supervised-learning';
+const CAT_DEEP_LEARNING = 'deep-learning-architectures';
+const CAT_UNSUPERVISED_LEARNING = 'unsupervised-learning';
+const CAT_REINFORCEMENT_LEARNING = 'reinforcement-learning';
+const CAT_SYMBOLIC_REASONING = 'symbolic-reasoning';
+const CAT_GRAPHICAL_MODELS = 'graphical-structured-models';
 const CAT_PROBLEM_SOLVING = 'problem-solving';
 const CAT_CROSS_CUTTING = 'cross-cutting-concerns';
 const CAT_DISTRIBUTED = 'distributed-computing';
@@ -99,7 +108,111 @@ $categories = [
         "patterns" => ["Graphics Pipeline", "Double Buffering"]],
     ["code" => CAT_PROBLEM_SOLVING, "name" => 'Problem solving',
         "description" => "Patterns designed to solve user problems",
+        "children" => [CAT_PROBABILISTIC, CAT_SEARCH_OPTIMIZATION, CAT_EVOLUTIONARY, CAT_SUPERVISED_LEARNING, CAT_DEEP_LEARNING, CAT_UNSUPERVISED_LEARNING, CAT_REINFORCEMENT_LEARNING, CAT_SYMBOLIC_REASONING, CAT_GRAPHICAL_MODELS],
         "patterns" => ["Algorithm", "Heuristic", "Search", "Inference Engine", "Planning", "Decision Tree Learning", "Neural Network", "Generative AI", "Agent", "Multi-Agent System", "Blackboard", "Process Control", "Explainability"]],
+
+    ["code" => CAT_PROBABILISTIC, "name" => 'Probabilistic / Statistical Reasoning',
+        "description" => "Represent and reason with uncertainty using probabilistic models and statistical methods.",
+        "patterns" => [
+            "Bayesian Inference",
+            "Markov Chain",
+            "Hidden Markov Model",
+            "Markov Decision Process",
+            "Monte Carlo Method",
+            "Markov Chain Monte Carlo",
+            "Gaussian Process",
+            "Kalman Filter",
+            "Maximum Likelihood Estimation",
+            "Regression Analysis",
+        ]],
+
+    ["code" => CAT_SEARCH_OPTIMIZATION, "name" => 'Search & Optimization',
+        "description" => "Techniques for finding optimal or near-optimal solutions in large search spaces.",
+        "patterns" => [
+            "Gradient Descent",
+            "Simulated Annealing",
+            "A* Search Algorithm",
+            "Hill Climbing",
+            "Tabu Search",
+            "Dynamic Programming",
+            "Linear Programming",
+        ]],
+
+    ["code" => CAT_EVOLUTIONARY, "name" => 'Evolutionary & Nature-Inspired Computation',
+        "description" => "Search methods inspired by biological or collective natural processes.",
+        "patterns" => [
+            "Genetic Algorithm",
+            "Genetic Programming",
+            "Particle Swarm Optimization",
+            "Ant Colony Optimization",
+            "Evolution Strategy",
+        ]],
+
+    ["code" => CAT_SUPERVISED_LEARNING, "name" => 'Supervised Learning',
+        "description" => "Methods that learn mappings from inputs to labeled outputs.",
+        "patterns" => [
+            "Artificial Neural Network",
+            "Decision Tree Learning",
+            "Random Forest",
+            "Gradient Boosting",
+            "Support Vector Machine",
+            "k-Nearest Neighbors",
+            "Naive Bayes Classifier",
+            "Linear Discriminant Analysis",
+        ]],
+
+    ["code" => CAT_DEEP_LEARNING, "name" => 'Deep Learning Architectures',
+        "description" => "Specific neural network architectures that are widely used.",
+        "patterns" => [
+            "Convolutional Neural Network",
+            "Recurrent Neural Network",
+            "Long Short-Term Memory",
+            "Transformer",
+            "Generative Adversarial Network",
+            "Diffusion Model",
+            "Autoencoder",
+        ]],
+
+    ["code" => CAT_UNSUPERVISED_LEARNING, "name" => 'Unsupervised Learning',
+        "description" => "Techniques that discover structure in data without labels.",
+        "patterns" => [
+            "k-Means Clustering",
+            "Hierarchical Clustering",
+            "DBSCAN",
+            "Principal Component Analysis",
+            "t-SNE",
+            "Self-Organizing Map",
+            "Association Rule Learning",
+        ]],
+
+    ["code" => CAT_REINFORCEMENT_LEARNING, "name" => 'Reinforcement Learning',
+        "description" => "Agent-based learning from interaction with environments guided by rewards.",
+        "patterns" => [
+            "Q-Learning",
+            "Temporal Difference Learning",
+            "Policy Gradient Method",
+            "Multi-Armed Bandit",
+        ]],
+
+    ["code" => CAT_SYMBOLIC_REASONING, "name" => 'Symbolic / Logic-Based Reasoning',
+        "description" => "Rule- and logic-based techniques for explicit symbolic reasoning.",
+        "patterns" => [
+            "Expert System",
+            "Constraint Satisfaction Problem",
+            "Fuzzy Logic",
+            "Automated Theorem Proving",
+            "Case-Based Reasoning",
+            "Semantic Network",
+        ]],
+
+    ["code" => CAT_GRAPHICAL_MODELS, "name" => 'Graphical / Structured Probabilistic Models',
+        "description" => "Models that represent dependencies between variables as graphs.",
+        "patterns" => [
+            "Bayesian Network",
+            "Markov Random Field",
+            "Conditional Random Field",
+            "Graph Neural Network",
+        ]],
     ["code" => CAT_DATA, "name" => 'Data',
         "description" => "Patterns that focus on the data of the application",
         "children" => [CAT_DATA_STORE, CAT_DATA_INTERACTION, CAT_DATA_FORMAT, CAT_DATA_LOCKING],
@@ -887,10 +1000,301 @@ $patterns = [
         "name" => "Miscellaneous features",
         "image" => "miscellaneous-features.drawio.png",
         "link" => "miscellaneous-features"
-    ]
+    ],
+    [
+        "name" => "Bayesian Inference",
+        "image" => "bayesian-inference.svg",
+        "link" => "bayesian-inference",
+    ],
+    [
+        "name" => "Markov Chain",
+        "image" => "markov-chain.svg",
+        "link" => "markov-chain",
+    ],
+    [
+        "name" => "Hidden Markov Model",
+        "image" => "hidden-markov-model.svg",
+        "link" => "hidden-markov-model",
+    ],
+    [
+        "name" => "Markov Decision Process",
+        "image" => "markov-decision-process.svg",
+        "link" => "markov-decision-process",
+    ],
+    [
+        "name" => "Monte Carlo Method",
+        "image" => "monte-carlo-method.svg",
+        "link" => "monte-carlo-method",
+    ],
+    [
+        "name" => "Markov Chain Monte Carlo",
+        "image" => "markov-chain-monte-carlo.svg",
+        "link" => "markov-chain-monte-carlo",
+    ],
+    [
+        "name" => "Gaussian Process",
+        "image" => "gaussian-process.svg",
+        "link" => "gaussian-process",
+    ],
+    [
+        "name" => "Kalman Filter",
+        "image" => "kalman-filter.svg",
+        "link" => "kalman-filter",
+    ],
+    [
+        "name" => "Maximum Likelihood Estimation",
+        "image" => "maximum-likelihood-estimation.svg",
+        "link" => "maximum-likelihood-estimation",
+    ],
+    [
+        "name" => "Regression Analysis",
+        "image" => "regression-analysis.svg",
+        "link" => "regression-analysis",
+    ],
+    [
+        "name" => "Gradient Descent",
+        "image" => "gradient-descent.drawio.png",
+        "link" => "gradient-descent",
+    ],
+    [
+        "name" => "Simulated Annealing",
+        "image" => "simulated-annealing.drawio.png",
+        "link" => "simulated-annealing",
+    ],
+    [
+        "name" => "A* Search Algorithm",
+        "image" => "a-star-search.drawio.png",
+        "link" => "a-star-search",
+    ],
+    [
+        "name" => "Hill Climbing",
+        "image" => "hill-climbing.drawio.png",
+        "link" => "hill-climbing",
+    ],
+    [
+        "name" => "Tabu Search",
+        "image" => "tabu-search.drawio.png",
+        "link" => "tabu-search",
+    ],
+    [
+        "name" => "Dynamic Programming",
+        "image" => "dynamic-programming.drawio.png",
+        "link" => "dynamic-programming",
+    ],
+    [
+        "name" => "Linear Programming",
+        "image" => "linear-programming.drawio.png",
+        "link" => "linear-programming",
+    ],
+    [
+        "name" => "Genetic Algorithm",
+        "image" => "genetic-algorithm.drawio.png",
+        "link" => "genetic-algorithm",
+    ],
+    [
+        "name" => "Genetic Programming",
+        "image" => "genetic-programming.drawio.png",
+        "link" => "genetic-programming",
+    ],
+    [
+        "name" => "Particle Swarm Optimization",
+        "image" => "particle-swarm-optimization.drawio.png",
+        "link" => "particle-swarm-optimization",
+    ],
+    [
+        "name" => "Ant Colony Optimization",
+        "image" => "ant-colony-optimization.drawio.png",
+        "link" => "ant-colony-optimization",
+    ],
+    [
+        "name" => "Evolution Strategy",
+        "image" => "evolution-strategy.drawio.png",
+        "link" => "evolution-strategy",
+    ],
+    [
+        "name" => "Artificial Neural Network",
+        "image" => "artificial-neural-network.drawio.png",
+        "link" => "artificial-neural-network",
+    ],
+    [
+        "name" => "Decision Tree Learning",
+        "image" => "decision-tree-learning.drawio.png",
+        "link" => "decision-tree-learning",
+    ],
+    [
+        "name" => "Random Forest",
+        "image" => "random-forest.drawio.png",
+        "link" => "random-forest",
+    ],
+    [
+        "name" => "Gradient Boosting",
+        "image" => "gradient-boosting.drawio.png",
+        "link" => "gradient-boosting",
+    ],
+    [
+        "name" => "Support Vector Machine",
+        "image" => "support-vector-machine.drawio.png",
+        "link" => "support-vector-machine",
+    ],
+    [
+        "name" => "k-Nearest Neighbors",
+        "image" => "k-nearest-neighbors.drawio.png",
+        "link" => "k-nearest-neighbors",
+    ],
+    [
+        "name" => "Naive Bayes Classifier",
+        "image" => "naive-bayes-classifier.drawio.png",
+        "link" => "naive-bayes-classifier",
+    ],
+    [
+        "name" => "Linear Discriminant Analysis",
+        "image" => "linear-discriminant-analysis.drawio.png",
+        "link" => "linear-discriminant-analysis",
+    ],
+    [
+        "name" => "Convolutional Neural Network",
+        "image" => "convolutional-neural-network.drawio.png",
+        "link" => "convolutional-neural-network",
+    ],
+    [
+        "name" => "Recurrent Neural Network",
+        "image" => "recurrent-neural-network.drawio.png",
+        "link" => "recurrent-neural-network",
+    ],
+    [
+        "name" => "Long Short-Term Memory",
+        "image" => "long-short-term-memory.drawio.png",
+        "link" => "long-short-term-memory",
+    ],
+    [
+        "name" => "Transformer",
+        "image" => "transformer.drawio.png",
+        "link" => "transformer",
+    ],
+    [
+        "name" => "Generative Adversarial Network",
+        "image" => "generative-adversarial-network.drawio.png",
+        "link" => "generative-adversarial-network",
+    ],
+    [
+        "name" => "Diffusion Model",
+        "image" => "diffusion-model.drawio.png",
+        "link" => "diffusion-model",
+    ],
+    [
+        "name" => "Autoencoder",
+        "image" => "autoencoder.drawio.png",
+        "link" => "autoencoder",
+    ],
+    [
+        "name" => "k-Means Clustering",
+        "image" => "k-means-clustering.drawio.png",
+        "link" => "k-means-clustering",
+    ],
+    [
+        "name" => "Hierarchical Clustering",
+        "image" => "hierarchical-clustering.drawio.png",
+        "link" => "hierarchical-clustering",
+    ],
+    [
+        "name" => "DBSCAN",
+        "image" => "dbscan.drawio.png",
+        "link" => "dbscan",
+    ],
+    [
+        "name" => "Principal Component Analysis",
+        "image" => "principal-component-analysis.drawio.png",
+        "link" => "principal-component-analysis",
+    ],
+    [
+        "name" => "t-SNE",
+        "image" => "t-sne.drawio.png",
+        "link" => "t-sne",
+    ],
+    [
+        "name" => "Self-Organizing Map",
+        "image" => "self-organizing-map.drawio.png",
+        "link" => "self-organizing-map",
+    ],
+    [
+        "name" => "Association Rule Learning",
+        "image" => "association-rule-learning.drawio.png",
+        "link" => "association-rule-learning",
+    ],
+    [
+        "name" => "Q-Learning",
+        "image" => "q-learning.drawio.png",
+        "link" => "q-learning",
+    ],
+    [
+        "name" => "Temporal Difference Learning",
+        "image" => "temporal-difference-learning.drawio.png",
+        "link" => "temporal-difference-learning",
+    ],
+    [
+        "name" => "Policy Gradient Method",
+        "image" => "policy-gradient-method.drawio.png",
+        "link" => "policy-gradient-method",
+    ],
+    [
+        "name" => "Multi-Armed Bandit",
+        "image" => "multi-armed-bandit.drawio.png",
+        "link" => "multi-armed-bandit",
+    ],
+    [
+        "name" => "Expert System",
+        "image" => "expert-system.drawio.png",
+        "link" => "expert-system",
+    ],
+    [
+        "name" => "Constraint Satisfaction Problem",
+        "image" => "constraint-satisfaction-problem.drawio.png",
+        "link" => "constraint-satisfaction-problem",
+    ],
+    [
+        "name" => "Fuzzy Logic",
+        "image" => "fuzzy-logic.drawio.png",
+        "link" => "fuzzy-logic",
+    ],
+    [
+        "name" => "Automated Theorem Proving",
+        "image" => "automated-theorem-proving.drawio.png",
+        "link" => "automated-theorem-proving",
+    ],
+    [
+        "name" => "Case-Based Reasoning",
+        "image" => "case-based-reasoning.drawio.png",
+        "link" => "case-based-reasoning",
+    ],
+    [
+        "name" => "Semantic Network",
+        "image" => "semantic-network.drawio.png",
+        "link" => "semantic-network",
+    ],
+    [
+        "name" => "Bayesian Network",
+        "image" => "bayesian-network.drawio.png",
+        "link" => "bayesian-network",
+    ],
+    [
+        "name" => "Markov Random Field",
+        "image" => "markov-random-field.drawio.png",
+        "link" => "markov-random-field",
+    ],
+    [
+        "name" => "Conditional Random Field",
+        "image" => "conditional-random-field.drawio.png",
+        "link" => "conditional-random-field",
+    ],
+    [
+        "name" => "Graph Neural Network",
+        "image" => "graph-neural-network.drawio.png",
+        "link" => "graph-neural-network",
+    ],
 
 
 ];
+
 
 $sortedPatterns = $patterns;
 
