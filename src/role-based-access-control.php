@@ -30,6 +30,9 @@ include 'template/header.php';
         <li>If the application needs some form of non-trivial access restriction.
     </ul>
 
+    <h2>How does it work?</h2>
+    <p>Assigns permissions to roles and grants users those permissions by assigning them to roles, simplifying management compared to per-user permissions.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Role-based_access_control">Wikipedia</a>

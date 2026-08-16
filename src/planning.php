@@ -40,6 +40,9 @@ include 'template/header.php';
         <li>The situation may change after the plan was made; if that's possible the application must be able to replan dynamically
     </ul>
 
+    <h2>How does it work?</h2>
+    <p>Searches sequences of actions from an initial state toward a goal, using heuristics or cost functions to guide selection of promising paths.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Search_problem">Wikipedia</a>

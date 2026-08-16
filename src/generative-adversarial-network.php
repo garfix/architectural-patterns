@@ -12,6 +12,9 @@ include 'template/header.php';
         <dd>Pits two neural networks against each other until the generator produces convincing results.</dd>
     </dl>
 
+    <h2>How does it work?</h2>
+    <p>Trains two networks adversarially: a generator creates samples and a discriminator learns to distinguish real from generated data, improving both.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Generative_adversarial_network">Wikipedia: Generative Adversarial Network</a></li>

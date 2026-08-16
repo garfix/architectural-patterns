@@ -12,6 +12,9 @@ include 'template/header.php';
         <dd>Allows reasoning with degrees of truth instead of strict true/false categories.</dd>
     </dl>
 
+    <h2>How does it work?</h2>
+    <p>Represents values with degrees of membership in fuzzy sets and combines them with fuzzy rules and aggregation to make approximate decisions.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Fuzzy_logic">Wikipedia: Fuzzy logic</a></li>

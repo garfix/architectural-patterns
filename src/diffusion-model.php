@@ -12,6 +12,9 @@ include 'template/header.php';
         <dd>Learns to generate data by reversing a process that gradually adds noise, denoising step by step.</dd>
     </dl>
 
+    <h2>How does it work?</h2>
+    <p>Generates data by learning to reverse a gradual noising process: a model denoises samples step-by-step to produce realistic outputs.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Diffusion_model">Wikipedia: Diffusion model</a></li>

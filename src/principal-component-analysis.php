@@ -12,6 +12,9 @@ include 'template/header.php';
         <dd>Reduces data to fewer dimensions by finding the directions along which it varies the most.</dd>
     </dl>
 
+    <h2>How does it work?</h2>
+    <p>Computes orthogonal directions (principal components) that capture the largest variance, projecting data to a lower-dimensional space.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Principal_component_analysis">Wikipedia: Principal Component Analysis</a></li>

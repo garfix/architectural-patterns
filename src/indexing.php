@@ -37,6 +37,9 @@ include 'template/header.php';
         <li>It can take a lot of space to index documents
     </ul>
 
+    <h2>How does it work?</h2>
+    <p>Creates data structures that map keys to locations (e.g., trees, hashes) so lookups, range queries, and joins can be performed efficiently.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Search_engine_indexing">Wikipedia on search engine indexing</a>

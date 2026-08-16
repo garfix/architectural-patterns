@@ -12,6 +12,9 @@ include 'template/header.php';
         <dd>A directed graph showing how variables probabilistically influence each other, useful for causal reasoning.</dd>
     </dl>
 
+    <h2>How does it work?</h2>
+    <p>Represents variables and conditional dependencies as a directed acyclic graph; belief propagation and inference update probabilities given observed evidence.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Bayesian_network">Wikipedia: Bayesian network</a></li>

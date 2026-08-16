@@ -39,6 +39,9 @@ include 'template/header.php';
         <li>A transaction may lock tables. A transaction that takes a long time may lead to other threads having to wait
     </ul>
 
+    <h2>How does it work?</h2>
+    <p>Groups multiple operations into a single atomic unit that is applied entirely or not at all and preserves integrity via ACID properties.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Database_transaction">Wikipedia on database transaction</a>

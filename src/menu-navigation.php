@@ -29,6 +29,9 @@ include 'template/header.php';
         <li>Almost every GUI application has a menu bar
     </ul>
 
+    <h2>How does it work?</h2>
+    <p>Presents hierarchical or sequential choices and moves users between views or options based on selection and navigation rules.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Menu_bar">Wikipedia</a>

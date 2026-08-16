@@ -12,6 +12,9 @@ include 'template/header.php';
         <dd>Finds the boundary that separates classes of data with the widest possible margin between them.</dd>
     </dl>
 
+    <h2>How does it work?</h2>
+    <p>Finds a decision boundary that maximizes the margin between classes, using kernel functions to handle non-linear separations.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Support_vector_machine">Wikipedia: Support vector machine</a></li>

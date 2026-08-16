@@ -33,6 +33,9 @@ include 'template/header.php';
         <li>When a user is allowed to correct edits
     </ul>
 
+    <h2>How does it work?</h2>
+    <p>Records reversible operations or snapshots of state so prior actions can be undone by applying inverse operations or restoring previous state.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Undo">Wikipedia</a>

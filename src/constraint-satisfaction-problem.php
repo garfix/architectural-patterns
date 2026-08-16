@@ -12,6 +12,9 @@ include 'template/header.php';
         <dd>Finds values for a set of variables that simultaneously satisfy all given constraints.</dd>
     </dl>
 
+    <h2>How does it work?</h2>
+    <p>Defines variables, domains, and constraints; solvers search or propagate constraints to find assignments that satisfy all constraints.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Constraint_satisfaction_problem">Wikipedia: Constraint satisfaction problem</a></li>

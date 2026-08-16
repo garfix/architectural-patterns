@@ -39,6 +39,9 @@ include 'template/header.php';
         <li>If the task requires an autonomous program that is permanently active and runs without human intervention
     </ul>
 
+    <h2>How does it work?</h2>
+    <p>An autonomous component that perceives its environment and acts to achieve goals, optionally communicating with other agents and adapting over time.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Software_agent">Wikipedia</a>

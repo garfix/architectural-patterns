@@ -30,6 +30,9 @@ include 'template/header.php';
         <li>This is the simplest form of access control
     </ul>
 
+    <h2>How does it work?</h2>
+    <p>A mapping of subjects to permitted actions; access is checked by looking up the requester in the list and allowing or denying operations accordingly.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Access-control_list">Wikipedia</a>

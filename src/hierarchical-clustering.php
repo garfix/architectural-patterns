@@ -12,6 +12,9 @@ include 'template/header.php';
         <dd>Builds a tree of nested clusters, either by merging small groups upward or splitting large ones downward.</dd>
     </dl>
 
+    <h2>How does it work?</h2>
+    <p>Builds a hierarchy of clusters by iteratively merging (agglomerative) or splitting (divisive) groups based on similarity metrics.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Hierarchical_clustering">Wikipedia: Hierarchical clustering</a></li>

@@ -12,6 +12,9 @@ include 'template/header.php';
         <dd>A recurrent network design with gates that let it remember or forget information over long sequences.</dd>
     </dl>
 
+    <h2>How does it work?</h2>
+    <p>Uses gated recurrent cells (input, forget, output) to control information flow and preserve long-term dependencies in sequences.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Long_short-term_memory">Wikipedia: Long Short-Term Memory</a></li>

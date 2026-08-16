@@ -40,6 +40,9 @@ include 'template/header.php';
         <li>An NN is computationally much more expensive than a rule based system
     </ul>
 
+    <h2>How does it work?</h2>
+    <p>Connects layers of parameterized units; training adjusts weights via backpropagation to minimize a loss between predictions and targets.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Artificial_neural_network">Wikipedia on artificial neural networks</a>

@@ -12,6 +12,9 @@ include 'template/header.php';
         <dd>Updates predictions using the difference between successive estimates, learning before the final outcome is known.</dd>
     </dl>
 
+    <h2>How does it work?</h2>
+    <p>Updates value estimates incrementally using the difference between successive predictions (temporal differences) and observed rewards.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Temporal_difference_learning">Wikipedia: Temporal difference learning</a></li>

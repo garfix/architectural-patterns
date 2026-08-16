@@ -37,6 +37,9 @@ include 'template/header.php';
         <li>Search can be slow, hence it can be useful to add known shortcuts in the form of heuristics.
     </ul>
 
+    <h2>How does it work?</h2>
+    <p>Explores a state space using strategies (uninformed or informed) and data structures to find a path or solution efficiently.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Search_problem">Wikipedia</a>

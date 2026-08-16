@@ -29,6 +29,9 @@ include 'template/header.php';
         <li>If you want your software to be shared and you want to explain to potential users what you do and don't allow
     </ul>
 
+    <h2>How does it work?</h2>
+    <p>Defines the terms under which software or content may be used, redistributed, or modified; a legal contract between provider and user.</p>
+
     <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://choosealicense.com/">Choose an open source license</a>
