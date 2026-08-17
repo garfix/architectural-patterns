@@ -13,6 +13,8 @@ include 'template/header.php';
     </dl>
 
 
+    <figure><img alt="" src="images/linear-programming.png"><figcaption>Linear programming</figcaption></figure>
+
     <h2>How does it work?</h2>
     <p>Write your goal as a linear formula and list linear limits (constraints). A solver finds the best numbers that meet the limits and give the best goal. Use existing solvers rather than writing your own.</p>
 
