@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A simple machine learning technique to create a decision tree</dd>
+        <dd>Decision Trees split data by asking sequential yes/no questions to reach a prediction. Each branch tests a feature; leaves hold predictions. Visualize a flowchart that routes each example down to a class or value. Trees differ from black-box models because they are interpretable and easy to inspect. Compared to ensemble methods (random forest, boosting), a single tree is simpler and more prone to overfitting, but it's fast and transparent.</dd>
     </dl>
 
     <figure><img alt="" src="images/decision-tree-learning.drawio.png"><figcaption>Decision Tree Learning</figcaption></figure>

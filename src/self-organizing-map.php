@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A neural network that arranges itself into a low-dimensional grid, placing similar data near each other.</dd>
+        <dd>A Self-Organizing Map (SOM) is a neural-network-like method that maps high-dimensional data onto a low-dimensional grid while preserving topology: similar inputs end up near each other. Picture arranging nodes on a grid so that they represent different clusters of the data. SOMs differ from other clustering and embedding techniques by providing a structured grid that can be visualized and interpreted.</dd>
     </dl>
 
     <h2>How does it work?</h2>

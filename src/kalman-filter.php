@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Estimates the true state of a moving or changing system from noisy, incomplete measurements over time.</dd>
+        <dd>A Kalman Filter estimates the hidden state of a system that changes over time from noisy measurements. It alternates between prediction (projecting the state forward) and update (correcting with new observations) using linear algebra and Gaussian assumptions. Use it when you need a real-time estimate of a moving target (like position from noisy sensors). It differs from batch methods because it works online step-by-step and assumes linear-Gaussian dynamics; if the system is non-linear, extended or unscented variants are used.</dd>
     </dl>
 
     <h2>How does it work?</h2>

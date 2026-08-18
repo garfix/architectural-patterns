@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Finds a linear combination of features that best separates two or more classes.</dd>
+        <dd>Linear Discriminant Analysis (LDA) finds linear combinations of features that separate classes best and models class-conditional Gaussian distributions. Imagine projecting data onto a line where classes become as distinct as possible. LDA differs from SVMs and logistic regression by its probabilistic generative assumptions and closed-form solutions — when those assumptions hold, LDA can be very effective and interpretable.</dd>
     </dl>
 
     <h2>How does it work?</h2>

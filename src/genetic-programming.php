@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Evolves actual computer programs or expressions using evolutionary operators.</dd>
+        <dd>Genetic Programming (GP) extends GAs by evolving computer programs or expressions rather than fixed-length candidate vectors. Solutions are trees or code fragments that are recombined and mutated. Think of breeding small programs until one solves your task. GP differs from GAs by producing executable structures (trees of operations) and is useful when the solution form itself is unknown; it's heavier computationally but flexible for symbolic problems.</dd>
     </dl>
 
 

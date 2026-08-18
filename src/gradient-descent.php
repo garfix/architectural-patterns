@@ -11,7 +11,7 @@ include 'template/header.php';
     <p>Start with a guess for the values you want to tune, measure how wrong the guess is, and change the values a little to make the error smaller. Repeat until it gets good enough.</p>
     <dl>
         <dt>Definition</dt>
-        <dd>Iteratively adjusts parameters in the direction that most reduces error, used to train most modern models.</dd>
+        <dd>Gradient Descent is an iterative optimization algorithm that nudges parameters in the direction that reduces error the fastest, measured by the gradient. It's the workhorse behind training many machine learning models, especially neural networks. Imagine rolling downhill on the loss surface toward a valley representing better solutions. It differs from global search methods (like simulated annealing or evolutionary algorithms) because it uses local slope information and typically finds a local minimum — not necessarily the global best.</dd>
     </dl>
 
     <h2 id="links">Links</h2>

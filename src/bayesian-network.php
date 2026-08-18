@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A directed graph showing how variables probabilistically influence each other, useful for causal reasoning.</dd>
+        <dd>A Bayesian Network is a directed acyclic graph that encodes probabilistic dependencies between variables. Each node has a conditional probability table describing how it depends on its parents. Think of a cause-effect diagram with probabilities that you can use to compute posterior beliefs. Bayesian networks differ from flat probabilistic models by making conditional independencies explicit, enabling efficient reasoning about causality and interventions.</dd>
     </dl>
 
     <h2>How does it work?</h2>

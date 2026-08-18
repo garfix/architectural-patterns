@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Groups points that are densely packed together and marks isolated points as outliers.</dd>
+        <dd>DBSCAN groups points that are densely packed and marks isolated points as noise, without specifying the number of clusters beforehand. Imagine drawing circles and seeing which points have enough neighbors — dense regions become clusters. DBSCAN differs from k-means by handling irregular cluster shapes and identifying outliers, but it requires choosing distance and density thresholds carefully.</dd>
     </dl>
 
     <h2>How does it work?</h2>

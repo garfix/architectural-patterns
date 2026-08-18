@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Learns to generate data by reversing a process that gradually adds noise, denoising step by step.</dd>
+        <dd>Diffusion models learn to generate data by reversing a process that gradually corrupts data with noise. The model learns to denoise step by step until a clean sample emerges. Think of learning a multi-step cleanup routine: start with noise and iteratively remove it to create data. Diffusion models differ from GANs by optimizing likelihood-like objectives and tend to be more stable, though often slower at sampling.</dd>
     </dl>
 
     <h2>How does it work?</h2>

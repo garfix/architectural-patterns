@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A neural network that operates directly on graph-structured data, learning from both node features and connections.</dd>
+        <dd>Graph Neural Networks (GNNs) are neural architectures that operate on graphs by passing messages between nodes and aggregating neighbor information to compute node or graph representations. Visualize nodes exchanging information with their neighbors then updating their own state. GNNs differ from regular neural nets by natively handling graph structure and from probabilistic graphical models by being learned, differentiable models rather than explicit probabilistic encodings.</dd>
     </dl>
 
     <h2>How does it work?</h2>

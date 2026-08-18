@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Classifies a new data point based on the majority label among its closest neighbors in the training data.</dd>
+        <dd>K-Nearest Neighbors (k-NN) classifies new points based on the labels of the k closest training examples. It's simple and nonparametric: store the data and use distance at query time. Think of asking the nearest neighbors what label they have and going with the majority. K-NN differs from models that summarize data into parameters (like SVMs or neural networks) because it keeps raw examples and can be slow at prediction time but very flexible.</dd>
     </dl>
 
     <h2>How does it work?</h2>

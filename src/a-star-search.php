@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Finds the shortest path between points by combining actual cost so far with an estimate of remaining cost.</dd>
+        <dd>A* is a pathfinding algorithm that finds the least-cost path between nodes by combining the cost so far with a heuristic estimate of remaining cost. It is efficient and optimal when the heuristic is admissible (never overestimates). S, visualize expanding nodes in a grid while using a guess for distance-to-go; A* prioritizes nodes that look promising. It differs from uninformed searches (like Dijkstra) by using heuristics to guide the search and from local optimizers that don't guarantee shortest overall paths.</dd>
     </dl>
 
         <h2>How does it work?</h2>

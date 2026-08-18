@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Discovers "if this, then that" relationships in large datasets, like items frequently bought together.</dd>
+        <dd>Association Rule Learning finds rules of the form "if items A and B appear, item C often appears too" — common in market-basket analysis. Imagine mining transaction records to find which products are frequently bought together. It differs from clustering and classification because it discovers co-occurrence rules rather than partitions or labels, and it works well for transactional or binary feature data.</dd>
     </dl>
 
     <h2>How does it work?</h2>

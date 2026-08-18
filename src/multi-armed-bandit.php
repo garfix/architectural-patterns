@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Balances trying new options against sticking with the best-known option in a simplified one-step RL problem.</dd>
+        <dd>The Multi-Armed Bandit formalizes the exploration-vs-exploitation trade-off in a simplified one-step setting: choose among several options with unknown rewards and learn which is best. Think of many slot machines (arms) where you must balance trying new arms against exploiting the best-known one. It differs from full RL because there is no state transition — decisions are single-step but capture the core challenge of learning under uncertainty.</dd>
     </dl>
 
     <h2>How does it work?</h2>

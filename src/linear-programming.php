@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Finds the best outcome in a model with linear relationships and constraints.</dd>
+        <dd>Linear Programming (LP) finds the best outcome for a linear objective function subject to linear constraints. It's widely used for resource allocation and scheduling problems. S, consider it as solving a system that asks "maximize profit" with limited resources, where everything scales linearly. LP differs from non-linear optimization or integer programming because of its linearity and the availability of powerful polynomial-time solvers; if variables must be integers, the problem becomes harder (integer programming).</dd>
     </dl>
 
 

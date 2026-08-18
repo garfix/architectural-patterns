@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Solves complex problems by breaking them into overlapping subproblems and reusing solutions to those subproblems.</dd>
+        <dd>Dynamic Programming (DP) solves complex problems by breaking them into overlapping subproblems and reusing solved sub-results (memoization). It turns exponential problems into polynomial-time ones when overlapping structure exists. Think of computing Fibonacci numbers once and saving them instead of recalculating. DP differs from greedy or divide-and-conquer methods by exploiting repeated subproblems and optimal substructure; it's deterministic and exact when applicable.</dd>
     </dl>
 
     <h2>How does it work?</h2>

@@ -11,7 +11,7 @@ include 'template/header.php';
     <p>Try random changes to a solution and sometimes accept worse changes early on to avoid getting stuck. Gradually become more strict so the search settles on a good solution.</p>
     <dl>
         <dt>Definition</dt>
-        <dd>Searches for a good solution by allowing occasional worse moves early on, cooling down over time to settle into a strong result.</dd>
+        <dd>Simulated Annealing searches for good solutions by making random changes and sometimes accepting worse solutions early on, then slowly reducing that randomness. The idea mirrors physical annealing where cooling lets a material settle into a low-energy state. It's a way to escape local optima by accepting occasional bad moves, unlike pure hill-climbing which only accepts improvements. It differs from gradient-based methods because it's derivative-free and can jump across the search space more freely.</dd>
     </dl>
 
     <h2 id="links">Links</h2>

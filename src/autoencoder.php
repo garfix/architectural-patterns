@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A neural network trained to compress data down and then reconstruct it, learning a compact representation.</dd>
+        <dd>An Autoencoder compresses input into a compact latent representation and decodes it to reconstruct the original. It's used for dimensionality reduction, denoising, and representation learning. Picture an encoder that translates data into a smaller code and a decoder that reconstructs it; training minimizes reconstruction error. Autoencoders differ from supervised models because they don't need labels, and from VAEs because standard autoencoders don't impose probabilistic structure on the latent space.</dd>
     </dl>
 
     <h2>How does it work?</h2>

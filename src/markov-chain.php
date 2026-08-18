@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Models a system as a sequence of states where the next state depends only on the current one.</dd>
+        <dd>A Markov chain models a process that moves through states step by step where each step depends only on the current state, not the full past. Practically, it's like a simple rule that says “given where I am now, here are the chances of moving to each next place.” This differs from more complex sequence models (like hidden Markov models) because a plain Markov chain assumes you can observe the states directly and don't need to infer hidden information. Use it when the "memory" of the system is limited to the present.</dd>
     </dl>
     <figure><img alt="" src="images/markov-chain.drawio.png"><figcaption>Markov chain (states and transition probabilities)</figcaption></figure>
 

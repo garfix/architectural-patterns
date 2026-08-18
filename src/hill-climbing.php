@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Repeatedly moves to a better neighboring solution until no improvement can be found.</dd>
+        <dd>Hill Climbing repeatedly moves from a solution to a better neighboring solution until no improvement is found. It's simple and fast but can get stuck in local optima. Think of taking small steps uphill until the slope levels out. It differs from stochastic or global methods (like simulated annealing or genetic algorithms) because it accepts only improvements and does not explore broadly, so it's best for smooth landscapes or when combined with restarts.</dd>
     </dl>
 
 

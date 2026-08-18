@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A fast probabilistic classifier that assumes input features are independent of each other given the class.</dd>
+        <dd>Naive Bayes is a fast probabilistic classifier that assumes features are independent given the class. Despite this strong assumption, it often works well in practice (e.g., text classification). Think of multiplying simple likelihoods for each feature and picking the class with the highest score. It differs from more expressive probabilistic models by trading modeling fidelity for speed and simplicity.</dd>
     </dl>
 
     <h2>How does it work?</h2>

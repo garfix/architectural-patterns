@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Builds a sequence of weak models, each one correcting the errors of the ones before it.</dd>
+        <dd>Gradient Boosting builds a sequence of weak learners (often shallow trees), where each new model focuses on correcting errors made by the previous ensemble. Over many iterations you get a strong predictor. Think of many small trees each learning the residual mistakes and cumulatively improving predictions. It differs from random forests by training sequentially and typically reaching higher accuracy at the cost of more careful tuning and sensitivity to overfitting.</dd>
     </dl>
 
     <h2>How does it work?</h2>

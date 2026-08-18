@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A framework for decision-making where outcomes are partly random and partly under the control of an agent choosing actions.</dd>
+        <dd>A Markov Decision Process (MDP) formalizes decision-making under uncertainty: states, actions, transition probabilities, and rewards. An agent chooses actions to maximize expected cumulative reward over time, balancing immediate gains with long-term benefits. This differs from passive Markov chains because an MDP includes deliberate choices (actions) and a reward signal — it's the foundation of many reinforcement learning methods. Think of it as a game engine where you design policies (action rules) to get the best score given stochastic dynamics.</dd>
     </dl>
 
     <h2>How does it work?</h2>

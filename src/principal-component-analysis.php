@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Reduces data to fewer dimensions by finding the directions along which it varies the most.</dd>
+        <dd>PCA reduces dimensionality by finding directions (principal components) where data varies most, projecting data into a lower-dimensional space while preserving as much variance as possible. S, picture rotating the data to find the best axes summarizing it. PCA differs from non-linear methods (like t-SNE) by being linear and interpretable, and it's often used as a preprocessing step.</dd>
     </dl>
 
     <h2>How does it work?</h2>

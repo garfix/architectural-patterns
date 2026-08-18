@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Combines many decision trees trained on random subsets of data and averages their predictions for more accuracy.</dd>
+        <dd>Random Forest builds many decision trees on random subsets of data and features, then averages their predictions. This reduces overfitting and typically improves accuracy compared to a single tree. S, imagine asking many slightly different experts and taking a majority vote. Random Forest differs from boosting because it trains trees independently and aggregates, while boosting adds trees sequentially to correct previous errors.</dd>
     </dl>
 
     <h2>How does it work?</h2>

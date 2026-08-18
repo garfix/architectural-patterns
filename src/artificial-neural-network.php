@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A layered network of simple computing units that learns complex, non-linear patterns from labeled examples.</dd>
+        <dd>An Artificial Neural Network (ANN) is a layered set of simple computation units (neurons) that learn complex mappings from inputs to outputs by adjusting weights using data. Think of it as a function approximator that learns patterns through examples. ANNs can model highly non-linear relationships and differ from simpler algorithms (like linear regression or decision trees) by requiring more data and compute but offering greater flexibility. Architectures and training choices (depth, activation, optimization) determine their behavior and suitability.</dd>
     </dl>
 
     <h2>How does it work?</h2>

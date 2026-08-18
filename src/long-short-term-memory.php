@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A recurrent network design with gates that let it remember or forget information over long sequences.</dd>
+        <dd>LSTM networks are a type of RNN designed to remember information over longer sequences using gated mechanisms that control information flow. Think of gates that decide what to keep, forget, or output, so the model can learn long-term dependencies. LSTMs differ from vanilla RNNs by addressing vanishing gradients and from transformers by being sequential rather than relying on global attention.</dd>
     </dl>
 
     <h2>How does it work?</h2>

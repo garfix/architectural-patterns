@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Solves new problems by adapting solutions that worked for similar past problems.</dd>
+        <dd>Case-Based Reasoning solves new problems by finding and adapting solutions that worked in similar past cases. Think of retrieving an old ticket with a similar bug and tweaking that solution for the new one. It differs from rule-based systems by relying on concrete past examples instead of abstracted rules, and from purely statistical methods by emphasizing adaptation of discrete cases.</dd>
     </dl>
 
     <h2>How does it work?</h2>

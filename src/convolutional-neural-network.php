@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A neural network that scans small local patterns across an image or grid-like data.</dd>
+        <dd>Convolutional Neural Networks (CNNs) are specialized ANNs that scan local patterns across structured inputs like images. Convolution layers detect local features (edges, textures) and pooling reduces spatial size while preserving signals. Think of sliding small filters over an image and learning which patterns matter. CNNs differ from dense networks by exploiting spatial locality and parameter sharing, making them ideal for images and grid-like data.</dd>
     </dl>
 
     <h2>How does it work?</h2>

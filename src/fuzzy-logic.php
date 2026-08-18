@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Allows reasoning with degrees of truth instead of strict true/false categories.</dd>
+        <dd>Fuzzy Logic allows reasoning with degrees of truth instead of strict true/false values, enabling rules like "if temperature is somewhat high, then reduce heating moderately." s, think of smooth thresholds and graded rules instead of binary ones. Fuzzy systems differ from classical logic-based systems by modeling vagueness explicitly, making them useful in control systems and human-centric rules.</dd>
     </dl>
 
     <h2>How does it work?</h2>

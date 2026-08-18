@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A Markov chain where the true states are unobserved and must be inferred from observable outputs.</dd>
+        <dd>A Hidden Markov Model (HMM) is like a Markov chain but with a twist: you can't see the true underlying states directly. Instead, you see noisy observations that depend on those hidden states. HMMs combine a state-transition model (how states evolve) with an observation model (how states produce outputs) and use algorithms to infer the most likely hidden states. HMMs are useful for sequence problems where the true cause is latent, e.g., speech recognition. They differ from plain Markov chains by requiring inference over unobserved variables.</dd>
     </dl>
 
     <figure><img alt="" src="images/hidden-markov-model.png"><figcaption>Hidden Markov Model</figcaption></figure>

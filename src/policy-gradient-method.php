@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Directly adjusts the agent's decision-making strategy to increase actions that lead to higher rewards.</dd>
+        <dd>Policy Gradient methods directly optimize the agent's action-selection strategy by estimating gradients of expected reward with respect to policy parameters and taking gradient steps. Picture nudging the policy toward actions that led to higher rewards. These methods differ from value-based ones (like Q-learning) as they optimize the policy directly and can naturally handle continuous action spaces.</dd>
     </dl>
 
     <h2>How does it work?</h2>

@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Uses formal logic to automatically prove or disprove mathematical statements.</dd>
+        <dd>Automated Theorem Proving uses formal logic and search strategies to prove or disprove mathematical statements automatically. Imagine a solver that applies inference rules systematically to derive conclusions from axioms. It differs from heuristic or statistical methods by operating on symbolic, provable correctness rather than probabilistic guesses.</dd>
     </dl>
 
     <h2>How does it work?</h2>

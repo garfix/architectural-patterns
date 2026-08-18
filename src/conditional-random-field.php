@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A structured model that predicts a whole sequence of labels at once, taking neighboring labels into account.</dd>
+        <dd>A Conditional Random Field (CRF) models the conditional distribution of label sequences given inputs, capturing dependencies between neighboring labels (useful in sequence labeling). Think of labeling a sentence where the label for a word depends on nearby labels as well as the input features. CRFs differ from HMMs by being discriminative (modeling p(labels|inputs) directly) and from simple classifiers by modeling structured outputs jointly.</dd>
     </dl>
 
     <h2>How does it work?</h2>

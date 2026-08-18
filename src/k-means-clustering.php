@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Groups data points into a fixed number of clusters by repeatedly assigning points to the nearest cluster center.</dd>
+        <dd>K-Means divides data into k clusters by alternating assignment to the nearest center and updating centers to the mean of assigned points. Imagine grouping points by repeatedly putting them into the nearest cluster center until things stabilize. K-Means differs from density-based methods (like DBSCAN) because it assumes spherical clusters and a fixed k, making it fast but less flexible for irregular shapes.</dd>
     </dl>
 
     <h2>How does it work?</h2>

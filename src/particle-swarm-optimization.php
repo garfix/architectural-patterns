@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Moves a swarm of candidate solutions through the search space, influenced by personal and neighbors' best finds.</dd>
+        <dd>Particle Swarm Optimization (PSO) moves a swarm of particles through the search space where each particle adjusts its position based on its own experience and that of its neighbors. S, imagine many points flying over the landscape, sharing information about the best places they've seen. PSO differs from evolutionary algorithms by using velocity updates and social sharing rather than crossover/mutation; it's often simpler to tune and works well for continuous optimization.</dd>
     </dl>
 
 

@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A neural network with loops that lets it carry information forward through a sequence.</dd>
+        <dd>Recurrent Neural Networks (RNNs) process sequences by passing information from one step to the next, allowing the network to use past inputs when predicting future ones. Imagine a loop that carries a hidden memory forward through time. RNNs differ from feedforward networks by their temporal dynamics; compared to transformers, basic RNNs struggle with long-range dependencies and training stability.</dd>
     </dl>
 
     <h2>How does it work?</h2>

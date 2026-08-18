@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>A local search method that avoids revisiting recently tried solutions to escape getting stuck.</dd>
+        <dd>Tabu Search enhances local search by keeping a short-term memory (the tabu list) of recently visited solutions or moves to avoid cycling back. This lets the search explore new areas and escape local optima. Imagine keeping a short "do not revisit" list while trying neighboring changes, which helps avoid loops. It differs from plain hill-climbing by actively forbidding recent moves, and from population-based methods by focusing on a single evolving solution rather than many candidates.</dd>
     </dl>
 
 

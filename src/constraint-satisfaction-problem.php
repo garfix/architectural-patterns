@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Finds values for a set of variables that simultaneously satisfy all given constraints.</dd>
+        <dd>A Constraint Satisfaction Problem (CSP) asks for values of variables that satisfy all constraints simultaneously (like Sudoku). Picture setting variable values while checking many rules until everything is consistent. CSP techniques differ from optimization because they focus on feasibility rather than optimizing a numeric objective and often use search with pruning.</dd>
     </dl>
 
     <h2>How does it work?</h2>

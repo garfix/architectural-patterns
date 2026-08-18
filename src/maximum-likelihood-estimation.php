@@ -9,7 +9,7 @@ include 'template/header.php';
 
     <dl>
         <dt>Definition</dt>
-        <dd>Finds the parameter values that make the observed data most probable under a chosen model.</dd>
+        <dd>Maximum Likelihood Estimation (MLE) finds parameter values that make the observed data most probable under a chosen model. You write a likelihood function and optimize it to get point estimates. Think of tuning model knobs until the model would most likely have produced your data. MLE differs from Bayesian methods by not using priors or producing full posterior distributions — it provides a single best-fit answer and is often simpler computationally.</dd>
     </dl>
 
     <h2>How does it work?</h2>
