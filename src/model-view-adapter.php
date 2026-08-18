@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A UI pattern that separates the visual representation (View) from the domain model (Model), and provides a controller (Adapter), that works as an intermediary between them. The view does not access the model.</dd>
     </dl>
-
-    <figure><img alt="" src="images/model-view-adapter.drawio.png"><figcaption>Model-View-Adapter architecture diagram</figcaption></figure>
-
-    <p>
+    <?php showImage($pattern) ?>
+<p>
         The <b>model</b> contains the data and the domain logic of the application.
     </p>
     <p>

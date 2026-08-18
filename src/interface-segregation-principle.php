@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Make interfaces as specific as needed by the task.</dd>
     </dl>
-
-    <figure><img alt="" src="images/interface-segregation.drawio.png"><figcaption>Interface Segregation Principle</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         Creating interfaces with a large number of methods is easy, because one size fits all. But it creates many unnecessary dependencies which cause a small change to have large scale effects. In stead, reduce large interfaces into multiple smaller interfaces, tailored to the job at hand.
     </p>

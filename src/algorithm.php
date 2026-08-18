@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A a finite sequence of rigorous instructions, typically used to solve a class of specific problems or to perform a computation.</dd>
     </dl>
-
-    <figure><img alt="" src="images/algorithm.drawio.png"><figcaption>Algorithm</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         An algorithm is any routine that solves a problem. There are well-known algorithms for common problems like search, but any code that solves a problem qualifies as an algorithm.
     </p>

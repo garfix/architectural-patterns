@@ -11,12 +11,13 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>The user has to prove to the system that the identity he provides is actually theirs</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
 
     <p>
         This can be done by providing a username or email, together with a password or PIN code.
     </p>
 
-    <figure><img alt="" src="images/login.drawio.png"><figcaption>Login</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>The framework allows the application to hook into the state transitions of a component with custom functions</dd>
     </dl>
-
-    <figure><img alt="" src="images/lifecycle-hooks.drawio.png"><figcaption>Lifecycle Hooks</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         This is mostly a GUI pattern that is provided by the frontend framework. Each component is created, mounted, unmounted, destroyed, among others. The application can hook into these transitions with custom functions.
     </p>

@@ -11,6 +11,10 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A Semantic Network represents knowledge as nodes (concepts) connected by labeled relationships, forming a graph you can query and reason over. Picture a mind map where concepts link with typed edges like "is-a" or "part-of." It differs from tabular data representations by emphasizing relationships and from purely statistical embeddings by being explicit and interpretable.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
+    
+
 
     <h2>How does it work?</h2>
     <p>Represents concepts as nodes and relationships as labeled edges, enabling traversal and inference over semantic relations.</p>

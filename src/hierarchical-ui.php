@@ -11,6 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A UI pattern that forms a tree of components, each only connected to its parent and children.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
 
     <p>
         The component hierarchy concept in UI's was first described as part of the Presentation-Abstraction-Control model, hence the pattern is usually called PAC. The name "Hierachical MVC" makes it less dependent on the specifics of PAC and allows it to be used in combination with other ui patterns.
@@ -18,7 +20,6 @@ include 'template/header.php';
 
     Components are connected in a hierarchical fashion, thus:<p>
 
-    <figure><img alt="" src="images/hierarchical-component-ui.drawio.png"><figcaption>Hierarchical ui architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

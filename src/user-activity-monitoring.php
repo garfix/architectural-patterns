@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Code that logs activity of users in the system</dd>
     </dl>
-
-    <figure><img alt="" src="images/user-activity-monitoring.drawio.png"><figcaption>User-activity monitoring</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         Specific user events are logged in order to be analyzed.
     </p>

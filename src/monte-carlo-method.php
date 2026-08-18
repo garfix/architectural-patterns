@@ -11,6 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
 
         <dd>Monte Carlo methods estimate answers by sampling randomly and averaging results. If a problem is too complex to solve exactly, you can simulate many random trials and use the distribution of outcomes to approximate quantities like probabilities or integrals. Imagine estimating π by throwing darts at a square and counting how many land inside a circle. Monte Carlo differs from exact analytic solvers and from optimization methods: it's about statistical approximation using randomness rather than deterministic equations.</dd>
+    </dl>
+    <?php showImage($pattern) ?>
 
     <h2>How does it work?</h2>
     <p>Use random samples to estimate an answer. Run many trials, measure the result in each trial, and average them. More trials usually give a better estimate.</p>

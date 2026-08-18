@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Features implementing the reactive programming paradigm that propagates changes in values to depending structures</dd>
     </dl>
-
-    <figure><img alt="" src="images/reactive-programming-features.drawio.png"></figure>
-
-    <h2>Features</h2>
+    <?php showImage($pattern) ?>
+<h2>Features</h2>
     <p><strong>Observables</strong> (<code>JavaScript</code>, <code>Dart</code>, <code>Kotlin</code>, <code>RxJava</code>) Objects representing a stream of asynchronous data.</p>
     <p><strong>Signals / Reactive Variables</strong> (<code>Svelte</code>, <code>SolidJS</code>, <code>Vue</code>, <code>MobX</code>) Automatically update views or computations when dependencies change.</p>
     <p><strong>Computed Properties</strong> (<code>Vue</code>, <code>Knockout</code>, <code>SolidJS</code>) Values derived from reactive inputs that automatically stay up to date.</p>

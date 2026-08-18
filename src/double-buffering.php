@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Use an offline graphics buffer to compose the next animation frame</dd>
     </dl>
-
-    <figure><img alt="" src="images/double-buffering.drawio.png"><figcaption>Double buffering</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         An animation consists of a series of frames. In most cases storing all frames in memory is too costly. Using just a single buffer to show the current frame and prepare the next frame causes a noticeable flicker. A common solution is to use two bufferes: an active buffer and an inactive buffer. Show the current frame on the active buffer while preparing the next frame on the inactive buffer. Then make the active buffer inactive and vice versa, and repeat.
     </p>

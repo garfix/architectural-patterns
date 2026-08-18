@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Business logic implements the entities and critical business rules of an organization.</dd>
     </dl>
-
-    <figure><img alt="" src="images/business-logic.drawio.png"><figcaption>Business Logic</figcaption></figure>
-
-    <p>Business logic is part of the Model in MVC, and Entity in ECB</p>
+    <?php showImage($pattern) ?>
+<p>Business logic is part of the Model in MVC, and Entity in ECB</p>
 
     <h2>How does it work?</h2>
     <p>

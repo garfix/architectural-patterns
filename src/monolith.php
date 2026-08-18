@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A monolith is a non-distributed application: all functionality it uses is internal to the application.</dd>
     </dl>
-
-    <figure><img alt="" src="images/monolith.drawio.png"><figcaption>Monolith architecture diagram</figcaption></figure>
-
-    <h2>Examples</h2>
+    <?php showImage($pattern) ?>
+<h2>Examples</h2>
     <ul>
         <li>Single-function Unix applications
         <li>Word processor

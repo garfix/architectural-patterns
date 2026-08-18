@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>The language used by experts and users is reflected in the names of classes and methods.</dd>
     </dl>
-
-    <figure><img alt="" src="images/ubiquitous-language.drawio.png"><figcaption>Ubiquitous Language</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         It's always good to define the concepts used in a software project, and put these definitions in writing for all participants to see. Especially important for newcomers to the project.
     </p>

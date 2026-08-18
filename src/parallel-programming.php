@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Split up a task into many similar parts and execute these all at the same time. When done, integrate the results.</dd>
     </dl>
-
-    <figure><img alt="" src="images/parallel-programming.drawio.png"><figcaption>Parallel programming architecture diagram</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         By splitting up a task that takes n time into m subtasks and execute these in parallel, the task only takes n/m time.
     </p>

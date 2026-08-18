@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>An aggregate that represents a database query and allows it to be composed programmatically</dd>
     </dl>
-
-    <figure><img alt="" src="images/query-object.drawio.png"><figcaption>Query Object</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         An SQL query (or any other compound query) is represented by an aggregate object structure. It can be modified by calling methods on each of these objects. At any time its SQL equivalent can be produced by calling a method on the root object.
     </p>

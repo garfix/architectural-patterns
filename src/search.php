@@ -11,11 +11,12 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>In a search space, find a path from intial state to goal state.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
     <p>
         Search space is any type of problem that can be modelled as a directed graph.
     </p>
 
-    <figure><img alt="" src="images/search.drawio.png"><figcaption>Search architecture diagram</figcaption></figure>
 
     <p>
         Many problems can be modelled as a graph. In chess, for example, the first line-up of pieces can be seens as the start node, each possible move from there as a node that is linked to the start node, and so on. Search starts with the start node. It finds its neighboring nodes and checks if one of them is the goal. If so, the path to the goal is returned. If not, the new path is added to the todo list of paths: the fronteer.

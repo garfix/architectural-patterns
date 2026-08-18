@@ -11,14 +11,15 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Permission to perform an operation on an object is given to a subject.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
+    
     <p>
         The user of a file system (subject) can only perform a selection of the actions (operations) possible on each of the files or directories (objects).
     </p>
     <p>
         "User" may also be user group, and this a collection of users.
     </p>
-
-    <figure><img alt="" src="images/access-control-list.drawio.png"><figcaption>Access Control List architecture diagram</figcaption></figure>
 
     <h2>Examples</h2>
     <ul>

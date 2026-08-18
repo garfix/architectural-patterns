@@ -11,12 +11,13 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A UI pattern that separates the visual representation (View), the domain model (Model), and the code needed to connect the two (Controller), allowing the view to read directly from the model.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
 
     <p>
         This is the oldest UI pattern. Its original strength was the separation of model, view, and controller. But since there's now also the <a href="model-view-adapter">Model-View-Adapter</a> pattern, its distinguishing feature is the fact that the view reads from the model.  It's still used by simple web applications where the view accesses the database in order to find the information to display.
     </p>
 
-    <figure><img alt="" src="images/model-view-controller.drawio.png"><figcaption>Model-View-Controller architecture diagram</figcaption></figure>
 
     <p>
         The <b>model</b> contains the data and the domain logic of the application.

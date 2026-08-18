@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>An application that finds and executes rules to solve a problem.</dd>
     </dl>
-
-    <figure><img alt="" src="images/rule-based.drawio.png"><figcaption>Inference engine architecture diagram</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         A rule-based machine is an application in itself, but it is executed by an execution engine, which is also an application. So we need to explain the working on two levels.
     </p>

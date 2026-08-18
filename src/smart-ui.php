@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A single class provides both model, view, and controller logic</dd>
     </dl>
-
-    <figure><img alt="" src="images/smart-ui.drawio.png"><figcaption>Smart-UI</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         This pattern is characterized by its lack of separation between domain model and view code.
     </p>

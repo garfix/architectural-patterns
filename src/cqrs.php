@@ -11,6 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>This pattern holds that the reading of a database can be handled by a different model (and its tables) than that is used to write to the database. There can even be multiple read-models for the same data.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
 
     <h2>How does it work?</h2>
     <p>
@@ -23,7 +25,6 @@ include 'template/header.php';
         The Query Models are "throw away" and may be recreated from the Command Model. However, it may take (considerable) time to recreate the Query Models.
     </p>
 
-    <figure><img alt="" src="images/cqrs-1.png"><figcaption>CQRS architecture diagram</figcaption></figure>
 
 
     <h2>Examples</h2>

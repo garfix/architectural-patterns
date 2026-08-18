@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Make each application of the solution run in its own isolated space, and declare its build structure.</dd>
     </dl>
-
-    <figure><img alt="" src="images/containerization.drawio.png"><figcaption>Containerization</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         The build structure of the application is laid down in a configuration file. The container tool builds an image from this configuration. To run the application, the tool builds a container from the image.
     </p>

@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Storing all revisions of a piece of software, along with the connections between each revision and its predecessor</dd>
     </dl>
-
-    <figure><img alt="" src="images/version-control.drawio.png"><figcaption>Version Control</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         Specialized software (version control systems) allows you to create a new revision easily. It will also guide you through previous versions, show differences, and revert to a previous version.
     </p>

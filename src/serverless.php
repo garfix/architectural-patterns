@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>The number of active servers depends on the load, and the number may actually be zero.</dd>
     </dl>
-
-    <figure><img alt="" src="images/serverless.drawio.png"><figcaption>Serverless architecture diagram</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         A cloud provider allows you to deploy a variable amount of servers of the same type. This allows you to scale your application horizontally, while paying only for the servers that are in actual use. In periods of inactivity, no servers are active, hence the word "serverless".
     </p>

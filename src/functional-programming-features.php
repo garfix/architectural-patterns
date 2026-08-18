@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Language structures implementing the functional programming paradigm</dd>
     </dl>
-
-    <figure><img alt="" src="images/functional-programming-features.drawio.png"></figure>
-
-    <h2>Features</h2>
+    <?php showImage($pattern) ?>
+<h2>Features</h2>
     <p><strong>Immutability</strong> (<code>Haskell</code>, <code>Scala</code>, <code>Elixir</code>, <code>Clojure</code>, <code>Rust</code>) Once created, values cannot be changed, reducing side effects.</p>
     <p><strong>Pure Functions</strong> (<code>Haskell</code>, <code>Elm</code>, <code>F#</code>) Functions without side effects that always produce the same output for given input.</p>
     <p><strong>Lazy Evaluation</strong> (<code>Haskell</code>, <code>Scala</code>, <code>Python (via generators)</code>) Delays computation until the result is needed.</p>

@@ -11,6 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>The repository pattern contains a central data <em>repository</em>, and a number of <em>clients</em> that modify this repository.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
 
     <p>
         Note: there's also a software design pattern by the same name, but with different meaning <a href="https://martinfowler.com/eaaCatalog/repository.html">for example</a>
@@ -20,7 +22,6 @@ include 'template/header.php';
     The repository pattern is commonly implemented as a <em>database management system</em> (DBMS). The DBMS can provide a domain specific language, <a href="https://en.wikipedia.org/wiki/ACID">ACID</a>, transactions, backup and restore, access  management, and much more.
     </p>
 
-    <figure><img alt="" src="images/database.drawio.png"><figcaption>Repository architecture diagram</figcaption></figure>
 
     <h2>When should you use it?</h2>
     <p>Use it when the data of your application is a goal in itself, or when its too costly to transfer the data all the time.</p>

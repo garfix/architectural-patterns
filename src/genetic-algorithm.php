@@ -11,6 +11,10 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Genetic Algorithms (GAs) evolve a population of candidate solutions using selection, crossover, and mutation. Over generations, better solutions tend to survive and recombine. S, picture many solutions as a population of strings that mate and mutate so they gradually improve. GAs differ from gradient methods because they don't use derivatives — they explore via population diversity and randomized operators, which helps on rugged or discrete search spaces where gradients don't exist.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
+    
+
 
 
     <h2>How does it work?</h2>

@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Language features regarding the types of data</dd>
     </dl>
-
-    <figure><img alt="" src="images/type-system-features.drawio.png"></figure>
-
-    <h2>Features</h2>
+    <?php showImage($pattern) ?>
+<h2>Features</h2>
     <p><strong>Static Typing</strong> (<code>C</code>, <code>C++</code>, <code>Java</code>, <code>C#</code>, <code>Rust</code>, <code>Go</code>, <code>Haskell</code>, <code>Scala</code>, <code>TypeScript</code>, <code>Swift</code>) Variables have types known at compile time, enabling type checking and optimizations before execution.</p>
     <p><strong>Dynamic Typing</strong> (<code>Python</code>, <code>JavaScript</code>, <code>Ruby</code>, <code>PHP</code>, <code>Lisp</code>, <code>Perl</code>) Variables can hold values of any type and type checking is done at runtime.</p>
     <p><strong>Type Inference</strong> (<code>Haskell</code>, <code>Scala</code>, <code>Rust</code>, <code>Kotlin</code>, <code>Swift</code>, <code>F#</code>, <code>OCaml</code>) The compiler automatically deduces the type of a variable or expression.</p>

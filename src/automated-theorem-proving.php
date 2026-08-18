@@ -11,6 +11,10 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Automated Theorem Proving uses formal logic and search strategies to prove or disprove mathematical statements automatically. Imagine a solver that applies inference rules systematically to derive conclusions from axioms. It differs from heuristic or statistical methods by operating on symbolic, provable correctness rather than probabilistic guesses.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
+    
+
 
     <h2>How does it work?</h2>
     <p>Applies formal inference rules and search strategies to derive conclusions from axioms or hypotheses, attempting to construct a valid proof automatically.</p>

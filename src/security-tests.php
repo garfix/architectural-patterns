@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Tests to check if the system doesn't allow unauthorized access</dd>
     </dl>
-
-    <figure><img alt="" src="images/security-tests.drawio.png"><figcaption>security tests</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         Dedicated software helps you to check a number of known vulnerabilities on the application.
     </p>

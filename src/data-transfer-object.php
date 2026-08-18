@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>An object that carries data between processes</dd>
     </dl>
-
-    <figure><img alt="" src="images/data-transfer-object.drawio.png"><figcaption>Data Transfer Object</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         The purpose of such an object is to facilitate data transfer. To this end it contains serialization/deserialization methods (for JSON/XML) and nothing else. Its attributes are typically scalar and easy to serialize.
     </p>

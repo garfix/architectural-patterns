@@ -11,11 +11,12 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Any component (publisher) can notify all interested other components (subscribers) of the occurrence of an event, by sending a message to the event bus. Components that have registered themselves with the registry will receive the message and act upon it. The publisher is not informed when the message is handled.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
 
     <h2>How does it work?</h2>
     <p>Components may register themselves with the registry at any time. When a component notifies other components of an event, it places a message on the event bus. The event bus takes care of delivering the message to the registered recipients.</p>
 
-    <figure><img alt="" src="images/event-bus-1.png"><figcaption>Event-bus architecture diagram</figcaption></figure>
 
     <h2>Variants</h2>
     <p>There are several types of communication that may occur on the Event Bus:</p>

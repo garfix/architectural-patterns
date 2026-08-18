@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Basic features to get things done</dd>
     </dl>
-
-    <figure><img alt="" src="images/syntax-features.drawio.png"></figure>
-
-    <h2>Features</h2>
+    <?php showImage($pattern) ?>
+<h2>Features</h2>
     <p><strong>Conditionals (<code>if</code>, <code>else</code>, <code>switch</code>)</strong> (<code>All major languages</code>) Basic decision-making structures to control flow based on conditions.</p>
     <p><strong>Loops (<code>for</code>, <code>while</code>, <code>do...while</code>)</strong> (<code>C</code>, <code>C++</code>, <code>Java</code>, <code>Python</code>, <code>JavaScript</code>, <code>Go</code>, <code>Rust</code>) Repetition constructs to execute code multiple times.</p>
     <p><strong>Pattern Matching</strong> (<code>Haskell</code>, <code>Scala</code>, <code>Rust</code>, <code>F#</code>, <code>Elixir</code>, <code>OCaml</code>) A mechanism for branching logic based on structural patterns.</p>

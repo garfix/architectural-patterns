@@ -11,6 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>The broker pattern connects clients with services via a special-purpose component that provides a uniform communication protocol. Communication takes the form of request/response. The goal is make development of clients and services independent (decoupling).</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
 
     <p>
         The metaphore is as follows: You go to a broker to buy a house. You don't want to need to know all about the housing business. You just tell the broker your maximum price and some other requirements, and he starts looking for you.
@@ -21,7 +23,6 @@ include 'template/header.php';
         Services are registered with the broker. The client requests a specific service: they format their request in a specific format and send it to the broker. The broker then selects the service to process the request. The broker sends the service's response back to the client.
     </p>
 
-    <figure><img alt="" src="images/broker.drawio.png"><figcaption>Broker architecture diagram</figcaption></figure>
 
     <h2>Variants</h2>
     <p>

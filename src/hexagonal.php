@@ -11,6 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Ports and Adapters provides application logic without dependencies on external services. The dependencies are replaceable at runtime.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
 
     <p>
         The main aim of this architecture is to decouple the application's core logic from the services it uses (database, email, time), and the services that use it (user interface, framework). This allows different services to be "plugged in", and it allows the logic to be run without these services.
@@ -19,7 +21,6 @@ include 'template/header.php';
         The application logic, of an application consists of the algorithms that are essential to its purpose. They implement the use cases that are the heart of the application. The external services are <i>not</i> essential. They can be replaced without changing the purpose of the application. Examples: database access and other types of storage, user interface components, e-mail and other communication components, hardware devices. In a strict sense of this architecture even the application's framework is a set of services. The core logic of an application should not depend on these services in this architecture (so that it becomes "framework agnosic").
     </p>
 
-    <figure><img alt="" src="images/ports-and-adapters.drawio.png"><figcaption>Hexagonal architecture diagram</figcaption></figure>
 
     <p>
         The number of ports depends on the application. The shown number of 6 ports nicely matches the name of the architecture. But the point of the architecture's name is not that the number six matters, but that <i>the core logic is at the center</i>. A realistic number of ports is about 2 to 4.

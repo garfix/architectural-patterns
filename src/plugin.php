@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>The application can be extended by code modules by third parties.</dd>
     </dl>
-
-    <figure><img alt="" src="images/plugin.drawio.png"><figcaption>Plugin architecture diagram</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
        The application exposes an interface that can be implemented by outside developers. They develop the plugin and deploy it. A user can then use these plugins to extend the functionality of the application.
     </p>

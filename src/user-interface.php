@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>The User Interface is a specification of user interface elements without the data that goes in or out of them</dd>
     </dl>
-
-    <figure><img alt="" src="images/user-interface.drawio.png"><figcaption>User Interface</figcaption></figure>
-
-    <p>Application logic is part of the View in MVC, and Boundary in ECB</p>
+    <?php showImage($pattern) ?>
+<p>Application logic is part of the View in MVC, and Boundary in ECB</p>
 
     <h2>How does it work?</h2>
     <p>

@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A standardized representation of time</dd>
     </dl>
-
-    <figure><img alt="" src="images/utc.drawio.png"><figcaption>UTC</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         Th world has 24 time zones. Each of these zones has a different local time. Some countries use Daylight Savings Time, while others don't. UTC is a means of storing time in a standardized way. Storing all time values in a standard way resolves allows these values to be compared in a simple way.
     </p>

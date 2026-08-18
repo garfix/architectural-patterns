@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A document or website that explains the function of the application to the end user</dd>
     </dl>
-
-    <figure><img alt="" src="images/user-manual.drawio.png"><figcaption>User Manual</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         A user guide, also commonly known as a user manual, is intended to assist users in using a particular product, service or application. It's usually written by a technician, product developer, or a company's customer service staff.
     </p>

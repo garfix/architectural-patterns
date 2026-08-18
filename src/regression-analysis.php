@@ -11,6 +11,10 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Regression analysis models the relationship between input variables and an output you want to predict. It ranges from simple linear regression to more complex generalized models. Regression is how you turn historic examples into a function you can call to predict future outcomes. It differs from classification (predicting categories) and from nonparametric techniques (like Gaussian processes) in how the model is structured and what assumptions are made about the form of the relationship.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
+    
+
 
     <h2 id="links">Links</h2>
     <ol>

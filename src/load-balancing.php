@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Having a pool of identical servers, pick on of them to do the task.</dd>
     </dl>
-
-    <figure><img alt="" src="images/load-balancing.drawio.png"><figcaption>Load balancing architecture diagram</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         To scale horizontally one can add more servers that do the same job. An extra server (load balancer) is needed to assign an incoming task to one of them.
     </p>

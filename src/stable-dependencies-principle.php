@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A module should only depend upon modules that are more stable than it is.</dd>
     </dl>
-
-    <figure><img alt="" src="images/stable-dependencies-principle.drawio.png"><figcaption>Stable Dependencies Principle</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         The <b>instability</b> of a module is defined as the ratio between the number if incoming dependencies and the number of combined incoming/outgoing dependencies.
     </p>

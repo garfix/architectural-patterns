@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Pure domain logic, in the form of application independent entities and application specific control objects are separated from dependencies (boundaries) with the outside world.</dd>
     </dl>
-
-    <figure><img alt="" src="images/entity-control-boundary.drawio.png"><figcaption>Entity-Control-Boundary architecture diagram</figcaption></figure>
-
-    <p>Note: the <i>control</i> in this pattern is different from the <i>controller</i> in MVC.
+    <?php showImage($pattern) ?>
+<p>Note: the <i>control</i> in this pattern is different from the <i>controller</i> in MVC.
 
     <h2>How does it work?</h2>
     <p>

@@ -11,6 +11,10 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A Gaussian Process (GP) is a way to model unknown functions probabilistically. Instead of learning a single curve, a GP gives a distribution over possible functions that fit the data, and it provides both predictions and uncertainty estimates for any input. Think of a GP as a flexible, Bayesian regression method that tells you not only the predicted value but also how confident it is. GPs differ from parametric models (like simple linear regression) by being nonparametric: complexity grows with data instead of being fixed by a small set of parameters.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
+    
+
 
     <h2 id="links">Links</h2>
     <ol>

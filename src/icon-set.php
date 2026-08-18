@@ -11,9 +11,10 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A collection of icons in the same style</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
     <p>An icon is a short representation of a command or state. By choosing a icon set in stead of gathering icons haphazard you make sure that their style is consistent within the application.</p>
 
-    <figure><img alt="" src="images/icon-set.drawio.png"><figcaption>Icon set</figcaption></figure>
 
     <p>
         Icons are fashionable. The icons of twenty years ago are considered out of style.

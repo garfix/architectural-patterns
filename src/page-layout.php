@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Rules governing the composition of ui elements on a page</dd>
     </dl>
-
-    <figure><img alt="" src="images/page-layout.drawio.png"><figcaption>Page layout</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         Page layout has the following aspects:
     </p>

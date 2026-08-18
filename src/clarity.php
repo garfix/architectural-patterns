@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>The user interface should be easy to understand</dd>
     </dl>
-
-    <figure><img alt="" src="images/clarity.drawio.png"><figcaption>Clarity</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         Clarity has the following aspects:
     </p>

@@ -11,6 +11,10 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A Markov Random Field (MRF) models variables with an undirected graph where each variable depends on its neighbors; it's suited for spatial or relational data where directionality is not natural. Imagine a grid where each cell's value is influenced by adjacent cells. MRFs differ from Bayesian networks by being undirected and focusing on local compatibility rather than parent-child causal structure.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
+    
+
 
     <h2>How does it work?</h2>
     <p>An undirected graphical model where variables interact locally; inference estimates marginals using local potentials and message passing or sampling.</p>

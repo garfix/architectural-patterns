@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>An agreement between the developers of a project to use the same style of writing code.</dd>
     </dl>
-
-    <figure><img alt="" src="images/coding-conventions.drawio.png"><figcaption>Coding Conventions</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         Coding conventions for all major languages are available. It's best to stick to these, as it helps new developers on the project, with previous experience in the language to fit right in.
     </p>

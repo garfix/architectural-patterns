@@ -11,6 +11,10 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Transformers use attention mechanisms to let every part of the input interact directly with every other part, enabling parallel computation and effective handling of long-range dependencies. Imagine each token in a sequence asking "how much should I listen to each other token?" Transformers differ from RNNs by avoiding recurrence and from CNNs by using attention instead of local filters; this design underpins modern large language models.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
+    
+
 
     <h2>How does it work?</h2>
     <p>Uses self-attention to compute contextualized representations for all positions in parallel, enabling efficient sequence modeling without recurrence.</p>

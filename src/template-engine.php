@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Software designed to generate a concrete user interface from an abstract template. The template contains the components of the ui and has placeholders for the data</dd>
     </dl>
-
-    <figure><img alt="" src="images/template-engine.drawio.png"><figcaption>Template Engine</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         A template engine allows you to create a user interface free of presentation logic. All code needed to prepare the <b>data</b> that is to be shown is prepared separately. The <b>template</b> contains a declarative represention of the UI elements (for example: HTML elements), and has placeholder (for example in the form of double-curly braces <i>{{ some_data }}</i>) that will be replaced with part of the data.
     </p>

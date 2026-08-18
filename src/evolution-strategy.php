@@ -11,6 +11,10 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Evolution Strategies (ES) are evolutionary methods focused on optimizing continuous parameters and often adapt mutation scales automatically. They evolve a small population and tune how much they explore as they go. S, picture gradually adjusting both candidate solutions and how wildly you mutate them to balance exploration and refinement. ES differs from simple GAs by emphasizing self-adaptation for mutation rates and being particularly effective for continuous, real-valued optimization tasks.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
+    
+
 
 
     <h2>How does it work?</h2>

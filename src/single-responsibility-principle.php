@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A class should have only one reason to change, meaning that a class should only have one responsibility or job.</dd>
     </dl>
-
-    <figure><img alt="" src="images/single-responsibility.drawio.png"><figcaption>Single Responsibility Principle</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         The principle is intuitively simple, but defies good definitions. Keep a class simple. Don't make it store things, and draw things, and implement all use cases. Each class should just do one of these things.
     </p>

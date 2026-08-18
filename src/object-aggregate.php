@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>An aggregate is a cluster of objects that can be treated as a single unit. One of these objects is the root</dd>
     </dl>
-
-    <figure><img alt="" src="images/object-aggregate.drawio.png"><figcaption>Object Aggregate</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         "A DDD aggregate is a cluster of domain objects that can be treated as a single unit. An example may be an order and its line-items, these will be separate objects, but it's useful to treat the order (together with its line items) as a single aggregate.
         <br>

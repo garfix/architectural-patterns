@@ -11,6 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A class shouldn't use selection as a means to be open to extension.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
 
     <p>
         The principle basically tells us to use polymorphism as it was intended.
@@ -19,7 +21,6 @@ include 'template/header.php';
         Selection is a term from <a href="https://en.wikipedia.org/wiki/Structured_programming">structured programming</a> that involves if/then statements, switch/case statements and such.
     </p>
 
-    <figure><img alt="" src="images/open-closed.drawio.png"><figcaption>Open Closed Principle</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

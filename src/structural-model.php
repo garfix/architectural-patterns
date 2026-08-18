@@ -10,12 +10,12 @@ include 'template/header.php';
     <p>This pattern's name is somewhat inexpressive. The group that created this software pattern must have assumed that their model was <i>the</i> way to structure software. A better name, I think, would be something like <i>Synchronizer</i>, since that is its main function.
     </p>
 
+    <?php showImage($pattern) ?>
+
     <h2>How does it work?</h2>
     <p>The core of the pattern is a control loop that runs at fixed periods of time, called <i>time intervals</i> or <i>time frames</i>.
     </p>
     <p>The pattern contains an application specific part, called <i>Application Level</i> and a generic part, called <i>Executive Level</i>.
-
-    <figure><img alt="" src="images/structural_model_1.jpg"><figcaption>Structural model architecture diagram</figcaption></figure>
 
     <p>A <b>component</b> models, implements, or simulates a low-level part of the system. In a flight simulator it can be a pump, a valve or a switch. Small parts. These components can be updated periodically or be modified by handling events. The component may not communicate directly with other components.</p>
     <p>A <b>subsystem controller</b> is a cohesive, meaningful collection of components. Subsystem controllers can be updated periodically or be modified by handling events. An example in the domain of flight simulators: a hydrolics system. Subsystem controllers <i>may</i> communicate with other subsystem controllers via <i>export areas</i>.</p>

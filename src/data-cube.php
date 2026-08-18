@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A data cube is an index of big n-dimensional data.</dd>
     </dl>
-
-    <figure><img alt="" src="images/data-cube.drawio.png"><figcaption>Data Cube</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         An example of 3-dimensional data is a timeseries of satellite images, that is, a series of images (2D) over time (3D) that capture a specific geographical area.<br>
 

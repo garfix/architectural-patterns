@@ -11,8 +11,10 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Make sure those of us with poor eyesight will be able to see your application as well.</dd>
     </dl>
+    <?php showImage($pattern) ?>
 
-    <figure><img alt="" src="images/accessibility.drawio.png" alt="icon of head with squinting eyes"><figcaption>Accessibility</figcaption></figure>
+
+    
 
     <h2>How does it work?</h2>
     <p>

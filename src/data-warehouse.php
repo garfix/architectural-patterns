@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd> Data warehouses are central repositories of integrated data from one or more disparate sources. They store current and historical data in one single place that are used for creating analytical reports for workers throughout the enterprise.</dd>
     </dl>
-
-    <figure><img alt="" src="images/data-warehouse.drawio.png"><figcaption>Data Warehouse architecture diagram</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         <b>ETL</b> is used to integrate <b>data sources</b> into the data warehouse. From there, the data is moved to specialized databases.
 

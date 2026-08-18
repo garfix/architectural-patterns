@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Prepares data going in and coming out of the database</dd>
     </dl>
-
-    <figure><img alt="" src="images/data-access-logic.drawio.png"><figcaption>Data Access Logic</figcaption></figure>
-
-    <p>Data access logic is part of the Model in MVC, and Boundary in ECB</p>
+    <?php showImage($pattern) ?>
+<p>Data access logic is part of the Model in MVC, and Boundary in ECB</p>
 
     <h2>How does it work?</h2>
     <p>

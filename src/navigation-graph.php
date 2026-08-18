@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>The directed graph that represents the pages of an application and their and transitions. It describes the path the user takes through the application.</dd>
     </dl>
-
-    <figure><img alt="" src="images/navigation-graph.drawio.png"><figcaption>Navigation Graph</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         The user interface of an application can be seen as a finite state machine or as a directed graph, connecting each page to some others.
     </p>

@@ -1,6 +1,6 @@
 <?php
 include 'template/data.php';
-$pattern = $indexed['Concurrency & Parallelism features'];
+$pattern = $indexed['Concurrency features'];
 include 'template/header.php';
 ?>
 
@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Language support for doing many during the same period of time (concurrency) and at exeactly the same time (parallelism)</dd>
     </dl>
-
-    <figure><img alt="" src="images/concurrency-features.drawio.png"></figure>
-
-    <h2>Features</h2>
+    <?php showImage($pattern) ?>
+<h2>Features</h2>
     <p><strong>Threads</strong> (<code>Java</code>, <code>C++</code>, <code>Python</code>, <code>C#</code>) Lightweight processes used for parallel execution.</p>
     <p><strong>Async/Await</strong> (<code>JavaScript</code>, <code>Python</code>, <code>C#</code>, <code>Kotlin</code>) Syntax sugar for asynchronous programming.</p>
     <p><strong>Futures/Promises</strong> (<code>JavaScript</code>, <code>Scala</code>, <code>Java</code>, <code>Python</code>) Represent values that will be available in the future.</p>

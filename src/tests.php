@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Code that tests the other types of code</dd>
     </dl>
-
-    <figure><img alt="" src="images/tests.drawio.png"><figcaption>Tests</figcaption></figure>
-
-    <h2>Examples</h2>
+    <?php showImage($pattern) ?>
+<h2>Examples</h2>
     <ul>
         <li>Functional tests
         <li>Frontend tests

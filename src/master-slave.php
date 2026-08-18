@@ -9,10 +9,11 @@ include 'template/header.php';
 
     <p>SETI is the most successful example of this architecture. They asked all computer owners in the world to donate their idle computer time to the processing of large amounts of raw data. They created the largest distributed computer system to this day. SETI has a single central computer, called the Master. It sends a package of data to the computers on the Internet, called the Clients. Each Client then processes this data and sends its result back to the Master server. The Master integrates the results in its database and feeds the Client more data. Clients come and go as they please.</p>
 
+    <?php showImage($pattern) ?>
+
     <h2>How does it work?</h2>
     <p>The Master has a number of independent jobs that need to be executed. It sends separate jobs to all its Slaves. The slave processes the job and sends back the results to the Master. The Master integrates the results in its database and feeds the Client more data.</p>
 
-    <figure><img alt="" src="images/master-and-slave.drawio.png"><figcaption>Master-Slave architecture diagram</figcaption></figure>
 
     <p>The architecture may also allow clients to register and unregister at will.</p>
 

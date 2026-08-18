@@ -11,6 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A UI pattern that adds an abstract representation of the view outside of the view: the viewmodel. The state of the view is automatically synchronized with the viewmodel by a binder. The binder is provided by a framework. The viewmodel also serves as adapter, preparing data for the view and the model.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
 
     <p>
         The <b>view</b> is the visual representation of the component that allows the user to interact with the application.
@@ -25,7 +27,6 @@ include 'template/header.php';
         The <b>model</b> contains domain logic available on the client and connects to external domain (e.g. database)
     </p>
 
-    <figure><img alt="" src="images/model-view-viewmodel.drawio.png"><figcaption>Model-View-Viewmodel architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

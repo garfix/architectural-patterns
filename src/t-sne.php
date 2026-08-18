@@ -11,6 +11,10 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>T-SNE is a technique for visualizing high-dimensional data by embedding it into 2 or 3 dimensions while preserving local similarities. Think of squashing high-dimensional structure into a scatterplot that keeps neighbors together. T-SNE differs from PCA by focusing on local structure for visualization (not global variance) and isn't suitable as a general-purpose dimensionality reduction for downstream modeling.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
+    
+
 
     <h2>How does it work?</h2>
     <p>Projects high-dimensional data to low dimensions by modeling pairwise similarities and minimizing divergence between high- and low-dimensional neighbor distributions.</p>

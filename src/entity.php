@@ -13,10 +13,8 @@ include 'template/header.php';
             An entity is an object that has an identity, which is independent of the changes of its attributes. It represents long-lived information relevant for the users and is usually stored in a database.
         </dd>
     </dl>
-
-    <figure><img alt="" src="images/entity.drawio.png"><figcaption>Entity</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         An entity is an object that has a role in the use cases of an application. Preferably it does not depend on any other part of the application, and its methods don't involve other entities.
     </p>

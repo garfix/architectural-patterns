@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Color influences mood and communicates function.</dd>
     </dl>
-
-    <figure><img alt="" src="images/color.drawio.png"><figcaption>Color</figcaption></figure>
-
-    <h2>Main, secondary and accent color</h2>
+    <?php showImage($pattern) ?>
+<h2>Main, secondary and accent color</h2>
     <p>
         Also called primary, secondary and tertiary colors, they form the theme of an application.
         <ul>

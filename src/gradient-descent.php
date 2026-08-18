@@ -13,6 +13,10 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Gradient Descent is an iterative optimization algorithm that nudges parameters in the direction that reduces error the fastest, measured by the gradient. It's the workhorse behind training many machine learning models, especially neural networks. Imagine rolling downhill on the loss surface toward a valley representing better solutions. It differs from global search methods (like simulated annealing or evolutionary algorithms) because it uses local slope information and typically finds a local minimum — not necessarily the global best.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
+    
+
 
     <h2 id="links">Links</h2>
     <ol>

@@ -11,6 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A pattern aimed at controlling a variable resource.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
 
     <p>
         You want to keep some variable (say: temperature) constant. At the same time external factors
@@ -45,7 +47,6 @@ include 'template/header.php';
         <b>Open Loop</b> systems just perform a function on on the Input Variables to determine how to control the process.
     </p>
 
-    <figure><img alt="" src="images/process_control_1.jpg"><figcaption>Proces Control: open loop</figcaption></figure>
 
     <p>
         <b>Feedback Closed Loop</b> systems measure changes in the Controlled Variable directly, and feed them

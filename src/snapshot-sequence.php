@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>An ordered list of all complete system states</dd>
     </dl>
-
-    <figure><img alt="" src="images/snapshot.drawio.png"><figcaption>Snapshot Sequence</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         Like event sourcing, this structure captures the history of a system. But rather than storing changes, snapshot sequence stores complete states. But as the state of a database or filesystem is formed by its entire contents, a naive implementation would quickly become very large. A smarter implementation creates each state as a set of hierarchical references to the underlaying data.
     </p>

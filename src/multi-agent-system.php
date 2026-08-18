@@ -12,10 +12,8 @@ include 'template/header.php';
         <dd>A Multi Agent System consists of a group of highly autonomous entities (agents) that all perform a single function well.
         Together they solve a complex problem or control a complex system.</dd>
     </dl>
-
-    <figure><img alt="" src="images/multi-agent-system.drawio.png"><figcaption>Multi-agent system</figcaption></figure>
-
-    <p>
+    <?php showImage($pattern) ?>
+<p>
         An <a href="agent">Agent</a> is a component that autonomously interacts with its environment. It is never <i>told</i> what to do,
         one can merely request it to do something. It acts without being told. It should have a single, clear purpose.
         It's internal structure is not accessible to others.

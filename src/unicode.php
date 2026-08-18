@@ -1,6 +1,6 @@
 <?php
 include 'template/data.php';
-$pattern = $indexed['Unicode'];
+$pattern = $indexed['UNICODE'];
 include 'template/header.php';
 ?>
 
@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A standardized representation of text</dd>
     </dl>
-
-    <figure><img alt="" src="images/unicode.drawio.png"><figcaption>Unicode</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         The world has hundreds of writing systems: latin, chinese, arabic, devanagari, etc, etc. Unicode was designed to catch all of these in a single format. Each character is represented by a code point and stored in one of several "encodings", of which UTF-8 is the most popular one.
     </p>

@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>An external service that checks the performance of the application.</dd>
     </dl>
-
-    <figure><img alt="" src="images/performance-monitoring.drawio.png"><figcaption>Performance Monitoring</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
        An external service polls the application to learn about its uptime, responsiveness and memory use. It can send a notification when the service is underperforming.
     </p>

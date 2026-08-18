@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Use a model that is trained on a large amount of human information to produce similar but new information, guided by text prompts.</dd>
     </dl>
-
-    <figure><img alt="" src="images/gen-ai.drawio.png"><figcaption>Generative AI</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         Transformer-based AI models are trained to recognize patterns in large amounts of text, and associations between text and images or videos. With this neural-net based information it is possible to tell the model to produce more similar output, based on an input of just text (prompt).
     </p>

@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>High-level modules should not depend on low-level modules, but both should depend on abstractions</dd>
     </dl>
-
-    <figure><img alt="" src="images/dependency-inversion.drawio.png"><figcaption>Dependency Inversion Principle</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         The principle has two aspects:
 

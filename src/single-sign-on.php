@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A central identity server that provides authentication to all servers in a domain.</dd>
     </dl>
-
-    <figure><img alt="" src="images/single-sign-on.drawio.png"><figcaption>Single Sign-on architecture diagram</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         There are two aspects to this: account creation and log in.
         Basic SSO means the user needs a single account for multiple related servers.

@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A module should be as abstract as it is stable</dd>
     </dl>
-
-    <figure><img alt="" src="images/stable-abstractions-principle.drawio.png"><figcaption>Stable Abstractions Principle</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         The Stable Dependencies Principle says that the top-level modules should be stable (will not change often). To make these modules flexible enough to change, they can be made abstract.
     </p>

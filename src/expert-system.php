@@ -11,6 +11,10 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>An Expert System encodes human expertise as explicit if-then rules and uses rule engines to make decisions or diagnoses. Think of a large set of condition-action pairs that emulate an expert's reasoning process. Expert systems differ from statistical ML because they rely on explicit rules designed by humans rather than learned from data — they are interpretable but brittle when rules don't cover edge cases.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
+    
+
 
     <h2>How does it work?</h2>
     <p>Encodes domain knowledge as rules or facts and uses an inference engine to apply those rules to facts to derive conclusions or recommendations.</p>

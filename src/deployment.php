@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Preparing and moving the application from the repository to the application server</dd>
     </dl>
-
-    <figure><img alt="" src="images/deployment.drawio.png"><figcaption>Deployment</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
        When a change to the application has been made, the old application on the server needs to be replaced by the new application. This may involve copying the code, building assets, bringing the application down and up again.
     </p>

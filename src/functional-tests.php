@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Code that tests the correctness of individual functions, modules, and the full system.</dd>
     </dl>
-
-    <figure><img alt="" src="images/functional-tests.drawio.png"><figcaption>Functional tests</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
        A functional test is commonly automated (run by a test-platform). It calls a function of the system with common inputs and edge case inputs, and checks if the outputs match the outputs you'd expect.
     </p>

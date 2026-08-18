@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Store the result of a heavy request in order to serve it immediately in the following requests.</dd>
     </dl>
-
-    <figure><img alt="" src="images/caching.drawio.png"><figcaption>Caching architecture diagram</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         When a request for data is made, and it is computationally expensive to retrieve it, first the cache is checked for the result. If it's not already there, the result is calculated, placed in the cache, and returned.
     </p>

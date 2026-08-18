@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Language structures regarding data structures and memory management</dd>
     </dl>
-
-    <figure><img alt="" src="images/data-memory-features.drawio.png"></figure>
-
-    <h2>Features</h2>
+    <?php showImage($pattern) ?>
+<h2>Features</h2>
     <p><strong>Primitive Types</strong> (<code>All languages</code>) Basic data types like integers, floats, booleans, and characters.</p>
     <p><strong>Records / Tuples</strong> (<code>Haskell</code>, <code>Rust</code>, <code>F#</code>, <code>Python</code>, <code>Elixir</code>, <code>Scala</code>) Fixed-size collections of elements, optionally with named fields.</p>
     <p><strong>Objects / Classes</strong> (<code>Java</code>, <code>C++</code>, <code>Python</code>, <code>Ruby</code>, <code>C#</code>) Encapsulate data and behavior using object-oriented principles.</p>

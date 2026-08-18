@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>An automated process that ensures that the data in store A is made equal to that in store B.</dd>
     </dl>
-
-    <figure><img alt="" src="images/data-synchronization.drawio.png"><figcaption>Data Synchronization</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         Data is stored in multiple copies, either in a multiple databases or in multiple file systems. There are a number of variations to the process.
     </p>

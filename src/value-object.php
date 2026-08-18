@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>An immutable object whose equality is not based on identity</dd>
     </dl>
-
-    <figure><img alt="" src="images/value-object.drawio.png"><figcaption>Value object</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         Value objects are simple or compound values like Money, Date, or PolicyNumber. They are identified by the combination of their attributes, and don't have an id attribute. Their main purpose is to group some attributes, and to validate their values. Since the attributes are validated on creation, a value object is always valid, and that means that it never has to be checked again.
     </p>

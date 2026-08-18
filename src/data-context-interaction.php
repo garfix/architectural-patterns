@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Provide an explicit representation of the use case to make the purpose of code more understandable.</dd>
     </dl>
-
-    <figure><img alt="" src="images/data-context-interaction.drawio.png"><figcaption>Data-Context-Interaction architecture diagram</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         This pattern makes the use case an explicit entity. A <a href="https://en.wikipedia.org/wiki/Use_case">use case</a> is an action a user can perform on a system (add an object to a shopping cart, take out an insurance policy). The idea is that the application logic of a system is an implementation of use cases. These uses cases, however, are implicit in current OOP. There's no central use case class. It is distributed over many classes. Therefore it isn't clear how the classes work together from looking at the code alone. This means that what a system does is still for a large part in the heads of the programmers, and this is a hurdle for new developers that need to work on the system.
     </p>

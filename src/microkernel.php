@@ -11,12 +11,13 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Wrap core system resources in a small component, that rarely changes.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
 
     <p>
         The microkernel is used primarily in operating systems, but the <b>kernel</b> concept of encapsulating system resources is also used by web frameworks.
     </p>
 
-    <figure><img alt="" src="images/microkernel.drawio.png"><figcaption>Microkernel architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

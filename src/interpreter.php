@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>The interpreter serves to execute a program in a domain-specific language. It parses the source code into a format that can be executed, then executes it.</dd>
     </dl>
-
-    <figure><img alt="" src="images/interpreter.drawio.png"><figcaption>Interpreter architecture diagram</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         One or more Programs or Scripts are loaded into the Interpreter. They may be converted into an internal representation that can be processed more effectively by the Interpreter. Connections between the Program and the Environment are created.
     </p>

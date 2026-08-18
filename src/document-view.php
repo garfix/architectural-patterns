@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A single class provides both model and controller logic, and model logic is separated</dd>
     </dl>
-
-    <figure><img alt="" src="images/document-view.drawio.png"><figcaption>Caching architecture diagram</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         This pattern is an elaboration of Smart-UI where the model (document) has been placed in a separate class.
     </p>

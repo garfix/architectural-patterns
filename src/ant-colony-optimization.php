@@ -11,6 +11,10 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Ant Colony Optimization (ACO) simulates ants laying pheromones on paths: good routes get reinforced and become more likely to be followed. Over time, the colony converges to efficient paths for routing and combinatorial problems. Think of many simple agents leaving traces that bias future choices. ACO differs from single-solution local search by using collective indirect communication (stigmergy) and is particularly well-suited to routing and combinatorial optimization.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
+    
+
 
 
     <h2>How does it work?</h2>

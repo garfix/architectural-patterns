@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Software versioning is the process of assigning either unique version names or numbers to unique states of software.</dd>
     </dl>
-
-    <figure><img alt="" src="images/software-versioning.drawio.png"><figcaption>Software Versioning</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         Software changes continuously. This means new features, but also changes in interfaces. And it may mean new bugs. Therefore other parties that work with this software need to be able to use a version of the software that is known to work and have a specific interface.
     </p>

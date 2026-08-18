@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>The smallest unit of deployment, with a well-defined API.</dd>
     </dl>
-
-    <figure><img alt="" src="images/component.drawio.png"><figcaption>Component architecture diagram</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         A component is deployed as a separate entity. It has a documented an rigid interface that other components can rely on. For complex functionality, component are combined.
     </p>

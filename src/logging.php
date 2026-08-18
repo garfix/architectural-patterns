@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Leave a trail of information, warnings, and errors as they occur in an external document that can be inspected later.</dd>
     </dl>
-
-    <figure><img alt="" src="images/logging.drawio.png"><figcaption>Logging architecture diagram</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         Whenever something interesting happens in the application, write a line describing it in the log.
     </p>

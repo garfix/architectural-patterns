@@ -11,6 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>The application can only be in one of a fixed set of states. Transitions between states are defined explicitly.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
 
     <p>
         The <b>State</b> defines the way the system acts at a certain time.
@@ -21,7 +23,6 @@ include 'template/header.php';
         every allowable transition between any two states.
     </p>
 
-    <figure><img alt="" src="images/fsm_1.jpg"><figcaption>A Finite State Machine example</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

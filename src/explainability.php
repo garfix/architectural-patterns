@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>The faculty of explaining to the user how a result was reached, or could not be reached</dd>
     </dl>
-
-    <figure><img alt="" src="images/explainability.drawio.png"><figcaption>Explainability</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         Any rule based system has an explicit representation of how each result was reached by a combination of sub-results. By storing these intermediate results and representing them to the user later, a form of explainability is formed.
     </p>

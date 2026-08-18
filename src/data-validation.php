@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Make sure the incoming data has the correct type or format</dd>
     </dl>
-
-    <figure><img alt="" src="images/data-validation.drawio.png"><figcaption>Data validation</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         Incoming data that has the wrong data type (i.e a float where an integer is expected) or the wrong format (i.e. "2023/01/18" where "2023-01-18" is expected) can cause errors in the system. They should be detected and denied at the first opportunity when it comes in to the system.
     </p>

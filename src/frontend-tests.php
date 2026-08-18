@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Code that tests that the user interface of the application.</dd>
     </dl>
-
-    <figure><img alt="" src="images/frontend-tests.drawio.png"><figcaption>Functional tests</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         For every major interaction with the frontend, you create a script of the interaction: every click, text input and delay. Frontend test suites then run this script to check if it still works.
     </p>

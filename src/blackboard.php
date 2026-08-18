@@ -11,6 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Top-down and bottom-up processes codepend on each other to provide data. Therefore, they share a common data repository (blackboard). A scheduler is used to prioritize the claims to the blackboard.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
     <p>
         The problem domain for this pattern has multiple modules working together, each working on its own part of the solution. The modules work concurrently and the output of one module serves as the input for another module. Each module is dependent on one or more other modules to deliver part of the solution and the modules can't operate sequentially, it's both top-down and bottom-up.
     </P>
@@ -18,7 +20,6 @@ include 'template/header.php';
         The blackboard metaphore is from a classroom situation. The teacher is solving a problem together with her students. She asks them for input. Multiple students raise their hand and one is picked by the teacher. The student approaches the blackboard and writes down some information that helps to advance the solution a bit. Then the next one is called. The students are <em>knowledge sources</em>. The teacher is the <em>scheduler</em>.
     </p>
 
-    <figure><img alt="" src="images/blackboard.drawio.png"><figcaption>Blackboard architecture diagram</figcaption></figure>
 
     <p>
         The <b>Blackboard</b> is the common datastructure of the Knowledge Sources. The blackboard is able to represent

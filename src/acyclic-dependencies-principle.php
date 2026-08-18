@@ -11,8 +11,10 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Allow no cycles in the module dependency graph</dd>
     </dl>
+    <?php showImage($pattern) ?>
 
-    <figure><img alt="" src="images/dependency-graph.drawio.png"><figcaption>Acyclic Dependencies Principle</figcaption></figure>
+
+    
 
     <h2>How does it work?</h2>
     <p>

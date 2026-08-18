@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Don't force users of a module to depend on things they don't need.</dd>
     </dl>
-
-    <figure><img alt="" src="images/common-reuse-principle.drawio.png"><figcaption>Common Reuse Principle</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         If you develop a public library, be relunctant to make your code depend on external modules. Your users will now be dependent on these other modules as well.
     </p>

@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>3D scenes are rendered by specialized graphics card hardware routines</dd>
     </dl>
-
-    <figure><img alt="" src="images/graphics-pipeline.drawio.png"><figcaption>Graphics Pipeline</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         As an application programmer the details of the graphics card are abstracted away by a graphics API. The best known of these are DirectX and OpenGL. Use these to write software that's independent of the actual card the scene is displayed on.
     </p>

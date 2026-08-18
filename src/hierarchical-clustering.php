@@ -11,6 +11,10 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Hierarchical Clustering builds a tree of clusters either by merging small clusters upward or splitting large ones downward. Think of forming a family tree of groups where you can cut the tree at any level to get a clustering. It differs from flat methods (like k-means) because it provides multi-scale structure and doesn't force a fixed number of clusters upfront.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
+    
+
 
     <h2>How does it work?</h2>
     <p>Builds a hierarchy of clusters by iteratively merging (agglomerative) or splitting (divisive) groups based on similarity metrics.</p>

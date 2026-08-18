@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A platform for developing applications. It has a kernel with reusable tools and an extendible set of modules (applications).</dd>
     </dl>
-
-    <figure><img alt="" src="images/framework.drawio.png"><figcaption>Software Framework</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         A platform contains a large set of commonly used tools to create an application. The applications depend on the framwork, and are called modules or bundles. These modules are different from the basic constructs of modular programming and contain the complete user interface, controllers, routing and database model neccesary for the application.
     </p>

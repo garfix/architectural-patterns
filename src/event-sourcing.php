@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>In stead of storing the current state of the data, all operations (events) that have occurred on the data are stored.</dd>
     </dl>
-
-    <figure><img alt="" src="images/event-sourcing.drawio.png"><figcaption>Event-sourcing architecture diagram</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         Every action performed by the system is modelled as an event and written to an event store (event log).
         This store only changes by this adding of events. Events are not removed or modified after they're added.

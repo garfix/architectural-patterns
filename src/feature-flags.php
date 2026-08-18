@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A configuration of on/off flags that control which features are active</dd>
     </dl>
-
-    <figure><img alt="" src="images/feature-flags.drawio.png"><figcaption>Feature Flags</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         Keep a list of boolean attributes that represent features. Choose which features are active or inactive in each separate environment.
     </p>

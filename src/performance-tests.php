@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Tests that measure the performance of the system's main functions</dd>
     </dl>
-
-    <figure><img alt="" src="images/performance-tests.drawio.png"><figcaption>Performance tests</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         The system's stakeholders determine the acceptable limits for the performance of the system. Specialized software helps to track performance of a system.
     </p>

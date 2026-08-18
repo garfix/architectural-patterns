@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Having a pool of identical data base servers, each holding a copy of the data, and synchronizing the data between replicas.</dd>
     </dl>
-
-    <figure><img alt="" src="images/replication.drawio.png"><figcaption>Data Replication architecture diagram</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
        When a client requests data, one of the replicas is selected to serve the request. This horizontal scaling allows the system to handle more concurrent reads. When a write is done to a replica, the replica must make sure that the update is synchronized with the other replicas.
     </p>

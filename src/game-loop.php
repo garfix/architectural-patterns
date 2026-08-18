@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>In video games, a control loop periodically updates the game. When the game is not being updated it is idle.</dd>
     </dl>
-
-    <figure><img alt="" src="images/game-loop.drawio.png"><figcaption>Game loop architecture diagram</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         In video games the positions of all moving objects needs to be updated, say 50 times per second, for animations to look smooth. For this reason they contain a timer that fires with this frequency. Each time the timer fires, inputs are processed, the game state is updated, and the new scene is rendered.
     </p>

@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Executing commands on the application from the OS shell environment</dd>
     </dl>
-
-    <figure><img alt="" src="images/cli.drawio.png"><figcaption>Command Line Interface</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         The user may a command on the application by starting the application with extra parameters. An application may be a pure CLI application that only allows itself to the run from the command line. But it may also be a GUI application or a service, and still allow users to run commands on it from the command line.
     </p>

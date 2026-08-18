@@ -11,6 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Permission to perform an operation on an object is given to a role that is assigned to a subject.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
     <p>
         The user of a website (subject) can only perform a selection of the actions (operations) possible in the website. Rather than giving the subject direct permission to an operation, which would involve a lot of work and careful thought, roles are defined that give access to a range of permissions. The user is then simply assigned a role (or a few roles).
     </p>
@@ -18,7 +20,6 @@ include 'template/header.php';
         Assigning roles to users, and assigning permissions to roles, are permissions on their own.
     </p>
 
-    <figure><img alt="" src="images/role-based-access-control.drawio.png"><figcaption>Role-based Access Control architecture diagram</figcaption></figure>
 
     <h2>Examples</h2>
     <ul>

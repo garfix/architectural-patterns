@@ -11,6 +11,10 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Q-Learning is a model-free reinforcement learning algorithm that learns the value (Q) of taking actions in states by bootstrapping from observed rewards and future value estimates. Think of updating a table that scores how good each action is in each situation through trial and error. Q-Learning differs from policy gradient methods by learning value estimates directly and from model-based approaches by not requiring a model of environment dynamics.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
+    
+
 
     <h2>How does it work?</h2>
     <p>Learns action-value estimates by updating Q-values from observed rewards and bootstrapped estimates of future value, then derives a policy by choosing actions with highest Q.</p>

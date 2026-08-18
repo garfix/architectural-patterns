@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Any subtype S of T must be designed in a way that it can be used predictably in any function that expects T.</dd>
     </dl>
-
-    <figure><img alt="" src="images/lsp.drawio.png"><figcaption>Liskov Substitution Principle</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         With OOP's polymorphism, a function that accepts an object of class T allows objects of it T's subclass S as well. The same goes for interfaces. This is the syntactic part of the story. Liskov Substitution Principle then holds that the same must hold for the semantic aspect. A program's behavior remains consistent and predictable when objects of derived classes are used in place of objects of the base class.
     </p>

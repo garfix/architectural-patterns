@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Language features that don't fit well into any of the other categories</dd>
     </dl>
-
-    <figure><img alt="" src="images/miscellaneous-features.drawio.png"></figure>
-
-    <h2>Features</h2>
+    <?php showImage($pattern) ?>
+<h2>Features</h2>
     <p><strong>REPL</strong> (<code>Python</code>, <code>Ruby</code>, <code>Scala</code>, <code>Clojure</code>, <code>Elixir</code>) Interactive shell to run expressions and get immediate feedback.</p>
     <p><strong>Macros</strong> (<code>Rust</code>, <code>Lisp</code>, <code>Elixir</code>) Compile-time code generation or transformation.</p>
     <p><strong>Reflection</strong> (<code>Java</code>, <code>C#</code>, <code>Python</code>, <code>Ruby</code>) Inspect and modify the program structure at runtime.</p>

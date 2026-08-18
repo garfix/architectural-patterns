@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Controller logic handles the interaction with the application's environment</dd>
     </dl>
-
-    <figure><img alt="" src="images/controller-logic.drawio.png"><figcaption>Controller Logic</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         The environment of the application consists of the user and integration software from other systems.
     </p>

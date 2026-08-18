@@ -11,6 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Store the actions of a user as objects in a list, and allow actions to be undone</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
     <p>
         Many applications allow a user to "undo" their actions. After the user has made some changes and realizes that they are on the wrong track, they may want to reverse one or more actions and take a different approach. This can be facilitated by the application by keeping track of all actions in a stack. Each action needs to know how to perform itself, and to reverse its effects.
     </p>
@@ -21,7 +23,6 @@ include 'template/header.php';
         Actions may be extended. Rather than treating each typed letter as a single action, update the "edit" each time a new letter is typed. This way the edit can be undone in a single step.
     </p>
 
-    <figure><img alt="" src="images/undo.drawio.png"><figcaption>Undo</figcaption></figure>
 
     <h2>Examples</h2>
     <ul>

@@ -11,6 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A pool of processing units that both contain domain logic and code for a section of the application. New units can be added and removed as load demands.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
 
     <p>In a n-tier system, the database is the bottleneck. This pattern tries to solve this by scaling not only code linearly but the data as well.</p>
 
@@ -18,7 +20,6 @@ include 'template/header.php';
         The pattern gets its name from the concept of <a href="https://en.wikipedia.org/wiki/Tuple_space">tuple space</a>, the technique of using multiple processes communicating through shared memory.
     </p>
 
-    <figure><img alt="" src="images/space-based.drawio.png"><figcaption>Space based architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

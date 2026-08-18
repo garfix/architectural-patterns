@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Functionality should be grouped together in a way that makes most sense in a release</dd>
     </dl>
-
-    <figure><img alt="" src="images/reuse-release-equivalence-principle.drawio.png"><figcaption>Reuse/Release Equivalence Principle</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         A software library is has releases in the form of versions. A library must have some kind of single purpose. If it contains many incoherent functionalities, it doesn't make sense to release them together, and they should be split up into multiple modules.
     </p>

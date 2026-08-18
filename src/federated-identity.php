@@ -11,12 +11,13 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Provide a gateway to large identity providers for authentication</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
 
     <p>
         Allow the user to log in using their Google / Facebook / Microsoft etc account.
     </p>
 
-    <figure><img alt="" src="images/federated-identity.drawio.png"><figcaption>Federated Identity architecture diagram</figcaption></figure>
 
     <h2>How does it work?</h2>
     <p>

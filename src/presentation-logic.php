@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Collect and prepare data to be shown in the user interface.</dd>
     </dl>
-
-    <figure><img alt="" src="images/presentation-logic.drawio.png"><figcaption>Presentation Logic</figcaption></figure>
-
-    <p>Presentation logic is part of the View in MVC, and Boundary in ECB</p>
+    <?php showImage($pattern) ?>
+<p>Presentation logic is part of the View in MVC, and Boundary in ECB</p>
 
     <h2>How does it work?</h2>
     <p>

@@ -11,6 +11,10 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>A GAN trains two networks: a generator that creates fake samples and a discriminator that tries to tell real from fake. They compete until the generator produces convincing outputs. S, picture a forger improving to fool a detective. GANs differ from likelihood-based generative models (like VAEs) because they don't optimize an explicit probability; training can be unstable but often yields sharp, realistic samples.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
+    
+
 
     <h2>How does it work?</h2>
     <p>Trains two networks adversarially: a generator creates samples and a discriminator learns to distinguish real from generated data, improving both.</p>

@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Entities are not defined as a hierarchy, but as tabular data</dd>
     </dl>
-
-    <figure><img alt="" src="images/entity-component-system.drawio.png"><figcaption>Entity-Component-System architecture diagram</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         Entity component system (ECS) is a software architectural pattern mostly used in video game development for the representation of game world objects. An ECS comprises entities composed from components of data, with systems which operate on entities' components.
     </p>

@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Gather functionality in a module that changes for the same reasons and at the same time.</dd>
     </dl>
-
-    <figure><img alt="" src="images/common-closure-principle.drawio.png"><figcaption>Common Closure Principle</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         This is the Single Responsibility Principle for modules.
     </p>

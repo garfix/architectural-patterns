@@ -11,6 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>The user should have complete control over their data</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
 
     <p>
         The user needs to be in control of their data. This means that they should be able to perform any action they need and receive feedback on their actions.

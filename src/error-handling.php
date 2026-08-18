@@ -11,10 +11,8 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>When an error occurs, this is communicated to the user.</dd>
     </dl>
-
-    <figure><img alt="" src="images/error-handling.drawio.png"><figcaption>Error handling architecture diagram</figcaption></figure>
-
-    <h2>How does it work?</h2>
+    <?php showImage($pattern) ?>
+<h2>How does it work?</h2>
     <p>
         When an error occurs during the flow of the application, the action the user aims to perform, fails. If this is not fed back to the user, the user will assume it succeeded. The user can also be instructed what to do about the error.
     </p>

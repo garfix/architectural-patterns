@@ -11,6 +11,10 @@ include 'template/header.php';
         <dt>Definition</dt>
         <dd>Policy Gradient methods directly optimize the agent's action-selection strategy by estimating gradients of expected reward with respect to policy parameters and taking gradient steps. Picture nudging the policy toward actions that led to higher rewards. These methods differ from value-based ones (like Q-learning) as they optimize the policy directly and can naturally handle continuous action spaces.</dd>
     </dl>
+    <?php showImage($pattern) ?>
+
+    
+
 
     <h2>How does it work?</h2>
     <p>Optimizes a parameterized policy directly by estimating gradients of expected returns and updating policy parameters in the direction of higher reward.</p>

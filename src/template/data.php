@@ -745,11 +745,6 @@ $patterns = [
         "link" => "template-engine",
     ],
     [
-        "name" => "Decision Tree Learning",
-        "image" => "decision-tree-learning.drawio.png",
-        "link" => "decision-tree-learning",
-    ],
-    [
         "name" => "Object Aggregate",
         "image" => "object-aggregate.drawio.png",
         "link" => "object-aggregate",
@@ -1118,7 +1113,7 @@ $patterns = [
     ],
     [
         "name" => "Decision Tree Learning",
-        "image" => "decision-tree-learning.png",
+        "image" => "decision-tree-learning.drawio.png",
         "link" => "decision-tree-learning",
     ],
     [
