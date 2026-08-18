@@ -17,9 +17,8 @@ include 'template/header.php';
 
 
     <h2>How does it work?</h2>
-    <p>Classifies or predicts by finding the nearest labeled examples in the training data and using their labels or values to decide.</p>
-
-    <h2 id="links">Links</h2>
+    <p>k-Nearest Neighbors models learn from labeled examples: prepare features, choose a model family, train on examples, and validate on held-out data. Pay attention to data preprocessing, class imbalance, and hyperparameter tuning.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm">Wikipedia: k-Nearest Neighbors</a></li>
     </ol>

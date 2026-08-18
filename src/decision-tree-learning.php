@@ -13,13 +13,8 @@ include 'template/header.php';
     </dl>
     <?php showImage($pattern) ?>
 <h2>How does it work?</h2>
-    <p>
-        Decision trees are among the most popular machine learning algorithms given their intelligibility and simplicity. In decision analysis, a decision tree can be used to visually and explicitly represent decisions and decision making.
-    </p>
-
-    <figure><img alt="" src="images/Decision_Tree.jpg"><figcaption>Example Decision Tree (<a href="https://commons.wikimedia.org/wiki/File:Decision_Tree.jpg">source</a>)</figcaption></figure>
-
-    <h2>When should you use it?</h2>
+    <p>Trees split data by feature thresholds to partition space; ensemble methods build many trees on bootstrapped samples and aggregate predictions. Focus on feature selection, depth control, and understanding variable importance when using these models.</p>
+<h2>When should you use it?</h2>
     <ul>
         <li>If your data is structured and consists of scalar values
         <li>If you want to create a classifier based on labeled sample data

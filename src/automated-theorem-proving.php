@@ -17,9 +17,8 @@ include 'template/header.php';
 
 
     <h2>How does it work?</h2>
-    <p>Applies formal inference rules and search strategies to derive conclusions from axioms or hypotheses, attempting to construct a valid proof automatically.</p>
-
-    <h2 id="links">Links</h2>
+    <p>Automated Theorem Proving methods manipulate symbols or rules: represent knowledge explicitly, and apply inference algorithms (forward/backward chaining, constraint propagation, search). Implementations focus on rule ordering, conflict resolution, and efficient indexing of facts.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Automated_theorem_proving">Wikipedia: Automated theorem proving</a></li>
     </ol>

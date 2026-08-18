@@ -17,9 +17,8 @@ include 'template/header.php';
 
 
     <h2>How does it work?</h2>
-    <p>You describe the situations (states), the choices you can make (actions), and the rewards you get. The aim is to choose actions that give the best total reward over time. Start with a simple model to understand action choices before making it more complex.</p>
-
-    <h2 id="links">Links</h2>
+    <p>Markov Decision Process algorithms typically represent uncertainty explicitly and use probability calculations to combine data and model assumptions. Implementations focus on numerical stability, how to represent distributions (parametric vs sampled), and efficient updates when new data arrive.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Markov_decision_process">Wikipedia: Markov decision process</a></li>
     </ol>

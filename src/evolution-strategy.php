@@ -18,9 +18,8 @@ include 'template/header.php';
 
 
     <h2>How does it work?</h2>
-    <p>Keep a population of number-based candidates, make random changes, and keep the better ones. Adjust how big the changes are so the search improves steadily.</p>
-
-    <h2 id="links">Links</h2>
+    <p>Evolution Strategy methods maintain a population of candidates and use variation (mutation/crossover) and selection to improve fitness over generations. Implementations manage representation encoding, selection pressure, and diversity to avoid premature convergence; often parallel evaluations are used to speed up fitness computation.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Evolution_strategy">Wikipedia: Evolution strategy</a></li>
     </ol>

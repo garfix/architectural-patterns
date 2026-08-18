@@ -13,9 +13,8 @@ include 'template/header.php';
     </dl>
     <?php showImage($pattern) ?>
 <h2>How does it work?</h2>
-    <p>A Markov chain shows how a system moves between a set of states. Each step only depends on the current state. To use it, list possible states and the chances of moving between them, then run the chain many times to see typical outcomes.</p>
-
-    <h2>Examples</h2>
+    <p>Markov Chain algorithms typically represent uncertainty explicitly and use probability calculations to combine data and model assumptions. Implementations focus on numerical stability, how to represent distributions (parametric vs sampled), and efficient updates when new data arrive.</p>
+<h2>Examples</h2>
     <ul>
         <li>Weather forecasting: a model with states such as sunny, cloudy, and rainy, where tomorrow's weather depends mostly on today's conditions.
         <li>Web browsing: a user moves between pages by following links, and the chain estimates the likely sequence of page visits over time.

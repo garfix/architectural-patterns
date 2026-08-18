@@ -17,9 +17,8 @@ include 'template/header.php';
 
 
     <h2>How does it work?</h2>
-    <p>Uses self-attention to compute contextualized representations for all positions in parallel, enabling efficient sequence modeling without recurrence.</p>
-
-    <h2 id="links">Links</h2>
+    <p>Transformers compute self-attention between all positions so each token builds a context-aware representation; stacking attention and feed-forward blocks and training with large batches leads to strong sequence models. Implementation focuses on attention masks, positional encoding, and efficient batched matrix operations.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)">Wikipedia: Transformer</a></li>
     </ol>

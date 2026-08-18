@@ -17,9 +17,8 @@ include 'template/header.php';
 
 
     <h2>How does it work?</h2>
-    <p>Generates data by learning to reverse a gradual noising process: a model denoises samples step-by-step to produce realistic outputs.</p>
-
-    <h2 id="links">Links</h2>
+    <p>Diffusion Model architectures are specialised neural designs; they define layer types and connectivity that bias the model to particular data structures. Implementations balance depth, width, and compute considerations for practical training.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Diffusion_model">Wikipedia: Diffusion model</a></li>
     </ol>

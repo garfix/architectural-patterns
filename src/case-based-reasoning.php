@@ -17,9 +17,8 @@ include 'template/header.php';
 
 
     <h2>How does it work?</h2>
-    <p>Solves new problems by retrieving similar past cases from a case library, adapting their solutions, and storing new experiences for future use.</p>
-
-    <h2 id="links">Links</h2>
+    <p>Case-Based Reasoning methods manipulate symbols or rules: represent knowledge explicitly, and apply inference algorithms (forward/backward chaining, constraint propagation, search). Implementations focus on rule ordering, conflict resolution, and efficient indexing of facts.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Case-based_reasoning">Wikipedia: Case-Based Reasoning</a></li>
     </ol>

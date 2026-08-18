@@ -13,9 +13,8 @@ include 'template/header.php';
     </dl>
     <?php showImage($pattern) ?>
 <h2>How does it work?</h2>
-    <p>Write your goal as a linear formula and list linear limits (constraints). A solver finds the best numbers that meet the limits and give the best goal. Use existing solvers rather than writing your own.</p>
-
-    <h2 id="links">Links</h2>
+    <p>Linear Programming methods search a space of candidate solutions. They typically define neighbor moves or gradients, evaluate objective functions, and use schedules or memory to escape local optima or to converge reliably.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Linear_programming">Wikipedia: Linear programming</a></li>
     </ol>

@@ -17,9 +17,8 @@ include 'template/header.php';
 
 
     <h2>How does it work?</h2>
-    <p>Learns action-value estimates by updating Q-values from observed rewards and bootstrapped estimates of future value, then derives a policy by choosing actions with highest Q.</p>
-
-    <h2 id="links">Links</h2>
+    <p>Q-Learning operates by interacting with an environment: observe state, choose action, receive reward, and update a policy or value estimator. Practical implementations must balance exploration and exploitation and handle credit assignment across time via bootstrapping or Monte Carlo returns.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Q-learning">Wikipedia: Q-Learning</a></li>
     </ol>

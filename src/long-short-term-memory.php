@@ -17,9 +17,8 @@ include 'template/header.php';
 
 
     <h2>How does it work?</h2>
-    <p>Uses gated recurrent cells (input, forget, output) to control information flow and preserve long-term dependencies in sequences.</p>
-
-    <h2 id="links">Links</h2>
+    <p>Long Short-Term Memory architectures are specialised neural designs; they define layer types and connectivity that bias the model to particular data structures. Implementations balance depth, width, and compute considerations for practical training.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Long_short-term_memory">Wikipedia: Long Short-Term Memory</a></li>
     </ol>

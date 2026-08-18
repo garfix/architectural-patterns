@@ -17,9 +17,8 @@ include 'template/header.php';
 
 
     <h2>How does it work?</h2>
-    <p>Learns representations by passing messages between nodes and aggregating neighbor information along graph edges to update node features.</p>
-
-    <h2 id="links">Links</h2>
+    <p>Graph Neural Network algorithms typically represent uncertainty explicitly and use probability calculations to combine data and model assumptions. Implementations focus on numerical stability, how to represent distributions (parametric vs sampled), and efficient updates when new data arrive.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Graph_neural_network">Wikipedia: Graph neural network</a></li>
     </ol>

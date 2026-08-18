@@ -1294,7 +1294,7 @@ $patterns = [
 $sortedPatterns = $patterns;
 
 usort($sortedPatterns, function ($a, $b) {
-    return ($a['name'] < $b['name']) ? -1 : 1;
+    return (strtolower($a['name']) < strtolower($b['name'])) ? -1 : 1;
 });
 
 $indexed = [];

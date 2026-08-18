@@ -17,9 +17,8 @@ include 'template/header.php';
 
 
     <h2>How does it work?</h2>
-    <p>Split a big problem into smaller parts, solve each small part once, and reuse those results to build the full solution. This avoids repeating the same work over and over.</p>
-
-    <h2 id="links">Links</h2>
+    <p>Dynamic programming solves problems by computing and reusing solutions to overlapping subproblems. Implementations are either memoized recursion or iterative table filling; identify state variables and transitions, and ensure an ordering that respects dependencies to compute bottom-up.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Dynamic_programming">Wikipedia: Dynamic programming</a></li>
     </ol>

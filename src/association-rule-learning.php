@@ -17,9 +17,8 @@ include 'template/header.php';
 
 
     <h2>How does it work?</h2>
-    <p>Finds frequent co-occurring itemsets in data and derives rules that express the likelihood of one item appearing with another.</p>
-
-    <h2 id="links">Links</h2>
+    <p>Association Rule Learning models learn from labeled examples: prepare features, choose a model family, train on examples, and validate on held-out data. Pay attention to data preprocessing, class imbalance, and hyperparameter tuning.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Association_rule_learning">Wikipedia: Association Rule Learning</a></li>
     </ol>

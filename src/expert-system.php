@@ -17,9 +17,8 @@ include 'template/header.php';
 
 
     <h2>How does it work?</h2>
-    <p>Encodes domain knowledge as rules or facts and uses an inference engine to apply those rules to facts to derive conclusions or recommendations.</p>
-
-    <h2 id="links">Links</h2>
+    <p>Expert System methods manipulate symbols or rules: represent knowledge explicitly, and apply inference algorithms (forward/backward chaining, constraint propagation, search). Implementations focus on rule ordering, conflict resolution, and efficient indexing of facts.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Expert_system">Wikipedia: Expert system</a></li>
     </ol>

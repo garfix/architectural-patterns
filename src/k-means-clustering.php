@@ -17,9 +17,8 @@ include 'template/header.php';
 
 
     <h2>How does it work?</h2>
-    <p>Initializes k centroids, assigns points to the nearest centroid, and updates centroids iteratively until assignments stabilize.</p>
-
-    <h2 id="links">Links</h2>
+    <p>k-Means Clustering models learn from labeled examples: prepare features, choose a model family, train on examples, and validate on held-out data. Pay attention to data preprocessing, class imbalance, and hyperparameter tuning.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/K-means_clustering">Wikipedia: k-Means Clustering</a></li>
     </ol>

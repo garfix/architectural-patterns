@@ -18,9 +18,8 @@ include 'template/header.php';
 
 
     <h2>How does it work?</h2>
-    <p>Like hill climbing, but keep a short memory of recent moves so you do not repeat them. This helps explore more of the search space and avoid simple loops.</p>
-
-    <h2 id="links">Links</h2>
+    <p>Tabu Search methods search a space of candidate solutions. They typically define neighbor moves or gradients, evaluate objective functions, and use schedules or memory to escape local optima or to converge reliably.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Tabu_search">Wikipedia: Tabu search</a></li>
     </ol>

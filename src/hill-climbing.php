@@ -18,9 +18,8 @@ include 'template/header.php';
 
 
     <h2>How does it work?</h2>
-    <p>Make small changes that improve the solution. Keep changing until no small change makes it better. If you get stuck, try starting from a different place.</p>
-
-    <h2 id="links">Links</h2>
+    <p>Hill Climbing methods search a space of candidate solutions. They typically define neighbor moves or gradients, evaluate objective functions, and use schedules or memory to escape local optima or to converge reliably.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Hill_climbing">Wikipedia: Hill climbing</a></li>
     </ol>

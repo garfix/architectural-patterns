@@ -17,9 +17,8 @@ include 'template/header.php';
 
 
     <h2>How does it work?</h2>
-    <p>An encoder compresses input into a compact code and a decoder reconstructs the input; training minimizes reconstruction error to learn useful representations.</p>
-
-    <h2 id="links">Links</h2>
+    <p>Autoencoder architectures are specialised neural designs; they define layer types and connectivity that bias the model to particular data structures. Implementations balance depth, width, and compute considerations for practical training.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Autoencoder">Wikipedia: Autoencoder</a></li>
     </ol>

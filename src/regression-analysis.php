@@ -19,11 +19,7 @@ include 'template/header.php';
     <h2 id="links">Links</h2>
     <ol>
     <h2>How does it work?</h2>
-    <p>Pick a simple formula that relates inputs to outputs and adjust its numbers so the formula matches known examples. Check how well the formula predicts new data and fix it if it performs poorly.</p>
-
-        <li><a href="https://en.wikipedia.org/wiki/Regression_analysis">Wikipedia: Regression analysis</a></li>
-    </ol>
-
+    <p>Regression Analysis algorithms typically represent uncertainty explicitly and use probability calculations to combine data and model assumptions. Implementations focus on numerical stability, how to represent distributions (parametric vs sampled), and efficient updates when new data arrive.</p>
 </section>
 
 <?php

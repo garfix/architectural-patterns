@@ -17,9 +17,8 @@ include 'template/header.php';
 
 
     <h2>How does it work?</h2>
-    <p>Processes sequences by maintaining a hidden state that is updated at each timestep, allowing the network to capture temporal dependencies.</p>
-
-    <h2 id="links">Links</h2>
+    <p>Recurrent Neural Network architectures are specialised neural designs; they define layer types and connectivity that bias the model to particular data structures. Implementations balance depth, width, and compute considerations for practical training.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Recurrent_neural_network">Wikipedia: Recurrent neural network</a></li>
     </ol>

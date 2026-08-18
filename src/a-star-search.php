@@ -17,9 +17,8 @@ include 'template/header.php';
 
 
         <h2>How does it work?</h2>
-        <p>A* finds a shortest path by always exploring the most promising path first, where 'promising' is a mix of how far you've come and a guess of how far remains. Pick a good guess to make the search fast.</p>
-
-        <h2 id="links">Links</h2>
+    <p>A* expands nodes from a priority queue ordered by cost-so-far plus heuristic estimate. Implement it by maintaining open and closed sets, updating costs when better paths are found, and ensuring the heuristic is admissible for optimality. Efficient implementations use appropriate data structures for the frontier.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/A*_search_algorithm">Wikipedia: A* search algorithm</a></li>
     </ol>

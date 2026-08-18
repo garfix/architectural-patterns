@@ -15,9 +15,8 @@ include 'template/header.php';
     <?php showImage($pattern) ?>
 
     <h2>How does it work?</h2>
-    <p>Use random samples to estimate an answer. Run many trials, measure the result in each trial, and average them. More trials usually give a better estimate.</p>
-
-    <h2 id="links">Links</h2>
+    <p>Monte Carlo Method algorithms typically represent uncertainty explicitly and use probability calculations to combine data and model assumptions. Implementations focus on numerical stability, how to represent distributions (parametric vs sampled), and efficient updates when new data arrive.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Monte_Carlo_method">Wikipedia: Monte Carlo method</a></li>
     </ol>

@@ -17,9 +17,8 @@ include 'template/header.php';
 
 
     <h2>How does it work?</h2>
-    <p>Choose the parameter values that make the observed data most probable under your model. In simple cases there are direct formulas; otherwise try numeric search to find the best parameters.</p>
-
-    <h2 id="links">Links</h2>
+    <p>Maximum Likelihood Estimation algorithms typically represent uncertainty explicitly and use probability calculations to combine data and model assumptions. Implementations focus on numerical stability, how to represent distributions (parametric vs sampled), and efficient updates when new data arrive.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Maximum_likelihood_estimation">Wikipedia: Maximum likelihood estimation</a></li>
     </ol>

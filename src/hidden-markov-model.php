@@ -13,9 +13,8 @@ include 'template/header.php';
     </dl>
     <?php showImage($pattern) ?>
 <h2>How does it work?</h2>
-    <p>There are states you cannot see directly, but you observe outputs that depend on those states. By looking at the observed outputs, you try to guess the hidden states and how likely each one is.</p>
-
-    <h2 id="links">Links</h2>
+    <p>Hidden Markov Model algorithms typically represent uncertainty explicitly and use probability calculations to combine data and model assumptions. Implementations focus on numerical stability, how to represent distributions (parametric vs sampled), and efficient updates when new data arrive.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Hidden_Markov_model">Wikipedia: Hidden Markov model</a></li>
     </ol>

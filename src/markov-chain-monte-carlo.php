@@ -17,9 +17,8 @@ include 'template/header.php';
 
 
     <h2>How does it work?</h2>
-    <p>Create a random process that eventually produces samples similar to the distribution you care about. Run it for a while, ignore the first few samples, then collect many samples to estimate properties of the distribution.</p>
-
-    <h2 id="links">Links</h2>
+    <p>MCMC constructs a sequence of proposals across the space and accepts or rejects them so that long runs produce samples from the desired distribution. Core steps: propose a move, compute acceptance probability, accept or reject, and repeat. Practical issues include burn-in, mixing, and autocorrelation which determine how many samples to keep or thin.</p>
+<h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo">Wikipedia: Markov chain Monte Carlo</a></li>
     </ol>
