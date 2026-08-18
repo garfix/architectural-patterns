@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Maximum Likelihood Estimation algorithms typically represent uncertainty explicitly and use probability calculations to combine data and model assumptions. Implementations focus on numerical stability, how to represent distributions (parametric vs sampled), and efficient updates when new data arrive.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Logistic regression fitting — Estimate model coefficients by maximising data likelihood for binary outcomes in risk models.</li>
+        <li>Gaussian mixture parameters — Fit component means and variances by maximising likelihood with EM for clustering.</li>
+        <li>Survival model calibration — Estimate hazard parameters from censored time-to-event data in clinical studies.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Maximum_likelihood_estimation">Wikipedia: Maximum likelihood estimation</a></li>

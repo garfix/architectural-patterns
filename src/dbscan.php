@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>DBSCAN models learn from labeled examples: prepare features, choose a model family, train on examples, and validate on held-out data. Pay attention to data preprocessing, class imbalance, and hyperparameter tuning.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Geospatial hotspot detection — Find dense clusters of events (e.g., crime, ride requests) without predefining cluster count.</li>
+        <li>Outlier detection in logs — Identify noise points in operational logs as anomalies.</li>
+        <li>Discovering dense communities — Cluster social network embeddings where clusters have arbitrary shapes.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/DBSCAN">Wikipedia: DBSCAN</a></li>

@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>t-SNE models learn from labeled examples: prepare features, choose a model family, train on examples, and validate on held-out data. Pay attention to data preprocessing, class imbalance, and hyperparameter tuning.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Visualising embeddings — Project high-dimensional model embeddings to 2D for cluster inspection in ML experiments.</li>
+        <li>Single-cell RNA-seq analysis — Visualise cell populations and subtypes from expression profiles.</li>
+        <li>Debugging representation quality — Use t-SNE plots to inspect if different classes separate in learned embeddings.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding">Wikipedia: t-SNE</a></li>

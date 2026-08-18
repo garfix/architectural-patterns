@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>MCMC constructs a sequence of proposals across the space and accepts or rejects them so that long runs produce samples from the desired distribution. Core steps: propose a move, compute acceptance probability, accept or reject, and repeat. Practical issues include burn-in, mixing, and autocorrelation which determine how many samples to keep or thin.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Bayesian posterior sampling — Use MCMC (e.g., Metropolis-Hastings, Gibbs) to draw samples from complex posterior distributions in hierarchical models.</li>
+        <li>Topic modelling (LDA) — Use collapsed Gibbs sampling to infer topic assignments for documents at scale.</li>
+        <li>Phylogenetic inference — Sample tree-space posterior distributions for evolutionary models where direct computation is impossible.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo">Wikipedia: Markov chain Monte Carlo</a></li>

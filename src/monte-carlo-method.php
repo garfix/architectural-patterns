@@ -16,6 +16,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Monte Carlo Method algorithms typically represent uncertainty explicitly and use probability calculations to combine data and model assumptions. Implementations focus on numerical stability, how to represent distributions (parametric vs sampled), and efficient updates when new data arrive.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Option pricing — Simulate many price paths to estimate the expected payoff of financial derivatives like European options.</li>
+        <li>Light transport in rendering — Estimate global illumination by randomly sampling light paths for realistic image synthesis.</li>
+        <li>Uncertainty propagation — Approximate integrals or expectations where analytic solutions are intractable (engineering risk assessments).</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Monte_Carlo_method">Wikipedia: Monte Carlo method</a></li>

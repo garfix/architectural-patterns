@@ -19,6 +19,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Hill Climbing methods search a space of candidate solutions. They typically define neighbor moves or gradients, evaluate objective functions, and use schedules or memory to escape local optima or to converge reliably.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Local optimisation for hyperparameters — Greedy local search for small discrete hyperparameter spaces where gradients aren't available.</li>
+        <li>Feature selection — Iteratively add/remove features and keep moves that improve validation score.</li>
+        <li>Layout tuning — Iterative improvement of UI layouts or floor plans with small neighbor edits.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Hill_climbing">Wikipedia: Hill climbing</a></li>

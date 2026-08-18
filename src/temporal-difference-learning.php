@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Temporal Difference Learning operates by interacting with an environment: observe state, choose action, receive reward, and update a policy or value estimator. Practical implementations must balance exploration and exploitation and handle credit assignment across time via bootstrapping or Monte Carlo returns.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>TD(0) for policy evaluation — Estimate state-value functions from bootstrapped returns in episodic tasks.</li>
+        <li>Predictive signal in forecasting — Use TD updates to predict future signals with online bootstrapping.</li>
+        <li>Combining simulation and real data — Update value estimates online as real interactions arrive in control systems.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Temporal_difference_learning">Wikipedia: Temporal difference learning</a></li>

@@ -18,6 +18,18 @@ include 'template/header.php';
 
         <h2>How does it work?</h2>
     <p>A* expands nodes from a priority queue ordered by cost-so-far plus heuristic estimate. Implement it by maintaining open and closed sets, updating costs when better paths are found, and ensuring the heuristic is admissible for optimality. Efficient implementations use appropriate data structures for the frontier.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Game AI pathfinding — Find shortest paths for NPCs on grid maps using admissible heuristics like Manhattan distance.</li>
+        <li>Robot motion planning — Compute collision-free routes in discretized maps with heuristics to focus search.</li>
+        <li>Route planning in maps — Combine road network costs and heuristic estimates for efficient navigation on graphs.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/A*_search_algorithm">Wikipedia: A* search algorithm</a></li>

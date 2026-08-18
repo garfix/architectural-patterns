@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Q-Learning operates by interacting with an environment: observe state, choose action, receive reward, and update a policy or value estimator. Practical implementations must balance exploration and exploitation and handle credit assignment across time via bootstrapping or Monte Carlo returns.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Grid-world navigation — Tabular Q-learning to teach agents to reach goals in discrete environments.</li>
+        <li>Game AI (classic) — Train agents to play simple arcade games using Q-value updates and epsilon-greedy exploration.</li>
+        <li>Ad placement bandits — Use Q-learning variants to learn action values for contextual decision settings.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Q-learning">Wikipedia: Q-Learning</a></li>

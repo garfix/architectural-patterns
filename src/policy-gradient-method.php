@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Policy Gradient Method operates by interacting with an environment: observe state, choose action, receive reward, and update a policy or value estimator. Practical implementations must balance exploration and exploitation and handle credit assignment across time via bootstrapping or Monte Carlo returns.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Continuous control (robotics) — Optimise stochastic policies directly for torque/actuator control using REINFORCE or PPO.</li>
+        <li>Dialogue policy learning — Train end-to-end dialogue managers that select responses to maximise user satisfaction.</li>
+        <li>Portfolio optimisation — Learn stochastic allocation policies to trade off risk and return in simulation.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Policy_gradient_method">Wikipedia: Policy gradient method</a></li>

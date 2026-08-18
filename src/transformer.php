@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Transformers compute self-attention between all positions so each token builds a context-aware representation; stacking attention and feed-forward blocks and training with large batches leads to strong sequence models. Implementation focuses on attention masks, positional encoding, and efficient batched matrix operations.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Large language models — Pretrain transformer decoders/encoder-decoder stacks for text generation and understanding.</li>
+        <li>Machine translation — State-of-the-art encoder-decoder transformers for high-quality translation.</li>
+        <li>Protein folding embeddings — Apply transformer architectures to model amino-acid sequences and structural properties.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)">Wikipedia: Transformer</a></li>

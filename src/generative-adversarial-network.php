@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Generative Adversarial Network architectures are specialised neural designs; they define layer types and connectivity that bias the model to particular data structures. Implementations balance depth, width, and compute considerations for practical training.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Image synthesis — Generate photorealistic images (faces, textures) for data augmentation or creative tools.</li>
+        <li>Super-resolution — Learn a mapping from low- to high-resolution images using adversarial loss.</li>
+        <li>Domain adaptation — Translate styles between domains (e.g., day↔night) with CycleGAN variants.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Generative_adversarial_network">Wikipedia: Generative Adversarial Network</a></li>

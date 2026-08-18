@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Self-Organizing Map models learn from labeled examples: prepare features, choose a model family, train on examples, and validate on held-out data. Pay attention to data preprocessing, class imbalance, and hyperparameter tuning.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Topology-preserving embedding — Map high-dimensional sensory data onto 2D grids for visual analytics.</li>
+        <li>Customer behaviour maps — Visual cluster maps that help marketing teams explore segments.</li>
+        <li>Anomaly visualisation — Spot unusual input patterns as isolated nodes on the map.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Self-organizing_map">Wikipedia: Self-Organizing Map</a></li>

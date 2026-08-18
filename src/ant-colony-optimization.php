@@ -19,6 +19,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Ant Colony Optimization methods maintain a population of candidates and use variation (mutation/crossover) and selection to improve fitness over generations. Implementations manage representation encoding, selection pressure, and diversity to avoid premature convergence; often parallel evaluations are used to speed up fitness computation.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Vehicle routing — Use pheromone trails to bias constructive heuristics for practical routing problems.</li>
+        <li>Network routing protocols — Heuristic path selection inspired by ants for adaptive routing in communication networks.</li>
+        <li>Combinatorial optimisation benchmarks — Apply ACO to TSP variants and graph-based optimisation tasks.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms">Wikipedia: Ant colony optimization</a></li>

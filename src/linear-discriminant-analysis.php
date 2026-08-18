@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Linear Discriminant Analysis models learn from labeled examples: prepare features, choose a model family, train on examples, and validate on held-out data. Pay attention to data preprocessing, class imbalance, and hyperparameter tuning.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Face recognition projection — Project high-dimensional features to lower dimensions for classification tasks.</li>
+        <li>Medical diagnostic scoring — Linear separators for multi-class problems with Gaussian assumptions.</li>
+        <li>Feature reduction for classifiers — Reduce dimensionality before applying simple classifiers for speed.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Linear_discriminant_analysis">Wikipedia: Linear discriminant analysis</a></li>

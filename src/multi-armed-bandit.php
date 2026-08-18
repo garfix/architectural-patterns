@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Multi-Armed Bandit operates by interacting with an environment: observe state, choose action, receive reward, and update a policy or value estimator. Practical implementations must balance exploration and exploitation and handle credit assignment across time via bootstrapping or Monte Carlo returns.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Ad selection — Balance exploration and exploitation to pick which ad variant to show to maximise clicks.</li>
+        <li>Clinical trial allocation — Adaptively assign treatments to patients to improve outcomes while learning efficacy.</li>
+        <li>News recommendation — Serve articles while learning click rates with contextual bandit algorithms.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Multi-armed_bandit">Wikipedia: Multi-armed bandit</a></li>

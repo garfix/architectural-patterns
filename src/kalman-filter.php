@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>A Kalman filter alternates predict and update steps: predict the state forward using the motion model, then incorporate the noisy measurement by computing a gain that balances model and measurement uncertainty. It maintains a mean and covariance and is efficient for linear Gaussian systems; non-linear variants linearize or use sigma-points.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>GPS/INS sensor fusion — Estimate vehicle position and velocity by combining inertial predictions and intermittent GPS fixes.</li>
+        <li>Aircraft navigation — Real-time state estimation for flight control using linear dynamics and noisy instruments.</li>
+        <li>Object tracking — Smooth and predict moving object trajectories from noisy radar or camera measurements.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Kalman_filter">Wikipedia: Kalman filter</a></li>

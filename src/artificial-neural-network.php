@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Neural networks compose layers of parameterised functions; training minimises a loss over labeled examples by backpropagating gradients and updating parameters with optimisers. Important engineering details include architecture choices, regularisation, and validation to avoid overfitting.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Image classification — Train convolutional networks to detect objects in medical imaging or autonomous vehicles.</li>
+        <li>Speech recognition — Sequence models to transcribe spoken language into text for virtual assistants.</li>
+        <li>Anomaly detection — Autoencoder-based architectures to detect manufacturing defects from sensor data.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Neural_network_(machine_learning)">Wikipedia: Artificial neural network</a></li>

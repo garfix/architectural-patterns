@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>k-Means Clustering models learn from labeled examples: prepare features, choose a model family, train on examples, and validate on held-out data. Pay attention to data preprocessing, class imbalance, and hyperparameter tuning.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Customer segmentation — Cluster customers by behaviour for targeted marketing campaigns.</li>
+        <li>Color quantization — Reduce image palettes by clustering pixel colours for compression.</li>
+        <li>Document clustering — Group similar documents for search indexing and exploratory analysis.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/K-means_clustering">Wikipedia: k-Means Clustering</a></li>

@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Principal Component Analysis models learn from labeled examples: prepare features, choose a model family, train on examples, and validate on held-out data. Pay attention to data preprocessing, class imbalance, and hyperparameter tuning.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Face recognition preprocessing — Reduce dimensionality of image descriptors before nearest-neighbour matching.</li>
+        <li>Variance-based feature reduction — Project features to top components to denoise data for downstream models.</li>
+        <li>Exploratory data analysis — Visualise high-dimensional datasets on 2–3 principal axes to spot structure.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Principal_component_analysis">Wikipedia: Principal Component Analysis</a></li>

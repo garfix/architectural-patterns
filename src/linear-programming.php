@@ -14,6 +14,18 @@ include 'template/header.php';
     <?php showImage($pattern) ?>
 <h2>How does it work?</h2>
     <p>Linear Programming methods search a space of candidate solutions. They typically define neighbor moves or gradients, evaluate objective functions, and use schedules or memory to escape local optima or to converge reliably.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Supply chain optimisation — Minimise transportation and production cost with LP constraints for capacities.</li>
+        <li>Diet optimisation — Choose food mixes to meet nutrition targets at minimum cost using LP formulations.</li>
+        <li>Blending problems — Compute optimal blends of components (oil, chemicals) respecting quality constraints.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Linear_programming">Wikipedia: Linear programming</a></li>

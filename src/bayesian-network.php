@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>In practice this means maintaining a probability distribution (the prior), computing how likely new observations are under possible hypotheses (the likelihood), and combining them to form an updated distribution (the posterior). Implementations often work incrementally: observe a batch or a single datum, compute the likelihood, multiply it into the prior and renormalize. Numerical care (log-probabilities) and choice of conjugate priors or sampling methods are common engineering concerns.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Diagnostic decision support — Model causal symptom-disease relations to compute posterior disease probabilities.</li>
+        <li>Risk assessment — Model dependencies between risk factors to compute joint failure probabilities.</li>
+        <li>Gene regulatory modelling — Represent probabilistic interactions between genes for biological inference.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Bayesian_network">Wikipedia: Bayesian network</a></li>

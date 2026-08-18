@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Expert System methods manipulate symbols or rules: represent knowledge explicitly, and apply inference algorithms (forward/backward chaining, constraint propagation, search). Implementations focus on rule ordering, conflict resolution, and efficient indexing of facts.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Medical diagnostic checklists — Encode clinical heuristics as rules to provide decision support for common conditions.</li>
+        <li>Configuration management — Rule engines that validate system configurations and propose fixes.</li>
+        <li>Loan eligibility rules — Deterministic rule sets for initial screening in financial services.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Expert_system">Wikipedia: Expert system</a></li>

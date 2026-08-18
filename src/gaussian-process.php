@@ -20,6 +20,18 @@ include 'template/header.php';
     <ol>
     <h2>How does it work?</h2>
     <p>Gaussian Process algorithms typically represent uncertainty explicitly and use probability calculations to combine data and model assumptions. Implementations focus on numerical stability, how to represent distributions (parametric vs sampled), and efficient updates when new data arrive.</p>
+
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Surrogate modelling — Model expensive-to-evaluate functions (e.g., engineering simulations) to guide Bayesian optimization.</li>
+        <li>Spatial interpolation (kriging) — Predict environmental measurements at unsampled locations with uncertainty estimates.</li>
+        <li>Time-series smoothing — Nonparametric regression for small-data forecasts with calibrated uncertainty bands.</li>
+    </ul>
+
+
+
 </section>
 
 <?php

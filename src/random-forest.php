@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Trees split data by feature thresholds to partition space; ensemble methods build many trees on bootstrapped samples and aggregate predictions. Focus on feature selection, depth control, and understanding variable importance when using these models.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Fraud detection — Ensemble tree models detect anomalous transactions using many randomised trees.</li>
+        <li>Feature importance analysis — Use permutation importance from forests to prioritise variables for product teams.</li>
+        <li>Retail demand forecasting — Apply ensembles on tabular sales data for robust short-term forecasts.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Random_forest">Wikipedia: Random forest</a></li>

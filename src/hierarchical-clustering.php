@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Hierarchical Clustering models learn from labeled examples: prepare features, choose a model family, train on examples, and validate on held-out data. Pay attention to data preprocessing, class imbalance, and hyperparameter tuning.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Phylogenetic trees — Build hierarchical relations between species based on genetic distance.</li>
+        <li>Customer hierarchy discovery — Reveal nested segments in user bases for tiered targeting.</li>
+        <li>Agglomerative image grouping — Cluster visual features hierarchically for multi-scale analysis.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Hierarchical_clustering">Wikipedia: Hierarchical clustering</a></li>

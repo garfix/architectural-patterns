@@ -19,6 +19,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Particle Swarm Optimization methods maintain a population of candidates and use variation (mutation/crossover) and selection to improve fitness over generations. Implementations manage representation encoding, selection pressure, and diversity to avoid premature convergence; often parallel evaluations are used to speed up fitness computation.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Hyperparameter tuning — Optimize continuous hyperparameters (e.g., learning rates) across a search space using PSO.</li>
+        <li>Antenna array calibration — Find parameter settings that maximise signal metrics via swarm-based search.</li>
+        <li>Continuous engineering design — Search continuous design variables for aerodynamic or structural objectives.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Particle_swarm_optimization">Wikipedia: Particle swarm optimization</a></li>

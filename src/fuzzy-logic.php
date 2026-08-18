@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Fuzzy Logic methods manipulate symbols or rules: represent knowledge explicitly, and apply inference algorithms (forward/backward chaining, constraint propagation, search). Implementations focus on rule ordering, conflict resolution, and efficient indexing of facts.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Washing machine controllers — Smoothly map sensor values to control signals with fuzzy rules for robust behaviour.</li>
+        <li>Consumer product scoring — Combine subjective metrics with fuzzy membership to compute overall ratings.</li>
+        <li>Control systems with imprecise inputs — Handle linguistic rules (e.g., 'slightly hot') in HVAC control.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Fuzzy_logic">Wikipedia: Fuzzy logic</a></li>

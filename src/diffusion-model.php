@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Diffusion Model architectures are specialised neural designs; they define layer types and connectivity that bias the model to particular data structures. Implementations balance depth, width, and compute considerations for practical training.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Text-to-image generation — Learn reverse diffusion to generate high-fidelity images from text embeddings.</li>
+        <li>Denoising and inpainting — Use diffusion samplers to restore missing or corrupted image regions.</li>
+        <li>Audio synthesis — Generate or transform audio waveforms using diffusion-based models for music or speech.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Diffusion_model">Wikipedia: Diffusion model</a></li>

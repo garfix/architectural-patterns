@@ -20,6 +20,18 @@ include 'template/header.php';
     <ol>
     <h2>How does it work?</h2>
     <p>Regression Analysis algorithms typically represent uncertainty explicitly and use probability calculations to combine data and model assumptions. Implementations focus on numerical stability, how to represent distributions (parametric vs sampled), and efficient updates when new data arrive.</p>
+
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>House price modelling — Predict property prices from features (size, location) using linear or regularised regression.</li>
+        <li>Dose–response curves — Model the relationship between drug dose and effect using parametric regression.</li>
+        <li>Forecasting sales — Fit regression models with seasonal covariates for short-term demand prediction.</li>
+    </ul>
+
+
+
 </section>
 
 <?php

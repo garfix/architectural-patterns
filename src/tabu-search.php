@@ -19,6 +19,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Tabu Search methods search a space of candidate solutions. They typically define neighbor moves or gradients, evaluate objective functions, and use schedules or memory to escape local optima or to converge reliably.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Vehicle routing improvements — Use tabu lists to avoid recent routes and escape cycles in routing heuristics.</li>
+        <li>Crew scheduling — Search large combinatorial schedules while forbidding recent swaps to diversify search.</li>
+        <li>Combinatorial timetabling — Improve initial solutions with tabu-guided neighborhood moves to respect constraints.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Tabu_search">Wikipedia: Tabu search</a></li>

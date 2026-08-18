@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Recurrent Neural Network architectures are specialised neural designs; they define layer types and connectivity that bias the model to particular data structures. Implementations balance depth, width, and compute considerations for practical training.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Language modelling (RNNs) — Sequence models that predict next tokens for early text generators.</li>
+        <li>Time-series forecasting — RNNs for short-term prediction of sensor or financial series.</li>
+        <li>Sequence labelling — Use RNNs for tagging tasks like named-entity recognition when data is sequential.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Recurrent_neural_network">Wikipedia: Recurrent neural network</a></li>

@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>k-Nearest Neighbors models learn from labeled examples: prepare features, choose a model family, train on examples, and validate on held-out data. Pay attention to data preprocessing, class imbalance, and hyperparameter tuning.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Recommendation by similarity — Nearest-neighbour lookup on user/item embeddings for simple recommender baselines.</li>
+        <li>Medical case retrieval — Retrieve past patient cases with similar measurements for clinical decision support.</li>
+        <li>Image retrieval — Find images with similar descriptors in a database using k-NN search.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm">Wikipedia: k-Nearest Neighbors</a></li>

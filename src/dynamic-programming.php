@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Dynamic programming solves problems by computing and reusing solutions to overlapping subproblems. Implementations are either memoized recursion or iterative table filling; identify state variables and transitions, and ensure an ordering that respects dependencies to compute bottom-up.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Sequence alignment — Compute optimal alignments in bioinformatics (Needleman–Wunsch) using DP matrices.</li>
+        <li>Knapsack and resource allocation — Exact DP solutions for constrained optimisation over item choices.</li>
+        <li>Optimal control (discrete) — Bellman backups for finite-horizon decision processes and value iteration.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Dynamic_programming">Wikipedia: Dynamic programming</a></li>

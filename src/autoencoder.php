@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Autoencoder architectures are specialised neural designs; they define layer types and connectivity that bias the model to particular data structures. Implementations balance depth, width, and compute considerations for practical training.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Dimensionality reduction — Learn compact latent codes for visualization or fast retrieval.</li>
+        <li>Anomaly detection — Train autoencoders to reconstruct normal examples; high reconstruction error flags anomalies.</li>
+        <li>Image compression — Learn lossy compression codecs by minimising reconstruction error in the latent space.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Autoencoder">Wikipedia: Autoencoder</a></li>

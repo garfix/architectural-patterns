@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Gradient Boosting models learn from labeled examples: prepare features, choose a model family, train on examples, and validate on held-out data. Pay attention to data preprocessing, class imbalance, and hyperparameter tuning.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Credit scoring — Train boosted trees (XGBoost/LightGBM) for high-accuracy risk models in finance.</li>
+        <li>Click-through rate prediction — Use gradient-boosted models on sparse features for ad-serving systems.</li>
+        <li>Customer lifetime value — Predict long-term value with boosted ensembles that handle heterogeneous features.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Gradient_boosting">Wikipedia: Gradient boosting</a></li>

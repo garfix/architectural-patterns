@@ -19,6 +19,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Genetic Programming methods maintain a population of candidates and use variation (mutation/crossover) and selection to improve fitness over generations. Implementations manage representation encoding, selection pressure, and diversity to avoid premature convergence; often parallel evaluations are used to speed up fitness computation.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Symbolic regression — Evolve mathematical expressions that explain data when model forms are unknown.</li>
+        <li>Automated trading rules — Evolve rule sets from historical market data to generate candidate trading strategies.</li>
+        <li>Control policy synthesis — Evolve small programs that implement control logic for robotics or simulations.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Genetic_programming">Wikipedia: Genetic programming</a></li>

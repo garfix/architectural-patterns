@@ -14,6 +14,18 @@ include 'template/header.php';
     <?php showImage($pattern) ?>
 <h2>How does it work?</h2>
     <p>Trees split data by feature thresholds to partition space; ensemble methods build many trees on bootstrapped samples and aggregate predictions. Focus on feature selection, depth control, and understanding variable importance when using these models.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Loan approval rules — Learn interpretable decision paths to predict creditworthiness for regulatory reviews.</li>
+        <li>Medical triage heuristics — Derive simple rule-based decisions from clinical datasets for initial screening.</li>
+        <li>Customer churn segmentation — Identify decision splits that separate high and low churn probability groups.</li>
+    </ul>
+
+
+
+
 <h2>When should you use it?</h2>
     <ul>
         <li>If your data is structured and consists of scalar values

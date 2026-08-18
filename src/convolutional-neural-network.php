@@ -18,6 +18,18 @@ include 'template/header.php';
 
     <h2>How does it work?</h2>
     <p>Convolutional networks apply learned filters locally across the input to detect patterns; pooling and hierarchical depth let them compose local features into global concepts. Training uses backpropagation with data augmentation and regularisation.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Object detection — Train CNN backbones for detectors used in autonomous driving and surveillance.</li>
+        <li>Medical image segmentation — U-Net style CNNs for delineating tissue boundaries in radiology.</li>
+        <li>Style transfer — Use convolutional features to manipulate visual style while preserving content.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Convolutional_neural_network">Wikipedia: Convolutional neural network</a></li>

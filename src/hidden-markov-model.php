@@ -14,6 +14,18 @@ include 'template/header.php';
     <?php showImage($pattern) ?>
 <h2>How does it work?</h2>
     <p>Hidden Markov Model algorithms typically represent uncertainty explicitly and use probability calculations to combine data and model assumptions. Implementations focus on numerical stability, how to represent distributions (parametric vs sampled), and efficient updates when new data arrive.</p>
+    
+    
+    <h2>Examples</h2>
+    <ul>
+        <li>Speech recognition — Model phoneme sequences and noisy acoustic observations to decode spoken words in ASR systems.</li>
+        <li>Part-of-speech tagging — Infer POS tags for words in sentences by modelling tag transitions and word emissions.</li>
+        <li>User activity modelling — Infer latent user states from clickstreams to personalise recommendations or detect churn.</li>
+    </ul>
+
+
+
+
 <h2 id="links">Links</h2>
     <ol>
         <li><a href="https://en.wikipedia.org/wiki/Hidden_Markov_model">Wikipedia: Hidden Markov model</a></li>
