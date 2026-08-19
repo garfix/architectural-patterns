@@ -3,10 +3,6 @@
 
 * routing / navigation: name a specific nav. scheme
 
-https://metapatterns.io/introduction/about-this-book/
-https://ui-patterns.com/patterns
-https://gameprogrammingpatterns.com/contents.html
-
 ## data
 
   * graph database
@@ -33,6 +29,7 @@ https://en.wikipedia.org/wiki/Design_system
 * responsive design
 
 https://uxdesign.cc/how-to-pick-colors-for-your-app-without-a-struggle-bc46c5e19574
+
 
 ## programming
 
