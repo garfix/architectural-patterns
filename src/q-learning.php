@@ -26,6 +26,17 @@ include 'template/header.php';
         <li>Game AI (classic) — Train agents to play simple arcade games using Q-value updates and epsilon-greedy exploration.</li>
         <li>Ad placement bandits — Use Q-learning variants to learn action values for contextual decision settings.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Q-table becomes intractable in large or continuous state spaces</li>
+        <li>Slow convergence, requiring many episodes of exploration</li>
+        <li>Balancing exploration vs. exploitation (epsilon tuning)</li>
+        <li>Overestimation bias in Q-value updates</li>
+        <li>Sensitive to reward shaping and hyperparameters</li>
+    </ul>
+
+
 
 
 

@@ -17,6 +17,17 @@ include 'template/header.php';
         <li>Traveling Salesman approximations — Find near-optimal tours via random neighbour moves and temperature-controlled acceptance.</li>
         <li>Job-shop scheduling — Schedule tasks on machines by accepting worse moves early and reducing acceptance over time.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Designing an effective cooling schedule</li>
+        <li>Slow convergence relative to other metaheuristics</li>
+        <li>Sensitive, problem-specific tuning of the acceptance function</li>
+        <li>No guarantee of finding the global optimum in finite time</li>
+        <li>Hard to parallelize due to its sequential nature</li>
+    </ul>
+
+
 
 
 

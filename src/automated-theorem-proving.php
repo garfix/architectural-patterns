@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Program verification — Check invariants and prove absence of certain classes of bugs in critical code.</li>
         <li>Mathematical proof search — Assist mathematicians by searching formal proof spaces for lemmas and theorems.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Combinatorial explosion of the proof search space</li>
+        <li>Many problems are undecidable or intractable in general</li>
+        <li>Translating informal problem statements into formal logic is error-prone</li>
+        <li>Proof search can be very slow without good heuristics/tactics</li>
+    </ul>
+
+
 
 
 

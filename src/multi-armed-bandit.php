@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Clinical trial allocation — Adaptively assign treatments to patients to improve outcomes while learning efficacy.</li>
         <li>News recommendation — Serve articles while learning click rates with contextual bandit algorithms.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Balancing exploration and exploitation without over/under-exploring</li>
+        <li>Non-stationary reward distributions breaking standard assumptions</li>
+        <li>Scaling poorly with a very large number of arms</li>
+        <li>Choosing the right algorithm variant (UCB, Thompson sampling, epsilon-greedy) for the context</li>
+    </ul>
+
+
 
 
 

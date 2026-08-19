@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Medical diagnostic scoring — Linear separators for multi-class problems with Gaussian assumptions.</li>
         <li>Feature reduction for classifiers — Reduce dimensionality before applying simple classifiers for speed.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Assumes classes share a common covariance structure, often unrealistic</li>
+        <li>Sensitive to outliers skewing class means/covariances</li>
+        <li>Struggles with non-linearly separable data</li>
+        <li>Performance degrades when features are highly correlated or non-Gaussian</li>
+    </ul>
+
+
 
 
 

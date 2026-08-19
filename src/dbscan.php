@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Outlier detection in logs — Identify noise points in operational logs as anomalies.</li>
         <li>Discovering dense communities — Cluster social network embeddings where clusters have arbitrary shapes.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Sensitive to the epsilon and minPoints parameter choices</li>
+        <li>Struggles with clusters of varying density</li>
+        <li>Performance degrades in high-dimensional spaces</li>
+        <li>Border points can be assigned inconsistently depending on processing order</li>
+    </ul>
+
+
 
 
 

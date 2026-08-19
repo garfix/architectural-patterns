@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Spatial label smoothing — Enforce local consistency in segmentation tasks using MRF priors.</li>
         <li>Markov networks for social ties — Model undirected relationships among entities in network analysis.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Exact inference is generally intractable, requiring approximations</li>
+        <li>Computing the normalizing constant (partition function) is expensive</li>
+        <li>Choosing appropriate potential functions for the domain</li>
+        <li>Training can be slow due to repeated inference in the loop</li>
+    </ul>
+
+
 
 
 

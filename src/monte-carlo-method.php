@@ -24,6 +24,17 @@ include 'template/header.php';
         <li>Light transport in rendering — Estimate global illumination by randomly sampling light paths for realistic image synthesis.</li>
         <li>Uncertainty propagation — Approximate integrals or expectations where analytic solutions are intractable (engineering risk assessments).</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Slow convergence requiring huge numbers of samples for precision</li>
+        <li>High variance in estimates, especially for rare events</li>
+        <li>Poor quality pseudo-random number generators introducing bias</li>
+        <li>Difficulty parallelizing certain sequential sampling schemes</li>
+        <li>Choosing an effective sampling distribution to reduce variance</li>
+    </ul>
+
+
 
 
 

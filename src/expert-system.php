@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Configuration management — Rule engines that validate system configurations and propose fixes.</li>
         <li>Loan eligibility rules — Deterministic rule sets for initial screening in financial services.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Knowledge acquisition bottleneck — capturing expert rules is slow and costly</li>
+        <li>Rule base becomes hard to maintain as it grows (rule interactions/conflicts)</li>
+        <li>Brittle outside the narrow domain it was designed for</li>
+        <li>Doesn't handle uncertainty or novel situations gracefully</li>
+    </ul>
+
+
 
 
 

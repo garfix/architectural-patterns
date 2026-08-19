@@ -22,6 +22,17 @@ include 'template/header.php';
         <li>Part-of-speech tagging — Infer POS tags for words in sentences by modelling tag transitions and word emissions.</li>
         <li>User activity modelling — Infer latent user states from clickstreams to personalise recommendations or detect churn.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Choosing the right number of hidden states without overfitting</li>
+        <li>Local optima during Baum-Welch/EM training</li>
+        <li>Slow inference (Viterbi/forward-backward) on long sequences</li>
+        <li>Poor performance when observations don't fit the emission distribution assumed</li>
+        <li>Label/state interpretability once the model is trained</li>
+    </ul>
+
+
 
 
 

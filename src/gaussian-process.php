@@ -32,6 +32,17 @@ include 'template/header.php';
 
 
 
+
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Cubic time complexity in the number of training points, limiting scalability</li>
+        <li>Choosing an appropriate kernel and its hyperparameters</li>
+        <li>Numerical instability when inverting near-singular covariance matrices</li>
+        <li>Poor performance on high-dimensional inputs</li>
+        <li>Difficulty handling non-Gaussian or heteroscedastic noise</li>
+    </ul>
+
 </section>
 
 <?php

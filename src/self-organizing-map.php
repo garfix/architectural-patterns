@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Customer behaviour maps — Visual cluster maps that help marketing teams explore segments.</li>
         <li>Anomaly visualisation — Spot unusual input patterns as isolated nodes on the map.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Choosing an appropriate map size and topology in advance</li>
+        <li>Sensitive to learning rate and neighborhood radius schedules</li>
+        <li>Slow to train on large, high-dimensional datasets</li>
+        <li>Results can be hard to interpret and validate quantitatively</li>
+    </ul>
+
+
 
 
 

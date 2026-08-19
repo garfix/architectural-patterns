@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Web click pattern mining — Find common navigation sequences to improve site layout.</li>
         <li>Retail promotion planning — Generate rule-based product bundles that co-occur in receipts.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Combinatorial explosion of candidate itemsets on large datasets</li>
+        <li>Choosing meaningful support/confidence/lift thresholds</li>
+        <li>Generates many redundant or spurious rules</li>
+        <li>Doesn't scale well to very large or high-dimensional transaction data</li>
+    </ul>
+
+
 
 
 

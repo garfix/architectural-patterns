@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Denoising and inpainting — Use diffusion samplers to restore missing or corrupted image regions.</li>
         <li>Audio synthesis — Generate or transform audio waveforms using diffusion-based models for music or speech.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Slow sampling requiring many denoising steps</li>
+        <li>High computational cost to train and to run inference</li>
+        <li>Difficult to control precise attributes of generated output</li>
+        <li>Large memory footprint for high-resolution generation</li>
+    </ul>
+
+
 
 
 

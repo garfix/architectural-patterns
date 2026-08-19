@@ -26,6 +26,17 @@ include 'template/header.php';
         <li>Gaussian mixture parameters — Fit component means and variances by maximising likelihood with EM for clustering.</li>
         <li>Survival model calibration — Estimate hazard parameters from censored time-to-event data in clinical studies.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Overfitting with small sample sizes</li>
+        <li>No closed-form solution requiring iterative numerical optimization</li>
+        <li>Sensitivity to outliers distorting the estimate</li>
+        <li>Local optima in non-convex likelihood surfaces</li>
+        <li>Misspecified likelihood model leading to biased parameter estimates</li>
+    </ul>
+
+
 
 
 

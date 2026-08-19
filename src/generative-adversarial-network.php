@@ -26,6 +26,17 @@ include 'template/header.php';
         <li>Super-resolution — Learn a mapping from low- to high-resolution images using adversarial loss.</li>
         <li>Domain adaptation — Translate styles between domains (e.g., day↔night) with CycleGAN variants.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Training instability between generator and discriminator</li>
+        <li>Mode collapse, where the generator produces limited variety</li>
+        <li>Difficult to know when training has actually converged</li>
+        <li>Sensitive to architecture and hyperparameter choices</li>
+        <li>Evaluation metrics for generated quality are imperfect</li>
+    </ul>
+
+
 
 
 

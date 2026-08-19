@@ -21,6 +21,16 @@ include 'template/header.php';
         <li>Sensor fusion — Combine multiple noisy measurements into a single estimate.</li>
         <li>A/B analysis — Update beliefs about variants using observed outcomes.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Violated Markov (memoryless) assumption when real dependencies span multiple past states</li>
+        <li>State space explosion making the transition matrix intractable</li>
+        <li>Estimating transition probabilities reliably from sparse data</li>
+        <li>Determining an appropriate order for the chain</li>
+    </ul>
+
+
 
 
 

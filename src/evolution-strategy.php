@@ -27,6 +27,16 @@ include 'template/header.php';
         <li>Neuroevolution (weights) — Evolve neural network weights for control tasks where gradient signals are noisy.</li>
         <li>Robust design — Search for parameter settings that perform well under varying simulated conditions.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Computationally expensive due to population-based evaluation</li>
+        <li>Tuning self-adaptive mutation parameters can be unstable</li>
+        <li>Poor scalability to very high-dimensional problems</li>
+        <li>Sensitive to selection pressure settings</li>
+    </ul>
+
+
 
 
 

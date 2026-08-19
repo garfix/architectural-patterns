@@ -32,6 +32,17 @@ include 'template/header.php';
 
 
 
+
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Multicollinearity among predictors inflating variance of coefficients</li>
+        <li>Overfitting with too many features relative to observations</li>
+        <li>Violated assumptions (linearity, homoscedasticity, normal residuals)</li>
+        <li>Outliers and leverage points skewing the fit</li>
+        <li>Confusing correlation captured by the model with causation</li>
+    </ul>
+
 </section>
 
 <?php

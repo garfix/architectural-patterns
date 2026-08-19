@@ -26,6 +26,17 @@ include 'template/header.php';
         <li>Face recognition (embedding classification) — Use kernel SVMs on precomputed embeddings for small-scale recognition tasks.</li>
         <li>Anomaly boundary detection — Use one-class SVM to model normal behaviour and detect outliers.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Doesn't scale well to very large datasets</li>
+        <li>Choosing the right kernel and its parameters is non-trivial</li>
+        <li>Sensitive to feature scaling</li>
+        <li>Limited interpretability with non-linear kernels</li>
+        <li>Struggles with heavily overlapping or noisy classes</li>
+    </ul>
+
+
 
 
 

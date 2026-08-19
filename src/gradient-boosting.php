@@ -26,6 +26,17 @@ include 'template/header.php';
         <li>Click-through rate prediction — Use gradient-boosted models on sparse features for ad-serving systems.</li>
         <li>Customer lifetime value — Predict long-term value with boosted ensembles that handle heterogeneous features.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Prone to overfitting if not carefully regularized (learning rate, depth, early stopping)</li>
+        <li>Slower to train sequentially compared to bagging methods</li>
+        <li>Sensitive to noisy data and outliers</li>
+        <li>Many hyperparameters to tune, making optimization costly</li>
+        <li>Can require careful handling of missing values depending on implementation</li>
+    </ul>
+
+
 
 
 

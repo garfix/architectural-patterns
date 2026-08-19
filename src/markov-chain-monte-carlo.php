@@ -26,6 +26,17 @@ include 'template/header.php';
         <li>Topic modelling (LDA) — Use collapsed Gibbs sampling to infer topic assignments for documents at scale.</li>
         <li>Phylogenetic inference — Sample tree-space posterior distributions for evolutionary models where direct computation is impossible.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Slow mixing/convergence, especially in high dimensions</li>
+        <li>Detecting when the chain has actually converged (burn-in diagnosis)</li>
+        <li>Autocorrelation between samples reducing effective sample size</li>
+        <li>Getting stuck in a single mode of a multimodal distribution</li>
+        <li>Tuning proposal distributions or step sizes for efficient exploration</li>
+    </ul>
+
+
 
 
 

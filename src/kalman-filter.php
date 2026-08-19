@@ -26,6 +26,17 @@ include 'template/header.php';
         <li>Aircraft navigation — Real-time state estimation for flight control using linear dynamics and noisy instruments.</li>
         <li>Object tracking — Smooth and predict moving object trajectories from noisy radar or camera measurements.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Assumes linear dynamics and Gaussian noise, which often don't hold</li>
+        <li>Tuning process and measurement noise covariance matrices correctly</li>
+        <li>Divergence when the model doesn't match the true system dynamics</li>
+        <li>Needing extended/unscented variants for nonlinear systems, adding complexity</li>
+        <li>Sensitivity to outliers in sensor measurements</li>
+    </ul>
+
+
 
 
 

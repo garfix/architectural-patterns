@@ -22,6 +22,16 @@ include 'template/header.php';
         <li>Medical triage heuristics — Derive simple rule-based decisions from clinical datasets for initial screening.</li>
         <li>Customer churn segmentation — Identify decision splits that separate high and low churn probability groups.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Prone to overfitting without pruning</li>
+        <li>High variance — small data changes can produce very different trees</li>
+        <li>Biased splits toward features with many distinct values</li>
+        <li>Struggles to capture linear relationships efficiently</li>
+    </ul>
+
+
 
 
 

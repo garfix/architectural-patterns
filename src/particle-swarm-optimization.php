@@ -27,6 +27,16 @@ include 'template/header.php';
         <li>Antenna array calibration — Find parameter settings that maximise signal metrics via swarm-based search.</li>
         <li>Continuous engineering design — Search continuous design variables for aerodynamic or structural objectives.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Premature convergence when particles cluster too quickly</li>
+        <li>Sensitive to inertia weight and acceleration coefficient tuning</li>
+        <li>Struggles in very high-dimensional search spaces</li>
+        <li>No strong theoretical convergence guarantees</li>
+    </ul>
+
+
 
 
 

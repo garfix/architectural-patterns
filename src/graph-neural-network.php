@@ -26,6 +26,17 @@ include 'template/header.php';
         <li>Social influence modelling — Predict node labels or link formation using neighborhood aggregation in social graphs.</li>
         <li>Traffic flow prediction — Use road network graphs and GNNs to predict future congestion patterns.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Over-smoothing, where node representations become indistinguishable in deep networks</li>
+        <li>Scalability challenges on very large graphs</li>
+        <li>Sensitive to graph structure quality and missing/noisy edges</li>
+        <li>Limited expressiveness for certain graph structures without careful design</li>
+        <li>Difficult to batch efficiently due to variable graph sizes</li>
+    </ul>
+
+
 
 
 

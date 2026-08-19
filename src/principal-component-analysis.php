@@ -26,6 +26,17 @@ include 'template/header.php';
         <li>Variance-based feature reduction — Project features to top components to denoise data for downstream models.</li>
         <li>Exploratory data analysis — Visualise high-dimensional datasets on 2–3 principal axes to spot structure.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Only captures linear relationships in the data</li>
+        <li>Components can be hard to interpret in terms of original features</li>
+        <li>Sensitive to feature scaling before applying it</li>
+        <li>Can discard information that's useful for the actual downstream task</li>
+        <li>Sensitive to outliers skewing the principal directions</li>
+    </ul>
+
+
 
 
 

@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Knapsack and resource allocation — Exact DP solutions for constrained optimisation over item choices.</li>
         <li>Optimal control (discrete) — Bellman backups for finite-horizon decision processes and value iteration.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Exponential memory use when the state space is large</li>
+        <li>Identifying correct overlapping subproblems and recurrence relations</li>
+        <li>Doesn't apply cleanly to problems lacking optimal substructure</li>
+        <li>Off-by-one and boundary condition bugs in table initialization</li>
+    </ul>
+
+
 
 
 

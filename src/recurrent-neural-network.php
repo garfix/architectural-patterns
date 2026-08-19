@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Time-series forecasting — RNNs for short-term prediction of sensor or financial series.</li>
         <li>Sequence labelling — Use RNNs for tagging tasks like named-entity recognition when data is sequential.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Vanishing/exploding gradients over long sequences</li>
+        <li>Difficult to parallelize training due to sequential dependency</li>
+        <li>Struggles to capture very long-range dependencies</li>
+        <li>Slower inference on long sequences compared to attention-based models</li>
+    </ul>
+
+
 
 
 

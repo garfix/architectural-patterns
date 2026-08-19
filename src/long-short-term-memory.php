@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Machine translation (early systems) — Sequence-to-sequence LSTM encoder-decoders for translation tasks.</li>
         <li>Anomaly detection in sequences — Model normal sequential patterns and flag deviations in operational logs.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>More parameters and compute cost than simple RNNs</li>
+        <li>Still struggles with extremely long sequences</li>
+        <li>Sequential computation limits parallelization/training speed</li>
+        <li>Many gates make hyperparameter tuning and debugging harder</li>
+    </ul>
+
+
 
 
 

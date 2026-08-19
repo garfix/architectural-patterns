@@ -27,6 +27,16 @@ include 'template/header.php';
         <li>Network routing protocols — Heuristic path selection inspired by ants for adaptive routing in communication networks.</li>
         <li>Combinatorial optimisation benchmarks — Apply ACO to TSP variants and graph-based optimisation tasks.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Slow convergence on large problem instances</li>
+        <li>Pheromone parameter tuning (evaporation rate, weighting) is finicky</li>
+        <li>Risk of stagnation around a suboptimal path</li>
+        <li>High computational overhead compared to simpler heuristics</li>
+    </ul>
+
+
 
 
 

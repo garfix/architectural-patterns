@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Part-of-speech tagging — Model label interactions to improve tagging accuracy over independent classifiers.</li>
         <li>Handwriting recognition post-processing — Refine per-character predictions using CRF smoothing.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Training is computationally expensive compared to simpler classifiers</li>
+        <li>Feature engineering is often needed to get good performance</li>
+        <li>Inference (decoding) can be slow on long sequences</li>
+        <li>Scaling to large label sets increases complexity significantly</li>
+    </ul>
+
+
 
 
 

@@ -26,6 +26,17 @@ include 'template/header.php';
         <li>Machine translation — State-of-the-art encoder-decoder transformers for high-quality translation.</li>
         <li>Protein folding embeddings — Apply transformer architectures to model amino-acid sequences and structural properties.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Quadratic compute/memory scaling with sequence length</li>
+        <li>Requires large datasets and compute to train from scratch</li>
+        <li>Positional information must be added explicitly (no inherent order sense)</li>
+        <li>Prone to hallucination and biases learned from training data</li>
+        <li>High inference cost/latency for large models</li>
+    </ul>
+
+
 
 
 

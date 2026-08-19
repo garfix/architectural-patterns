@@ -26,6 +26,17 @@ include 'template/header.php';
         <li>Medical image segmentation — U-Net style CNNs for delineating tissue boundaries in radiology.</li>
         <li>Style transfer — Use convolutional features to manipulate visual style while preserving content.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Requires large amounts of labeled image data</li>
+        <li>Computationally expensive to train, often needing GPUs</li>
+        <li>Sensitive to input resolution and preprocessing choices</li>
+        <li>Vulnerable to adversarial perturbations</li>
+        <li>Limited robustness to distribution shift (lighting, angle, domain changes)</li>
+    </ul>
+
+
 
 
 

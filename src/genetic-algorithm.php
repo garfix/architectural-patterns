@@ -27,6 +27,17 @@ include 'template/header.php';
         <li>Scheduling optimisation — Evolve candidate schedules with crossover and mutation operators for high-quality timetables.</li>
         <li>Game content generation — Evolve level layouts or parameters for playability and novelty.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Premature convergence to a suboptimal population</li>
+        <li>Designing effective fitness functions, crossover, and mutation operators</li>
+        <li>Expensive fitness evaluation making large populations costly</li>
+        <li>Difficulty tuning population size and mutation rate</li>
+        <li>No guarantee of finding the global optimum</li>
+    </ul>
+
+
 
 
 

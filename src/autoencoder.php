@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Anomaly detection — Train autoencoders to reconstruct normal examples; high reconstruction error flags anomalies.</li>
         <li>Image compression — Learn lossy compression codecs by minimising reconstruction error in the latent space.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Can learn a trivial identity mapping without proper regularization</li>
+        <li>Latent space may not be smooth or meaningfully structured</li>
+        <li>Reconstruction quality vs. compression tradeoff is hard to balance</li>
+        <li>Sensitive to choice of bottleneck size and architecture</li>
+    </ul>
+
+
 
 
 

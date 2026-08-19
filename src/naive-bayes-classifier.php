@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Document classification — Classify news articles or support tickets by word-frequency models.</li>
         <li>Baseline text categorisation — Quick baseline models in pipelines before moving to heavier architectures.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Independence assumption between features rarely holds in practice</li>
+        <li>Zero-frequency problem when a category wasn't seen in training</li>
+        <li>Poor probability calibration despite decent classification accuracy</li>
+        <li>Sensitive to how continuous features are discretized/modeled</li>
+    </ul>
+
+
 
 
 

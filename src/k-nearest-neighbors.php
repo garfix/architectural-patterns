@@ -26,6 +26,17 @@ include 'template/header.php';
         <li>Medical case retrieval — Retrieve past patient cases with similar measurements for clinical decision support.</li>
         <li>Image retrieval — Find images with similar descriptors in a database using k-NN search.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Slow inference on large datasets (must compare to many points)</li>
+        <li>Sensitive to irrelevant or unscaled features</li>
+        <li>Curse of dimensionality degrading distance meaningfulness</li>
+        <li>Choosing an appropriate k value and distance metric</li>
+        <li>High memory usage storing the full training set</li>
+    </ul>
+
+
 
 
 

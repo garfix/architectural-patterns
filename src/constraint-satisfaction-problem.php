@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Sudoku solving — Express constraints and solve with backtracking for exact solutions.</li>
         <li>Resource allocation in scheduling — Enforce complex availability and precedence constraints in rostering.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Combinatorial explosion of the search space for large problems</li>
+        <li>Choosing effective variable/value ordering heuristics</li>
+        <li>Detecting and encoding all real-world constraints correctly</li>
+        <li>Backtracking search can be slow without good constraint propagation</li>
+    </ul>
+
+
 
 
 

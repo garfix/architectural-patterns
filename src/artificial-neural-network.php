@@ -26,6 +26,17 @@ include 'template/header.php';
         <li>Speech recognition — Sequence models to transcribe spoken language into text for virtual assistants.</li>
         <li>Anomaly detection — Autoencoder-based architectures to detect manufacturing defects from sensor data.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Requires large labeled datasets to generalize well</li>
+        <li>Overfitting without proper regularization</li>
+        <li>Vanishing/exploding gradients in deeper architectures</li>
+        <li>Poor interpretability of learned weights ('black box')</li>
+        <li>Sensitive to hyperparameter choices (architecture, learning rate, initialization)</li>
+    </ul>
+
+
 
 
 

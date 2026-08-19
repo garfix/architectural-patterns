@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Risk assessment — Model dependencies between risk factors to compute joint failure probabilities.</li>
         <li>Gene regulatory modelling — Represent probabilistic interactions between genes for biological inference.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Learning the graph structure from data is NP-hard in general</li>
+        <li>Exact inference becomes intractable in large or dense networks</li>
+        <li>Requires careful elicitation of conditional probability tables</li>
+        <li>Sensitive to incorrect assumptions about conditional independence</li>
+    </ul>
+
+
 
 
 

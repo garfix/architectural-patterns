@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Customer hierarchy discovery — Reveal nested segments in user bases for tiered targeting.</li>
         <li>Agglomerative image grouping — Cluster visual features hierarchically for multi-scale analysis.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Computationally expensive (often O(n^2) or worse) on large datasets</li>
+        <li>Choosing where to cut the dendrogram is subjective</li>
+        <li>Sensitive to the choice of linkage method and distance metric</li>
+        <li>Cannot easily undo early merge/split decisions</li>
+    </ul>
+
+
 
 
 

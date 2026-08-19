@@ -26,6 +26,17 @@ include 'template/header.php';
         <li>Inventory management — Use states for stock levels and actions for reorder decisions to minimise costs under uncertainty.</li>
         <li>Automated trading backtests — Model discrete states and actions to evaluate policy performance under simulated market dynamics.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Defining a reward function that doesn't produce unintended behavior (reward hacking)</li>
+        <li>Curse of dimensionality in large state/action spaces</li>
+        <li>Uncertainty or inaccuracy in the transition model</li>
+        <li>Balancing discount factor choice against convergence and myopia</li>
+        <li>Difficulty validating the policy before deployment in a real environment</li>
+    </ul>
+
+
 
 
 

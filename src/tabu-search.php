@@ -27,6 +27,16 @@ include 'template/header.php';
         <li>Crew scheduling — Search large combinatorial schedules while forbidding recent swaps to diversify search.</li>
         <li>Combinatorial timetabling — Improve initial solutions with tabu-guided neighborhood moves to respect constraints.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Choosing an appropriate tabu list size (too short cycles, too long over-restricts)</li>
+        <li>Extra memory and bookkeeping overhead for tracking visited states</li>
+        <li>Designing aspiration criteria correctly to avoid missing good solutions</li>
+        <li>Still no formal convergence guarantee</li>
+    </ul>
+
+
 
 
 

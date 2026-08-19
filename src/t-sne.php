@@ -26,6 +26,17 @@ include 'template/header.php';
         <li>Single-cell RNA-seq analysis — Visualise cell populations and subtypes from expression profiles.</li>
         <li>Debugging representation quality — Use t-SNE plots to inspect if different classes separate in learned embeddings.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Results are highly sensitive to the perplexity parameter</li>
+        <li>Doesn't preserve global structure or distances reliably, only local</li>
+        <li>Slow and memory-intensive on large datasets</li>
+        <li>Non-deterministic — different runs can produce different layouts</li>
+        <li>Cluster sizes/distances in the plot can be misleading</li>
+    </ul>
+
+
 
 
 

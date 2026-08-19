@@ -25,6 +25,17 @@ include 'template/header.php';
         <li>Email spam filtering — Compute posterior probability that a message is spam by updating token likelihoods as new labeled messages arrive.</li>
         <li>A/B testing analysis — Incorporate prior expectations and observed conversion data to estimate treatment effects and uncertainty for product experiments.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Choosing an inappropriate or overly informative prior that skews results</li>
+        <li>Posterior distributions with no closed form, requiring approximation</li>
+        <li>Computational cost blowing up as the number of parameters grows</li>
+        <li>Difficulty explaining prior/posterior tradeoffs to non-technical stakeholders</li>
+        <li>Model misspecification silently producing confidently wrong posteriors</li>
+    </ul>
+
+
 
 
 

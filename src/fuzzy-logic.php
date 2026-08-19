@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Consumer product scoring — Combine subjective metrics with fuzzy membership to compute overall ratings.</li>
         <li>Control systems with imprecise inputs — Handle linguistic rules (e.g., 'slightly hot') in HVAC control.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Designing membership functions is subjective and hard to validate</li>
+        <li>Rule base can grow unwieldy as the number of variables increases</li>
+        <li>Difficult to formally prove correctness or stability of the system</li>
+        <li>Tuning is often ad hoc rather than principled</li>
+    </ul>
+
+
 
 
 

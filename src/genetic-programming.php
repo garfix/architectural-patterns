@@ -27,6 +27,16 @@ include 'template/header.php';
         <li>Automated trading rules — Evolve rule sets from historical market data to generate candidate trading strategies.</li>
         <li>Control policy synthesis — Evolve small programs that implement control logic for robotics or simulations.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Bloat: evolved programs growing unnecessarily large and complex</li>
+        <li>Very high computational cost from evaluating many candidate programs</li>
+        <li>Designing a function/terminal set that can actually express a solution</li>
+        <li>Poor interpretability of evolved program structures</li>
+    </ul>
+
+
 
 
 

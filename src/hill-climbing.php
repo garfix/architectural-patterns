@@ -27,6 +27,16 @@ include 'template/header.php';
         <li>Feature selection — Iteratively add/remove features and keep moves that improve validation score.</li>
         <li>Layout tuning — Iterative improvement of UI layouts or floor plans with small neighbor edits.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Getting trapped in local maxima</li>
+        <li>Plateaus where neighboring states have equal value, causing stalling</li>
+        <li>Ridges that require indirect moves the algorithm can't find</li>
+        <li>No mechanism to escape once stuck, unlike simulated annealing</li>
+    </ul>
+
+
 
 
 

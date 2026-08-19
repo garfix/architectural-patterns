@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Predictive signal in forecasting — Use TD updates to predict future signals with online bootstrapping.</li>
         <li>Combining simulation and real data — Update value estimates online as real interactions arrive in control systems.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Sensitive to learning rate and bootstrapping bias</li>
+        <li>Can be unstable when combined with function approximation</li>
+        <li>Slow convergence in sparse-reward environments</li>
+        <li>Correlated updates from sequential data can hurt training stability</li>
+    </ul>
+
+
 
 
 

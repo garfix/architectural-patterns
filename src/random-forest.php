@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Feature importance analysis — Use permutation importance from forests to prioritise variables for product teams.</li>
         <li>Retail demand forecasting — Apply ensembles on tabular sales data for robust short-term forecasts.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Large ensembles are memory- and compute-heavy at inference time</li>
+        <li>Reduced interpretability compared to a single tree</li>
+        <li>Can still overfit noisy data with too many deep trees</li>
+        <li>Biased toward features with many categories in importance rankings</li>
+    </ul>
+
+
 
 
 

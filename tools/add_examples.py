@@ -23,311 +23,392 @@ for line in lines:
         slug = m2.group(2).strip()
         patterns.append((current_cat, name, slug))
 
-def examples_for(category, name, slug=None):
-    # Prefer manual, specific examples per pattern slug; fall back to category heuristics.
-    manual_examples = {
+
+def problems_for(category, name, slug=None):
+    # Manual per-pattern problems supplied by the user (strings). Fall back to category heuristics.
+    manual_problems = {
         'bayesian-inference': [
-            ("Medical diagnosis — Probabilistic diagnosis", "Combine prior disease prevalence with patient test results to update the probability of conditions in clinical decision support systems."),
-            ("Email spam filtering", "Compute posterior probability that a message is spam by updating token likelihoods as new labeled messages arrive."),
-            ("A/B testing analysis", "Incorporate prior expectations and observed conversion data to estimate treatment effects and uncertainty for product experiments.")
+            "Choosing an inappropriate or overly informative prior that skews results",
+            "Posterior distributions with no closed form, requiring approximation",
+            "Computational cost blowing up as the number of parameters grows",
+            "Difficulty explaining prior/posterior tradeoffs to non-technical stakeholders",
+            "Model misspecification silently producing confidently wrong posteriors"
+        ],
+        'markov-chain': [
+            "Violated Markov (memoryless) assumption when real dependencies span multiple past states",
+            "State space explosion making the transition matrix intractable",
+            "Estimating transition probabilities reliably from sparse data",
+            "Determining an appropriate order for the chain"
         ],
         'hidden-markov-model': [
-            ("Speech recognition", "Model phoneme sequences and noisy acoustic observations to decode spoken words in ASR systems."),
-            ("Part-of-speech tagging", "Infer POS tags for words in sentences by modelling tag transitions and word emissions."),
-            ("User activity modelling", "Infer latent user states from clickstreams to personalise recommendations or detect churn.")
+            "Choosing the right number of hidden states without overfitting",
+            "Local optima during Baum-Welch/EM training",
+            "Slow inference (Viterbi/forward-backward) on long sequences",
+            "Poor performance when observations don't fit the emission distribution assumed",
+            "Label/state interpretability once the model is trained"
         ],
         'markov-decision-process': [
-            ("Robotics navigation", "Model robot movement and rewards to compute optimal policies for reaching goals while avoiding obstacles."),
-            ("Inventory management", "Use states for stock levels and actions for reorder decisions to minimise costs under uncertainty."),
-            ("Automated trading backtests", "Model discrete states and actions to evaluate policy performance under simulated market dynamics.")
+            "Defining a reward function that doesn't produce unintended behavior (reward hacking)",
+            "Curse of dimensionality in large state/action spaces",
+            "Uncertainty or inaccuracy in the transition model",
+            "Balancing discount factor choice against convergence and myopia",
+            "Difficulty validating the policy before deployment in a real environment"
         ],
         'monte-carlo-method': [
-            ("Option pricing", "Simulate many price paths to estimate the expected payoff of financial derivatives like European options."),
-            ("Light transport in rendering", "Estimate global illumination by randomly sampling light paths for realistic image synthesis."),
-            ("Uncertainty propagation", "Approximate integrals or expectations where analytic solutions are intractable (engineering risk assessments).")
+            "Slow convergence requiring huge numbers of samples for precision",
+            "High variance in estimates, especially for rare events",
+            "Poor quality pseudo-random number generators introducing bias",
+            "Difficulty parallelizing certain sequential sampling schemes",
+            "Choosing an effective sampling distribution to reduce variance"
         ],
         'markov-chain-monte-carlo': [
-            ("Bayesian posterior sampling", "Use MCMC (e.g., Metropolis-Hastings, Gibbs) to draw samples from complex posterior distributions in hierarchical models."),
-            ("Topic modelling (LDA)", "Use collapsed Gibbs sampling to infer topic assignments for documents at scale."),
-            ("Phylogenetic inference", "Sample tree-space posterior distributions for evolutionary models where direct computation is impossible.")
+            "Slow mixing/convergence, especially in high dimensions",
+            "Detecting when the chain has actually converged (burn-in diagnosis)",
+            "Autocorrelation between samples reducing effective sample size",
+            "Getting stuck in a single mode of a multimodal distribution",
+            "Tuning proposal distributions or step sizes for efficient exploration"
         ],
         'gaussian-process': [
-            ("Surrogate modelling", "Model expensive-to-evaluate functions (e.g., engineering simulations) to guide Bayesian optimization."),
-            ("Spatial interpolation (kriging)", "Predict environmental measurements at unsampled locations with uncertainty estimates."),
-            ("Time-series smoothing", "Nonparametric regression for small-data forecasts with calibrated uncertainty bands.")
+            "Cubic time complexity in the number of training points, limiting scalability",
+            "Choosing an appropriate kernel and its hyperparameters",
+            "Numerical instability when inverting near-singular covariance matrices",
+            "Poor performance on high-dimensional inputs",
+            "Difficulty handling non-Gaussian or heteroscedastic noise"
         ],
         'kalman-filter': [
-            ("GPS/INS sensor fusion", "Estimate vehicle position and velocity by combining inertial predictions and intermittent GPS fixes."),
-            ("Aircraft navigation", "Real-time state estimation for flight control using linear dynamics and noisy instruments."),
-            ("Object tracking", "Smooth and predict moving object trajectories from noisy radar or camera measurements.")
+            "Assumes linear dynamics and Gaussian noise, which often don't hold",
+            "Tuning process and measurement noise covariance matrices correctly",
+            "Divergence when the model doesn't match the true system dynamics",
+            "Needing extended/unscented variants for nonlinear systems, adding complexity",
+            "Sensitivity to outliers in sensor measurements"
         ],
         'maximum-likelihood-estimation': [
-            ("Logistic regression fitting", "Estimate model coefficients by maximising data likelihood for binary outcomes in risk models."),
-            ("Gaussian mixture parameters", "Fit component means and variances by maximising likelihood with EM for clustering."),
-            ("Survival model calibration", "Estimate hazard parameters from censored time-to-event data in clinical studies.")
+            "Overfitting with small sample sizes",
+            "No closed-form solution requiring iterative numerical optimization",
+            "Sensitivity to outliers distorting the estimate",
+            "Local optima in non-convex likelihood surfaces",
+            "Misspecified likelihood model leading to biased parameter estimates"
         ],
         'regression-analysis': [
-            ("House price modelling", "Predict property prices from features (size, location) using linear or regularised regression."),
-            ("Dose–response curves", "Model the relationship between drug dose and effect using parametric regression."),
-            ("Forecasting sales", "Fit regression models with seasonal covariates for short-term demand prediction.")
+            "Multicollinearity among predictors inflating variance of coefficients",
+            "Overfitting with too many features relative to observations",
+            "Violated assumptions (linearity, homoscedasticity, normal residuals)",
+            "Outliers and leverage points skewing the fit",
+            "Confusing correlation captured by the model with causation"
         ],
         'gradient-descent': [
-            ("Neural network training", "Minimise training loss with stochastic gradient descent variants (Adam, RMSProp) on large datasets."),
-            ("Logistic regression optimisation", "Fit classifiers by minimising cross-entropy via batch or mini-batch gradient steps."),
-            ("Image deblurring", "Solve differentiable inverse problems by optimising reconstruction loss with gradient-based solvers.")
+            "Choosing a learning rate that's too high (divergence) or too low (slow convergence)",
+            "Getting stuck in local minima or saddle points",
+            "Vanishing or exploding gradients in deep networks",
+            "Sensitivity to feature scaling and initialization",
+            "Noisy or oscillating loss curves with mini-batch variants"
         ],
         'simulated-annealing': [
-            ("VLSI placement", "Optimise chip component layouts with a cooling schedule to escape local minima."),
-            ("Traveling Salesman approximations", "Find near-optimal tours via random neighbour moves and temperature-controlled acceptance."),
-            ("Job-shop scheduling", "Schedule tasks on machines by accepting worse moves early and reducing acceptance over time.")
+            "Designing an effective cooling schedule",
+            "Slow convergence relative to other metaheuristics",
+            "Sensitive, problem-specific tuning of the acceptance function",
+            "No guarantee of finding the global optimum in finite time",
+            "Hard to parallelize due to its sequential nature"
         ],
         'a-star-search': [
-            ("Game AI pathfinding", "Find shortest paths for NPCs on grid maps using admissible heuristics like Manhattan distance."),
-            ("Robot motion planning", "Compute collision-free routes in discretized maps with heuristics to focus search."),
-            ("Route planning in maps", "Combine road network costs and heuristic estimates for efficient navigation on graphs.")
+            "Memory blow-up storing the open/closed sets on large graphs",
+            "Poor performance if the heuristic isn't admissible or well-designed",
+            "Ties and near-equal costs causing unnecessary node expansion",
+            "Difficulty adapting to dynamic graphs where edge weights change",
+            "Heuristic computation itself becoming a bottleneck"
         ],
         'hill-climbing': [
-            ("Local optimisation for hyperparameters", "Greedy local search for small discrete hyperparameter spaces where gradients aren't available."),
-            ("Feature selection", "Iteratively add/remove features and keep moves that improve validation score."),
-            ("Layout tuning", "Iterative improvement of UI layouts or floor plans with small neighbor edits.")
+            "Getting trapped in local maxima",
+            "Plateaus where neighboring states have equal value, causing stalling",
+            "Ridges that require indirect moves the algorithm can't find",
+            "No mechanism to escape once stuck, unlike simulated annealing"
         ],
         'tabu-search': [
-            ("Vehicle routing improvements", "Use tabu lists to avoid recent routes and escape cycles in routing heuristics."),
-            ("Crew scheduling", "Search large combinatorial schedules while forbidding recent swaps to diversify search."),
-            ("Combinatorial timetabling", "Improve initial solutions with tabu-guided neighborhood moves to respect constraints.")
+            "Choosing an appropriate tabu list size (too short cycles, too long over-restricts)",
+            "Extra memory and bookkeeping overhead for tracking visited states",
+            "Designing aspiration criteria correctly to avoid missing good solutions",
+            "Still no formal convergence guarantee"
         ],
         'dynamic-programming': [
-            ("Sequence alignment", "Compute optimal alignments in bioinformatics (Needleman–Wunsch) using DP matrices."),
-            ("Knapsack and resource allocation", "Exact DP solutions for constrained optimisation over item choices."),
-            ("Optimal control (discrete)", "Bellman backups for finite-horizon decision processes and value iteration.")
+            "Exponential memory use when the state space is large",
+            "Identifying correct overlapping subproblems and recurrence relations",
+            "Doesn't apply cleanly to problems lacking optimal substructure",
+            "Off-by-one and boundary condition bugs in table initialization"
         ],
         'linear-programming': [
-            ("Supply chain optimisation", "Minimise transportation and production cost with LP constraints for capacities."),
-            ("Diet optimisation", "Choose food mixes to meet nutrition targets at minimum cost using LP formulations."),
-            ("Blending problems", "Compute optimal blends of components (oil, chemicals) respecting quality constraints.")
+            "Real-world constraints often aren't actually linear, requiring approximation",
+            "Scalability issues with very large numbers of variables/constraints",
+            "Degenerate solutions causing cycling in the simplex method",
+            "Numerical precision issues with ill-conditioned constraint matrices",
+            "Integer requirements turning it into much harder integer programming"
         ],
         'genetic-algorithm': [
-            ("Antenna design", "Evolve shape parameters to maximise signal characteristics where analytic gradients are unavailable."),
-            ("Scheduling optimisation", "Evolve candidate schedules with crossover and mutation operators for high-quality timetables."),
-            ("Game content generation", "Evolve level layouts or parameters for playability and novelty.")
+            "Premature convergence to a suboptimal population",
+            "Designing effective fitness functions, crossover, and mutation operators",
+            "Expensive fitness evaluation making large populations costly",
+            "Difficulty tuning population size and mutation rate",
+            "No guarantee of finding the global optimum"
         ],
         'genetic-programming': [
-            ("Symbolic regression", "Evolve mathematical expressions that explain data when model forms are unknown."),
-            ("Automated trading rules", "Evolve rule sets from historical market data to generate candidate trading strategies."),
-            ("Control policy synthesis", "Evolve small programs that implement control logic for robotics or simulations.")
+            "Bloat: evolved programs growing unnecessarily large and complex",
+            "Very high computational cost from evaluating many candidate programs",
+            "Designing a function/terminal set that can actually express a solution",
+            "Poor interpretability of evolved program structures"
         ],
         'particle-swarm-optimization': [
-            ("Hyperparameter tuning", "Optimize continuous hyperparameters (e.g., learning rates) across a search space using PSO."),
-            ("Antenna array calibration", "Find parameter settings that maximise signal metrics via swarm-based search."),
-            ("Continuous engineering design", "Search continuous design variables for aerodynamic or structural objectives.")
+            "Premature convergence when particles cluster too quickly",
+            "Sensitive to inertia weight and acceleration coefficient tuning",
+            "Struggles in very high-dimensional search spaces",
+            "No strong theoretical convergence guarantees"
         ],
         'ant-colony-optimization': [
-            ("Vehicle routing", "Use pheromone trails to bias constructive heuristics for practical routing problems."),
-            ("Network routing protocols", "Heuristic path selection inspired by ants for adaptive routing in communication networks."),
-            ("Combinatorial optimisation benchmarks", "Apply ACO to TSP variants and graph-based optimisation tasks.")
+            "Slow convergence on large problem instances",
+            "Pheromone parameter tuning (evaporation rate, weighting) is finicky",
+            "Risk of stagnation around a suboptimal path",
+            "High computational overhead compared to simpler heuristics"
         ],
         'evolution-strategy': [
-            ("Continuous parameter optimisation", "Tune high-dimensional continuous controller weights via mutation and selection."),
-            ("Neuroevolution (weights)", "Evolve neural network weights for control tasks where gradient signals are noisy."),
-            ("Robust design", "Search for parameter settings that perform well under varying simulated conditions.")
+            "Computationally expensive due to population-based evaluation",
+            "Tuning self-adaptive mutation parameters can be unstable",
+            "Poor scalability to very high-dimensional problems",
+            "Sensitive to selection pressure settings"
         ],
         'artificial-neural-network': [
-            ("Image classification", "Train convolutional networks to detect objects in medical imaging or autonomous vehicles."),
-            ("Speech recognition", "Sequence models to transcribe spoken language into text for virtual assistants."),
-            ("Anomaly detection", "Autoencoder-based architectures to detect manufacturing defects from sensor data.")
+            "Requires large labeled datasets to generalize well",
+            "Overfitting without proper regularization",
+            "Vanishing/exploding gradients in deeper architectures",
+            "Poor interpretability of learned weights ('black box')",
+            "Sensitive to hyperparameter choices (architecture, learning rate, initialization)"
         ],
         'decision-tree-learning': [
-            ("Loan approval rules", "Learn interpretable decision paths to predict creditworthiness for regulatory reviews."),
-            ("Medical triage heuristics", "Derive simple rule-based decisions from clinical datasets for initial screening."),
-            ("Customer churn segmentation", "Identify decision splits that separate high and low churn probability groups.")
+            "Prone to overfitting without pruning",
+            "High variance — small data changes can produce very different trees",
+            "Biased splits toward features with many distinct values",
+            "Struggles to capture linear relationships efficiently"
         ],
         'random-forest': [
-            ("Fraud detection", "Ensemble tree models detect anomalous transactions using many randomised trees."),
-            ("Feature importance analysis", "Use permutation importance from forests to prioritise variables for product teams."),
-            ("Retail demand forecasting", "Apply ensembles on tabular sales data for robust short-term forecasts.")
+            "Large ensembles are memory- and compute-heavy at inference time",
+            "Reduced interpretability compared to a single tree",
+            "Can still overfit noisy data with too many deep trees",
+            "Biased toward features with many categories in importance rankings"
         ],
         'gradient-boosting': [
-            ("Credit scoring", "Train boosted trees (XGBoost/LightGBM) for high-accuracy risk models in finance."),
-            ("Click-through rate prediction", "Use gradient-boosted models on sparse features for ad-serving systems."),
-            ("Customer lifetime value", "Predict long-term value with boosted ensembles that handle heterogeneous features.")
+            "Prone to overfitting if not carefully regularized (learning rate, depth, early stopping)",
+            "Slower to train sequentially compared to bagging methods",
+            "Sensitive to noisy data and outliers",
+            "Many hyperparameters to tune, making optimization costly",
+            "Can require careful handling of missing values depending on implementation"
         ],
         'support-vector-machine': [
-            ("Text classification", "Linear SVMs on TF-IDF features for spam or sentiment classification."),
-            ("Face recognition (embedding classification)", "Use kernel SVMs on precomputed embeddings for small-scale recognition tasks."),
-            ("Anomaly boundary detection", "Use one-class SVM to model normal behaviour and detect outliers.")
+            "Doesn't scale well to very large datasets",
+            "Choosing the right kernel and its parameters is non-trivial",
+            "Sensitive to feature scaling",
+            "Limited interpretability with non-linear kernels",
+            "Struggles with heavily overlapping or noisy classes"
         ],
         'k-nearest-neighbors': [
-            ("Recommendation by similarity", "Nearest-neighbour lookup on user/item embeddings for simple recommender baselines."),
-            ("Medical case retrieval", "Retrieve past patient cases with similar measurements for clinical decision support."),
-            ("Image retrieval", "Find images with similar descriptors in a database using k-NN search.")
+            "Slow inference on large datasets (must compare to many points)",
+            "Sensitive to irrelevant or unscaled features",
+            "Curse of dimensionality degrading distance meaningfulness",
+            "Choosing an appropriate k value and distance metric",
+            "High memory usage storing the full training set"
         ],
         'naive-bayes-classifier': [
-            ("Email spam filtering", "Fast multinomial Naive Bayes on token counts for production spam classifiers."),
-            ("Document classification", "Classify news articles or support tickets by word-frequency models."),
-            ("Baseline text categorisation", "Quick baseline models in pipelines before moving to heavier architectures.")
+            "Independence assumption between features rarely holds in practice",
+            "Zero-frequency problem when a category wasn't seen in training",
+            "Poor probability calibration despite decent classification accuracy",
+            "Sensitive to how continuous features are discretized/modeled"
         ],
         'linear-discriminant-analysis': [
-            ("Face recognition projection", "Project high-dimensional features to lower dimensions for classification tasks."),
-            ("Medical diagnostic scoring", "Linear separators for multi-class problems with Gaussian assumptions."),
-            ("Feature reduction for classifiers", "Reduce dimensionality before applying simple classifiers for speed.")
+            "Assumes classes share a common covariance structure, often unrealistic",
+            "Sensitive to outliers skewing class means/covariances",
+            "Struggles with non-linearly separable data",
+            "Performance degrades when features are highly correlated or non-Gaussian"
         ],
         'convolutional-neural-network': [
-            ("Object detection", "Train CNN backbones for detectors used in autonomous driving and surveillance."),
-            ("Medical image segmentation", "U-Net style CNNs for delineating tissue boundaries in radiology."),
-            ("Style transfer", "Use convolutional features to manipulate visual style while preserving content.")
+            "Requires large amounts of labeled image data",
+            "Computationally expensive to train, often needing GPUs",
+            "Sensitive to input resolution and preprocessing choices",
+            "Vulnerable to adversarial perturbations",
+            "Limited robustness to distribution shift (lighting, angle, domain changes)"
         ],
         'recurrent-neural-network': [
-            ("Language modelling (RNNs)", "Sequence models that predict next tokens for early text generators."),
-            ("Time-series forecasting", "RNNs for short-term prediction of sensor or financial series."),
-            ("Sequence labelling", "Use RNNs for tagging tasks like named-entity recognition when data is sequential.")
+            "Vanishing/exploding gradients over long sequences",
+            "Difficult to parallelize training due to sequential dependency",
+            "Struggles to capture very long-range dependencies",
+            "Slower inference on long sequences compared to attention-based models"
         ],
         'long-short-term-memory': [
-            ("Speech synthesis", "LSTM-based sequence models for early TTS pipelines."),
-            ("Machine translation (early systems)", "Sequence-to-sequence LSTM encoder-decoders for translation tasks."),
-            ("Anomaly detection in sequences", "Model normal sequential patterns and flag deviations in operational logs.")
+            "More parameters and compute cost than simple RNNs",
+            "Still struggles with extremely long sequences",
+            "Sequential computation limits parallelization/training speed",
+            "Many gates make hyperparameter tuning and debugging harder"
         ],
         'transformer': [
-            ("Large language models", "Pretrain transformer decoders/encoder-decoder stacks for text generation and understanding."),
-            ("Machine translation", "State-of-the-art encoder-decoder transformers for high-quality translation."),
-            ("Protein folding embeddings", "Apply transformer architectures to model amino-acid sequences and structural properties.")
+            "Quadratic compute/memory scaling with sequence length",
+            "Requires large datasets and compute to train from scratch",
+            "Positional information must be added explicitly (no inherent order sense)",
+            "Prone to hallucination and biases learned from training data",
+            "High inference cost/latency for large models"
         ],
         'generative-adversarial-network': [
-            ("Image synthesis", "Generate photorealistic images (faces, textures) for data augmentation or creative tools."),
-            ("Super-resolution", "Learn a mapping from low- to high-resolution images using adversarial loss."),
-            ("Domain adaptation", "Translate styles between domains (e.g., day↔night) with CycleGAN variants.")
+            "Training instability between generator and discriminator",
+            "Mode collapse, where the generator produces limited variety",
+            "Difficult to know when training has actually converged",
+            "Sensitive to architecture and hyperparameter choices",
+            "Evaluation metrics for generated quality are imperfect"
         ],
         'diffusion-model': [
-            ("Text-to-image generation", "Learn reverse diffusion to generate high-fidelity images from text embeddings."),
-            ("Denoising and inpainting", "Use diffusion samplers to restore missing or corrupted image regions."),
-            ("Audio synthesis", "Generate or transform audio waveforms using diffusion-based models for music or speech.")
+            "Slow sampling requiring many denoising steps",
+            "High computational cost to train and to run inference",
+            "Difficult to control precise attributes of generated output",
+            "Large memory footprint for high-resolution generation"
         ],
         'autoencoder': [
-            ("Dimensionality reduction", "Learn compact latent codes for visualization or fast retrieval."),
-            ("Anomaly detection", "Train autoencoders to reconstruct normal examples; high reconstruction error flags anomalies."),
-            ("Image compression", "Learn lossy compression codecs by minimising reconstruction error in the latent space.")
+            "Can learn a trivial identity mapping without proper regularization",
+            "Latent space may not be smooth or meaningfully structured",
+            "Reconstruction quality vs. compression tradeoff is hard to balance",
+            "Sensitive to choice of bottleneck size and architecture"
         ],
         'k-means-clustering': [
-            ("Customer segmentation", "Cluster customers by behaviour for targeted marketing campaigns."),
-            ("Color quantization", "Reduce image palettes by clustering pixel colours for compression."),
-            ("Document clustering", "Group similar documents for search indexing and exploratory analysis.")
+            "Must choose the number of clusters k in advance",
+            "Sensitive to initial centroid placement, leading to different results",
+            "Assumes spherical, similarly-sized clusters, which is often unrealistic",
+            "Sensitive to outliers and unscaled features",
+            "Struggles with non-convex cluster shapes"
         ],
         'hierarchical-clustering': [
-            ("Phylogenetic trees", "Build hierarchical relations between species based on genetic distance."),
-            ("Customer hierarchy discovery", "Reveal nested segments in user bases for tiered targeting."),
-            ("Agglomerative image grouping", "Cluster visual features hierarchically for multi-scale analysis.")
+            "Computationally expensive (often O(n^2) or worse) on large datasets",
+            "Choosing where to cut the dendrogram is subjective",
+            "Sensitive to the choice of linkage method and distance metric",
+            "Cannot easily undo early merge/split decisions"
         ],
         'dbscan': [
-            ("Geospatial hotspot detection", "Find dense clusters of events (e.g., crime, ride requests) without predefining cluster count."),
-            ("Outlier detection in logs", "Identify noise points in operational logs as anomalies."),
-            ("Discovering dense communities", "Cluster social network embeddings where clusters have arbitrary shapes.")
+            "Sensitive to the epsilon and minPoints parameter choices",
+            "Struggles with clusters of varying density",
+            "Performance degrades in high-dimensional spaces",
+            "Border points can be assigned inconsistently depending on processing order"
         ],
         'principal-component-analysis': [
-            ("Face recognition preprocessing", "Reduce dimensionality of image descriptors before nearest-neighbour matching."),
-            ("Variance-based feature reduction", "Project features to top components to denoise data for downstream models."),
-            ("Exploratory data analysis", "Visualise high-dimensional datasets on 2–3 principal axes to spot structure.")
+            "Only captures linear relationships in the data",
+            "Components can be hard to interpret in terms of original features",
+            "Sensitive to feature scaling before applying it",
+            "Can discard information that's useful for the actual downstream task",
+            "Sensitive to outliers skewing the principal directions"
         ],
         't-sne': [
-            ("Visualising embeddings", "Project high-dimensional model embeddings to 2D for cluster inspection in ML experiments."),
-            ("Single-cell RNA-seq analysis", "Visualise cell populations and subtypes from expression profiles."),
-            ("Debugging representation quality", "Use t-SNE plots to inspect if different classes separate in learned embeddings.")
+            "Results are highly sensitive to the perplexity parameter",
+            "Doesn't preserve global structure or distances reliably, only local",
+            "Slow and memory-intensive on large datasets",
+            "Non-deterministic — different runs can produce different layouts",
+            "Cluster sizes/distances in the plot can be misleading"
         ],
         'self-organizing-map': [
-            ("Topology-preserving embedding", "Map high-dimensional sensory data onto 2D grids for visual analytics."),
-            ("Customer behaviour maps", "Visual cluster maps that help marketing teams explore segments."),
-            ("Anomaly visualisation", "Spot unusual input patterns as isolated nodes on the map.")
+            "Choosing an appropriate map size and topology in advance",
+            "Sensitive to learning rate and neighborhood radius schedules",
+            "Slow to train on large, high-dimensional datasets",
+            "Results can be hard to interpret and validate quantitatively"
         ],
         'association-rule-learning': [
-            ("Market basket analysis", "Discover itemsets and association rules (e.g., diapers→baby wipes) for cross-selling."),
-            ("Web click pattern mining", "Find common navigation sequences to improve site layout."),
-            ("Retail promotion planning", "Generate rule-based product bundles that co-occur in receipts.")
+            "Combinatorial explosion of candidate itemsets on large datasets",
+            "Choosing meaningful support/confidence/lift thresholds",
+            "Generates many redundant or spurious rules",
+            "Doesn't scale well to very large or high-dimensional transaction data"
         ],
         'q-learning': [
-            ("Grid-world navigation", "Tabular Q-learning to teach agents to reach goals in discrete environments."),
-            ("Game AI (classic)", "Train agents to play simple arcade games using Q-value updates and epsilon-greedy exploration."),
-            ("Ad placement bandits", "Use Q-learning variants to learn action values for contextual decision settings.")
+            "Q-table becomes intractable in large or continuous state spaces",
+            "Slow convergence, requiring many episodes of exploration",
+            "Balancing exploration vs. exploitation (epsilon tuning)",
+            "Overestimation bias in Q-value updates",
+            "Sensitive to reward shaping and hyperparameters"
         ],
         'temporal-difference-learning': [
-            ("TD(0) for policy evaluation", "Estimate state-value functions from bootstrapped returns in episodic tasks."),
-            ("Predictive signal in forecasting", "Use TD updates to predict future signals with online bootstrapping."),
-            ("Combining simulation and real data", "Update value estimates online as real interactions arrive in control systems.")
+            "Sensitive to learning rate and bootstrapping bias",
+            "Can be unstable when combined with function approximation",
+            "Slow convergence in sparse-reward environments",
+            "Correlated updates from sequential data can hurt training stability"
         ],
         'policy-gradient-method': [
-            ("Continuous control (robotics)", "Optimise stochastic policies directly for torque/actuator control using REINFORCE or PPO."),
-            ("Dialogue policy learning", "Train end-to-end dialogue managers that select responses to maximise user satisfaction."),
-            ("Portfolio optimisation", "Learn stochastic allocation policies to trade off risk and return in simulation.")
+            "High variance in gradient estimates, slowing convergence",
+            "Sample inefficiency requiring many environment interactions",
+            "Sensitive to learning rate — small changes can destabilize training",
+            "Difficulty designing reward signals that avoid unintended policies",
+            "Can converge to poor local optima"
         ],
         'multi-armed-bandit': [
-            ("Ad selection", "Balance exploration and exploitation to pick which ad variant to show to maximise clicks."),
-            ("Clinical trial allocation", "Adaptively assign treatments to patients to improve outcomes while learning efficacy."),
-            ("News recommendation", "Serve articles while learning click rates with contextual bandit algorithms.")
+            "Balancing exploration and exploitation without over/under-exploring",
+            "Non-stationary reward distributions breaking standard assumptions",
+            "Scaling poorly with a very large number of arms",
+            "Choosing the right algorithm variant (UCB, Thompson sampling, epsilon-greedy) for the context"
         ],
         'expert-system': [
-            ("Medical diagnostic checklists", "Encode clinical heuristics as rules to provide decision support for common conditions."),
-            ("Configuration management", "Rule engines that validate system configurations and propose fixes."),
-            ("Loan eligibility rules", "Deterministic rule sets for initial screening in financial services.")
+            "Knowledge acquisition bottleneck — capturing expert rules is slow and costly",
+            "Rule base becomes hard to maintain as it grows (rule interactions/conflicts)",
+            "Brittle outside the narrow domain it was designed for",
+            "Doesn't handle uncertainty or novel situations gracefully"
         ],
         'constraint-satisfaction-problem': [
-            ("Exam timetabling", "Assign exams to slots and rooms satisfying room capacity and conflict constraints."),
-            ("Sudoku solving", "Express constraints and solve with backtracking for exact solutions."),
-            ("Resource allocation in scheduling", "Enforce complex availability and precedence constraints in rostering.")
+            "Combinatorial explosion of the search space for large problems",
+            "Choosing effective variable/value ordering heuristics",
+            "Detecting and encoding all real-world constraints correctly",
+            "Backtracking search can be slow without good constraint propagation"
         ],
         'fuzzy-logic': [
-            ("Washing machine controllers", "Smoothly map sensor values to control signals with fuzzy rules for robust behaviour."),
-            ("Consumer product scoring", "Combine subjective metrics with fuzzy membership to compute overall ratings."),
-            ("Control systems with imprecise inputs", "Handle linguistic rules (e.g., 'slightly hot') in HVAC control.")
+            "Designing membership functions is subjective and hard to validate",
+            "Rule base can grow unwieldy as the number of variables increases",
+            "Difficult to formally prove correctness or stability of the system",
+            "Tuning is often ad hoc rather than principled"
         ],
         'automated-theorem-proving': [
-            ("Formal verification of hardware", "Prove correctness properties of circuits with automated provers."),
-            ("Program verification", "Check invariants and prove absence of certain classes of bugs in critical code."),
-            ("Mathematical proof search", "Assist mathematicians by searching formal proof spaces for lemmas and theorems.")
+            "Combinatorial explosion of the proof search space",
+            "Many problems are undecidable or intractable in general",
+            "Translating informal problem statements into formal logic is error-prone",
+            "Proof search can be very slow without good heuristics/tactics"
         ],
         'case-based-reasoning': [
-            ("Legal precedent retrieval", "Find past cases with similar facts to support legal arguments."),
-            ("Help-desk ticket reuse", "Suggest solutions based on previously solved tickets with similar symptoms."),
-            ("Design reuse", "Adapt past engineering designs to new requirements by analogical reasoning.")
+            "Case base can grow large and slow down retrieval over time",
+            "Defining a good similarity/distance metric between cases is hard",
+            "Adapting a retrieved case to a new situation isn't always straightforward",
+            "Quality depends heavily on the coverage and quality of stored cases"
         ],
         'semantic-network': [
-            ("Knowledge graphs for QA", "Represent entities and relations to answer factual queries in enterprise search."),
-            ("Ontology-driven recommendations", "Use typed relationships to infer related products or concepts."),
-            ("Entity linking", "Map text mentions to graph nodes to support downstream NLP tasks.")
+            "Manually building and maintaining the network is labor-intensive",
+            "Ambiguity in relationship semantics between nodes",
+            "Scaling to very large knowledge bases without inconsistency",
+            "No built-in mechanism for reasoning under uncertainty"
         ],
         'bayesian-network': [
-            ("Diagnostic decision support", "Model causal symptom-disease relations to compute posterior disease probabilities."),
-            ("Risk assessment", "Model dependencies between risk factors to compute joint failure probabilities."),
-            ("Gene regulatory modelling", "Represent probabilistic interactions between genes for biological inference.")
+            "Learning the graph structure from data is NP-hard in general",
+            "Exact inference becomes intractable in large or dense networks",
+            "Requires careful elicitation of conditional probability tables",
+            "Sensitive to incorrect assumptions about conditional independence"
         ],
         'markov-random-field': [
-            ("Image denoising", "Model pixel neighbourhoods with MRFs for pairwise-smoothness priors in restoration."),
-            ("Spatial label smoothing", "Enforce local consistency in segmentation tasks using MRF priors."),
-            ("Markov networks for social ties", "Model undirected relationships among entities in network analysis.")
+            "Exact inference is generally intractable, requiring approximations",
+            "Computing the normalizing constant (partition function) is expensive",
+            "Choosing appropriate potential functions for the domain",
+            "Training can be slow due to repeated inference in the loop"
         ],
         'conditional-random-field': [
-            ("Sequence labelling (NER)", "Tag tokens in sentences with labels by modelling conditional dependencies across labels."),
-            ("Part-of-speech tagging", "Model label interactions to improve tagging accuracy over independent classifiers."),
-            ("Handwriting recognition post-processing", "Refine per-character predictions using CRF smoothing.")
+            "Training is computationally expensive compared to simpler classifiers",
+            "Feature engineering is often needed to get good performance",
+            "Inference (decoding) can be slow on long sequences",
+            "Scaling to large label sets increases complexity significantly"
         ],
         'graph-neural-network': [
-            ("Molecule property prediction", "Predict chemical properties by operating on molecular graphs for drug discovery."),
-            ("Social influence modelling", "Predict node labels or link formation using neighborhood aggregation in social graphs."),
-            ("Traffic flow prediction", "Use road network graphs and GNNs to predict future congestion patterns.")
+            "Over-smoothing, where node representations become indistinguishable in deep networks",
+            "Scalability challenges on very large graphs",
+            "Sensitive to graph structure quality and missing/noisy edges",
+            "Limited expressiveness for certain graph structures without careful design",
+            "Difficult to batch efficiently due to variable graph sizes"
         ]
     }
 
-    # return manual mapping when available
-    if slug and slug in manual_examples:
-        return manual_examples[slug]
+    if slug and slug in manual_problems:
+        return manual_problems[slug]
 
-    # Fall back to lightweight category-based examples (short, specific)
-    cat = (category or '').lower()
-    n = name.lower()
-    if 'probabilistic' in cat or 'statistical' in cat:
-        return [("Practical inference", "Estimate parameters or states from noisy data in applied systems."), ("Sensor fusion", "Combine multiple noisy measurements into a single estimate."), ("A/B analysis", "Update beliefs about variants using observed outcomes.")]
-    if 'optimization' in cat or 'search' in cat:
-        return [("Engineering optimisation", "Tune design parameters to meet constraints and objectives."), ("Route or scheduling", "Apply heuristic search to practical routing or scheduling problems."), ("Parameter tuning", "Search continuous or discrete parameters for better performance.")]
-    if 'supervised' in cat or 'deep' in cat:
-        return [("Prediction", "Train models to map inputs to labels in real-world datasets."), ("Transfer learning", "Fine-tune pre-trained models for domain-specific tasks."), ("Model evaluation", "Validate performance on held-out data before deployment.")]
-    # generic fallback
-    return [("Real-world case", "A concrete application showing how the pattern solves a domain problem."), ("Tooling example", "A common library or system where the pattern is used."), ("Design example", "How the pattern maps to components in production.")]
+    # fallback
+    return []
 
 # Now modify files
 updated = []
@@ -340,25 +421,25 @@ for cat, name, slug in patterns:
         continue
     s = php.read_text(encoding='utf-8')
     # build new examples HTML
-    exs = examples_for(cat, name, slug)
+    exs = problems_for(cat, name, slug)
     html = ""
     if len(exs) > 0:
-        html = '\n    <h2>Examples</h2>\n    <ul>\n'
-        for title, desc in exs:
-            html += f'        <li>{title} — {desc}</li>\n'
+        html = '\n    <h2>Problems</h2>\n    <ul>\n'
+        for title in exs:
+            html += f'        <li>{title}</li>\n'
         html += '    </ul>\n\n'
 
-    # If Examples section exists, replace it; otherwise insert after How section or </dl>
-    m_examples = re.search(r'(<h2>\s*Examples\s*</h2>\s*<ul>[\s\S]*?</ul>)', s, flags=re.I)
-    if m_examples:
-        new_s = s[:m_examples.start()] + html + s[m_examples.end():]
+    # If Problems section exists, replace it; otherwise insert after How section or </dl>
+    m_problems = re.search(r'(<h2>\s*Problems\s*</h2>\s*<ul>[\s\S]*?</ul>)', s, flags=re.I)
+    if m_problems:
+        new_s = s[:m_problems.start()] + html + s[m_problems.end():]
         php.write_text(new_s, encoding='utf-8')
         updated.append(str(php.relative_to(repo)))
         continue
     # find How does it work? section end: find closing </p> after that header
     m = re.search(r'(</h2>\s*\n\s*<p>[\s\S]*?</p>\s*)(?=<h2|</section>)', s, flags=re.I)
     # This regex might match other h2 sections; better to locate the specific header
-    mh = re.search(r'<h2>\s*How does it work\?\s*</h2>', s, flags=re.I)
+    mh = re.search(r'<h2>Examples</h2>', s, flags=re.I)
     if not mh:
         # try inserting after </dl>
         m2 = re.search(r'</dl>', s, flags=re.I)

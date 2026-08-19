@@ -26,6 +26,17 @@ include 'template/header.php';
         <li>Dialogue policy learning — Train end-to-end dialogue managers that select responses to maximise user satisfaction.</li>
         <li>Portfolio optimisation — Learn stochastic allocation policies to trade off risk and return in simulation.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>High variance in gradient estimates, slowing convergence</li>
+        <li>Sample inefficiency requiring many environment interactions</li>
+        <li>Sensitive to learning rate — small changes can destabilize training</li>
+        <li>Difficulty designing reward signals that avoid unintended policies</li>
+        <li>Can converge to poor local optima</li>
+    </ul>
+
+
 
 
 

@@ -26,6 +26,17 @@ include 'template/header.php';
         <li>Robot motion planning — Compute collision-free routes in discretized maps with heuristics to focus search.</li>
         <li>Route planning in maps — Combine road network costs and heuristic estimates for efficient navigation on graphs.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Memory blow-up storing the open/closed sets on large graphs</li>
+        <li>Poor performance if the heuristic isn't admissible or well-designed</li>
+        <li>Ties and near-equal costs causing unnecessary node expansion</li>
+        <li>Difficulty adapting to dynamic graphs where edge weights change</li>
+        <li>Heuristic computation itself becoming a bottleneck</li>
+    </ul>
+
+
 
 
 

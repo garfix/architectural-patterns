@@ -22,6 +22,17 @@ include 'template/header.php';
         <li>Diet optimisation — Choose food mixes to meet nutrition targets at minimum cost using LP formulations.</li>
         <li>Blending problems — Compute optimal blends of components (oil, chemicals) respecting quality constraints.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Real-world constraints often aren't actually linear, requiring approximation</li>
+        <li>Scalability issues with very large numbers of variables/constraints</li>
+        <li>Degenerate solutions causing cycling in the simplex method</li>
+        <li>Numerical precision issues with ill-conditioned constraint matrices</li>
+        <li>Integer requirements turning it into much harder integer programming</li>
+    </ul>
+
+
 
 
 

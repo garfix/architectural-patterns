@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Help-desk ticket reuse — Suggest solutions based on previously solved tickets with similar symptoms.</li>
         <li>Design reuse — Adapt past engineering designs to new requirements by analogical reasoning.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Case base can grow large and slow down retrieval over time</li>
+        <li>Defining a good similarity/distance metric between cases is hard</li>
+        <li>Adapting a retrieved case to a new situation isn't always straightforward</li>
+        <li>Quality depends heavily on the coverage and quality of stored cases</li>
+    </ul>
+
+
 
 
 

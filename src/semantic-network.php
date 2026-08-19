@@ -26,6 +26,16 @@ include 'template/header.php';
         <li>Ontology-driven recommendations — Use typed relationships to infer related products or concepts.</li>
         <li>Entity linking — Map text mentions to graph nodes to support downstream NLP tasks.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Manually building and maintaining the network is labor-intensive</li>
+        <li>Ambiguity in relationship semantics between nodes</li>
+        <li>Scaling to very large knowledge bases without inconsistency</li>
+        <li>No built-in mechanism for reasoning under uncertainty</li>
+    </ul>
+
+
 
 
 

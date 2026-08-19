@@ -26,6 +26,17 @@ include 'template/header.php';
         <li>Color quantization — Reduce image palettes by clustering pixel colours for compression.</li>
         <li>Document clustering — Group similar documents for search indexing and exploratory analysis.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Must choose the number of clusters k in advance</li>
+        <li>Sensitive to initial centroid placement, leading to different results</li>
+        <li>Assumes spherical, similarly-sized clusters, which is often unrealistic</li>
+        <li>Sensitive to outliers and unscaled features</li>
+        <li>Struggles with non-convex cluster shapes</li>
+    </ul>
+
+
 
 
 

@@ -17,6 +17,17 @@ include 'template/header.php';
         <li>Logistic regression optimisation — Fit classifiers by minimising cross-entropy via batch or mini-batch gradient steps.</li>
         <li>Image deblurring — Solve differentiable inverse problems by optimising reconstruction loss with gradient-based solvers.</li>
     </ul>
+    
+    <h2>Problems</h2>
+    <ul>
+        <li>Choosing a learning rate that's too high (divergence) or too low (slow convergence)</li>
+        <li>Getting stuck in local minima or saddle points</li>
+        <li>Vanishing or exploding gradients in deep networks</li>
+        <li>Sensitivity to feature scaling and initialization</li>
+        <li>Noisy or oscillating loss curves with mini-batch variants</li>
+    </ul>
+
+
 
 
 
