@@ -13,6 +13,9 @@ include 'template/header.php';
         <h2>Change history</h2>
     </header>
     <p>
+        <b>2026-08-19</b> Used Claude Sonnet to list the most important ML/AI problem solving techniques (about 60). Then used Google Gemini (and some OpenAI ChatGPT) to create diagrams for these techniques, and Micosoft Copilot to update the code with the new information.
+    </p>
+    <p>
         <b>2025-05-12</b> Added a <a href="pattern-tree">Pattern hierarchy</a>, moved some categories.
     </p>
     <p>
@@ -98,7 +101,7 @@ include 'template/header.php';
 
 <section>
     <header class="major">
-        <h2>Definitions</h2>
+        <h2>Links</h2>
     </header>
     <p>
         Here are some concepts that occur in multiple patterns.

@@ -1,30 +1,4 @@
 
-## problem solving
-
-Aparte sectie Neural Networks
-
-ieder probleem een item, of iedere techniek een item? een techniek. zoek naar de klasse die daadwerkelijk gebruikt wordt
-
-* Markov Decision Process
-* genetic algorithms
-
-techniek
-
--
-- Support Vector Machine
-
-
-
-linear regression model - for regression
-
-
-support vector machines
-- linear/nonlinear classification, regression, novelty detection
-- small to medium sized nonlinear datasets (100s - 1000s instances) for classification
-
-decision trees
-- classification, regression
-
 ## cross cutting
 
 * routing / navigation: name a specific nav. scheme
