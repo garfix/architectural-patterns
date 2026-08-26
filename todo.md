@@ -10,9 +10,15 @@
   * sparse distributed
   * NoSQL
 
+  Object pool
+
 data interaction
 
   * sql, graphql
+
+## problem solving
+
+minimax
 
 ## More
 
