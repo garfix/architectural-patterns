@@ -13,7 +13,10 @@ include 'template/header.php';
         <h2>Change history</h2>
     </header>
     <p>
-        <b>2026-08-19</b> Used Claude Sonnet to list the most important ML/AI problem solving techniques (about 60). Then used Google Gemini (and some OpenAI ChatGPT) to create diagrams for these techniques, and Micosoft Copilot to update the code with the new information.
+        <b>2026-08-29</b> Okay, I'm experimenting with LLM's. I used Minimax M2.7 to create pages for  <a href="minimax">Minimax</a> and <a href="monte-carlo-tree-search">Monte Carlo Tree Search</a>. Images again by Gemini Flash.
+    </p>
+    <p>
+        <b>2026-08-19</b> Used Claude Sonnet to list the most important ML/AI problem solving techniques (about 60). Then used Google Gemini Flash (and some OpenAI ChatGPT) to create diagrams for these techniques, and Micosoft Copilot to update the code with the new information.
     </p>
     <p>
         <b>2025-05-12</b> Added a <a href="pattern-tree">Pattern hierarchy</a>, moved some categories.

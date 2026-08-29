@@ -130,6 +130,7 @@ $categories = [
         "description" => "Techniques for finding optimal or near-optimal solutions in large search spaces.",
         "patterns" => [
             "Minimax",
+            "Monte Carlo Tree Search",
             "Gradient Descent",
             "Simulated Annealing",
             "A* Search Algorithm",
@@ -1296,8 +1297,14 @@ $patterns = [
 
     [
         "name" => "Minimax",
+            "Monte Carlo Tree Search",
         "image" => "minimax.png",
         "link" => "minimax",
+    ],
+    [
+        "name" => "Monte Carlo Tree Search",
+        "image" => "monte-carlo-tree-search.png",
+        "link" => "monte-carlo-tree-search",
     ],
 
 ];
