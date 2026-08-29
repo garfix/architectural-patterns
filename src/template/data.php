@@ -129,6 +129,7 @@ $categories = [
     ["code" => CAT_SEARCH_OPTIMIZATION, "name" => 'Search & Optimization',
         "description" => "Techniques for finding optimal or near-optimal solutions in large search spaces.",
         "patterns" => [
+            "Minimax",
             "Gradient Descent",
             "Simulated Annealing",
             "A* Search Algorithm",
@@ -1293,6 +1294,11 @@ $patterns = [
         "link" => "graph-neural-network",
     ],
 
+    [
+        "name" => "Minimax",
+        "image" => "minimax.png",
+        "link" => "minimax",
+    ],
 
 ];
 
