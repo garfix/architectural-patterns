@@ -1,3 +1,8 @@
+## visualization
+
+https://github.com/impress/impress.js
+
+turn all html into data
 
 ## cross cutting
 
