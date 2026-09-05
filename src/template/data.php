@@ -76,9 +76,6 @@ $categories = [
     ["code" => CAT_LANGUAGE_FEATURES, "name" => 'Language Features',
         "description" => "Discriminative programming language features. Most features like variables, loops and if/then statements are available in (almost) all languages. But others are specific to just one or two languages. If such feature is essential to your application, you may need to choose a language that supports it. And some features you may actually want to avoid.",
         "patterns" => ["Type system features", "Syntax features", "Data & Memory features", "Function features", "Object Oriented Programming features", "Functional programming features", "Reactive programming features", "Error handling features", "Concurrency features", "Miscellaneous features"]],
-    // ["code" => CAT_ARCHITECTURAL_PARADIGMS, "name" => 'Architectural Paradigms',
-    //     "description" => "Perspectives on how a system should be structured, based on what's perceived most important: ease-of-development, testability, or understandability",
-    //     "patterns" => ["Traditional Model-View-Controller", "Model-View-Adapter", "Model-View-Viewmodel", "Hierarchical MVC", "Entity-Control-Boundary", "Hexagonal Architecture", "Data-Context-Interaction"]],
     ["code" => CAT_MODULES, "name" => 'Modules',
         "description" => "Patterns within and between modules. Closely related to modules are components and packages. The term 'module' used here reflects these as well.",
         "children" => [CAT_MODULE_PRINCIPLES],
@@ -1297,7 +1294,6 @@ $patterns = [
 
     [
         "name" => "Minimax",
-            "Monte Carlo Tree Search",
         "image" => "minimax.png",
         "link" => "minimax",
     ],
