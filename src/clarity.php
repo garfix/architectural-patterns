@@ -31,7 +31,7 @@ include 'template/header.php';
     <h2>Links</h2>
     <ul>
         <li><a href="https://maze.co/collections/ux-ui-design/ui-design-principles/">The 6 key principles of UI design
-<a>
+</a>
     </ul>
 </section>
 

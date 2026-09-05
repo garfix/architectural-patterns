@@ -34,7 +34,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://martinfowler.com/eaaCatalog/optimisticOfflineLock.html">Martin Fowler on Optimistic offline lock<a>
+        <li><a href="https://martinfowler.com/eaaCatalog/optimisticOfflineLock.html">Martin Fowler on Optimistic offline lock</a>
     </ul>
 </section>
 

@@ -32,7 +32,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller#Controller">Wikipedia on controller (in the context of MVC)<a>
+        <li><a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller#Controller">Wikipedia on controller (in the context of MVC)</a>
     </ul>
 </section>
 

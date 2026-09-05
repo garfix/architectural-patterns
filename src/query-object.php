@@ -34,7 +34,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://martinfowler.com/eaaCatalog/queryObject.html">Martin Fowler on Query Object<a>
+        <li><a href="https://martinfowler.com/eaaCatalog/queryObject.html">Martin Fowler on Query Object</a>
     </ul>
 </section>
 

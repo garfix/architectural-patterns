@@ -50,7 +50,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Generative_artificial_intelligence">Wikipedia: Genrative Artificial Intelligence<a>
+        <li><a href="https://en.wikipedia.org/wiki/Generative_artificial_intelligence">Wikipedia: Genrative Artificial Intelligence</a>
         <li><a href="https://martinfowler.com/articles/gen-ai-patterns/">Emerging Patterns in Building GenAI Products</a>
     </ul>
 </section>

@@ -39,7 +39,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Video_game_programming#Game_structure">Wikipedia: Game structure<a>
+        <li><a href="https://en.wikipedia.org/wiki/Video_game_programming#Game_structure">Wikipedia: Game structure</a>
     </ul>
 </section>
 

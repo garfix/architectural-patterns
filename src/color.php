@@ -38,7 +38,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://uxdesign.cc/how-to-pick-colors-for-your-app-without-a-struggle-bc46c5e19574">How to pick colors for your app without a struggle<a>
+        <li><a href="https://uxdesign.cc/how-to-pick-colors-for-your-app-without-a-struggle-bc46c5e19574">How to pick colors for your app without a struggle</a>
         <li><a href="https://medium.com/rutgers-creative-x/understanding-color-for-ui-design-ec53719e880e">Understanding Color for UI Design</a>
     </ul>
 </section>

@@ -44,7 +44,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Entity-control-boundary">Wikipedia on Entity-Control-Boundary<a>
+        <li><a href="https://en.wikipedia.org/wiki/Entity-control-boundary">Wikipedia on Entity-Control-Boundary</a>
     </ul>
 </section>
 

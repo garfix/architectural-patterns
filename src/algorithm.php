@@ -43,7 +43,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Algorithm">Wikipedia on algorithm<a>
+        <li><a href="https://en.wikipedia.org/wiki/Algorithm">Wikipedia on algorithm</a>
     </ul>
 </section>
 

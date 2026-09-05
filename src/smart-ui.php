@@ -38,7 +38,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://stefanoborini.com/book-modelviewcontroller/01-basics-of-mvc/01-smart-ui.html">Stefano Borini on Smart-UI<a>
+        <li><a href="https://stefanoborini.com/book-modelviewcontroller/01-basics-of-mvc/01-smart-ui.html">Stefano Borini on Smart-UI</a>
     </ul>
 </section>
 

@@ -29,7 +29,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://stefanoborini.com/book-modelviewcontroller/01-basics-of-mvc/02-document-view.html">Stefano Borini on Document-View<a>
+        <li><a href="https://stefanoborini.com/book-modelviewcontroller/01-basics-of-mvc/02-document-view.html">Stefano Borini on Document-View</a>
     </ul>
 </section>
 

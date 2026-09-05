@@ -32,7 +32,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://martinfowler.com/bliki/UbiquitousLanguage.html">Martin Fowler on ubiquitous language<a>
+        <li><a href="https://martinfowler.com/bliki/UbiquitousLanguage.html">Martin Fowler on ubiquitous language</a>
     </ul>
 </section>
 

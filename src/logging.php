@@ -29,7 +29,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Logging_(computing)">Wikipedia<a>
+        <li><a href="https://en.wikipedia.org/wiki/Logging_(computing)">Wikipedia</a>
     </ul>
 </section>
 

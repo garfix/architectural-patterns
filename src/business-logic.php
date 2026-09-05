@@ -60,7 +60,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Business_logic">Wikipedia on business logic<a>
+        <li><a href="https://en.wikipedia.org/wiki/Business_logic">Wikipedia on business logic</a>
     </ul>
 </section>
 

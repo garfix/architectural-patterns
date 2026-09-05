@@ -31,7 +31,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Template_processor">Wikipedia on template processor<a>
+        <li><a href="https://en.wikipedia.org/wiki/Template_processor">Wikipedia on template processor</a>
     </ul>
 </section>
 

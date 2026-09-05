@@ -48,7 +48,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-    <li><a href="https://fulloo.info/">The pattern's website<a>
+    <li><a href="https://fulloo.info/">The pattern's website</a>
     <li><a href="https://en.wikipedia.org/wiki/Data,_context_and_interaction">Wikipedia on Data-Context-Interaction</a>
     <li><a href="https://www.youtube.com/watch?v=AExqBBc_zME&t=910s">Tryvge Reenskaug explaining the pattern</a>
     </ul>

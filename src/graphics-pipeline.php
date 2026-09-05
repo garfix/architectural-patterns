@@ -59,10 +59,10 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://benkenobi007.github.io/Graphics-Pipeline-Overview/">Graphics Pipeline overview<a>
-        <li><a href="https://en.wikipedia.org/wiki/Graphics_pipeline">Wikipedia on Graphics Pipeline<a>
-        <li><a href="https://en.wikipedia.org/wiki/Framebuffer">Wikipedia on Framebuffer<a>
-        <li><a href="https://en.wikipedia.org/wiki/Memory-mapped_I/O_and_port-mapped_I/O">Wikipedia on Memory-mapped I/O and port-mapped I/O<a>
+        <li><a href="https://benkenobi007.github.io/Graphics-Pipeline-Overview/">Graphics Pipeline overview</a>
+        <li><a href="https://en.wikipedia.org/wiki/Graphics_pipeline">Wikipedia on Graphics Pipeline</a>
+        <li><a href="https://en.wikipedia.org/wiki/Framebuffer">Wikipedia on Framebuffer</a>
+        <li><a href="https://en.wikipedia.org/wiki/Memory-mapped_I/O_and_port-mapped_I/O">Wikipedia on Memory-mapped I/O and port-mapped I/O</a>
 
     </ul>
 </section>

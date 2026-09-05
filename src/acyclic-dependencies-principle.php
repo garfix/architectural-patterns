@@ -63,7 +63,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Cache_(computing)">Wikipedia<a>
+        <li><a href="https://en.wikipedia.org/wiki/Cache_(computing)">Wikipedia</a>
         <li><a href="https://web.archive.org/web/20151130032005/http://www.objectmentor.com/resources/articles/granularity.pdf">Robert C Martin's Granularity (The Acyclic Dependencies Principle)</a>
         <li><a href="https://softwareengineering.stackexchange.com/a/12030">A StackExchange answer by Aaronaught</a>
     </ul>

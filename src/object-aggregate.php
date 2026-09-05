@@ -31,7 +31,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://martinfowler.com/bliki/DDD_Aggregate.html">Martin Fowler on DDD aggregate<a>
+        <li><a href="https://martinfowler.com/bliki/DDD_Aggregate.html">Martin Fowler on DDD aggregate</a>
     </ul>
 </section>
 

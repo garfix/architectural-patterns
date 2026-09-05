@@ -25,7 +25,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://martinfowler.com/articles/feature-toggles.html">Pete Hodgson on Feature Toggles<a>
+        <li><a href="https://martinfowler.com/articles/feature-toggles.html">Pete Hodgson on Feature Toggles</a>
     </ul>
 </section>
 

@@ -31,7 +31,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://wiki.c2.com/?StableDependenciesPrinciple">C2 on Stable Dependencies Principe<a>
+        <li><a href="https://wiki.c2.com/?StableDependenciesPrinciple">C2 on Stable Dependencies Principe</a>
     </ul>
 </section>
 

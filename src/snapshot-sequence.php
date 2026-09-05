@@ -41,7 +41,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://react.dev/learn/state-as-a-snapshot">React: state as snapshot<a>
+        <li><a href="https://react.dev/learn/state-as-a-snapshot">React: state as snapshot</a>
     </ul>
 </section>
 

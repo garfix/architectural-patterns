@@ -19,7 +19,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://wiki.c2.com/?CommonReusePrinciple">C2 on Common Reuse Principle<a>
+        <li><a href="https://wiki.c2.com/?CommonReusePrinciple">C2 on Common Reuse Principle</a>
     </ul>
 </section>
 

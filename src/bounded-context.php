@@ -38,7 +38,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://martinfowler.com/bliki/BoundedContext.html">Martin Fowler on Bounded Context<a>
+        <li><a href="https://martinfowler.com/bliki/BoundedContext.html">Martin Fowler on Bounded Context</a>
     </ul>
 </section>
 

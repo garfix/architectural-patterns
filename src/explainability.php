@@ -40,8 +40,8 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Algorithmic_transparency">Wikipedia on algorithmic explainability<a>
-        <li><a href="https://en.wikipedia.org/wiki/Explainable_artificial_intelligence">Wikipedia on explainable AI<a>
+        <li><a href="https://en.wikipedia.org/wiki/Algorithmic_transparency">Wikipedia on algorithmic explainability</a>
+        <li><a href="https://en.wikipedia.org/wiki/Explainable_artificial_intelligence">Wikipedia on explainable AI</a>
 
     </ul>
 </section>

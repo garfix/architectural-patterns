@@ -32,8 +32,8 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Data_transfer_object">Wikipedia on Data transfer object<a>
-        <li><a href="https://martinfowler.com/eaaCatalog/dataTransferObject.html">Martin Fowler on Data transfer object<a>
+        <li><a href="https://en.wikipedia.org/wiki/Data_transfer_object">Wikipedia on Data transfer object</a>
+        <li><a href="https://martinfowler.com/eaaCatalog/dataTransferObject.html">Martin Fowler on Data transfer object</a>
     </ul>
 </section>
 

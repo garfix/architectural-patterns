@@ -49,7 +49,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Decision_tree_learning">Wikipedia on decision tree learning<a>
+        <li><a href="https://en.wikipedia.org/wiki/Decision_tree_learning">Wikipedia on decision tree learning</a>
         <li><a href="https://medium.com/@navarai/decision-trees-vs-neural-networks-ff46f47ce0a0">Decision trees vs Neural networks</a>
     </ul>
 </section>

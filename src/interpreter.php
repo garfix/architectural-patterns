@@ -52,7 +52,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="http://en.wikipedia.org/wiki/Interpreter_%28computing%29">Wikipedia: Interpreter<a>
+        <li><a href="http://en.wikipedia.org/wiki/Interpreter_%28computing%29">Wikipedia: Interpreter</a>
     </ul>
 </section>
 

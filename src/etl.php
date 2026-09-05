@@ -24,7 +24,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Extract,_transform,_load">Wikipedia on ETL<a>
+        <li><a href="https://en.wikipedia.org/wiki/Extract,_transform,_load">Wikipedia on ETL</a>
     </ul>
 </section>
 

@@ -37,7 +37,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Software_versioning">Wikipedia on software versioning<a>
+        <li><a href="https://en.wikipedia.org/wiki/Software_versioning">Wikipedia on software versioning</a>
     </ul>
 </section>
 

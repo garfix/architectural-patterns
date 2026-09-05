@@ -19,7 +19,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://wiki.c2.com/?ReuseReleaseEquivalencePrinciple">C2 on Reuse/Release Equivalence Principle<a>
+        <li><a href="https://wiki.c2.com/?ReuseReleaseEquivalencePrinciple">C2 on Reuse/Release Equivalence Principle</a>
     </ul>
 </section>
 

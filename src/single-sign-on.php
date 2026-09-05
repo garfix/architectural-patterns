@@ -26,7 +26,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Single_sign-on">Wikipedia<a>
+        <li><a href="https://en.wikipedia.org/wiki/Single_sign-on">Wikipedia</a>
     </ul>
 </section>
 

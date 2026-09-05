@@ -37,7 +37,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://www.browserstack.com/guide/performance-testing">Browserstack on performance testing<a>
+        <li><a href="https://www.browserstack.com/guide/performance-testing">Browserstack on performance testing</a>
     </ul>
     </section>
 

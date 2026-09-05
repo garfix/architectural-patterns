@@ -30,7 +30,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Application_performance_management">Wikipedia on application performance management<a>
+        <li><a href="https://en.wikipedia.org/wiki/Application_performance_management">Wikipedia on application performance management</a>
     </ul>
     </section>
 

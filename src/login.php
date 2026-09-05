@@ -31,7 +31,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Authentication">Wikipedia on authentication<a>
+        <li><a href="https://en.wikipedia.org/wiki/Authentication">Wikipedia on authentication</a>
     </ul>
 </section>
 

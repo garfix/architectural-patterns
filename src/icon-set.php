@@ -25,7 +25,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Icon_(computing)">Wikipedia on icons<a>
+        <li><a href="https://en.wikipedia.org/wiki/Icon_(computing)">Wikipedia on icons</a>
 
     </ul>
 </section>

@@ -35,7 +35,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Entity_component_system">Wikipedia on Entity-Component-System<a>
+        <li><a href="https://en.wikipedia.org/wiki/Entity_component_system">Wikipedia on Entity-Component-System</a>
     </ul>
 </section>
 

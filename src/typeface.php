@@ -53,8 +53,8 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://imperavi.com/books/ui-typography/basis/typeface-vs-font/">UI Typography<a>
-        <li><a href="https://www.wix.com/blog/how-to-choose-best-fonts-website">20 best fonts for your website<a>
+        <li><a href="https://imperavi.com/books/ui-typography/basis/typeface-vs-font/">UI Typography</a>
+        <li><a href="https://www.wix.com/blog/how-to-choose-best-fonts-website">20 best fonts for your website</a>
 
     </ul>
 </section>

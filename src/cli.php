@@ -28,7 +28,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Command-line_interface#Application_command-line_interfaces">Wikipedia on application command line interfaces<a>
+        <li><a href="https://en.wikipedia.org/wiki/Command-line_interface#Application_command-line_interfaces">Wikipedia on application command line interfaces</a>
     </ul>
 </section>
 

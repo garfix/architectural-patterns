@@ -34,7 +34,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Heuristic_(computer_science)">Wikipedia on heuristic<a>
+        <li><a href="https://en.wikipedia.org/wiki/Heuristic_(computer_science)">Wikipedia on heuristic</a>
     </ul>
 </section>
 

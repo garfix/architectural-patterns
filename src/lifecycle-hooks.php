@@ -29,9 +29,9 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://vuejs.org/guide/essentials/lifecycle.html">Vue<a>
-        <li><a href="https://legacy.reactjs.org/docs/hooks-overview.html">React<a>
-        <li><a href="https://angular.io/guide/lifecycle-hooks">Angular<a>
+        <li><a href="https://vuejs.org/guide/essentials/lifecycle.html">Vue</a>
+        <li><a href="https://legacy.reactjs.org/docs/hooks-overview.html">React</a>
+        <li><a href="https://angular.io/guide/lifecycle-hooks">Angular</a>
     </ul>
 </section>
 

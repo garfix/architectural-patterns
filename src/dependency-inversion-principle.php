@@ -37,7 +37,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Dependency_inversion_principle">Wikipedia on Dependency inversion principle<a>
+        <li><a href="https://en.wikipedia.org/wiki/Dependency_inversion_principle">Wikipedia on Dependency inversion principle</a>
     </ul>
 </section>
 

@@ -19,8 +19,8 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://signalvnoise.com/posts/1926-a-shorthand-for-designing-ui-flows?30#comments">A shorthand for designing UI flows<a>
-        <li><a href="https://blackshellmedia.com/2017/02/16/better-understand-game-ui-flow-diagrams/">Better Understand Your Game Through UI Flow Diagrams<a>
+        <li><a href="https://signalvnoise.com/posts/1926-a-shorthand-for-designing-ui-flows?30#comments">A shorthand for designing UI flows</a>
+        <li><a href="https://blackshellmedia.com/2017/02/16/better-understand-game-ui-flow-diagrams/">Better Understand Your Game Through UI Flow Diagrams</a>
 
     </ul>
 </section>

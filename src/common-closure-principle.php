@@ -19,7 +19,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://wiki.c2.com/?CommonClosurePrinciple">C2 on Common Closure Principle<a>
+        <li><a href="https://wiki.c2.com/?CommonClosurePrinciple">C2 on Common Closure Principle</a>
     </ul>
 </section>
 

@@ -49,8 +49,8 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Data_synchronization">Wikipedia<a>
-        <li><a href="https://en.wikipedia.org/wiki/Eventual_consistency">Eventual consistency<a>
+        <li><a href="https://en.wikipedia.org/wiki/Data_synchronization">Wikipedia</a>
+        <li><a href="https://en.wikipedia.org/wiki/Eventual_consistency">Eventual consistency</a>
     </ul>
 </section>
 

@@ -34,7 +34,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Load_balancing_(computing)">Wikipedia: load balancing<a>
+        <li><a href="https://en.wikipedia.org/wiki/Load_balancing_(computing)">Wikipedia: load balancing</a>
     </ul>
 </section>
 

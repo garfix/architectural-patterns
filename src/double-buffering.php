@@ -27,8 +27,8 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Multiple_buffering#Double_buffering_in_computer_graphics">Wikipedia on double buffering<a>
-        <li><a href="https://en.wikipedia.org/wiki/Screen_tearing#Vertical_synchronization">Wikipedia on vertical synchronization<a>
+        <li><a href="https://en.wikipedia.org/wiki/Multiple_buffering#Double_buffering_in_computer_graphics">Wikipedia on double buffering</a>
+        <li><a href="https://en.wikipedia.org/wiki/Screen_tearing#Vertical_synchronization">Wikipedia on vertical synchronization</a>
 
     </ul>
 </section>

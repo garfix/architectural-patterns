@@ -34,7 +34,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Coding_conventions">Wikipedia on coding conventions<a>
+        <li><a href="https://en.wikipedia.org/wiki/Coding_conventions">Wikipedia on coding conventions</a>
     </ul>
 </section>
 

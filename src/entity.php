@@ -26,7 +26,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Entity">Wikipedia on Entity<a>
+        <li><a href="https://en.wikipedia.org/wiki/Entity">Wikipedia on Entity</a>
     </ul>
 </section>
 

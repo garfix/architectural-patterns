@@ -31,7 +31,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Data_warehouse">Wikipedia on data warehouse<a>
+        <li><a href="https://en.wikipedia.org/wiki/Data_warehouse">Wikipedia on data warehouse</a>
     </ul>
 </section>
 

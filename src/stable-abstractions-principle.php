@@ -19,7 +19,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://wiki.c2.com/?StableAbstractionsPrinciple">C2 on Stable Abstractions Principle<a>
+        <li><a href="https://wiki.c2.com/?StableAbstractionsPrinciple">C2 on Stable Abstractions Principle</a>
     </ul>
 </section>
 

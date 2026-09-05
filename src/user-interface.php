@@ -26,7 +26,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/User_interface">Wikipedia on user interface<a>
+        <li><a href="https://en.wikipedia.org/wiki/User_interface">Wikipedia on user interface</a>
     </ul>
 </section>
 

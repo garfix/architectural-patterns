@@ -37,7 +37,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Data_cube">Wikipedia on data cube<a>
+        <li><a href="https://en.wikipedia.org/wiki/Data_cube">Wikipedia on data cube</a>
     </ul>
 </section>
 

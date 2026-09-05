@@ -29,7 +29,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Software_deployment">Wikipedia on deployment<a>
+        <li><a href="https://en.wikipedia.org/wiki/Software_deployment">Wikipedia on deployment</a>
         <li><a href="https://en.wikipedia.org/wiki/CI/CD">Wikipedia on CI/CD</a>
     </ul>
     </section>

@@ -32,7 +32,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Graphical_user_interface">Wikipedia on graphical user interface<a>
+        <li><a href="https://en.wikipedia.org/wiki/Graphical_user_interface">Wikipedia on graphical user interface</a>
     </ul>
 </section>
 

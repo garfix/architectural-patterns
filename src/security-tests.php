@@ -31,7 +31,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Security_testing">Wikipedia on security testing<a>
+        <li><a href="https://en.wikipedia.org/wiki/Security_testing">Wikipedia on security testing</a>
     </ul>
 </section>
 

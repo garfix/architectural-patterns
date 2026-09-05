@@ -35,7 +35,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Exception_handling">Wikipedia<a>
+        <li><a href="https://en.wikipedia.org/wiki/Exception_handling">Wikipedia</a>
     </ul>
 </section>
 

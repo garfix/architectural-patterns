@@ -27,9 +27,9 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://maze.co/collections/ux-ui-design/ui-design-principles/">UI design principles<a>
-        <li><a href="https://en.wikipedia.org/wiki/Visual_hierarchy">Visual hierarchy<a>
-        <li><a href="https://www.figma.com/resource-library/ui-design-principles/">UI design principles<a>
+        <li><a href="https://maze.co/collections/ux-ui-design/ui-design-principles/">UI design principles</a>
+        <li><a href="https://en.wikipedia.org/wiki/Visual_hierarchy">Visual hierarchy</a>
+        <li><a href="https://www.figma.com/resource-library/ui-design-principles/">UI design principles</a>
     </ul>
 </section>
 

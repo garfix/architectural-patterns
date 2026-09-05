@@ -59,7 +59,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Space-based_architecture">Wikipedia<a>
+        <li><a href="https://en.wikipedia.org/wiki/Space-based_architecture">Wikipedia</a>
         <li><a href="https://umairsaeed.com/space-based-architecture/">Space Based Architecture</a>
     </ul>
 </section>

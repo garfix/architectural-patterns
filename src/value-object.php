@@ -38,7 +38,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Value_object">Wikipedia on value object<a>
+        <li><a href="https://en.wikipedia.org/wiki/Value_object">Wikipedia on value object</a>
     </ul>
 </section>
 

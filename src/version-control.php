@@ -33,7 +33,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Version_control">Wikipedia on version control<a>
+        <li><a href="https://en.wikipedia.org/wiki/Version_control">Wikipedia on version control</a>
     </ul>
 </section>
 

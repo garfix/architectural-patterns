@@ -26,7 +26,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href=""><a>
+        <li><a href=""></a>
     </ul>
 </section>
 

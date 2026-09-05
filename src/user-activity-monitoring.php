@@ -36,7 +36,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/User_activity_monitoring">Wikipedia on user activity monitoring<a>
+        <li><a href="https://en.wikipedia.org/wiki/User_activity_monitoring">Wikipedia on user activity monitoring</a>
     </ul>
     </section>
 

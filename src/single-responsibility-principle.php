@@ -24,7 +24,7 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Single_responsibility_principle">Wikipedia on Single Responsibility Principle<a>
+        <li><a href="https://en.wikipedia.org/wiki/Single_responsibility_principle">Wikipedia on Single Responsibility Principle</a>
     </ul>
 </section>
 

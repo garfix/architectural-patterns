@@ -42,9 +42,9 @@ include 'template/header.php';
 
     <h2>Links</h2>
     <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Unit_testing">Wikipedia on unit tests<a>
-        <li><a href="https://en.wikipedia.org/wiki/Integration_testing">Wikipedia on integration tests<a>
-        <li><a href="https://en.wikipedia.org/wiki/System_testing">Wikipedia on system tests<a>
+        <li><a href="https://en.wikipedia.org/wiki/Unit_testing">Wikipedia on unit tests</a>
+        <li><a href="https://en.wikipedia.org/wiki/Integration_testing">Wikipedia on integration tests</a>
+        <li><a href="https://en.wikipedia.org/wiki/System_testing">Wikipedia on system tests</a>
     </ul>
     </section>
 
