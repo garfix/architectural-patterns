@@ -93,7 +93,7 @@ $categories = [
     ["code" => CAT_PRESENTATION, "name" => 'Presentation',
         "description" => "Patterns related to the User Interface",
         "children" => [CAT_UI, CAT_UX, CAT_ANIMATION],
-        "patterns" => ["Command Line Interface", "Graphical User Interface", "Navigation Graph", "Menu Navigation", "Template Engine"]],
+        "patterns" => ["Command Line Interface", "Graphical User Interface", "Conversational Interface", "Tangible user interface", "Navigation Graph", "Menu Navigation", "Template Engine"]],
     ["code" => CAT_UI, "name" => 'User Interface',
         "description" => "Patterns related to User Interface (UI) design",
         "patterns" => ["Color", "Typeface", "Icon Set", "Page layout", "Accessibility"]],
@@ -402,6 +402,18 @@ $patterns = [
         "keywords" => "Toolbar",
         "image" => "menu.drawio.png",
         "link" => "menu-navigation"
+    ],
+[
+        "name" => "Conversational Interface",
+        "keywords" => "chatbot, voice assistant, LLM-based agent, natural language interface",
+        "image" => "conversational-interface.png",
+        "link" => "conversational-interface"
+    ],
+    [
+        "name" => "Tangible user interface",
+        "keywords" => "RFID, physical dials, knobs, augmented physical tools, IoT",
+        "image" => "tangible-user-interface.png",
+        "link" => "tangible-user-interface"
     ],
     [
         "name" => "Search",
