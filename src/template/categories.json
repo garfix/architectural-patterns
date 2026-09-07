@@ -1,0 +1,507 @@
+[
+    {
+        "code": "logic",
+        "name": "Types of code",
+        "description": "The types of code that are architecturally relevant. The idea is that every line of code falls in one of these categories. In a simple project all kinds are used in the same functions, files, and modules. A medium sized project could profit from separating some of these types in separate classes or layers. A large project can seriously benefit from separating all of them.",
+        "patterns": [
+            "Business Logic",
+            "Application Logic",
+            "User Interface",
+            "Presentation Logic",
+            "Data Access Logic"
+        ]
+    },
+    {
+        "code": "systems",
+        "name": "Systems",
+        "description": "Patterns that form the most basic structure of the system",
+        "children": [
+            "system-composition"
+        ],
+        "patterns": [
+            "Layers",
+            "Bounded Context"
+        ]
+    },
+    {
+        "code": "system-composition",
+        "name": "Application",
+        "description": "Perspectives on how a system should be structured, based on what's perceived most important: ease-of-development, testability, or understandability",
+        "patterns": [
+            "Smart-UI",
+            "Document-View",
+            "Traditional Model-View-Controller",
+            "Model-View-Adapter",
+            "Model-View-Viewmodel",
+            "Hierarchical MVC",
+            "Microkernel",
+            "Software Framework",
+            "Entity-Control-Boundary",
+            "Hexagonal Architecture",
+            "Data-Context-Interaction"
+        ]
+    },
+    {
+        "code": "language-features",
+        "name": "Language Features",
+        "description": "Discriminative programming language features. Most features like variables, loops and if/then statements are available in (almost) all languages. But others are specific to just one or two languages. If such feature is essential to your application, you may need to choose a language that supports it. And some features you may actually want to avoid.",
+        "patterns": [
+            "Type system features",
+            "Syntax features",
+            "Data & Memory features",
+            "Function features",
+            "Object Oriented Programming features",
+            "Functional programming features",
+            "Reactive programming features",
+            "Error handling features",
+            "Concurrency features",
+            "Miscellaneous features"
+        ]
+    },
+    {
+        "code": "modules",
+        "name": "Modules",
+        "description": "Patterns within and between modules. Closely related to modules are components and packages. The term 'module' used here reflects these as well.",
+        "children": [
+            "module-principles"
+        ],
+        "patterns": [
+            "Module",
+            "Component",
+            "Feature Flags",
+            "Plugin"
+        ]
+    },
+    {
+        "code": "module-principles",
+        "name": "Principles for modules",
+        "description": "",
+        "patterns": [
+            "Reuse/Release Equivalence Principle",
+            "Common Closure Principle",
+            "Common Reuse Principle",
+            "Acyclic Dependencies Principle",
+            "Stable Dependencies Principle",
+            "Stable Abstractions Principle"
+        ]
+    },
+    {
+        "code": "class",
+        "name": "Classes / Interfaces",
+        "description": "Patterns for classes and interfaces",
+        "children": [
+            "class-principles"
+        ],
+        "patterns": [
+            "Entity",
+            "Value Object",
+            "Object Aggregate",
+            "Data Transfer Object",
+            "Query Object"
+        ]
+    },
+    {
+        "code": "class-principles",
+        "name": "Principles",
+        "description": "Principles for classes and interfaces",
+        "patterns": [
+            "Single Responsibility Principle",
+            "Open-Closed Principle",
+            "Liskov Substitution Principle",
+            "Interface Segregation Principle",
+            "Dependency Inversion Principle"
+        ]
+    },
+    {
+        "code": "presentation",
+        "name": "Presentation",
+        "description": "Patterns related to the User Interface",
+        "children": [
+            "presentation-kinds",
+            "ui",
+            "ux",
+            "animation"
+        ],
+        "patterns": [
+            "Navigation Graph",
+            "Menu Navigation",
+            "Template Engine"
+        ]
+    },
+    {
+        "code": "presentation-kinds",
+        "name": "Kinds of interfaces",
+        "description": "Kinds of user interface",
+        "patterns": [
+            "Command Line Interface",
+            "Graphical User Interface",
+            "Conversational Interface",
+            "Tangible user interface",
+            "Spatial Computing Interface"
+        ]
+    },
+    {
+        "code": "ui",
+        "name": "User Interface",
+        "description": "Patterns related to User Interface (UI) design",
+        "patterns": [
+            "Color",
+            "Typeface",
+            "Icon Set",
+            "Page layout",
+            "Accessibility"
+        ]
+    },
+    {
+        "code": "ux",
+        "name": "User Experience",
+        "description": "Patterns related to User Experience (UX) design",
+        "patterns": [
+            "Clarity",
+            "User control"
+        ]
+    },
+    {
+        "code": "animation",
+        "name": "Animation",
+        "description": "Patterns related to animated computer graphics",
+        "patterns": [
+            "Graphics Pipeline",
+            "Double Buffering"
+        ]
+    },
+    {
+        "code": "problem-solving",
+        "name": "Problem solving",
+        "description": "Patterns designed to solve user problems",
+        "children": [
+            "probabilistic-reasoning",
+            "search-optimization",
+            "evolutionary-computation",
+            "supervised-learning",
+            "deep-learning-architectures",
+            "unsupervised-learning",
+            "reinforcement-learning",
+            "symbolic-reasoning",
+            "graphical-structured-models"
+        ],
+        "patterns": [
+            "Algorithm",
+            "Heuristic",
+            "Search",
+            "Inference Engine",
+            "Planning",
+            "Neural Network",
+            "Generative AI",
+            "Agent",
+            "Multi-Agent System",
+            "Blackboard",
+            "Process Control",
+            "Explainability"
+        ]
+    },
+    {
+        "code": "probabilistic-reasoning",
+        "name": "Probabilistic / Statistical Reasoning",
+        "description": "Represent and reason with uncertainty using probabilistic models and statistical methods.",
+        "patterns": [
+            "Bayesian Inference",
+            "Markov Chain",
+            "Hidden Markov Model",
+            "Markov Decision Process",
+            "Monte Carlo Method",
+            "Markov Chain Monte Carlo",
+            "Gaussian Process",
+            "Kalman Filter",
+            "Maximum Likelihood Estimation",
+            "Regression Analysis"
+        ]
+    },
+    {
+        "code": "search-optimization",
+        "name": "Search & Optimization",
+        "description": "Techniques for finding optimal or near-optimal solutions in large search spaces.",
+        "patterns": [
+            "Minimax",
+            "Monte Carlo Tree Search",
+            "Gradient Descent",
+            "Simulated Annealing",
+            "A* Search Algorithm",
+            "Hill Climbing",
+            "Tabu Search",
+            "Dynamic Programming",
+            "Linear Programming"
+        ]
+    },
+    {
+        "code": "evolutionary-computation",
+        "name": "Evolutionary & Nature-Inspired Computation",
+        "description": "Search methods inspired by biological or collective natural processes.",
+        "patterns": [
+            "Genetic Algorithm",
+            "Genetic Programming",
+            "Particle Swarm Optimization",
+            "Ant Colony Optimization",
+            "Evolution Strategy"
+        ]
+    },
+    {
+        "code": "supervised-learning",
+        "name": "Supervised Learning",
+        "description": "Methods that learn mappings from inputs to labeled outputs.",
+        "patterns": [
+            "Artificial Neural Network",
+            "Decision Tree Learning",
+            "Random Forest",
+            "Gradient Boosting",
+            "Support Vector Machine",
+            "k-Nearest Neighbors",
+            "Naive Bayes Classifier",
+            "Linear Discriminant Analysis"
+        ]
+    },
+    {
+        "code": "deep-learning-architectures",
+        "name": "Deep Learning Architectures",
+        "description": "Specific neural network architectures that are widely used.",
+        "patterns": [
+            "Convolutional Neural Network",
+            "Recurrent Neural Network",
+            "Long Short-Term Memory",
+            "Transformer",
+            "Generative Adversarial Network",
+            "Diffusion Model",
+            "Autoencoder"
+        ]
+    },
+    {
+        "code": "unsupervised-learning",
+        "name": "Unsupervised Learning",
+        "description": "Techniques that discover structure in data without labels.",
+        "patterns": [
+            "k-Means Clustering",
+            "Hierarchical Clustering",
+            "DBSCAN",
+            "Principal Component Analysis",
+            "t-SNE",
+            "Self-Organizing Map",
+            "Association Rule Learning"
+        ]
+    },
+    {
+        "code": "reinforcement-learning",
+        "name": "Reinforcement Learning",
+        "description": "Agent-based learning from interaction with environments guided by rewards.",
+        "patterns": [
+            "Q-Learning",
+            "Temporal Difference Learning",
+            "Policy Gradient Method",
+            "Multi-Armed Bandit"
+        ]
+    },
+    {
+        "code": "symbolic-reasoning",
+        "name": "Symbolic / Logic-Based Reasoning",
+        "description": "Rule- and logic-based techniques for explicit symbolic reasoning.",
+        "patterns": [
+            "Expert System",
+            "Constraint Satisfaction Problem",
+            "Fuzzy Logic",
+            "Automated Theorem Proving",
+            "Case-Based Reasoning",
+            "Semantic Network"
+        ]
+    },
+    {
+        "code": "graphical-structured-models",
+        "name": "Graphical / Structured Probabilistic Models",
+        "description": "Models that represent dependencies between variables as graphs.",
+        "patterns": [
+            "Bayesian Network",
+            "Markov Random Field",
+            "Conditional Random Field",
+            "Graph Neural Network"
+        ]
+    },
+    {
+        "code": "data-patterns",
+        "name": "Data",
+        "description": "Patterns that focus on the data of the application",
+        "children": [
+            "data-store",
+            "data-interaction",
+            "data-format",
+            "data-locking"
+        ],
+        "patterns": [
+            "Event Sourcing",
+            "Snapshot Sequence",
+            "CQRS",
+            "Index",
+            "Cache",
+            "Transaction",
+            "Undo",
+            "ETL",
+            "Entity-Component-System",
+            "Data Synchronization"
+        ]
+    },
+    {
+        "code": "data-format",
+        "name": "Data formats",
+        "description": "Standard formats of data types",
+        "patterns": [
+            "UNICODE",
+            "Standardized Date Format",
+            "Coordinated Universal Time"
+        ]
+    },
+    {
+        "code": "data-store",
+        "name": "Data storage",
+        "description": "How data is stored",
+        "patterns": [
+            "Repository",
+            "Data Warehouse",
+            "Data Cube"
+        ]
+    },
+    {
+        "code": "data-interaction",
+        "name": "Data interaction",
+        "description": "Ways of reading and writing data",
+        "patterns": [
+            "ORM"
+        ]
+    },
+    {
+        "code": "data-locking",
+        "name": "Locking",
+        "description": "Handling concurrent access to data",
+        "patterns": [
+            "Optimistic Locking",
+            "Pessimistic Locking"
+        ]
+    },
+    {
+        "code": "control-flows",
+        "name": "Control flow",
+        "description": "Patterns that focus on the way the code is executed",
+        "patterns": [
+            "Pipe and Filter",
+            "Parallel Programming",
+            "Finite State Machine",
+            "Interpreter",
+            "Publish-Subscribe",
+            "Message Queue",
+            "Game Loop",
+            "Lifecycle Hooks"
+        ]
+    },
+    {
+        "code": "distributed-computing",
+        "name": "Distributed computing",
+        "description": "Patterns that distribute the application over multiple servers",
+        "patterns": [
+            "Monolith",
+            "Client-Server",
+            "N-Tier",
+            "Broker",
+            "Repository",
+            "Master-Slave",
+            "Peer to Peer",
+            "Parallel Programming",
+            "Load Balancing",
+            "Serverless",
+            "Space-Based",
+            "Data Replication"
+        ]
+    },
+    {
+        "code": "cross-cutting-concerns",
+        "name": "Cross-cutting concerns",
+        "description": "Patterns that provide a specific function in many distinct areas of the code base",
+        "patterns": [
+            "Logging",
+            "Error Handling",
+            "Data Validation",
+            "Internationalization",
+            "Coding Conventions",
+            "Ubiquitous Language"
+        ]
+    },
+    {
+        "code": "access-control",
+        "name": "Access control",
+        "description": "Control who has access to the system and to what parts of the system",
+        "children": [
+            "authentication",
+            "authorization"
+        ],
+        "patterns": []
+    },
+    {
+        "code": "change",
+        "name": "Change",
+        "description": "Management of code changes",
+        "patterns": [
+            "Version Control",
+            "Software Versioning"
+        ]
+    },
+    {
+        "code": "authentication",
+        "name": "Authentication",
+        "description": "Determine that the user is who they claim to be",
+        "patterns": [
+            "Login",
+            "Single Sign-on",
+            "Federated Identity"
+        ]
+    },
+    {
+        "code": "authorization",
+        "name": "Authorization",
+        "description": "Describe who has access to what",
+        "patterns": [
+            "Access Control List",
+            "Role-based Access Control"
+        ]
+    },
+    {
+        "code": "app-environment",
+        "name": "App Environment",
+        "description": "Patterns that are not part of the application in the narrow sense, but are nevertheless part of its broader environment",
+        "children": [
+            "testing",
+            "monitoring"
+        ],
+        "patterns": [
+            "Containerization",
+            "Deployment",
+            "User Manual",
+            "Software license"
+        ]
+    },
+    {
+        "code": "testing",
+        "name": "Testing",
+        "description": "Patterns that ensure that some aspect of the application meets a criterium",
+        "patterns": [
+            "Functional tests",
+            "Frontend tests",
+            "Security tests",
+            "Performance tests",
+            "Compatibility tests"
+        ]
+    },
+    {
+        "code": "monitoring",
+        "name": "Monitoring",
+        "description": "Following aspects of the activity of the system by an external service",
+        "patterns": [
+            "Performance Monitoring",
+            "User-activity Monitoring"
+        ]
+    }
+]

@@ -1,0 +1,20 @@
+{
+    "Code structure": [
+        "language-features",
+        "class",
+        "logic",
+        "modules",
+        "systems"
+    ],
+    "Code purpose": [
+        "data-patterns",
+        "cross-cutting-concerns",
+        "control-flows",
+        "problem-solving",
+        "presentation",
+        "access-control",
+        "change",
+        "distributed-computing",
+        "app-environment"
+    ]
+}

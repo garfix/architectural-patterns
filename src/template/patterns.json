@@ -1,0 +1,1047 @@
+[
+    {
+        "name": "Repository",
+        "keywords": "Database",
+        "image": "repository.drawio.png",
+        "link": "repository"
+    },
+    {
+        "name": "Event Sourcing",
+        "keywords": "Block chain",
+        "image": "event-sourcing.drawio.png",
+        "link": "event-sourcing"
+    },
+    {
+        "name": "CQRS",
+        "keywords": "Command-Query Responsibility Segregation",
+        "image": "cqrs-1.png",
+        "link": "cqrs"
+    },
+    {
+        "name": "Index",
+        "keywords": "Search engine, Information retrieval",
+        "image": "index.drawio.png",
+        "link": "indexing"
+    },
+    {
+        "name": "Cache",
+        "image": "caching.drawio.png",
+        "link": "cache"
+    },
+    {
+        "name": "ETL",
+        "keywords": "Extract Transform Load",
+        "image": "etl.drawio.png",
+        "link": "etl"
+    },
+    {
+        "name": "Data Warehouse",
+        "keywords": "Business Intelligence",
+        "image": "data-warehouse.drawio.png",
+        "link": "data-warehouse"
+    },
+    {
+        "name": "Data Cube",
+        "keywords": "Timeseries, Array DBMS",
+        "image": "data-cube.drawio.png",
+        "link": "data-cube"
+    },
+    {
+        "name": "Client-Server",
+        "image": "client-server.drawio.png",
+        "link": "client-server"
+    },
+    {
+        "name": "N-Tier",
+        "keywords": "Multitier",
+        "image": "n-tier.drawio.png",
+        "link": "n-tier"
+    },
+    {
+        "name": "Broker",
+        "keywords": "Service Oriented Architecture, Microservices, API, Hub-and-spoke, Event-bus",
+        "image": "broker.drawio.png",
+        "link": "broker"
+    },
+    {
+        "name": "Master-Slave",
+        "image": "master-and-slave.drawio.png",
+        "link": "master-slave"
+    },
+    {
+        "name": "Peer to Peer",
+        "image": "peer-to-peer.drawio.png",
+        "link": "peer-to-peer"
+    },
+    {
+        "name": "Monolith",
+        "keywords": "Single tier",
+        "image": "monolith.drawio.png",
+        "link": "monolith"
+    },
+    {
+        "name": "Parallel Programming",
+        "image": "parallel-programming.drawio.png",
+        "link": "parallel-programming"
+    },
+    {
+        "name": "Load Balancing",
+        "image": "load-balancing.drawio.png",
+        "link": "load-balancing"
+    },
+    {
+        "name": "Serverless",
+        "image": "serverless.drawio.png",
+        "link": "serverless"
+    },
+    {
+        "name": "Space-Based",
+        "image": "space-based.drawio.png",
+        "link": "space-based"
+    },
+    {
+        "name": "Data Replication",
+        "image": "replication.drawio.png",
+        "link": "replication"
+    },
+    {
+        "name": "Traditional Model-View-Controller",
+        "image": "model-view-controller.drawio.png",
+        "keywords": "Model-View-Updater",
+        "link": "model-view-controller"
+    },
+    {
+        "name": "Model-View-Adapter",
+        "keywords": "Model-View-Presenter",
+        "image": "model-view-adapter.drawio.png",
+        "link": "model-view-adapter"
+    },
+    {
+        "name": "Model-View-Viewmodel",
+        "keywords": "MVVM, Model-View-Binder",
+        "image": "model-view-viewmodel.drawio.png",
+        "link": "model-view-viewmodel"
+    },
+    {
+        "name": "Hierarchical MVC",
+        "keywords": "Presentation-Abstraction-Control, Hierarchical model-view-controller",
+        "image": "hierarchical-component-ui.drawio.png",
+        "link": "hierarchical-ui"
+    },
+    {
+        "name": "Accessibility",
+        "image": "accessibility.drawio.png",
+        "link": "accessibility"
+    },
+    {
+        "name": "Menu Navigation",
+        "keywords": "Toolbar",
+        "image": "menu.drawio.png",
+        "link": "menu-navigation"
+    },
+    {
+        "name": "Conversational Interface",
+        "keywords": "chatbot, voice assistant, LLM-based agent, natural language interface",
+        "image": "conversational-interface.png",
+        "link": "conversational-interface"
+    },
+    {
+        "name": "Tangible user interface",
+        "keywords": "RFID, physical dials, knobs, augmented physical tools, IoT",
+        "image": "tangible-user-interface.png",
+        "link": "tangible-user-interface"
+    },
+    {
+        "name": "Spatial Computing Interface",
+        "keywords": "AR, VR, XR, spatial computing, headsets, controllers, hand-tracking",
+        "image": "spatial-computing-interface.png",
+        "link": "spatial-computing-interface"
+    },
+    {
+        "name": "Search",
+        "image": "search.drawio.png",
+        "link": "search"
+    },
+    {
+        "name": "Inference Engine",
+        "image": "rule-based.drawio.png",
+        "link": "inference-engine"
+    },
+    {
+        "name": "Planning",
+        "image": "planning.drawio.png",
+        "link": "planning"
+    },
+    {
+        "name": "Neural Network",
+        "keywords": "Artificial Neural Network, Neural Net",
+        "image": "neural-network.drawio.png",
+        "link": "neural-network"
+    },
+    {
+        "name": "Agent",
+        "image": "agent.drawio.png",
+        "link": "agent"
+    },
+    {
+        "name": "Multi-Agent System",
+        "image": "multi-agent-system.drawio.png",
+        "link": "multi-agent-system"
+    },
+    {
+        "name": "Blackboard",
+        "image": "blackboard.drawio.png",
+        "link": "blackboard"
+    },
+    {
+        "name": "Process Control",
+        "image": "process-control.drawio.png",
+        "link": "process-control"
+    },
+    {
+        "name": "Layers",
+        "image": "layered.drawio.png",
+        "link": "layers"
+    },
+    {
+        "name": "Module",
+        "image": "module.drawio.png",
+        "link": "module"
+    },
+    {
+        "name": "Acyclic Dependencies Principle",
+        "keywords": "Dependency hierarchy",
+        "image": "dependency-graph.drawio.png",
+        "link": "acyclic-dependencies-principle"
+    },
+    {
+        "name": "Stable Abstractions Principle",
+        "image": "stable-abstractions-principle.drawio.png",
+        "link": "stable-abstractions-principle"
+    },
+    {
+        "name": "Component",
+        "image": "component.drawio.png",
+        "link": "component"
+    },
+    {
+        "name": "Microkernel",
+        "keywords": "Kernel",
+        "image": "microkernel.drawio.png",
+        "link": "microkernel"
+    },
+    {
+        "name": "Hexagonal Architecture",
+        "keywords": "Ports and Adapters, Onion Architecture, Clean Architecture, Functional Core / Imperative Shell",
+        "image": "ports-and-adapters.drawio.png",
+        "link": "hexagonal"
+    },
+    {
+        "name": "Plugin",
+        "keywords": "Add-on, Theme, Skin",
+        "image": "plugin.drawio.png",
+        "link": "plugin"
+    },
+    {
+        "name": "Pipe and Filter",
+        "image": "pipe-and-filter.drawio.png",
+        "link": "pipe-and-filter"
+    },
+    {
+        "name": "Finite State Machine",
+        "image": "fsm.drawio.png",
+        "link": "finite-state-machine"
+    },
+    {
+        "name": "Interpreter",
+        "image": "interpreter.drawio.png",
+        "link": "interpreter"
+    },
+    {
+        "name": "Publish-Subscribe",
+        "keywords": "Event bus, Event loop",
+        "image": "event-bus-1.png",
+        "link": "publish-subscribe"
+    },
+    {
+        "name": "Message Queue",
+        "keywords": "Event bus, Event loop",
+        "image": "message-queue.drawio.png",
+        "link": "message-queue"
+    },
+    {
+        "name": "Game Loop",
+        "image": "game-loop.drawio.png",
+        "link": "game-loop"
+    },
+    {
+        "name": "Lifecycle Hooks",
+        "image": "lifecycle-hooks.drawio.png",
+        "link": "lifecycle-hooks"
+    },
+    {
+        "name": "Logging",
+        "image": "logging.drawio.png",
+        "link": "logging"
+    },
+    {
+        "name": "Error Handling",
+        "image": "error-handling.drawio.png",
+        "link": "error-handling"
+    },
+    {
+        "name": "Data Validation",
+        "image": "data-validation.drawio.png",
+        "link": "data-validation"
+    },
+    {
+        "name": "Feature Flags",
+        "keywords": "Feature Toggles",
+        "image": "feature-flags.drawio.png",
+        "link": "feature-flags"
+    },
+    {
+        "name": "Functional tests",
+        "image": "functional-tests.drawio.png",
+        "link": "functional-tests"
+    },
+    {
+        "name": "Frontend tests",
+        "image": "frontend-tests.drawio.png",
+        "link": "frontend-tests"
+    },
+    {
+        "name": "Security tests",
+        "image": "security-tests.drawio.png",
+        "link": "security-tests"
+    },
+    {
+        "name": "Performance tests",
+        "image": "performance-tests.drawio.png",
+        "link": "performance-tests"
+    },
+    {
+        "name": "Compatibility tests",
+        "keywords": "Cross browser testing",
+        "image": "compatibility-tests.drawio.png",
+        "link": "compatibility-tests"
+    },
+    {
+        "name": "Performance Monitoring",
+        "image": "performance-monitoring.drawio.png",
+        "link": "performance-monitoring"
+    },
+    {
+        "name": "User-activity Monitoring",
+        "image": "user-activity-monitoring.drawio.png",
+        "link": "user-activity-monitoring"
+    },
+    {
+        "name": "Deployment",
+        "keywords": "CI/CD",
+        "image": "deployment.drawio.png",
+        "link": "deployment"
+    },
+    {
+        "name": "Internationalization",
+        "keywords": "Translation, Localization, i18n, l10n",
+        "image": "i18n.drawio.png",
+        "link": "localization"
+    },
+    {
+        "name": "Login",
+        "image": "login.drawio.png",
+        "link": "login"
+    },
+    {
+        "name": "Single Sign-on",
+        "keywords": "SSO",
+        "image": "single-sign-on.drawio.png",
+        "link": "single-sign-on"
+    },
+    {
+        "name": "Federated Identity",
+        "image": "federated-identity.drawio.png",
+        "link": "federated-identity"
+    },
+    {
+        "name": "Access Control List",
+        "keywords": "ACL",
+        "image": "access-control-list.drawio.png",
+        "link": "access-control-list"
+    },
+    {
+        "name": "Role-based Access Control",
+        "keywords": "RBAC",
+        "image": "role-based-access-control.drawio.png",
+        "link": "role-based-access-control"
+    },
+    {
+        "name": "Liskov Substitution Principle",
+        "image": "lsp.drawio.png",
+        "link": "liskov-substitution-principle"
+    },
+    {
+        "name": "Open-Closed Principle",
+        "image": "open-closed.drawio.png",
+        "link": "open-closed-principle"
+    },
+    {
+        "name": "Interface Segregation Principle",
+        "image": "interface-segregation.drawio.png",
+        "link": "interface-segregation-principle"
+    },
+    {
+        "name": "Dependency Inversion Principle",
+        "image": "dependency-inversion.drawio.png",
+        "link": "dependency-inversion-principle"
+    },
+    {
+        "name": "Single Responsibility Principle",
+        "image": "single-responsibility.drawio.png",
+        "link": "single-responsibility-principle"
+    },
+    {
+        "name": "Smart-UI",
+        "image": "smart-ui.drawio.png",
+        "link": "smart-ui"
+    },
+    {
+        "name": "Document-View",
+        "image": "document-view.drawio.png",
+        "link": "document-view"
+    },
+    {
+        "name": "Entity",
+        "image": "entity.drawio.png",
+        "link": "entity"
+    },
+    {
+        "name": "Software Framework",
+        "image": "framework.drawio.png",
+        "link": "software-framework"
+    },
+    {
+        "name": "Bounded Context",
+        "keywords": "Architectural boundaries",
+        "image": "boundaries.drawio.png",
+        "link": "bounded-context"
+    },
+    {
+        "name": "Entity-Control-Boundary",
+        "keywords": " Entity-Boundary-Control, Boundary-Control-Entity",
+        "image": "entity-control-boundary.drawio.png",
+        "link": "entity-control-boundary"
+    },
+    {
+        "name": "Value Object",
+        "image": "value-object.drawio.png",
+        "link": "value-object"
+    },
+    {
+        "name": "Business Logic",
+        "keywords": "Domain Logic",
+        "image": "business-logic.drawio.png",
+        "link": "business-logic"
+    },
+    {
+        "name": "Application Logic",
+        "keywords": "Use cases",
+        "image": "application-logic.drawio.png",
+        "link": "application-logic"
+    },
+    {
+        "name": "Presentation Logic",
+        "keywords": "View Logic",
+        "image": "presentation-logic.drawio.png",
+        "link": "presentation-logic"
+    },
+    {
+        "name": "User Interface",
+        "image": "user-interface.drawio.png",
+        "link": "user-interface"
+    },
+    {
+        "name": "Data Access Logic",
+        "image": "data-access-logic.drawio.png",
+        "link": "data-access-logic"
+    },
+    {
+        "name": "Entity-Component-System",
+        "image": "entity-component-system.drawio.png",
+        "link": "entity-component-system"
+    },
+    {
+        "name": "Data-Context-Interaction",
+        "image": "data-context-interaction.drawio.png",
+        "link": "data-context-interaction"
+    },
+    {
+        "name": "User Manual",
+        "image": "user-manual.drawio.png",
+        "link": "user-manual"
+    },
+    {
+        "name": "Template Engine",
+        "keywords": "Template Processor",
+        "image": "template-engine.drawio.png",
+        "link": "template-engine"
+    },
+    {
+        "name": "Object Aggregate",
+        "image": "object-aggregate.drawio.png",
+        "link": "object-aggregate"
+    },
+    {
+        "name": "Data Transfer Object",
+        "image": "data-transfer-object.drawio.png",
+        "link": "data-transfer-object"
+    },
+    {
+        "name": "Version Control",
+        "keywords": "Revision Control, Source Control",
+        "image": "version-control.drawio.png",
+        "link": "version-control"
+    },
+    {
+        "name": "Software Versioning",
+        "image": "software-versioning.drawio.png",
+        "link": "software-versioning"
+    },
+    {
+        "name": "Coding Conventions",
+        "keywords": "Linting",
+        "image": "coding-conventions.drawio.png",
+        "link": "coding-conventions"
+    },
+    {
+        "name": "Ubiquitous Language",
+        "image": "ubiquitous-language.drawio.png",
+        "link": "ubiquitous-language"
+    },
+    {
+        "name": "Algorithm",
+        "image": "algorithm.drawio.png",
+        "link": "algorithm"
+    },
+    {
+        "name": "Heuristic",
+        "image": "heuristic.drawio.png",
+        "link": "heuristic"
+    },
+    {
+        "name": "Color",
+        "image": "color.drawio.png",
+        "link": "color"
+    },
+    {
+        "name": "Navigation Graph",
+        "keywords": "UI Flow, User Flow, UI Storyboard, Navigation Flow",
+        "image": "navigation-graph.drawio.png",
+        "link": "navigation-graph"
+    },
+    {
+        "name": "Stable Dependencies Principle",
+        "image": "stable-dependencies-principle.drawio.png",
+        "link": "stable-dependencies-principle"
+    },
+    {
+        "name": "Reuse/Release Equivalence Principle",
+        "image": "reuse-release-equivalence-principle.drawio.png",
+        "link": "reuse-release-equivalence-principle"
+    },
+    {
+        "name": "Common Closure Principle",
+        "image": "common-closure-principle.drawio.png",
+        "link": "common-closure-principle"
+    },
+    {
+        "name": "Common Reuse Principle",
+        "image": "common-reuse-principle.drawio.png",
+        "link": "common-reuse-principle"
+    },
+    {
+        "name": "Typeface",
+        "keywords": "Font",
+        "image": "typeface.drawio.png",
+        "link": "typeface"
+    },
+    {
+        "name": "Icon Set",
+        "image": "icon-set.drawio.png",
+        "link": "icon-set"
+    },
+    {
+        "name": "Page layout",
+        "image": "page-layout.drawio.png",
+        "link": "page-layout"
+    },
+    {
+        "name": "Clarity",
+        "image": "clarity.drawio.png",
+        "link": "clarity"
+    },
+    {
+        "name": "User control",
+        "image": "user-control.drawio.png",
+        "link": "user-control"
+    },
+    {
+        "name": "Explainability",
+        "keywords": "Algorithmic transparency",
+        "image": "explainability.drawio.png",
+        "link": "explainability"
+    },
+    {
+        "name": "Snapshot Sequence",
+        "image": "snapshot.drawio.png",
+        "link": "snapshot-sequence"
+    },
+    {
+        "name": "Coordinated Universal Time",
+        "keywords": "UTC",
+        "image": "utc.drawio.png",
+        "link": "utc"
+    },
+    {
+        "name": "UNICODE",
+        "keywords": "UTF-8",
+        "image": "unicode.drawio.png",
+        "link": "unicode"
+    },
+    {
+        "name": "Standardized Date Format",
+        "keywords": "ISO 8601",
+        "image": "iso-8601.drawio.png",
+        "link": "iso-8601"
+    },
+    {
+        "name": "Command Line Interface",
+        "keywords": "CLI",
+        "image": "cli.png",
+        "link": "cli"
+    },
+    {
+        "name": "Graphical User Interface",
+        "keywords": "GUI, Widget, Window",
+        "image": "gui.png",
+        "link": "gui"
+    },
+    {
+        "name": "Graphics Pipeline",
+        "image": "graphics-pipeline.drawio.png",
+        "link": "graphics-pipeline"
+    },
+    {
+        "name": "Double Buffering",
+        "keywords": "VSYNC",
+        "image": "double-buffering.drawio.png",
+        "link": "double-buffering"
+    },
+    {
+        "name": "Data Synchronization",
+        "keywords": "Sync",
+        "image": "data-synchronization.drawio.png",
+        "link": "data-synchronization"
+    },
+    {
+        "name": "Query Object",
+        "image": "query-object.drawio.png",
+        "link": "query-object"
+    },
+    {
+        "name": "Optimistic Locking",
+        "image": "optimistic-locking.drawio.png",
+        "link": "optimistic-locking"
+    },
+    {
+        "name": "Pessimistic Locking",
+        "image": "pessimistic-locking.drawio.png",
+        "link": "pessimistic-locking"
+    },
+    {
+        "name": "Transaction",
+        "keywords": "Unit of work",
+        "image": "transaction.drawio.png",
+        "link": "transaction"
+    },
+    {
+        "name": "Undo",
+        "image": "undo.drawio.png",
+        "link": "undo"
+    },
+    {
+        "name": "Software license",
+        "image": "license.drawio.png",
+        "link": "license"
+    },
+    {
+        "name": "Generative AI",
+        "keywords": "LLM",
+        "image": "gen-ai.drawio.png",
+        "link": "gen-ai"
+    },
+    {
+        "name": "ORM",
+        "keywords": "Object-Relational Mapping",
+        "image": "orm.drawio.png",
+        "link": "orm"
+    },
+    {
+        "name": "Containerization",
+        "keywords": "Docker, Kubernetes",
+        "image": "containerization.drawio.png",
+        "link": "containerization"
+    },
+    {
+        "name": "Type system features",
+        "image": "type-system-features.drawio.png",
+        "link": "type-system-features"
+    },
+    {
+        "name": "Syntax features",
+        "image": "syntax-features.drawio.png",
+        "link": "syntax-features"
+    },
+    {
+        "name": "Data & Memory features",
+        "image": "data-memory-features.drawio.png",
+        "link": "data-memory-features"
+    },
+    {
+        "name": "Function features",
+        "image": "function-features.drawio.png",
+        "link": "function-features"
+    },
+    {
+        "name": "Object Oriented Programming features",
+        "image": "object-oriented-programming-features.drawio.png",
+        "link": "object-oriented-programming-features"
+    },
+    {
+        "name": "Functional programming features",
+        "image": "functional-programming-features.drawio.png",
+        "link": "functional-programming-features"
+    },
+    {
+        "name": "Reactive programming features",
+        "image": "reactive-programming-features.drawio.png",
+        "link": "reactive-programming-features"
+    },
+    {
+        "name": "Error handling features",
+        "image": "error-handling-features.drawio.png",
+        "link": "error-handling-features"
+    },
+    {
+        "name": "Concurrency features",
+        "keywords": "Parallellism",
+        "image": "concurrency-features.drawio.png",
+        "link": "concurrency-features"
+    },
+    {
+        "name": "Miscellaneous features",
+        "image": "miscellaneous-features.drawio.png",
+        "link": "miscellaneous-features"
+    },
+    {
+        "name": "Bayesian Inference",
+        "image": "bayesian-inference.svg",
+        "link": "bayesian-inference"
+    },
+    {
+        "name": "Markov Chain",
+        "image": "markov-chain.png",
+        "link": "markov-chain"
+    },
+    {
+        "name": "Hidden Markov Model",
+        "image": "hidden-markov-model.png",
+        "link": "hidden-markov-model"
+    },
+    {
+        "name": "Markov Decision Process",
+        "image": "markov-decision-process.png",
+        "link": "markov-decision-process"
+    },
+    {
+        "name": "Monte Carlo Method",
+        "image": "monte-carlo-method.png",
+        "link": "monte-carlo-method"
+    },
+    {
+        "name": "Markov Chain Monte Carlo",
+        "image": "markov-chain-monte-carlo.png",
+        "link": "markov-chain-monte-carlo"
+    },
+    {
+        "name": "Gaussian Process",
+        "image": "gaussian-process.png",
+        "link": "gaussian-process"
+    },
+    {
+        "name": "Kalman Filter",
+        "image": "kalman-filter.png",
+        "link": "kalman-filter"
+    },
+    {
+        "name": "Maximum Likelihood Estimation",
+        "image": "maximum-likelihood-estimation.png",
+        "link": "maximum-likelihood-estimation"
+    },
+    {
+        "name": "Regression Analysis",
+        "image": "regression-analysis.png",
+        "link": "regression-analysis"
+    },
+    {
+        "name": "Gradient Descent",
+        "image": "gradient-descent.png",
+        "link": "gradient-descent"
+    },
+    {
+        "name": "Simulated Annealing",
+        "image": "simulated-annealing.png",
+        "link": "simulated-annealing"
+    },
+    {
+        "name": "A* Search Algorithm",
+        "image": "a-star-search.png",
+        "link": "a-star-search"
+    },
+    {
+        "name": "Hill Climbing",
+        "image": "hill-climbing.png",
+        "link": "hill-climbing"
+    },
+    {
+        "name": "Tabu Search",
+        "image": "tabu-search.png",
+        "link": "tabu-search"
+    },
+    {
+        "name": "Dynamic Programming",
+        "image": "dynamic-programming.png",
+        "link": "dynamic-programming"
+    },
+    {
+        "name": "Linear Programming",
+        "image": "linear-programming.png",
+        "link": "linear-programming"
+    },
+    {
+        "name": "Genetic Algorithm",
+        "image": "genetic-algorithm.png",
+        "link": "genetic-algorithm"
+    },
+    {
+        "name": "Genetic Programming",
+        "image": "genetic-programming.png",
+        "link": "genetic-programming"
+    },
+    {
+        "name": "Particle Swarm Optimization",
+        "image": "particle-swarm-optimization.png",
+        "link": "particle-swarm-optimization"
+    },
+    {
+        "name": "Ant Colony Optimization",
+        "image": "ant-colony-optimization.png",
+        "link": "ant-colony-optimization"
+    },
+    {
+        "name": "Evolution Strategy",
+        "image": "evolution-strategy.png",
+        "link": "evolution-strategy"
+    },
+    {
+        "name": "Artificial Neural Network",
+        "image": "artificial-neural-network.png",
+        "link": "artificial-neural-network"
+    },
+    {
+        "name": "Decision Tree Learning",
+        "image": "decision-tree-learning.drawio.png",
+        "link": "decision-tree-learning"
+    },
+    {
+        "name": "Random Forest",
+        "image": "random-forest.png",
+        "link": "random-forest"
+    },
+    {
+        "name": "Gradient Boosting",
+        "image": "gradient-boosting.png",
+        "link": "gradient-boosting"
+    },
+    {
+        "name": "Support Vector Machine",
+        "image": "support-vector-machine.png",
+        "link": "support-vector-machine"
+    },
+    {
+        "name": "k-Nearest Neighbors",
+        "image": "k-nearest-neighbors.png",
+        "link": "k-nearest-neighbors"
+    },
+    {
+        "name": "Naive Bayes Classifier",
+        "image": "naive-bayes-classifier.png",
+        "link": "naive-bayes-classifier"
+    },
+    {
+        "name": "Linear Discriminant Analysis",
+        "image": "linear-discriminant-analysis.png",
+        "link": "linear-discriminant-analysis"
+    },
+    {
+        "name": "Convolutional Neural Network",
+        "image": "convolutional-neural-network.png",
+        "link": "convolutional-neural-network"
+    },
+    {
+        "name": "Recurrent Neural Network",
+        "image": "recurrent-neural-network.png",
+        "link": "recurrent-neural-network"
+    },
+    {
+        "name": "Long Short-Term Memory",
+        "image": "long-short-term-memory.png",
+        "link": "long-short-term-memory"
+    },
+    {
+        "name": "Transformer",
+        "image": "transformer.png",
+        "link": "transformer"
+    },
+    {
+        "name": "Generative Adversarial Network",
+        "image": "generative-adversarial-network.png",
+        "link": "generative-adversarial-network"
+    },
+    {
+        "name": "Diffusion Model",
+        "image": "diffusion-model.png",
+        "link": "diffusion-model"
+    },
+    {
+        "name": "Autoencoder",
+        "image": "autoencoder.png",
+        "link": "autoencoder"
+    },
+    {
+        "name": "k-Means Clustering",
+        "image": "k-means-clustering.png",
+        "link": "k-means-clustering"
+    },
+    {
+        "name": "Hierarchical Clustering",
+        "image": "hierarchical-clustering.png",
+        "link": "hierarchical-clustering"
+    },
+    {
+        "name": "DBSCAN",
+        "image": "dbscan.png",
+        "link": "dbscan"
+    },
+    {
+        "name": "Principal Component Analysis",
+        "image": "principal-component-analysis.png",
+        "link": "principal-component-analysis"
+    },
+    {
+        "name": "t-SNE",
+        "image": "t-sne.png",
+        "link": "t-sne"
+    },
+    {
+        "name": "Self-Organizing Map",
+        "image": "self-organizing-map.png",
+        "link": "self-organizing-map"
+    },
+    {
+        "name": "Association Rule Learning",
+        "image": "association-rule-learning.png",
+        "link": "association-rule-learning"
+    },
+    {
+        "name": "Q-Learning",
+        "image": "q-learning.png",
+        "link": "q-learning"
+    },
+    {
+        "name": "Temporal Difference Learning",
+        "image": "temporal-difference-learning.png",
+        "link": "temporal-difference-learning"
+    },
+    {
+        "name": "Policy Gradient Method",
+        "image": "policy-gradient-method.png",
+        "link": "policy-gradient-method"
+    },
+    {
+        "name": "Multi-Armed Bandit",
+        "image": "multi-armed-bandit.png",
+        "link": "multi-armed-bandit"
+    },
+    {
+        "name": "Expert System",
+        "image": "expert-system.png",
+        "link": "expert-system"
+    },
+    {
+        "name": "Constraint Satisfaction Problem",
+        "image": "constraint-satisfaction-problem.png",
+        "link": "constraint-satisfaction-problem"
+    },
+    {
+        "name": "Fuzzy Logic",
+        "image": "fuzzy-logic.png",
+        "link": "fuzzy-logic"
+    },
+    {
+        "name": "Automated Theorem Proving",
+        "image": "automated-theorem-proving.png",
+        "link": "automated-theorem-proving"
+    },
+    {
+        "name": "Case-Based Reasoning",
+        "image": "case-based-reasoning.png",
+        "link": "case-based-reasoning"
+    },
+    {
+        "name": "Semantic Network",
+        "image": "semantic-network.png",
+        "link": "semantic-network"
+    },
+    {
+        "name": "Bayesian Network",
+        "image": "bayesian-network.png",
+        "link": "bayesian-network"
+    },
+    {
+        "name": "Markov Random Field",
+        "image": "markov-random-field.png",
+        "link": "markov-random-field"
+    },
+    {
+        "name": "Conditional Random Field",
+        "image": "conditional-random-field.png",
+        "link": "conditional-random-field"
+    },
+    {
+        "name": "Graph Neural Network",
+        "image": "graph-neural-network.png",
+        "link": "graph-neural-network"
+    },
+    {
+        "name": "Minimax",
+        "image": "minimax.png",
+        "link": "minimax"
+    },
+    {
+        "name": "Monte Carlo Tree Search",
+        "image": "monte-carlo-tree-search.png",
+        "link": "monte-carlo-tree-search"
+    }
+]
