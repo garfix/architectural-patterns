@@ -4,6 +4,8 @@ https://github.com/impress/impress.js
 
 turn all html into data
 
+SEARCH the website
+
 ## cross cutting
 
 * routing / navigation: name a specific nav. scheme

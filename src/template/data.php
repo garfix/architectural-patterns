@@ -93,7 +93,7 @@ $categories = [
     ["code" => CAT_PRESENTATION, "name" => 'Presentation',
         "description" => "Patterns related to the User Interface",
         "children" => [CAT_UI, CAT_UX, CAT_ANIMATION],
-        "patterns" => ["Command Line Interface", "Graphical User Interface", "Conversational Interface", "Tangible user interface", "Navigation Graph", "Menu Navigation", "Template Engine"]],
+        "patterns" => ["Command Line Interface", "Graphical User Interface", "Conversational Interface", "Tangible user interface", "Spatial Computing Interface", "Navigation Graph", "Menu Navigation", "Template Engine"]],
     ["code" => CAT_UI, "name" => 'User Interface',
         "description" => "Patterns related to User Interface (UI) design",
         "patterns" => ["Color", "Typeface", "Icon Set", "Page layout", "Accessibility"]],
@@ -414,6 +414,12 @@ $patterns = [
         "keywords" => "RFID, physical dials, knobs, augmented physical tools, IoT",
         "image" => "tangible-user-interface.png",
         "link" => "tangible-user-interface"
+    ],
+    [
+        "name" => "Spatial Computing Interface",
+        "keywords" => "AR, VR, XR, spatial computing, headsets, controllers, hand-tracking",
+        "image" => "spatial-computing-interface.png",
+        "link" => "spatial-computing-interface"
     ],
     [
         "name" => "Search",
