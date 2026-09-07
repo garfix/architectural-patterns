@@ -38,6 +38,7 @@ const CAT_CLASS_PRINCIPLES = 'class-principles';
 const CAT_MODULES = 'modules';
 const CAT_MODULE_PRINCIPLES = 'module-principles';
 const CAT_CHANGE = 'change';
+const CAT_PRESENTATION_KINDS = 'presentation-kinds';
 const CAT_UI = 'ui';
 const CAT_UX = 'ux';
 
@@ -92,8 +93,11 @@ $categories = [
         "patterns" => ["Single Responsibility Principle", "Open-Closed Principle", "Liskov Substitution Principle", "Interface Segregation Principle", "Dependency Inversion Principle"]],
     ["code" => CAT_PRESENTATION, "name" => 'Presentation',
         "description" => "Patterns related to the User Interface",
-        "children" => [CAT_UI, CAT_UX, CAT_ANIMATION],
-        "patterns" => ["Command Line Interface", "Graphical User Interface", "Conversational Interface", "Tangible user interface", "Spatial Computing Interface", "Navigation Graph", "Menu Navigation", "Template Engine"]],
+        "children" => [CAT_PRESENTATION_KINDS, CAT_UI, CAT_UX, CAT_ANIMATION],
+        "patterns" => ["Navigation Graph", "Menu Navigation", "Template Engine"]],
+    ["code" => CAT_PRESENTATION_KINDS, "name" => 'Kinds of interfaces',
+        "description" => "Kinds of user interface",
+        "patterns" => ["Command Line Interface", "Graphical User Interface", "Conversational Interface", "Tangible user interface", "Spatial Computing Interface"]],
     ["code" => CAT_UI, "name" => 'User Interface',
         "description" => "Patterns related to User Interface (UI) design",
         "patterns" => ["Color", "Typeface", "Icon Set", "Page layout", "Accessibility"]],
@@ -893,7 +897,7 @@ $patterns = [
     [
         "name" => "Command Line Interface",
         "keywords" => "CLI",
-        "image" => "cli.drawio.png",
+        "image" => "cli.png",
         "link" => "cli",
     ],
     [
