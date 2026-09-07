@@ -2,6 +2,6 @@
 
 include './template/data.php';
 
-$page = CAT_DISTRIBUTED;
+$page = 'distributed-computing';
 
 include './template/page.php';

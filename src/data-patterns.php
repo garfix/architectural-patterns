@@ -2,6 +2,6 @@
 
 include './template/data.php';
 
-$page = CAT_DATA;
+$page = 'data-patterns';
 
 include './template/page.php';

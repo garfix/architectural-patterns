@@ -2,6 +2,6 @@
 
 include './template/data.php';
 
-$page = CAT_ENVIRONMENT;
+$page = 'app-environment';
 
 include './template/page.php';

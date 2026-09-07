@@ -2,6 +2,6 @@
 
 include './template/data.php';
 
-$page = CAT_CLASS;
+$page = 'class';
 
 include './template/page.php';

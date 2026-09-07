@@ -2,6 +2,6 @@
 
 include './template/data.php';
 
-$page = CAT_ACCESS_CONTROL;
+$page = 'access-control';
 
 include './template/page.php';

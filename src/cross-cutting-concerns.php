@@ -2,6 +2,6 @@
 
 include './template/data.php';
 
-$page = CAT_CROSS_CUTTING;
+$page = 'cross-cutting-concerns';
 
 include './template/page.php';

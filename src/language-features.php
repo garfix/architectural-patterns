@@ -2,6 +2,6 @@
 
 include './template/data.php';
 
-$page = CAT_LANGUAGE_FEATURES;
+$page = 'language-features';
 
 include './template/page.php';

@@ -2,6 +2,6 @@
 
 include './template/data.php';
 
-$page = CAT_CHANGE;
+$page = 'change';
 
 include './template/page.php';

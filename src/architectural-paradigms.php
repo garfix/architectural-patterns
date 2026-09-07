@@ -2,6 +2,6 @@
 
 include './template/data.php';
 
-$page = CAT_ARCHITECTURAL_PARADIGMS;
+$page = 'architectural-paradigms';
 
 include './template/page.php';

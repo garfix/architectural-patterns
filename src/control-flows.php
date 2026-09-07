@@ -2,6 +2,6 @@
 
 include './template/data.php';
 
-$page = CAT_CONTROL_FLOW;
+$page = 'control-flows';
 
 include './template/page.php';

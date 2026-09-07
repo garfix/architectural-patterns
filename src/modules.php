@@ -2,6 +2,6 @@
 
 include './template/data.php';
 
-$page = CAT_MODULES;
+$page = 'modules';
 
 include './template/page.php';
