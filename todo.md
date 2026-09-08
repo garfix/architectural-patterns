@@ -2,8 +2,6 @@
 
 https://github.com/impress/impress.js
 
-turn all html into data
-
 SEARCH the website
 
 ## cross cutting
