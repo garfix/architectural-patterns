@@ -1049,5 +1049,11 @@
         "keywords": "Brain-computer interface, BCI",
         "image": "brain-computer-interface.png",
         "link": "brain-computer-interface"
+    },
+    {
+        "name": "Ambient Intelligence",
+        "keywords": "Ambient/zero-UI/implicit interface, smart home, adaptive systems, presence detection",
+        "image": "ambient-intelligence.png",
+        "link": "ambient-intelligence"
     }
 ]
