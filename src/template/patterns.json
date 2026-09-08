@@ -1043,5 +1043,11 @@
         "name": "Monte Carlo Tree Search",
         "image": "monte-carlo-tree-search.png",
         "link": "monte-carlo-tree-search"
+    },
+    {
+        "name": "Brain-computer interface",
+        "keywords": "Brain-computer interface, BCI",
+        "image": "brain-computer-interface.png",
+        "link": "brain-computer-interface"
     }
 ]
