@@ -30,6 +30,11 @@
 					color: _palette(accent);
 				}
 
+				&.menu-link.current,
+				&.current {
+					color: _palette(accent);
+				}
+
 				&.opener {
 					@include vendor('transition', 'color #{_duration(transition)} ease-in-out');
 					@include icon(false, solid);
@@ -85,6 +90,20 @@
 					> li {
 						margin: 0.125em 0 0 0;
 						padding: 0.125em 0 0 0;
+
+						> a,
+						> span {
+							display: inline-block;
+							width: calc(100% - 1.5em);
+						}
+
+						> .opener {
+							float: right;
+							margin-top: -2.5em;
+							padding-right: 0.5em;
+							position: relative;
+							width: 1.25em;
+						}
 					}
 				}
 

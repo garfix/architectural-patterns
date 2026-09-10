@@ -12,7 +12,6 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/custom.css" />
         <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
-        <meta name="updated_at" content="2023-11-28 13:00 PM" />
 	</head>
 	<body class="is-preload">
 

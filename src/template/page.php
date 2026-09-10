@@ -30,7 +30,7 @@ foreach ($patterns as $p) {
 
 <?php foreach ($children as $childCode): ?>
     <?php $child = getCategoryByCode($childCode); ?>
-    <section class="pattern-overview">
+    <section id="<?= htmlspecialchars($childCode, ENT_QUOTES) ?>" class="pattern-overview">
         <h2><?= $child['name'] ?></h2>
         <p><?= $child['description'] ?></p>
         <div class="posts">

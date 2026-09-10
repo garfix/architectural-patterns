@@ -12,16 +12,7 @@
                             </header>
                             <ul>
                                 <li><a href=".">Home</a></li>
-                                <li>
-                                    <?php foreach ($pages as $title => $page): ?>
-                                        <span class="opener active"><?= $title ?></span>
-                                        <ul>
-                                            <?php foreach ($page as $subPage): ?>
-                                                <li><a href="<?= $subPage ?>"><?= getCategoryByCode($subPage)['name'] ?></a></li>
-                                            <?php endforeach ?>
-                                        </ul>
-                                    <?php endforeach ?>
-                                </li>
+                                <?php include __DIR__ . '/menu.php'; ?>
                                 <li><a href="pattern-tree">Pattern hierarchy</a></li>
                                 <li><a href="patterns">Pattern grid</a></li>
                                 <li><a href="links">Links</a></li>
@@ -44,6 +35,7 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/menu.js"></script>
 
 	</body>
 </html>

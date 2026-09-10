@@ -4,6 +4,8 @@ https://github.com/impress/impress.js
 
 SEARCH the website
 
+menu on the left: make it complete
+
 ## cross cutting
 
 * routing / navigation: name a specific nav. scheme
@@ -15,15 +17,14 @@ SEARCH the website
   * sparse distributed
   * NoSQL
 
+metapatterns patronen
+
   Object pool
 
 data interaction
 
   * sql, graphql
 
-## problem solving
-
-minimax
 
 ## More
 
