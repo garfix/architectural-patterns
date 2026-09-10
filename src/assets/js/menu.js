@@ -1,4 +1,10 @@
 
+var $window = $(window);
+var $sidebar = $('#sidebar');
+var $sidebar_inner = $sidebar.children('.inner');
+var $menu = $('#menu');
+var sidebarScrollStorageKey = 'architectural-patterns.sidebar.scroll';
+
 // Keep the sidebar independent from the main page scroll.
 // The default Editorial lock logic pins the sidebar to the document scroll,
 // so we disable it here and let the sidebar scroll on its own.
@@ -6,10 +12,6 @@ $sidebar_inner
     .data('locked', 0)
     .css('position', '')
     .css('top', '');
-
-// Menu.
-var $menu = $('#menu');
-var sidebarScrollStorageKey = 'architectural-patterns.sidebar.scroll';
 
 function persistSidebarScroll() {
     if (!$sidebar_inner.length)
@@ -39,61 +41,147 @@ function restoreSidebarScroll() {
     }
 }
 
-function normalizeMenuHref(value) {
-    if (!value) {
-        return '';
+function getMenuLinkParts(value) {
+    var raw = String(value || '');
+    var hashIndex = raw.indexOf('#');
+    var hash = '';
+    var path = raw;
+
+    if (hashIndex !== -1) {
+        hash = raw.slice(hashIndex + 1);
+        path = raw.slice(0, hashIndex);
     }
 
-    return String(value)
-        .split('#')[0]
+    path = path
         .split('?')[0]
         .replace(/^\.\//, '')
-        .replace(/\/+$|\\+$/g, '')
-        .replace(/\.html?$/i, '')
-        .replace(/^\//, '');
+        .replace(/^\/+/, '')
+        .replace(/\/+$/, '')
+        .replace(/\.html?$/i, '');
+
+    return {
+        path: path,
+        hash: hash
+    };
 }
 
-function applyHashHighlight() {
+function normalizeMenuHref(value) {
+    return getMenuLinkParts(value).path;
+}
+
+function closeAllMenuBranches() {
+    $('#menu .menu-item, #menu .menu-group, #menu .pattern-item').removeClass('current active is-open');
+    $('#menu .submenu').removeClass('is-open');
+    $('#menu .menu-toggle').removeClass('active').attr('aria-expanded', 'false');
     $('#menu a.current, #menu span.current').removeClass('current');
-    $('#menu .menu-item.current, #menu .pattern-item.current').removeClass('current');
     $('#menu a.active, #menu span.active').removeClass('active');
-    $('#menu .menu-item.active, #menu .pattern-item.active').removeClass('active');
+}
 
-    var hash = window.location.hash || '';
-    var targetId = hash ? hash.replace(/^#/, '') : '';
-    var currentPath = normalizeMenuHref(window.location.pathname || '');
-    var $targetLinks = $();
-
-    if (targetId) {
-        $targetLinks = $('#menu a[href$="#' + targetId + '"]');
-    } else if (currentPath) {
-        $targetLinks = $('#menu a[href]').filter(function() {
-            var href = $(this).attr('href') || '';
-            if (!href || href === '#') {
-                return false;
-            }
-
-            var normalizedHref = normalizeMenuHref(href);
-            return normalizedHref && normalizedHref === currentPath;
-        });
-    }
-
-    if (!$targetLinks.length) {
+function openMenuBranch($item) {
+    if (!$item || !$item.length) {
         return;
     }
 
-    $targetLinks.each(function() {
+    $item.addClass('is-open');
+
+    var $toggle = $item.find('> .menu-row > .menu-toggle').first();
+    if ($toggle.length) {
+        $toggle.addClass('active').attr('aria-expanded', 'true');
+    }
+
+    var $submenu = $item.children('ul.submenu').first();
+    if ($submenu.length) {
+        $submenu.addClass('is-open');
+    }
+
+    var $parent = $item.parent().closest('.menu-item, .menu-group');
+    if ($parent.length) {
+        openMenuBranch($parent);
+    }
+}
+
+function findMatchingMenuLink() {
+    var locationPath = normalizeMenuHref(window.location.pathname || '');
+    var locationHash = (window.location.hash || '').replace(/^#/, '');
+
+    if (locationHash) {
+        var $hashMatch = $('#menu a[href$="#' + locationHash + '"]');
+        if ($hashMatch.length) {
+            return $hashMatch.first();
+        }
+    }
+
+    var $match = $();
+
+    $('#menu a[href]').each(function() {
         var $link = $(this);
-        $link.addClass('current active');
-        $link.closest('.menu-item, .pattern-item').addClass('current active');
+        var href = ($link.attr('href') || '').trim();
+        if (!href || href === '#') {
+            return;
+        }
+
+        var hrefParts = getMenuLinkParts(href);
+        var normalizedHref = normalizeMenuHref(href);
+        var pathMatches = normalizedHref === locationPath;
+        var hashMatches = !!locationHash && hrefParts.hash === locationHash && hrefParts.path === locationPath;
+
+        if (pathMatches && (!locationHash || hashMatches)) {
+            $match = $link;
+            return false;
+        }
     });
+
+    return $match;
+}
+
+function revealDirectChildren($item) {
+    if (!$item || !$item.length) {
+        return;
+    }
+
+    var $submenu = $item.children('ul.submenu').first();
+    if (!$submenu.length) {
+        return;
+    }
+
+    $submenu.addClass('is-open');
+    $submenu.children('li.menu-item, li.menu-group, li.pattern-item').each(function() {
+        var $child = $(this);
+        $child.addClass('is-open');
+
+        var $childToggle = $child.find('> .menu-row > .menu-toggle').first();
+        if ($childToggle.length) {
+            $childToggle.addClass('active').attr('aria-expanded', 'true');
+        }
+    });
+}
+
+function applyMenuStateFromUrl() {
+    closeAllMenuBranches();
+
+    var $matchedLink = findMatchingMenuLink();
+    if (!$matchedLink.length) {
+        return;
+    }
+
+    $matchedLink.addClass('current active');
+    var $matchedItem = $matchedLink.closest('.menu-item, .menu-group, .pattern-item');
+    if ($matchedItem.length) {
+        $matchedItem.addClass('current active');
+        openMenuBranch($matchedItem);
+        revealDirectChildren($matchedItem);
+    }
 }
 
 $sidebar_inner.on('scroll.sidebar-scroll', persistSidebarScroll);
 $window.on('beforeunload.sidebar-scroll pagehide.sidebar-scroll', persistSidebarScroll);
 $window.on('load hashchange', function() {
     restoreSidebarScroll();
-    applyHashHighlight();
+    applyMenuStateFromUrl();
+});
+
+$(function() {
+    applyMenuStateFromUrl();
 });
 
 $menu.find('.menu-toggle').each(function() {
