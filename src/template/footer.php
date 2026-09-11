@@ -5,11 +5,15 @@
             <div id="sidebar">
                 <div class="inner">
 
+
                     <!-- Menu -->
                         <nav id="menu">
-                            <header class="major">
+                            <!-- <header class="major">
                                 <h2>Menu</h2>
-                            </header>
+                            </header> -->
+                            <br>
+                            <center><img src="assets/img/logo.png" width="200" height="232"/></center>
+                            <br>
                             <ul>
                                 <li><a href=".">Home</a></li>
                                 <?php include __DIR__ . '/menu.php'; ?>
@@ -35,7 +39,6 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
-        <script src="assets/js/menu.js"></script>
 
 	</body>
 </html>
