@@ -15,6 +15,15 @@ figure img {
     max-width: 100%;
 }
 
+.logo {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-image {
+    max-height: 400px;
+}
+
 figcaption {
     text-align: left;
     font-weight: bold;
