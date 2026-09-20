@@ -12,8 +12,8 @@
                             <ul>
                                 <li><a href=".">Home</a></li>
                                 <?php include __DIR__ . '/menu.php'; ?>
-                                <li><a href="pattern-tree">Pattern hierarchy</a></li>
-                                <li><a href="patterns">Pattern grid</a></li>
+                                <li><a href="pattern-tree">Overview</a></li>
+                                <li><a href="patterns">Alphabetical</a></li>
                                 <li><a href="links">Links</a></li>
                                 <li><a href="about">About</a></li>
                             </ul>
