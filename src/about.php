@@ -107,57 +107,6 @@ include 'template/header.php';
 
 <section>
     <header class="major">
-        <h2>Links</h2>
-    </header>
-    <p>
-        Here are some concepts that occur in multiple patterns.
-    </p>
-    <dl>
-        <dt>Dependency</dt>
-        <dd>
-            <b>Volatile dependencies</b> are services that don't behave the same in all circumstances. Examples: database, file system, sending email, random number generator, current time. A file may not exist, disk may be full, email may not be sent, etc. The opposite of volatile is <b>stable</b>. A stable depenency is dependable: it behaves the same in all circumstances.
-        </dd>
-        <dt>Client</dt>
-        <dd>
-            <p>A client is a software application that needs some functionality from a server, external to the client, to work properly.</p>
-        </dd>
-        <dt>Service</dt>
-        <dd>
-            <p>A software function performed by a server in response to a client request.</p>
-        </dd>
-        <dt>Server</dt>
-        <dd>
-            <p>A software application that provides a service.</p>
-        </dd>
-        <dt>Model</dt>
-        <dd>
-            <p>A model (domain model, business model) is the combination of data and domain logic software that governs the restrictions on this data.</p>
-        </dd>
-        <dt>Application logic</dt>
-        <dd>
-            <p>Domain logic that is application-specific</p>
-        </dd>
-        <dt>View</dt>
-        <dd>
-            <p>A view forms the presentation of data to the user and allows the user to enter information.</p>
-        </dd>
-        <dt>Presenter</dt>
-        <dd>
-            <p>The logic that prepares data to be shown in the (passive) view.</p>
-        </dd>
-        <dt>Controller</dt>
-        <dd>
-            <p>A controller processes incoming requests (made by the user, or by other software) by interacting with the model and updating the view.</p>
-        </dd>
-        <dt>Message</dt>
-        <dd>
-            <p>A piece of information that is published by a component to all subscribers, based on a specific event.</p>
-        </dd>
-    </dl>
-</section>
-
-<section>
-    <header class="major">
         <h2>Origin</h2>
     </header>
     <p>
