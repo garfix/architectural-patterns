@@ -36,7 +36,7 @@ function showHeader($pattern) {
 
 function showImage($pattern) {
 ?>
-<figure><img alt="" src="images/<?= $pattern['image'] ?>"><figcaption><?= $pattern['name'] ?></figcaption></figure>
+<figure><img class="main-image" alt="" src="images/<?= $pattern['image'] ?>"><figcaption><?= $pattern['name'] ?></figcaption></figure>
 <?php
 }
 

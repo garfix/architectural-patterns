@@ -3,6 +3,11 @@
 https://github.com/impress/impress.js
 
 SEARCH the website
+- php code doet het meeste werk
+- de # afhandeling wordt in js gedaan
+  - hoeft alleen nog de child te openen (en de category te-ontselecteren, zodat die niet rood wordt)
+
+alleen patterns of alleen children hebben, maar niet beide
 
 menu on the left: make it complete
 
