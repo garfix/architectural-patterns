@@ -8,11 +8,8 @@
 
                     <!-- Menu -->
                         <nav id="menu">
-                            <!-- <header class="major">
-                                <h2>Menu</h2>
-                            </header> -->
                             <br>
-                            <center><img src="assets/img/logo.png" width="200" height="232"/></center>
+                            <center><img src="assets/img/logo.png" width="207" height="200"/></center>
                             <br>
                             <ul>
                                 <li><a href=".">Home</a></li>
