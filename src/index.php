@@ -5,19 +5,17 @@ include 'template/header.php';
 ?>
 
 <section class="home-section">
-    <img alt="" src="images/pattern-image.drawio.png" class="pattern-image" />
-
     <header class="content">
-        <h1>About architectural patterns</h1>
+        <h1>Architectural patterns</h1>
     </header>
     <p>
-        In playing games, management, and warfare we can distinguish three levels of analysis: operational, tactical, and strategic. In software development we could associate these with <a href="https://en.wikipedia.org/wiki/Structured_programming">structured programming</a>, <a href="https://en.wikipedia.org/wiki/Software_design_pattern">design patterns</a>, and ... <a href="https://en.wikipedia.org/wiki/Architectural_pattern">architectural patterns</a>.
+        In playing games, management, and warfare we can distinguish three levels of analysis: operational, tactical, and strategic. In software development these correspond with <a href="https://en.wikipedia.org/wiki/Structured_programming">structured programming</a>, <a href="https://en.wikipedia.org/wiki/Software_design_pattern">design patterns</a>, and ... <a href="https://en.wikipedia.org/wiki/Architectural_pattern">architectural patterns</a>.
     </p>
     <p>
-        This site contains a number of system-level patterns: techniques and principles that are often used in software architectures. Use it at the start of a project for inspiration or as a checklist of things still to do.
+        Some design choices affect the overall structure and maintainability of the system. To choose the right ones, you first need to know they exist and that there's a decision to be made. This website presents patterns that may affect the complete architecture of your application. Use them at the start of a project for inspiration or as a checklist of things to improve.
     </p>
     <p>
-        If you have any ideas to improve this website, don't hesitate to <a href="https://github.com/garfix/architectural-patterns">create an issue or make a pull request</a>.
+        If you have any ideas to improve it, don't hesitate to <a href="https://github.com/garfix/architectural-patterns">create an issue or make a pull request</a>.
     </p>
     <p>
         I will leave you with this thought
