@@ -106,23 +106,78 @@ $renderCategoryMenu = function ($code, $depth = 0, $parentPageCode = null) use (
 };
 ?>
 
-<?php foreach ($pages as $title => $categoryCodes): ?>
-    <?php $groupIsOpen = false; ?>
-    <?php foreach ($categoryCodes as $categoryCode): ?>
-        <?php if (in_array($categoryCode, $activeCategoryCodes, true) || $hasActiveDescendant($categoryCode)): ?>
-            <?php $groupIsOpen = true; ?>
-            <?php break; ?>
-        <?php endif ?>
-    <?php endforeach ?>
+<?php
+    $urlCode = basename($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+    $path = [];
+    foreach ($pages as $page) {
+        if ($page['code'] === $urlCode) {
+            $level = "page";
+            $path = [$page['code']];
+        }
+        foreach ($page['categories'] as $categoryCode) {
+            $category = getCategoryByCode($categoryCode);
+            if ($category['code'] === $urlCode) {
+                    $level = "category";
+                    $path = [$category['code']];
+                }
+            foreach ($category['children'] as $childCode) {
+                $child = getCategoryByCode($childCode);
+                if ($child['code'] === $urlCode) {
+                    $level = "category";
+                    $path = [$category['code']];
+                }
+            }
+            foreach ($category['patterns'] as $patternName) {
+                $pattern = getPatternByName($patternName);
+                if ($pattern['code'] === $urlCode) {
+                    $level = "category";
+                    $path = [$category['code']];
+                }
+            }
+        }
+    }
 
-    <li class="menu-group<?= $groupIsOpen ? ' is-open' : '' ?>">
-        <div class="menu-row">
-            <span class="menu-group-label"><?= $title ?></span>
-            <button type="button" class="menu-toggle opener<?= $groupIsOpen ? ' active' : '' ?>" data-target="group-<?= htmlspecialchars(str_replace(' ', '-', strtolower($title)), ENT_QUOTES) ?>" aria-expanded="<?= $groupIsOpen ? 'true' : 'false' ?>" aria-label="Toggle <?= htmlspecialchars($title, ENT_QUOTES) ?>"></button>
-        </div>
-        <ul id="group-<?= htmlspecialchars(str_replace(' ', '-', strtolower($title)), ENT_QUOTES) ?>" class="submenu<?= $groupIsOpen ? ' is-open' : '' ?>">
+?>
+
+<?php foreach ($pages as $page): ?>
+    <?php
+        $code = $page['code'];
+        $title = $page['title'];
+        $categoryCodes = $page['categories'];
+        $pageOpen = in_array($page['code'], $path);
+    ?>
+    <li class="menu-group<?= $pageOpen ? " is-open" : "" ?>">
+        <a href="<?= $code ?>"><span class="opener<?= $pageOpen ? ' active' : '' ?>"><?= $title ?></span></a>
+        <ul class="submenu">
             <?php foreach ($categoryCodes as $categoryCode): ?>
-                <?php $renderCategoryMenu($categoryCode, 0); ?>
+                <?php
+                    $category = getCategoryByCode($categoryCode);
+                ?>
+                <li class="menu-item" style="margin-left: 2.5 ?>em;">
+                    <div class="menu-row">
+                        <a href="<?= htmlspecialchars($targetHref, ENT_QUOTES) ?>" class="menu-link<?= $isCurrent ? ' current' : '' ?>"><?= $category['name'] ?></a>
+                        <?php if ($hasChildren): ?>
+                            <span type="button" class="menu-toggle opener<?= $isOpen ? ' active' : '' ?>"></span>
+                        <?php endif ?>
+                    </div>
+                    <?php if ($hasChildren): ?>
+                        <ul id="submenu-<?= htmlspecialchars($category['code'], ENT_QUOTES) ?>" class="submenu<?= $isOpen ? ' is-open' : '' ?>">
+                            <?php foreach ($children as $childCode): ?>
+                            <ul id="submenu-<?= htmlspecialchars($category['code'], ENT_QUOTES) ?>" class="submenu<?= $isOpen ? ' is-open' : '' ?>">
+                                <?php foreach ($children as $childCode): ?>
+                                    <?php $renderCategoryMenu($childCode, $depth + 1, $category['code']); ?>
+                                <?php endforeach ?>
+                                <?php foreach ($patternNames as $patternName): ?>
+                                    <?php $renderPatternMenu($patternName); ?>
+                                <?php endforeach ?>
+                            </ul>
+                            <?php endforeach ?>
+                            <?php foreach ($patternNames as $patternName): ?>
+                                <?php $renderPatternMenu($patternName); ?>
+                            <?php endforeach ?>
+                        </ul>
+                    <?php endif ?>
+                </li>
             <?php endforeach ?>
         </ul>
     </li>
