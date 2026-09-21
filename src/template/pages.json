@@ -1,20 +1,22 @@
-{
-    "Code structure": [
-        "language-features",
-        "class",
-        "logic",
-        "modules",
-        "systems"
-    ],
-    "Code purpose": [
-        "data-patterns",
-        "cross-cutting-concerns",
-        "control-flows",
-        "problem-solving",
-        "presentation",
-        "access-control",
-        "change",
-        "distributed-computing",
-        "app-environment"
-    ]
-}
+[
+    {
+        "code": "code-structure",
+        "title": "Code structure",
+        "categories": ["language-features", "class", "logic", "modules", "systems"]
+    },
+    {
+        "code": "code-purpose",
+        "title": "Code purpose",
+        "categories": [
+            "data-patterns",
+            "cross-cutting-concerns",
+            "control-flows",
+            "problem-solving",
+            "presentation",
+            "access-control",
+            "change",
+            "distributed-computing",
+            "app-environment"
+        ]
+    }
+]
