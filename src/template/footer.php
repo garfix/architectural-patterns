@@ -8,7 +8,7 @@
 
                     <!-- Menu -->
                         <nav id="menu">
-                            <div class="logo"><img src="assets/img/logo.png" width="207" height="200"/></div>
+                            <div class="logo"><a href="." aria-label="Home"><img src="assets/img/logo.png" width="207" height="200"/></a></div>
                             <ul>
                                 <li><a href=".">Home</a></li>
                                 <?php include __DIR__ . '/menu.php'; ?>
