@@ -1,12 +1,23 @@
 {
-    "editor.wordWrap": "on",
     "files.trimTrailingWhitespace": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "on",
     "editor.wordBasedSuggestions": "off",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": false,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
+    },
     "[php][plaintext][log]": {
         "editor.quickSuggestions": {
             "other": false,
             "comments": true,
             "strings": false
-          },
+        }
     }
 }
