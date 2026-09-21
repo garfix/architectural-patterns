@@ -3,7 +3,7 @@ body {
 }
 
 #menu > ul > li > ul {
-    color: #6D7274;
+    color: #6d7274;
 }
 
 figure {
@@ -18,6 +18,10 @@ figure img {
 .logo {
     text-align: center;
     padding: 20px;
+
+    a {
+        border: none;
+    }
 }
 
 .main-image {
@@ -27,7 +31,7 @@ figure img {
 figcaption {
     text-align: left;
     font-weight: bold;
-    color: #6D7274;
+    color: #6d7274;
 }
 
 article img {
