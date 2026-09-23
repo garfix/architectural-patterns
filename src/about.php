@@ -19,10 +19,10 @@ include 'template/header.php';
         <b>2026-09-08</b> I used NVIDIA Nemotron to add <a href="conversational-interface">Conversation Interface</a>, <a href="tangible-user-interface">Tangible user interface</a>, <a href="spatial-computing-interface">Spatial computing interface</a>, <a href="brain-computer-interface">Brain-computer interface</a>, <a href="ambient-intelligence">Ambient Intelligence</a>. Images again by Gemini Flash.
     </p>
     <p>
-        <b>2026-08-29</b> Okay, I'm experimenting with LLM's. I used Minimax M2.7 to create pages for  <a href="minimax">Minimax</a> and <a href="monte-carlo-tree-search">Monte Carlo Tree Search</a>. Images again by Gemini Flash.
+        <b>2026-08-29</b> Okay, I'm experimenting with LLMs. I used Minimax M2.7 to create pages for <a href="minimax">Minimax</a> and <a href="monte-carlo-tree-search">Monte Carlo Tree Search</a>. Images again by Gemini Flash.
     </p>
     <p>
-        <b>2026-08-19</b> Used Claude Sonnet to list the most important ML/AI problem solving techniques (about 60). Then used Google Gemini Flash (and some OpenAI ChatGPT) to create diagrams for these techniques, and Micosoft Copilot to update the code with the new information.
+        <b>2026-08-19</b> Used Claude Sonnet to list the most important ML/AI problem solving techniques (about 60). Then used Google Gemini Flash (and some OpenAI ChatGPT) to create diagrams for these techniques, and Microsoft Copilot to update the code with the new information.
     </p>
     <p>
         <b>2025-05-12</b> Added a <a href="pattern-tree">Pattern hierarchy</a>, moved some categories.
@@ -37,7 +37,7 @@ include 'template/header.php';
         <b>2024-11-30</b> Added <a href="transaction">Transaction</a> and <a href="undo">Undo</a> to <a href="data-patterns">Data</a>
     </p>
     <p>
-        <b>2024-10-06</b> Added <a href="query-object">Query Object</a> to <a href="class">Classes / Interfaces</a>. Added <a href="optimistic-locking">Optimisitic Locking</a> and <a href="pessimistic-locking">Pessimistic Locking</a> to <a href="data">Data</a>
+        <b>2024-10-06</b> Added <a href="query-object">Query Object</a> to <a href="class">Classes / Interfaces</a>. Added <a href="optimistic-locking">Optimistic Locking</a> and <a href="pessimistic-locking">Pessimistic Locking</a> to <a href="data">Data</a>
     </p>
     <p>
         <b>2024-09-28</b> Added <a href="data-synchronization">Data synchronization</a> to <a href="data-patterns">Data</a>.
@@ -55,7 +55,7 @@ include 'template/header.php';
         <b>2024-04-01</b> Added <a href="snapshot-sequence">Snapshot Sequence</a>.
     </p>
     <p>
-        <b>2024-03-31</b> Added User Interface and User Experience to  <a href="presentation">Presentation</a>. I realize these are large fields in themselves, and it doesn't do justice to them to summarize these in some bullet points, but I just wanted to make a start.
+        <b>2024-03-31</b> Added User Interface and User Experience to <a href="presentation">Presentation</a>. I realize these are large fields in themselves, and it doesn't do justice to them to summarize these in some bullet points, but I just wanted to make a start.
         <br>
         I also added an entry on <a href="explainability">Explainability</a>, a personal favorite of mine in my last projects.
     </p>
@@ -114,13 +114,14 @@ include 'template/header.php';
     </header>
     <p>
         I once found myself as a software developer in a position where I was asked to build a new application, a virtual driving instructor. I had no
-        idea how to approach this problem. I could just start building classes and functions and hope for the best, but I felt I needed to have an idea of the big picture of the application before I endeavoured the project. If I had the structure wrong, the program could be be arduous to complete and it could become unnecessarily slow. Furthermore, I would have no way to communicate to others about the structure of the application. I needed an architecture, before I started building. But I didn't have any examples to base it upon.
+        idea how to approach this problem. I could just start building classes and functions and hope for the best, but I felt I needed to have an idea of the big picture of the application before I endeavoured the project. If I had the structure wrong, the program could be arduous to complete and it could become unnecessarily slow. Furthermore, I would have no way to communicate to others about the structure of the application. I needed an architecture, before I started building. But I didn't have any examples to base it upon.
+    </p>
     <p>
         In 2003 I started a sub-site about architectural patterns, named "Garfixia Software Architectures", and hosted it on the domain I used for my Andreas fansite: <b>https://www.dossier-andreas.net/software_architecture/index.html</b> I had no idea people would be interested, but it actually became quite popular. Many people have used the simple diagrams for presentations, and there are even some references in published books.
     </p>
     <p>
         Twenty years later I thought it would be good to modernize the site, update the contents, and give it a proper domain.
-    <p>
+    </p>
     <p>
         The span of the website expanded from "list all known architectural patterns", via "list all patterns that seem to have the same gist as these known patterns" to "categorize all patterns I see as architectural in scope", and ended up in "all application-wide software techniques and deliverables". The latter is still in line with the original aim: to help the software developer in their quest to create an original application.
     </p>
@@ -135,7 +136,7 @@ include 'template/header.php';
         I built this site to help software developers build an application. I have some experience in the field where I can draw upon, but I don't have personal experience with all patterns described here. It may contain errors. Also, the naming of patterns is not standardized, and different sources may name the same pattern differently. Finally, a number of remarks on this site may come across as my personal opinion, and for the moment I admit this is true. However, I intend to replace these with remarks from thought leaders in the field.
     </p>
     <p>
-        Best to treat this website as an index and a source of inspiration and follow the links provided for more in-depth in each subject.
+        Best to treat this website as an index and a source of inspiration and follow the links provided for more in-depth on each subject.
     </p>
 </section>
 
