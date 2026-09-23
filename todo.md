@@ -3,44 +3,37 @@
 https://github.com/impress/impress.js
 
 SEARCH the website
+
 - php code doet het meeste werk
 - de # afhandeling wordt in js gedaan
-  - hoeft alleen nog de child te openen (en de category te-ontselecteren, zodat die niet rood wordt)
+    - hoeft alleen nog de child te openen (en de category te-ontselecteren, zodat die niet rood wordt)
 
 alleen patterns of alleen children hebben, maar niet beide
 
-menu on the left: make it complete
-- niet nodig om de scrollpos op te slaan; bij het laden van de pagina wordt gescrollt naar het open menu
-- page, category, patterns/children
-- algo
-  - doorloop alle page/cat/pat|child
-    - gevonden? onthoud dan de page/cat/pat|child, en het niveau
-
 ## cross cutting
 
-* routing / navigation: name a specific nav. scheme
+- routing / navigation: name a specific nav. scheme
 
 ## data
 
-  * graph database
-  * relational
-  * sparse distributed
-  * NoSQL
+- graph database
+- relational
+- sparse distributed
+- NoSQL
 
 metapatterns patronen
 
-  Object pool
+Object pool
 
 data interaction
 
-  * sql, graphql
-
+- sql, graphql
 
 ## More
 
-* search
-* backtrack (?)
-* categories
+- search
+- backtrack (?)
+- categories
 
 ## UI
 
@@ -48,27 +41,27 @@ windowing interface
 design system
 https://en.wikipedia.org/wiki/Design_system
 
-* responsive design
+- responsive design
 
 https://uxdesign.cc/how-to-pick-colors-for-your-app-without-a-struggle-bc46c5e19574
 
-
 ## programming
 
-* mutable (functional) locks -> Immutability
-
+- mutable (functional) locks -> Immutability
 
 ## and ...
-* software metrics / code complexity
-* https://en.wikipedia.org/wiki/Process_driven_messaging_service
-* https://en.wikipedia.org/wiki/System_prevalence
-* https://en.wikipedia.org/wiki/Naked_objects
-* https://en.wikipedia.org/wiki/Service_layer_pattern
-* https://en.wikipedia.org/wiki/Action%E2%80%93domain%E2%80%93responder
-* https://en.wikipedia.org/wiki/Interface-based_programming
-* https://en.wikipedia.org/w/index.php?title=Debugging_pattern&oldformat=true
-* https://en.wikipedia.org/wiki/Service_delivery_platform
-*
+
+- software metrics / code complexity
+- https://en.wikipedia.org/wiki/Process_driven_messaging_service
+- https://en.wikipedia.org/wiki/System_prevalence
+- https://en.wikipedia.org/wiki/Naked_objects
+- https://en.wikipedia.org/wiki/Service_layer_pattern
+- https://en.wikipedia.org/wiki/Action%E2%80%93domain%E2%80%93responder
+- https://en.wikipedia.org/wiki/Interface-based_programming
+- https://en.wikipedia.org/w/index.php?title=Debugging_pattern&oldformat=true
+- https://en.wikipedia.org/wiki/Service_delivery_platform
+-
+
 ## principles
 
 From keras: Keras adopts the principle of progressive disclosure of complexity: simple workflows should be quick and easy, while arbitrarily advanced workflows should be possible via a clear path that builds upon what you've already learned.
