@@ -13,7 +13,10 @@ include 'template/header.php';
         <h2>Change history</h2>
     </header>
     <p>
-        <b>2026-09-08</b> NVIDIA Nemotron added <a href="conversational-interface">Conversation Interface</a>, <a href="tangible-user-interface">Tangible user interface</a>, <a href="spatial-computing-interface">Spatial computing interface</a>, <a href="brain-computer-interface">Brain-computer interface</a>, <a href="ambient-intelligence">Ambient Intelligence</a>. Images again by Gemini Flash.
+        <b>2026-09-23</b> I made the menu more functional, and added a logo and new favicon.
+    </p>
+    <p>
+        <b>2026-09-08</b> I used NVIDIA Nemotron to add <a href="conversational-interface">Conversation Interface</a>, <a href="tangible-user-interface">Tangible user interface</a>, <a href="spatial-computing-interface">Spatial computing interface</a>, <a href="brain-computer-interface">Brain-computer interface</a>, <a href="ambient-intelligence">Ambient Intelligence</a>. Images again by Gemini Flash.
     </p>
     <p>
         <b>2026-08-29</b> Okay, I'm experimenting with LLM's. I used Minimax M2.7 to create pages for  <a href="minimax">Minimax</a> and <a href="monte-carlo-tree-search">Monte Carlo Tree Search</a>. Images again by Gemini Flash.
