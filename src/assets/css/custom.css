@@ -6,6 +6,11 @@ body {
     color: #6d7274;
 }
 
+#menu .current a,
+#menu .active {
+    color: #8b1e1e !important;
+}
+
 figure {
     text-align: center;
     margin: 3rem 0;

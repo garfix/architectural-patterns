@@ -10,6 +10,11 @@ SEARCH the website
 alleen patterns of alleen children hebben, maar niet beide
 
 menu on the left: make it complete
+- niet nodig om de scrollpos op te slaan; bij het laden van de pagina wordt gescrollt naar het open menu
+- page, category, patterns/children
+- algo
+  - doorloop alle page/cat/pat|child
+    - gevonden? onthoud dan de page/cat/pat|child, en het niveau
 
 ## cross cutting
 

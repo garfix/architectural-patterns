@@ -1,10 +1,5 @@
 [
     {
-        "code": "code-structure",
-        "title": "Code structure",
-        "categories": ["language-features", "class", "logic", "modules", "systems"]
-    },
-    {
         "code": "code-purpose",
         "title": "Code purpose",
         "categories": [
@@ -18,5 +13,10 @@
             "distributed-computing",
             "app-environment"
         ]
+    },
+    {
+        "code": "code-structure",
+        "title": "Code structure",
+        "categories": ["language-features", "class", "logic", "modules", "systems"]
     }
 ]

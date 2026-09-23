@@ -57,8 +57,8 @@ function showPage($page, $catCodes) {
     </header>
     <p>An overview of all <?= count($sortedPatterns) ?> patterns cataloged on this site</p>
     <div class="pattern-tree">
-        <?php foreach ($pages as $page => $catCodes): ?>
-        <?php showPage($page, $catCodes) ?>
+        <?php foreach ($pages as $page): ?>
+        <?php showPage($page['title'], $page['categories']) ?>
         <?php endforeach ?>
     </div>
 </section>

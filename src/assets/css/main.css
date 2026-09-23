@@ -3051,7 +3051,7 @@ button:disabled,
     cursor: pointer;
     display: block;
     font-size: 0.9em;
-    padding: 0.625em 0;
+    padding: 0.3em 0;
 }
 #menu ul a:hover,
 #menu ul span:hover {
@@ -3182,7 +3182,7 @@ button:disabled,
 }
 #menu > ul > li > ul,
 #menu ul .submenu {
-    color: #9fa3a6;
+    color: #76787a;
     display: none;
     margin: 0.5em 0 1.5em 0;
     padding-left: 1em;
@@ -3191,7 +3191,7 @@ button:disabled,
 #menu > ul > li > ul span,
 #menu ul .submenu a,
 #menu ul .submenu span {
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 #menu > ul > li > ul > li,
 #menu ul .submenu > li {

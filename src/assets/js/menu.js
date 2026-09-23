@@ -8,8 +8,6 @@ const current = document.querySelector(".current");
 const active = document.querySelectorAll(".active");
 var element = null;
 
-console.log(current, active);
-
 if (current) {
     element = current;
 } else {
@@ -17,3 +15,10 @@ if (current) {
 }
 
 element.scrollIntoView({ block: "center", behavior: "auto" });
+
+const params = new URLSearchParams(window.location.search);
+const child = params.get("child");
+const section = document.getElementById(child);
+if (section) {
+    section.scrollIntoView();
+}

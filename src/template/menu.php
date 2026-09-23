@@ -38,7 +38,7 @@ function getPath($pages) {
     $urlCode = basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
     parse_str(parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY), $args);
     $urlChildCode = $args['child'] ?? null;
-    $path = [];
+    $path = ['code-purpose'];
     foreach ($pages as $page) {
         if ($page['code'] === $urlCode) {
             $path = [$page['code']];
@@ -73,7 +73,7 @@ function getPath($pages) {
 }
 ?>
 
-<?php $path = getPath($pages) ?>
+<?php $path = getPath($pages); ?>
 <?php foreach ($pages as $page): ?>
     <?php
         $pageCode = $page['code'];
