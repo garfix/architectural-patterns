@@ -1,4 +1,5 @@
 <?php
+define('SITE_VERSION', '1.0.0');
 
 include 'functions.php';
 
